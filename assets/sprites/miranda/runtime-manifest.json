@@ -33,25 +33,25 @@
     "frames": [
       {
         "path": "assets/sprites/miranda/curated/punch-frame-0.png",
-        "scale": 1.021739,
+        "scale": 1,
         "anchorX": 0.5238113072267804,
         "anchorY": 0.9583333333333334
       },
       {
         "path": "assets/sprites/miranda/curated/punch-frame-1.png",
-        "scale": 1.021739,
+        "scale": 1,
         "anchorX": 0.522487445625494,
         "anchorY": 0.9583333333333334
       },
       {
         "path": "assets/sprites/miranda/curated/punch-frame-2.png",
-        "scale": 1.205128,
+        "scale": 1.11,
         "anchorX": 0.4478029508070845,
         "anchorY": 0.9583333333333334
       },
       {
         "path": "assets/sprites/miranda/curated/punch-frame-3.png",
-        "scale": 1.021739,
+        "scale": 1,
         "anchorX": 0.5180250893660855,
         "anchorY": 0.9583333333333334
       }
@@ -63,25 +63,25 @@
     "frames": [
       {
         "path": "assets/sprites/miranda/curated/kick-frame-0.png",
-        "scale": 1.146341,
+        "scale": 1,
         "anchorX": 0.5057544611914822,
         "anchorY": 0.9583333333333334
       },
       {
         "path": "assets/sprites/miranda/curated/kick-frame-1.png",
-        "scale": 1.146341,
+        "scale": 1,
         "anchorX": 0.5578398144409539,
         "anchorY": 0.9583333333333334
       },
       {
         "path": "assets/sprites/miranda/curated/kick-frame-2.png",
-        "scale": 1.27027,
+        "scale": 1.08,
         "anchorX": 0.20903227848565809,
         "anchorY": 0.9583333333333334
       },
       {
         "path": "assets/sprites/miranda/curated/kick-frame-3.png",
-        "scale": 1.146341,
+        "scale": 1,
         "anchorX": 0.42594182247291473,
         "anchorY": 0.9583333333333334
       }
@@ -93,25 +93,25 @@
     "frames": [
       {
         "path": "assets/sprites/miranda/curated/hurt-frame-0.png",
-        "scale": 1.146341,
+        "scale": 1,
         "anchorX": 0.5194931799229977,
         "anchorY": 0.9583333333333334
       },
       {
         "path": "assets/sprites/miranda/curated/hurt-frame-1.png",
-        "scale": 1.175,
+        "scale": 1,
         "anchorX": 0.5406295504285384,
         "anchorY": 0.9583333333333334
       },
       {
         "path": "assets/sprites/miranda/curated/hurt-frame-2.png",
-        "scale": 1.205128,
+        "scale": 1,
         "anchorX": 0.5099737499055708,
         "anchorY": 0.9583333333333334
       },
       {
         "path": "assets/sprites/miranda/curated/hurt-frame-3.png",
-        "scale": 1.119048,
+        "scale": 1,
         "anchorX": 0.5181102256918265,
         "anchorY": 0.9583333333333334
       }
@@ -123,25 +123,25 @@
     "frames": [
       {
         "path": "assets/sprites/miranda/curated/jump-frame-0.png",
-        "scale": 0.783333,
+        "scale": 0.78333333,
         "anchorX": 0.4971435984800685,
         "anchorY": 0.9583333333333334
       },
       {
         "path": "assets/sprites/miranda/curated/jump-frame-1.png",
-        "scale": 0.87037,
+        "scale": 0.87037037,
         "anchorX": 0.42701180328690547,
         "anchorY": 0.9583333333333334
       },
       {
         "path": "assets/sprites/miranda/curated/jump-frame-2.png",
-        "scale": 0.839286,
+        "scale": 0.83928571,
         "anchorX": 0.4597926933315979,
         "anchorY": 0.9583333333333334
       },
       {
         "path": "assets/sprites/miranda/curated/jump-frame-3.png",
-        "scale": 0.87037,
+        "scale": 0.87037037,
         "anchorX": 0.513937298063266,
         "anchorY": 0.9583333333333334
       }
@@ -153,25 +153,25 @@
     "frames": [
       {
         "path": "assets/sprites/miranda/curated/special-frame-0.png",
-        "scale": 1.093023,
+        "scale": 1,
         "anchorX": 0.5130912257936329,
         "anchorY": 0.9583333333333334
       },
       {
         "path": "assets/sprites/miranda/curated/special-frame-1.png",
-        "scale": 1.093023,
+        "scale": 1,
         "anchorX": 0.513356594287984,
         "anchorY": 0.9583333333333334
       },
       {
         "path": "assets/sprites/miranda/curated/special-frame-2.png",
-        "scale": 1.305556,
+        "scale": 1.15,
         "anchorX": 0.4495434258067929,
         "anchorY": 0.9583333333333334
       },
       {
         "path": "assets/sprites/miranda/curated/special-frame-3.png",
-        "scale": 1.093023,
+        "scale": 1,
         "anchorX": 0.5141957637465597,
         "anchorY": 0.9583333333333334
       }
@@ -183,37 +183,37 @@
     "frames": [
       {
         "path": "assets/sprites/miranda/curated/walk-frame-0.png",
-        "scale": 1.068182,
+        "scale": 1,
         "anchorX": 0.5058860362639201,
         "anchorY": 0.9583333333333334
       },
       {
         "path": "assets/sprites/miranda/curated/walk-frame-1.png",
-        "scale": 1.068182,
+        "scale": 1,
         "anchorX": 0.49466354211104974,
         "anchorY": 0.9583333333333334
       },
       {
         "path": "assets/sprites/miranda/curated/walk-frame-2.png",
-        "scale": 1.068182,
+        "scale": 1,
         "anchorX": 0.49792372778181776,
         "anchorY": 0.9583333333333334
       },
       {
         "path": "assets/sprites/miranda/curated/walk-frame-3.png",
-        "scale": 1.068182,
+        "scale": 1,
         "anchorX": 0.4986352448051406,
         "anchorY": 0.9583333333333334
       },
       {
         "path": "assets/sprites/miranda/curated/walk-frame-4.png",
-        "scale": 1.068182,
+        "scale": 1,
         "anchorX": 0.4532028924998303,
         "anchorY": 0.9583333333333334
       },
       {
         "path": "assets/sprites/miranda/curated/walk-frame-5.png",
-        "scale": 1.068182,
+        "scale": 1,
         "anchorX": 0.5055801025764356,
         "anchorY": 0.9583333333333334
       }
@@ -261,19 +261,19 @@
       },
       {
         "path": "assets/sprites/miranda/curated/crouch-frame-1.png",
-        "scale": 0.886792,
+        "scale": 0.88679245,
         "anchorX": 0.5120809565872955,
         "anchorY": 0.9583333333333334
       },
       {
         "path": "assets/sprites/miranda/curated/crouch-frame-2.png",
-        "scale": 0.854545,
+        "scale": 0.85454545,
         "anchorX": 0.5471758236294632,
         "anchorY": 0.9583333333333334
       },
       {
         "path": "assets/sprites/miranda/curated/crouch-frame-3.png",
-        "scale": 0.854545,
+        "scale": 0.85454545,
         "anchorX": 0.5473219503376885,
         "anchorY": 0.9583333333333334
       }
@@ -285,19 +285,19 @@
     "frames": [
       {
         "path": "assets/sprites/miranda/curated/ko-frame-0.png",
-        "scale": 1.146341,
+        "scale": 1,
         "anchorX": 0.5503063390038402,
         "anchorY": 0.9583333333333334
       },
       {
         "path": "assets/sprites/miranda/curated/ko-frame-1.png",
-        "scale": 0.959184,
+        "scale": 0.95918367,
         "anchorX": 0.39150137970652005,
         "anchorY": 0.9583333333333334
       },
       {
         "path": "assets/sprites/miranda/curated/ko-frame-2.png",
-        "scale": 1.146341,
+        "scale": 1.14634146,
         "anchorX": 0.4651206579992189,
         "anchorY": 0.9583333333333334
       },
@@ -315,25 +315,25 @@
     "frames": [
       {
         "path": "assets/sprites/miranda/curated/celebrate-frame-0.png",
-        "scale": 0.979167,
+        "scale": 1,
         "anchorX": 0.5362441013010948,
         "anchorY": 0.9583333333333334
       },
       {
         "path": "assets/sprites/miranda/curated/celebrate-frame-1.png",
-        "scale": 1.068182,
+        "scale": 1,
         "anchorX": 0.5379726982903252,
         "anchorY": 0.9583333333333334
       },
       {
         "path": "assets/sprites/miranda/curated/celebrate-frame-2.png",
-        "scale": 1.27027,
+        "scale": 1.17,
         "anchorX": 0.5152320598588966,
         "anchorY": 0.9583333333333334
       },
       {
         "path": "assets/sprites/miranda/curated/celebrate-frame-3.png",
-        "scale": 1.27027,
+        "scale": 1.17,
         "anchorX": 0.5266484145679302,
         "anchorY": 0.9583333333333334
       }
@@ -351,13 +351,13 @@
       },
       {
         "path": "assets/sprites/miranda/curated/airPunch-frame-1.png",
-        "scale": 0.959184,
+        "scale": 0.95918367,
         "anchorX": 0.291274435460223,
         "anchorY": 0.9583333333333334
       },
       {
         "path": "assets/sprites/miranda/curated/airPunch-frame-2.png",
-        "scale": 1.021739,
+        "scale": 1.1,
         "anchorX": 0.2303410028210744,
         "anchorY": 0.9583333333333334
       },
@@ -375,7 +375,7 @@
     "frames": [
       {
         "path": "assets/sprites/miranda/curated/airKick-frame-0.png",
-        "scale": 0.903846,
+        "scale": 0.90384615,
         "anchorX": 0.5488797650281273,
         "anchorY": 0.9583333333333334
       },
@@ -387,13 +387,13 @@
       },
       {
         "path": "assets/sprites/miranda/curated/airKick-frame-2.png",
-        "scale": 1.305556,
+        "scale": 1.30555556,
         "anchorX": 0.3513487859923306,
         "anchorY": 0.9583333333333334
       },
       {
         "path": "assets/sprites/miranda/curated/airKick-frame-3.png",
-        "scale": 0.903846,
+        "scale": 0.90384615,
         "anchorX": 0.5101034691801783,
         "anchorY": 0.9583333333333334
       }
@@ -405,13 +405,13 @@
     "frames": [
       {
         "path": "assets/sprites/miranda/curated/crouchPunch-frame-0.png",
-        "scale": 0.824561,
+        "scale": 0.8245614,
         "anchorX": 0.5321841066941165,
         "anchorY": 0.9583333333333334
       },
       {
         "path": "assets/sprites/miranda/curated/crouchPunch-frame-1.png",
-        "scale": 0.87037,
+        "scale": 0.87037037,
         "anchorX": 0.5184646861451677,
         "anchorY": 0.9583333333333334
       },
@@ -423,7 +423,7 @@
       },
       {
         "path": "assets/sprites/miranda/curated/crouchPunch-frame-3.png",
-        "scale": 0.824561,
+        "scale": 0.8245614,
         "anchorX": 0.5212675322004828,
         "anchorY": 0.9583333333333334
       }
@@ -435,25 +435,25 @@
     "frames": [
       {
         "path": "assets/sprites/miranda/curated/crouchKick-frame-0.png",
-        "scale": 0.854545,
+        "scale": 0.85454545,
         "anchorX": 0.5151193940095227,
         "anchorY": 0.9583333333333334
       },
       {
         "path": "assets/sprites/miranda/curated/crouchKick-frame-1.png",
-        "scale": 0.87037,
+        "scale": 0.87037037,
         "anchorX": 0.5025145415506479,
         "anchorY": 0.9583333333333334
       },
       {
         "path": "assets/sprites/miranda/curated/crouchKick-frame-2.png",
-        "scale": 1.236842,
+        "scale": 1.23684211,
         "anchorX": 0.3556509112387916,
         "anchorY": 0.9583333333333334
       },
       {
         "path": "assets/sprites/miranda/curated/crouchKick-frame-3.png",
-        "scale": 0.854545,
+        "scale": 0.85454545,
         "anchorX": 0.5095457099738122,
         "anchorY": 0.9583333333333334
       }
@@ -477,7 +477,7 @@
       },
       {
         "path": "assets/sprites/miranda/curated/uppercut-frame-2.png",
-        "scale": 1.205128,
+        "scale": 1.20512821,
         "anchorX": 0.4926048374617937,
         "anchorY": 0.9583333333333334
       },
@@ -495,25 +495,25 @@
     "frames": [
       {
         "path": "assets/sprites/miranda/curated/sweep-frame-0.png",
-        "scale": 0.903846,
+        "scale": 0.90384615,
         "anchorX": 0.40711541865327533,
         "anchorY": 0.9583333333333334
       },
       {
         "path": "assets/sprites/miranda/curated/sweep-frame-1.png",
-        "scale": 0.87037,
+        "scale": 0.87037037,
         "anchorX": 0.5584683254013405,
         "anchorY": 0.9583333333333334
       },
       {
         "path": "assets/sprites/miranda/curated/sweep-frame-2.png",
-        "scale": 1.342857,
+        "scale": 1.34285714,
         "anchorX": 0.5198684325533002,
         "anchorY": 0.9583333333333334
       },
       {
         "path": "assets/sprites/miranda/curated/sweep-frame-3.png",
-        "scale": 0.886792,
+        "scale": 0.88679245,
         "anchorX": 0.5155201518108256,
         "anchorY": 0.9583333333333334
       }
@@ -555,37 +555,37 @@
     "frames": [
       {
         "path": "assets/sprites/miranda/curated/backwalk-frame-0.png",
-        "scale": 1.093023,
+        "scale": 1,
         "anchorX": 0.5094583559529278,
         "anchorY": 0.9583333333333334
       },
       {
         "path": "assets/sprites/miranda/curated/backwalk-frame-1.png",
-        "scale": 1.093023,
+        "scale": 1,
         "anchorX": 0.5034584209850393,
         "anchorY": 0.9583333333333334
       },
       {
         "path": "assets/sprites/miranda/curated/backwalk-frame-2.png",
-        "scale": 1.093023,
+        "scale": 1,
         "anchorX": 0.5101109414788293,
         "anchorY": 0.9583333333333334
       },
       {
         "path": "assets/sprites/miranda/curated/backwalk-frame-3.png",
-        "scale": 1.093023,
+        "scale": 1,
         "anchorX": 0.5257744471853575,
         "anchorY": 0.9583333333333334
       },
       {
         "path": "assets/sprites/miranda/curated/backwalk-frame-4.png",
-        "scale": 1.093023,
+        "scale": 1,
         "anchorX": 0.5351977781015725,
         "anchorY": 0.9583333333333334
       },
       {
         "path": "assets/sprites/miranda/curated/backwalk-frame-5.png",
-        "scale": 1.093023,
+        "scale": 1,
         "anchorX": 0.5059943426157,
         "anchorY": 0.9583333333333334
       }
@@ -597,25 +597,25 @@
     "frames": [
       {
         "path": "assets/sprites/miranda/curated/lowBlock-frame-0.png",
-        "scale": 0.87037,
+        "scale": 0.87037037,
         "anchorX": 0.46221667177866976,
         "anchorY": 0.9583333333333334
       },
       {
         "path": "assets/sprites/miranda/curated/lowBlock-frame-1.png",
-        "scale": 0.87037,
+        "scale": 0.87037037,
         "anchorX": 0.5143941708952627,
         "anchorY": 0.9583333333333334
       },
       {
         "path": "assets/sprites/miranda/curated/lowBlock-frame-2.png",
-        "scale": 0.87037,
+        "scale": 0.87037037,
         "anchorX": 0.4839085671942118,
         "anchorY": 0.9583333333333334
       },
       {
         "path": "assets/sprites/miranda/curated/lowBlock-frame-3.png",
-        "scale": 0.87037,
+        "scale": 0.87037037,
         "anchorX": 0.5067959774785137,
         "anchorY": 0.9583333333333334
       }
@@ -627,25 +627,25 @@
     "frames": [
       {
         "path": "assets/sprites/miranda/curated/turn-frame-0.png",
-        "scale": 1.146341,
+        "scale": 1,
         "anchorX": 0.502085856335206,
         "anchorY": 0.9583333333333334
       },
       {
         "path": "assets/sprites/miranda/curated/turn-frame-1.png",
-        "scale": 1.146341,
+        "scale": 1,
         "anchorX": 0.5114742339551313,
         "anchorY": 0.9583333333333334
       },
       {
         "path": "assets/sprites/miranda/curated/turn-frame-2.png",
-        "scale": 1.146341,
+        "scale": 1,
         "anchorX": 0.5094808423007766,
         "anchorY": 0.9583333333333334
       },
       {
         "path": "assets/sprites/miranda/curated/turn-frame-3.png",
-        "scale": 1.146341,
+        "scale": 1,
         "anchorX": 0.4981230573521919,
         "anchorY": 0.9583333333333334
       }
@@ -657,13 +657,13 @@
     "frames": [
       {
         "path": "assets/sprites/miranda/curated/land-frame-0.png",
-        "scale": 0.770492,
+        "scale": 0.7704918,
         "anchorX": 0.5075590293845275,
         "anchorY": 0.9583333333333334
       },
       {
         "path": "assets/sprites/miranda/curated/land-frame-1.png",
-        "scale": 0.87037,
+        "scale": 0.87037037,
         "anchorX": 0.5086133212336724,
         "anchorY": 0.9583333333333334
       },
@@ -675,7 +675,7 @@
       },
       {
         "path": "assets/sprites/miranda/curated/land-frame-3.png",
-        "scale": 1.068182,
+        "scale": 1,
         "anchorX": 0.5125079309007904,
         "anchorY": 0.9583333333333334
       }
@@ -687,25 +687,25 @@
     "frames": [
       {
         "path": "assets/sprites/miranda/curated/jumpForward-frame-0.png",
-        "scale": 0.87037,
+        "scale": 0.87037037,
         "anchorX": 0.4518310991441827,
         "anchorY": 0.9583333333333334
       },
       {
         "path": "assets/sprites/miranda/curated/jumpForward-frame-1.png",
-        "scale": 0.959184,
+        "scale": 0.95918367,
         "anchorX": 0.22382533925259743,
         "anchorY": 0.9583333333333334
       },
       {
         "path": "assets/sprites/miranda/curated/jumpForward-frame-2.png",
-        "scale": 0.79661,
+        "scale": 0.79661017,
         "anchorX": 0.501117744021599,
         "anchorY": 0.9583333333333334
       },
       {
         "path": "assets/sprites/miranda/curated/jumpForward-frame-3.png",
-        "scale": 0.959184,
+        "scale": 0.95918367,
         "anchorX": 0.717504612686123,
         "anchorY": 0.9583333333333334
       }
@@ -717,25 +717,25 @@
     "frames": [
       {
         "path": "assets/sprites/miranda/curated/super-frame-0.png",
-        "scale": 1.093023,
+        "scale": 1,
         "anchorX": 0.5195477110753366,
         "anchorY": 0.9583333333333334
       },
       {
         "path": "assets/sprites/miranda/curated/super-frame-1.png",
-        "scale": 1.236842,
+        "scale": 1.15,
         "anchorX": 0.5072042503738954,
         "anchorY": 0.9583333333333334
       },
       {
         "path": "assets/sprites/miranda/curated/super-frame-2.png",
-        "scale": 1.27027,
+        "scale": 1.2,
         "anchorX": 0.48324164542630904,
         "anchorY": 0.9583333333333334
       },
       {
         "path": "assets/sprites/miranda/curated/super-frame-3.png",
-        "scale": 1.021739,
+        "scale": 1,
         "anchorX": 0.5147341085265664,
         "anchorY": 0.9583333333333334
       }
