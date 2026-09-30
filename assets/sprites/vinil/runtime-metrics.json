@@ -1,0 +1,1450 @@
+{
+  "idle": [
+    {
+      "path": "assets/sprites/vinil/curated/idle-frame-0.png",
+      "sourceHeight": 594,
+      "outputHeight": 352,
+      "anchorX": 0.5175345427983531,
+      "anchorY": 0.9583333333333334,
+      "scale": 1,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 103,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/vinil/curated/idle-frame-1.png",
+      "sourceHeight": 615,
+      "outputHeight": 352,
+      "anchorX": 0.5280752006270013,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.035354,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 103,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/vinil/curated/idle-frame-2.png",
+      "sourceHeight": 589,
+      "outputHeight": 352,
+      "anchorX": 0.521628449988549,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.991582,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 103,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/vinil/curated/idle-frame-3.png",
+      "sourceHeight": 610,
+      "outputHeight": 352,
+      "anchorX": 0.5308389852624142,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.026936,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 103,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "punch": [
+    {
+      "path": "assets/sprites/vinil/curated/punch-frame-0.png",
+      "sourceHeight": 573,
+      "outputHeight": 352,
+      "anchorX": 0.5085849348478373,
+      "anchorY": 0.9583333333333334,
+      "scale": 1,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 103,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/vinil/curated/punch-frame-1.png",
+      "sourceHeight": 569,
+      "outputHeight": 352,
+      "anchorX": 0.48636087376825077,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.993019,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 103,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/vinil/curated/punch-frame-2.png",
+      "sourceHeight": 558,
+      "outputHeight": 298,
+      "anchorX": 0.41975596449338276,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.150286,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 103,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/vinil/curated/punch-frame-3.png",
+      "sourceHeight": 573,
+      "outputHeight": 352,
+      "anchorX": 0.5020067613389427,
+      "anchorY": 0.9583333333333334,
+      "scale": 1,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 103,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "kick": [
+    {
+      "path": "assets/sprites/vinil/curated/kick-frame-0.png",
+      "sourceHeight": 566,
+      "outputHeight": 352,
+      "anchorX": 0.5092752870128375,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.03,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 100,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/vinil/curated/kick-frame-1.png",
+      "sourceHeight": 591,
+      "outputHeight": 352,
+      "anchorX": 0.4778343996648393,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.075495,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 100,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/vinil/curated/kick-frame-2.png",
+      "sourceHeight": 568,
+      "outputHeight": 299,
+      "anchorX": 0.33430355334130785,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.21686,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 100,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/vinil/curated/kick-frame-3.png",
+      "sourceHeight": 571,
+      "outputHeight": 352,
+      "anchorX": 0.4753607379783447,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.039099,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 100,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "hurt": [
+    {
+      "path": "assets/sprites/vinil/curated/hurt-frame-0.png",
+      "sourceHeight": 606,
+      "outputHeight": 352,
+      "anchorX": 0.5581393727072627,
+      "anchorY": 0.9583333333333334,
+      "scale": 1,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 103,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/vinil/curated/hurt-frame-1.png",
+      "sourceHeight": 598,
+      "outputHeight": 352,
+      "anchorX": 0.5369411919068975,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.986799,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 103,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/vinil/curated/hurt-frame-2.png",
+      "sourceHeight": 570,
+      "outputHeight": 352,
+      "anchorX": 0.5102138672965336,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.940594,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 103,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/vinil/curated/hurt-frame-3.png",
+      "sourceHeight": 593,
+      "outputHeight": 352,
+      "anchorX": 0.5270941704757032,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.978548,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 103,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "jump": [
+    {
+      "path": "assets/sprites/vinil/curated/jump-frame-0.png",
+      "sourceHeight": 468,
+      "outputHeight": 333,
+      "anchorX": 0.501793489234005,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.81746,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 126,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/vinil/curated/jump-frame-1.png",
+      "sourceHeight": 560,
+      "outputHeight": 351,
+      "anchorX": 0.47361325992583514,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.927996,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 126,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/vinil/curated/jump-frame-2.png",
+      "sourceHeight": 513,
+      "outputHeight": 349,
+      "anchorX": 0.5851135076178041,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.854982,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 126,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/vinil/curated/jump-frame-3.png",
+      "sourceHeight": 504,
+      "outputHeight": 345,
+      "anchorX": 0.5264982253849149,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.849721,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 126,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "special": [
+    {
+      "path": "assets/sprites/vinil/curated/special-frame-0.png",
+      "sourceHeight": 545,
+      "outputHeight": 351,
+      "anchorX": 0.5200138483444149,
+      "anchorY": 0.9583333333333334,
+      "scale": 1,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 103,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/vinil/curated/special-frame-1.png",
+      "sourceHeight": 545,
+      "outputHeight": 347,
+      "anchorX": 0.45435183068768503,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.011527,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 103,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/vinil/curated/special-frame-2.png",
+      "sourceHeight": 520,
+      "outputHeight": 279,
+      "anchorX": 0.4103744819180184,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.200355,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 103,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/vinil/curated/special-frame-3.png",
+      "sourceHeight": 544,
+      "outputHeight": 352,
+      "anchorX": 0.5097812423526802,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.995329,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 103,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "walk": [
+    {
+      "path": "assets/sprites/vinil/curated/walk-frame-0.png",
+      "sourceHeight": 483,
+      "outputHeight": 352,
+      "anchorX": 0.5034879815046231,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.040404,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 99,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/vinil/curated/walk-frame-1.png",
+      "sourceHeight": 486,
+      "outputHeight": 352,
+      "anchorX": 0.509383752939324,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.046866,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 99,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/vinil/curated/walk-frame-2.png",
+      "sourceHeight": 485,
+      "outputHeight": 352,
+      "anchorX": 0.49874191995302947,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.044712,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 99,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/vinil/curated/walk-frame-3.png",
+      "sourceHeight": 484,
+      "outputHeight": 352,
+      "anchorX": 0.5454373226857213,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.042558,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 99,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/vinil/curated/walk-frame-4.png",
+      "sourceHeight": 485,
+      "outputHeight": 351,
+      "anchorX": 0.48678839863336193,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.047689,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 99,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/vinil/curated/walk-frame-5.png",
+      "sourceHeight": 486,
+      "outputHeight": 352,
+      "anchorX": 0.5026329616259138,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.046866,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 99,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "block": [
+    {
+      "path": "assets/sprites/vinil/curated/block-frame-0.png",
+      "sourceHeight": 630,
+      "outputHeight": 352,
+      "anchorX": 0.4999669429965678,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.980952,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 105,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/vinil/curated/block-frame-1.png",
+      "sourceHeight": 629,
+      "outputHeight": 351,
+      "anchorX": 0.48664343036726815,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.982186,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 105,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/vinil/curated/block-frame-2.png",
+      "sourceHeight": 648,
+      "outputHeight": 352,
+      "anchorX": 0.48387926677808396,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.00898,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 105,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/vinil/curated/block-frame-3.png",
+      "sourceHeight": 648,
+      "outputHeight": 352,
+      "anchorX": 0.48506161043545254,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.00898,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 105,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "crouch": [
+    {
+      "path": "assets/sprites/vinil/curated/crouch-frame-0.png",
+      "sourceHeight": 595,
+      "outputHeight": 352,
+      "anchorX": 0.4755478334458179,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.962617,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 107,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/vinil/curated/crouch-frame-1.png",
+      "sourceHeight": 524,
+      "outputHeight": 352,
+      "anchorX": 0.4732968409989465,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.84775,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 107,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/vinil/curated/crouch-frame-2.png",
+      "sourceHeight": 487,
+      "outputHeight": 352,
+      "anchorX": 0.47193588652844437,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.78789,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 107,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/vinil/curated/crouch-frame-3.png",
+      "sourceHeight": 523,
+      "outputHeight": 352,
+      "anchorX": 0.48338179340232285,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.846132,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 107,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "ko": [
+    {
+      "path": "assets/sprites/vinil/curated/ko-frame-0.png",
+      "sourceHeight": 530,
+      "outputHeight": 352,
+      "anchorX": 0.5223165594031859,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.144444,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 90,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/vinil/curated/ko-frame-1.png",
+      "sourceHeight": 419,
+      "outputHeight": 288,
+      "anchorX": 0.6374465766235811,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.105816,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 90,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/vinil/curated/ko-frame-2.png",
+      "sourceHeight": 288,
+      "outputHeight": 215,
+      "anchorX": 0.36267000287844975,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.018159,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 90,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/vinil/curated/ko-frame-3.png",
+      "sourceHeight": 190,
+      "outputHeight": 103,
+      "anchorX": 0.5053547215840579,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.402096,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 90,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "celebrate": [
+    {
+      "path": "assets/sprites/vinil/curated/celebrate-frame-0.png",
+      "sourceHeight": 584,
+      "outputHeight": 352,
+      "anchorX": 0.5329611652388937,
+      "anchorY": 0.9583333333333334,
+      "scale": 1,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 103,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/vinil/curated/celebrate-frame-1.png",
+      "sourceHeight": 641,
+      "outputHeight": 352,
+      "anchorX": 0.5467785300647109,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.097603,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 103,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/vinil/curated/celebrate-frame-2.png",
+      "sourceHeight": 681,
+      "outputHeight": 352,
+      "anchorX": 0.5169867349774501,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.166096,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 103,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/vinil/curated/celebrate-frame-3.png",
+      "sourceHeight": 645,
+      "outputHeight": 352,
+      "anchorX": 0.5304940542533578,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.104452,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 103,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "airPunch": [
+    {
+      "path": "assets/sprites/vinil/curated/airPunch-frame-0.png",
+      "sourceHeight": 568,
+      "outputHeight": 352,
+      "anchorX": 0.4043041981453097,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.936364,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 110,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/vinil/curated/airPunch-frame-1.png",
+      "sourceHeight": 578,
+      "outputHeight": 352,
+      "anchorX": 0.27426352566221546,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.952849,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 110,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/vinil/curated/airPunch-frame-2.png",
+      "sourceHeight": 571,
+      "outputHeight": 290,
+      "anchorX": 0.22290773850639056,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.142555,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 110,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/vinil/curated/airPunch-frame-3.png",
+      "sourceHeight": 597,
+      "outputHeight": 352,
+      "anchorX": 0.41822881315611865,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.984171,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 110,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "airKick": [
+    {
+      "path": "assets/sprites/vinil/curated/airKick-frame-0.png",
+      "sourceHeight": 509,
+      "outputHeight": 352,
+      "anchorX": 0.3277472347880935,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.03,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 100,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/vinil/curated/airKick-frame-1.png",
+      "sourceHeight": 478,
+      "outputHeight": 309,
+      "anchorX": 0.4921686396928516,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.101873,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 100,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/vinil/curated/airKick-frame-2.png",
+      "sourceHeight": 454,
+      "outputHeight": 257,
+      "anchorX": 0.3804596777983491,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.258302,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 100,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/vinil/curated/airKick-frame-3.png",
+      "sourceHeight": 477,
+      "outputHeight": 351,
+      "anchorX": 0.5373977204974206,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.967996,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 100,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "crouchPunch": [
+    {
+      "path": "assets/sprites/vinil/curated/crouchPunch-frame-0.png",
+      "sourceHeight": 518,
+      "outputHeight": 352,
+      "anchorX": 0.49873098587467224,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.844262,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 122,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/vinil/curated/crouchPunch-frame-1.png",
+      "sourceHeight": 522,
+      "outputHeight": 352,
+      "anchorX": 0.5034901002141319,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.850782,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 122,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/vinil/curated/crouchPunch-frame-2.png",
+      "sourceHeight": 514,
+      "outputHeight": 290,
+      "anchorX": 0.438368348205634,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.016847,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 122,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/vinil/curated/crouchPunch-frame-3.png",
+      "sourceHeight": 522,
+      "outputHeight": 351,
+      "anchorX": 0.49541142470973587,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.853206,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 122,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "crouchKick": [
+    {
+      "path": "assets/sprites/vinil/curated/crouchKick-frame-0.png",
+      "sourceHeight": 459,
+      "outputHeight": 352,
+      "anchorX": 0.4887992692441299,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.865546,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 119,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/vinil/curated/crouchKick-frame-1.png",
+      "sourceHeight": 494,
+      "outputHeight": 352,
+      "anchorX": 0.4424577952476259,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.931546,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 119,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/vinil/curated/crouchKick-frame-2.png",
+      "sourceHeight": 461,
+      "outputHeight": 243,
+      "anchorX": 0.343170059357254,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.259259,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 119,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/vinil/curated/crouchKick-frame-3.png",
+      "sourceHeight": 461,
+      "outputHeight": 352,
+      "anchorX": 0.5061538154984772,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.869318,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 119,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "uppercut": [
+    {
+      "path": "assets/sprites/vinil/curated/uppercut-frame-0.png",
+      "sourceHeight": 535,
+      "outputHeight": 352,
+      "anchorX": 0.5140374171837504,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.880342,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 117,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/vinil/curated/uppercut-frame-1.png",
+      "sourceHeight": 566,
+      "outputHeight": 352,
+      "anchorX": 0.4745584153327223,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.931352,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 117,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/vinil/curated/uppercut-frame-2.png",
+      "sourceHeight": 703,
+      "outputHeight": 352,
+      "anchorX": 0.4931626448678091,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.156786,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 117,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/vinil/curated/uppercut-frame-3.png",
+      "sourceHeight": 563,
+      "outputHeight": 352,
+      "anchorX": 0.5025161534656768,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.926416,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 117,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "sweep": [
+    {
+      "path": "assets/sprites/vinil/curated/sweep-frame-0.png",
+      "sourceHeight": 427,
+      "outputHeight": 292,
+      "anchorX": 0.5011538866752802,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.927928,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 111,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/vinil/curated/sweep-frame-1.png",
+      "sourceHeight": 476,
+      "outputHeight": 289,
+      "anchorX": 0.6573708242563782,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.045149,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 111,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/vinil/curated/sweep-frame-2.png",
+      "sourceHeight": 450,
+      "outputHeight": 220,
+      "anchorX": 0.4206993518383731,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.297953,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 111,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/vinil/curated/sweep-frame-3.png",
+      "sourceHeight": 471,
+      "outputHeight": 351,
+      "anchorX": 0.48215126896721633,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.851497,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 111,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "dash": [
+    {
+      "path": "assets/sprites/vinil/curated/dash-frame-0.png",
+      "sourceHeight": 516,
+      "outputHeight": 352,
+      "anchorX": 0.45322963406824934,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.936364,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 110,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/vinil/curated/dash-frame-1.png",
+      "sourceHeight": 523,
+      "outputHeight": 337,
+      "anchorX": 0.5154196677183494,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.99131,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 110,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/vinil/curated/dash-frame-2.png",
+      "sourceHeight": 510,
+      "outputHeight": 341,
+      "anchorX": 0.48041337013504454,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.95533,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 110,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/vinil/curated/dash-frame-3.png",
+      "sourceHeight": 516,
+      "outputHeight": 351,
+      "anchorX": 0.45736643403785776,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.939031,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 110,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "backwalk": [
+    {
+      "path": "assets/sprites/vinil/curated/backwalk-frame-0.png",
+      "sourceHeight": 467,
+      "outputHeight": 352,
+      "anchorX": 0.5009825836884457,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.107527,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 93,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/vinil/curated/backwalk-frame-1.png",
+      "sourceHeight": 469,
+      "outputHeight": 352,
+      "anchorX": 0.4792995906949404,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.11227,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 93,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/vinil/curated/backwalk-frame-2.png",
+      "sourceHeight": 460,
+      "outputHeight": 352,
+      "anchorX": 0.5077906421677564,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.090926,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 93,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/vinil/curated/backwalk-frame-3.png",
+      "sourceHeight": 466,
+      "outputHeight": 352,
+      "anchorX": 0.5144755956224724,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.105155,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 93,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/vinil/curated/backwalk-frame-4.png",
+      "sourceHeight": 469,
+      "outputHeight": 352,
+      "anchorX": 0.5067756943409322,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.11227,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 93,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/vinil/curated/backwalk-frame-5.png",
+      "sourceHeight": 466,
+      "outputHeight": 352,
+      "anchorX": 0.49996130941600087,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.105155,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 93,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "lowBlock": [
+    {
+      "path": "assets/sprites/vinil/curated/lowBlock-frame-0.png",
+      "sourceHeight": 499,
+      "outputHeight": 352,
+      "anchorX": 0.49730794497343206,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.768657,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 134,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/vinil/curated/lowBlock-frame-1.png",
+      "sourceHeight": 567,
+      "outputHeight": 352,
+      "anchorX": 0.4807543825848211,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.873404,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 134,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/vinil/curated/lowBlock-frame-2.png",
+      "sourceHeight": 515,
+      "outputHeight": 343,
+      "anchorX": 0.508160737019982,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.814119,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 134,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/vinil/curated/lowBlock-frame-3.png",
+      "sourceHeight": 510,
+      "outputHeight": 348,
+      "anchorX": 0.4994003640678428,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.794631,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 134,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "turn": [
+    {
+      "path": "assets/sprites/vinil/curated/turn-frame-0.png",
+      "sourceHeight": 628,
+      "outputHeight": 351,
+      "anchorX": 0.5061308081847881,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.040404,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 99,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/vinil/curated/turn-frame-1.png",
+      "sourceHeight": 642,
+      "outputHeight": 352,
+      "anchorX": 0.4972524274582433,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.060576,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 99,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/vinil/curated/turn-frame-2.png",
+      "sourceHeight": 642,
+      "outputHeight": 352,
+      "anchorX": 0.5103774011956222,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.060576,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 99,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/vinil/curated/turn-frame-3.png",
+      "sourceHeight": 637,
+      "outputHeight": 352,
+      "anchorX": 0.4827519585758262,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.052316,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 99,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "land": [
+    {
+      "path": "assets/sprites/vinil/curated/land-frame-0.png",
+      "sourceHeight": 479,
+      "outputHeight": 340,
+      "anchorX": 0.5544217365466134,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.792308,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 130,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/vinil/curated/land-frame-1.png",
+      "sourceHeight": 585,
+      "outputHeight": 351,
+      "anchorX": 0.5311029058628429,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.937316,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 130,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/vinil/curated/land-frame-2.png",
+      "sourceHeight": 657,
+      "outputHeight": 352,
+      "anchorX": 0.5390171374382736,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.049687,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 130,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/vinil/curated/land-frame-3.png",
+      "sourceHeight": 673,
+      "outputHeight": 352,
+      "anchorX": 0.5279613986037369,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.075251,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 130,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "jumpForward": [
+    {
+      "path": "assets/sprites/vinil/curated/jumpForward-frame-0.png",
+      "sourceHeight": 479,
+      "outputHeight": 309,
+      "anchorX": 0.4519508225933924,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.953704,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 108,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/vinil/curated/jumpForward-frame-1.png",
+      "sourceHeight": 596,
+      "outputHeight": 352,
+      "anchorX": 0.18644704619676714,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.041694,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 108,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/vinil/curated/jumpForward-frame-2.png",
+      "sourceHeight": 521,
+      "outputHeight": 352,
+      "anchorX": 0.456780208651638,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.910608,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 108,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/vinil/curated/jumpForward-frame-3.png",
+      "sourceHeight": 591,
+      "outputHeight": 352,
+      "anchorX": 0.7012813227266146,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.032955,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 108,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "super": [
+    {
+      "path": "assets/sprites/vinil/curated/super-frame-0.png",
+      "sourceHeight": 582,
+      "outputHeight": 352,
+      "anchorX": 0.5109962412768938,
+      "anchorY": 0.9583333333333334,
+      "scale": 1,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 103,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/vinil/curated/super-frame-1.png",
+      "sourceHeight": 581,
+      "outputHeight": 352,
+      "anchorX": 0.497461268973534,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.998282,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 103,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/vinil/curated/super-frame-2.png",
+      "sourceHeight": 549,
+      "outputHeight": 284,
+      "anchorX": 0.40922894946467253,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.169159,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 103,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/vinil/curated/super-frame-3.png",
+      "sourceHeight": 582,
+      "outputHeight": 352,
+      "anchorX": 0.49354908129778013,
+      "anchorY": 0.9583333333333334,
+      "scale": 1,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 103,
+        "idleHeadSpan": 103,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "kind": "sprite-gen-image-report",
+  "provider": "codex",
+  "prompt": "Create ONE full-body genuinely transparent cutout of an original Brazilian neighborhood bar spectator: Brazilian woman in her40s, fairwarm skin, darkwavy shoulderlengthhair, creamrolledsleeve blouse, darkburgundy trousers, brownsandals. Pose: holdingglassbeermugatchest, smilingwarmly. Adult realisticanatomicalproportions, entirebodywithshoesvisible. Rich hand-painted detailed2Dclassicarcadefightinggame background spectator illustration, natural humanface andshapedlimbs, carefulclothfolds, cleandarksilhouetteoutline, subtlewarm tungstenlight compatiblewithBrazilianbohemiannightstage. Notgeometricmannequin, notcartoonstickfigure, notphoto. Fixedfrontthreequartercamera. NOtext,nootherpeople,noextraarms,nodecorativebackground,nocheckerboard. Originalcharacter, distinctindividualidentity.",
+  "out": "/home/bruno/projects/funnietech/ai-tests/games/fighting-game-codex-gauntlet-loop/assets/stages/public-v6/rosa-base.png",
+  "raw": "/home/bruno/projects/funnietech/ai-tests/games/fighting-game-codex-gauntlet-loop/assets/stages/public-v6/rosa-base.png.raw.png",
+  "raw_bytes": 1577753,
+  "elapsed_seconds": 41.788,
+  "model": null,
+  "session_id": "01a0f0f8-0325-7483-bdb4-53bb411a50d0",
+  "refs": [],
+  "transparent": true,
+  "alpha": {
+    "strategy": "native",
+    "strategy_source": "provider-default",
+    "out": "/home/bruno/projects/funnietech/ai-tests/games/fighting-game-codex-gauntlet-loop/assets/stages/public-v6/rosa-base.png",
+    "mode": "RGBA",
+    "method": "native",
+    "size": "1024x1536",
+    "alpha_zero_pct": 70.6,
+    "partial_alpha_pct": 29.4,
+    "opaque_pct": 0.0,
+    "cleaned_transparent_rgb_pixels": 738362,
+    "stale_transparent_rgb_pixels": 0
+  },
+  "chroma": null,
+  "extra": {
+    "inline_results": 1,
+    "rollout_cleaned": true,
+    "transparent_background_reported": true
+  },
+  "provider_resolved_from": "explicit"
+}

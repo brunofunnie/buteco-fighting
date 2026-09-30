@@ -1,0 +1,98 @@
+{
+  "idle": {
+    "headSpan": 76,
+    "review": "Manual crown-to-chin exported frame0, reviewed with numbered 20px guide in qa/head-review panels."
+  },
+  "punch": {
+    "headSpan": 77,
+    "review": "Manual crown-to-chin exported frame0, reviewed with numbered 20px guide in qa/head-review panels."
+  },
+  "kick": {
+    "headSpan": 72,
+    "review": "Manual crown-to-chin exported frame0, reviewed with numbered 20px guide in qa/head-review panels."
+  },
+  "hurt": {
+    "headSpan": 79,
+    "review": "Manual crown-to-chin exported frame0, reviewed with numbered 20px guide in qa/head-review panels."
+  },
+  "jump": {
+    "headSpan": 102,
+    "review": "Manual crown-to-chin exported frame0, reviewed with numbered 20px guide in qa/head-review panels."
+  },
+  "special": {
+    "headSpan": 82,
+    "review": "Manual crown-to-chin exported frame0, reviewed with numbered 20px guide in qa/head-review panels."
+  },
+  "walk": {
+    "headSpan": 73,
+    "review": "Manual crown-to-chin exported frame0, reviewed with numbered 20px guide in qa/head-review panels."
+  },
+  "block": {
+    "headSpan": 82,
+    "review": "Manual crown-to-chin exported frame0, reviewed with numbered 20px guide in qa/head-review panels."
+  },
+  "crouch": {
+    "headSpan": 88,
+    "review": "Manual crown-to-chin exported frame0, reviewed with numbered 20px guide in qa/head-review panels."
+  },
+  "ko": {
+    "headSpan": 81,
+    "review": "Manual crown-to-chin exported frame0, reviewed with numbered 20px guide in qa/head-review panels."
+  },
+  "celebrate": {
+    "headSpan": 73,
+    "review": "Manual crown-to-chin exported frame0, reviewed with numbered 20px guide in qa/head-review panels."
+  },
+  "airPunch": {
+    "headSpan": 95,
+    "review": "Manual crown-to-chin exported frame0, reviewed with numbered 20px guide in qa/head-review panels."
+  },
+  "airKick": {
+    "headSpan": 100,
+    "review": "Manual crown-to-chin exported frame0, reviewed with numbered 20px guide in qa/head-review panels."
+  },
+  "crouchPunch": {
+    "headSpan": 100,
+    "review": "Manual crown-to-chin exported frame0, reviewed with numbered 20px guide in qa/head-review panels."
+  },
+  "crouchKick": {
+    "headSpan": 101,
+    "review": "Manual crown-to-chin exported frame0, reviewed with numbered 20px guide in qa/head-review panels."
+  },
+  "uppercut": {
+    "headSpan": 85,
+    "review": "Manual crown-to-chin exported frame0, reviewed with numbered 20px guide in qa/head-review panels."
+  },
+  "sweep": {
+    "headSpan": 109,
+    "review": "Manual crown-to-chin exported frame0, reviewed with numbered 20px guide in qa/head-review panels."
+  },
+  "dash": {
+    "headSpan": 105,
+    "review": "Manual crown-to-chin exported frame0, reviewed with numbered 20px guide in qa/head-review panels."
+  },
+  "backwalk": {
+    "headSpan": 71,
+    "review": "Manual crown-to-chin exported frame0, reviewed with numbered 20px guide in qa/head-review panels."
+  },
+  "lowBlock": {
+    "headSpan": 110,
+    "review": "Manual crown-to-chin exported frame0, reviewed with numbered 20px guide in qa/head-review panels."
+  },
+  "turn": {
+    "headSpan": 70,
+    "review": "Manual crown-to-chin exported frame0, reviewed with numbered 20px guide in qa/head-review panels."
+  },
+  "land": {
+    "headSpan": 107,
+    "review": "Manual crown-to-chin exported frame0, reviewed with numbered 20px guide in qa/head-review panels."
+  },
+  "jumpForward": {
+    "headSpan": 93,
+    "review": "Manual crown-to-chin exported frame0, reviewed with numbered 20px guide in qa/head-review panels."
+  },
+  "super": {
+    "headSpan": 94,
+    "review": "Manual crown-to-chin exported frame0, reviewed with numbered 20px guide in qa/head-review panels."
+  }
+}

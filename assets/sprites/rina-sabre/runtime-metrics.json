@@ -1,0 +1,1104 @@
+{
+  "idle": [
+    {
+      "path": "assets/sprites/rina-sabre/curated/idle-frame-0.png",
+      "sourceHeight": 658,
+      "outputHeight": 352,
+      "anchorX": 0.5007295804196745,
+      "anchorY": 0.9583333333333334,
+      "scale": 1,
+      "rowScaleCorrection": 1,
+      "referencePose": 0,
+      "referencePoseHeight": 320
+    },
+    {
+      "path": "assets/sprites/rina-sabre/curated/idle-frame-1.png",
+      "sourceHeight": 671,
+      "outputHeight": 351,
+      "anchorX": 0.500951291605256,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.02266,
+      "rowScaleCorrection": 1,
+      "referencePose": 0,
+      "referencePoseHeight": 320
+    },
+    {
+      "path": "assets/sprites/rina-sabre/curated/idle-frame-2.png",
+      "sourceHeight": 683,
+      "outputHeight": 352,
+      "anchorX": 0.49943089803945084,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.03799,
+      "rowScaleCorrection": 1,
+      "referencePose": 0,
+      "referencePoseHeight": 320
+    },
+    {
+      "path": "assets/sprites/rina-sabre/curated/idle-frame-3.png",
+      "sourceHeight": 658,
+      "outputHeight": 352,
+      "anchorX": 0.4987342623349569,
+      "anchorY": 0.9583333333333334,
+      "scale": 1,
+      "rowScaleCorrection": 1,
+      "referencePose": 0,
+      "referencePoseHeight": 320
+    }
+  ],
+  "punch": [
+    {
+      "path": "assets/sprites/rina-sabre/curated/punch-frame-0.png",
+      "sourceHeight": 633,
+      "outputHeight": 352,
+      "anchorX": 0.5009694863717759,
+      "anchorY": 0.9583333333333334,
+      "scale": 1,
+      "rowScaleCorrection": 1.03949,
+      "referencePose": 0,
+      "referencePoseHeight": 320
+    },
+    {
+      "path": "assets/sprites/rina-sabre/curated/punch-frame-1.png",
+      "sourceHeight": 630,
+      "outputHeight": 352,
+      "anchorX": 0.5011531379614044,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.99526,
+      "rowScaleCorrection": 1.03949,
+      "referencePose": 0,
+      "referencePoseHeight": 320
+    },
+    {
+      "path": "assets/sprites/rina-sabre/curated/punch-frame-2.png",
+      "sourceHeight": 631,
+      "outputHeight": 348,
+      "anchorX": 0.4824860090024887,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0083,
+      "rowScaleCorrection": 1.03949,
+      "referencePose": 0,
+      "referencePoseHeight": 320
+    },
+    {
+      "path": "assets/sprites/rina-sabre/curated/punch-frame-3.png",
+      "sourceHeight": 632,
+      "outputHeight": 352,
+      "anchorX": 0.5008202254839477,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.99842,
+      "rowScaleCorrection": 1.03949,
+      "referencePose": 0,
+      "referencePoseHeight": 320
+    }
+  ],
+  "kick": [
+    {
+      "path": "assets/sprites/rina-sabre/curated/kick-frame-0.png",
+      "sourceHeight": 638,
+      "outputHeight": 351,
+      "anchorX": 0.4996300169872308,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.00285,
+      "rowScaleCorrection": 1.03135,
+      "referencePose": 0,
+      "referencePoseHeight": 320
+    },
+    {
+      "path": "assets/sprites/rina-sabre/curated/kick-frame-1.png",
+      "sourceHeight": 652,
+      "outputHeight": 352,
+      "anchorX": 0.5010120300554104,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.02194,
+      "rowScaleCorrection": 1.03135,
+      "referencePose": 0,
+      "referencePoseHeight": 320
+    },
+    {
+      "path": "assets/sprites/rina-sabre/curated/kick-frame-2.png",
+      "sourceHeight": 634,
+      "outputHeight": 301,
+      "anchorX": 0.35143651081695965,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.1621,
+      "rowScaleCorrection": 1.03135,
+      "referencePose": 0,
+      "referencePoseHeight": 320
+    },
+    {
+      "path": "assets/sprites/rina-sabre/curated/kick-frame-3.png",
+      "sourceHeight": 649,
+      "outputHeight": 352,
+      "anchorX": 0.5006136916339666,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.01724,
+      "rowScaleCorrection": 1.03135,
+      "referencePose": 0,
+      "referencePoseHeight": 320
+    }
+  ],
+  "hurt": [
+    {
+      "path": "assets/sprites/rina-sabre/curated/hurt-frame-0.png",
+      "sourceHeight": 610,
+      "outputHeight": 352,
+      "anchorX": 0.5012954531275131,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.98706,
+      "rowScaleCorrection": 1.06472,
+      "referencePose": 3,
+      "referencePoseHeight": 320
+    },
+    {
+      "path": "assets/sprites/rina-sabre/curated/hurt-frame-1.png",
+      "sourceHeight": 616,
+      "outputHeight": 352,
+      "anchorX": 0.4988970009042881,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.99676,
+      "rowScaleCorrection": 1.06472,
+      "referencePose": 3,
+      "referencePoseHeight": 320
+    },
+    {
+      "path": "assets/sprites/rina-sabre/curated/hurt-frame-2.png",
+      "sourceHeight": 597,
+      "outputHeight": 352,
+      "anchorX": 0.5001919386255679,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.96602,
+      "rowScaleCorrection": 1.06472,
+      "referencePose": 3,
+      "referencePoseHeight": 320
+    },
+    {
+      "path": "assets/sprites/rina-sabre/curated/hurt-frame-3.png",
+      "sourceHeight": 618,
+      "outputHeight": 352,
+      "anchorX": 0.4987391542393919,
+      "anchorY": 0.9583333333333334,
+      "scale": 1,
+      "rowScaleCorrection": 1.06472,
+      "referencePose": 3,
+      "referencePoseHeight": 320
+    }
+  ],
+  "jump": [
+    {
+      "path": "assets/sprites/rina-sabre/curated/jump-frame-0.png",
+      "sourceHeight": 452,
+      "outputHeight": 351,
+      "anchorX": 0.5008757503781557,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.66772,
+      "rowScaleCorrection": 0.96928,
+      "referencePose": 1,
+      "referencePoseHeight": 280
+    },
+    {
+      "path": "assets/sprites/rina-sabre/curated/jump-frame-1.png",
+      "sourceHeight": 594,
+      "outputHeight": 351,
+      "anchorX": 0.4131532912809666,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.87749,
+      "rowScaleCorrection": 0.96928,
+      "referencePose": 1,
+      "referencePoseHeight": 280
+    },
+    {
+      "path": "assets/sprites/rina-sabre/curated/jump-frame-2.png",
+      "sourceHeight": 585,
+      "outputHeight": 352,
+      "anchorX": 0.5012706335269325,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.86174,
+      "rowScaleCorrection": 0.96928,
+      "referencePose": 1,
+      "referencePoseHeight": 280
+    },
+    {
+      "path": "assets/sprites/rina-sabre/curated/jump-frame-3.png",
+      "sourceHeight": 533,
+      "outputHeight": 352,
+      "anchorX": 0.5000533452336758,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.78514,
+      "rowScaleCorrection": 0.96928,
+      "referencePose": 1,
+      "referencePoseHeight": 280
+    }
+  ],
+  "special": [
+    {
+      "path": "assets/sprites/rina-sabre/curated/special-frame-0.png",
+      "sourceHeight": 622,
+      "outputHeight": 352,
+      "anchorX": 0.4990064732866262,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.99203,
+      "rowScaleCorrection": 1.04944,
+      "referencePose": 3,
+      "referencePoseHeight": 320
+    },
+    {
+      "path": "assets/sprites/rina-sabre/curated/special-frame-1.png",
+      "sourceHeight": 616,
+      "outputHeight": 352,
+      "anchorX": 0.5003842439711929,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.98246,
+      "rowScaleCorrection": 1.04944,
+      "referencePose": 3,
+      "referencePoseHeight": 320
+    },
+    {
+      "path": "assets/sprites/rina-sabre/curated/special-frame-2.png",
+      "sourceHeight": 615,
+      "outputHeight": 352,
+      "anchorX": 0.5009361102938042,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.98086,
+      "rowScaleCorrection": 1.04944,
+      "referencePose": 3,
+      "referencePoseHeight": 320
+    },
+    {
+      "path": "assets/sprites/rina-sabre/curated/special-frame-3.png",
+      "sourceHeight": 627,
+      "outputHeight": 352,
+      "anchorX": 0.4996154317649943,
+      "anchorY": 0.9583333333333334,
+      "scale": 1,
+      "rowScaleCorrection": 1.04944,
+      "referencePose": 3,
+      "referencePoseHeight": 320
+    }
+  ],
+  "walk": [
+    {
+      "path": "assets/sprites/rina-sabre/curated/walk-frame-0.png",
+      "sourceHeight": 546,
+      "outputHeight": 351,
+      "anchorX": 0.499963823471613,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.00285,
+      "rowScaleCorrection": 1.20513,
+      "referencePose": 0,
+      "referencePoseHeight": 320
+    },
+    {
+      "path": "assets/sprites/rina-sabre/curated/walk-frame-1.png",
+      "sourceHeight": 546,
+      "outputHeight": 352,
+      "anchorX": 0.49984703942979375,
+      "anchorY": 0.9583333333333334,
+      "scale": 1,
+      "rowScaleCorrection": 1.20513,
+      "referencePose": 0,
+      "referencePoseHeight": 320
+    },
+    {
+      "path": "assets/sprites/rina-sabre/curated/walk-frame-2.png",
+      "sourceHeight": 544,
+      "outputHeight": 352,
+      "anchorX": 0.5001102890897621,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.99634,
+      "rowScaleCorrection": 1.20513,
+      "referencePose": 0,
+      "referencePoseHeight": 320
+    },
+    {
+      "path": "assets/sprites/rina-sabre/curated/walk-frame-3.png",
+      "sourceHeight": 546,
+      "outputHeight": 352,
+      "anchorX": 0.49928202162881,
+      "anchorY": 0.9583333333333334,
+      "scale": 1,
+      "rowScaleCorrection": 1.20513,
+      "referencePose": 0,
+      "referencePoseHeight": 320
+    },
+    {
+      "path": "assets/sprites/rina-sabre/curated/walk-frame-4.png",
+      "sourceHeight": 550,
+      "outputHeight": 352,
+      "anchorX": 0.49999469177850914,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.00733,
+      "rowScaleCorrection": 1.20513,
+      "referencePose": 0,
+      "referencePoseHeight": 320
+    },
+    {
+      "path": "assets/sprites/rina-sabre/curated/walk-frame-5.png",
+      "sourceHeight": 546,
+      "outputHeight": 351,
+      "anchorX": 0.4993920079265865,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.00285,
+      "rowScaleCorrection": 1.20513,
+      "referencePose": 0,
+      "referencePoseHeight": 320
+    }
+  ],
+  "block": [
+    {
+      "path": "assets/sprites/rina-sabre/curated/block-frame-0.png",
+      "sourceHeight": 658,
+      "outputHeight": 352,
+      "anchorX": 0.4987854620850771,
+      "anchorY": 0.9583333333333334,
+      "scale": 1,
+      "rowScaleCorrection": 1,
+      "referencePose": 0,
+      "referencePoseHeight": 320
+    },
+    {
+      "path": "assets/sprites/rina-sabre/curated/block-frame-1.png",
+      "sourceHeight": 647,
+      "outputHeight": 352,
+      "anchorX": 0.49980630528214637,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.98328,
+      "rowScaleCorrection": 1,
+      "referencePose": 0,
+      "referencePoseHeight": 320
+    },
+    {
+      "path": "assets/sprites/rina-sabre/curated/block-frame-2.png",
+      "sourceHeight": 617,
+      "outputHeight": 352,
+      "anchorX": 0.49882535423864666,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.93769,
+      "rowScaleCorrection": 1,
+      "referencePose": 0,
+      "referencePoseHeight": 320
+    },
+    {
+      "path": "assets/sprites/rina-sabre/curated/block-frame-3.png",
+      "sourceHeight": 634,
+      "outputHeight": 352,
+      "anchorX": 0.4998963898015332,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.96353,
+      "rowScaleCorrection": 1,
+      "referencePose": 0,
+      "referencePoseHeight": 320
+    }
+  ],
+  "crouch": [
+    {
+      "path": "assets/sprites/rina-sabre/curated/crouch-frame-0.png",
+      "sourceHeight": 667,
+      "outputHeight": 352,
+      "anchorX": 0.4994874858683427,
+      "anchorY": 0.9583333333333334,
+      "scale": 1,
+      "rowScaleCorrection": 0.98651,
+      "referencePose": 0,
+      "referencePoseHeight": 320
+    },
+    {
+      "path": "assets/sprites/rina-sabre/curated/crouch-frame-1.png",
+      "sourceHeight": 578,
+      "outputHeight": 352,
+      "anchorX": 0.49944629944044044,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.86657,
+      "rowScaleCorrection": 0.98651,
+      "referencePose": 0,
+      "referencePoseHeight": 320
+    },
+    {
+      "path": "assets/sprites/rina-sabre/curated/crouch-frame-2.png",
+      "sourceHeight": 476,
+      "outputHeight": 352,
+      "anchorX": 0.5006061057471445,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.71364,
+      "rowScaleCorrection": 0.98651,
+      "referencePose": 0,
+      "referencePoseHeight": 320
+    },
+    {
+      "path": "assets/sprites/rina-sabre/curated/crouch-frame-3.png",
+      "sourceHeight": 495,
+      "outputHeight": 352,
+      "anchorX": 0.4994564976360029,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.74213,
+      "rowScaleCorrection": 0.98651,
+      "referencePose": 0,
+      "referencePoseHeight": 320
+    }
+  ],
+  "ko": [
+    {
+      "path": "assets/sprites/rina-sabre/curated/ko-frame-0.png",
+      "sourceHeight": 493,
+      "outputHeight": 340,
+      "anchorX": 0.5466415142891348,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.98676,
+      "rowScaleCorrection": 1.27212,
+      "referencePose": 0,
+      "referencePoseHeight": 305
+    },
+    {
+      "path": "assets/sprites/rina-sabre/curated/ko-frame-1.png",
+      "sourceHeight": 433,
+      "outputHeight": 352,
+      "anchorX": 0.4989103119157545,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.83713,
+      "rowScaleCorrection": 1.27212,
+      "referencePose": 0,
+      "referencePoseHeight": 305
+    },
+    {
+      "path": "assets/sprites/rina-sabre/curated/ko-frame-2.png",
+      "sourceHeight": 333,
+      "outputHeight": 212,
+      "anchorX": 0.4987729057217189,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.06894,
+      "rowScaleCorrection": 1.27212,
+      "referencePose": 0,
+      "referencePoseHeight": 305
+    },
+    {
+      "path": "assets/sprites/rina-sabre/curated/ko-frame-3.png",
+      "sourceHeight": 178,
+      "outputHeight": 104,
+      "anchorX": 0.49879511109537195,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.16475,
+      "rowScaleCorrection": 1.27212,
+      "referencePose": 0,
+      "referencePoseHeight": 305
+    }
+  ],
+  "celebrate": [
+    {
+      "path": "assets/sprites/rina-sabre/curated/celebrate-frame-0.png",
+      "sourceHeight": 626,
+      "outputHeight": 352,
+      "anchorX": 0.5010901809590284,
+      "anchorY": 0.9583333333333334,
+      "scale": 1,
+      "rowScaleCorrection": 1.05112,
+      "referencePose": 0,
+      "referencePoseHeight": 320
+    },
+    {
+      "path": "assets/sprites/rina-sabre/curated/celebrate-frame-1.png",
+      "sourceHeight": 658,
+      "outputHeight": 352,
+      "anchorX": 0.4996381307665823,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.05112,
+      "rowScaleCorrection": 1.05112,
+      "referencePose": 0,
+      "referencePoseHeight": 320
+    },
+    {
+      "path": "assets/sprites/rina-sabre/curated/celebrate-frame-2.png",
+      "sourceHeight": 703,
+      "outputHeight": 352,
+      "anchorX": 0.499387437755675,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.123,
+      "rowScaleCorrection": 1.05112,
+      "referencePose": 0,
+      "referencePoseHeight": 320
+    },
+    {
+      "path": "assets/sprites/rina-sabre/curated/celebrate-frame-3.png",
+      "sourceHeight": 702,
+      "outputHeight": 352,
+      "anchorX": 0.4991977618833577,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.12141,
+      "rowScaleCorrection": 1.05112,
+      "referencePose": 0,
+      "referencePoseHeight": 320
+    }
+  ],
+  "airPunch": [
+    {
+      "path": "assets/sprites/rina-sabre/curated/airPunch-frame-0.png",
+      "sourceHeight": 587,
+      "outputHeight": 352,
+      "anchorX": 0.4607972291537788,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.82812,
+      "rowScaleCorrection": 0.92829,
+      "referencePose": 0,
+      "referencePoseHeight": 265
+    },
+    {
+      "path": "assets/sprites/rina-sabre/curated/airPunch-frame-1.png",
+      "sourceHeight": 601,
+      "outputHeight": 352,
+      "anchorX": 0.36456583442424173,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.84788,
+      "rowScaleCorrection": 0.92829,
+      "referencePose": 0,
+      "referencePoseHeight": 265
+    },
+    {
+      "path": "assets/sprites/rina-sabre/curated/airPunch-frame-2.png",
+      "sourceHeight": 601,
+      "outputHeight": 337,
+      "anchorX": 0.23797710920851123,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.88562,
+      "rowScaleCorrection": 0.92829,
+      "referencePose": 0,
+      "referencePoseHeight": 265
+    },
+    {
+      "path": "assets/sprites/rina-sabre/curated/airPunch-frame-3.png",
+      "sourceHeight": 589,
+      "outputHeight": 351,
+      "anchorX": 0.49933247719471857,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.83331,
+      "rowScaleCorrection": 0.92829,
+      "referencePose": 0,
+      "referencePoseHeight": 265
+    }
+  ],
+  "airKick": [
+    {
+      "path": "assets/sprites/rina-sabre/curated/airKick-frame-0.png",
+      "sourceHeight": 509,
+      "outputHeight": 352,
+      "anchorX": 0.4942811024459924,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.82812,
+      "rowScaleCorrection": 1.07054,
+      "referencePose": 0,
+      "referencePoseHeight": 265
+    },
+    {
+      "path": "assets/sprites/rina-sabre/curated/airKick-frame-1.png",
+      "sourceHeight": 530,
+      "outputHeight": 313,
+      "anchorX": 0.44181255828630234,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.96973,
+      "rowScaleCorrection": 1.07054,
+      "referencePose": 0,
+      "referencePoseHeight": 265
+    },
+    {
+      "path": "assets/sprites/rina-sabre/curated/airKick-frame-2.png",
+      "sourceHeight": 507,
+      "outputHeight": 232,
+      "anchorX": 0.38296942133663414,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.25153,
+      "rowScaleCorrection": 1.07054,
+      "referencePose": 0,
+      "referencePoseHeight": 265
+    },
+    {
+      "path": "assets/sprites/rina-sabre/curated/airKick-frame-3.png",
+      "sourceHeight": 600,
+      "outputHeight": 352,
+      "anchorX": 0.4996279805603872,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.97618,
+      "rowScaleCorrection": 1.07054,
+      "referencePose": 0,
+      "referencePoseHeight": 265
+    }
+  ],
+  "crouchPunch": [
+    {
+      "path": "assets/sprites/rina-sabre/curated/crouchPunch-frame-0.png",
+      "sourceHeight": 522,
+      "outputHeight": 351,
+      "anchorX": 0.5006532947102318,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.7208,
+      "rowScaleCorrection": 0.90601,
+      "referencePose": 0,
+      "referencePoseHeight": 230
+    },
+    {
+      "path": "assets/sprites/rina-sabre/curated/crouchPunch-frame-1.png",
+      "sourceHeight": 521,
+      "outputHeight": 347,
+      "anchorX": 0.5001202029382409,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.72771,
+      "rowScaleCorrection": 0.90601,
+      "referencePose": 0,
+      "referencePoseHeight": 230
+    },
+    {
+      "path": "assets/sprites/rina-sabre/curated/crouchPunch-frame-2.png",
+      "sourceHeight": 514,
+      "outputHeight": 296,
+      "anchorX": 0.5009643032019339,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.84163,
+      "rowScaleCorrection": 0.90601,
+      "referencePose": 0,
+      "referencePoseHeight": 230
+    },
+    {
+      "path": "assets/sprites/rina-sabre/curated/crouchPunch-frame-3.png",
+      "sourceHeight": 517,
+      "outputHeight": 351,
+      "anchorX": 0.5000202373549516,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.71389,
+      "rowScaleCorrection": 0.90601,
+      "referencePose": 0,
+      "referencePoseHeight": 230
+    }
+  ],
+  "crouchKick": [
+    {
+      "path": "assets/sprites/rina-sabre/curated/crouchKick-frame-0.png",
+      "sourceHeight": 479,
+      "outputHeight": 351,
+      "anchorX": 0.49909107021359467,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.7208,
+      "rowScaleCorrection": 0.98734,
+      "referencePose": 0,
+      "referencePoseHeight": 230
+    },
+    {
+      "path": "assets/sprites/rina-sabre/curated/crouchKick-frame-1.png",
+      "sourceHeight": 509,
+      "outputHeight": 351,
+      "anchorX": 0.49936239405824306,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.76594,
+      "rowScaleCorrection": 0.98734,
+      "referencePose": 0,
+      "referencePoseHeight": 230
+    },
+    {
+      "path": "assets/sprites/rina-sabre/curated/crouchKick-frame-2.png",
+      "sourceHeight": 459,
+      "outputHeight": 227,
+      "anchorX": 0.5011779038906264,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.068,
+      "rowScaleCorrection": 0.98734,
+      "referencePose": 0,
+      "referencePoseHeight": 230
+    },
+    {
+      "path": "assets/sprites/rina-sabre/curated/crouchKick-frame-3.png",
+      "sourceHeight": 482,
+      "outputHeight": 351,
+      "anchorX": 0.4996774849816013,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.72531,
+      "rowScaleCorrection": 0.98734,
+      "referencePose": 0,
+      "referencePoseHeight": 230
+    }
+  ],
+  "uppercut": [
+    {
+      "path": "assets/sprites/rina-sabre/curated/uppercut-frame-0.png",
+      "sourceHeight": 495,
+      "outputHeight": 351,
+      "anchorX": 0.5010898950607076,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.92787,
+      "rowScaleCorrection": 1.22991,
+      "referencePose": 3,
+      "referencePoseHeight": 320
+    },
+    {
+      "path": "assets/sprites/rina-sabre/curated/uppercut-frame-1.png",
+      "sourceHeight": 540,
+      "outputHeight": 352,
+      "anchorX": 0.49976267655577494,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.00935,
+      "rowScaleCorrection": 1.22991,
+      "referencePose": 3,
+      "referencePoseHeight": 320
+    },
+    {
+      "path": "assets/sprites/rina-sabre/curated/uppercut-frame-2.png",
+      "sourceHeight": 701,
+      "outputHeight": 352,
+      "anchorX": 0.5007812200375849,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.31028,
+      "rowScaleCorrection": 1.22991,
+      "referencePose": 3,
+      "referencePoseHeight": 320
+    },
+    {
+      "path": "assets/sprites/rina-sabre/curated/uppercut-frame-3.png",
+      "sourceHeight": 535,
+      "outputHeight": 352,
+      "anchorX": 0.49966383735552194,
+      "anchorY": 0.9583333333333334,
+      "scale": 1,
+      "rowScaleCorrection": 1.22991,
+      "referencePose": 3,
+      "referencePoseHeight": 320
+    }
+  ],
+  "sweep": [
+    {
+      "path": "assets/sprites/rina-sabre/curated/sweep-frame-0.png",
+      "sourceHeight": 461,
+      "outputHeight": 352,
+      "anchorX": 0.4996236746869549,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.71875,
+      "rowScaleCorrection": 1.02589,
+      "referencePose": 0,
+      "referencePoseHeight": 230
+    },
+    {
+      "path": "assets/sprites/rina-sabre/curated/sweep-frame-1.png",
+      "sourceHeight": 452,
+      "outputHeight": 249,
+      "anchorX": 0.5856567281864098,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.99623,
+      "rowScaleCorrection": 1.02589,
+      "referencePose": 0,
+      "referencePoseHeight": 230
+    },
+    {
+      "path": "assets/sprites/rina-sabre/curated/sweep-frame-2.png",
+      "sourceHeight": 421,
+      "outputHeight": 190,
+      "anchorX": 0.4788302855991548,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.21604,
+      "rowScaleCorrection": 1.02589,
+      "referencePose": 0,
+      "referencePoseHeight": 230
+    },
+    {
+      "path": "assets/sprites/rina-sabre/curated/sweep-frame-3.png",
+      "sourceHeight": 459,
+      "outputHeight": 352,
+      "anchorX": 0.5010206846496175,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.71563,
+      "rowScaleCorrection": 1.02589,
+      "referencePose": 0,
+      "referencePoseHeight": 230
+    }
+  ],
+  "dash": [
+    {
+      "path": "assets/sprites/rina-sabre/curated/dash-frame-0.png",
+      "sourceHeight": 528,
+      "outputHeight": 351,
+      "anchorX": 0.49970810237189917,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.94017,
+      "rowScaleCorrection": 1.16832,
+      "referencePose": 0,
+      "referencePoseHeight": 300
+    },
+    {
+      "path": "assets/sprites/rina-sabre/curated/dash-frame-1.png",
+      "sourceHeight": 526,
+      "outputHeight": 336,
+      "anchorX": 0.5312283376737575,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.97842,
+      "rowScaleCorrection": 1.16832,
+      "referencePose": 0,
+      "referencePoseHeight": 300
+    },
+    {
+      "path": "assets/sprites/rina-sabre/curated/dash-frame-2.png",
+      "sourceHeight": 501,
+      "outputHeight": 340,
+      "anchorX": 0.5002009799756224,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.92096,
+      "rowScaleCorrection": 1.16832,
+      "referencePose": 0,
+      "referencePoseHeight": 300
+    },
+    {
+      "path": "assets/sprites/rina-sabre/curated/dash-frame-3.png",
+      "sourceHeight": 531,
+      "outputHeight": 352,
+      "anchorX": 0.5000067021542837,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.94283,
+      "rowScaleCorrection": 1.16832,
+      "referencePose": 0,
+      "referencePoseHeight": 300
+    }
+  ],
+  "backwalk": [
+    {
+      "path": "assets/sprites/rina-sabre/curated/backwalk-frame-0.png",
+      "sourceHeight": 500,
+      "outputHeight": 352,
+      "anchorX": 0.49962294168223415,
+      "anchorY": 0.9583333333333334,
+      "scale": 1,
+      "rowScaleCorrection": 1.316,
+      "referencePose": 0,
+      "referencePoseHeight": 320
+    },
+    {
+      "path": "assets/sprites/rina-sabre/curated/backwalk-frame-1.png",
+      "sourceHeight": 501,
+      "outputHeight": 351,
+      "anchorX": 0.5010270876378787,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.00485,
+      "rowScaleCorrection": 1.316,
+      "referencePose": 0,
+      "referencePoseHeight": 320
+    },
+    {
+      "path": "assets/sprites/rina-sabre/curated/backwalk-frame-2.png",
+      "sourceHeight": 501,
+      "outputHeight": 352,
+      "anchorX": 0.5008990685910212,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.002,
+      "rowScaleCorrection": 1.316,
+      "referencePose": 0,
+      "referencePoseHeight": 320
+    },
+    {
+      "path": "assets/sprites/rina-sabre/curated/backwalk-frame-3.png",
+      "sourceHeight": 500,
+      "outputHeight": 352,
+      "anchorX": 0.5013009214108757,
+      "anchorY": 0.9583333333333334,
+      "scale": 1,
+      "rowScaleCorrection": 1.316,
+      "referencePose": 0,
+      "referencePoseHeight": 320
+    },
+    {
+      "path": "assets/sprites/rina-sabre/curated/backwalk-frame-4.png",
+      "sourceHeight": 500,
+      "outputHeight": 352,
+      "anchorX": 0.5008474576513938,
+      "anchorY": 0.9583333333333334,
+      "scale": 1,
+      "rowScaleCorrection": 1.316,
+      "referencePose": 0,
+      "referencePoseHeight": 320
+    },
+    {
+      "path": "assets/sprites/rina-sabre/curated/backwalk-frame-5.png",
+      "sourceHeight": 501,
+      "outputHeight": 352,
+      "anchorX": 0.500940406585843,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.002,
+      "rowScaleCorrection": 1.316,
+      "referencePose": 0,
+      "referencePoseHeight": 320
+    }
+  ],
+  "lowBlock": [
+    {
+      "path": "assets/sprites/rina-sabre/curated/lowBlock-frame-0.png",
+      "sourceHeight": 573,
+      "outputHeight": 352,
+      "anchorX": 0.4987196314202242,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.71875,
+      "rowScaleCorrection": 0.82537,
+      "referencePose": 0,
+      "referencePoseHeight": 230
+    },
+    {
+      "path": "assets/sprites/rina-sabre/curated/lowBlock-frame-1.png",
+      "sourceHeight": 581,
+      "outputHeight": 352,
+      "anchorX": 0.4990696498517267,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.72878,
+      "rowScaleCorrection": 0.82537,
+      "referencePose": 0,
+      "referencePoseHeight": 230
+    },
+    {
+      "path": "assets/sprites/rina-sabre/curated/lowBlock-frame-2.png",
+      "sourceHeight": 546,
+      "outputHeight": 352,
+      "anchorX": 0.501030474509263,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.68488,
+      "rowScaleCorrection": 0.82537,
+      "referencePose": 0,
+      "referencePoseHeight": 230
+    },
+    {
+      "path": "assets/sprites/rina-sabre/curated/lowBlock-frame-3.png",
+      "sourceHeight": 546,
+      "outputHeight": 352,
+      "anchorX": 0.4999167214362142,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.68488,
+      "rowScaleCorrection": 0.82537,
+      "referencePose": 0,
+      "referencePoseHeight": 230
+    }
+  ],
+  "turn": [
+    {
+      "path": "assets/sprites/rina-sabre/curated/turn-frame-0.png",
+      "sourceHeight": 700,
+      "outputHeight": 351,
+      "anchorX": 0.49993213613146126,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.00285,
+      "rowScaleCorrection": 0.94,
+      "referencePose": 0,
+      "referencePoseHeight": 320
+    },
+    {
+      "path": "assets/sprites/rina-sabre/curated/turn-frame-1.png",
+      "sourceHeight": 708,
+      "outputHeight": 352,
+      "anchorX": 0.5003314139456844,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.01143,
+      "rowScaleCorrection": 0.94,
+      "referencePose": 0,
+      "referencePoseHeight": 320
+    },
+    {
+      "path": "assets/sprites/rina-sabre/curated/turn-frame-2.png",
+      "sourceHeight": 715,
+      "outputHeight": 352,
+      "anchorX": 0.5003681327153335,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.02143,
+      "rowScaleCorrection": 0.94,
+      "referencePose": 0,
+      "referencePoseHeight": 320
+    },
+    {
+      "path": "assets/sprites/rina-sabre/curated/turn-frame-3.png",
+      "sourceHeight": 705,
+      "outputHeight": 352,
+      "anchorX": 0.4990559903397165,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.00714,
+      "rowScaleCorrection": 0.94,
+      "referencePose": 0,
+      "referencePoseHeight": 320
+    }
+  ],
+  "land": [
+    {
+      "path": "assets/sprites/rina-sabre/curated/land-frame-0.png",
+      "sourceHeight": 503,
+      "outputHeight": 352,
+      "anchorX": 0.4992955045330085,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.7227,
+      "rowScaleCorrection": 0.9454,
+      "referencePose": 3,
+      "referencePoseHeight": 320
+    },
+    {
+      "path": "assets/sprites/rina-sabre/curated/land-frame-1.png",
+      "sourceHeight": 612,
+      "outputHeight": 352,
+      "anchorX": 0.5007370538582129,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.87931,
+      "rowScaleCorrection": 0.9454,
+      "referencePose": 3,
+      "referencePoseHeight": 320
+    },
+    {
+      "path": "assets/sprites/rina-sabre/curated/land-frame-2.png",
+      "sourceHeight": 692,
+      "outputHeight": 352,
+      "anchorX": 0.49897466258755885,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.99425,
+      "rowScaleCorrection": 0.9454,
+      "referencePose": 3,
+      "referencePoseHeight": 320
+    },
+    {
+      "path": "assets/sprites/rina-sabre/curated/land-frame-3.png",
+      "sourceHeight": 696,
+      "outputHeight": 352,
+      "anchorX": 0.5005756869163083,
+      "anchorY": 0.9583333333333334,
+      "scale": 1,
+      "rowScaleCorrection": 0.9454,
+      "referencePose": 3,
+      "referencePoseHeight": 320
+    }
+  ],
+  "jumpForward": [
+    {
+      "path": "assets/sprites/rina-sabre/curated/jumpForward-frame-0.png",
+      "sourceHeight": 515,
+      "outputHeight": 352,
+      "anchorX": 0.4999758098143783,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.69973,
+      "rowScaleCorrection": 0.89402,
+      "referencePose": 1,
+      "referencePoseHeight": 280
+    },
+    {
+      "path": "assets/sprites/rina-sabre/curated/jumpForward-frame-1.png",
+      "sourceHeight": 644,
+      "outputHeight": 352,
+      "anchorX": 0.34588454668365626,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.875,
+      "rowScaleCorrection": 0.89402,
+      "referencePose": 1,
+      "referencePoseHeight": 280
+    },
+    {
+      "path": "assets/sprites/rina-sabre/curated/jumpForward-frame-2.png",
+      "sourceHeight": 499,
+      "outputHeight": 352,
+      "anchorX": 0.5011601050136886,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.67799,
+      "rowScaleCorrection": 0.89402,
+      "referencePose": 1,
+      "referencePoseHeight": 280
+    },
+    {
+      "path": "assets/sprites/rina-sabre/curated/jumpForward-frame-3.png",
+      "sourceHeight": 656,
+      "outputHeight": 352,
+      "anchorX": 0.5467861371542371,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.8913,
+      "rowScaleCorrection": 0.89402,
+      "referencePose": 1,
+      "referencePoseHeight": 280
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "version": 1,
+  "kind": "sprite-gen-request",
+  "engine": "component-row",
+  "character": {
+    "id": "pedestrian",
+    "description": "",
+    "base_image": "base-source.png"
+  },
+  "cell": {
+    "shape": "square",
+    "width": 384,
+    "height": 384,
+    "safe_margin_x": 16,
+    "safe_margin_y": 16,
+    "size": 384,
+    "safe_margin": 16
+  },
+  "chroma_key": {
+    "name": "cyan",
+    "hex": "#00FFFF",
+    "rgb": [
+      0,
+      255,
+      255
+    ],
+    "selection": "auto",
+    "score": 250.33,
+    "min_subject_distance": 241.66,
+    "background": {
+      "mode": "transparent",
+      "opaque_border_fraction": 0.0,
+      "subject_pixels": 9758
+    },
+    "candidates": [
+      {
+        "name": "magenta",
+        "hex": "#FF00FF",
+        "score": 217.74,
+        "min_subject_distance": 214.39,
+        "clears_erase_radius": true
+      },
+      {
+        "name": "green",
+        "hex": "#00FF00",
+        "score": 207.83,
+        "min_subject_distance": 205.4,
+        "clears_erase_radius": true
+      },
+      {
+        "name": "cyan",
+        "hex": "#00FFFF",
+        "score": 250.33,
+        "min_subject_distance": 241.66,
+        "clears_erase_radius": true
+      },
+      {
+        "name": "blue",
+        "hex": "#004DFF",
+        "score": 222.55,
+        "min_subject_distance": 212.4,
+        "clears_erase_radius": true
+      }
+    ],
+    "selection_reason": "highest 1st-percentile subject distance among the 4 candidate(s) clearing the 96 erase radius"
+  },
+  "states": {
+    "motion": {
+      "frames": 4,
+      "fps": 3,
+      "loop": true,
+      "action": "Walking to the RIGHT four poses:1 left foot forward right arm forward;2 passing step;3 right foot forward left arm forward;4 passing opposite step. Same sideview camera, no turning/back-facing. Full shoes visible. No horizontal translation inside frames. EXACTLY4 separate FULL-body silhouettes in one horizontal row with at least80px pure background corridors between silhouettes; no overlapping panels. Preserve original head/torso/limb dimensions independently of raised arms or seated posture."
+    }
+  },
+  "style": "Detailed hand-painted arcade pixel illustration, clean dark outlines, natural adult anatomy and small realistic head, muted night colors and amber rim light. Reference continuity same face, exact body proportions and costume in every frame; no geometric placeholder people.",
+  "layout": "taxonomy/v1",
+  "fit": {
+    "pixel_unfake": false,
+    "resample": "kcentroid",
+    "align_x": "bbox-center",
+    "align_y": "bottom",
+    "ground_frames": true
+  },
+  "chroma": {
+    "mode": "rgb",
+    "unmix_reach": 4,
+    "spill_max_fraction": 0.005
+  }
+}

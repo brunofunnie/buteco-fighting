@@ -1,0 +1,17 @@
+node_modules/
+.venv/
+*.log
+
+# Regenerable test output; retain the directories for test harnesses.
+artifacts/*
+!artifacts/.gitkeep
+harness/artifacts/*
+!harness/artifacts/.gitkeep
+
+# Local production history. Published sprites, sources and metadata are tracked.
+assets/sprites/*/generation/
+assets/sprites/_generation/
+assets/generated/
+**/__pycache__/
+*.pyc
+.DS_Store

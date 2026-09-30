@@ -1,0 +1,746 @@
+{
+  "idle": {
+    "frames": [
+      {
+        "path": "assets/sprites/maya-b/curated/idle-frame-0.png",
+        "scale": 1,
+        "anchorX": 0.5236760188399993,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/maya-b/curated/idle-frame-1.png",
+        "scale": 1.004392,
+        "anchorX": 0.522340743137583,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/maya-b/curated/idle-frame-2.png",
+        "scale": 0.953148,
+        "anchorX": 0.5257960700043113,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/maya-b/curated/idle-frame-3.png",
+        "scale": 1,
+        "anchorX": 0.5257508424947688,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 6,
+    "loop": true
+  },
+  "punch": {
+    "frames": [
+      {
+        "path": "assets/sprites/maya-b/curated/punch-frame-0.png",
+        "scale": 1,
+        "anchorX": 0.5196583114686294,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/maya-b/curated/punch-frame-1.png",
+        "scale": 0.992378,
+        "anchorX": 0.5194835232011495,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/maya-b/curated/punch-frame-2.png",
+        "scale": 0.989329,
+        "anchorX": 0.443473665206858,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/maya-b/curated/punch-frame-3.png",
+        "scale": 1,
+        "anchorX": 0.5186925567172338,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  },
+  "kick": {
+    "frames": [
+      {
+        "path": "assets/sprites/maya-b/curated/kick-frame-0.png",
+        "scale": 0.969697,
+        "anchorX": 0.5139601018826607,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/maya-b/curated/kick-frame-1.png",
+        "scale": 0.980205,
+        "anchorX": 0.4641443879048242,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/maya-b/curated/kick-frame-2.png",
+        "scale": 1.011425,
+        "anchorX": 0.26751638170140984,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/maya-b/curated/kick-frame-3.png",
+        "scale": 0.984708,
+        "anchorX": 0.37836391796233954,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 10,
+    "loop": false
+  },
+  "hurt": {
+    "frames": [
+      {
+        "path": "assets/sprites/maya-b/curated/hurt-frame-0.png",
+        "scale": 0.984615,
+        "anchorX": 0.536719069268492,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/maya-b/curated/hurt-frame-1.png",
+        "scale": 1.005597,
+        "anchorX": 0.5912048725611432,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/maya-b/curated/hurt-frame-2.png",
+        "scale": 0.993566,
+        "anchorX": 0.5108176819997069,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/maya-b/curated/hurt-frame-3.png",
+        "scale": 1.018928,
+        "anchorX": 0.508183422886119,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 10,
+    "loop": false
+  },
+  "jump": {
+    "frames": [
+      {
+        "path": "assets/sprites/maya-b/curated/jump-frame-0.png",
+        "scale": 0.727273,
+        "anchorX": 0.47707556643464205,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/maya-b/curated/jump-frame-1.png",
+        "scale": 0.839161,
+        "anchorX": 0.4246631973098558,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/maya-b/curated/jump-frame-2.png",
+        "scale": 0.712621,
+        "anchorX": 0.4286341592036457,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/maya-b/curated/jump-frame-3.png",
+        "scale": 0.807193,
+        "anchorX": 0.4792509599755548,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 8,
+    "loop": false
+  },
+  "special": {
+    "frames": [
+      {
+        "path": "assets/sprites/maya-b/curated/special-frame-0.png",
+        "scale": 0.984615,
+        "anchorX": 0.5173974970247956,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/maya-b/curated/special-frame-1.png",
+        "scale": 0.984615,
+        "anchorX": 0.5124712579487918,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/maya-b/curated/special-frame-2.png",
+        "scale": 0.983135,
+        "anchorX": 0.45148163526877805,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/maya-b/curated/special-frame-3.png",
+        "scale": 0.984615,
+        "anchorX": 0.5169544869211297,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 10,
+    "loop": false
+  },
+  "walk": {
+    "frames": [
+      {
+        "path": "assets/sprites/maya-b/curated/walk-frame-0.png",
+        "scale": 0.955224,
+        "anchorX": 0.5046808962697538,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/maya-b/curated/walk-frame-1.png",
+        "scale": 0.956837,
+        "anchorX": 0.4812256959587149,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/maya-b/curated/walk-frame-2.png",
+        "scale": 0.956837,
+        "anchorX": 0.4920488702321724,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/maya-b/curated/walk-frame-3.png",
+        "scale": 0.955224,
+        "anchorX": 0.5030994326111228,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/maya-b/curated/walk-frame-4.png",
+        "scale": 0.955224,
+        "anchorX": 0.48920481177225184,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/maya-b/curated/walk-frame-5.png",
+        "scale": 0.955224,
+        "anchorX": 0.5097805320977858,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": true
+  },
+  "block": {
+    "frames": [
+      {
+        "path": "assets/sprites/maya-b/curated/block-frame-0.png",
+        "scale": 0.927536,
+        "anchorX": 0.5152690424470445,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/maya-b/curated/block-frame-1.png",
+        "scale": 0.909566,
+        "anchorX": 0.518672444787004,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/maya-b/curated/block-frame-2.png",
+        "scale": 0.908184,
+        "anchorX": 0.5175252550310417,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/maya-b/curated/block-frame-3.png",
+        "scale": 0.88192,
+        "anchorX": 0.5176140906667959,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 8,
+    "loop": false
+  },
+  "crouch": {
+    "frames": [
+      {
+        "path": "assets/sprites/maya-b/curated/crouch-frame-0.png",
+        "scale": 0.864865,
+        "anchorX": 0.5015907196152365,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/maya-b/curated/crouch-frame-1.png",
+        "scale": 0.796856,
+        "anchorX": 0.5040512692373829,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/maya-b/curated/crouch-frame-2.png",
+        "scale": 0.692918,
+        "anchorX": 0.5030594429387515,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/maya-b/curated/crouch-frame-3.png",
+        "scale": 0.724998,
+        "anchorX": 0.5051656007270104,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 8,
+    "loop": false
+  },
+  "ko": {
+    "frames": [
+      {
+        "path": "assets/sprites/maya-b/curated/ko-frame-0.png",
+        "scale": 0.901408,
+        "anchorX": 0.5617867740195158,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/maya-b/curated/ko-frame-1.png",
+        "scale": 0.747052,
+        "anchorX": 0.36350295362786106,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/maya-b/curated/ko-frame-2.png",
+        "scale": 0.995168,
+        "anchorX": 0.5041176400158438,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/maya-b/curated/ko-frame-3.png",
+        "scale": 0.903684,
+        "anchorX": 0.5418099278083394,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 8,
+    "loop": false
+  },
+  "celebrate": {
+    "frames": [
+      {
+        "path": "assets/sprites/maya-b/curated/celebrate-frame-0.png",
+        "scale": 1,
+        "anchorX": 0.5224058018333485,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/maya-b/curated/celebrate-frame-1.png",
+        "scale": 1.038217,
+        "anchorX": 0.5210879486386139,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/maya-b/curated/celebrate-frame-2.png",
+        "scale": 1.106688,
+        "anchorX": 0.5149134884669665,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/maya-b/curated/celebrate-frame-3.png",
+        "scale": 1.109873,
+        "anchorX": 0.5120914576768207,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 6,
+    "loop": false
+  },
+  "airPunch": {
+    "frames": [
+      {
+        "path": "assets/sprites/maya-b/curated/airPunch-frame-0.png",
+        "scale": 0.8,
+        "anchorX": 0.3865451820411887,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/maya-b/curated/airPunch-frame-1.png",
+        "scale": 0.851565,
+        "anchorX": 0.204987329060884,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/maya-b/curated/airPunch-frame-2.png",
+        "scale": 0.942591,
+        "anchorX": 0.2873413432398126,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/maya-b/curated/airPunch-frame-3.png",
+        "scale": 0.869245,
+        "anchorX": 0.46766460387720504,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  },
+  "airKick": {
+    "frames": [
+      {
+        "path": "assets/sprites/maya-b/curated/airKick-frame-0.png",
+        "scale": 0.744186,
+        "anchorX": 0.43261240533538325,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/maya-b/curated/airKick-frame-1.png",
+        "scale": 0.698145,
+        "anchorX": 0.4200300514331619,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/maya-b/curated/airKick-frame-2.png",
+        "scale": 0.928535,
+        "anchorX": 0.3303906383183635,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/maya-b/curated/airKick-frame-3.png",
+        "scale": 0.67454,
+        "anchorX": 0.5068356639070992,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  },
+  "crouchPunch": {
+    "frames": [
+      {
+        "path": "assets/sprites/maya-b/curated/crouchPunch-frame-0.png",
+        "scale": 0.752941,
+        "anchorX": 0.5034204289638969,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/maya-b/curated/crouchPunch-frame-1.png",
+        "scale": 0.751674,
+        "anchorX": 0.49009860869392513,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/maya-b/curated/crouchPunch-frame-2.png",
+        "scale": 0.728857,
+        "anchorX": 0.4964571771263698,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/maya-b/curated/crouchPunch-frame-3.png",
+        "scale": 0.752941,
+        "anchorX": 0.49913995698644426,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  },
+  "crouchKick": {
+    "frames": [
+      {
+        "path": "assets/sprites/maya-b/curated/crouchKick-frame-0.png",
+        "scale": 0.673684,
+        "anchorX": 0.5097920581647496,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/maya-b/curated/crouchKick-frame-1.png",
+        "scale": 0.766882,
+        "anchorX": 0.4630252715722401,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/maya-b/curated/crouchKick-frame-2.png",
+        "scale": 0.929948,
+        "anchorX": 0.29772148569023565,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/maya-b/curated/crouchKick-frame-3.png",
+        "scale": 0.673684,
+        "anchorX": 0.5137779138341556,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 10,
+    "loop": false
+  },
+  "uppercut": {
+    "frames": [
+      {
+        "path": "assets/sprites/maya-b/curated/uppercut-frame-0.png",
+        "scale": 0.914286,
+        "anchorX": 0.5253044544288769,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/maya-b/curated/uppercut-frame-1.png",
+        "scale": 0.941602,
+        "anchorX": 0.4995781619077752,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/maya-b/curated/uppercut-frame-2.png",
+        "scale": 1.118353,
+        "anchorX": 0.5011287315091387,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/maya-b/curated/uppercut-frame-3.png",
+        "scale": 0.933568,
+        "anchorX": 0.5263842423846229,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  },
+  "sweep": {
+    "frames": [
+      {
+        "path": "assets/sprites/maya-b/curated/sweep-frame-0.png",
+        "scale": 0.627451,
+        "anchorX": 0.4446154574392966,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/maya-b/curated/sweep-frame-1.png",
+        "scale": 0.664636,
+        "anchorX": 0.5990198399435532,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/maya-b/curated/sweep-frame-2.png",
+        "scale": 0.920396,
+        "anchorX": 0.5623249256827388,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/maya-b/curated/sweep-frame-3.png",
+        "scale": 0.627451,
+        "anchorX": 0.501625035668205,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 10,
+    "loop": false
+  },
+  "dash": {
+    "frames": [
+      {
+        "path": "assets/sprites/maya-b/curated/dash-frame-0.png",
+        "scale": 0.780488,
+        "anchorX": 0.44455837529311343,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/maya-b/curated/dash-frame-1.png",
+        "scale": 0.789459,
+        "anchorX": 0.5534081451613104,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/maya-b/curated/dash-frame-2.png",
+        "scale": 0.789459,
+        "anchorX": 0.5490801172909573,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/maya-b/curated/dash-frame-3.png",
+        "scale": 0.780488,
+        "anchorX": 0.421659951195907,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  },
+  "backwalk": {
+    "frames": [
+      {
+        "path": "assets/sprites/maya-b/curated/backwalk-frame-0.png",
+        "scale": 1,
+        "anchorX": 0.5101565717011933,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/maya-b/curated/backwalk-frame-1.png",
+        "scale": 1.00173,
+        "anchorX": 0.5136056771293841,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/maya-b/curated/backwalk-frame-2.png",
+        "scale": 0.99308,
+        "anchorX": 0.5053378261409217,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/maya-b/curated/backwalk-frame-3.png",
+        "scale": 0.99827,
+        "anchorX": 0.47659776199503634,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/maya-b/curated/backwalk-frame-4.png",
+        "scale": 0.99654,
+        "anchorX": 0.5002082275891941,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/maya-b/curated/backwalk-frame-5.png",
+        "scale": 1,
+        "anchorX": 0.5111029304828388,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": true
+  },
+  "lowBlock": {
+    "frames": [
+      {
+        "path": "assets/sprites/maya-b/curated/lowBlock-frame-0.png",
+        "scale": 0.727273,
+        "anchorX": 0.5068170207102624,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/maya-b/curated/lowBlock-frame-1.png",
+        "scale": 0.719644,
+        "anchorX": 0.5149129428124194,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/maya-b/curated/lowBlock-frame-2.png",
+        "scale": 0.695486,
+        "anchorX": 0.5027460645261845,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/maya-b/curated/lowBlock-frame-3.png",
+        "scale": 0.696758,
+        "anchorX": 0.4954742677580691,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 8,
+    "loop": false
+  },
+  "turn": {
+    "frames": [
+      {
+        "path": "assets/sprites/maya-b/curated/turn-frame-0.png",
+        "scale": 0.969697,
+        "anchorX": 0.5168436048040385,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/maya-b/curated/turn-frame-1.png",
+        "scale": 0.968267,
+        "anchorX": 0.5168597193050336,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/maya-b/curated/turn-frame-2.png",
+        "scale": 0.968267,
+        "anchorX": 0.50528806690109,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/maya-b/curated/turn-frame-3.png",
+        "scale": 0.968267,
+        "anchorX": 0.48312248905096905,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  },
+  "land": {
+    "frames": [
+      {
+        "path": "assets/sprites/maya-b/curated/land-frame-0.png",
+        "scale": 0.646465,
+        "anchorX": 0.47161444091240545,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/maya-b/curated/land-frame-1.png",
+        "scale": 0.758553,
+        "anchorX": 0.4732268753457756,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/maya-b/curated/land-frame-2.png",
+        "scale": 0.865428,
+        "anchorX": 0.5146060822815661,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/maya-b/curated/land-frame-3.png",
+        "scale": 0.894102,
+        "anchorX": 0.5190933221009842,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  },
+  "jumpForward": {
+    "frames": [
+      {
+        "path": "assets/sprites/maya-b/curated/jumpForward-frame-0.png",
+        "scale": 0.790123,
+        "anchorX": 0.532224458577584,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/maya-b/curated/jumpForward-frame-1.png",
+        "scale": 0.932316,
+        "anchorX": 0.2596842190179168,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/maya-b/curated/jumpForward-frame-2.png",
+        "scale": 0.697771,
+        "anchorX": 0.4085673998615511,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/maya-b/curated/jumpForward-frame-3.png",
+        "scale": 0.946975,
+        "anchorX": 0.7094490261759385,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 10,
+    "loop": false
+  },
+  "super": {
+    "frames": [
+      {
+        "path": "assets/sprites/maya-b/curated/super-frame-0.png",
+        "scale": 0.780488,
+        "anchorX": 0.48312954579323564,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/maya-b/curated/super-frame-1.png",
+        "scale": 0.920016,
+        "anchorX": 0.5061981666504515,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/maya-b/curated/super-frame-2.png",
+        "scale": 0.962823,
+        "anchorX": 0.4838031414162957,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/maya-b/curated/super-frame-3.png",
+        "scale": 0.920016,
+        "anchorX": 0.5025480041594307,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  }
+}

@@ -1,0 +1,746 @@
+{
+  "idle": {
+    "frames": [
+      {
+        "path": "assets/sprites/alex-sebas/curated/idle-frame-0.png",
+        "scale": 1,
+        "anchorX": 0.5136607212678185,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/alex-sebas/curated/idle-frame-1.png",
+        "scale": 1.036653,
+        "anchorX": 0.5119475394818483,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/alex-sebas/curated/idle-frame-2.png",
+        "scale": 1.044944,
+        "anchorX": 0.5083921306521942,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/alex-sebas/curated/idle-frame-3.png",
+        "scale": 0.99802,
+        "anchorX": 0.5096689853016548,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 6,
+    "loop": true
+  },
+  "punch": {
+    "frames": [
+      {
+        "path": "assets/sprites/alex-sebas/curated/punch-frame-0.png",
+        "scale": 1,
+        "anchorX": 0.5126735788949043,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/alex-sebas/curated/punch-frame-1.png",
+        "scale": 1,
+        "anchorX": 0.5034785583331894,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/alex-sebas/curated/punch-frame-2.png",
+        "scale": 1.02029,
+        "anchorX": 0.4414003755751366,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/alex-sebas/curated/punch-frame-3.png",
+        "scale": 1,
+        "anchorX": 0.5116801981007185,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  },
+  "kick": {
+    "frames": [
+      {
+        "path": "assets/sprites/alex-sebas/curated/kick-frame-0.png",
+        "scale": 1,
+        "anchorX": 0.5110279304907964,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/alex-sebas/curated/kick-frame-1.png",
+        "scale": 1.045378,
+        "anchorX": 0.4706129129746306,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/alex-sebas/curated/kick-frame-2.png",
+        "scale": 1.124034,
+        "anchorX": 0.30170511901744546,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/alex-sebas/curated/kick-frame-3.png",
+        "scale": 1.043697,
+        "anchorX": 0.4529243852265381,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 10,
+    "loop": false
+  },
+  "hurt": {
+    "frames": [
+      {
+        "path": "assets/sprites/alex-sebas/curated/hurt-frame-0.png",
+        "scale": 0.975,
+        "anchorX": 0.5330629481379715,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/alex-sebas/curated/hurt-frame-1.png",
+        "scale": 0.947181,
+        "anchorX": 0.5364284348224565,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/alex-sebas/curated/hurt-frame-2.png",
+        "scale": 0.926828,
+        "anchorX": 0.5083922653997682,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/alex-sebas/curated/hurt-frame-3.png",
+        "scale": 0.97223,
+        "anchorX": 0.5068778481549227,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 10,
+    "loop": false
+  },
+  "jump": {
+    "frames": [
+      {
+        "path": "assets/sprites/alex-sebas/curated/jump-frame-0.png",
+        "scale": 0.78,
+        "anchorX": 0.4523612178186611,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/alex-sebas/curated/jump-frame-1.png",
+        "scale": 0.91,
+        "anchorX": 0.37451656536806066,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/alex-sebas/curated/jump-frame-2.png",
+        "scale": 0.818831,
+        "anchorX": 0.4018061222846067,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/alex-sebas/curated/jump-frame-3.png",
+        "scale": 0.761429,
+        "anchorX": 0.5199224871647736,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 8,
+    "loop": false
+  },
+  "special": {
+    "frames": [
+      {
+        "path": "assets/sprites/alex-sebas/curated/special-frame-0.png",
+        "scale": 0.975,
+        "anchorX": 0.509695035134933,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/alex-sebas/curated/special-frame-1.png",
+        "scale": 0.976628,
+        "anchorX": 0.5088554882512316,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/alex-sebas/curated/special-frame-2.png",
+        "scale": 0.975,
+        "anchorX": 0.4591285555564111,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/alex-sebas/curated/special-frame-3.png",
+        "scale": 0.979883,
+        "anchorX": 0.5043700636090505,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 10,
+    "loop": false
+  },
+  "walk": {
+    "frames": [
+      {
+        "path": "assets/sprites/alex-sebas/curated/walk-frame-0.png",
+        "scale": 1,
+        "anchorX": 0.5034386518584572,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/alex-sebas/curated/walk-frame-1.png",
+        "scale": 0.998028,
+        "anchorX": 0.4775502949883846,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/alex-sebas/curated/walk-frame-2.png",
+        "scale": 0.998028,
+        "anchorX": 0.49342537587250207,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/alex-sebas/curated/walk-frame-3.png",
+        "scale": 0.995192,
+        "anchorX": 0.5024583307718954,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/alex-sebas/curated/walk-frame-4.png",
+        "scale": 0.993226,
+        "anchorX": 0.5034865439071154,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/alex-sebas/curated/walk-frame-5.png",
+        "scale": 0.997159,
+        "anchorX": 0.5082168431332102,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": true
+  },
+  "block": {
+    "frames": [
+      {
+        "path": "assets/sprites/alex-sebas/curated/block-frame-0.png",
+        "scale": 0.939759,
+        "anchorX": 0.5059336640248484,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/alex-sebas/curated/block-frame-1.png",
+        "scale": 0.935298,
+        "anchorX": 0.5114227952145202,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/alex-sebas/curated/block-frame-2.png",
+        "scale": 0.935298,
+        "anchorX": 0.5104233855030957,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/alex-sebas/curated/block-frame-3.png",
+        "scale": 0.932324,
+        "anchorX": 0.5103126688141914,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 8,
+    "loop": false
+  },
+  "crouch": {
+    "frames": [
+      {
+        "path": "assets/sprites/alex-sebas/curated/crouch-frame-0.png",
+        "scale": 0.857143,
+        "anchorX": 0.48833242113173786,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/alex-sebas/curated/crouch-frame-1.png",
+        "scale": 0.757029,
+        "anchorX": 0.500970041171746,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/alex-sebas/curated/crouch-frame-2.png",
+        "scale": 0.667886,
+        "anchorX": 0.5195453110265443,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/alex-sebas/curated/crouch-frame-3.png",
+        "scale": 0.672,
+        "anchorX": 0.48661011092594375,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 8,
+    "loop": false
+  },
+  "ko": {
+    "frames": [
+      {
+        "path": "assets/sprites/alex-sebas/curated/ko-frame-0.png",
+        "scale": 0.95122,
+        "anchorX": 0.5183463669246123,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/alex-sebas/curated/ko-frame-1.png",
+        "scale": 0.989824,
+        "anchorX": 0.5518865632741441,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/alex-sebas/curated/ko-frame-2.png",
+        "scale": 0.993959,
+        "anchorX": 0.5121287930033043,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/alex-sebas/curated/ko-frame-3.png",
+        "scale": 1.155345,
+        "anchorX": 0.5325713900838326,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 8,
+    "loop": false
+  },
+  "celebrate": {
+    "frames": [
+      {
+        "path": "assets/sprites/alex-sebas/curated/celebrate-frame-0.png",
+        "scale": 1,
+        "anchorX": 0.5093650486147855,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/alex-sebas/curated/celebrate-frame-1.png",
+        "scale": 1.016103,
+        "anchorX": 0.5116598873382472,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/alex-sebas/curated/celebrate-frame-2.png",
+        "scale": 1.111111,
+        "anchorX": 0.504261139549209,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/alex-sebas/curated/celebrate-frame-3.png",
+        "scale": 1.114277,
+        "anchorX": 0.5020430284334262,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 6,
+    "loop": false
+  },
+  "airPunch": {
+    "frames": [
+      {
+        "path": "assets/sprites/alex-sebas/curated/airPunch-frame-0.png",
+        "scale": 0.866667,
+        "anchorX": 0.45985460032823805,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/alex-sebas/curated/airPunch-frame-1.png",
+        "scale": 0.865058,
+        "anchorX": 0.22634339950834384,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/alex-sebas/curated/airPunch-frame-2.png",
+        "scale": 1.042907,
+        "anchorX": 0.2676560922972094,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/alex-sebas/curated/airPunch-frame-3.png",
+        "scale": 0.875648,
+        "anchorX": 0.34196063350617667,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  },
+  "airKick": {
+    "frames": [
+      {
+        "path": "assets/sprites/alex-sebas/curated/airKick-frame-0.png",
+        "scale": 0.917647,
+        "anchorX": 0.44208480686875645,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/alex-sebas/curated/airKick-frame-1.png",
+        "scale": 0.962515,
+        "anchorX": 0.5088773775522526,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/alex-sebas/curated/airKick-frame-2.png",
+        "scale": 1.11195,
+        "anchorX": 0.3311100089101005,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/alex-sebas/curated/airKick-frame-3.png",
+        "scale": 0.947305,
+        "anchorX": 0.522882761671933,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  },
+  "crouchPunch": {
+    "frames": [
+      {
+        "path": "assets/sprites/alex-sebas/curated/crouchPunch-frame-0.png",
+        "scale": 0.847826,
+        "anchorX": 0.5025869977937829,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/alex-sebas/curated/crouchPunch-frame-1.png",
+        "scale": 0.835861,
+        "anchorX": 0.49275630638342666,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/alex-sebas/curated/crouchPunch-frame-2.png",
+        "scale": 1.049745,
+        "anchorX": 0.3981353790931443,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/alex-sebas/curated/crouchPunch-frame-3.png",
+        "scale": 0.844407,
+        "anchorX": 0.49681628601389605,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  },
+  "crouchKick": {
+    "frames": [
+      {
+        "path": "assets/sprites/alex-sebas/curated/crouchKick-frame-0.png",
+        "scale": 0.821053,
+        "anchorX": 0.4864051058294998,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/alex-sebas/curated/crouchKick-frame-1.png",
+        "scale": 0.931476,
+        "anchorX": 0.33412946048321235,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/alex-sebas/curated/crouchKick-frame-2.png",
+        "scale": 1.115365,
+        "anchorX": 0.27648949970989284,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/alex-sebas/curated/crouchKick-frame-3.png",
+        "scale": 0.825178,
+        "anchorX": 0.5081915789711547,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 10,
+    "loop": false
+  },
+  "uppercut": {
+    "frames": [
+      {
+        "path": "assets/sprites/alex-sebas/curated/uppercut-frame-0.png",
+        "scale": 0.829787,
+        "anchorX": 0.5056369035594043,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/alex-sebas/curated/uppercut-frame-1.png",
+        "scale": 0.892413,
+        "anchorX": 0.5038177130999008,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/alex-sebas/curated/uppercut-frame-2.png",
+        "scale": 1.078723,
+        "anchorX": 0.508704267766142,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/alex-sebas/curated/uppercut-frame-3.png",
+        "scale": 0.878322,
+        "anchorX": 0.5044593953000408,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  },
+  "sweep": {
+    "frames": [
+      {
+        "path": "assets/sprites/alex-sebas/curated/sweep-frame-0.png",
+        "scale": 0.735849,
+        "anchorX": 0.5043605743953953,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/alex-sebas/curated/sweep-frame-1.png",
+        "scale": 0.8722,
+        "anchorX": 0.6401500009009911,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/alex-sebas/curated/sweep-frame-2.png",
+        "scale": 1.105265,
+        "anchorX": 0.4747231452333278,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/alex-sebas/curated/sweep-frame-3.png",
+        "scale": 0.75779,
+        "anchorX": 0.5235671854742114,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 10,
+    "loop": false
+  },
+  "dash": {
+    "frames": [
+      {
+        "path": "assets/sprites/alex-sebas/curated/dash-frame-0.png",
+        "scale": 0.829787,
+        "anchorX": 0.4327574818048961,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/alex-sebas/curated/dash-frame-1.png",
+        "scale": 0.817974,
+        "anchorX": 0.3636194487308669,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/alex-sebas/curated/dash-frame-2.png",
+        "scale": 0.896968,
+        "anchorX": 0.5067988766900827,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/alex-sebas/curated/dash-frame-3.png",
+        "scale": 0.81955,
+        "anchorX": 0.4615118451228802,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  },
+  "backwalk": {
+    "frames": [
+      {
+        "path": "assets/sprites/alex-sebas/curated/backwalk-frame-0.png",
+        "scale": 1,
+        "anchorX": 0.49718251719793843,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/alex-sebas/curated/backwalk-frame-1.png",
+        "scale": 0.989669,
+        "anchorX": 0.4470491524975509,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/alex-sebas/curated/backwalk-frame-2.png",
+        "scale": 0.980057,
+        "anchorX": 0.4966599399189368,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/alex-sebas/curated/backwalk-frame-3.png",
+        "scale": 0.986273,
+        "anchorX": 0.44955606695311,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/alex-sebas/curated/backwalk-frame-4.png",
+        "scale": 1.000777,
+        "anchorX": 0.47915533933356586,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/alex-sebas/curated/backwalk-frame-5.png",
+        "scale": 0.989669,
+        "anchorX": 0.4991525978190959,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": true
+  },
+  "lowBlock": {
+    "frames": [
+      {
+        "path": "assets/sprites/alex-sebas/curated/lowBlock-frame-0.png",
+        "scale": 0.804124,
+        "anchorX": 0.4769882547218723,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/alex-sebas/curated/lowBlock-frame-1.png",
+        "scale": 0.867639,
+        "anchorX": 0.5022208789621626,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/alex-sebas/curated/lowBlock-frame-2.png",
+        "scale": 0.830212,
+        "anchorX": 0.4965777863342458,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/alex-sebas/curated/lowBlock-frame-3.png",
+        "scale": 0.848627,
+        "anchorX": 0.5266378019862906,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 8,
+    "loop": false
+  },
+  "turn": {
+    "frames": [
+      {
+        "path": "assets/sprites/alex-sebas/curated/turn-frame-0.png",
+        "scale": 0.939759,
+        "anchorX": 0.4983004162232268,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/alex-sebas/curated/turn-frame-1.png",
+        "scale": 0.941232,
+        "anchorX": 0.5040491211738172,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/alex-sebas/curated/turn-frame-2.png",
+        "scale": 0.937089,
+        "anchorX": 0.5037837013857093,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/alex-sebas/curated/turn-frame-3.png",
+        "scale": 0.937089,
+        "anchorX": 0.49982587680290974,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  },
+  "land": {
+    "frames": [
+      {
+        "path": "assets/sprites/alex-sebas/curated/land-frame-0.png",
+        "scale": 0.772277,
+        "anchorX": 0.4500465221655878,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/alex-sebas/curated/land-frame-1.png",
+        "scale": 0.936134,
+        "anchorX": 0.5103976597840773,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/alex-sebas/curated/land-frame-2.png",
+        "scale": 1.014278,
+        "anchorX": 0.507514372963807,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/alex-sebas/curated/land-frame-3.png",
+        "scale": 1.065147,
+        "anchorX": 0.5110845302175933,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  },
+  "jumpForward": {
+    "frames": [
+      {
+        "path": "assets/sprites/alex-sebas/curated/jumpForward-frame-0.png",
+        "scale": 0.787879,
+        "anchorX": 0.47503913861523556,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/alex-sebas/curated/jumpForward-frame-1.png",
+        "scale": 0.968641,
+        "anchorX": 0.2489317534768043,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/alex-sebas/curated/jumpForward-frame-2.png",
+        "scale": 0.798261,
+        "anchorX": 0.4890382069666082,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/alex-sebas/curated/jumpForward-frame-3.png",
+        "scale": 0.90396,
+        "anchorX": 0.7159911775021092,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 10,
+    "loop": false
+  },
+  "super": {
+    "frames": [
+      {
+        "path": "assets/sprites/alex-sebas/curated/super-frame-0.png",
+        "scale": 0.78,
+        "anchorX": 0.5117116920312116,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/alex-sebas/curated/super-frame-1.png",
+        "scale": 0.95702,
+        "anchorX": 0.4913656368762909,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/alex-sebas/curated/super-frame-2.png",
+        "scale": 0.905973,
+        "anchorX": 0.455179608162218,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/alex-sebas/curated/super-frame-3.png",
+        "scale": 0.94222,
+        "anchorX": 0.5080234334132468,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  }
+}

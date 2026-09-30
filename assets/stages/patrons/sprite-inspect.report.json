@@ -1,0 +1,81 @@
+{
+  "ok": true,
+  "engine": "component-row",
+  "kind": "sprite-gen-inspect-report",
+  "run_dir": "/home/bruno/projects/funnietech/ai-tests/games/fighting-game-codex-gauntlet-loop/assets/stages/patrons",
+  "states": [
+    "cheer",
+    "drink"
+  ],
+  "thresholds": {
+    "histogram_min": 0.0,
+    "dhash_min": 0.55,
+    "motion_min": 0.01
+  },
+  "rows": [
+    {
+      "state": "cheer",
+      "source": "frames",
+      "expected_frames": 4,
+      "found_frames": 4,
+      "natural_pose_count": 4,
+      "frame_files": [
+        "frames/cheer/frame-0.png",
+        "frames/cheer/frame-1.png",
+        "frames/cheer/frame-2.png",
+        "frames/cheer/frame-3.png"
+      ],
+      "metrics": {
+        "histogram_intersection": {
+          "min": 0.9056438703833989,
+          "mean": 0.9446445932198291
+        },
+        "dhash_similarity": {
+          "min": 0.921875,
+          "mean": 0.9479166666666666
+        },
+        "motion_presence": 0.05689441955167484,
+        "centroid_sigma": {
+          "x": 3.949942836166475,
+          "y": 4.758339984760523
+        }
+      },
+      "ok": true,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "state": "drink",
+      "source": "frames",
+      "expected_frames": 4,
+      "found_frames": 4,
+      "natural_pose_count": 4,
+      "frame_files": [
+        "frames/drink/frame-0.png",
+        "frames/drink/frame-1.png",
+        "frames/drink/frame-2.png",
+        "frames/drink/frame-3.png"
+      ],
+      "metrics": {
+        "histogram_intersection": {
+          "min": 0.9681257155781937,
+          "mean": 0.9760225309211302
+        },
+        "dhash_similarity": {
+          "min": 0.921875,
+          "mean": 0.9505208333333334
+        },
+        "motion_presence": 0.020723310483047385,
+        "centroid_sigma": {
+          "x": 0.872191882895254,
+          "y": 2.479994956901218
+        }
+      },
+      "ok": true,
+      "errors": [],
+      "warnings": []
+    }
+  ],
+  "errors": [],
+  "warnings": []
+}

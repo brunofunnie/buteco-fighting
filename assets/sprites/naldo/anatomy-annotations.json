@@ -1,0 +1,240 @@
+{
+  "idle": {
+    "headSpan": 66,
+    "review": "Manually reviewed exported frame0 cap crown to chin; head axis for leaning KO.",
+    "frameHeadSpans": [
+      66,
+      66,
+      66,
+      66
+    ]
+  },
+  "punch": {
+    "headSpan": 66,
+    "review": "Manually reviewed exported frame0 cap crown to chin; head axis for leaning KO.",
+    "frameHeadSpans": [
+      66,
+      66,
+      66,
+      66
+    ]
+  },
+  "kick": {
+    "headSpan": 66,
+    "review": "Manually reviewed exported frame0 cap crown to chin; head axis for leaning KO.",
+    "frameHeadSpans": [
+      66,
+      66,
+      60,
+      66
+    ]
+  },
+  "hurt": {
+    "headSpan": 67,
+    "review": "Manually reviewed exported frame0 cap crown to chin; head axis for leaning KO.",
+    "frameHeadSpans": [
+      67,
+      73,
+      76,
+      64
+    ]
+  },
+  "jump": {
+    "headSpan": 90,
+    "review": "Manually reviewed exported frame0 cap crown to chin; head axis for leaning KO.",
+    "frameHeadSpans": [
+      90,
+      80,
+      87,
+      80
+    ]
+  },
+  "special": {
+    "headSpan": 73,
+    "review": "Manually reviewed exported frame0 cap crown to chin; head axis for leaning KO.",
+    "frameHeadSpans": [
+      73,
+      73,
+      63,
+      73
+    ]
+  },
+  "walk": {
+    "headSpan": 69,
+    "review": "Manually reviewed exported frame0 cap crown to chin; head axis for leaning KO.",
+    "frameHeadSpans": [
+      69,
+      69,
+      69,
+      69,
+      69,
+      69
+    ]
+  },
+  "block": {
+    "headSpan": 74,
+    "review": "Manually reviewed exported frame0 cap crown to chin; head axis for leaning KO.",
+    "frameHeadSpans": [
+      74,
+      75,
+      87,
+      87
+    ]
+  },
+  "crouch": {
+    "headSpan": 82,
+    "review": "Manually reviewed exported frame0 cap crown to chin; head axis for leaning KO.",
+    "frameHeadSpans": [
+      82,
+      88,
+      102,
+      106
+    ]
+  },
+  "ko": {
+    "headSpan": 76,
+    "review": "Manually reviewed exported frame0 cap crown to chin; head axis for leaning KO."
+  },
+  "celebrate": {
+    "headSpan": 65,
+    "review": "Manually reviewed exported frame0 cap crown to chin; head axis for leaning KO.",
+    "frameHeadSpans": [
+      65,
+      65,
+      55,
+      55
+    ]
+  },
+  "airPunch": {
+    "headSpan": 84,
+    "review": "Manually reviewed exported frame0 cap crown to chin; head axis for leaning KO.",
+    "frameHeadSpans": [
+      84,
+      84,
+      84,
+      84
+    ]
+  },
+  "airKick": {
+    "headSpan": 74,
+    "review": "Manually reviewed exported frame0 cap crown to chin; head axis for leaning KO.",
+    "frameHeadSpans": [
+      74,
+      67,
+      65,
+      74
+    ]
+  },
+  "crouchPunch": {
+    "headSpan": 106,
+    "review": "Manually reviewed exported frame0 cap crown to chin; head axis for leaning KO.",
+    "frameHeadSpans": [
+      106,
+      106,
+      77,
+      106
+    ]
+  },
+  "crouchKick": {
+    "headSpan": 96,
+    "review": "Manually reviewed exported frame0 cap crown to chin; head axis for leaning KO.",
+    "frameHeadSpans": [
+      96,
+      92,
+      68,
+      96
+    ]
+  },
+  "uppercut": {
+    "headSpan": 74,
+    "review": "Manually reviewed exported frame0 cap crown to chin; head axis for leaning KO.",
+    "frameHeadSpans": [
+      74,
+      68,
+      48,
+      65
+    ]
+  },
+  "sweep": {
+    "headSpan": 101,
+    "review": "Manually reviewed exported frame0 cap crown to chin; head axis for leaning KO.",
+    "frameHeadSpans": [
+      101,
+      81,
+      60,
+      101
+    ]
+  },
+  "dash": {
+    "headSpan": 83,
+    "review": "Manually reviewed exported frame0 cap crown to chin; head axis for leaning KO.",
+    "frameHeadSpans": [
+      83,
+      73,
+      83,
+      83
+    ]
+  },
+  "backwalk": {
+    "headSpan": 66,
+    "review": "Manually reviewed exported frame0 cap crown to chin; head axis for leaning KO.",
+    "frameHeadSpans": [
+      66,
+      66,
+      66,
+      66,
+      66,
+      66
+    ]
+  },
+  "lowBlock": {
+    "headSpan": 110,
+    "review": "Manually reviewed exported frame0 cap crown to chin; head axis for leaning KO.",
+    "frameHeadSpans": [
+      110,
+      107,
+      110,
+      103
+    ]
+  },
+  "turn": {
+    "headSpan": 64,
+    "review": "Manually reviewed exported frame0 cap crown to chin; head axis for leaning KO.",
+    "frameHeadSpans": [
+      64,
+      64,
+      64,
+      64
+    ]
+  },
+  "land": {
+    "headSpan": 110,
+    "review": "Manually reviewed exported frame0 cap crown to chin; head axis for leaning KO.",
+    "frameHeadSpans": [
+      110,
+      93,
+      68,
+      62
+    ]
+  },
+  "jumpForward": {
+    "headSpan": 105,
+    "review": "Manually reviewed exported frame0 cap crown to chin; head axis for leaning KO.",
+    "frameHeadSpans": [
+      105,
+      87,
+      100,
+      76
+    ]
+  },
+  "super": {
+    "headSpan": 75,
+    "review": "Manually reviewed exported frame0 cap crown to chin; head axis for leaning KO.",
+    "frameHeadSpans": [
+      75,
+      75,
+      56,
+      75
+    ]
+  }
+}

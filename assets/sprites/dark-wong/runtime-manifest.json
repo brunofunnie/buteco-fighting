@@ -1,0 +1,746 @@
+{
+  "idle": {
+    "frames": [
+      {
+        "path": "assets/sprites/dark-wong/curated/idle-frame-0.png",
+        "scale": 1,
+        "anchorX": 0.5084529773344089,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/dark-wong/curated/idle-frame-1.png",
+        "scale": 1.042763,
+        "anchorX": 0.5117209681538997,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/dark-wong/curated/idle-frame-2.png",
+        "scale": 0.988487,
+        "anchorX": 0.5094471216337709,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/dark-wong/curated/idle-frame-3.png",
+        "scale": 1.012746,
+        "anchorX": 0.5096162933113239,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 6,
+    "loop": true
+  },
+  "punch": {
+    "frames": [
+      {
+        "path": "assets/sprites/dark-wong/curated/punch-frame-0.png",
+        "scale": 1,
+        "anchorX": 0.49797910530618134,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/dark-wong/curated/punch-frame-1.png",
+        "scale": 0.995511,
+        "anchorX": 0.49915174995768136,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/dark-wong/curated/punch-frame-2.png",
+        "scale": 0.982325,
+        "anchorX": 0.4444134204696886,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/dark-wong/curated/punch-frame-3.png",
+        "scale": 0.990566,
+        "anchorX": 0.497915239232829,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  },
+  "kick": {
+    "frames": [
+      {
+        "path": "assets/sprites/dark-wong/curated/kick-frame-0.png",
+        "scale": 1,
+        "anchorX": 0.5012975119011779,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/dark-wong/curated/kick-frame-1.png",
+        "scale": 1.038917,
+        "anchorX": 0.5256789390085855,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/dark-wong/curated/kick-frame-2.png",
+        "scale": 1.165815,
+        "anchorX": 0.28683135038388535,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/dark-wong/curated/kick-frame-3.png",
+        "scale": 1.027073,
+        "anchorX": 0.6262043380988983,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 10,
+    "loop": false
+  },
+  "hurt": {
+    "frames": [
+      {
+        "path": "assets/sprites/dark-wong/curated/hurt-frame-0.png",
+        "scale": 0.846154,
+        "anchorX": 0.4990659593863968,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/dark-wong/curated/hurt-frame-1.png",
+        "scale": 0.806448,
+        "anchorX": 0.483531997864251,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/dark-wong/curated/hurt-frame-2.png",
+        "scale": 0.781802,
+        "anchorX": 0.5044702927148794,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/dark-wong/curated/hurt-frame-3.png",
+        "scale": 0.844785,
+        "anchorX": 0.49701077184075615,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 10,
+    "loop": false
+  },
+  "jump": {
+    "frames": [
+      {
+        "path": "assets/sprites/dark-wong/curated/jump-frame-0.png",
+        "scale": 0.75,
+        "anchorX": 0.5430268489310428,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/dark-wong/curated/jump-frame-1.png",
+        "scale": 0.914516,
+        "anchorX": 0.47025595379829016,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/dark-wong/curated/jump-frame-2.png",
+        "scale": 0.811984,
+        "anchorX": 0.5334410036913129,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/dark-wong/curated/jump-frame-3.png",
+        "scale": 0.802279,
+        "anchorX": 0.44872432418232533,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 8,
+    "loop": false
+  },
+  "special": {
+    "frames": [
+      {
+        "path": "assets/sprites/dark-wong/curated/special-frame-0.png",
+        "scale": 1,
+        "anchorX": 0.4961054175822752,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/dark-wong/curated/special-frame-1.png",
+        "scale": 1.004493,
+        "anchorX": 0.4606243475058635,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/dark-wong/curated/special-frame-2.png",
+        "scale": 1,
+        "anchorX": 0.42100934600430867,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/dark-wong/curated/special-frame-3.png",
+        "scale": 1,
+        "anchorX": 0.49769451509624085,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 10,
+    "loop": false
+  },
+  "walk": {
+    "frames": [
+      {
+        "path": "assets/sprites/dark-wong/curated/walk-frame-0.png",
+        "scale": 0.970588,
+        "anchorX": 0.5047106975453931,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/dark-wong/curated/walk-frame-1.png",
+        "scale": 0.968659,
+        "anchorX": 0.49643190480451954,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/dark-wong/curated/walk-frame-2.png",
+        "scale": 0.971418,
+        "anchorX": 0.48071552162379366,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/dark-wong/curated/walk-frame-3.png",
+        "scale": 0.966729,
+        "anchorX": 0.4830153928194841,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/dark-wong/curated/walk-frame-4.png",
+        "scale": 0.970588,
+        "anchorX": 0.48125557003222097,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/dark-wong/curated/walk-frame-5.png",
+        "scale": 0.970588,
+        "anchorX": 0.5055271024321764,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": true
+  },
+  "block": {
+    "frames": [
+      {
+        "path": "assets/sprites/dark-wong/curated/block-frame-0.png",
+        "scale": 0.942857,
+        "anchorX": 0.4955725250047294,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/dark-wong/curated/block-frame-1.png",
+        "scale": 0.942857,
+        "anchorX": 0.49649306196044246,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/dark-wong/curated/block-frame-2.png",
+        "scale": 0.893915,
+        "anchorX": 0.4926635530904954,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/dark-wong/curated/block-frame-3.png",
+        "scale": 0.893915,
+        "anchorX": 0.49338431397636756,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 8,
+    "loop": false
+  },
+  "crouch": {
+    "frames": [
+      {
+        "path": "assets/sprites/dark-wong/curated/crouch-frame-0.png",
+        "scale": 0.916667,
+        "anchorX": 0.4139680960627368,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/dark-wong/curated/crouch-frame-1.png",
+        "scale": 0.802344,
+        "anchorX": 0.43433462555160113,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/dark-wong/curated/crouch-frame-2.png",
+        "scale": 0.687723,
+        "anchorX": 0.415117890440317,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/dark-wong/curated/crouch-frame-3.png",
+        "scale": 0.689174,
+        "anchorX": 0.430649955507488,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 8,
+    "loop": false
+  },
+  "ko": {
+    "frames": [
+      {
+        "path": "assets/sprites/dark-wong/curated/ko-frame-0.png",
+        "scale": 0.846154,
+        "anchorX": 0.546762125061173,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/dark-wong/curated/ko-frame-1.png",
+        "scale": 0.704017,
+        "anchorX": 0.5961263845457304,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/dark-wong/curated/ko-frame-2.png",
+        "scale": 0.986613,
+        "anchorX": 0.5254080851222442,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/dark-wong/curated/ko-frame-3.png",
+        "scale": 0.915245,
+        "anchorX": 0.4112728950842117,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 8,
+    "loop": false
+  },
+  "celebrate": {
+    "frames": [
+      {
+        "path": "assets/sprites/dark-wong/curated/celebrate-frame-0.png",
+        "scale": 1,
+        "anchorX": 0.5012116005113011,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/dark-wong/curated/celebrate-frame-1.png",
+        "scale": 1.095868,
+        "anchorX": 0.506137098199972,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/dark-wong/curated/celebrate-frame-2.png",
+        "scale": 1.145455,
+        "anchorX": 0.5051334145623494,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/dark-wong/curated/celebrate-frame-3.png",
+        "scale": 1.135457,
+        "anchorX": 0.5054326316805589,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 6,
+    "loop": false
+  },
+  "airPunch": {
+    "frames": [
+      {
+        "path": "assets/sprites/dark-wong/curated/airPunch-frame-0.png",
+        "scale": 0.814815,
+        "anchorX": 0.36455466045591794,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/dark-wong/curated/airPunch-frame-1.png",
+        "scale": 0.813349,
+        "anchorX": 0.2667953661117933,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/dark-wong/curated/airPunch-frame-2.png",
+        "scale": 0.81789,
+        "anchorX": 0.25743646444948814,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/dark-wong/curated/airPunch-frame-3.png",
+        "scale": 0.842659,
+        "anchorX": 0.3488780767733677,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  },
+  "airKick": {
+    "frames": [
+      {
+        "path": "assets/sprites/dark-wong/curated/airKick-frame-0.png",
+        "scale": 0.767442,
+        "anchorX": 0.5015091339655677,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/dark-wong/curated/airKick-frame-1.png",
+        "scale": 0.921556,
+        "anchorX": 0.37723933450217007,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/dark-wong/curated/airKick-frame-2.png",
+        "scale": 1.087621,
+        "anchorX": 0.3507205653207799,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/dark-wong/curated/airKick-frame-3.png",
+        "scale": 0.787506,
+        "anchorX": 0.5821392841981056,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  },
+  "crouchPunch": {
+    "frames": [
+      {
+        "path": "assets/sprites/dark-wong/curated/crouchPunch-frame-0.png",
+        "scale": 0.717391,
+        "anchorX": 0.5129843154990416,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/dark-wong/curated/crouchPunch-frame-1.png",
+        "scale": 0.723657,
+        "anchorX": 0.5153204289193817,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/dark-wong/curated/crouchPunch-frame-2.png",
+        "scale": 0.876812,
+        "anchorX": 0.43870117658237234,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/dark-wong/curated/crouchPunch-frame-3.png",
+        "scale": 0.718958,
+        "anchorX": 0.5110642202069544,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  },
+  "crouchKick": {
+    "frames": [
+      {
+        "path": "assets/sprites/dark-wong/curated/crouchKick-frame-0.png",
+        "scale": 0.702128,
+        "anchorX": 0.49226660460848076,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/dark-wong/curated/crouchKick-frame-1.png",
+        "scale": 0.703581,
+        "anchorX": 0.4410192351276854,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/dark-wong/curated/crouchKick-frame-2.png",
+        "scale": 0.920259,
+        "anchorX": 0.535365961228218,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/dark-wong/curated/crouchKick-frame-3.png",
+        "scale": 0.693406,
+        "anchorX": 0.4953839550544881,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 10,
+    "loop": false
+  },
+  "uppercut": {
+    "frames": [
+      {
+        "path": "assets/sprites/dark-wong/curated/uppercut-frame-0.png",
+        "scale": 0.795181,
+        "anchorX": 0.5063227048609799,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/dark-wong/curated/uppercut-frame-1.png",
+        "scale": 0.826598,
+        "anchorX": 0.47857950675433103,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/dark-wong/curated/uppercut-frame-2.png",
+        "scale": 1.027124,
+        "anchorX": 0.4442194672414601,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/dark-wong/curated/uppercut-frame-3.png",
+        "scale": 0.826598,
+        "anchorX": 0.5040787154490324,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  },
+  "sweep": {
+    "frames": [
+      {
+        "path": "assets/sprites/dark-wong/curated/sweep-frame-0.png",
+        "scale": 0.717391,
+        "anchorX": 0.5061247975019365,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/dark-wong/curated/sweep-frame-1.png",
+        "scale": 0.767031,
+        "anchorX": 0.6078590727436403,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/dark-wong/curated/sweep-frame-2.png",
+        "scale": 1.03797,
+        "anchorX": 0.44692019908415864,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/dark-wong/curated/sweep-frame-3.png",
+        "scale": 0.69177,
+        "anchorX": 0.4688247905781376,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 10,
+    "loop": false
+  },
+  "dash": {
+    "frames": [
+      {
+        "path": "assets/sprites/dark-wong/curated/dash-frame-0.png",
+        "scale": 0.785714,
+        "anchorX": 0.4476851341855208,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/dark-wong/curated/dash-frame-1.png",
+        "scale": 0.780273,
+        "anchorX": 0.4302535329630679,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/dark-wong/curated/dash-frame-2.png",
+        "scale": 0.786874,
+        "anchorX": 0.4905373890073335,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/dark-wong/curated/dash-frame-3.png",
+        "scale": 0.787953,
+        "anchorX": 0.4598265061614803,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  },
+  "backwalk": {
+    "frames": [
+      {
+        "path": "assets/sprites/dark-wong/curated/backwalk-frame-0.png",
+        "scale": 1,
+        "anchorX": 0.5043964279217036,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/dark-wong/curated/backwalk-frame-1.png",
+        "scale": 0.998047,
+        "anchorX": 0.478397667446226,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/dark-wong/curated/backwalk-frame-2.png",
+        "scale": 1,
+        "anchorX": 0.5114755584529148,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/dark-wong/curated/backwalk-frame-3.png",
+        "scale": 1.011719,
+        "anchorX": 0.43278036163220496,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/dark-wong/curated/backwalk-frame-4.png",
+        "scale": 1,
+        "anchorX": 0.44107388267849296,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/dark-wong/curated/backwalk-frame-5.png",
+        "scale": 1.005859,
+        "anchorX": 0.5104350034362712,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": true
+  },
+  "lowBlock": {
+    "frames": [
+      {
+        "path": "assets/sprites/dark-wong/curated/lowBlock-frame-0.png",
+        "scale": 0.733333,
+        "anchorX": 0.4904647752215741,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/dark-wong/curated/lowBlock-frame-1.png",
+        "scale": 0.72784,
+        "anchorX": 0.4439346873747317,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/dark-wong/curated/lowBlock-frame-2.png",
+        "scale": 0.72784,
+        "anchorX": 0.45502705125881165,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/dark-wong/curated/lowBlock-frame-3.png",
+        "scale": 0.72784,
+        "anchorX": 0.45119018594317106,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 8,
+    "loop": false
+  },
+  "turn": {
+    "frames": [
+      {
+        "path": "assets/sprites/dark-wong/curated/turn-frame-0.png",
+        "scale": 0.868421,
+        "anchorX": 0.4892342123495464,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/dark-wong/curated/turn-frame-1.png",
+        "scale": 0.872657,
+        "anchorX": 0.5072480404802906,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/dark-wong/curated/turn-frame-2.png",
+        "scale": 0.875481,
+        "anchorX": 0.4970740801680876,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/dark-wong/curated/turn-frame-3.png",
+        "scale": 0.872311,
+        "anchorX": 0.5109088827095823,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  },
+  "land": {
+    "frames": [
+      {
+        "path": "assets/sprites/dark-wong/curated/land-frame-0.png",
+        "scale": 0.680412,
+        "anchorX": 0.4843397418452792,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/dark-wong/curated/land-frame-1.png",
+        "scale": 0.823253,
+        "anchorX": 0.501059397724807,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/dark-wong/curated/land-frame-2.png",
+        "scale": 0.939983,
+        "anchorX": 0.5092626367293107,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/dark-wong/curated/land-frame-3.png",
+        "scale": 0.972237,
+        "anchorX": 0.5095971182123826,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  },
+  "jumpForward": {
+    "frames": [
+      {
+        "path": "assets/sprites/dark-wong/curated/jumpForward-frame-0.png",
+        "scale": 0.741573,
+        "anchorX": 0.4925818270212605,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/dark-wong/curated/jumpForward-frame-1.png",
+        "scale": 0.887712,
+        "anchorX": 0.23772883461510896,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/dark-wong/curated/jumpForward-frame-2.png",
+        "scale": 0.662723,
+        "anchorX": 0.39671257703618107,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/dark-wong/curated/jumpForward-frame-3.png",
+        "scale": 0.876427,
+        "anchorX": 0.7268176945249012,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 10,
+    "loop": false
+  },
+  "super": {
+    "frames": [
+      {
+        "path": "assets/sprites/dark-wong/curated/super-frame-0.png",
+        "scale": 0.741573,
+        "anchorX": 0.49947624890457815,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/dark-wong/curated/super-frame-1.png",
+        "scale": 0.943772,
+        "anchorX": 0.49810636814015713,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/dark-wong/curated/super-frame-2.png",
+        "scale": 0.867539,
+        "anchorX": 0.4821062360102362,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/dark-wong/curated/super-frame-3.png",
+        "scale": 0.892946,
+        "anchorX": 0.5045706897067654,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  }
+}

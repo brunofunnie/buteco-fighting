@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "kind": "sprite-gen-request",
+  "engine": "component-row",
+  "character": {
+    "id": "goth_woman",
+    "description": "Adult Brazilian goth woman, pale medium skin, shoulder-length black hair with blunt fringe, black band shirt, black skirt over opaque leggings, sturdy black ankle boots, restrained silver necklace. Friendly excited expression."
+  },
+  "cell": {
+    "width": 384,
+    "height": 384,
+    "safe_margin": 16
+  },
+  "states": {
+    "motion": {
+      "frames": 4,
+      "fps": 3,
+      "loop": true,
+      "action": "Cheering four poses:1 relaxed hands at chest;2 right forearm rises;3 both forearms raised cheering with open smiling mouth;4 arms lower back toward chest. Feet fixed. EXACTLY4 separate FULL-body silhouettes in one horizontal row with at least80px pure background corridors between silhouettes; no overlapping panels. Preserve original head/torso/limb dimensions independently of raised arms or seated posture."
+    }
+  },
+  "style": "Detailed hand-painted arcade pixel illustration, clean dark outlines, natural adult anatomy and small realistic head, muted night colors and amber rim light. Reference continuity same face, exact body proportions and costume in every frame; no geometric placeholder people.",
+  "fit": {
+    "pixel_unfake": false,
+    "resample": "kcentroid",
+    "align_x": "bbox-center",
+    "align_y": "bottom",
+    "ground_frames": true
+  },
+  "chroma": {
+    "mode": "rgb",
+    "unmix_reach": 4,
+    "spill_max_fraction": 0.005
+  }
+}

@@ -1,0 +1,1450 @@
+{
+  "idle": [
+    {
+      "path": "assets/sprites/mr-funnie/curated/idle-frame-0.png",
+      "sourceHeight": 668,
+      "outputHeight": 352,
+      "anchorX": 0.5149998904622898,
+      "anchorY": 0.9583333333333334,
+      "scale": 1,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 76,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mr-funnie/curated/idle-frame-1.png",
+      "sourceHeight": 677,
+      "outputHeight": 351,
+      "anchorX": 0.5154347244705011,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.01636,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 76,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mr-funnie/curated/idle-frame-2.png",
+      "sourceHeight": 677,
+      "outputHeight": 352,
+      "anchorX": 0.5144954913398012,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.013473,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 76,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mr-funnie/curated/idle-frame-3.png",
+      "sourceHeight": 670,
+      "outputHeight": 352,
+      "anchorX": 0.5135471713813222,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.002994,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 76,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "punch": [
+    {
+      "path": "assets/sprites/mr-funnie/curated/punch-frame-0.png",
+      "sourceHeight": 588,
+      "outputHeight": 352,
+      "anchorX": 0.5073286681725695,
+      "anchorY": 0.9583333333333334,
+      "scale": 1,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 76,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mr-funnie/curated/punch-frame-1.png",
+      "sourceHeight": 587,
+      "outputHeight": 352,
+      "anchorX": 0.5090494536134496,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.998299,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 76,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mr-funnie/curated/punch-frame-2.png",
+      "sourceHeight": 582,
+      "outputHeight": 329,
+      "anchorX": 0.41343483103214,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.058991,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 76,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mr-funnie/curated/punch-frame-3.png",
+      "sourceHeight": 590,
+      "outputHeight": 352,
+      "anchorX": 0.5059449036118415,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.003401,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 76,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "kick": [
+    {
+      "path": "assets/sprites/mr-funnie/curated/kick-frame-0.png",
+      "sourceHeight": 589,
+      "outputHeight": 352,
+      "anchorX": 0.5069206727417085,
+      "anchorY": 0.9583333333333334,
+      "scale": 1,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 76,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mr-funnie/curated/kick-frame-1.png",
+      "sourceHeight": 592,
+      "outputHeight": 352,
+      "anchorX": 0.4382875838601505,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.005093,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 76,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mr-funnie/curated/kick-frame-2.png",
+      "sourceHeight": 588,
+      "outputHeight": 326,
+      "anchorX": 0.30433041964416535,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.077921,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 76,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mr-funnie/curated/kick-frame-3.png",
+      "sourceHeight": 589,
+      "outputHeight": 351,
+      "anchorX": 0.4534078443339134,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.002849,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 76,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "hurt": [
+    {
+      "path": "assets/sprites/mr-funnie/curated/hurt-frame-0.png",
+      "sourceHeight": 606,
+      "outputHeight": 352,
+      "anchorX": 0.512767751452591,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.904762,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 84,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mr-funnie/curated/hurt-frame-1.png",
+      "sourceHeight": 617,
+      "outputHeight": 352,
+      "anchorX": 0.5552405169072347,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.921185,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 84,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mr-funnie/curated/hurt-frame-2.png",
+      "sourceHeight": 601,
+      "outputHeight": 352,
+      "anchorX": 0.513167460036602,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.897297,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 84,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mr-funnie/curated/hurt-frame-3.png",
+      "sourceHeight": 612,
+      "outputHeight": 352,
+      "anchorX": 0.5147448923888205,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.91372,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 84,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "jump": [
+    {
+      "path": "assets/sprites/mr-funnie/curated/jump-frame-0.png",
+      "sourceHeight": 462,
+      "outputHeight": 352,
+      "anchorX": 0.47820672311926726,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.77551,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 98,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mr-funnie/curated/jump-frame-1.png",
+      "sourceHeight": 558,
+      "outputHeight": 352,
+      "anchorX": 0.4195387124225464,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.936655,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 98,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mr-funnie/curated/jump-frame-2.png",
+      "sourceHeight": 531,
+      "outputHeight": 352,
+      "anchorX": 0.37089060303328764,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.891333,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 98,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mr-funnie/curated/jump-frame-3.png",
+      "sourceHeight": 519,
+      "outputHeight": 352,
+      "anchorX": 0.46201556319055387,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.87119,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 98,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "special": [
+    {
+      "path": "assets/sprites/mr-funnie/curated/special-frame-0.png",
+      "sourceHeight": 614,
+      "outputHeight": 352,
+      "anchorX": 0.5163484688796668,
+      "anchorY": 0.9583333333333334,
+      "scale": 1,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 76,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mr-funnie/curated/special-frame-1.png",
+      "sourceHeight": 614,
+      "outputHeight": 352,
+      "anchorX": 0.5112627743341548,
+      "anchorY": 0.9583333333333334,
+      "scale": 1,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 76,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mr-funnie/curated/special-frame-2.png",
+      "sourceHeight": 615,
+      "outputHeight": 331,
+      "anchorX": 0.4369412771530812,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.065176,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 76,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mr-funnie/curated/special-frame-3.png",
+      "sourceHeight": 614,
+      "outputHeight": 352,
+      "anchorX": 0.5095652617235219,
+      "anchorY": 0.9583333333333334,
+      "scale": 1,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 76,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "walk": [
+    {
+      "path": "assets/sprites/mr-funnie/curated/walk-frame-0.png",
+      "sourceHeight": 509,
+      "outputHeight": 352,
+      "anchorX": 0.49997824634449345,
+      "anchorY": 0.9583333333333334,
+      "scale": 1,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 76,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mr-funnie/curated/walk-frame-1.png",
+      "sourceHeight": 508,
+      "outputHeight": 351,
+      "anchorX": 0.4766456801246151,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.000879,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 76,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mr-funnie/curated/walk-frame-2.png",
+      "sourceHeight": 499,
+      "outputHeight": 352,
+      "anchorX": 0.48646063693565766,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.980354,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 76,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mr-funnie/curated/walk-frame-3.png",
+      "sourceHeight": 499,
+      "outputHeight": 352,
+      "anchorX": 0.5089632872771458,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.980354,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 76,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mr-funnie/curated/walk-frame-4.png",
+      "sourceHeight": 502,
+      "outputHeight": 351,
+      "anchorX": 0.46859566233987304,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.989057,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 76,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mr-funnie/curated/walk-frame-5.png",
+      "sourceHeight": 507,
+      "outputHeight": 352,
+      "anchorX": 0.49792728627674016,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.996071,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 76,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "block": [
+    {
+      "path": "assets/sprites/mr-funnie/curated/block-frame-0.png",
+      "sourceHeight": 645,
+      "outputHeight": 352,
+      "anchorX": 0.5071315145535181,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.974359,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 78,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mr-funnie/curated/block-frame-1.png",
+      "sourceHeight": 645,
+      "outputHeight": 352,
+      "anchorX": 0.506644266675527,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.974359,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 78,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mr-funnie/curated/block-frame-2.png",
+      "sourceHeight": 614,
+      "outputHeight": 352,
+      "anchorX": 0.5053617616677503,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.927529,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 78,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mr-funnie/curated/block-frame-3.png",
+      "sourceHeight": 614,
+      "outputHeight": 352,
+      "anchorX": 0.5043916177424109,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.927529,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 78,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "crouch": [
+    {
+      "path": "assets/sprites/mr-funnie/curated/crouch-frame-0.png",
+      "sourceHeight": 631,
+      "outputHeight": 351,
+      "anchorX": 0.4654855809329373,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.883721,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 86,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mr-funnie/curated/crouch-frame-1.png",
+      "sourceHeight": 579,
+      "outputHeight": 352,
+      "anchorX": 0.4890453064385987,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.808591,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 86,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mr-funnie/curated/crouch-frame-2.png",
+      "sourceHeight": 500,
+      "outputHeight": 352,
+      "anchorX": 0.5071716975662419,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.698265,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 86,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mr-funnie/curated/crouch-frame-3.png",
+      "sourceHeight": 518,
+      "outputHeight": 352,
+      "anchorX": 0.5092811479626648,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.723402,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 86,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "ko": [
+    {
+      "path": "assets/sprites/mr-funnie/curated/ko-frame-0.png",
+      "sourceHeight": 576,
+      "outputHeight": 352,
+      "anchorX": 0.5097053489032661,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.95,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 80,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mr-funnie/curated/ko-frame-1.png",
+      "sourceHeight": 504,
+      "outputHeight": 352,
+      "anchorX": 0.5360674772103275,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.83125,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 80,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mr-funnie/curated/ko-frame-2.png",
+      "sourceHeight": 342,
+      "outputHeight": 208,
+      "anchorX": 0.6189524632184276,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.954567,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 80,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mr-funnie/curated/ko-frame-3.png",
+      "sourceHeight": 214,
+      "outputHeight": 128,
+      "anchorX": 0.4531977944891108,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.970616,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 80,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "celebrate": [
+    {
+      "path": "assets/sprites/mr-funnie/curated/celebrate-frame-0.png",
+      "sourceHeight": 581,
+      "outputHeight": 351,
+      "anchorX": 0.5150636472159237,
+      "anchorY": 0.9583333333333334,
+      "scale": 1,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 76,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mr-funnie/curated/celebrate-frame-1.png",
+      "sourceHeight": 611,
+      "outputHeight": 352,
+      "anchorX": 0.5053403692753624,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.048648,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 76,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mr-funnie/curated/celebrate-frame-2.png",
+      "sourceHeight": 689,
+      "outputHeight": 352,
+      "anchorX": 0.5067095024413192,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.182517,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 76,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mr-funnie/curated/celebrate-frame-3.png",
+      "sourceHeight": 684,
+      "outputHeight": 351,
+      "anchorX": 0.5060109285494979,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.177281,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 76,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "airPunch": [
+    {
+      "path": "assets/sprites/mr-funnie/curated/airPunch-frame-0.png",
+      "sourceHeight": 535,
+      "outputHeight": 351,
+      "anchorX": 0.3545724095522358,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.863636,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 88,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mr-funnie/curated/airPunch-frame-1.png",
+      "sourceHeight": 583,
+      "outputHeight": 350,
+      "anchorX": 0.15428142408596499,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.94381,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 88,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mr-funnie/curated/airPunch-frame-2.png",
+      "sourceHeight": 566,
+      "outputHeight": 294,
+      "anchorX": 0.20319383367536403,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.090821,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 88,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mr-funnie/curated/airPunch-frame-3.png",
+      "sourceHeight": 576,
+      "outputHeight": 352,
+      "anchorX": 0.3880859547470987,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.92718,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 88,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "airKick": [
+    {
+      "path": "assets/sprites/mr-funnie/curated/airKick-frame-0.png",
+      "sourceHeight": 467,
+      "outputHeight": 352,
+      "anchorX": 0.42969811389868945,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.791667,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 96,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mr-funnie/curated/airKick-frame-1.png",
+      "sourceHeight": 501,
+      "outputHeight": 317,
+      "anchorX": 0.36605113183193855,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.943076,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 96,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mr-funnie/curated/airKick-frame-2.png",
+      "sourceHeight": 517,
+      "outputHeight": 270,
+      "anchorX": 0.34753403581728665,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.142602,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 96,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mr-funnie/curated/airKick-frame-3.png",
+      "sourceHeight": 575,
+      "outputHeight": 351,
+      "anchorX": 0.2853817847676711,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.977527,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 96,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "crouchPunch": [
+    {
+      "path": "assets/sprites/mr-funnie/curated/crouchPunch-frame-0.png",
+      "sourceHeight": 535,
+      "outputHeight": 352,
+      "anchorX": 0.5153056291603373,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.791667,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 96,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mr-funnie/curated/crouchPunch-frame-1.png",
+      "sourceHeight": 535,
+      "outputHeight": 352,
+      "anchorX": 0.5161973743478262,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.791667,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 96,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mr-funnie/curated/crouchPunch-frame-2.png",
+      "sourceHeight": 536,
+      "outputHeight": 300,
+      "anchorX": 0.44036268747941704,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.930625,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 96,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mr-funnie/curated/crouchPunch-frame-3.png",
+      "sourceHeight": 537,
+      "outputHeight": 351,
+      "anchorX": 0.5172210064305808,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.79689,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 96,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "crouchKick": [
+    {
+      "path": "assets/sprites/mr-funnie/curated/crouchKick-frame-0.png",
+      "sourceHeight": 470,
+      "outputHeight": 351,
+      "anchorX": 0.45799535298175803,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.76,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 100,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mr-funnie/curated/crouchKick-frame-1.png",
+      "sourceHeight": 527,
+      "outputHeight": 352,
+      "anchorX": 0.4042406090767037,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.849749,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 100,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mr-funnie/curated/crouchKick-frame-2.png",
+      "sourceHeight": 459,
+      "outputHeight": 253,
+      "anchorX": 0.31473444851576854,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.02971,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 100,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mr-funnie/curated/crouchKick-frame-3.png",
+      "sourceHeight": 469,
+      "outputHeight": 352,
+      "anchorX": 0.45897370062349435,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.756228,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 100,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "uppercut": [
+    {
+      "path": "assets/sprites/mr-funnie/curated/uppercut-frame-0.png",
+      "sourceHeight": 518,
+      "outputHeight": 352,
+      "anchorX": 0.5120031006938545,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.883721,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 86,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mr-funnie/curated/uppercut-frame-1.png",
+      "sourceHeight": 564,
+      "outputHeight": 352,
+      "anchorX": 0.49890887310423965,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.962198,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 86,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mr-funnie/curated/uppercut-frame-2.png",
+      "sourceHeight": 693,
+      "outputHeight": 352,
+      "anchorX": 0.5013967712614306,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.182275,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 86,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mr-funnie/curated/uppercut-frame-3.png",
+      "sourceHeight": 553,
+      "outputHeight": 351,
+      "anchorX": 0.5050271859421046,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.94612,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 86,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "sweep": [
+    {
+      "path": "assets/sprites/mr-funnie/curated/sweep-frame-0.png",
+      "sourceHeight": 463,
+      "outputHeight": 351,
+      "anchorX": 0.511627532775708,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.745098,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 102,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mr-funnie/curated/sweep-frame-1.png",
+      "sourceHeight": 478,
+      "outputHeight": 325,
+      "anchorX": 0.293172236432955,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.830776,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 102,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mr-funnie/curated/sweep-frame-2.png",
+      "sourceHeight": 438,
+      "outputHeight": 229,
+      "anchorX": 0.5525022037216251,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.080384,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 102,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mr-funnie/curated/sweep-frame-3.png",
+      "sourceHeight": 467,
+      "outputHeight": 352,
+      "anchorX": 0.5118997187030657,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.7494,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 102,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "dash": [
+    {
+      "path": "assets/sprites/mr-funnie/curated/dash-frame-0.png",
+      "sourceHeight": 516,
+      "outputHeight": 351,
+      "anchorX": 0.4312572021492123,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.844444,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 90,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mr-funnie/curated/dash-frame-1.png",
+      "sourceHeight": 513,
+      "outputHeight": 352,
+      "anchorX": 0.4968694491627505,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.83715,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 90,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mr-funnie/curated/dash-frame-2.png",
+      "sourceHeight": 500,
+      "outputHeight": 344,
+      "anchorX": 0.4671538690728702,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.834911,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 90,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mr-funnie/curated/dash-frame-3.png",
+      "sourceHeight": 519,
+      "outputHeight": 352,
+      "anchorX": 0.44917652132614666,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.846941,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 90,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "backwalk": [
+    {
+      "path": "assets/sprites/mr-funnie/curated/backwalk-frame-0.png",
+      "sourceHeight": 457,
+      "outputHeight": 352,
+      "anchorX": 0.5032407504472772,
+      "anchorY": 0.9583333333333334,
+      "scale": 1,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 76,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mr-funnie/curated/backwalk-frame-1.png",
+      "sourceHeight": 457,
+      "outputHeight": 351,
+      "anchorX": 0.46304700014962946,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.002849,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 76,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mr-funnie/curated/backwalk-frame-2.png",
+      "sourceHeight": 457,
+      "outputHeight": 352,
+      "anchorX": 0.48287074493987675,
+      "anchorY": 0.9583333333333334,
+      "scale": 1,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 76,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mr-funnie/curated/backwalk-frame-3.png",
+      "sourceHeight": 452,
+      "outputHeight": 352,
+      "anchorX": 0.47108584033474465,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.989059,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 76,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mr-funnie/curated/backwalk-frame-4.png",
+      "sourceHeight": 456,
+      "outputHeight": 352,
+      "anchorX": 0.44024847973011755,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.997812,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 76,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mr-funnie/curated/backwalk-frame-5.png",
+      "sourceHeight": 457,
+      "outputHeight": 352,
+      "anchorX": 0.5031392896139688,
+      "anchorY": 0.9583333333333334,
+      "scale": 1,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 76,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "lowBlock": [
+    {
+      "path": "assets/sprites/mr-funnie/curated/lowBlock-frame-0.png",
+      "sourceHeight": 517,
+      "outputHeight": 352,
+      "anchorX": 0.5017867502910478,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.730769,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 104,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mr-funnie/curated/lowBlock-frame-1.png",
+      "sourceHeight": 517,
+      "outputHeight": 352,
+      "anchorX": 0.5002300124431679,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.730769,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 104,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mr-funnie/curated/lowBlock-frame-2.png",
+      "sourceHeight": 503,
+      "outputHeight": 351,
+      "anchorX": 0.5153373933398949,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.713006,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 104,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mr-funnie/curated/lowBlock-frame-3.png",
+      "sourceHeight": 504,
+      "outputHeight": 352,
+      "anchorX": 0.5032505867568918,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.712394,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 104,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "turn": [
+    {
+      "path": "assets/sprites/mr-funnie/curated/turn-frame-0.png",
+      "sourceHeight": 645,
+      "outputHeight": 352,
+      "anchorX": 0.4908221305651317,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.974359,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 78,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mr-funnie/curated/turn-frame-1.png",
+      "sourceHeight": 652,
+      "outputHeight": 352,
+      "anchorX": 0.5209731335100511,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.984933,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 78,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mr-funnie/curated/turn-frame-2.png",
+      "sourceHeight": 648,
+      "outputHeight": 352,
+      "anchorX": 0.5157276822393968,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.978891,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 78,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mr-funnie/curated/turn-frame-3.png",
+      "sourceHeight": 646,
+      "outputHeight": 352,
+      "anchorX": 0.5074634915503976,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.97587,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 78,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "land": [
+    {
+      "path": "assets/sprites/mr-funnie/curated/land-frame-0.png",
+      "sourceHeight": 504,
+      "outputHeight": 352,
+      "anchorX": 0.4913212334483114,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.737864,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 103,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mr-funnie/curated/land-frame-1.png",
+      "sourceHeight": 560,
+      "outputHeight": 352,
+      "anchorX": 0.4669994037854272,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.819849,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 103,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mr-funnie/curated/land-frame-2.png",
+      "sourceHeight": 633,
+      "outputHeight": 352,
+      "anchorX": 0.47909976699254037,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.926722,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 103,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mr-funnie/curated/land-frame-3.png",
+      "sourceHeight": 664,
+      "outputHeight": 352,
+      "anchorX": 0.4999238163729911,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.972107,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 103,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "jumpForward": [
+    {
+      "path": "assets/sprites/mr-funnie/curated/jumpForward-frame-0.png",
+      "sourceHeight": 504,
+      "outputHeight": 352,
+      "anchorX": 0.4915152955194985,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.767677,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 99,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mr-funnie/curated/jumpForward-frame-1.png",
+      "sourceHeight": 602,
+      "outputHeight": 352,
+      "anchorX": 0.3367738444114327,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.916947,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 99,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mr-funnie/curated/jumpForward-frame-2.png",
+      "sourceHeight": 473,
+      "outputHeight": 352,
+      "anchorX": 0.44081781940222114,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.720459,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 99,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mr-funnie/curated/jumpForward-frame-3.png",
+      "sourceHeight": 614,
+      "outputHeight": 352,
+      "anchorX": 0.6852704435852194,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.935225,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 99,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "super": [
+    {
+      "path": "assets/sprites/mr-funnie/curated/super-frame-0.png",
+      "sourceHeight": 584,
+      "outputHeight": 352,
+      "anchorX": 0.5224190436879171,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.883721,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 86,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mr-funnie/curated/super-frame-1.png",
+      "sourceHeight": 596,
+      "outputHeight": 351,
+      "anchorX": 0.5104506662606766,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.904449,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 86,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mr-funnie/curated/super-frame-2.png",
+      "sourceHeight": 589,
+      "outputHeight": 352,
+      "anchorX": 0.45928316839314637,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.891287,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 86,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mr-funnie/curated/super-frame-3.png",
+      "sourceHeight": 587,
+      "outputHeight": 352,
+      "anchorX": 0.5109043303408168,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.888261,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 86,
+        "idleHeadSpan": 76,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ]
+}

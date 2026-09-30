@@ -1,0 +1,746 @@
+{
+  "idle": {
+    "frames": [
+      {
+        "path": "assets/sprites/cowboy/curated/idle-frame-0.png",
+        "scale": 1,
+        "anchorX": 0.5063746531524058,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/cowboy/curated/idle-frame-1.png",
+        "scale": 1,
+        "anchorX": 0.5043886668858112,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/cowboy/curated/idle-frame-2.png",
+        "scale": 0.953846,
+        "anchorX": 0.5058414311336142,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/cowboy/curated/idle-frame-3.png",
+        "scale": 0.984127,
+        "anchorX": 0.5059973607468877,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 6,
+    "loop": true
+  },
+  "punch": {
+    "frames": [
+      {
+        "path": "assets/sprites/cowboy/curated/punch-frame-0.png",
+        "scale": 1,
+        "anchorX": 0.5087020234473244,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/cowboy/curated/punch-frame-1.png",
+        "scale": 0.977813,
+        "anchorX": 0.5166231329468834,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/cowboy/curated/punch-frame-2.png",
+        "scale": 0.99351,
+        "anchorX": 0.4366385163610398,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/cowboy/curated/punch-frame-3.png",
+        "scale": 1,
+        "anchorX": 0.5125212507870122,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  },
+  "kick": {
+    "frames": [
+      {
+        "path": "assets/sprites/cowboy/curated/kick-frame-0.png",
+        "scale": 1,
+        "anchorX": 0.5091178030963588,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/cowboy/curated/kick-frame-1.png",
+        "scale": 1.000105,
+        "anchorX": 0.4639242061051809,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/cowboy/curated/kick-frame-2.png",
+        "scale": 0.979484,
+        "anchorX": 0.23689981478326486,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/cowboy/curated/kick-frame-3.png",
+        "scale": 1,
+        "anchorX": 0.4900097617558705,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 10,
+    "loop": false
+  },
+  "hurt": {
+    "frames": [
+      {
+        "path": "assets/sprites/cowboy/curated/hurt-frame-0.png",
+        "scale": 0.898551,
+        "anchorX": 0.5064364934494646,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/cowboy/curated/hurt-frame-1.png",
+        "scale": 0.876866,
+        "anchorX": 0.51823329044853,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/cowboy/curated/hurt-frame-2.png",
+        "scale": 0.856537,
+        "anchorX": 0.5091908672060163,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/cowboy/curated/hurt-frame-3.png",
+        "scale": 0.920139,
+        "anchorX": 0.505866728977073,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 10,
+    "loop": false
+  },
+  "jump": {
+    "frames": [
+      {
+        "path": "assets/sprites/cowboy/curated/jump-frame-0.png",
+        "scale": 0.712644,
+        "anchorX": 0.4145847215450458,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/cowboy/curated/jump-frame-1.png",
+        "scale": 0.925235,
+        "anchorX": 0.37804366962849123,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/cowboy/curated/jump-frame-2.png",
+        "scale": 0.837758,
+        "anchorX": 0.44360342299867866,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/cowboy/curated/jump-frame-3.png",
+        "scale": 0.778002,
+        "anchorX": 0.5247861885842084,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 8,
+    "loop": false
+  },
+  "special": {
+    "frames": [
+      {
+        "path": "assets/sprites/cowboy/curated/special-frame-0.png",
+        "scale": 1.016393,
+        "anchorX": 0.5104267283217514,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/cowboy/curated/special-frame-1.png",
+        "scale": 1.016393,
+        "anchorX": 0.49928997018055526,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/cowboy/curated/special-frame-2.png",
+        "scale": 1.013327,
+        "anchorX": 0.4982503199014445,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/cowboy/curated/special-frame-3.png",
+        "scale": 1.020993,
+        "anchorX": 0.5096325664673805,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 10,
+    "loop": false
+  },
+  "walk": {
+    "frames": [
+      {
+        "path": "assets/sprites/cowboy/curated/walk-frame-0.png",
+        "scale": 1.033333,
+        "anchorX": 0.5008049267187434,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/cowboy/curated/walk-frame-1.png",
+        "scale": 1.030398,
+        "anchorX": 0.48958230409749603,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/cowboy/curated/walk-frame-2.png",
+        "scale": 1.030398,
+        "anchorX": 0.4948489055035455,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/cowboy/curated/walk-frame-3.png",
+        "scale": 1.030398,
+        "anchorX": 0.4971270414934447,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/cowboy/curated/walk-frame-4.png",
+        "scale": 1.030398,
+        "anchorX": 0.48625971304900356,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/cowboy/curated/walk-frame-5.png",
+        "scale": 1.030398,
+        "anchorX": 0.500873310599371,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": true
+  },
+  "block": {
+    "frames": [
+      {
+        "path": "assets/sprites/cowboy/curated/block-frame-0.png",
+        "scale": 1.050847,
+        "anchorX": 0.5096218804979978,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/cowboy/curated/block-frame-1.png",
+        "scale": 1.047639,
+        "anchorX": 0.5113608486734365,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/cowboy/curated/block-frame-2.png",
+        "scale": 1.002717,
+        "anchorX": 0.5141661330870507,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/cowboy/curated/block-frame-3.png",
+        "scale": 0.993091,
+        "anchorX": 0.5128612016732236,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 8,
+    "loop": false
+  },
+  "crouch": {
+    "frames": [
+      {
+        "path": "assets/sprites/cowboy/curated/crouch-frame-0.png",
+        "scale": 0.911765,
+        "anchorX": 0.5000287443702569,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/cowboy/curated/crouch-frame-1.png",
+        "scale": 0.78684,
+        "anchorX": 0.4955129206389704,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/cowboy/curated/crouch-frame-2.png",
+        "scale": 0.664208,
+        "anchorX": 0.46799728725878104,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/cowboy/curated/crouch-frame-3.png",
+        "scale": 0.664208,
+        "anchorX": 0.46209206493908545,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 8,
+    "loop": false
+  },
+  "ko": {
+    "frames": [
+      {
+        "path": "assets/sprites/cowboy/curated/ko-frame-0.png",
+        "scale": 0.939394,
+        "anchorX": 0.5085339588497274,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/cowboy/curated/ko-frame-1.png",
+        "scale": 0.782393,
+        "anchorX": 0.5430108266787627,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/cowboy/curated/ko-frame-2.png",
+        "scale": 0.940893,
+        "anchorX": 0.5612942599480126,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/cowboy/curated/ko-frame-3.png",
+        "scale": 1.111035,
+        "anchorX": 0.5123072322845535,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 8,
+    "loop": false
+  },
+  "celebrate": {
+    "frames": [
+      {
+        "path": "assets/sprites/cowboy/curated/celebrate-frame-0.png",
+        "scale": 1.068966,
+        "anchorX": 0.5079915341540112,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/cowboy/curated/celebrate-frame-1.png",
+        "scale": 1.102207,
+        "anchorX": 0.4975146474885778,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/cowboy/curated/celebrate-frame-2.png",
+        "scale": 1.20193,
+        "anchorX": 0.49813224292880687,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/cowboy/curated/celebrate-frame-3.png",
+        "scale": 1.198336,
+        "anchorX": 0.4980590461113114,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 6,
+    "loop": false
+  },
+  "airPunch": {
+    "frames": [
+      {
+        "path": "assets/sprites/cowboy/curated/airPunch-frame-0.png",
+        "scale": 0.805195,
+        "anchorX": 0.4113956453192797,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/cowboy/curated/airPunch-frame-1.png",
+        "scale": 0.88086,
+        "anchorX": 0.2703300952390653,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/cowboy/curated/airPunch-frame-2.png",
+        "scale": 0.959381,
+        "anchorX": 0.21795077002981592,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/cowboy/curated/airPunch-frame-3.png",
+        "scale": 0.883716,
+        "anchorX": 0.34455218882335775,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  },
+  "airKick": {
+    "frames": [
+      {
+        "path": "assets/sprites/cowboy/curated/airKick-frame-0.png",
+        "scale": 0.911765,
+        "anchorX": 0.434225449872899,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/cowboy/curated/airKick-frame-1.png",
+        "scale": 0.87627,
+        "anchorX": 0.36219610439005095,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/cowboy/curated/airKick-frame-2.png",
+        "scale": 1.052955,
+        "anchorX": 0.3249563173003621,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/cowboy/curated/airKick-frame-3.png",
+        "scale": 0.87829,
+        "anchorX": 0.5539855275751185,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  },
+  "crouchPunch": {
+    "frames": [
+      {
+        "path": "assets/sprites/cowboy/curated/crouchPunch-frame-0.png",
+        "scale": 0.652632,
+        "anchorX": 0.501996070380979,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/cowboy/curated/crouchPunch-frame-1.png",
+        "scale": 0.648965,
+        "anchorX": 0.5030834077712502,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/cowboy/curated/crouchPunch-frame-2.png",
+        "scale": 0.718797,
+        "anchorX": 0.42600883570669446,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/cowboy/curated/crouchPunch-frame-3.png",
+        "scale": 0.654491,
+        "anchorX": 0.5021657143691263,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  },
+  "crouchKick": {
+    "frames": [
+      {
+        "path": "assets/sprites/cowboy/curated/crouchKick-frame-0.png",
+        "scale": 0.652632,
+        "anchorX": 0.5266920710908061,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/cowboy/curated/crouchKick-frame-1.png",
+        "scale": 0.648852,
+        "anchorX": 0.3998751717801549,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/cowboy/curated/crouchKick-frame-2.png",
+        "scale": 0.905687,
+        "anchorX": 0.298619323746371,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/cowboy/curated/crouchKick-frame-3.png",
+        "scale": 0.640592,
+        "anchorX": 0.4837065067081146,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 10,
+    "loop": false
+  },
+  "uppercut": {
+    "frames": [
+      {
+        "path": "assets/sprites/cowboy/curated/uppercut-frame-0.png",
+        "scale": 0.78481,
+        "anchorX": 0.5117948038210934,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/cowboy/curated/uppercut-frame-1.png",
+        "scale": 0.874138,
+        "anchorX": 0.5023893592659353,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/cowboy/curated/uppercut-frame-2.png",
+        "scale": 1.105434,
+        "anchorX": 0.5096240957073782,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/cowboy/curated/uppercut-frame-3.png",
+        "scale": 0.931563,
+        "anchorX": 0.5125610652864409,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  },
+  "sweep": {
+    "frames": [
+      {
+        "path": "assets/sprites/cowboy/curated/sweep-frame-0.png",
+        "scale": 0.632653,
+        "anchorX": 0.4806347337130326,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/cowboy/curated/sweep-frame-1.png",
+        "scale": 0.67261,
+        "anchorX": 0.5160892464807922,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/cowboy/curated/sweep-frame-2.png",
+        "scale": 1.028625,
+        "anchorX": 0.507004044205004,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/cowboy/curated/sweep-frame-3.png",
+        "scale": 0.687261,
+        "anchorX": 0.5552497334627535,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 10,
+    "loop": false
+  },
+  "dash": {
+    "frames": [
+      {
+        "path": "assets/sprites/cowboy/curated/dash-frame-0.png",
+        "scale": 0.775,
+        "anchorX": 0.43170868664466894,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/cowboy/curated/dash-frame-1.png",
+        "scale": 0.803401,
+        "anchorX": 0.590666535410204,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/cowboy/curated/dash-frame-2.png",
+        "scale": 0.73508,
+        "anchorX": 0.5327911335941352,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/cowboy/curated/dash-frame-3.png",
+        "scale": 0.786012,
+        "anchorX": 0.39291846517439594,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  },
+  "backwalk": {
+    "frames": [
+      {
+        "path": "assets/sprites/cowboy/curated/backwalk-frame-0.png",
+        "scale": 1.016393,
+        "anchorX": 0.5043461940699759,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/cowboy/curated/backwalk-frame-1.png",
+        "scale": 1.011636,
+        "anchorX": 0.49509972066400065,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/cowboy/curated/backwalk-frame-2.png",
+        "scale": 1.011636,
+        "anchorX": 0.4975494014764581,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/cowboy/curated/backwalk-frame-3.png",
+        "scale": 1.014518,
+        "anchorX": 0.5107900869227574,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/cowboy/curated/backwalk-frame-4.png",
+        "scale": 1.016393,
+        "anchorX": 0.46774727347326467,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/cowboy/curated/backwalk-frame-5.png",
+        "scale": 1.016393,
+        "anchorX": 0.5030374872809408,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": true
+  },
+  "lowBlock": {
+    "frames": [
+      {
+        "path": "assets/sprites/cowboy/curated/lowBlock-frame-0.png",
+        "scale": 0.632653,
+        "anchorX": 0.4944595375386575,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/cowboy/curated/lowBlock-frame-1.png",
+        "scale": 0.617867,
+        "anchorX": 0.502438981574383,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/cowboy/curated/lowBlock-frame-2.png",
+        "scale": 0.542878,
+        "anchorX": 0.5035293194217566,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/cowboy/curated/lowBlock-frame-3.png",
+        "scale": 0.589969,
+        "anchorX": 0.5094563383406336,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 8,
+    "loop": false
+  },
+  "turn": {
+    "frames": [
+      {
+        "path": "assets/sprites/cowboy/curated/turn-frame-0.png",
+        "scale": 0.984127,
+        "anchorX": 0.48556390056227006,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/cowboy/curated/turn-frame-1.png",
+        "scale": 0.984127,
+        "anchorX": 0.5053086398463943,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/cowboy/curated/turn-frame-2.png",
+        "scale": 0.984127,
+        "anchorX": 0.5050654842797713,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/cowboy/curated/turn-frame-3.png",
+        "scale": 0.984127,
+        "anchorX": 0.5100637116538581,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  },
+  "land": {
+    "frames": [
+      {
+        "path": "assets/sprites/cowboy/curated/land-frame-0.png",
+        "scale": 0.626263,
+        "anchorX": 0.48429436651890195,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/cowboy/curated/land-frame-1.png",
+        "scale": 0.735856,
+        "anchorX": 0.5018364117599344,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/cowboy/curated/land-frame-2.png",
+        "scale": 0.816734,
+        "anchorX": 0.506782225714136,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/cowboy/curated/land-frame-3.png",
+        "scale": 0.896286,
+        "anchorX": 0.5011988748326153,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  },
+  "jumpForward": {
+    "frames": [
+      {
+        "path": "assets/sprites/cowboy/curated/jumpForward-frame-0.png",
+        "scale": 0.704545,
+        "anchorX": 0.491580989943664,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/cowboy/curated/jumpForward-frame-1.png",
+        "scale": 0.83252,
+        "anchorX": 0.3083399926803476,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/cowboy/curated/jumpForward-frame-2.png",
+        "scale": 0.682528,
+        "anchorX": 0.44158562335055834,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/cowboy/curated/jumpForward-frame-3.png",
+        "scale": 0.872425,
+        "anchorX": 0.6881053021253268,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 10,
+    "loop": false
+  },
+  "super": {
+    "frames": [
+      {
+        "path": "assets/sprites/cowboy/curated/super-frame-0.png",
+        "scale": 0.984127,
+        "anchorX": 0.5116821677081418,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/cowboy/curated/super-frame-1.png",
+        "scale": 0.947969,
+        "anchorX": 0.5138021017485436,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/cowboy/curated/super-frame-2.png",
+        "scale": 0.902378,
+        "anchorX": 0.5212356843432376,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/cowboy/curated/super-frame-3.png",
+        "scale": 0.984127,
+        "anchorX": 0.5091429350619802,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  }
+}

@@ -1,0 +1,246 @@
+{
+  "idle": {
+    "headSpan": 94,
+    "frameHeadSpans": [
+      94,
+      94,
+      94,
+      94
+    ],
+    "review": "Manual crown-to-beard-chin anatomical axis; rotated KO head measured along its axis. Viewed every exported frame in all-frames panels."
+  },
+  "punch": {
+    "headSpan": 92,
+    "frameHeadSpans": [
+      92,
+      92,
+      78,
+      92
+    ],
+    "review": "Manual crown-to-beard-chin anatomical axis; rotated KO head measured along its axis. Viewed every exported frame in all-frames panels."
+  },
+  "kick": {
+    "headSpan": 82,
+    "frameHeadSpans": [
+      82,
+      82,
+      74,
+      82
+    ],
+    "review": "Manual crown-to-beard-chin anatomical axis; rotated KO head measured along its axis. Viewed every exported frame in all-frames panels."
+  },
+  "hurt": {
+    "headSpan": 82,
+    "frameHeadSpans": [
+      82,
+      80,
+      78,
+      84
+    ],
+    "review": "Manual crown-to-beard-chin anatomical axis; rotated KO head measured along its axis. Viewed every exported frame in all-frames panels."
+  },
+  "jump": {
+    "headSpan": 120,
+    "frameHeadSpans": [
+      120,
+      108,
+      112,
+      108
+    ],
+    "review": "Manual crown-to-beard-chin anatomical axis; rotated KO head measured along its axis. Viewed every exported frame in all-frames panels."
+  },
+  "special": {
+    "headSpan": 86,
+    "frameHeadSpans": [
+      86,
+      86,
+      72,
+      86
+    ],
+    "review": "Manual crown-to-beard-chin anatomical axis; rotated KO head measured along its axis. Viewed every exported frame in all-frames panels."
+  },
+  "walk": {
+    "headSpan": 88,
+    "frameHeadSpans": [
+      88,
+      88,
+      88,
+      88,
+      88,
+      88
+    ],
+    "review": "Manual crown-to-beard-chin anatomical axis; rotated KO head measured along its axis. Viewed every exported frame in all-frames panels."
+  },
+  "block": {
+    "headSpan": 94,
+    "frameHeadSpans": [
+      94,
+      94,
+      94,
+      94
+    ],
+    "review": "Manual crown-to-beard-chin anatomical axis; rotated KO head measured along its axis. Viewed every exported frame in all-frames panels."
+  },
+  "crouch": {
+    "headSpan": 94,
+    "frameHeadSpans": [
+      94,
+      106,
+      110,
+      110
+    ],
+    "review": "Manual crown-to-beard-chin anatomical axis; rotated KO head measured along its axis. Viewed every exported frame in all-frames panels."
+  },
+  "ko": {
+    "headSpan": 82,
+    "frameHeadSpans": [
+      82,
+      98,
+      82,
+      80
+    ],
+    "review": "Manual crown-to-beard-chin anatomical axis; rotated KO head measured along its axis. Viewed every exported frame in all-frames panels."
+  },
+  "celebrate": {
+    "headSpan": 96,
+    "frameHeadSpans": [
+      96,
+      88,
+      74,
+      74
+    ],
+    "review": "Manual crown-to-beard-chin anatomical axis; rotated KO head measured along its axis. Viewed every exported frame in all-frames panels."
+  },
+  "airPunch": {
+    "headSpan": 100,
+    "frameHeadSpans": [
+      100,
+      98,
+      92,
+      100
+    ],
+    "review": "Manual crown-to-beard-chin anatomical axis; rotated KO head measured along its axis. Viewed every exported frame in all-frames panels."
+  },
+  "airKick": {
+    "headSpan": 104,
+    "frameHeadSpans": [
+      104,
+      100,
+      72,
+      104
+    ],
+    "review": "Manual crown-to-beard-chin anatomical axis; rotated KO head measured along its axis. Viewed every exported frame in all-frames panels."
+  },
+  "crouchPunch": {
+    "headSpan": 114,
+    "frameHeadSpans": [
+      114,
+      108,
+      100,
+      114
+    ],
+    "review": "Manual crown-to-beard-chin anatomical axis; rotated KO head measured along its axis. Viewed every exported frame in all-frames panels."
+  },
+  "crouchKick": {
+    "headSpan": 110,
+    "frameHeadSpans": [
+      110,
+      108,
+      76,
+      110
+    ],
+    "review": "Manual crown-to-beard-chin anatomical axis; rotated KO head measured along its axis. Viewed every exported frame in all-frames panels."
+  },
+  "uppercut": {
+    "headSpan": 94,
+    "frameHeadSpans": [
+      94,
+      94,
+      78,
+      94
+    ],
+    "review": "Manual crown-to-beard-chin anatomical axis; rotated KO head measured along its axis. Viewed every exported frame in all-frames panels."
+  },
+  "sweep": {
+    "headSpan": 104,
+    "frameHeadSpans": [
+      104,
+      108,
+      70,
+      106
+    ],
+    "review": "Manual crown-to-beard-chin anatomical axis; rotated KO head measured along its axis. Viewed every exported frame in all-frames panels."
+  },
+  "dash": {
+    "headSpan": 100,
+    "frameHeadSpans": [
+      100,
+      100,
+      100,
+      100
+    ],
+    "review": "Manual crown-to-beard-chin anatomical axis; rotated KO head measured along its axis. Viewed every exported frame in all-frames panels."
+  },
+  "backwalk": {
+    "headSpan": 86,
+    "frameHeadSpans": [
+      86,
+      86,
+      86,
+      86,
+      86,
+      86
+    ],
+    "review": "Manual crown-to-beard-chin anatomical axis; rotated KO head measured along its axis. Viewed every exported frame in all-frames panels."
+  },
+  "lowBlock": {
+    "headSpan": 108,
+    "frameHeadSpans": [
+      108,
+      108,
+      108,
+      108
+    ],
+    "review": "Manual crown-to-beard-chin anatomical axis; rotated KO head measured along its axis. Viewed every exported frame in all-frames panels."
+  },
+  "turn": {
+    "headSpan": 82,
+    "frameHeadSpans": [
+      82,
+      82,
+      82,
+      82
+    ],
+    "review": "Manual crown-to-beard-chin anatomical axis; rotated KO head measured along its axis. Viewed every exported frame in all-frames panels."
+  },
+  "land": {
+    "headSpan": 122,
+    "frameHeadSpans": [
+      122,
+      108,
+      94,
+      88
+    ],
+    "review": "Manual crown-to-beard-chin anatomical axis; rotated KO head measured along its axis. Viewed every exported frame in all-frames panels."
+  },
+  "jumpForward": {
+    "headSpan": 108,
+    "frameHeadSpans": [
+      108,
+      98,
+      118,
+      98
+    ],
+    "review": "Manual crown-to-beard-chin anatomical axis; rotated KO head measured along its axis. Viewed every exported frame in all-frames panels."
+  },
+  "super": {
+    "headSpan": 86,
+    "frameHeadSpans": [
+      86,
+      76,
+      74,
+      92
+    ],
+    "review": "Manual crown-to-beard-chin anatomical axis; rotated KO head measured along its axis. Viewed every exported frame in all-frames panels."
+  }
+}

@@ -1,0 +1,1450 @@
+{
+  "idle": [
+    {
+      "path": "assets/sprites/deve-ras/curated/idle-frame-0.png",
+      "sourceHeight": 659,
+      "outputHeight": 352,
+      "anchorX": 0.516320361744531,
+      "anchorY": 0.9583333333333334,
+      "scale": 1,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 58,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/deve-ras/curated/idle-frame-1.png",
+      "sourceHeight": 670,
+      "outputHeight": 352,
+      "anchorX": 0.5173989837303803,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.016692,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 58,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/deve-ras/curated/idle-frame-2.png",
+      "sourceHeight": 687,
+      "outputHeight": 352,
+      "anchorX": 0.51452609720206,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.042489,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 58,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/deve-ras/curated/idle-frame-3.png",
+      "sourceHeight": 649,
+      "outputHeight": 352,
+      "anchorX": 0.5196867812157264,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.984825,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 58,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "punch": [
+    {
+      "path": "assets/sprites/deve-ras/curated/punch-frame-0.png",
+      "sourceHeight": 651,
+      "outputHeight": 351,
+      "anchorX": 0.5065124297827824,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.983051,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 59,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/deve-ras/curated/punch-frame-1.png",
+      "sourceHeight": 647,
+      "outputHeight": 351,
+      "anchorX": 0.5100197034385034,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.977011,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 59,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/deve-ras/curated/punch-frame-2.png",
+      "sourceHeight": 644,
+      "outputHeight": 352,
+      "anchorX": 0.46701052378181956,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.969718,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 59,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/deve-ras/curated/punch-frame-3.png",
+      "sourceHeight": 650,
+      "outputHeight": 352,
+      "anchorX": 0.5084078379170142,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.978752,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 59,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "kick": [
+    {
+      "path": "assets/sprites/deve-ras/curated/kick-frame-0.png",
+      "sourceHeight": 658,
+      "outputHeight": 352,
+      "anchorX": 0.5013618129347868,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.054545,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 55,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/deve-ras/curated/kick-frame-1.png",
+      "sourceHeight": 663,
+      "outputHeight": 352,
+      "anchorX": 0.4466433702444461,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.062559,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 55,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/deve-ras/curated/kick-frame-2.png",
+      "sourceHeight": 642,
+      "outputHeight": 344,
+      "anchorX": 0.2750786803540807,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.052831,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 55,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/deve-ras/curated/kick-frame-3.png",
+      "sourceHeight": 665,
+      "outputHeight": 352,
+      "anchorX": 0.38553211456084285,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.065764,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 55,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "hurt": [
+    {
+      "path": "assets/sprites/deve-ras/curated/hurt-frame-0.png",
+      "sourceHeight": 648,
+      "outputHeight": 351,
+      "anchorX": 0.5086737553599586,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.983051,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 59,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/deve-ras/curated/hurt-frame-1.png",
+      "sourceHeight": 615,
+      "outputHeight": 351,
+      "anchorX": 0.49918509959726015,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.932988,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 59,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/deve-ras/curated/hurt-frame-2.png",
+      "sourceHeight": 605,
+      "outputHeight": 352,
+      "anchorX": 0.5090755971305861,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.91521,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 59,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/deve-ras/curated/hurt-frame-3.png",
+      "sourceHeight": 649,
+      "outputHeight": 352,
+      "anchorX": 0.5113048999410547,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.981771,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 59,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "jump": [
+    {
+      "path": "assets/sprites/deve-ras/curated/jump-frame-0.png",
+      "sourceHeight": 452,
+      "outputHeight": 338,
+      "anchorX": 0.4467121747114105,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.666667,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 87,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/deve-ras/curated/jump-frame-1.png",
+      "sourceHeight": 598,
+      "outputHeight": 352,
+      "anchorX": 0.42297248720391867,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.846926,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 87,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/deve-ras/curated/jump-frame-2.png",
+      "sourceHeight": 510,
+      "outputHeight": 352,
+      "anchorX": 0.4223495479748465,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.722295,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 87,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/deve-ras/curated/jump-frame-3.png",
+      "sourceHeight": 419,
+      "outputHeight": 291,
+      "anchorX": 0.4823823375400303,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.717808,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 87,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "special": [
+    {
+      "path": "assets/sprites/deve-ras/curated/special-frame-0.png",
+      "sourceHeight": 623,
+      "outputHeight": 352,
+      "anchorX": 0.5098545132347448,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.920635,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 63,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/deve-ras/curated/special-frame-1.png",
+      "sourceHeight": 616,
+      "outputHeight": 352,
+      "anchorX": 0.503136777346604,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.910291,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 63,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/deve-ras/curated/special-frame-2.png",
+      "sourceHeight": 598,
+      "outputHeight": 318,
+      "anchorX": 0.4172513598519439,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.978174,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 63,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/deve-ras/curated/special-frame-3.png",
+      "sourceHeight": 622,
+      "outputHeight": 352,
+      "anchorX": 0.5099132018951351,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.919157,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 63,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "walk": [
+    {
+      "path": "assets/sprites/deve-ras/curated/walk-frame-0.png",
+      "sourceHeight": 528,
+      "outputHeight": 352,
+      "anchorX": 0.4993413980734496,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.035714,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 56,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/deve-ras/curated/walk-frame-1.png",
+      "sourceHeight": 528,
+      "outputHeight": 352,
+      "anchorX": 0.44020769954778044,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.035714,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 56,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/deve-ras/curated/walk-frame-2.png",
+      "sourceHeight": 528,
+      "outputHeight": 352,
+      "anchorX": 0.4871499107518387,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.035714,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 56,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/deve-ras/curated/walk-frame-3.png",
+      "sourceHeight": 528,
+      "outputHeight": 352,
+      "anchorX": 0.4994659621849631,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.035714,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 56,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/deve-ras/curated/walk-frame-4.png",
+      "sourceHeight": 528,
+      "outputHeight": 352,
+      "anchorX": 0.415447708864827,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.035714,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 56,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/deve-ras/curated/walk-frame-5.png",
+      "sourceHeight": 528,
+      "outputHeight": 352,
+      "anchorX": 0.5031393856092862,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.035714,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 56,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "block": [
+    {
+      "path": "assets/sprites/deve-ras/curated/block-frame-0.png",
+      "sourceHeight": 681,
+      "outputHeight": 351,
+      "anchorX": 0.5109028443848876,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.983051,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 59,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/deve-ras/curated/block-frame-1.png",
+      "sourceHeight": 688,
+      "outputHeight": 352,
+      "anchorX": 0.5115849064610853,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.990334,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 59,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/deve-ras/curated/block-frame-2.png",
+      "sourceHeight": 651,
+      "outputHeight": 352,
+      "anchorX": 0.5141996766416734,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.937075,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 59,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/deve-ras/curated/block-frame-3.png",
+      "sourceHeight": 651,
+      "outputHeight": 352,
+      "anchorX": 0.5146246167176504,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.937075,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 59,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "crouch": [
+    {
+      "path": "assets/sprites/deve-ras/curated/crouch-frame-0.png",
+      "sourceHeight": 581,
+      "outputHeight": 351,
+      "anchorX": 0.45380547301449664,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.659091,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 88,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/deve-ras/curated/crouch-frame-1.png",
+      "sourceHeight": 507,
+      "outputHeight": 352,
+      "anchorX": 0.46550759346181714,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.573511,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 88,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/deve-ras/curated/crouch-frame-2.png",
+      "sourceHeight": 549,
+      "outputHeight": 352,
+      "anchorX": 0.4931020303604956,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.621021,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 88,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/deve-ras/curated/crouch-frame-3.png",
+      "sourceHeight": 512,
+      "outputHeight": 351,
+      "anchorX": 0.42635720487203366,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.580817,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 88,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "ko": [
+    {
+      "path": "assets/sprites/deve-ras/curated/ko-frame-0.png",
+      "sourceHeight": 557,
+      "outputHeight": 352,
+      "anchorX": 0.48911290966602533,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.920635,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 63,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/deve-ras/curated/ko-frame-1.png",
+      "sourceHeight": 436,
+      "outputHeight": 307,
+      "anchorX": 0.38082931883892607,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.826272,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 63,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/deve-ras/curated/ko-frame-2.png",
+      "sourceHeight": 266,
+      "outputHeight": 161,
+      "anchorX": 0.3458690276900073,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.961237,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 63,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/deve-ras/curated/ko-frame-3.png",
+      "sourceHeight": 147,
+      "outputHeight": 76,
+      "anchorX": 0.5242108352226672,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.125327,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 63,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "celebrate": [
+    {
+      "path": "assets/sprites/deve-ras/curated/celebrate-frame-0.png",
+      "sourceHeight": 612,
+      "outputHeight": 351,
+      "anchorX": 0.5095454434510164,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.035714,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 56,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/deve-ras/curated/celebrate-frame-1.png",
+      "sourceHeight": 634,
+      "outputHeight": 352,
+      "anchorX": 0.5022424464291565,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.069898,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 56,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/deve-ras/curated/celebrate-frame-2.png",
+      "sourceHeight": 684,
+      "outputHeight": 351,
+      "anchorX": 0.5050358318182253,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.157563,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 56,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/deve-ras/curated/celebrate-frame-3.png",
+      "sourceHeight": 683,
+      "outputHeight": 352,
+      "anchorX": 0.5030656782916032,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.152587,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 56,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "airPunch": [
+    {
+      "path": "assets/sprites/deve-ras/curated/airPunch-frame-0.png",
+      "sourceHeight": 609,
+      "outputHeight": 351,
+      "anchorX": 0.3468449059872105,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.773333,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 75,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/deve-ras/curated/airPunch-frame-1.png",
+      "sourceHeight": 630,
+      "outputHeight": 351,
+      "anchorX": 0.2683438372686875,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.8,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 75,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/deve-ras/curated/airPunch-frame-2.png",
+      "sourceHeight": 617,
+      "outputHeight": 352,
+      "anchorX": 0.23723858075029616,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.781266,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 75,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/deve-ras/curated/airPunch-frame-3.png",
+      "sourceHeight": 648,
+      "outputHeight": 352,
+      "anchorX": 0.3776069666047503,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.820519,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 75,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "airKick": [
+    {
+      "path": "assets/sprites/deve-ras/curated/airKick-frame-0.png",
+      "sourceHeight": 529,
+      "outputHeight": 352,
+      "anchorX": 0.447350635876161,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.74359,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 78,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/deve-ras/curated/airKick-frame-1.png",
+      "sourceHeight": 556,
+      "outputHeight": 351,
+      "anchorX": 0.3100182998378823,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.783769,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 78,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/deve-ras/curated/airKick-frame-2.png",
+      "sourceHeight": 461,
+      "outputHeight": 243,
+      "anchorX": 0.27892133311174644,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.938675,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 78,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/deve-ras/curated/airKick-frame-3.png",
+      "sourceHeight": 575,
+      "outputHeight": 352,
+      "anchorX": 0.4125073386823605,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.80825,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 78,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "crouchPunch": [
+    {
+      "path": "assets/sprites/deve-ras/curated/crouchPunch-frame-0.png",
+      "sourceHeight": 556,
+      "outputHeight": 352,
+      "anchorX": 0.4684566659609981,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.637363,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 91,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/deve-ras/curated/crouchPunch-frame-1.png",
+      "sourceHeight": 561,
+      "outputHeight": 351,
+      "anchorX": 0.4685377556657053,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.644926,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 91,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/deve-ras/curated/crouchPunch-frame-2.png",
+      "sourceHeight": 556,
+      "outputHeight": 307,
+      "anchorX": 0.40543922153099204,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.730787,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 91,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/deve-ras/curated/crouchPunch-frame-3.png",
+      "sourceHeight": 556,
+      "outputHeight": 352,
+      "anchorX": 0.4694690076156011,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.637363,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 91,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "crouchKick": [
+    {
+      "path": "assets/sprites/deve-ras/curated/crouchKick-frame-0.png",
+      "sourceHeight": 477,
+      "outputHeight": 351,
+      "anchorX": 0.4840220546126097,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.644444,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 90,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/deve-ras/curated/crouchKick-frame-1.png",
+      "sourceHeight": 570,
+      "outputHeight": 352,
+      "anchorX": 0.47297271788055406,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.767903,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 90,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/deve-ras/curated/crouchKick-frame-2.png",
+      "sourceHeight": 490,
+      "outputHeight": 271,
+      "anchorX": 0.5469642959478894,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.857435,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 90,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/deve-ras/curated/crouchKick-frame-3.png",
+      "sourceHeight": 478,
+      "outputHeight": 351,
+      "anchorX": 0.4847782971425703,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.645795,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 90,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "uppercut": [
+    {
+      "path": "assets/sprites/deve-ras/curated/uppercut-frame-0.png",
+      "sourceHeight": 486,
+      "outputHeight": 352,
+      "anchorX": 0.4924008405052767,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.763158,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 76,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/deve-ras/curated/uppercut-frame-1.png",
+      "sourceHeight": 518,
+      "outputHeight": 352,
+      "anchorX": 0.4932484751653167,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.813407,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 76,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/deve-ras/curated/uppercut-frame-2.png",
+      "sourceHeight": 692,
+      "outputHeight": 352,
+      "anchorX": 0.48454505362137673,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.086636,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 76,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/deve-ras/curated/uppercut-frame-3.png",
+      "sourceHeight": 536,
+      "outputHeight": 352,
+      "anchorX": 0.507298331361662,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.841672,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 76,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "sweep": [
+    {
+      "path": "assets/sprites/deve-ras/curated/sweep-frame-0.png",
+      "sourceHeight": 459,
+      "outputHeight": 352,
+      "anchorX": 0.454513130739203,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.604167,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 96,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/deve-ras/curated/sweep-frame-1.png",
+      "sourceHeight": 493,
+      "outputHeight": 352,
+      "anchorX": 0.5781147186061674,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.64892,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 96,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/deve-ras/curated/sweep-frame-2.png",
+      "sourceHeight": 443,
+      "outputHeight": 213,
+      "anchorX": 0.46062307153433935,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.963631,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 96,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/deve-ras/curated/sweep-frame-3.png",
+      "sourceHeight": 457,
+      "outputHeight": 351,
+      "anchorX": 0.4629740671668349,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.603248,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 96,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "dash": [
+    {
+      "path": "assets/sprites/deve-ras/curated/dash-frame-0.png",
+      "sourceHeight": 548,
+      "outputHeight": 352,
+      "anchorX": 0.41227226728294014,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.773333,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 75,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/deve-ras/curated/dash-frame-1.png",
+      "sourceHeight": 547,
+      "outputHeight": 350,
+      "anchorX": 0.5370528876085617,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.776333,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 75,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/deve-ras/curated/dash-frame-2.png",
+      "sourceHeight": 516,
+      "outputHeight": 330,
+      "anchorX": 0.5053697098740849,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.77672,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 75,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/deve-ras/curated/dash-frame-3.png",
+      "sourceHeight": 551,
+      "outputHeight": 352,
+      "anchorX": 0.4880255358611186,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.777567,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 75,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "backwalk": [
+    {
+      "path": "assets/sprites/deve-ras/curated/backwalk-frame-0.png",
+      "sourceHeight": 514,
+      "outputHeight": 351,
+      "anchorX": 0.49558759839914535,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.983051,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 59,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/deve-ras/curated/backwalk-frame-1.png",
+      "sourceHeight": 506,
+      "outputHeight": 352,
+      "anchorX": 0.5115764478137906,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.965001,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 59,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/deve-ras/curated/backwalk-frame-2.png",
+      "sourceHeight": 504,
+      "outputHeight": 352,
+      "anchorX": 0.5024182922956723,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.961187,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 59,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/deve-ras/curated/backwalk-frame-3.png",
+      "sourceHeight": 507,
+      "outputHeight": 351,
+      "anchorX": 0.48780661901004185,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.969663,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 59,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/deve-ras/curated/backwalk-frame-4.png",
+      "sourceHeight": 507,
+      "outputHeight": 352,
+      "anchorX": 0.4861740686039357,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.966908,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 59,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/deve-ras/curated/backwalk-frame-5.png",
+      "sourceHeight": 516,
+      "outputHeight": 352,
+      "anchorX": 0.4955687324422151,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.984072,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 59,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "lowBlock": [
+    {
+      "path": "assets/sprites/deve-ras/curated/lowBlock-frame-0.png",
+      "sourceHeight": 503,
+      "outputHeight": 352,
+      "anchorX": 0.49077034084694565,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.591837,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 98,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/deve-ras/curated/lowBlock-frame-1.png",
+      "sourceHeight": 506,
+      "outputHeight": 352,
+      "anchorX": 0.48732236585820377,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.595367,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 98,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/deve-ras/curated/lowBlock-frame-2.png",
+      "sourceHeight": 505,
+      "outputHeight": 343,
+      "anchorX": 0.4869076224679998,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.609781,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 98,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/deve-ras/curated/lowBlock-frame-3.png",
+      "sourceHeight": 522,
+      "outputHeight": 351,
+      "anchorX": 0.4823296188701424,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.615942,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 98,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "turn": [
+    {
+      "path": "assets/sprites/deve-ras/curated/turn-frame-0.png",
+      "sourceHeight": 674,
+      "outputHeight": 352,
+      "anchorX": 0.49606608500409455,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.90625,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 64,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/deve-ras/curated/turn-frame-1.png",
+      "sourceHeight": 682,
+      "outputHeight": 352,
+      "anchorX": 0.5008488973997024,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.917007,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 64,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/deve-ras/curated/turn-frame-2.png",
+      "sourceHeight": 682,
+      "outputHeight": 351,
+      "anchorX": 0.4994598895234474,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.919619,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 64,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/deve-ras/curated/turn-frame-3.png",
+      "sourceHeight": 674,
+      "outputHeight": 352,
+      "anchorX": 0.5020007989286475,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.90625,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 64,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "land": [
+    {
+      "path": "assets/sprites/deve-ras/curated/land-frame-0.png",
+      "sourceHeight": 474,
+      "outputHeight": 352,
+      "anchorX": 0.5055899520689259,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.651685,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 89,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/deve-ras/curated/land-frame-1.png",
+      "sourceHeight": 581,
+      "outputHeight": 352,
+      "anchorX": 0.5103566290525132,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.798796,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 89,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/deve-ras/curated/land-frame-2.png",
+      "sourceHeight": 667,
+      "outputHeight": 352,
+      "anchorX": 0.5106378696705315,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.917034,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 89,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/deve-ras/curated/land-frame-3.png",
+      "sourceHeight": 683,
+      "outputHeight": 352,
+      "anchorX": 0.5122969167970107,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.939032,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 89,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "jumpForward": [
+    {
+      "path": "assets/sprites/deve-ras/curated/jumpForward-frame-0.png",
+      "sourceHeight": 489,
+      "outputHeight": 340,
+      "anchorX": 0.44288442724032345,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.753247,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 77,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/deve-ras/curated/jumpForward-frame-1.png",
+      "sourceHeight": 625,
+      "outputHeight": 351,
+      "anchorX": 0.23258852434190103,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.932567,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 77,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/deve-ras/curated/jumpForward-frame-2.png",
+      "sourceHeight": 463,
+      "outputHeight": 351,
+      "anchorX": 0.39237176205421137,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.690846,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 77,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/deve-ras/curated/jumpForward-frame-3.png",
+      "sourceHeight": 613,
+      "outputHeight": 352,
+      "anchorX": 0.6876640617232471,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.912064,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 77,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "super": [
+    {
+      "path": "assets/sprites/deve-ras/curated/super-frame-0.png",
+      "sourceHeight": 609,
+      "outputHeight": 352,
+      "anchorX": 0.5066643757582027,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.983051,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 59,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/deve-ras/curated/super-frame-1.png",
+      "sourceHeight": 604,
+      "outputHeight": 352,
+      "anchorX": 0.5086610010589512,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.97498,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 59,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/deve-ras/curated/super-frame-2.png",
+      "sourceHeight": 585,
+      "outputHeight": 298,
+      "anchorX": 0.4255110900491385,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.115426,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 59,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/deve-ras/curated/super-frame-3.png",
+      "sourceHeight": 608,
+      "outputHeight": 352,
+      "anchorX": 0.49768629035973566,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.981437,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 59,
+        "idleHeadSpan": 58,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ]
+}

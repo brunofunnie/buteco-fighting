@@ -1,0 +1,1450 @@
+{
+  "idle": [
+    {
+      "path": "assets/sprites/mango/curated/idle-frame-0.png",
+      "sourceHeight": 659,
+      "outputHeight": 352,
+      "anchorX": 0.5122470386478299,
+      "anchorY": 0.9583333333333334,
+      "scale": 1,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 65,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mango/curated/idle-frame-1.png",
+      "sourceHeight": 665,
+      "outputHeight": 352,
+      "anchorX": 0.5102306811453127,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.009105,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 65,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mango/curated/idle-frame-2.png",
+      "sourceHeight": 671,
+      "outputHeight": 352,
+      "anchorX": 0.5087538570511358,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.018209,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 65,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mango/curated/idle-frame-3.png",
+      "sourceHeight": 658,
+      "outputHeight": 352,
+      "anchorX": 0.5071304147031305,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.998483,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 65,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "punch": [
+    {
+      "path": "assets/sprites/mango/curated/punch-frame-0.png",
+      "sourceHeight": 626,
+      "outputHeight": 352,
+      "anchorX": 0.5075233301414889,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.984848,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 66,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mango/curated/punch-frame-1.png",
+      "sourceHeight": 599,
+      "outputHeight": 352,
+      "anchorX": 0.5105925330713174,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.942371,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 66,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mango/curated/punch-frame-2.png",
+      "sourceHeight": 601,
+      "outputHeight": 352,
+      "anchorX": 0.49725333679929573,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.945517,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 66,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mango/curated/punch-frame-3.png",
+      "sourceHeight": 626,
+      "outputHeight": 351,
+      "anchorX": 0.5078910200762942,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.987654,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 66,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "kick": [
+    {
+      "path": "assets/sprites/mango/curated/kick-frame-0.png",
+      "sourceHeight": 647,
+      "outputHeight": 352,
+      "anchorX": 0.5051504522908361,
+      "anchorY": 0.9583333333333334,
+      "scale": 1,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 65,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mango/curated/kick-frame-1.png",
+      "sourceHeight": 655,
+      "outputHeight": 352,
+      "anchorX": 0.41481006676890425,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.012365,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 65,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mango/curated/kick-frame-2.png",
+      "sourceHeight": 646,
+      "outputHeight": 351,
+      "anchorX": 0.244646709176674,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.001299,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 65,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mango/curated/kick-frame-3.png",
+      "sourceHeight": 647,
+      "outputHeight": 352,
+      "anchorX": 0.4154709345649876,
+      "anchorY": 0.9583333333333334,
+      "scale": 1,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 65,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "hurt": [
+    {
+      "path": "assets/sprites/mango/curated/hurt-frame-0.png",
+      "sourceHeight": 638,
+      "outputHeight": 352,
+      "anchorX": 0.5108232140950609,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.101695,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 59,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mango/curated/hurt-frame-1.png",
+      "sourceHeight": 605,
+      "outputHeight": 351,
+      "anchorX": 0.5057050714269892,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.047687,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 59,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mango/curated/hurt-frame-2.png",
+      "sourceHeight": 616,
+      "outputHeight": 351,
+      "anchorX": 0.5051935850091979,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.066736,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 59,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mango/curated/hurt-frame-3.png",
+      "sourceHeight": 631,
+      "outputHeight": 352,
+      "anchorX": 0.5162070143630593,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.089607,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 59,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "jump": [
+    {
+      "path": "assets/sprites/mango/curated/jump-frame-0.png",
+      "sourceHeight": 490,
+      "outputHeight": 352,
+      "anchorX": 0.4937268435704718,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.663265,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 98,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mango/curated/jump-frame-1.png",
+      "sourceHeight": 630,
+      "outputHeight": 352,
+      "anchorX": 0.29844182010907583,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.85277,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 98,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mango/curated/jump-frame-2.png",
+      "sourceHeight": 490,
+      "outputHeight": 351,
+      "anchorX": 0.4898578968582857,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.665155,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 98,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mango/curated/jump-frame-3.png",
+      "sourceHeight": 428,
+      "outputHeight": 347,
+      "anchorX": 0.5064508425991702,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.58769,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 98,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "special": [
+    {
+      "path": "assets/sprites/mango/curated/special-frame-0.png",
+      "sourceHeight": 622,
+      "outputHeight": 351,
+      "anchorX": 0.5098921211012364,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.970149,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 67,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mango/curated/special-frame-1.png",
+      "sourceHeight": 618,
+      "outputHeight": 352,
+      "anchorX": 0.5062534940378373,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.961172,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 67,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mango/curated/special-frame-2.png",
+      "sourceHeight": 608,
+      "outputHeight": 344,
+      "anchorX": 0.47558502224017235,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.96761,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 67,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mango/curated/special-frame-3.png",
+      "sourceHeight": 621,
+      "outputHeight": 352,
+      "anchorX": 0.5089407295350193,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.965838,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 67,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "walk": [
+    {
+      "path": "assets/sprites/mango/curated/walk-frame-0.png",
+      "sourceHeight": 587,
+      "outputHeight": 351,
+      "anchorX": 0.49182789697013524,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.031746,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 63,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mango/curated/walk-frame-1.png",
+      "sourceHeight": 589,
+      "outputHeight": 352,
+      "anchorX": 0.46285624502021533,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.03232,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 63,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mango/curated/walk-frame-2.png",
+      "sourceHeight": 588,
+      "outputHeight": 351,
+      "anchorX": 0.4954040377443489,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.033504,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 63,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mango/curated/walk-frame-3.png",
+      "sourceHeight": 590,
+      "outputHeight": 351,
+      "anchorX": 0.4418298039532746,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.037019,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 63,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mango/curated/walk-frame-4.png",
+      "sourceHeight": 592,
+      "outputHeight": 352,
+      "anchorX": 0.43834077795110304,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.037578,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 63,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mango/curated/walk-frame-5.png",
+      "sourceHeight": 589,
+      "outputHeight": 352,
+      "anchorX": 0.5016842493925062,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.03232,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 63,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "block": [
+    {
+      "path": "assets/sprites/mango/curated/block-frame-0.png",
+      "sourceHeight": 668,
+      "outputHeight": 351,
+      "anchorX": 0.5067679198515908,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.984848,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 66,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mango/curated/block-frame-1.png",
+      "sourceHeight": 668,
+      "outputHeight": 352,
+      "anchorX": 0.5049322736684493,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.982051,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 66,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mango/curated/block-frame-2.png",
+      "sourceHeight": 665,
+      "outputHeight": 352,
+      "anchorX": 0.502884524037564,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.97764,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 66,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mango/curated/block-frame-3.png",
+      "sourceHeight": 660,
+      "outputHeight": 352,
+      "anchorX": 0.5055907367490078,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.97029,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 66,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "crouch": [
+    {
+      "path": "assets/sprites/mango/curated/crouch-frame-0.png",
+      "sourceHeight": 612,
+      "outputHeight": 352,
+      "anchorX": 0.43144409611006873,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.792683,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 82,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mango/curated/crouch-frame-1.png",
+      "sourceHeight": 566,
+      "outputHeight": 351,
+      "anchorX": 0.42897454497771487,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.735191,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 82,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mango/curated/crouch-frame-2.png",
+      "sourceHeight": 484,
+      "outputHeight": 352,
+      "anchorX": 0.4302414480364332,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.626893,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 82,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mango/curated/crouch-frame-3.png",
+      "sourceHeight": 501,
+      "outputHeight": 352,
+      "anchorX": 0.4802115939727789,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.648912,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 82,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "ko": [
+    {
+      "path": "assets/sprites/mango/curated/ko-frame-0.png",
+      "sourceHeight": 577,
+      "outputHeight": 352,
+      "anchorX": 0.5079701781282845,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.984848,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 66,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mango/curated/ko-frame-1.png",
+      "sourceHeight": 441,
+      "outputHeight": 351,
+      "anchorX": 0.3986636815316289,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.754862,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 66,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mango/curated/ko-frame-2.png",
+      "sourceHeight": 261,
+      "outputHeight": 153,
+      "anchorX": 0.49875058782919085,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.024909,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 66,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mango/curated/ko-frame-3.png",
+      "sourceHeight": 148,
+      "outputHeight": 77,
+      "anchorX": 0.5659299842935578,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.154801,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 66,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "celebrate": [
+    {
+      "path": "assets/sprites/mango/curated/celebrate-frame-0.png",
+      "sourceHeight": 623,
+      "outputHeight": 351,
+      "anchorX": 0.5123715939495829,
+      "anchorY": 0.9583333333333334,
+      "scale": 1,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 65,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mango/curated/celebrate-frame-1.png",
+      "sourceHeight": 661,
+      "outputHeight": 352,
+      "anchorX": 0.5006780379424215,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.057981,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 65,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mango/curated/celebrate-frame-2.png",
+      "sourceHeight": 693,
+      "outputHeight": 351,
+      "anchorX": 0.504776922406716,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.11236,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 65,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mango/curated/celebrate-frame-3.png",
+      "sourceHeight": 696,
+      "outputHeight": 351,
+      "anchorX": 0.5011079621259272,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.117175,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 65,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "airPunch": [
+    {
+      "path": "assets/sprites/mango/curated/airPunch-frame-0.png",
+      "sourceHeight": 584,
+      "outputHeight": 351,
+      "anchorX": 0.44982569981533843,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.783133,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 83,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mango/curated/airPunch-frame-1.png",
+      "sourceHeight": 591,
+      "outputHeight": 352,
+      "anchorX": 0.285614347194296,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.790268,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 83,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mango/curated/airPunch-frame-2.png",
+      "sourceHeight": 612,
+      "outputHeight": 351,
+      "anchorX": 0.2884459343056855,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.82068,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 83,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mango/curated/airPunch-frame-3.png",
+      "sourceHeight": 624,
+      "outputHeight": 352,
+      "anchorX": 0.3891176708323097,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.834395,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 83,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "airKick": [
+    {
+      "path": "assets/sprites/mango/curated/airKick-frame-0.png",
+      "sourceHeight": 498,
+      "outputHeight": 352,
+      "anchorX": 0.5186405079122371,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.738636,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 88,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mango/curated/airKick-frame-1.png",
+      "sourceHeight": 507,
+      "outputHeight": 352,
+      "anchorX": 0.41924636476666793,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.751985,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 88,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mango/curated/airKick-frame-2.png",
+      "sourceHeight": 462,
+      "outputHeight": 251,
+      "anchorX": 0.3155675957000313,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.960975,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 88,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mango/curated/airKick-frame-3.png",
+      "sourceHeight": 582,
+      "outputHeight": 351,
+      "anchorX": 0.3178368975422918,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.865685,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 88,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "crouchPunch": [
+    {
+      "path": "assets/sprites/mango/curated/crouchPunch-frame-0.png",
+      "sourceHeight": 544,
+      "outputHeight": 351,
+      "anchorX": 0.5143940128456383,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.691489,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 94,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mango/curated/crouchPunch-frame-1.png",
+      "sourceHeight": 544,
+      "outputHeight": 351,
+      "anchorX": 0.5143794068080141,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.691489,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 94,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mango/curated/crouchPunch-frame-2.png",
+      "sourceHeight": 532,
+      "outputHeight": 293,
+      "anchorX": 0.4402244284212072,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.810098,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 94,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mango/curated/crouchPunch-frame-3.png",
+      "sourceHeight": 543,
+      "outputHeight": 352,
+      "anchorX": 0.5084106101968625,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.688257,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 94,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "crouchKick": [
+    {
+      "path": "assets/sprites/mango/curated/crouchKick-frame-0.png",
+      "sourceHeight": 520,
+      "outputHeight": 343,
+      "anchorX": 0.49423295302148373,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.656566,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 99,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mango/curated/crouchKick-frame-1.png",
+      "sourceHeight": 606,
+      "outputHeight": 352,
+      "anchorX": 0.3470764476511921,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.745588,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 99,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mango/curated/crouchKick-frame-2.png",
+      "sourceHeight": 508,
+      "outputHeight": 268,
+      "anchorX": 0.4318863657175187,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.820914,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 99,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mango/curated/crouchKick-frame-3.png",
+      "sourceHeight": 518,
+      "outputHeight": 352,
+      "anchorX": 0.4796019982940823,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.637318,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 99,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "uppercut": [
+    {
+      "path": "assets/sprites/mango/curated/uppercut-frame-0.png",
+      "sourceHeight": 538,
+      "outputHeight": 352,
+      "anchorX": 0.5200838660517192,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.783133,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 83,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mango/curated/uppercut-frame-1.png",
+      "sourceHeight": 579,
+      "outputHeight": 352,
+      "anchorX": 0.5125102240321396,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.842814,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 83,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mango/curated/uppercut-frame-2.png",
+      "sourceHeight": 694,
+      "outputHeight": 352,
+      "anchorX": 0.5058368947924315,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.010212,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 83,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mango/curated/uppercut-frame-3.png",
+      "sourceHeight": 577,
+      "outputHeight": 352,
+      "anchorX": 0.5127243753870353,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.839902,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 83,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "sweep": [
+    {
+      "path": "assets/sprites/mango/curated/sweep-frame-0.png",
+      "sourceHeight": 470,
+      "outputHeight": 352,
+      "anchorX": 0.43189612669314426,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.8125,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 80,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mango/curated/sweep-frame-1.png",
+      "sourceHeight": 457,
+      "outputHeight": 279,
+      "anchorX": 0.5081785024781557,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.996736,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 80,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mango/curated/sweep-frame-2.png",
+      "sourceHeight": 414,
+      "outputHeight": 201,
+      "anchorX": 0.5617090833440473,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.25335,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 80,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mango/curated/sweep-frame-3.png",
+      "sourceHeight": 470,
+      "outputHeight": 352,
+      "anchorX": 0.48156988063744016,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.8125,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 80,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "dash": [
+    {
+      "path": "assets/sprites/mango/curated/dash-frame-0.png",
+      "sourceHeight": 561,
+      "outputHeight": 352,
+      "anchorX": 0.4671787764860637,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.792683,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 82,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mango/curated/dash-frame-1.png",
+      "sourceHeight": 562,
+      "outputHeight": 342,
+      "anchorX": 0.39119966216340946,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.817315,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 82,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mango/curated/dash-frame-2.png",
+      "sourceHeight": 537,
+      "outputHeight": 300,
+      "anchorX": 0.5500955323748581,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.890292,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 82,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mango/curated/dash-frame-3.png",
+      "sourceHeight": 555,
+      "outputHeight": 352,
+      "anchorX": 0.4693980933739647,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.784205,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 82,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "backwalk": [
+    {
+      "path": "assets/sprites/mango/curated/backwalk-frame-0.png",
+      "sourceHeight": 577,
+      "outputHeight": 352,
+      "anchorX": 0.5007692136467362,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.015625,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 64,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mango/curated/backwalk-frame-1.png",
+      "sourceHeight": 579,
+      "outputHeight": 351,
+      "anchorX": 0.46865308570082803,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.022049,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 64,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mango/curated/backwalk-frame-2.png",
+      "sourceHeight": 576,
+      "outputHeight": 352,
+      "anchorX": 0.49698182306286115,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.013865,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 64,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mango/curated/backwalk-frame-3.png",
+      "sourceHeight": 575,
+      "outputHeight": 352,
+      "anchorX": 0.4786642368730842,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.012105,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 64,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mango/curated/backwalk-frame-4.png",
+      "sourceHeight": 575,
+      "outputHeight": 352,
+      "anchorX": 0.48552371034602154,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.012105,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 64,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mango/curated/backwalk-frame-5.png",
+      "sourceHeight": 577,
+      "outputHeight": 352,
+      "anchorX": 0.5025521008595274,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.015625,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 64,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "lowBlock": [
+    {
+      "path": "assets/sprites/mango/curated/lowBlock-frame-0.png",
+      "sourceHeight": 532,
+      "outputHeight": 351,
+      "anchorX": 0.5098121289013827,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.625,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 104,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mango/curated/lowBlock-frame-1.png",
+      "sourceHeight": 548,
+      "outputHeight": 352,
+      "anchorX": 0.5025262323099698,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.641968,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 104,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mango/curated/lowBlock-frame-2.png",
+      "sourceHeight": 544,
+      "outputHeight": 352,
+      "anchorX": 0.4604863956421091,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.637282,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 104,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mango/curated/lowBlock-frame-3.png",
+      "sourceHeight": 544,
+      "outputHeight": 352,
+      "anchorX": 0.5066578105918372,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.637282,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 104,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "turn": [
+    {
+      "path": "assets/sprites/mango/curated/turn-frame-0.png",
+      "sourceHeight": 678,
+      "outputHeight": 352,
+      "anchorX": 0.5060938451573018,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.083333,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 60,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mango/curated/turn-frame-1.png",
+      "sourceHeight": 682,
+      "outputHeight": 352,
+      "anchorX": 0.5094111880276051,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.089725,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 60,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mango/curated/turn-frame-2.png",
+      "sourceHeight": 686,
+      "outputHeight": 352,
+      "anchorX": 0.500700611371751,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.096116,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 60,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mango/curated/turn-frame-3.png",
+      "sourceHeight": 678,
+      "outputHeight": 352,
+      "anchorX": 0.4950346091375221,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.083333,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 60,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "land": [
+    {
+      "path": "assets/sprites/mango/curated/land-frame-0.png",
+      "sourceHeight": 466,
+      "outputHeight": 351,
+      "anchorX": 0.5290967664778405,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.643564,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 101,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mango/curated/land-frame-1.png",
+      "sourceHeight": 558,
+      "outputHeight": 352,
+      "anchorX": 0.497444364238595,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.768431,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 101,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mango/curated/land-frame-2.png",
+      "sourceHeight": 654,
+      "outputHeight": 352,
+      "anchorX": 0.506790515666646,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.900634,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 101,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mango/curated/land-frame-3.png",
+      "sourceHeight": 687,
+      "outputHeight": 352,
+      "anchorX": 0.5048885139670471,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.946079,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 101,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "jumpForward": [
+    {
+      "path": "assets/sprites/mango/curated/jumpForward-frame-0.png",
+      "sourceHeight": 513,
+      "outputHeight": 352,
+      "anchorX": 0.45078884791915197,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.684211,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 95,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mango/curated/jumpForward-frame-1.png",
+      "sourceHeight": 654,
+      "outputHeight": 352,
+      "anchorX": 0.229571408823558,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.872268,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 95,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mango/curated/jumpForward-frame-2.png",
+      "sourceHeight": 481,
+      "outputHeight": 352,
+      "anchorX": 0.41417504886270473,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.641531,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 95,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mango/curated/jumpForward-frame-3.png",
+      "sourceHeight": 647,
+      "outputHeight": 352,
+      "anchorX": 0.7077964550846151,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.862932,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 95,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "super": [
+    {
+      "path": "assets/sprites/mango/curated/super-frame-0.png",
+      "sourceHeight": 546,
+      "outputHeight": 352,
+      "anchorX": 0.5027043031982714,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.822785,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 79,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mango/curated/super-frame-1.png",
+      "sourceHeight": 668,
+      "outputHeight": 351,
+      "anchorX": 0.531607466583807,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.009498,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 79,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mango/curated/super-frame-2.png",
+      "sourceHeight": 588,
+      "outputHeight": 324,
+      "anchorX": 0.4603728134331897,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.96265,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 79,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/mango/curated/super-frame-3.png",
+      "sourceHeight": 634,
+      "outputHeight": 352,
+      "anchorX": 0.5099418358207936,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.955395,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 79,
+        "idleHeadSpan": 65,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ]
+}

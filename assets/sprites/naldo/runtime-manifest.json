@@ -1,0 +1,746 @@
+{
+  "idle": {
+    "frames": [
+      {
+        "path": "assets/sprites/naldo/curated/idle-frame-0.png",
+        "scale": 1,
+        "anchorX": 0.5034849418928077,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/naldo/curated/idle-frame-1.png",
+        "scale": 1,
+        "anchorX": 0.5047783413415686,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/naldo/curated/idle-frame-2.png",
+        "scale": 1,
+        "anchorX": 0.5068764226546373,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/naldo/curated/idle-frame-3.png",
+        "scale": 1,
+        "anchorX": 0.5046966901786402,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 6,
+    "loop": true
+  },
+  "punch": {
+    "frames": [
+      {
+        "path": "assets/sprites/naldo/curated/punch-frame-0.png",
+        "scale": 1,
+        "anchorX": 0.5042638166742487,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/naldo/curated/punch-frame-1.png",
+        "scale": 1,
+        "anchorX": 0.502795918693063,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/naldo/curated/punch-frame-2.png",
+        "scale": 1,
+        "anchorX": 0.40399196464802184,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/naldo/curated/punch-frame-3.png",
+        "scale": 1,
+        "anchorX": 0.5025222310377226,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  },
+  "kick": {
+    "frames": [
+      {
+        "path": "assets/sprites/naldo/curated/kick-frame-0.png",
+        "scale": 1,
+        "anchorX": 0.506581673524798,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/naldo/curated/kick-frame-1.png",
+        "scale": 1,
+        "anchorX": 0.42960125427520274,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/naldo/curated/kick-frame-2.png",
+        "scale": 1.1,
+        "anchorX": 0.2642118116148264,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/naldo/curated/kick-frame-3.png",
+        "scale": 1,
+        "anchorX": 0.3491016345738296,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 10,
+    "loop": false
+  },
+  "hurt": {
+    "frames": [
+      {
+        "path": "assets/sprites/naldo/curated/hurt-frame-0.png",
+        "scale": 0.985075,
+        "anchorX": 0.5030622766607523,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/naldo/curated/hurt-frame-1.png",
+        "scale": 0.90411,
+        "anchorX": 0.500517719922987,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/naldo/curated/hurt-frame-2.png",
+        "scale": 0.868421,
+        "anchorX": 0.47921738312079865,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/naldo/curated/hurt-frame-3.png",
+        "scale": 1.03125,
+        "anchorX": 0.5041756927443379,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 10,
+    "loop": false
+  },
+  "jump": {
+    "frames": [
+      {
+        "path": "assets/sprites/naldo/curated/jump-frame-0.png",
+        "scale": 0.733333,
+        "anchorX": 0.498263758454587,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/naldo/curated/jump-frame-1.png",
+        "scale": 0.825,
+        "anchorX": 0.5416996811477865,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/naldo/curated/jump-frame-2.png",
+        "scale": 0.758621,
+        "anchorX": 0.5276632675970334,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/naldo/curated/jump-frame-3.png",
+        "scale": 0.825,
+        "anchorX": 0.5225619804758076,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 8,
+    "loop": false
+  },
+  "special": {
+    "frames": [
+      {
+        "path": "assets/sprites/naldo/curated/special-frame-0.png",
+        "scale": 0.90411,
+        "anchorX": 0.5105248171502108,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/naldo/curated/special-frame-1.png",
+        "scale": 0.90411,
+        "anchorX": 0.5042557267124309,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/naldo/curated/special-frame-2.png",
+        "scale": 1.047619,
+        "anchorX": 0.4463812430888727,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/naldo/curated/special-frame-3.png",
+        "scale": 0.90411,
+        "anchorX": 0.5101367863167909,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 10,
+    "loop": false
+  },
+  "walk": {
+    "frames": [
+      {
+        "path": "assets/sprites/naldo/curated/walk-frame-0.png",
+        "scale": 0.956522,
+        "anchorX": 0.4896985531018523,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/naldo/curated/walk-frame-1.png",
+        "scale": 0.956522,
+        "anchorX": 0.43917768623054904,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/naldo/curated/walk-frame-2.png",
+        "scale": 0.956522,
+        "anchorX": 0.47465932923102616,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/naldo/curated/walk-frame-3.png",
+        "scale": 0.956522,
+        "anchorX": 0.4710070511831885,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/naldo/curated/walk-frame-4.png",
+        "scale": 0.956522,
+        "anchorX": 0.4706571714422429,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/naldo/curated/walk-frame-5.png",
+        "scale": 0.956522,
+        "anchorX": 0.49447484604054637,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": true
+  },
+  "block": {
+    "frames": [
+      {
+        "path": "assets/sprites/naldo/curated/block-frame-0.png",
+        "scale": 0.891892,
+        "anchorX": 0.510941237589,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/naldo/curated/block-frame-1.png",
+        "scale": 0.88,
+        "anchorX": 0.5112696175776654,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/naldo/curated/block-frame-2.png",
+        "scale": 0.758621,
+        "anchorX": 0.5114063651330089,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/naldo/curated/block-frame-3.png",
+        "scale": 0.758621,
+        "anchorX": 0.5109993396902098,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 8,
+    "loop": false
+  },
+  "crouch": {
+    "frames": [
+      {
+        "path": "assets/sprites/naldo/curated/crouch-frame-0.png",
+        "scale": 0.804878,
+        "anchorX": 0.4555003542059726,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/naldo/curated/crouch-frame-1.png",
+        "scale": 0.75,
+        "anchorX": 0.44408133452940524,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/naldo/curated/crouch-frame-2.png",
+        "scale": 0.647059,
+        "anchorX": 0.4665076474784624,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/naldo/curated/crouch-frame-3.png",
+        "scale": 0.622642,
+        "anchorX": 0.4848310928634127,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 8,
+    "loop": false
+  },
+  "ko": {
+    "frames": [
+      {
+        "path": "assets/sprites/naldo/curated/ko-frame-0.png",
+        "scale": 0.868421,
+        "anchorX": 0.5276655736444231,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/naldo/curated/ko-frame-1.png",
+        "scale": 0.66855,
+        "anchorX": 0.5255617246981,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/naldo/curated/ko-frame-2.png",
+        "scale": 0.944564,
+        "anchorX": 0.5014789668973211,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/naldo/curated/ko-frame-3.png",
+        "scale": 0.906544,
+        "anchorX": 0.5284807069472419,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 8,
+    "loop": false
+  },
+  "celebrate": {
+    "frames": [
+      {
+        "path": "assets/sprites/naldo/curated/celebrate-frame-0.png",
+        "scale": 1.015385,
+        "anchorX": 0.5095024640246455,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/naldo/curated/celebrate-frame-1.png",
+        "scale": 1.015385,
+        "anchorX": 0.4977039036767308,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/naldo/curated/celebrate-frame-2.png",
+        "scale": 1.2,
+        "anchorX": 0.502724565081165,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/naldo/curated/celebrate-frame-3.png",
+        "scale": 1.2,
+        "anchorX": 0.5011305799230129,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 6,
+    "loop": false
+  },
+  "airPunch": {
+    "frames": [
+      {
+        "path": "assets/sprites/naldo/curated/airPunch-frame-0.png",
+        "scale": 0.785714,
+        "anchorX": 0.41997094169257193,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/naldo/curated/airPunch-frame-1.png",
+        "scale": 0.785714,
+        "anchorX": 0.3668203275596156,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/naldo/curated/airPunch-frame-2.png",
+        "scale": 0.785714,
+        "anchorX": 0.22024108280996815,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/naldo/curated/airPunch-frame-3.png",
+        "scale": 0.785714,
+        "anchorX": 0.3974084517460555,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  },
+  "airKick": {
+    "frames": [
+      {
+        "path": "assets/sprites/naldo/curated/airKick-frame-0.png",
+        "scale": 0.891892,
+        "anchorX": 0.5322125152208015,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/naldo/curated/airKick-frame-1.png",
+        "scale": 0.985075,
+        "anchorX": 0.31924090046199094,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/naldo/curated/airKick-frame-2.png",
+        "scale": 1.015385,
+        "anchorX": 0.2886580676446408,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/naldo/curated/airKick-frame-3.png",
+        "scale": 0.891892,
+        "anchorX": 0.5028435454942007,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  },
+  "crouchPunch": {
+    "frames": [
+      {
+        "path": "assets/sprites/naldo/curated/crouchPunch-frame-0.png",
+        "scale": 0.622642,
+        "anchorX": 0.5191049535210133,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/naldo/curated/crouchPunch-frame-1.png",
+        "scale": 0.622642,
+        "anchorX": 0.5189653833358898,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/naldo/curated/crouchPunch-frame-2.png",
+        "scale": 0.857143,
+        "anchorX": 0.45257845647434936,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/naldo/curated/crouchPunch-frame-3.png",
+        "scale": 0.622642,
+        "anchorX": 0.5169394406450086,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  },
+  "crouchKick": {
+    "frames": [
+      {
+        "path": "assets/sprites/naldo/curated/crouchKick-frame-0.png",
+        "scale": 0.6875,
+        "anchorX": 0.5506213438209123,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/naldo/curated/crouchKick-frame-1.png",
+        "scale": 0.717391,
+        "anchorX": 0.3747963121005362,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/naldo/curated/crouchKick-frame-2.png",
+        "scale": 0.970588,
+        "anchorX": 0.5105769798311465,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/naldo/curated/crouchKick-frame-3.png",
+        "scale": 0.6875,
+        "anchorX": 0.5380944972601999,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 10,
+    "loop": false
+  },
+  "uppercut": {
+    "frames": [
+      {
+        "path": "assets/sprites/naldo/curated/uppercut-frame-0.png",
+        "scale": 0.891892,
+        "anchorX": 0.49891320139502965,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/naldo/curated/uppercut-frame-1.png",
+        "scale": 0.970588,
+        "anchorX": 0.4979527646081714,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/naldo/curated/uppercut-frame-2.png",
+        "scale": 1.375,
+        "anchorX": 0.46519983484134425,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/naldo/curated/uppercut-frame-3.png",
+        "scale": 1.015385,
+        "anchorX": 0.5005869076157419,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  },
+  "sweep": {
+    "frames": [
+      {
+        "path": "assets/sprites/naldo/curated/sweep-frame-0.png",
+        "scale": 0.653465,
+        "anchorX": 0.45425744477217106,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/naldo/curated/sweep-frame-1.png",
+        "scale": 0.814815,
+        "anchorX": 0.6625312936489547,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/naldo/curated/sweep-frame-2.png",
+        "scale": 1.1,
+        "anchorX": 0.5725776735579816,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/naldo/curated/sweep-frame-3.png",
+        "scale": 0.653465,
+        "anchorX": 0.4719518108029645,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 10,
+    "loop": false
+  },
+  "dash": {
+    "frames": [
+      {
+        "path": "assets/sprites/naldo/curated/dash-frame-0.png",
+        "scale": 0.795181,
+        "anchorX": 0.42642439694502726,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/naldo/curated/dash-frame-1.png",
+        "scale": 0.90411,
+        "anchorX": 0.5093578539204154,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/naldo/curated/dash-frame-2.png",
+        "scale": 0.795181,
+        "anchorX": 0.5065626003186795,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/naldo/curated/dash-frame-3.png",
+        "scale": 0.795181,
+        "anchorX": 0.46055857749153734,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  },
+  "backwalk": {
+    "frames": [
+      {
+        "path": "assets/sprites/naldo/curated/backwalk-frame-0.png",
+        "scale": 1,
+        "anchorX": 0.5007999366808089,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/naldo/curated/backwalk-frame-1.png",
+        "scale": 1,
+        "anchorX": 0.4851585967342329,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/naldo/curated/backwalk-frame-2.png",
+        "scale": 1,
+        "anchorX": 0.49485524963204597,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/naldo/curated/backwalk-frame-3.png",
+        "scale": 1,
+        "anchorX": 0.4589107276528142,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/naldo/curated/backwalk-frame-4.png",
+        "scale": 1,
+        "anchorX": 0.45863611772110424,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/naldo/curated/backwalk-frame-5.png",
+        "scale": 1,
+        "anchorX": 0.5016784860030029,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": true
+  },
+  "lowBlock": {
+    "frames": [
+      {
+        "path": "assets/sprites/naldo/curated/lowBlock-frame-0.png",
+        "scale": 0.6,
+        "anchorX": 0.4695619359690922,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/naldo/curated/lowBlock-frame-1.png",
+        "scale": 0.616822,
+        "anchorX": 0.4846949394502542,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/naldo/curated/lowBlock-frame-2.png",
+        "scale": 0.6,
+        "anchorX": 0.4982970531288826,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/naldo/curated/lowBlock-frame-3.png",
+        "scale": 0.640777,
+        "anchorX": 0.4930761614539414,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 8,
+    "loop": false
+  },
+  "turn": {
+    "frames": [
+      {
+        "path": "assets/sprites/naldo/curated/turn-frame-0.png",
+        "scale": 1.03125,
+        "anchorX": 0.509583020092947,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/naldo/curated/turn-frame-1.png",
+        "scale": 1.03125,
+        "anchorX": 0.5065391775391813,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/naldo/curated/turn-frame-2.png",
+        "scale": 1.03125,
+        "anchorX": 0.501298688265949,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/naldo/curated/turn-frame-3.png",
+        "scale": 1.03125,
+        "anchorX": 0.4904862021497083,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  },
+  "land": {
+    "frames": [
+      {
+        "path": "assets/sprites/naldo/curated/land-frame-0.png",
+        "scale": 0.6,
+        "anchorX": 0.4709735603932643,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/naldo/curated/land-frame-1.png",
+        "scale": 0.709677,
+        "anchorX": 0.48174490740221715,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/naldo/curated/land-frame-2.png",
+        "scale": 0.970588,
+        "anchorX": 0.49693041614392364,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/naldo/curated/land-frame-3.png",
+        "scale": 1.064516,
+        "anchorX": 0.5007358277942305,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  },
+  "jumpForward": {
+    "frames": [
+      {
+        "path": "assets/sprites/naldo/curated/jumpForward-frame-0.png",
+        "scale": 0.628571,
+        "anchorX": 0.48233069226190195,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/naldo/curated/jumpForward-frame-1.png",
+        "scale": 0.758621,
+        "anchorX": 0.3884937851439563,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/naldo/curated/jumpForward-frame-2.png",
+        "scale": 0.66,
+        "anchorX": 0.3626447338099825,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/naldo/curated/jumpForward-frame-3.png",
+        "scale": 0.868421,
+        "anchorX": 0.7285720634757205,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 10,
+    "loop": false
+  },
+  "super": {
+    "frames": [
+      {
+        "path": "assets/sprites/naldo/curated/super-frame-0.png",
+        "scale": 0.88,
+        "anchorX": 0.4996735637859406,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/naldo/curated/super-frame-1.png",
+        "scale": 0.88,
+        "anchorX": 0.487155097162462,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/naldo/curated/super-frame-2.png",
+        "scale": 1.178571,
+        "anchorX": 0.44165464833257806,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/naldo/curated/super-frame-3.png",
+        "scale": 0.88,
+        "anchorX": 0.5034839485261869,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  }
+}

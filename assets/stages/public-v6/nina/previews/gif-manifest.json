@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "kind": "sprite-gen-gif-run",
+  "run_dir": "/home/bruno/projects/funnietech/ai-tests/games/fighting-game-codex-gauntlet-loop/assets/stages/public-v6/nina",
+  "exports": [
+    {
+      "state": "motion",
+      "output": "/home/bruno/projects/funnietech/ai-tests/games/fighting-game-codex-gauntlet-loop/assets/stages/public-v6/nina/previews/motion.gif",
+      "frames": 4,
+      "fps": 3.0,
+      "loop": true,
+      "gif_report": {
+        "path": "/home/bruno/projects/funnietech/ai-tests/games/fighting-game-codex-gauntlet-loop/assets/stages/public-v6/nina/previews/motion.gif",
+        "frames": 4,
+        "delay_ticks": [
+          33,
+          33,
+          33,
+          33
+        ],
+        "loop": 0,
+        "transparent": true,
+        "disposal": [
+          2,
+          2,
+          2,
+          2
+        ]
+      }
+    }
+  ]
+}

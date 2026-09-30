@@ -1,0 +1,21 @@
+{
+  "kind": "sprite-gen-image-report",
+  "provider": "codex",
+  "prompt": "Create ONE opaque full-bleed 2048x768 ultra-wide panoramic 2D fighting-game stage background. Original hand-painted arcade game art inspired by the traditional early-1990s Street Fighter 2 background craft: deliberate clean architectural silhouettes, controlled painted shading, crisp game-ready details, restrained palette, beautiful atmosphere. SAO PAULO BIXIGA: Brazilian bohemian street at night, old pastel ochre and brick-red townhouses, modest neighborhood bars with wooden doors, warm amber tungsten cafe lights, striped cloth awnings, bottles and stools tucked against walls, faint distant city silhouette. Familiar lived-in Bixiga atmosphere, restrained Portuguese painted sign BOTECO only. Camera is fixed side-view straight-on, no dramatic tilted perspective. Composition: TOP 0-22 percent is mostly quiet dark midnight blue sky and dark distant roof silhouettes so game HUD is legible; MIDDLE architecture mostly in upper half; LOWER fighting actor band from45to77percent subdued and uncluttered, avoid busy highcontrast signs. The clear fighting FLOOR BASELINE is exactly82percent imageheight, corresponding to y590 on720gamecanvas. Bottom18percent is a broad unobstructed level sidewalk/cobblestone fighting platform across entirewidth, slightly wet muted warm reflections, no giant foreground props, no rails across actors, no cars, no crowds on floor. Keep ALL tables chairs musician silhouettes against background walls above thefloorline, leavecenterfrontfloor entirely clear. Small tungsten bulbs at facade locations around20%,42%,65%,85%width and42%height suitable for subtle game animation. Warm nostalgic Brazilian bohemian nightlife, no neon, no cyberpunk, no futuristic buildings, no purple-magenta glow, no game UI, no fighter characters, no logos, no text blocks, no vignette black borders. Full image horizontalpanorama2048x768.",
+  "out": "/home/bruno/projects/funnietech/ai-tests/games/fighting-game-codex-gauntlet-loop/assets/stages/sao-paulo.png",
+  "raw": "/home/bruno/projects/funnietech/ai-tests/games/fighting-game-codex-gauntlet-loop/assets/stages/sao-paulo.png.raw.png",
+  "raw_bytes": 3103208,
+  "elapsed_seconds": 48.554,
+  "model": null,
+  "session_id": "01a0f0e0-90b6-7ce3-9516-bf91c90f062d",
+  "refs": [],
+  "transparent": false,
+  "alpha": null,
+  "chroma": null,
+  "extra": {
+    "inline_results": 1,
+    "rollout_cleaned": true,
+    "transparent_background_reported": false
+  },
+  "provider_resolved_from": "explicit"
+}

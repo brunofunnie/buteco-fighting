@@ -1,0 +1,1450 @@
+{
+  "idle": [
+    {
+      "path": "assets/sprites/joke-l/curated/idle-frame-0.png",
+      "sourceHeight": 607,
+      "outputHeight": 352,
+      "anchorX": 0.5014088649745251,
+      "anchorY": 0.9583333333333334,
+      "scale": 1,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 74,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/joke-l/curated/idle-frame-1.png",
+      "sourceHeight": 635,
+      "outputHeight": 351,
+      "anchorX": 0.5005641700590621,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.049109,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 74,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/joke-l/curated/idle-frame-2.png",
+      "sourceHeight": 591,
+      "outputHeight": 352,
+      "anchorX": 0.49948402189265534,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.973641,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 74,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/joke-l/curated/idle-frame-3.png",
+      "sourceHeight": 619,
+      "outputHeight": 352,
+      "anchorX": 0.5005495622584343,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.019769,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 74,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "punch": [
+    {
+      "path": "assets/sprites/joke-l/curated/punch-frame-0.png",
+      "sourceHeight": 567,
+      "outputHeight": 351,
+      "anchorX": 0.5013853414731237,
+      "anchorY": 0.9583333333333334,
+      "scale": 1,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 74,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/joke-l/curated/punch-frame-1.png",
+      "sourceHeight": 554,
+      "outputHeight": 352,
+      "anchorX": 0.5002197275142212,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.974297,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 74,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/joke-l/curated/punch-frame-2.png",
+      "sourceHeight": 554,
+      "outputHeight": 348,
+      "anchorX": 0.4107956258581595,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.985495,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 74,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/joke-l/curated/punch-frame-3.png",
+      "sourceHeight": 567,
+      "outputHeight": 351,
+      "anchorX": 0.4995424614585529,
+      "anchorY": 0.9583333333333334,
+      "scale": 1,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 74,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "kick": [
+    {
+      "path": "assets/sprites/joke-l/curated/kick-frame-0.png",
+      "sourceHeight": 610,
+      "outputHeight": 352,
+      "anchorX": 0.50844010672197,
+      "anchorY": 0.9583333333333334,
+      "scale": 1,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 74,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/joke-l/curated/kick-frame-1.png",
+      "sourceHeight": 656,
+      "outputHeight": 352,
+      "anchorX": 0.48524551770491636,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.07541,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 74,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/joke-l/curated/kick-frame-2.png",
+      "sourceHeight": 607,
+      "outputHeight": 336,
+      "anchorX": 0.33889699794445677,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.042467,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 74,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/joke-l/curated/kick-frame-3.png",
+      "sourceHeight": 656,
+      "outputHeight": 352,
+      "anchorX": 0.4842423217699259,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.07541,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 74,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "hurt": [
+    {
+      "path": "assets/sprites/joke-l/curated/hurt-frame-0.png",
+      "sourceHeight": 575,
+      "outputHeight": 352,
+      "anchorX": 0.5055715006403876,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.902439,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 82,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/joke-l/curated/hurt-frame-1.png",
+      "sourceHeight": 574,
+      "outputHeight": 352,
+      "anchorX": 0.5304820038764523,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.90087,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 82,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/joke-l/curated/hurt-frame-2.png",
+      "sourceHeight": 534,
+      "outputHeight": 352,
+      "anchorX": 0.5010233882064613,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.838091,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 82,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/joke-l/curated/hurt-frame-3.png",
+      "sourceHeight": 575,
+      "outputHeight": 352,
+      "anchorX": 0.5064730990176339,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.902439,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 82,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "jump": [
+    {
+      "path": "assets/sprites/joke-l/curated/jump-frame-0.png",
+      "sourceHeight": 426,
+      "outputHeight": 352,
+      "anchorX": 0.5088165311920892,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.74,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 100,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/joke-l/curated/jump-frame-1.png",
+      "sourceHeight": 520,
+      "outputHeight": 352,
+      "anchorX": 0.41218380001941707,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.903286,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 100,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/joke-l/curated/jump-frame-2.png",
+      "sourceHeight": 494,
+      "outputHeight": 352,
+      "anchorX": 0.32651774209087514,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.858122,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 100,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/joke-l/curated/jump-frame-3.png",
+      "sourceHeight": 492,
+      "outputHeight": 352,
+      "anchorX": 0.5070841819940277,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.854648,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 100,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "special": [
+    {
+      "path": "assets/sprites/joke-l/curated/special-frame-0.png",
+      "sourceHeight": 593,
+      "outputHeight": 352,
+      "anchorX": 0.49241260390549213,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.936709,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 79,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/joke-l/curated/special-frame-1.png",
+      "sourceHeight": 594,
+      "outputHeight": 352,
+      "anchorX": 0.4803470056017181,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.938288,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 79,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/joke-l/curated/special-frame-2.png",
+      "sourceHeight": 590,
+      "outputHeight": 352,
+      "anchorX": 0.46719857246180596,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.93197,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 79,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/joke-l/curated/special-frame-3.png",
+      "sourceHeight": 593,
+      "outputHeight": 352,
+      "anchorX": 0.5010924738232925,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.936709,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 79,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "walk": [
+    {
+      "path": "assets/sprites/joke-l/curated/walk-frame-0.png",
+      "sourceHeight": 437,
+      "outputHeight": 352,
+      "anchorX": 0.49771397983318627,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.027778,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 72,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/joke-l/curated/walk-frame-1.png",
+      "sourceHeight": 438,
+      "outputHeight": 352,
+      "anchorX": 0.4796868013700986,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.03013,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 72,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/joke-l/curated/walk-frame-2.png",
+      "sourceHeight": 438,
+      "outputHeight": 352,
+      "anchorX": 0.48656850976593136,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.03013,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 72,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/joke-l/curated/walk-frame-3.png",
+      "sourceHeight": 438,
+      "outputHeight": 352,
+      "anchorX": 0.4927562085342569,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.03013,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 72,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/joke-l/curated/walk-frame-4.png",
+      "sourceHeight": 438,
+      "outputHeight": 352,
+      "anchorX": 0.39809601733127953,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.03013,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 72,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/joke-l/curated/walk-frame-5.png",
+      "sourceHeight": 437,
+      "outputHeight": 352,
+      "anchorX": 0.4986023333775964,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.027778,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 72,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "block": [
+    {
+      "path": "assets/sprites/joke-l/curated/block-frame-0.png",
+      "sourceHeight": 611,
+      "outputHeight": 352,
+      "anchorX": 0.5092762068888014,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.91358,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 81,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/joke-l/curated/block-frame-1.png",
+      "sourceHeight": 617,
+      "outputHeight": 352,
+      "anchorX": 0.5068642449347827,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.922552,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 81,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/joke-l/curated/block-frame-2.png",
+      "sourceHeight": 591,
+      "outputHeight": 352,
+      "anchorX": 0.5078622452234341,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.883676,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 81,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/joke-l/curated/block-frame-3.png",
+      "sourceHeight": 584,
+      "outputHeight": 352,
+      "anchorX": 0.5071074413157574,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.873209,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 81,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "crouch": [
+    {
+      "path": "assets/sprites/joke-l/curated/crouch-frame-0.png",
+      "sourceHeight": 519,
+      "outputHeight": 351,
+      "anchorX": 0.4949622117429568,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.795699,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 93,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/joke-l/curated/crouch-frame-1.png",
+      "sourceHeight": 484,
+      "outputHeight": 352,
+      "anchorX": 0.5011625096474694,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.739931,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 93,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/joke-l/curated/crouch-frame-2.png",
+      "sourceHeight": 410,
+      "outputHeight": 352,
+      "anchorX": 0.4911888709192164,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.626801,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 93,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/joke-l/curated/crouch-frame-3.png",
+      "sourceHeight": 483,
+      "outputHeight": 352,
+      "anchorX": 0.4985462384824996,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.738402,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 93,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "ko": [
+    {
+      "path": "assets/sprites/joke-l/curated/ko-frame-0.png",
+      "sourceHeight": 493,
+      "outputHeight": 351,
+      "anchorX": 0.4823739860779186,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.902439,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 82,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/joke-l/curated/ko-frame-1.png",
+      "sourceHeight": 419,
+      "outputHeight": 351,
+      "anchorX": 0.5840475554520853,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.766982,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 82,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/joke-l/curated/ko-frame-2.png",
+      "sourceHeight": 269,
+      "outputHeight": 169,
+      "anchorX": 0.5230229076527054,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.022689,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 82,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/joke-l/curated/ko-frame-3.png",
+      "sourceHeight": 137,
+      "outputHeight": 83,
+      "anchorX": 0.4802438242883556,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.060524,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 82,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "celebrate": [
+    {
+      "path": "assets/sprites/joke-l/curated/celebrate-frame-0.png",
+      "sourceHeight": 597,
+      "outputHeight": 352,
+      "anchorX": 0.5150577892937215,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.057143,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 70,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/joke-l/curated/celebrate-frame-1.png",
+      "sourceHeight": 653,
+      "outputHeight": 352,
+      "anchorX": 0.5119450558506818,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.156305,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 70,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/joke-l/curated/celebrate-frame-2.png",
+      "sourceHeight": 706,
+      "outputHeight": 352,
+      "anchorX": 0.5088245544566011,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.250156,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 70,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/joke-l/curated/celebrate-frame-3.png",
+      "sourceHeight": 706,
+      "outputHeight": 352,
+      "anchorX": 0.5079385584041917,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.250156,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 70,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "airPunch": [
+    {
+      "path": "assets/sprites/joke-l/curated/airPunch-frame-0.png",
+      "sourceHeight": 513,
+      "outputHeight": 351,
+      "anchorX": 0.34107762497421906,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.902439,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 82,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/joke-l/curated/airPunch-frame-1.png",
+      "sourceHeight": 508,
+      "outputHeight": 352,
+      "anchorX": 0.2033013368714208,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.891105,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 82,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/joke-l/curated/airPunch-frame-2.png",
+      "sourceHeight": 529,
+      "outputHeight": 295,
+      "anchorX": 0.15240364235620193,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.107239,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 82,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/joke-l/curated/airPunch-frame-3.png",
+      "sourceHeight": 526,
+      "outputHeight": 352,
+      "anchorX": 0.35311876649471213,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.922679,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 82,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "airKick": [
+    {
+      "path": "assets/sprites/joke-l/curated/airKick-frame-0.png",
+      "sourceHeight": 487,
+      "outputHeight": 352,
+      "anchorX": 0.5069797396979606,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.961039,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 77,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/joke-l/curated/airKick-frame-1.png",
+      "sourceHeight": 487,
+      "outputHeight": 335,
+      "anchorX": 0.4187928809897641,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.009808,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 77,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/joke-l/curated/airKick-frame-2.png",
+      "sourceHeight": 479,
+      "outputHeight": 279,
+      "anchorX": 0.3365906952927804,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.192576,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 77,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/joke-l/curated/airKick-frame-3.png",
+      "sourceHeight": 510,
+      "outputHeight": 352,
+      "anchorX": 0.5252501022197925,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.006427,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 77,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "crouchPunch": [
+    {
+      "path": "assets/sprites/joke-l/curated/crouchPunch-frame-0.png",
+      "sourceHeight": 484,
+      "outputHeight": 352,
+      "anchorX": 0.504651316578227,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.770833,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 96,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/joke-l/curated/crouchPunch-frame-1.png",
+      "sourceHeight": 481,
+      "outputHeight": 352,
+      "anchorX": 0.5065612818637822,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.766055,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 96,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/joke-l/curated/crouchPunch-frame-2.png",
+      "sourceHeight": 479,
+      "outputHeight": 321,
+      "anchorX": 0.4863650581929441,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.836543,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 96,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/joke-l/curated/crouchPunch-frame-3.png",
+      "sourceHeight": 484,
+      "outputHeight": 352,
+      "anchorX": 0.5033425871391047,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.770833,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 96,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "crouchKick": [
+    {
+      "path": "assets/sprites/joke-l/curated/crouchKick-frame-0.png",
+      "sourceHeight": 467,
+      "outputHeight": 352,
+      "anchorX": 0.5382852359437836,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.778947,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 95,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/joke-l/curated/crouchKick-frame-1.png",
+      "sourceHeight": 476,
+      "outputHeight": 352,
+      "anchorX": 0.33825449131108004,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.793959,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 95,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/joke-l/curated/crouchKick-frame-2.png",
+      "sourceHeight": 444,
+      "outputHeight": 266,
+      "anchorX": 0.5320036394821356,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.980021,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 95,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/joke-l/curated/crouchKick-frame-3.png",
+      "sourceHeight": 469,
+      "outputHeight": 352,
+      "anchorX": 0.5364125149592743,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.782283,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 95,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "uppercut": [
+    {
+      "path": "assets/sprites/joke-l/curated/uppercut-frame-0.png",
+      "sourceHeight": 522,
+      "outputHeight": 352,
+      "anchorX": 0.5151963957667546,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.91358,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 81,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/joke-l/curated/uppercut-frame-1.png",
+      "sourceHeight": 553,
+      "outputHeight": 352,
+      "anchorX": 0.4940532027577939,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.967835,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 81,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/joke-l/curated/uppercut-frame-2.png",
+      "sourceHeight": 694,
+      "outputHeight": 352,
+      "anchorX": 0.49083957733017475,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.214607,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 81,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/joke-l/curated/uppercut-frame-3.png",
+      "sourceHeight": 558,
+      "outputHeight": 352,
+      "anchorX": 0.5077399198548875,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.976586,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 81,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "sweep": [
+    {
+      "path": "assets/sprites/joke-l/curated/sweep-frame-0.png",
+      "sourceHeight": 429,
+      "outputHeight": 352,
+      "anchorX": 0.555933215964696,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.698113,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 106,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/joke-l/curated/sweep-frame-1.png",
+      "sourceHeight": 452,
+      "outputHeight": 274,
+      "anchorX": 0.6645404159943111,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.944929,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 106,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/joke-l/curated/sweep-frame-2.png",
+      "sourceHeight": 406,
+      "outputHeight": 201,
+      "anchorX": 0.5359024288499715,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.157021,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 106,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/joke-l/curated/sweep-frame-3.png",
+      "sourceHeight": 437,
+      "outputHeight": 352,
+      "anchorX": 0.5510298641085861,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.711132,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 106,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "dash": [
+    {
+      "path": "assets/sprites/joke-l/curated/dash-frame-0.png",
+      "sourceHeight": 469,
+      "outputHeight": 345,
+      "anchorX": 0.39522977292121103,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.787234,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 94,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/joke-l/curated/dash-frame-1.png",
+      "sourceHeight": 471,
+      "outputHeight": 313,
+      "anchorX": 0.5735776588749794,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.871418,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 94,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/joke-l/curated/dash-frame-2.png",
+      "sourceHeight": 461,
+      "outputHeight": 328,
+      "anchorX": 0.4358775276740432,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.813912,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 94,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/joke-l/curated/dash-frame-3.png",
+      "sourceHeight": 469,
+      "outputHeight": 345,
+      "anchorX": 0.3945300678241495,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.787234,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 94,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "backwalk": [
+    {
+      "path": "assets/sprites/joke-l/curated/backwalk-frame-0.png",
+      "sourceHeight": 466,
+      "outputHeight": 352,
+      "anchorX": 0.5100188882310073,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.104478,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 67,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/joke-l/curated/backwalk-frame-1.png",
+      "sourceHeight": 457,
+      "outputHeight": 352,
+      "anchorX": 0.47190454858262126,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.083146,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 67,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/joke-l/curated/backwalk-frame-2.png",
+      "sourceHeight": 458,
+      "outputHeight": 352,
+      "anchorX": 0.4987286568622728,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.085517,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 67,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/joke-l/curated/backwalk-frame-3.png",
+      "sourceHeight": 466,
+      "outputHeight": 352,
+      "anchorX": 0.4735903103018246,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.104478,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 67,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/joke-l/curated/backwalk-frame-4.png",
+      "sourceHeight": 466,
+      "outputHeight": 352,
+      "anchorX": 0.47469574855984337,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.104478,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 67,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/joke-l/curated/backwalk-frame-5.png",
+      "sourceHeight": 461,
+      "outputHeight": 352,
+      "anchorX": 0.5028153251088933,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.092627,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 67,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "lowBlock": [
+    {
+      "path": "assets/sprites/joke-l/curated/lowBlock-frame-0.png",
+      "sourceHeight": 498,
+      "outputHeight": 352,
+      "anchorX": 0.5208882612061118,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.718447,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 103,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/joke-l/curated/lowBlock-frame-1.png",
+      "sourceHeight": 506,
+      "outputHeight": 352,
+      "anchorX": 0.452894774333563,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.729988,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 103,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/joke-l/curated/lowBlock-frame-2.png",
+      "sourceHeight": 500,
+      "outputHeight": 352,
+      "anchorX": 0.509973647504956,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.721332,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 103,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/joke-l/curated/lowBlock-frame-3.png",
+      "sourceHeight": 505,
+      "outputHeight": 352,
+      "anchorX": 0.4885676692694955,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.728545,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 103,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "turn": [
+    {
+      "path": "assets/sprites/joke-l/curated/turn-frame-0.png",
+      "sourceHeight": 632,
+      "outputHeight": 352,
+      "anchorX": 0.48574695128914797,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.961039,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 77,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/joke-l/curated/turn-frame-1.png",
+      "sourceHeight": 642,
+      "outputHeight": 352,
+      "anchorX": 0.5053184386311739,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.976245,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 77,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/joke-l/curated/turn-frame-2.png",
+      "sourceHeight": 637,
+      "outputHeight": 352,
+      "anchorX": 0.500035746870523,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.968642,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 77,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/joke-l/curated/turn-frame-3.png",
+      "sourceHeight": 632,
+      "outputHeight": 352,
+      "anchorX": 0.5123292505662977,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.961039,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 77,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "land": [
+    {
+      "path": "assets/sprites/joke-l/curated/land-frame-0.png",
+      "sourceHeight": 442,
+      "outputHeight": 352,
+      "anchorX": 0.45086166001985073,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.718447,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 103,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/joke-l/curated/land-frame-1.png",
+      "sourceHeight": 547,
+      "outputHeight": 352,
+      "anchorX": 0.4620527444300488,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.889118,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 103,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/joke-l/curated/land-frame-2.png",
+      "sourceHeight": 623,
+      "outputHeight": 352,
+      "anchorX": 0.5039905413004652,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.012652,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 103,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/joke-l/curated/land-frame-3.png",
+      "sourceHeight": 650,
+      "outputHeight": 352,
+      "anchorX": 0.5102691410626744,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.056539,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 103,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "jumpForward": [
+    {
+      "path": "assets/sprites/joke-l/curated/jumpForward-frame-0.png",
+      "sourceHeight": 442,
+      "outputHeight": 312,
+      "anchorX": 0.44993845699129226,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.822222,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 90,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/joke-l/curated/jumpForward-frame-1.png",
+      "sourceHeight": 590,
+      "outputHeight": 352,
+      "anchorX": 0.21304257734703339,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.972816,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 90,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/joke-l/curated/jumpForward-frame-2.png",
+      "sourceHeight": 448,
+      "outputHeight": 352,
+      "anchorX": 0.4753652289661084,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.738681,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 90,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/joke-l/curated/jumpForward-frame-3.png",
+      "sourceHeight": 594,
+      "outputHeight": 352,
+      "anchorX": 0.6981639330314868,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.979412,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 90,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "super": [
+    {
+      "path": "assets/sprites/joke-l/curated/super-frame-0.png",
+      "sourceHeight": 541,
+      "outputHeight": 352,
+      "anchorX": 0.5108498382094903,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.925,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 80,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/joke-l/curated/super-frame-1.png",
+      "sourceHeight": 551,
+      "outputHeight": 352,
+      "anchorX": 0.4961345456491973,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.942098,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 80,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/joke-l/curated/super-frame-2.png",
+      "sourceHeight": 528,
+      "outputHeight": 320,
+      "anchorX": 0.4722631545175056,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.99305,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 80,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/joke-l/curated/super-frame-3.png",
+      "sourceHeight": 559,
+      "outputHeight": 352,
+      "anchorX": 0.5076624049196734,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.955776,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 80,
+        "idleHeadSpan": 74,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ]
+}

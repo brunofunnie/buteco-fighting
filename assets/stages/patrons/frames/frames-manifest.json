@@ -1,0 +1,194 @@
+{
+  "ok": true,
+  "engine": "component-row",
+  "engine_revision": "4c9db55ba735",
+  "extract_args": {},
+  "run_dir": "/home/bruno/projects/funnietech/ai-tests/games/fighting-game-codex-gauntlet-loop/assets/stages/patrons",
+  "cell": {
+    "shape": "square",
+    "width": 384,
+    "height": 384,
+    "safe_margin_x": 16,
+    "safe_margin_y": 16,
+    "size": 384,
+    "safe_margin": 16
+  },
+  "chroma_key": {
+    "name": "cyan",
+    "hex": "#00FFFF",
+    "rgb": [
+      0,
+      255,
+      255
+    ],
+    "selection": "auto",
+    "score": 285.26,
+    "min_subject_distance": 250.38,
+    "background": {
+      "mode": "transparent",
+      "opaque_border_fraction": 0.0,
+      "subject_pixels": 10249
+    },
+    "candidates": [
+      {
+        "name": "magenta",
+        "hex": "#FF00FF",
+        "score": 224.46,
+        "min_subject_distance": 214.15,
+        "clears_erase_radius": true
+      },
+      {
+        "name": "green",
+        "hex": "#00FF00",
+        "score": 214.59,
+        "min_subject_distance": 210.24,
+        "clears_erase_radius": true
+      },
+      {
+        "name": "cyan",
+        "hex": "#00FFFF",
+        "score": 285.26,
+        "min_subject_distance": 250.38,
+        "clears_erase_radius": true
+      },
+      {
+        "name": "blue",
+        "hex": "#004DFF",
+        "score": 213.19,
+        "min_subject_distance": 206.51,
+        "clears_erase_radius": true
+      }
+    ],
+    "selection_reason": "highest 1st-percentile subject distance among the 4 candidate(s) clearing the 96 erase radius"
+  },
+  "rows": [
+    {
+      "state": "cheer",
+      "frames": 4,
+      "method": "components",
+      "files": [
+        "frames/cheer/frame-0.png",
+        "frames/cheer/frame-1.png",
+        "frames/cheer/frame-2.png",
+        "frames/cheer/frame-3.png"
+      ],
+      "frame_records": [
+        {
+          "index": 0,
+          "nontransparent_pixels": 28010,
+          "bbox": [
+            104,
+            16,
+            261,
+            368
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 1,
+          "nontransparent_pixels": 29620,
+          "bbox": [
+            99,
+            17,
+            281,
+            368
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 2,
+          "nontransparent_pixels": 26121,
+          "bbox": [
+            101,
+            16,
+            294,
+            368
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 3,
+          "nontransparent_pixels": 28138,
+          "bbox": [
+            103,
+            17,
+            261,
+            368
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        }
+      ],
+      "ok": true,
+      "engine_revision": "4c9db55ba735"
+    },
+    {
+      "state": "drink",
+      "frames": 4,
+      "method": "components",
+      "files": [
+        "frames/drink/frame-0.png",
+        "frames/drink/frame-1.png",
+        "frames/drink/frame-2.png",
+        "frames/drink/frame-3.png"
+      ],
+      "frame_records": [
+        {
+          "index": 0,
+          "nontransparent_pixels": 28621,
+          "bbox": [
+            101,
+            17,
+            263,
+            368
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 1,
+          "nontransparent_pixels": 29674,
+          "bbox": [
+            91,
+            16,
+            263,
+            368
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 2,
+          "nontransparent_pixels": 30317,
+          "bbox": [
+            91,
+            16,
+            263,
+            368
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 3,
+          "nontransparent_pixels": 28741,
+          "bbox": [
+            73,
+            17,
+            265,
+            368
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        }
+      ],
+      "ok": true,
+      "engine_revision": "4c9db55ba735"
+    }
+  ],
+  "errors": [],
+  "warnings": []
+}

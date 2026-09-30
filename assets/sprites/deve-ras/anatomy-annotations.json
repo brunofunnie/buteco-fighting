@@ -1,0 +1,98 @@
+{
+  "idle": {
+    "headSpan": 58,
+    "review": "Manual cap crown to chin measurement of exported frame0 on anatomy-review panels; includes cap, excludes neck."
+  },
+  "punch": {
+    "headSpan": 59,
+    "review": "Manual cap crown to chin measurement of exported frame0 on anatomy-review panels; includes cap, excludes neck."
+  },
+  "kick": {
+    "headSpan": 55,
+    "review": "Manual cap crown to chin measurement of exported frame0 on anatomy-review panels; includes cap, excludes neck."
+  },
+  "hurt": {
+    "headSpan": 59,
+    "review": "Manual cap crown to chin measurement of exported frame0 on anatomy-review panels; includes cap, excludes neck."
+  },
+  "jump": {
+    "headSpan": 87,
+    "review": "Manual cap crown to chin measurement of exported frame0 on anatomy-review panels; includes cap, excludes neck."
+  },
+  "special": {
+    "headSpan": 63,
+    "review": "Manual cap crown to chin measurement of exported frame0 on anatomy-review panels; includes cap, excludes neck."
+  },
+  "walk": {
+    "headSpan": 56,
+    "review": "Manual cap crown to chin measurement of exported frame0 on anatomy-review panels; includes cap, excludes neck."
+  },
+  "block": {
+    "headSpan": 59,
+    "review": "Manual cap crown to chin measurement of exported frame0 on anatomy-review panels; includes cap, excludes neck."
+  },
+  "crouch": {
+    "headSpan": 88,
+    "review": "Manual cap crown to chin measurement of exported frame0 on anatomy-review panels; includes cap, excludes neck."
+  },
+  "ko": {
+    "headSpan": 63,
+    "review": "Manual cap crown to chin measurement of exported frame0 on anatomy-review panels; includes cap, excludes neck."
+  },
+  "celebrate": {
+    "headSpan": 56,
+    "review": "Manual cap crown to chin measurement of exported frame0 on anatomy-review panels; includes cap, excludes neck."
+  },
+  "airPunch": {
+    "headSpan": 75,
+    "review": "Manual cap crown to chin measurement of exported frame0 on anatomy-review panels; includes cap, excludes neck."
+  },
+  "airKick": {
+    "headSpan": 78,
+    "review": "Manual cap crown to chin measurement of exported frame0 on anatomy-review panels; includes cap, excludes neck."
+  },
+  "crouchPunch": {
+    "headSpan": 91,
+    "review": "Manual cap crown to chin measurement of exported frame0 on anatomy-review panels; includes cap, excludes neck."
+  },
+  "crouchKick": {
+    "headSpan": 90,
+    "review": "Manual cap crown to chin measurement of exported frame0 on anatomy-review panels; includes cap, excludes neck."
+  },
+  "uppercut": {
+    "headSpan": 76,
+    "review": "Manual cap crown to chin measurement of exported frame0 on anatomy-review panels; includes cap, excludes neck."
+  },
+  "sweep": {
+    "headSpan": 96,
+    "review": "Manual cap crown to chin measurement of exported frame0 on anatomy-review panels; includes cap, excludes neck."
+  },
+  "dash": {
+    "headSpan": 75,
+    "review": "Manual cap crown to chin measurement of exported frame0 on anatomy-review panels; includes cap, excludes neck."
+  },
+  "backwalk": {
+    "headSpan": 59,
+    "review": "Manual cap crown to chin measurement of exported frame0 on anatomy-review panels; includes cap, excludes neck."
+  },
+  "lowBlock": {
+    "headSpan": 98,
+    "review": "Manual cap crown to chin measurement of exported frame0 on anatomy-review panels; includes cap, excludes neck."
+  },
+  "turn": {
+    "headSpan": 64,
+    "review": "Manual cap crown to chin measurement of exported frame0 on anatomy-review panels; includes cap, excludes neck."
+  },
+  "land": {
+    "headSpan": 89,
+    "review": "Manual cap crown to chin measurement of exported frame0 on anatomy-review panels; includes cap, excludes neck."
+  },
+  "jumpForward": {
+    "headSpan": 77,
+    "review": "Manual cap crown to chin measurement of exported frame0 on anatomy-review panels; includes cap, excludes neck."
+  },
+  "super": {
+    "headSpan": 59,
+    "review": "Manual cap crown to chin measurement of exported frame0 on anatomy-review panels; includes cap, excludes neck."
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "version": 1,
+  "kind": "sprite-gen-request",
+  "engine": "component-row",
+  "character": {
+    "id": "seu-joao",
+    "description": "",
+    "base_image": "base-source.png"
+  },
+  "cell": {
+    "shape": "square",
+    "width": 384,
+    "height": 384,
+    "safe_margin_x": 16,
+    "safe_margin_y": 16,
+    "size": 384,
+    "safe_margin": 16
+  },
+  "chroma_key": {
+    "name": "cyan",
+    "hex": "#00FFFF",
+    "rgb": [
+      0,
+      255,
+      255
+    ],
+    "selection": "auto",
+    "score": 256.14,
+    "min_subject_distance": 239.72,
+    "background": {
+      "mode": "transparent",
+      "opaque_border_fraction": 0.0,
+      "subject_pixels": 9907
+    },
+    "candidates": [
+      {
+        "name": "magenta",
+        "hex": "#FF00FF",
+        "score": 220.25,
+        "min_subject_distance": 212.77,
+        "clears_erase_radius": true
+      },
+      {
+        "name": "green",
+        "hex": "#00FF00",
+        "score": 213.03,
+        "min_subject_distance": 207.53,
+        "clears_erase_radius": true
+      },
+      {
+        "name": "cyan",
+        "hex": "#00FFFF",
+        "score": 256.14,
+        "min_subject_distance": 239.72,
+        "clears_erase_radius": true
+      },
+      {
+        "name": "blue",
+        "hex": "#004DFF",
+        "score": 182.78,
+        "min_subject_distance": 168.26,
+        "clears_erase_radius": true
+      }
+    ],
+    "selection_reason": "highest 1st-percentile subject distance among the 4 candidate(s) clearing the 96 erase radius"
+  },
+  "states": {
+    "motion": {
+      "frames": 4,
+      "fps": 3,
+      "loop": true,
+      "action": "Fourposes drinkingbeer:1mugatchestandcalmsmile;2raisesmugtomouth;3tipsmugslightlytakingsip rimtouchingmouth, hatstaysonhead;4lowersmugbacktochestmatchingfirstpose. Leftarmrelaxedatwaist, bothfeetplanted samebaseline. Sameoldfacehatcostumeandbodyproportions. EXACTLYfourdistinctfullbodyposes separatedonrow. Matchacceptedreferenceindividualidentityprecisely, retainadultanatomy, samephysicalheadsize cameraandbodyscale, nootherpeople."
+    }
+  },
+  "style": "Matchattachedacceptedhand-paintedadultBrazilianbarpatronreferenceexactly: naturaldetailedhumanface, shapedhumanlimbs, carefulclothfolds, cleandarkoutlines, mutedshirtpalette andwarmtungstenlight. Noflatgeometricmannequin oroversizedhead. Fullbodyshoesvisible.",
+  "layout": "taxonomy/v1",
+  "fit": {
+    "pixel_unfake": false,
+    "resample": "kcentroid",
+    "align_x": "foot-centroid",
+    "align_y": "bottom",
+    "ground_frames": true
+  },
+  "chroma": {
+    "mode": "rgb",
+    "unmix_reach": 4,
+    "spill_max_fraction": 0.005
+  }
+}

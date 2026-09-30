@@ -1,0 +1,1450 @@
+{
+  "idle": [
+    {
+      "path": "assets/sprites/professor/curated/idle-frame-0.png",
+      "sourceHeight": 631,
+      "outputHeight": 352,
+      "anchorX": 0.48522505886872486,
+      "anchorY": 0.9583333333333334,
+      "scale": 1,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 81,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/professor/curated/idle-frame-1.png",
+      "sourceHeight": 602,
+      "outputHeight": 352,
+      "anchorX": 0.4950553219377567,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.954041,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 81,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/professor/curated/idle-frame-2.png",
+      "sourceHeight": 647,
+      "outputHeight": 352,
+      "anchorX": 0.4842996923954821,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.025357,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 81,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/professor/curated/idle-frame-3.png",
+      "sourceHeight": 627,
+      "outputHeight": 352,
+      "anchorX": 0.49767363954545835,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.993661,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 81,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "punch": [
+    {
+      "path": "assets/sprites/professor/curated/punch-frame-0.png",
+      "sourceHeight": 608,
+      "outputHeight": 352,
+      "anchorX": 0.4974238265825359,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.987805,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 82,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/professor/curated/punch-frame-1.png",
+      "sourceHeight": 607,
+      "outputHeight": 352,
+      "anchorX": 0.49598285539345593,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.98618,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 82,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/professor/curated/punch-frame-2.png",
+      "sourceHeight": 595,
+      "outputHeight": 314,
+      "anchorX": 0.4200752727550335,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.083671,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 82,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/professor/curated/punch-frame-3.png",
+      "sourceHeight": 608,
+      "outputHeight": 352,
+      "anchorX": 0.49443329920557205,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.987805,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 82,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "kick": [
+    {
+      "path": "assets/sprites/professor/curated/kick-frame-0.png",
+      "sourceHeight": 610,
+      "outputHeight": 352,
+      "anchorX": 0.5071592051721364,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.975904,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 83,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/professor/curated/kick-frame-1.png",
+      "sourceHeight": 627,
+      "outputHeight": 352,
+      "anchorX": 0.5205201481995534,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.003101,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 83,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/professor/curated/kick-frame-2.png",
+      "sourceHeight": 612,
+      "outputHeight": 320,
+      "anchorX": 0.38528521709885494,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.077014,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 83,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/professor/curated/kick-frame-3.png",
+      "sourceHeight": 629,
+      "outputHeight": 352,
+      "anchorX": 0.5756181169778527,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.006301,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 83,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "hurt": [
+    {
+      "path": "assets/sprites/professor/curated/hurt-frame-0.png",
+      "sourceHeight": 572,
+      "outputHeight": 352,
+      "anchorX": 0.4936695114692225,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.81,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 100,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/professor/curated/hurt-frame-1.png",
+      "sourceHeight": 616,
+      "outputHeight": 349,
+      "anchorX": 0.5797434685013613,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.879806,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 100,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/professor/curated/hurt-frame-2.png",
+      "sourceHeight": 587,
+      "outputHeight": 352,
+      "anchorX": 0.47154479487089085,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.831241,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 100,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/professor/curated/hurt-frame-3.png",
+      "sourceHeight": 617,
+      "outputHeight": 352,
+      "anchorX": 0.5149295602765871,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.873724,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 100,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "jump": [
+    {
+      "path": "assets/sprites/professor/curated/jump-frame-0.png",
+      "sourceHeight": 503,
+      "outputHeight": 352,
+      "anchorX": 0.5151000171324404,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.658537,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 123,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/professor/curated/jump-frame-1.png",
+      "sourceHeight": 599,
+      "outputHeight": 352,
+      "anchorX": 0.4046529091518913,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.784222,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 123,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/professor/curated/jump-frame-2.png",
+      "sourceHeight": 532,
+      "outputHeight": 352,
+      "anchorX": 0.48038282616811867,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.696504,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 123,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/professor/curated/jump-frame-3.png",
+      "sourceHeight": 459,
+      "outputHeight": 330,
+      "anchorX": 0.5045999307377066,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.640993,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 123,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "special": [
+    {
+      "path": "assets/sprites/professor/curated/special-frame-0.png",
+      "sourceHeight": 605,
+      "outputHeight": 352,
+      "anchorX": 0.4942743661040863,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.910112,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 89,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/professor/curated/special-frame-1.png",
+      "sourceHeight": 599,
+      "outputHeight": 352,
+      "anchorX": 0.4987053650904698,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.901086,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 89,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/professor/curated/special-frame-2.png",
+      "sourceHeight": 590,
+      "outputHeight": 352,
+      "anchorX": 0.4571279687824364,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.887548,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 89,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/professor/curated/special-frame-3.png",
+      "sourceHeight": 604,
+      "outputHeight": 352,
+      "anchorX": 0.5052062608799236,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.908608,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 89,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "walk": [
+    {
+      "path": "assets/sprites/professor/curated/walk-frame-0.png",
+      "sourceHeight": 531,
+      "outputHeight": 351,
+      "anchorX": 0.491915655178629,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0125,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 80,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/professor/curated/walk-frame-1.png",
+      "sourceHeight": 530,
+      "outputHeight": 352,
+      "anchorX": 0.463208073022007,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.007722,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 80,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/professor/curated/walk-frame-2.png",
+      "sourceHeight": 530,
+      "outputHeight": 352,
+      "anchorX": 0.49849899977072737,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.007722,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 80,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/professor/curated/walk-frame-3.png",
+      "sourceHeight": 527,
+      "outputHeight": 352,
+      "anchorX": 0.5014728160769235,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.002018,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 80,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/professor/curated/walk-frame-4.png",
+      "sourceHeight": 530,
+      "outputHeight": 352,
+      "anchorX": 0.460418110893077,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.007722,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 80,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/professor/curated/walk-frame-5.png",
+      "sourceHeight": 531,
+      "outputHeight": 351,
+      "anchorX": 0.5004803453566834,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0125,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 80,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "block": [
+    {
+      "path": "assets/sprites/professor/curated/block-frame-0.png",
+      "sourceHeight": 655,
+      "outputHeight": 352,
+      "anchorX": 0.49327118925690816,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.931034,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 87,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/professor/curated/block-frame-1.png",
+      "sourceHeight": 647,
+      "outputHeight": 352,
+      "anchorX": 0.5049694524336377,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.919663,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 87,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/professor/curated/block-frame-2.png",
+      "sourceHeight": 619,
+      "outputHeight": 352,
+      "anchorX": 0.504386547830685,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.879863,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 87,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/professor/curated/block-frame-3.png",
+      "sourceHeight": 643,
+      "outputHeight": 352,
+      "anchorX": 0.5048828252112455,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.913977,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 87,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "crouch": [
+    {
+      "path": "assets/sprites/professor/curated/crouch-frame-0.png",
+      "sourceHeight": 597,
+      "outputHeight": 352,
+      "anchorX": 0.46616535321945674,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.794118,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 102,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/professor/curated/crouch-frame-1.png",
+      "sourceHeight": 550,
+      "outputHeight": 352,
+      "anchorX": 0.4596109652486531,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.731599,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 102,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/professor/curated/crouch-frame-2.png",
+      "sourceHeight": 485,
+      "outputHeight": 352,
+      "anchorX": 0.4589152146260511,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.645137,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 102,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/professor/curated/crouch-frame-3.png",
+      "sourceHeight": 515,
+      "outputHeight": 352,
+      "anchorX": 0.4676829888897083,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.685043,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 102,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "ko": [
+    {
+      "path": "assets/sprites/professor/curated/ko-frame-0.png",
+      "sourceHeight": 560,
+      "outputHeight": 351,
+      "anchorX": 0.5549255590660589,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.931034,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 87,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/professor/curated/ko-frame-1.png",
+      "sourceHeight": 469,
+      "outputHeight": 351,
+      "anchorX": 0.3883600081152436,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.779741,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 87,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/professor/curated/ko-frame-2.png",
+      "sourceHeight": 305,
+      "outputHeight": 181,
+      "anchorX": 0.4633394556032173,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.983345,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 87,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/professor/curated/ko-frame-3.png",
+      "sourceHeight": 257,
+      "outputHeight": 157,
+      "anchorX": 0.5139104773659495,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.955253,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 87,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "celebrate": [
+    {
+      "path": "assets/sprites/professor/curated/celebrate-frame-0.png",
+      "sourceHeight": 620,
+      "outputHeight": 352,
+      "anchorX": 0.48153360580489313,
+      "anchorY": 0.9583333333333334,
+      "scale": 1,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 81,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/professor/curated/celebrate-frame-1.png",
+      "sourceHeight": 632,
+      "outputHeight": 352,
+      "anchorX": 0.5166779862991673,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.019355,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 81,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/professor/curated/celebrate-frame-2.png",
+      "sourceHeight": 677,
+      "outputHeight": 351,
+      "anchorX": 0.49912530160594465,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.095046,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 81,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/professor/curated/celebrate-frame-3.png",
+      "sourceHeight": 681,
+      "outputHeight": 352,
+      "anchorX": 0.49845483196437934,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.098387,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 81,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "airPunch": [
+    {
+      "path": "assets/sprites/professor/curated/airPunch-frame-0.png",
+      "sourceHeight": 568,
+      "outputHeight": 352,
+      "anchorX": 0.38470768516104564,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.852632,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 95,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/professor/curated/airPunch-frame-1.png",
+      "sourceHeight": 577,
+      "outputHeight": 352,
+      "anchorX": 0.2898811273659248,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.866142,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 95,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/professor/curated/airPunch-frame-2.png",
+      "sourceHeight": 581,
+      "outputHeight": 331,
+      "anchorX": 0.2934065114242462,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.927479,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 95,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/professor/curated/airPunch-frame-3.png",
+      "sourceHeight": 579,
+      "outputHeight": 352,
+      "anchorX": 0.4357029995969784,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.869144,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 95,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "airKick": [
+    {
+      "path": "assets/sprites/professor/curated/airKick-frame-0.png",
+      "sourceHeight": 484,
+      "outputHeight": 352,
+      "anchorX": 0.43136901922171594,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.764151,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 106,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/professor/curated/airKick-frame-1.png",
+      "sourceHeight": 491,
+      "outputHeight": 304,
+      "anchorX": 0.35085229996881484,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.897603,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 106,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/professor/curated/airKick-frame-2.png",
+      "sourceHeight": 491,
+      "outputHeight": 259,
+      "anchorX": 0.33470531067950127,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.053557,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 106,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/professor/curated/airKick-frame-3.png",
+      "sourceHeight": 586,
+      "outputHeight": 351,
+      "anchorX": 0.5293065431350106,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.927827,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 106,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "crouchPunch": [
+    {
+      "path": "assets/sprites/professor/curated/crouchPunch-frame-0.png",
+      "sourceHeight": 522,
+      "outputHeight": 352,
+      "anchorX": 0.5153869254310699,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.778846,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 104,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/professor/curated/crouchPunch-frame-1.png",
+      "sourceHeight": 521,
+      "outputHeight": 352,
+      "anchorX": 0.5164202830565893,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.777354,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 104,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/professor/curated/crouchPunch-frame-2.png",
+      "sourceHeight": 519,
+      "outputHeight": 285,
+      "anchorX": 0.4058447381095242,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.956415,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 104,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/professor/curated/crouchPunch-frame-3.png",
+      "sourceHeight": 521,
+      "outputHeight": 352,
+      "anchorX": 0.5079093150033883,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.777354,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 104,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "crouchKick": [
+    {
+      "path": "assets/sprites/professor/curated/crouchKick-frame-0.png",
+      "sourceHeight": 523,
+      "outputHeight": 352,
+      "anchorX": 0.49275773401531153,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.704348,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 115,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/professor/curated/crouchKick-frame-1.png",
+      "sourceHeight": 547,
+      "outputHeight": 352,
+      "anchorX": 0.40005594369870395,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.73667,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 115,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/professor/curated/crouchKick-frame-2.png",
+      "sourceHeight": 507,
+      "outputHeight": 273,
+      "anchorX": 0.3739487792470735,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.880387,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 115,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/professor/curated/crouchKick-frame-3.png",
+      "sourceHeight": 515,
+      "outputHeight": 351,
+      "anchorX": 0.5015853505794156,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.69555,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 115,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "uppercut": [
+    {
+      "path": "assets/sprites/professor/curated/uppercut-frame-0.png",
+      "sourceHeight": 517,
+      "outputHeight": 352,
+      "anchorX": 0.5097747604349613,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.84375,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 96,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/professor/curated/uppercut-frame-1.png",
+      "sourceHeight": 577,
+      "outputHeight": 352,
+      "anchorX": 0.5006756776256235,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.941671,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 96,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/professor/curated/uppercut-frame-2.png",
+      "sourceHeight": 690,
+      "outputHeight": 351,
+      "anchorX": 0.497291903577085,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.129296,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 96,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/professor/curated/uppercut-frame-3.png",
+      "sourceHeight": 569,
+      "outputHeight": 352,
+      "anchorX": 0.5068394520183445,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.928615,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 96,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "sweep": [
+    {
+      "path": "assets/sprites/professor/curated/sweep-frame-0.png",
+      "sourceHeight": 414,
+      "outputHeight": 317,
+      "anchorX": 0.4486864895564299,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.778846,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 104,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/professor/curated/sweep-frame-1.png",
+      "sourceHeight": 465,
+      "outputHeight": 331,
+      "anchorX": 0.5483876858387612,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.837791,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 104,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/professor/curated/sweep-frame-2.png",
+      "sourceHeight": 408,
+      "outputHeight": 209,
+      "anchorX": 0.26825443490865525,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.164192,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 104,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/professor/curated/sweep-frame-3.png",
+      "sourceHeight": 482,
+      "outputHeight": 352,
+      "anchorX": 0.4776972368768355,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.816611,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 104,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "dash": [
+    {
+      "path": "assets/sprites/professor/curated/dash-frame-0.png",
+      "sourceHeight": 508,
+      "outputHeight": 352,
+      "anchorX": 0.4377391903747368,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.9,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 90,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/professor/curated/dash-frame-1.png",
+      "sourceHeight": 506,
+      "outputHeight": 332,
+      "anchorX": 0.5036563013154972,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.95046,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 90,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/professor/curated/dash-frame-2.png",
+      "sourceHeight": 505,
+      "outputHeight": 332,
+      "anchorX": 0.48433366954507573,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.948582,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 90,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/professor/curated/dash-frame-3.png",
+      "sourceHeight": 509,
+      "outputHeight": 351,
+      "anchorX": 0.4382088207243991,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.904341,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 90,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "backwalk": [
+    {
+      "path": "assets/sprites/professor/curated/backwalk-frame-0.png",
+      "sourceHeight": 550,
+      "outputHeight": 352,
+      "anchorX": 0.5023945424877932,
+      "anchorY": 0.9583333333333334,
+      "scale": 1,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 81,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/professor/curated/backwalk-frame-1.png",
+      "sourceHeight": 548,
+      "outputHeight": 352,
+      "anchorX": 0.499713846634988,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.996364,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 81,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/professor/curated/backwalk-frame-2.png",
+      "sourceHeight": 546,
+      "outputHeight": 352,
+      "anchorX": 0.49635151726153115,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.992727,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 81,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/professor/curated/backwalk-frame-3.png",
+      "sourceHeight": 544,
+      "outputHeight": 352,
+      "anchorX": 0.5291604826119288,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.989091,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 81,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/professor/curated/backwalk-frame-4.png",
+      "sourceHeight": 544,
+      "outputHeight": 352,
+      "anchorX": 0.5036206399207884,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.989091,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 81,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/professor/curated/backwalk-frame-5.png",
+      "sourceHeight": 551,
+      "outputHeight": 351,
+      "anchorX": 0.5011654595691404,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.004672,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 81,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "lowBlock": [
+    {
+      "path": "assets/sprites/professor/curated/lowBlock-frame-0.png",
+      "sourceHeight": 509,
+      "outputHeight": 352,
+      "anchorX": 0.49129250515859013,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.663934,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 122,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/professor/curated/lowBlock-frame-1.png",
+      "sourceHeight": 523,
+      "outputHeight": 351,
+      "anchorX": 0.490534183400917,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.684139,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 122,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/professor/curated/lowBlock-frame-2.png",
+      "sourceHeight": 492,
+      "outputHeight": 348,
+      "anchorX": 0.5010669627694992,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.649136,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 122,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/professor/curated/lowBlock-frame-3.png",
+      "sourceHeight": 504,
+      "outputHeight": 352,
+      "anchorX": 0.49677446179124024,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.657412,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 122,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "turn": [
+    {
+      "path": "assets/sprites/professor/curated/turn-frame-0.png",
+      "sourceHeight": 644,
+      "outputHeight": 352,
+      "anchorX": 0.494093527306311,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0125,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 80,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/professor/curated/turn-frame-1.png",
+      "sourceHeight": 646,
+      "outputHeight": 352,
+      "anchorX": 0.5017693483921851,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.015644,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 80,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/professor/curated/turn-frame-2.png",
+      "sourceHeight": 643,
+      "outputHeight": 352,
+      "anchorX": 0.5092504674421914,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.010928,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 80,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/professor/curated/turn-frame-3.png",
+      "sourceHeight": 645,
+      "outputHeight": 352,
+      "anchorX": 0.5079377209489271,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.014072,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 80,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "land": [
+    {
+      "path": "assets/sprites/professor/curated/land-frame-0.png",
+      "sourceHeight": 459,
+      "outputHeight": 352,
+      "anchorX": 0.4741934585664003,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.658537,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 123,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/professor/curated/land-frame-1.png",
+      "sourceHeight": 553,
+      "outputHeight": 352,
+      "anchorX": 0.4732635798057799,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.7934,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 123,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/professor/curated/land-frame-2.png",
+      "sourceHeight": 613,
+      "outputHeight": 352,
+      "anchorX": 0.5034589234094711,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.879484,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 123,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/professor/curated/land-frame-3.png",
+      "sourceHeight": 650,
+      "outputHeight": 352,
+      "anchorX": 0.5018903681292911,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.932568,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 123,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "jumpForward": [
+    {
+      "path": "assets/sprites/professor/curated/jumpForward-frame-0.png",
+      "sourceHeight": 546,
+      "outputHeight": 352,
+      "anchorX": 0.43598788538707595,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.870968,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 93,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/professor/curated/jumpForward-frame-1.png",
+      "sourceHeight": 604,
+      "outputHeight": 352,
+      "anchorX": 0.3028567503523694,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.963488,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 93,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/professor/curated/jumpForward-frame-2.png",
+      "sourceHeight": 509,
+      "outputHeight": 352,
+      "anchorX": 0.4939012594282684,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.811946,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 93,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/professor/curated/jumpForward-frame-3.png",
+      "sourceHeight": 602,
+      "outputHeight": 352,
+      "anchorX": 0.6886528538787683,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.960298,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 93,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ],
+  "super": [
+    {
+      "path": "assets/sprites/professor/curated/super-frame-0.png",
+      "sourceHeight": 610,
+      "outputHeight": 352,
+      "anchorX": 0.512331071949665,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.964286,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 84,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/professor/curated/super-frame-1.png",
+      "sourceHeight": 623,
+      "outputHeight": 352,
+      "anchorX": 0.5102306000626595,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.984836,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 84,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/professor/curated/super-frame-2.png",
+      "sourceHeight": 613,
+      "outputHeight": 352,
+      "anchorX": 0.45318753365209813,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.969028,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 84,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    },
+    {
+      "path": "assets/sprites/professor/curated/super-frame-3.png",
+      "sourceHeight": 621,
+      "outputHeight": 352,
+      "anchorX": 0.5062959383343967,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.981674,
+      "anatomyCalibration": {
+        "referenceFrame": 0,
+        "headSpan": 84,
+        "idleHeadSpan": 81,
+        "method": "manual-crown-to-chin-reviewed-exported-pixels"
+      }
+    }
+  ]
+}

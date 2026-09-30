@@ -1,0 +1,89 @@
+{
+  "version": 1,
+  "kind": "sprite-gen-request",
+  "engine": "component-row",
+  "character": {
+    "id": "goth_woman",
+    "description": "",
+    "base_image": "base-source.png"
+  },
+  "cell": {
+    "shape": "square",
+    "width": 384,
+    "height": 384,
+    "safe_margin_x": 16,
+    "safe_margin_y": 16,
+    "size": 384,
+    "safe_margin": 16
+  },
+  "chroma_key": {
+    "name": "cyan",
+    "hex": "#00FFFF",
+    "rgb": [
+      0,
+      255,
+      255
+    ],
+    "selection": "auto",
+    "score": 248.0,
+    "min_subject_distance": 223.06,
+    "background": {
+      "mode": "transparent",
+      "opaque_border_fraction": 0.0,
+      "subject_pixels": 9517
+    },
+    "candidates": [
+      {
+        "name": "magenta",
+        "hex": "#FF00FF",
+        "score": 209.45,
+        "min_subject_distance": 205.07,
+        "clears_erase_radius": true
+      },
+      {
+        "name": "green",
+        "hex": "#00FF00",
+        "score": 207.86,
+        "min_subject_distance": 197.25,
+        "clears_erase_radius": true
+      },
+      {
+        "name": "cyan",
+        "hex": "#00FFFF",
+        "score": 248.0,
+        "min_subject_distance": 223.06,
+        "clears_erase_radius": true
+      },
+      {
+        "name": "blue",
+        "hex": "#004DFF",
+        "score": 207.27,
+        "min_subject_distance": 196.64,
+        "clears_erase_radius": true
+      }
+    ],
+    "selection_reason": "highest 1st-percentile subject distance among the 4 candidate(s) clearing the 96 erase radius"
+  },
+  "states": {
+    "motion": {
+      "frames": 4,
+      "fps": 3,
+      "loop": true,
+      "action": "Cheering four poses:1 relaxed hands at chest;2 right forearm rises;3 both forearms raised cheering with open smiling mouth;4 arms lower back toward chest. Feet fixed. EXACTLY4 separate FULL-body silhouettes in one horizontal row with at least80px pure background corridors between silhouettes; no overlapping panels. Preserve original head/torso/limb dimensions independently of raised arms or seated posture."
+    }
+  },
+  "style": "Detailed hand-painted arcade pixel illustration, clean dark outlines, natural adult anatomy and small realistic head, muted night colors and amber rim light. Reference continuity same face, exact body proportions and costume in every frame; no geometric placeholder people.",
+  "layout": "taxonomy/v1",
+  "fit": {
+    "pixel_unfake": false,
+    "resample": "kcentroid",
+    "align_x": "bbox-center",
+    "align_y": "bottom",
+    "ground_frames": true
+  },
+  "chroma": {
+    "mode": "rgb",
+    "unmix_reach": 4,
+    "spill_max_fraction": 0.005
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "kind": "sprite-gen-image-report",
+  "provider": "codex",
+  "prompt": "Create a full body transparent cutout of ONE Brazilian male bar patron in his 30s, warm brown skin, short dark hair and subtle mustache, wearing a muted terracotta rolled-sleeve casual shirt, charcoal trousers and brown shoes. Friendly calm expression, relaxed standing with a small beer mug held at chest height in right hand. Hand-painted detailed 2D arcade fighting-game background character art, anatomically shaped limbs and natural face like classic 1990s Street Fighter stage spectators, realistic adult proportions, clean dark silhouette outline, restrained warm tungsten shading, completely original character, side three-quarter front view. Entire figure visible including feet, genuinely transparent background, no checkerboard, no props detached, no text. Render character large enough for rich details; runtime will scale down to small background spectator.",
+  "out": "/home/bruno/projects/funnietech/ai-tests/games/fighting-game-codex-gauntlet-loop/assets/stages/patrons/base.png",
+  "raw": "/home/bruno/projects/funnietech/ai-tests/games/fighting-game-codex-gauntlet-loop/assets/stages/patrons/base.png.raw.png",
+  "raw_bytes": 1606856,
+  "elapsed_seconds": 53.238,
+  "model": null,
+  "session_id": "01a0f0ec-3035-7022-a4e1-7bb61b21cf42",
+  "refs": [],
+  "transparent": true,
+  "alpha": {
+    "strategy": "native",
+    "strategy_source": "provider-default",
+    "out": "/home/bruno/projects/funnietech/ai-tests/games/fighting-game-codex-gauntlet-loop/assets/stages/patrons/base.png",
+    "mode": "RGBA",
+    "method": "native",
+    "size": "1024x1536",
+    "alpha_zero_pct": 70.02,
+    "partial_alpha_pct": 29.98,
+    "opaque_pct": 0.0,
+    "cleaned_transparent_rgb_pixels": 780960,
+    "stale_transparent_rgb_pixels": 0
+  },
+  "chroma": null,
+  "extra": {
+    "inline_results": 1,
+    "rollout_cleaned": true,
+    "transparent_background_reported": true
+  },
+  "provider_resolved_from": "explicit"
+}

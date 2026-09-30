@@ -1,0 +1,74 @@
+{
+  "idle": {
+    "headSpan": 78
+  },
+  "punch": {
+    "headSpan": 78
+  },
+  "kick": {
+    "headSpan": 78
+  },
+  "hurt": {
+    "headSpan": 88
+  },
+  "jump": {
+    "headSpan": 97
+  },
+  "special": {
+    "headSpan": 80
+  },
+  "walk": {
+    "headSpan": 80
+  },
+  "block": {
+    "headSpan": 80
+  },
+  "crouch": {
+    "headSpan": 84
+  },
+  "ko": {
+    "headSpan": 75
+  },
+  "celebrate": {
+    "headSpan": 78
+  },
+  "airPunch": {
+    "headSpan": 90
+  },
+  "airKick": {
+    "headSpan": 88
+  },
+  "crouchPunch": {
+    "headSpan": 101
+  },
+  "crouchKick": {
+    "headSpan": 101
+  },
+  "uppercut": {
+    "headSpan": 89
+  },
+  "sweep": {
+    "headSpan": 104
+  },
+  "dash": {
+    "headSpan": 91
+  },
+  "backwalk": {
+    "headSpan": 78
+  },
+  "lowBlock": {
+    "headSpan": 105
+  },
+  "turn": {
+    "headSpan": 82
+  },
+  "land": {
+    "headSpan": 108
+  },
+  "jumpForward": {
+    "headSpan": 97
+  },
+  "super": {
+    "headSpan": 87
+  }
+}

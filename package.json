@@ -1,0 +1,45 @@
+{
+  "name": "buteco-fighting",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs",
+    "dev": "node server.mjs",
+    "check": "node --check roster.js && node --check app.js && node --check game.js && node --check phaser-game.js && node --check stages.js && node --check crowd-layout.js && node --check audio.js && node --check music.js && node --check server.mjs",
+    "test": "node harness/playtest.mjs",
+    "sprites:publish": "node harness/sprites.mjs",
+    "sprites:organize": "node harness/organize-assets.mjs",
+    "test:animation": "node harness/animation.mjs",
+    "test:combat": "node harness/combat-v2.mjs",
+    "test:campaign": "node harness/campaign.mjs",
+    "test:motion": "node harness/motion-v3.mjs",
+    "test:hud": "node harness/hud-v4.mjs",
+    "test:round": "node harness/round-v5.mjs",
+    "test:ko:health": "node harness/ko-health.mjs",
+    "test:stages": "node harness/stages-v5.mjs",
+    "test:crowd": "node harness/crowd-v6.mjs",
+    "test:ui": "node harness/ui-v8.mjs",
+    "test:arenas": "node harness/arena-v8.mjs",
+    "test:roster:combat": "node harness/roster-combat-v7.mjs",
+    "test:roster": "node harness/roster-browser-v7.mjs",
+    "test:roster:assets": "python3 harness/roster-assets-v7.py",
+    "test:previews": "node harness/previews-v9.mjs",
+    "test:selection:demo": "node harness/selection-demo.mjs",
+    "test:power:preview": "node harness/power-preview.test.mjs",
+    "test:options": "node harness/options-layout.mjs",
+    "test:menu:actions": "node harness/menu-actions.mjs",
+    "audio:plan": "python3 harness/generate-audio-v9.py --plan",
+    "audio:generate": "python3 harness/generate-audio-v9.py --generate && python3 harness/master-audio-v9.py",
+    "test:audio": "node harness/audio-v9.mjs",
+    "test:audio:real": "node harness/audio-real-v9.mjs",
+    "test:blood": "node harness/blood-v10.mjs",
+    "test:ko:effects": "node harness/ko-effects-v10.mjs"
+  },
+  "devDependencies": {
+    "playwright": "^1.63.0"
+  },
+  "dependencies": {
+    "phaser": "^3.90.0"
+  }
+}

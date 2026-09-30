@@ -1,0 +1,33 @@
+{
+  "kind": "sprite-gen-image-report",
+  "provider": "codex",
+  "prompt": "Create ONE full-body genuinely transparent cutout of an original Brazilian neighborhood bar spectator: Brazilian man in his40s, mediumbrownsunwarmedskin, shortdarkhairandfulltrimmedbeard, mutedolive rolledsleeve shirt, charcoaljeans, brownsneakers. Pose: excitedcheering, onefistraisednearshoulder, leftfreehandatwaist. Adult realisticanatomicalproportions, entirebodywithshoesvisible. Rich hand-painted detailed2Dclassicarcadefightinggame background spectator illustration, natural humanface andshapedlimbs, carefulclothfolds, cleandarksilhouetteoutline, subtlewarm tungstenlight compatiblewithBrazilianbohemiannightstage. Notgeometricmannequin, notcartoonstickfigure, notphoto. Fixedfrontthreequartercamera. NOtext,nootherpeople,noextraarms,nodecorativebackground,nocheckerboard. Originalcharacter, distinctindividualidentity.",
+  "out": "/home/bruno/projects/funnietech/ai-tests/games/fighting-game-codex-gauntlet-loop/assets/stages/public-v6/davi-base.png",
+  "raw": "/home/bruno/projects/funnietech/ai-tests/games/fighting-game-codex-gauntlet-loop/assets/stages/public-v6/davi-base.png.raw.png",
+  "raw_bytes": 1846472,
+  "elapsed_seconds": 45.285,
+  "model": null,
+  "session_id": "01a0f0f8-0796-7fc3-be72-3a9fba3e48cc",
+  "refs": [],
+  "transparent": true,
+  "alpha": {
+    "strategy": "native",
+    "strategy_source": "provider-default",
+    "out": "/home/bruno/projects/funnietech/ai-tests/games/fighting-game-codex-gauntlet-loop/assets/stages/public-v6/davi-base.png",
+    "mode": "RGBA",
+    "method": "native",
+    "size": "1024x1536",
+    "alpha_zero_pct": 66.58,
+    "partial_alpha_pct": 33.42,
+    "opaque_pct": 0.0,
+    "cleaned_transparent_rgb_pixels": 873376,
+    "stale_transparent_rgb_pixels": 0
+  },
+  "chroma": null,
+  "extra": {
+    "inline_results": 1,
+    "rollout_cleaned": true,
+    "transparent_background_reported": true
+  },
+  "provider_resolved_from": "explicit"
+}

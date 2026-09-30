@@ -1,0 +1,746 @@
+{
+  "idle": {
+    "frames": [
+      {
+        "path": "assets/sprites/vinil/curated/idle-frame-0.png",
+        "scale": 1,
+        "anchorX": 0.5175345427983531,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/vinil/curated/idle-frame-1.png",
+        "scale": 1.035354,
+        "anchorX": 0.5280752006270013,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/vinil/curated/idle-frame-2.png",
+        "scale": 0.991582,
+        "anchorX": 0.521628449988549,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/vinil/curated/idle-frame-3.png",
+        "scale": 1.026936,
+        "anchorX": 0.5308389852624142,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 6,
+    "loop": true
+  },
+  "punch": {
+    "frames": [
+      {
+        "path": "assets/sprites/vinil/curated/punch-frame-0.png",
+        "scale": 1,
+        "anchorX": 0.5085849348478373,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/vinil/curated/punch-frame-1.png",
+        "scale": 0.993019,
+        "anchorX": 0.48636087376825077,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/vinil/curated/punch-frame-2.png",
+        "scale": 1.150286,
+        "anchorX": 0.41975596449338276,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/vinil/curated/punch-frame-3.png",
+        "scale": 1,
+        "anchorX": 0.5020067613389427,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  },
+  "kick": {
+    "frames": [
+      {
+        "path": "assets/sprites/vinil/curated/kick-frame-0.png",
+        "scale": 1.03,
+        "anchorX": 0.5092752870128375,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/vinil/curated/kick-frame-1.png",
+        "scale": 1.075495,
+        "anchorX": 0.4778343996648393,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/vinil/curated/kick-frame-2.png",
+        "scale": 1.21686,
+        "anchorX": 0.33430355334130785,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/vinil/curated/kick-frame-3.png",
+        "scale": 1.039099,
+        "anchorX": 0.4753607379783447,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 10,
+    "loop": false
+  },
+  "hurt": {
+    "frames": [
+      {
+        "path": "assets/sprites/vinil/curated/hurt-frame-0.png",
+        "scale": 1,
+        "anchorX": 0.5581393727072627,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/vinil/curated/hurt-frame-1.png",
+        "scale": 0.986799,
+        "anchorX": 0.5369411919068975,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/vinil/curated/hurt-frame-2.png",
+        "scale": 0.940594,
+        "anchorX": 0.5102138672965336,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/vinil/curated/hurt-frame-3.png",
+        "scale": 0.978548,
+        "anchorX": 0.5270941704757032,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 10,
+    "loop": false
+  },
+  "jump": {
+    "frames": [
+      {
+        "path": "assets/sprites/vinil/curated/jump-frame-0.png",
+        "scale": 0.81746,
+        "anchorX": 0.501793489234005,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/vinil/curated/jump-frame-1.png",
+        "scale": 0.927996,
+        "anchorX": 0.47361325992583514,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/vinil/curated/jump-frame-2.png",
+        "scale": 0.854982,
+        "anchorX": 0.5851135076178041,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/vinil/curated/jump-frame-3.png",
+        "scale": 0.849721,
+        "anchorX": 0.5264982253849149,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 8,
+    "loop": false
+  },
+  "special": {
+    "frames": [
+      {
+        "path": "assets/sprites/vinil/curated/special-frame-0.png",
+        "scale": 1,
+        "anchorX": 0.5200138483444149,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/vinil/curated/special-frame-1.png",
+        "scale": 1.011527,
+        "anchorX": 0.45435183068768503,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/vinil/curated/special-frame-2.png",
+        "scale": 1.200355,
+        "anchorX": 0.4103744819180184,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/vinil/curated/special-frame-3.png",
+        "scale": 0.995329,
+        "anchorX": 0.5097812423526802,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 10,
+    "loop": false
+  },
+  "walk": {
+    "frames": [
+      {
+        "path": "assets/sprites/vinil/curated/walk-frame-0.png",
+        "scale": 1.040404,
+        "anchorX": 0.5034879815046231,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/vinil/curated/walk-frame-1.png",
+        "scale": 1.046866,
+        "anchorX": 0.509383752939324,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/vinil/curated/walk-frame-2.png",
+        "scale": 1.044712,
+        "anchorX": 0.49874191995302947,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/vinil/curated/walk-frame-3.png",
+        "scale": 1.042558,
+        "anchorX": 0.5454373226857213,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/vinil/curated/walk-frame-4.png",
+        "scale": 1.047689,
+        "anchorX": 0.48678839863336193,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/vinil/curated/walk-frame-5.png",
+        "scale": 1.046866,
+        "anchorX": 0.5026329616259138,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": true
+  },
+  "block": {
+    "frames": [
+      {
+        "path": "assets/sprites/vinil/curated/block-frame-0.png",
+        "scale": 0.980952,
+        "anchorX": 0.4999669429965678,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/vinil/curated/block-frame-1.png",
+        "scale": 0.982186,
+        "anchorX": 0.48664343036726815,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/vinil/curated/block-frame-2.png",
+        "scale": 1.00898,
+        "anchorX": 0.48387926677808396,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/vinil/curated/block-frame-3.png",
+        "scale": 1.00898,
+        "anchorX": 0.48506161043545254,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 8,
+    "loop": false
+  },
+  "crouch": {
+    "frames": [
+      {
+        "path": "assets/sprites/vinil/curated/crouch-frame-0.png",
+        "scale": 0.962617,
+        "anchorX": 0.4755478334458179,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/vinil/curated/crouch-frame-1.png",
+        "scale": 0.84775,
+        "anchorX": 0.4732968409989465,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/vinil/curated/crouch-frame-2.png",
+        "scale": 0.78789,
+        "anchorX": 0.47193588652844437,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/vinil/curated/crouch-frame-3.png",
+        "scale": 0.846132,
+        "anchorX": 0.48338179340232285,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 8,
+    "loop": false
+  },
+  "ko": {
+    "frames": [
+      {
+        "path": "assets/sprites/vinil/curated/ko-frame-0.png",
+        "scale": 1.144444,
+        "anchorX": 0.5223165594031859,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/vinil/curated/ko-frame-1.png",
+        "scale": 1.105816,
+        "anchorX": 0.6374465766235811,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/vinil/curated/ko-frame-2.png",
+        "scale": 1.018159,
+        "anchorX": 0.36267000287844975,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/vinil/curated/ko-frame-3.png",
+        "scale": 1.402096,
+        "anchorX": 0.5053547215840579,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 8,
+    "loop": false
+  },
+  "celebrate": {
+    "frames": [
+      {
+        "path": "assets/sprites/vinil/curated/celebrate-frame-0.png",
+        "scale": 1,
+        "anchorX": 0.5329611652388937,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/vinil/curated/celebrate-frame-1.png",
+        "scale": 1.097603,
+        "anchorX": 0.5467785300647109,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/vinil/curated/celebrate-frame-2.png",
+        "scale": 1.166096,
+        "anchorX": 0.5169867349774501,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/vinil/curated/celebrate-frame-3.png",
+        "scale": 1.104452,
+        "anchorX": 0.5304940542533578,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 6,
+    "loop": false
+  },
+  "airPunch": {
+    "frames": [
+      {
+        "path": "assets/sprites/vinil/curated/airPunch-frame-0.png",
+        "scale": 0.936364,
+        "anchorX": 0.4043041981453097,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/vinil/curated/airPunch-frame-1.png",
+        "scale": 0.952849,
+        "anchorX": 0.27426352566221546,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/vinil/curated/airPunch-frame-2.png",
+        "scale": 1.142555,
+        "anchorX": 0.22290773850639056,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/vinil/curated/airPunch-frame-3.png",
+        "scale": 0.984171,
+        "anchorX": 0.41822881315611865,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  },
+  "airKick": {
+    "frames": [
+      {
+        "path": "assets/sprites/vinil/curated/airKick-frame-0.png",
+        "scale": 1.03,
+        "anchorX": 0.3277472347880935,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/vinil/curated/airKick-frame-1.png",
+        "scale": 1.101873,
+        "anchorX": 0.4921686396928516,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/vinil/curated/airKick-frame-2.png",
+        "scale": 1.258302,
+        "anchorX": 0.3804596777983491,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/vinil/curated/airKick-frame-3.png",
+        "scale": 0.967996,
+        "anchorX": 0.5373977204974206,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  },
+  "crouchPunch": {
+    "frames": [
+      {
+        "path": "assets/sprites/vinil/curated/crouchPunch-frame-0.png",
+        "scale": 0.844262,
+        "anchorX": 0.49873098587467224,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/vinil/curated/crouchPunch-frame-1.png",
+        "scale": 0.850782,
+        "anchorX": 0.5034901002141319,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/vinil/curated/crouchPunch-frame-2.png",
+        "scale": 1.016847,
+        "anchorX": 0.438368348205634,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/vinil/curated/crouchPunch-frame-3.png",
+        "scale": 0.853206,
+        "anchorX": 0.49541142470973587,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  },
+  "crouchKick": {
+    "frames": [
+      {
+        "path": "assets/sprites/vinil/curated/crouchKick-frame-0.png",
+        "scale": 0.865546,
+        "anchorX": 0.4887992692441299,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/vinil/curated/crouchKick-frame-1.png",
+        "scale": 0.931546,
+        "anchorX": 0.4424577952476259,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/vinil/curated/crouchKick-frame-2.png",
+        "scale": 1.259259,
+        "anchorX": 0.343170059357254,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/vinil/curated/crouchKick-frame-3.png",
+        "scale": 0.869318,
+        "anchorX": 0.5061538154984772,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 10,
+    "loop": false
+  },
+  "uppercut": {
+    "frames": [
+      {
+        "path": "assets/sprites/vinil/curated/uppercut-frame-0.png",
+        "scale": 0.880342,
+        "anchorX": 0.5140374171837504,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/vinil/curated/uppercut-frame-1.png",
+        "scale": 0.931352,
+        "anchorX": 0.4745584153327223,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/vinil/curated/uppercut-frame-2.png",
+        "scale": 1.156786,
+        "anchorX": 0.4931626448678091,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/vinil/curated/uppercut-frame-3.png",
+        "scale": 0.926416,
+        "anchorX": 0.5025161534656768,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  },
+  "sweep": {
+    "frames": [
+      {
+        "path": "assets/sprites/vinil/curated/sweep-frame-0.png",
+        "scale": 0.927928,
+        "anchorX": 0.5011538866752802,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/vinil/curated/sweep-frame-1.png",
+        "scale": 1.045149,
+        "anchorX": 0.6573708242563782,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/vinil/curated/sweep-frame-2.png",
+        "scale": 1.297953,
+        "anchorX": 0.4206993518383731,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/vinil/curated/sweep-frame-3.png",
+        "scale": 0.851497,
+        "anchorX": 0.48215126896721633,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 10,
+    "loop": false
+  },
+  "dash": {
+    "frames": [
+      {
+        "path": "assets/sprites/vinil/curated/dash-frame-0.png",
+        "scale": 0.936364,
+        "anchorX": 0.45322963406824934,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/vinil/curated/dash-frame-1.png",
+        "scale": 0.99131,
+        "anchorX": 0.5154196677183494,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/vinil/curated/dash-frame-2.png",
+        "scale": 0.95533,
+        "anchorX": 0.48041337013504454,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/vinil/curated/dash-frame-3.png",
+        "scale": 0.939031,
+        "anchorX": 0.45736643403785776,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  },
+  "backwalk": {
+    "frames": [
+      {
+        "path": "assets/sprites/vinil/curated/backwalk-frame-0.png",
+        "scale": 1.107527,
+        "anchorX": 0.5009825836884457,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/vinil/curated/backwalk-frame-1.png",
+        "scale": 1.11227,
+        "anchorX": 0.4792995906949404,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/vinil/curated/backwalk-frame-2.png",
+        "scale": 1.090926,
+        "anchorX": 0.5077906421677564,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/vinil/curated/backwalk-frame-3.png",
+        "scale": 1.105155,
+        "anchorX": 0.5144755956224724,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/vinil/curated/backwalk-frame-4.png",
+        "scale": 1.11227,
+        "anchorX": 0.5067756943409322,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/vinil/curated/backwalk-frame-5.png",
+        "scale": 1.105155,
+        "anchorX": 0.49996130941600087,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": true
+  },
+  "lowBlock": {
+    "frames": [
+      {
+        "path": "assets/sprites/vinil/curated/lowBlock-frame-0.png",
+        "scale": 0.768657,
+        "anchorX": 0.49730794497343206,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/vinil/curated/lowBlock-frame-1.png",
+        "scale": 0.873404,
+        "anchorX": 0.4807543825848211,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/vinil/curated/lowBlock-frame-2.png",
+        "scale": 0.814119,
+        "anchorX": 0.508160737019982,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/vinil/curated/lowBlock-frame-3.png",
+        "scale": 0.794631,
+        "anchorX": 0.4994003640678428,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 8,
+    "loop": false
+  },
+  "turn": {
+    "frames": [
+      {
+        "path": "assets/sprites/vinil/curated/turn-frame-0.png",
+        "scale": 1.040404,
+        "anchorX": 0.5061308081847881,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/vinil/curated/turn-frame-1.png",
+        "scale": 1.060576,
+        "anchorX": 0.4972524274582433,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/vinil/curated/turn-frame-2.png",
+        "scale": 1.060576,
+        "anchorX": 0.5103774011956222,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/vinil/curated/turn-frame-3.png",
+        "scale": 1.052316,
+        "anchorX": 0.4827519585758262,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  },
+  "land": {
+    "frames": [
+      {
+        "path": "assets/sprites/vinil/curated/land-frame-0.png",
+        "scale": 0.792308,
+        "anchorX": 0.5544217365466134,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/vinil/curated/land-frame-1.png",
+        "scale": 0.937316,
+        "anchorX": 0.5311029058628429,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/vinil/curated/land-frame-2.png",
+        "scale": 1.049687,
+        "anchorX": 0.5390171374382736,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/vinil/curated/land-frame-3.png",
+        "scale": 1.075251,
+        "anchorX": 0.5279613986037369,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  },
+  "jumpForward": {
+    "frames": [
+      {
+        "path": "assets/sprites/vinil/curated/jumpForward-frame-0.png",
+        "scale": 0.953704,
+        "anchorX": 0.4519508225933924,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/vinil/curated/jumpForward-frame-1.png",
+        "scale": 1.041694,
+        "anchorX": 0.18644704619676714,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/vinil/curated/jumpForward-frame-2.png",
+        "scale": 0.910608,
+        "anchorX": 0.456780208651638,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/vinil/curated/jumpForward-frame-3.png",
+        "scale": 1.032955,
+        "anchorX": 0.7012813227266146,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 10,
+    "loop": false
+  },
+  "super": {
+    "frames": [
+      {
+        "path": "assets/sprites/vinil/curated/super-frame-0.png",
+        "scale": 1,
+        "anchorX": 0.5109962412768938,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/vinil/curated/super-frame-1.png",
+        "scale": 0.998282,
+        "anchorX": 0.497461268973534,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/vinil/curated/super-frame-2.png",
+        "scale": 1.169159,
+        "anchorX": 0.40922894946467253,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/vinil/curated/super-frame-3.png",
+        "scale": 1,
+        "anchorX": 0.49354908129778013,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  }
+}

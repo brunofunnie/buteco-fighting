@@ -1,0 +1,746 @@
+{
+  "idle": {
+    "frames": [
+      {
+        "path": "assets/sprites/ana/curated/idle-frame-0.png",
+        "scale": 1,
+        "anchorX": 0.5133791726892556,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/ana/curated/idle-frame-1.png",
+        "scale": 1.050847,
+        "anchorX": 0.5096010419462781,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/ana/curated/idle-frame-2.png",
+        "scale": 0.937288,
+        "anchorX": 0.5121845522220357,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/ana/curated/idle-frame-3.png",
+        "scale": 1,
+        "anchorX": 0.5106889404264814,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 6,
+    "loop": true
+  },
+  "punch": {
+    "frames": [
+      {
+        "path": "assets/sprites/ana/curated/punch-frame-0.png",
+        "scale": 0.987013,
+        "anchorX": 0.5013436257917617,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/ana/curated/punch-frame-1.png",
+        "scale": 0.975724,
+        "anchorX": 0.49633042644018355,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/ana/curated/punch-frame-2.png",
+        "scale": 0.985311,
+        "anchorX": 0.4718054798609311,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/ana/curated/punch-frame-3.png",
+        "scale": 0.987013,
+        "anchorX": 0.49997211996053714,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  },
+  "kick": {
+    "frames": [
+      {
+        "path": "assets/sprites/ana/curated/kick-frame-0.png",
+        "scale": 1.055556,
+        "anchorX": 0.529980344925569,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/ana/curated/kick-frame-1.png",
+        "scale": 1.108461,
+        "anchorX": 0.5052094928970391,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/ana/curated/kick-frame-2.png",
+        "scale": 1.21106,
+        "anchorX": 0.2713951322732023,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/ana/curated/kick-frame-3.png",
+        "scale": 1.078166,
+        "anchorX": 0.47543325436953165,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 10,
+    "loop": false
+  },
+  "hurt": {
+    "frames": [
+      {
+        "path": "assets/sprites/ana/curated/hurt-frame-0.png",
+        "scale": 0.962025,
+        "anchorX": 0.5954996130693686,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/ana/curated/hurt-frame-1.png",
+        "scale": 1.011103,
+        "anchorX": 0.5719157461525951,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/ana/curated/hurt-frame-2.png",
+        "scale": 0.913761,
+        "anchorX": 0.5173769796676962,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/ana/curated/hurt-frame-3.png",
+        "scale": 0.960451,
+        "anchorX": 0.5119608710503586,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 10,
+    "loop": false
+  },
+  "jump": {
+    "frames": [
+      {
+        "path": "assets/sprites/ana/curated/jump-frame-0.png",
+        "scale": 0.745098,
+        "anchorX": 0.48413315311764643,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/ana/curated/jump-frame-1.png",
+        "scale": 0.842913,
+        "anchorX": 0.3775138671636052,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/ana/curated/jump-frame-2.png",
+        "scale": 0.756467,
+        "anchorX": 0.3689056044379823,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/ana/curated/jump-frame-3.png",
+        "scale": 0.766789,
+        "anchorX": 0.5750170738408158,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 8,
+    "loop": false
+  },
+  "special": {
+    "frames": [
+      {
+        "path": "assets/sprites/ana/curated/special-frame-0.png",
+        "scale": 0.926829,
+        "anchorX": 0.5056798089516542,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/ana/curated/special-frame-1.png",
+        "scale": 0.925217,
+        "anchorX": 0.5155464963756365,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/ana/curated/special-frame-2.png",
+        "scale": 0.938549,
+        "anchorX": 0.4948958725377837,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/ana/curated/special-frame-3.png",
+        "scale": 0.926829,
+        "anchorX": 0.5167376559320734,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 10,
+    "loop": false
+  },
+  "walk": {
+    "frames": [
+      {
+        "path": "assets/sprites/ana/curated/walk-frame-0.png",
+        "scale": 1.041096,
+        "anchorX": 0.5062016480482405,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/ana/curated/walk-frame-1.png",
+        "scale": 1.038138,
+        "anchorX": 0.5219055864120877,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/ana/curated/walk-frame-2.png",
+        "scale": 1.046561,
+        "anchorX": 0.5089773021517315,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/ana/curated/walk-frame-3.png",
+        "scale": 1.049543,
+        "anchorX": 0.5255119338657492,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/ana/curated/walk-frame-4.png",
+        "scale": 1.04235,
+        "anchorX": 0.5043305547764935,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/ana/curated/walk-frame-5.png",
+        "scale": 1.045319,
+        "anchorX": 0.5060742761101634,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": true
+  },
+  "block": {
+    "frames": [
+      {
+        "path": "assets/sprites/ana/curated/block-frame-0.png",
+        "scale": 0.926829,
+        "anchorX": 0.5148195994640111,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/ana/curated/block-frame-1.png",
+        "scale": 0.923775,
+        "anchorX": 0.5154626042489222,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/ana/curated/block-frame-2.png",
+        "scale": 0.916141,
+        "anchorX": 0.5215323472849759,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/ana/curated/block-frame-3.png",
+        "scale": 0.913087,
+        "anchorX": 0.5186723854989507,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 8,
+    "loop": false
+  },
+  "crouch": {
+    "frames": [
+      {
+        "path": "assets/sprites/ana/curated/crouch-frame-0.png",
+        "scale": 0.863636,
+        "anchorX": 0.49977656609684734,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/ana/curated/crouch-frame-1.png",
+        "scale": 0.782342,
+        "anchorX": 0.4958401358900462,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/ana/curated/crouch-frame-2.png",
+        "scale": 0.723838,
+        "anchorX": 0.5201287585809667,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/ana/curated/crouch-frame-3.png",
+        "scale": 0.697529,
+        "anchorX": 0.5272323499489545,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 8,
+    "loop": false
+  },
+  "ko": {
+    "frames": [
+      {
+        "path": "assets/sprites/ana/curated/ko-frame-0.png",
+        "scale": 0.938272,
+        "anchorX": 0.5635221892562662,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/ana/curated/ko-frame-1.png",
+        "scale": 0.832478,
+        "anchorX": 0.5947282071054335,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/ana/curated/ko-frame-2.png",
+        "scale": 0.998184,
+        "anchorX": 0.5976155773003486,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/ana/curated/ko-frame-3.png",
+        "scale": 1.022318,
+        "anchorX": 0.44331237619891145,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 8,
+    "loop": false
+  },
+  "celebrate": {
+    "frames": [
+      {
+        "path": "assets/sprites/ana/curated/celebrate-frame-0.png",
+        "scale": 1.041096,
+        "anchorX": 0.5297946130352639,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/ana/curated/celebrate-frame-1.png",
+        "scale": 1.133604,
+        "anchorX": 0.5328500174701672,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/ana/curated/celebrate-frame-2.png",
+        "scale": 1.196457,
+        "anchorX": 0.514900376058021,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/ana/curated/celebrate-frame-3.png",
+        "scale": 1.200028,
+        "anchorX": 0.5065387039093002,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 6,
+    "loop": false
+  },
+  "airPunch": {
+    "frames": [
+      {
+        "path": "assets/sprites/ana/curated/airPunch-frame-0.png",
+        "scale": 0.8,
+        "anchorX": 0.3607051341816692,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/ana/curated/airPunch-frame-1.png",
+        "scale": 0.834097,
+        "anchorX": 0.264594784606417,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/ana/curated/airPunch-frame-2.png",
+        "scale": 0.854653,
+        "anchorX": 0.3192135299072752,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/ana/curated/airPunch-frame-3.png",
+        "scale": 0.80964,
+        "anchorX": 0.3974509143710904,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  },
+  "airKick": {
+    "frames": [
+      {
+        "path": "assets/sprites/ana/curated/airKick-frame-0.png",
+        "scale": 0.76,
+        "anchorX": 0.4912371500477062,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/ana/curated/airKick-frame-1.png",
+        "scale": 0.813333,
+        "anchorX": 0.5911888386261415,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/ana/curated/airKick-frame-2.png",
+        "scale": 1.027512,
+        "anchorX": 0.36311717705118535,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/ana/curated/airKick-frame-3.png",
+        "scale": 0.817778,
+        "anchorX": 0.5139864510763479,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  },
+  "crouchPunch": {
+    "frames": [
+      {
+        "path": "assets/sprites/ana/curated/crouchPunch-frame-0.png",
+        "scale": 0.76,
+        "anchorX": 0.502393941975012,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/ana/curated/crouchPunch-frame-1.png",
+        "scale": 0.780695,
+        "anchorX": 0.5794940806808145,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/ana/curated/crouchPunch-frame-2.png",
+        "scale": 0.834377,
+        "anchorX": 0.5307647801510303,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/ana/curated/crouchPunch-frame-3.png",
+        "scale": 0.76,
+        "anchorX": 0.5168743664916252,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  },
+  "crouchKick": {
+    "frames": [
+      {
+        "path": "assets/sprites/ana/curated/crouchKick-frame-0.png",
+        "scale": 0.752475,
+        "anchorX": 0.5224531723592417,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/ana/curated/crouchKick-frame-1.png",
+        "scale": 0.842174,
+        "anchorX": 0.4133854655402002,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/ana/curated/crouchKick-frame-2.png",
+        "scale": 1.150973,
+        "anchorX": 0.3643415675267588,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/ana/curated/crouchKick-frame-3.png",
+        "scale": 0.752475,
+        "anchorX": 0.6066043140124133,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 10,
+    "loop": false
+  },
+  "uppercut": {
+    "frames": [
+      {
+        "path": "assets/sprites/ana/curated/uppercut-frame-0.png",
+        "scale": 0.894118,
+        "anchorX": 0.5189898524354507,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/ana/curated/uppercut-frame-1.png",
+        "scale": 0.954905,
+        "anchorX": 0.5145445375693907,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/ana/curated/uppercut-frame-2.png",
+        "scale": 1.164884,
+        "anchorX": 0.5045162784279643,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/ana/curated/uppercut-frame-3.png",
+        "scale": 0.949905,
+        "anchorX": 0.5178707411206797,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  },
+  "sweep": {
+    "frames": [
+      {
+        "path": "assets/sprites/ana/curated/sweep-frame-0.png",
+        "scale": 0.697248,
+        "anchorX": 0.5208892521690407,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/ana/curated/sweep-frame-1.png",
+        "scale": 0.77138,
+        "anchorX": 0.6493726597237438,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/ana/curated/sweep-frame-2.png",
+        "scale": 1.221285,
+        "anchorX": 0.568675801339222,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/ana/curated/sweep-frame-3.png",
+        "scale": 0.701756,
+        "anchorX": 0.5448329171976375,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 10,
+    "loop": false
+  },
+  "dash": {
+    "frames": [
+      {
+        "path": "assets/sprites/ana/curated/dash-frame-0.png",
+        "scale": 0.72381,
+        "anchorX": 0.3760778899232155,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/ana/curated/dash-frame-1.png",
+        "scale": 0.771136,
+        "anchorX": 0.5432970650459096,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/ana/curated/dash-frame-2.png",
+        "scale": 0.715217,
+        "anchorX": 0.5288286376604917,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/ana/curated/dash-frame-3.png",
+        "scale": 0.718049,
+        "anchorX": 0.36357864058851214,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  },
+  "backwalk": {
+    "frames": [
+      {
+        "path": "assets/sprites/ana/curated/backwalk-frame-0.png",
+        "scale": 1.070423,
+        "anchorX": 0.522170927751907,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/ana/curated/backwalk-frame-1.png",
+        "scale": 1.060977,
+        "anchorX": 0.5177548850665232,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/ana/curated/backwalk-frame-2.png",
+        "scale": 1.048169,
+        "anchorX": 0.5007402231936001,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/ana/curated/backwalk-frame-3.png",
+        "scale": 1.054573,
+        "anchorX": 0.5742712395282666,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/ana/curated/backwalk-frame-4.png",
+        "scale": 1.056708,
+        "anchorX": 0.4961938318330561,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/ana/curated/backwalk-frame-5.png",
+        "scale": 1.061859,
+        "anchorX": 0.5080446969052912,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": true
+  },
+  "lowBlock": {
+    "frames": [
+      {
+        "path": "assets/sprites/ana/curated/lowBlock-frame-0.png",
+        "scale": 0.690909,
+        "anchorX": 0.4675501056536567,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/ana/curated/lowBlock-frame-1.png",
+        "scale": 0.697774,
+        "anchorX": 0.5223124659792103,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/ana/curated/lowBlock-frame-2.png",
+        "scale": 0.668345,
+        "anchorX": 0.5041984446586371,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/ana/curated/lowBlock-frame-3.png",
+        "scale": 0.686186,
+        "anchorX": 0.4809160725030221,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 8,
+    "loop": false
+  },
+  "turn": {
+    "frames": [
+      {
+        "path": "assets/sprites/ana/curated/turn-frame-0.png",
+        "scale": 1.085714,
+        "anchorX": 0.511271336079511,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/ana/curated/turn-frame-1.png",
+        "scale": 1.084396,
+        "anchorX": 0.5143747797075486,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/ana/curated/turn-frame-2.png",
+        "scale": 1.080864,
+        "anchorX": 0.5086732800992053,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/ana/curated/turn-frame-3.png",
+        "scale": 1.084396,
+        "anchorX": 0.49688367881248136,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  },
+  "land": {
+    "frames": [
+      {
+        "path": "assets/sprites/ana/curated/land-frame-0.png",
+        "scale": 0.71028,
+        "anchorX": 0.526049878545786,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/ana/curated/land-frame-1.png",
+        "scale": 0.885321,
+        "anchorX": 0.4728639107329165,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/ana/curated/land-frame-2.png",
+        "scale": 0.982788,
+        "anchorX": 0.4884317960681888,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/ana/curated/land-frame-3.png",
+        "scale": 1.086904,
+        "anchorX": 0.509531784781644,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  },
+  "jumpForward": {
+    "frames": [
+      {
+        "path": "assets/sprites/ana/curated/jumpForward-frame-0.png",
+        "scale": 0.817204,
+        "anchorX": 0.4624591082804379,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/ana/curated/jumpForward-frame-1.png",
+        "scale": 0.943296,
+        "anchorX": 0.20938012040393997,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/ana/curated/jumpForward-frame-2.png",
+        "scale": 0.772513,
+        "anchorX": 0.4956005796251522,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/ana/curated/jumpForward-frame-3.png",
+        "scale": 0.930528,
+        "anchorX": 0.7182442566798034,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 10,
+    "loop": false
+  },
+  "super": {
+    "frames": [
+      {
+        "path": "assets/sprites/ana/curated/super-frame-0.png",
+        "scale": 0.808511,
+        "anchorX": 0.5175436880251546,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/ana/curated/super-frame-1.png",
+        "scale": 0.848251,
+        "anchorX": 0.5196453330636209,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/ana/curated/super-frame-2.png",
+        "scale": 0.901896,
+        "anchorX": 0.5016875460966456,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/ana/curated/super-frame-3.png",
+        "scale": 0.814533,
+        "anchorX": 0.5100646941609469,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  }
+}
