@@ -290,7 +290,8 @@ function dockMenuActions(next) {
     $("#"+screenIds[dockedConfirm.screen]).append(dockedConfirm.button);
     dockedConfirm=null;
   }
-  menuActions.hidden=next==="versus";
+  menuActions.hidden=next==="title" || next==="versus";
+  $("#controlsButton").hidden=menuActions.hidden;
   const target=$("#"+screenIds[next]);
   target.append(menuActions);
   const id={mode:"modeNext",fighter:"fighterNext",stage:"startButton"}[next];

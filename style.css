@@ -6,7 +6,7 @@
 /* Buteco dos Devs: warm arcade amber over its deep night lobby palette. */
 #arcade{background:radial-gradient(ellipse at 50% 62%,#362839 0,#1e1b4b 42%,#0a142b 70%,#030712 100%)}
 .system-bar>span{color:#ffb522}.micro,.menu-footer,.mode-option small,.fighter-card small,.arena small{color:#9aadd6}
-.title-screen:before{background:radial-gradient(ellipse at 50% 35%,#ffb52224 0,transparent 53%),linear-gradient(90deg,transparent 0 12%,#251b2344 12% 13%,transparent 13% 87%,#251b2344 87% 88%,transparent 88%),repeating-linear-gradient(0deg,#ffb52206 0 2px,transparent 2px 90px),linear-gradient(#0a142b,#1e1b4b 55%,#241c24);z-index:-2}
+.title-screen:before{background:radial-gradient(ellipse at 50% 35%,#ffb52224 0,transparent 53%),repeating-linear-gradient(0deg,#ffb52206 0 2px,transparent 2px 90px),linear-gradient(#0a142b,#1e1b4b 55%,#241c24);z-index:-2}
 .title-screen:after{content:'';position:absolute;inset:9% 8% auto;height:10%;pointer-events:none;z-index:-1;background:radial-gradient(ellipse at 18% 0,#ffb52250 0 3%,transparent 10%),radial-gradient(ellipse at 82% 0,#ffb52250 0 3%,transparent 10%);filter:blur(10px)}
 .title-center h1{font-family:'Pixelify Sans',monospace;font-weight:700;font-size:clamp(62px,9.6vw,138px);line-height:.88;letter-spacing:-5px;transform:none;color:#fff3d6;text-shadow:4px 0 #120e1f,-4px 0 #120e1f,0 4px #120e1f,0 -4px #120e1f,7px 8px 0 #8f541f,10px 12px 0 #030712}
 .title-center h1 span{color:#ffb522;font-size:.84em;letter-spacing:-4px}.subtitle{font-family:'Pixelify Sans',monospace;font-size:clamp(16px,2vw,28px);color:#fff3d6;letter-spacing:5px;margin:24px 0 7vh;padding-left:5px}.title-portrait{filter:drop-shadow(0 0 25px #f59e0b24)}
