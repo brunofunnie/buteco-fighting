@@ -1,0 +1,26 @@
+name: buteco-fighting
+
+services:
+  buteco-fighting:
+    image: buteco-fighting:latest
+    build:
+      context: .
+    container_name: buteco-fighting
+    restart: unless-stopped
+    init: true
+    environment:
+      NODE_ENV: production
+      PORT: "80"
+    expose:
+      - "80"
+    networks:
+      - bender-network
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+networks:
+  bender-network:
+    external: true

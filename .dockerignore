@@ -1,0 +1,13 @@
+.git
+node_modules
+artifacts
+harness
+docs
+assets/generated
+assets/sprites/*/generation
+assets/sprites/_generation
+**/__pycache__
+**/*.pyc
+**/*.log
+.env
+.env.*

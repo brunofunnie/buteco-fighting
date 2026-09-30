@@ -52,6 +52,17 @@ To use another port:
 PORT=3188 npm start
 ```
 
+## Docker deployment
+
+The supplied Compose stack serves the game on **container port 80** and joins the external `bender-network` used by the Cloudflare tunnel. Both the Compose project and container are named `buteco-fighting`.
+
+```sh
+docker compose up -d --build
+docker compose ps
+```
+
+The tunnel origin is `http://buteco-fighting:80`. No host port is published; the tunnel reaches the container through the shared Docker network. The image bundles production dependencies and playable assets, runs as the Node user and includes an HTTP health check.
+
 ## Controls
 
 | Action | Player 1 | Player 2 |
