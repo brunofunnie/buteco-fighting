@@ -264,3 +264,7 @@ select{background:#0a142b}.confirm-button{background:#ffb522;color:#030712}.figh
  .menu-screen>.menu-footer>button,#modeScreen .menu-footer>.confirm-button,#fighterScreen .menu-footer>.confirm-button{padding:10px 12px;font-size:15px;min-height:40px}
  #titleScreen>.menu-footer>#controlsButton{grid-column:2;grid-row:1}
 }
+
+.title-team > canvas[data-title-player="miranda"] { scale: .9; transform-origin: center bottom; }
+#stageScreen { isolation: isolate; overflow: hidden; background: #0a142b; }
+#stageScreen::before { content: ""; position: absolute; inset: -24px; z-index: -1; pointer-events: none; background-image: linear-gradient(#03071250, #03071299), var(--stage-background); background-size: cover; background-position: center; filter: blur(12px); }

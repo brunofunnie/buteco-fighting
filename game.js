@@ -1,3 +1,4 @@
+import {DEFAULT_CONTROLS, controlSettings, gamepads} from "./controls.js";
 import {audioDirector} from "./audio.js";
 import { FIGHTERS } from "./roster.js";
 import { drawArena, arenaPalette } from "./stages.js";
@@ -46,30 +47,7 @@ const moveFor = (fighter, action) => {
     damage: profile.damage[action] ?? move.damage,
   };
 };
-const CONTROLS = [
-  {
-    left: "KeyA",
-    right: "KeyD",
-    jump: "KeyW",
-    crouch: "KeyS",
-    punch: ["KeyJ"],
-    kick: ["KeyK"],
-    guard: ["KeyL"],
-    special: ["KeyU"],
-    super: ["KeyI"],
-  },
-  {
-    left: "ArrowLeft",
-    right: "ArrowRight",
-    jump: "ArrowUp",
-    crouch: "ArrowDown",
-    punch: ["Numpad1", "Digit1"],
-    kick: ["Numpad2", "Digit2"],
-    guard: ["Numpad3", "Digit3"],
-    special: ["Numpad4", "Digit4"],
-    super: ["Numpad5", "Digit5"],
-  },
-];
+
 
 export class FightGame {
   constructor(canvas, assets = {}, options = {}) {
@@ -89,7 +67,7 @@ export class FightGame {
     this.paused = false;
     this.onKeyDown = (e) => {
       if (
-        CONTROLS.some((c) => Object.values(c).flat().includes(e.code)) ||
+        this.controls.some((c) => Object.values(c).flat().includes(e.code)) ||
         e.code === "Escape"
       )
         e.preventDefault();
@@ -289,7 +267,14 @@ export class FightGame {
     this.pressed.clear();
     if (this.running) this.frame = requestAnimationFrame(this.loop);
   }
+  get controls() { return this.options.interactive === false ? DEFAULT_CONTROLS : controlSettings.keyboard; }
+  inputHeld(index, action) { return [this.controls[index][action]].flat().some(k => this.keys.has(k)) || !!this.padFrames?.[index]?.held.has(action); }
+  inputPressed(index, action) { return [this.controls[index][action]].flat().some(k => this.pressed.has(k)) || !!this.padFrames?.[index]?.pressed.has(action); }
   update(dt) {
+    if (this.options.interactive !== false) {
+      this.padFrames = gamepads.poll();
+      if (this.padFrames.some(p => p.pressed.has("pause"))) { this.pause(); this.options.onPause?.(); return; }
+    }
     this.elapsed += dt;
     this.shake = Math.max(0, this.shake - dt * 45);
     this.powerEffects = this.powerEffects.filter(e => (e.life -= dt) > 0);
@@ -305,11 +290,10 @@ export class FightGame {
       // Impact briefly freezes bodies, but must not discard a fresh attack.
       this.fighters.forEach((f, index) => {
         if (index > 0 && this.mode !== "versus") return;
-        const controls = CONTROLS[index];
         const action = ["super", "special", "kick", "punch"].find(name =>
-          controls[name].some(key => this.pressed.has(key)));
+          this.inputPressed(index, name));
         if (action) f.bufferedAction = {
-          action, crouch: this.keys.has(controls.crouch), expires: this.elapsed + 0.13,
+          action, crouch: this.inputHeld(index, "crouch"), expires: this.elapsed + 0.13,
         };
       });
       this.hitstop -= dt;
@@ -355,13 +339,10 @@ export class FightGame {
       this.finishRound();
   }
   getInput(f, enemy, index, dt) {
-    const c = CONTROLS[index],
-      has = (keys) => keys.some((k) => this.keys.has(k)),
-      pressed = (keys) => keys.some((k) => this.pressed.has(k));
     if (index === 0 || this.mode === "versus") {
       let dash = 0;
-      for (const [direction, key] of [[-1, c.left], [1, c.right]]) {
-        if (this.pressed.has(key)) {
+      for (const [direction, key] of [[-1, "left"], [1, "right"]]) {
+        if (this.inputPressed(index, key)) {
           const previous = this.directionTaps[index][key] ?? -10;
           if (this.elapsed - previous < 0.24) dash = direction;
           this.directionTaps[index][key] = this.elapsed;
@@ -369,12 +350,12 @@ export class FightGame {
       }
       return {
         dash,
-        move: Number(this.keys.has(c.right)) - Number(this.keys.has(c.left)),
-        jump: this.pressed.has(c.jump),
-        crouch: this.keys.has(c.crouch),
-        guard: has(c.guard),
+        move: Number(this.inputHeld(index, "right")) - Number(this.inputHeld(index, "left")),
+        jump: this.inputPressed(index, "jump"),
+        crouch: this.inputHeld(index, "crouch"),
+        guard: this.inputHeld(index, "guard"),
         action: ["super", "special", "kick", "punch"].find((a) =>
-          pressed(c[a]),
+          this.inputPressed(index, a),
         ),
       };
     }

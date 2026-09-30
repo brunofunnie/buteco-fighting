@@ -26,3 +26,15 @@
 @media(max-width:700px){#controlsDialog{padding:24px 18px}.options-header{align-items:flex-start!important;gap:12px!important}#controlsDialog .micro{font-size:10px;letter-spacing:1.5px;max-width:210px}#controlsDialog #closeControls{font-size:14px;letter-spacing:1px;padding:12px}.option-settings{grid-template-columns:1fr!important;gap:12px!important}#controlsDialog .option-settings button{padding:16px;min-height:88px;gap:14px}.setting-copy strong{font-size:27px}.setting-copy small{font-size:14px}.setting-state{font-size:12px;padding:7px}.controls-heading>span{display:none}#controlsDialog .control-columns{grid-template-columns:1fr;gap:14px}.player-controls{padding:18px}.combo-panel{padding:18px}.combo-panel header{align-items:flex-start;flex-direction:column;gap:5px}.combo-grid{grid-template-columns:1fr 1fr;gap:18px 10px}.combo-grid p>span{font-size:14px}#controlsDialog .combo-grid kbd{min-width:25px;height:28px;padding:0 4px;font-size:15px}.combo-grid b{gap:3px}.options-footer{align-items:flex-start;flex-direction:column;gap:16px;font-size:11px;margin-bottom:8px}}
 @media(max-height:600px) and (min-width:701px){#controlsDialog{padding:20px 30px}.options-header{padding-bottom:16px!important;margin-bottom:18px!important}#controlsDialog h2{font-size:60px}#controlsDialog .option-settings{margin-bottom:22px}.player-controls{padding:16px 20px}.combo-panel{padding:18px 20px}}
 @media(min-width:701px) and (min-height:601px) and (max-height:950px){#controlsDialog{padding:24px 4vw}#controlsDialog h2{font-size:76px}#controlsDialog .options-header{padding-bottom:16px;margin-bottom:18px}#controlsDialog .option-settings{margin-bottom:20px}#controlsDialog .option-settings button{min-height:88px;padding:16px 24px}.controls-heading{margin-bottom:10px}.player-controls{padding:16px 24px}.player-controls header{margin-bottom:10px}.player-controls dl>div{padding:5px 0}.combo-panel{margin-top:16px;padding:16px 24px}.combo-grid{gap:12px 28px}.combo-panel header{margin-bottom:10px}.combo-note{margin-top:12px}.options-footer{margin-top:16px}}
+
+.key-binding { padding: 3px; min-width: 35px; background: transparent; border: 1px solid transparent; border-radius: 5px; }
+.key-binding:hover, .key-binding:focus-visible, .key-binding.binding-active { border-color: #ffb522; background: #ffb52222; outline-offset: 2px; }
+.key-binding kbd { pointer-events: none; }
+.binding-settings { display: flex; align-items: center; gap: 12px; margin: 14px 0; }
+#bindingStatus { flex: 1; color: #fff3d6; font-size: 13px; line-height: 1.5; }
+#resetBindings { padding: 10px; border: 1px solid #ffb522; background: #1e1b4b; color: #fff3d6; font-size: 12px; }
+.controller-guide { background: #0a142b; border: 1px solid #ffffff25; padding: 16px; border-radius: 8px; margin: 16px 0; }
+.controller-guide h3 { color: #ffb522; font-size: 15px; margin: 0 0 8px; }
+.controller-guide p { font-size: 13px; line-height: 1.6; color: #fff3d6; }
+#controllerStatus { overflow-wrap: anywhere; }
+@media (max-width: 600px) { .binding-settings { flex-direction: column; align-items: stretch; } }

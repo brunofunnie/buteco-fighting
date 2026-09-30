@@ -12,6 +12,7 @@ try {
     const page = await browser.newPage({viewport:{width,height}});
     page.on('pageerror', error => errors.push(error.message));
     await page.goto(base, { waitUntil:'networkidle' });
+    await page.locator('#titleStart').click();
     await page.locator('#controlsButton').click();
     assert.equal(await page.evaluate(()=>document.activeElement.id),'muteButton');
     assert.equal(await page.locator('#muteButton .setting-copy strong').textContent(),'ÁUDIO');
@@ -24,7 +25,8 @@ try {
     await page.keyboard.press('ArrowRight');
     assert.equal(await page.evaluate(()=>document.activeElement.id),'fullscreenButton');
     await page.keyboard.press('ArrowRight');
-    assert.equal(await page.evaluate(()=>document.activeElement.id),'closeControls');
+    assert.equal(await page.evaluate(()=>document.activeElement.dataset.bindAction),'left');
+    await page.locator('#closeControls').focus();
     await page.keyboard.press('ArrowRight');
     assert.equal(await page.evaluate(()=>document.activeElement.id),'muteButton');
     const geometry = await page.locator('#controlsDialog').evaluate(dialog=>({width:dialog.clientWidth,scrollWidth:dialog.scrollWidth,scrollHeight:dialog.scrollHeight,height:dialog.clientHeight,keys:dialog.querySelectorAll('kbd').length}));

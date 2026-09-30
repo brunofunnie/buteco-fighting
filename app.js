@@ -1,3 +1,4 @@
+import {controlSettings, DEFAULT_CONTROLS, ACTION_LABELS, keyLabel, gamepads} from "./controls.js";
 import {audioDirector} from "./audio.js";
 import { FightGame } from "./phaser-game.js";
 import {FIGHTERS, fighterIds, defaultOpponent} from "./roster.js";
@@ -16,6 +17,7 @@ for (const [index,ids] of titleTeams.entries()) {
   }).join("");
   $("#titleScreen").prepend(team);
 }
+const stageArtSources = ["v8/sao-paulo", "v8/rio", "recife", "v8/manaus"];
 const stageNames = ["SÃO PAULO — MASP", "RIO — COPACABANA", "RECIFE ANTIGO", "MANAUS — ENCONTRO DAS ÁGUAS"];
 const selection = {
   player: "maya",
@@ -73,7 +75,7 @@ async function loadAssets() {
   // Keep startup small; only the selected pair's animations are decoded.
   await Promise.all([loadFighter("maya"), loadFighter("bruno")]);
   stageArt = await Promise.all(
-    ["v8/sao-paulo", "v8/rio", "recife", "v8/manaus"].map(name =>
+    stageArtSources.map(name =>
       image(`assets/stages/${name}.png`).catch(() => null)),
   );
   try {
@@ -213,7 +215,8 @@ function animateSelectionPreviews() {
     label.textContent="ESPECIAL / SUPER";
     pair.then(decoded=>{
       if(generation!==previewGeneration||screen!=="fighter")return;
-      const demo=new PowerPreview(canvas,decoded,{player:chosen[index],opponent:chosen[1-index],facing:index?-1:1,onMove:({move,label:moveLabel,key})=>{
+      const demo=new PowerPreview(canvas,decoded,{player:chosen[index],opponent:chosen[1-index],facing:index?-1:1,onMove:({move,label:moveLabel})=>{
+        const key=keyLabel([controlSettings.keyboard[index][move]].flat()[0]);
         label.textContent=`${key} · ${move==="super"?"SUPER":"ESPECIAL"} · ${moveLabel}`;
         canvas.setAttribute("aria-label",`${FIGHTERS[chosen[index]].name}: ${moveLabel}`);
       }});
@@ -298,7 +301,12 @@ function dockMenuActions(next) {
   if(id){const button=$("#"+id);menuActions.append(button);dockedConfirm={screen:next,button};}
 }
 dockMenuActions("title");
+function updateStageBackdrop() {
+  const path = stageArtSources[selection.stage];
+  $("#stageScreen").style.setProperty("--stage-background", `url("assets/stages/${path}.png")`);
+}
 function showScreen(next) {
+  if (next === "stage") updateStageBackdrop();
   stopSelectionPreviews();
   previewGeneration++;
   if (next !== "versus") launchToken++;
@@ -443,6 +451,7 @@ for (const button of document.querySelectorAll("[data-mode]"))
 for (const button of document.querySelectorAll("[data-stage]"))
   button.addEventListener("click", () => {
     selection.stage = Number(button.dataset.stage);
+    updateStageBackdrop();
     for (const item of document.querySelectorAll("[data-stage]")) {
       const chosen = item === button;
       item.classList.toggle("selected", chosen);
@@ -460,6 +469,31 @@ $("#rematchButton").addEventListener("click", () => { if(campaignComplete) { cam
 $("#menuButton").addEventListener("click", backToMenu);
 $("#pauseButton").addEventListener("click", pause);
 let optionsReturnFocus;
+let bindingTarget = null;
+function renderBindings() {
+  document.querySelectorAll('.player-controls').forEach((panel,player) => {
+    const groups=[['Mover','left','right'],['Pular / agachar','jump','crouch'],['Soco / chute','punch','kick'],['Defesa','guard'],['Especial / super','special','super']];
+    panel.querySelector('dl').innerHTML=groups.map(([label,...actions])=>`<div><dt>${label}</dt><dd>${actions.map(action=>`<button class="key-binding" data-bind-player="${player}" data-bind-action="${action}" aria-label="P${player+1}: ${ACTION_LABELS[action]}. Alterar tecla"><kbd>${[controlSettings.keyboard[player][action]].flat().map(keyLabel).join(' / ')}</kbd></button>`).join('')}</dd></div>`).join('');
+  });
+  const k=action=>`<kbd>${keyLabel([controlSettings.keyboard[0][action]].flat()[0])}</kbd>`;
+  const combos=[`${k('jump')} + ${k('left')} / ${k('right')}`,`${k('jump')} + ${k('punch')} / ${k('kick')}`,`${k('crouch')} + ${k('punch')} / ${k('kick')}`,`${k('crouch')} + ${k('special')} / ${k('super')}`,`${k('crouch')} + ${k('guard')}`,`${k('left')}${k('left')} / ${k('right')}${k('right')}`];
+  document.querySelectorAll('.combo-grid b').forEach((el,i)=>el.innerHTML=combos[i]);
+  $('.combo-note').textContent='P2: use as teclas configuradas acima nas mesmas combinações.';
+}
+function cancelBinding() {
+  bindingTarget?.classList.remove('binding-active');bindingTarget=null;
+  $('#bindingStatus').textContent='Clique em uma tecla para alterá-la. ESC cancela. As mudanças são salvas neste navegador.';
+}
+$('#controlsDialog').addEventListener('click',event=>{
+  const button=event.target.closest('[data-bind-action]');if(!button)return;
+  cancelBinding();bindingTarget=button;button.classList.add('binding-active');
+  $('#bindingStatus').textContent=`P${Number(button.dataset.bindPlayer)+1}: ${ACTION_LABELS[button.dataset.bindAction]} — pressione a nova tecla (ESC cancela).`;
+});
+$('#resetBindings').addEventListener('click',()=>{
+  cancelBinding();const saved=controlSettings.reset();renderBindings();
+  $('#bindingStatus').textContent=saved?'Teclas padrão restauradas e salvas.':'Teclas restauradas. O navegador não permitiu salvar.';
+});
+renderBindings();
 function openOptions() {
   optionsReturnFocus = document.activeElement;
   if (game) pause();
@@ -467,6 +501,7 @@ function openOptions() {
   $("#muteButton").focus();
 }
 function closeOptions() {
+  cancelBinding();
   $("#controlsDialog").hidden = true;
   optionsReturnFocus?.focus();
 }
@@ -490,6 +525,18 @@ $("#fullscreenButton").addEventListener("click", async () => {
 });
 window.addEventListener("keydown", (event) => {
   if (!$("#controlsDialog").hidden) {
+    if (bindingTarget) {
+      event.preventDefault();event.stopImmediatePropagation();
+      if (event.key === 'Escape') { cancelBinding(); return; }
+      if (event.repeat) return;
+      const player=Number(bindingTarget.dataset.bindPlayer),action=bindingTarget.dataset.bindAction;
+      const result=controlSettings.bind(player,action,event.code);
+      if (!result.ok) { $('#bindingStatus').textContent=result.message;return; }
+      cancelBinding();renderBindings();
+      document.querySelector(`[data-bind-player="${player}"][data-bind-action="${action}"]`).focus();
+      $('#bindingStatus').textContent=result.saved?'Tecla alterada e salva.':'Tecla alterada. O navegador não permitiu salvar; valerá até recarregar.';
+      return;
+    }
     event.stopImmediatePropagation();
     const key = event.key.toLowerCase();
     if (["escape","k","2"].includes(key)) { event.preventDefault(); closeOptions(); }
@@ -558,14 +605,20 @@ document.addEventListener("visibilitychange", () => {
 });
 for (const button of document.querySelectorAll("[data-key]")) {
   const key = button.dataset.key;
-  const send = (type) =>
+  const action = Object.keys(DEFAULT_CONTROLS[0]).find(action => [DEFAULT_CONTROLS[0][action]].flat().includes(`Key${key.toUpperCase()}`));
+  let heldCode;
+  const send = (type) => {
+    const code = type === 'keydown' ? [controlSettings.keyboard[0][action]].flat()[0] : heldCode;
+    if (!code) return;
+    heldCode = type === 'keydown' ? code : null;
     window.dispatchEvent(
       new KeyboardEvent(type, {
         key,
-        code: `Key${key.toUpperCase()}`,
+        code,
         bubbles: true,
       }),
     );
+  };
   button.addEventListener("pointerdown", (event) => {
     event.preventDefault();
     button.setPointerCapture(event.pointerId);
@@ -574,6 +627,35 @@ for (const button of document.querySelectorAll("[data-key]")) {
   for (const type of ["pointerup", "pointercancel", "lostpointercapture"])
     button.addEventListener(type, () => send("keyup"));
 }
+let controllerSummary='';
+function menuGamepads() {
+  if (!game?.running || game.paused) {
+    const frames=gamepads.poll();
+    const summary=frames.map((p,i)=>`P${i+1}: ${p.connected?p.id:'não conectado'}`).join(' · ');
+    if (summary!==controllerSummary) { $('#controllerStatus').textContent=summary;controllerSummary=summary; }
+    for (const frame of frames) {
+      if (!frame.connected || document.hidden) continue;
+      const pressed=frame.pressed;
+      if (bindingTarget) { if(pressed.has('kick'))cancelBinding();continue; }
+      if (pressed.has('special') && !$('#controlsButton').hidden && $('#controlsDialog').hidden) { openOptions(); break; }
+      if (pressed.has('super') && screen==='mode' && !$('#difficulty').disabled && $('#controlsDialog').hidden) {
+        const difficulty=$('#difficulty');difficulty.selectedIndex=(difficulty.selectedIndex+1)%difficulty.options.length;
+        difficulty.dispatchEvent(new Event('change',{bubbles:true}));break;
+      }
+      if (pressed.has('super') && screen==='fighter' && $('#controlsDialog').hidden) { setSelectionSlot(selectionSlot==='player'?'opponent':'player'); break; }
+      if (pressed.has('pause') && overlayState==='pause' && $('#controlsDialog').hidden) { resume(); break; }
+      const actions=[['left','ArrowLeft'],['right','ArrowRight'],['jump','ArrowUp'],['crouch','ArrowDown'],['punch','Enter'],['kick','Escape'],['pause','Enter']];
+      for(const [action,key] of actions)if(pressed.has(action)) {
+        window.dispatchEvent(new KeyboardEvent('keydown',{key,code:key,bubbles:true}));
+        window.dispatchEvent(new KeyboardEvent('keyup',{key,code:key,bubbles:true}));
+        break;
+      }
+      if (actions.some(([action])=>pressed.has(action))) break;
+    }
+  }
+  requestAnimationFrame(menuGamepads);
+}
+requestAnimationFrame(menuGamepads);
 const unlockSound=()=>audioDirector.unlock().then(()=>{audioDirector.warmFighter(selection.player);audioDirector.warmFighter(selection.opponent);}).catch(()=>{});
 window.addEventListener("pointerdown",unlockSound,{capture:true});
 window.addEventListener("keydown",unlockSound,{capture:true});

@@ -73,6 +73,8 @@ The compose file defaults to the volume `dockhand_data` and subdirectory `stacks
 
 ## Controls
 
+Keyboard bindings for each player can be changed in **OPÇÕES** and are saved under `buteco-controls-v1` in localStorage. Click a key, press its replacement, or choose **RESTAURAR TECLAS**. Escape cancels remapping and remains the pause/back shortcut. Two standard Xbox/PlayStation controllers are supported; connect them and press a button to activate. The first controller is P1 and the second is P2 in local versus. The in-game options screen includes the controller mapping.
+
 | Action | Player 1 | Player 2 |
 | --- | --- | --- |
 | Move | A / D | ← / → |
@@ -184,6 +186,7 @@ Focused checks:
 | `npm run test:power:preview` | All 28 demonstrations in both directions, damage, resets and lifecycle. |
 | `npm run test:ui` | Menus, responsive layout, scrolling and character selection. |
 | `npm run test:selection:demo` | Alternation, rapid selection changes and Cartesian previews. |
+| `npm run test:controls` | Saved keyboard remapping, controller input, menu navigation, air attacks, touch, pause, disconnects and stage backgrounds. |
 | `npm run test:options` | Audio, fullscreen, keyboard navigation and focus restoration. |
 | `npm run test:menu:actions` | Focused Back and Options actions across menus. |
 | `npm run test:ko:health` | Empty health bars after lethal specials and supers. |

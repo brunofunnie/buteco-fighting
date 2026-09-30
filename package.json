@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node server.mjs",
     "dev": "node server.mjs",
-    "check": "node --check roster.js && node --check app.js && node --check game.js && node --check phaser-game.js && node --check stages.js && node --check crowd-layout.js && node --check audio.js && node --check music.js && node --check server.mjs",
+    "check": "node --check roster.js && node --check app.js && node --check game.js && node --check phaser-game.js && node --check stages.js && node --check crowd-layout.js && node --check audio.js && node --check music.js && node --check server.mjs && node --check controls.js",
     "test": "node harness/playtest.mjs",
     "sprites:publish": "node harness/sprites.mjs",
     "sprites:organize": "node harness/organize-assets.mjs",
@@ -34,7 +34,8 @@
     "test:audio": "node harness/audio-v9.mjs",
     "test:audio:real": "node harness/audio-real-v9.mjs",
     "test:blood": "node harness/blood-v10.mjs",
-    "test:ko:effects": "node harness/ko-effects-v10.mjs"
+    "test:ko:effects": "node harness/ko-effects-v10.mjs",
+    "test:controls": "node harness/controls.test.mjs && node harness/controls-browser.mjs"
   },
   "devDependencies": {
     "playwright": "^1.63.0"

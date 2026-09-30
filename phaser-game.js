@@ -30,7 +30,7 @@ function boot(canvas) {
       if (!fight?.running) return;
       if (!fight.paused && !fight.inspectionPaused) {
         this.accumulator = Math.min((this.accumulator || 0) + delta / 1000, 0.05);
-        while (this.accumulator >= 1 / 120) {
+        while (this.accumulator >= 1 / 120 && !fight.paused) {
           fight.update(1 / 120);
           fight.pressed.clear();
           this.accumulator -= 1 / 120;
