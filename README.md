@@ -220,3 +220,31 @@ Browser checks use `http://localhost:3187` by default. Test screenshots and repo
 **Pick a fighter. Grab a friend. Aperte Start.** 🍻
 
 </div>
+
+
+## Collision geometry
+
+Combat uses precompiled, per-frame hitboxes and hurtboxes for all 28 fighters.
+The animation frame selector is shared by rendering and the server simulation;
+sprite scale, anchors, facing, crouching and aerial poses are reflected in the
+geometry. Hurtboxes are alpha-derived strips around the body core and legs;
+offensive boxes cover the leading fist/forearm or foot/shin. These are authored
+rectangle approximations, not pixel-by-pixel masks. Projectiles and explosions
+use circle-to-current-hurtbox intersections. Kinetic and illusion powers keep
+their authored attack areas and intersect the current body geometry.
+
+Open the game with `?hitboxes=1` to display green hurtboxes, red active hitboxes
+and projectile circles, plus the current animation frame. It works locally and
+while playing/watching online. Debug drawing does not change collision rules.
+
+Regenerate `collision-data.js` after changing sprite frames, calibration or the
+roster: `python harness/build-collision.py --atlas` using a Python environment
+with Pillow and numpy. The atlas is written to ignored `artifacts/collisions/`.
+Optional frame overrides in `assets/collision-overrides.json` have the shape
+`{fighter: {state: {frameIndex: {hurt: [[x,y,w,h]], hit: [[x,y,w,h]]}}}}`;
+coordinates are world units relative to the sprite anchor, facing right.
+The source fingerprint test rejects stale sprites, manifest/catalog calibration, overrides or generator changes.
+
+Validation: `npm run test:collision`, `npm run test:collision:browser`,
+`npm run test:combat`, `npm run test:roster:combat`, `npm run test:online`,
+`npm run test:online:browser` and `npm test`. Browser tests accept `GAME_URL`.

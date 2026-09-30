@@ -407,6 +407,7 @@ function start(config = {}) {
   game = new FightGame($("#gameCanvas"), assets, {
     stageArt,
     crowdArt,
+    debugHitboxes:new URLSearchParams(location.search).has("hitboxes"),
     onEnd: (winner) => setOverlay("end", winner),
     onPause: () => setOverlay("pause"),
     muted,
@@ -468,8 +469,7 @@ for (const button of document.querySelectorAll("[data-stage]"))
     updateStageBackdrop();
     for (const item of document.querySelectorAll("[data-stage]")) {
       const chosen = item === button;
-      item.disabled=network&&online.slot===null;
-    item.classList.toggle("selected", chosen);
+      item.classList.toggle("selected", chosen);
       item.setAttribute("aria-pressed", String(chosen));
     }
   });
@@ -706,7 +706,7 @@ online=new OnlineVersus({
     game?.destroy();document.body.classList.add('in-match');document.body.classList.remove('overlay-open');
     $('#menu').hidden=true;$('#gameScreen').hidden=false;$('#matchOverlay').hidden=true;overlayState=null;screen='fight';
     $('#matchLabel').textContent=`VERSUS ONLINE · ${online.slot===null?'ESPECTADOR':'VOCÊ: P'+(online.slot+1)} / ${stageNames[stage]}`;
-    game=new FightGame($('#gameCanvas'),assets,{stageArt,crowdArt,muted,online:true,onInput:held=>online.sendInput(held),onPause:()=>setOverlay('pause')});
+    game=new FightGame($('#gameCanvas'),assets,{stageArt,crowdArt,muted,online:true,debugHitboxes:new URLSearchParams(location.search).has('hitboxes'),onInput:held=>online.sendInput(held),onPause:()=>setOverlay('pause')});
     game.start({...selection,mode:'versus'});game.phase='intro';$('#gameCanvas').focus();applyMute();return true;
   },
   frame: snapshot => {

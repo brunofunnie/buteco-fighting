@@ -56,10 +56,17 @@ for (const [codes, expected] of [
   });
 }
 
-check("crouch kick inflicts damage in its active window", ({ game, target }) => {
+check("crouch kick inflicts damage when the visible foot touches a leg", ({ game, target }) => {
+  target.x=740;
   press(game, "KeyS", "KeyK");
   advance(game, 0.3);
   assert.ok(target.health < 100);
+});
+check("small projectile through the visible gap between legs misses", ({game,attacker,target}) => {
+  const p={owner:attacker,x:target.x,y:target.y-15,vx:0,vy:0,radius:3,life:1,damage:10,hitTargets:new Set()};
+  game.projectiles=[p];game.updateProjectiles(.016);assert.equal(target.health,100);
+  const leg=game.combatBoxes(target).hurt.find(b=>b[1]<=p.y&&b[1]+b[3]>p.y);
+  assert.ok(leg);p.x=leg[0]+leg[2]/2;game.updateProjectiles(.016);assert.ok(target.health<100);
 });
 check("attack startup does not inflict instant damage", ({ game, target }) => {
   press(game, "KeyK");

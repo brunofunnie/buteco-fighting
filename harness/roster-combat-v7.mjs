@@ -20,7 +20,7 @@ check(`${id}: insufficient energy does not start special`,()=>{const{game,a}=sce
 for(const id of ['baiano-m','cowboy','henry-k','jamal','joe-munist','molly-jay']) {
  check(`${id}: physical height remains within adult roster proportions`,()=>assert.ok(FIGHTERS[id].visualHeight>=290&&FIGHTERS[id].visualHeight<=345));
  check(`${id}: unique power projectile profile and KO effects advance`,()=>{
-  const {game,a,b}=scene(id);cast(game,true);step(game,.4);
+  const {game,a,b}=scene(id);b.x=1400;cast(game,true);step(game,.4);
   assert.ok(game.projectiles.length);const p=game.projectiles[0];assert.equal(p.kind,FIGHTERS[id].power.kind);
   const x=p.x,age=p.age;b.health=0;game.finishRound(a);game.update(.1);
   assert.ok(p.age>age);assert.notEqual(p.x,x);assert.equal(b.health,0);
@@ -38,7 +38,7 @@ check('lunar smoke applies longer stun than ordinary projectile',()=>{const{game
 check('tool boomerang reverses velocity and returns',()=>{const{game}=scene('alex-sebas');cast(game);step(game,.4);const p=game.projectiles[0];const direction=Math.sign(p.vx);step(game,.7);assert.equal(Math.sign(p.vx),-direction)});
 check('kinetic armor reduces incoming unguarded damage',()=>{const{game,a,b}=scene('math-carpenter');cast(game);step(game,.3);assert.ok(a.armorTime>0);game.hitFighter(b,a,20);assert.ok(a.health>80);assert.ok(a.health<100)});
 check('kinetic dash travels forward and makes contact',()=>{const{game,a,b}=scene('math-carpenter');const start=a.x;cast(game);step(game,.9);assert.ok(a.x-start>100);assert.ok(b.health<100)});
-check('sonic wave causes greater knockback than ordinary projectile',()=>{const{game,b}=scene('dark-wong');cast(game);step(game,.4);const p=game.projectiles[0];b.x=p.x+10;const start=b.x;game.updateProjectiles(.016);assert.ok(b.x-start>=100)});
+check('sonic wave causes greater knockback than ordinary projectile',()=>{const{game,b}=scene('dark-wong');b.x=1400;cast(game);step(game,.4);const p=game.projectiles[0];b.x=p.x+10;const start=b.x;game.updateProjectiles(.016);assert.ok(b.x-start>=100)});
 check('code fire explodes and creates an area impact effect',()=>{const{game,b}=scene('mr-funnie');cast(game);step(game,.4);const p=game.projectiles[0];b.x=p.x+10;game.updateProjectiles(.016);assert.ok(b.health<100);assert.ok(game.powerEffects.some(e=>e.kind==='explosion'))});
 check('expired code fire hits nearby opponent with splash without direct contact',()=>{const{game,b}=scene('mr-funnie');cast(game);step(game,.4);const p=game.projectiles[0];p.life=.001;b.x=p.x+100;b.y=p.y+70;game.updateProjectiles(.016);assert.ok(b.health<100);assert.ok(game.powerEffects.some(e=>e.kind==='explosion'))});
 check('stale projectiles cannot target a new round',()=>{const{game}=scene('maya');cast(game);step(game,.4);const p=game.projectiles[0];game.resetRound();game.projectiles.push(p);const health=game.fighters[1].health;game.updateProjectiles(.016);assert.equal(game.fighters[1].health,health);assert.equal(game.projectiles.length,0)});

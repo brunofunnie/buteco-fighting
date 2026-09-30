@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node server.mjs",
     "dev": "node server.mjs",
-    "check": "node --check roster.js && node --check app.js && node --check game.js && node --check phaser-game.js && node --check stages.js && node --check crowd-layout.js && node --check audio.js && node --check music.js && node --check server.mjs && node --check controls.js && node --check online.js && node --check online-room.js && node --check ranking.js",
+    "check": "node --check roster.js && node --check app.js && node --check game.js && node --check phaser-game.js && node --check stages.js && node --check crowd-layout.js && node --check audio.js && node --check music.js && node --check server.mjs && node --check controls.js && node --check online.js && node --check online-room.js && node --check ranking.js && node --check collision.js && node --check collision-data.js",
     "test": "node harness/playtest.mjs",
     "sprites:publish": "node harness/sprites.mjs",
     "sprites:organize": "node harness/organize-assets.mjs",
@@ -37,7 +37,9 @@
     "test:ko:effects": "node harness/ko-effects-v10.mjs",
     "test:controls": "node harness/controls.test.mjs && node harness/controls-browser.mjs",
     "test:online": "node harness/ranking.test.mjs && node harness/online.test.mjs",
-    "test:online:browser": "node harness/online-browser.mjs"
+    "test:online:browser": "node harness/online-browser.mjs",
+    "test:collision": "node harness/collision.test.mjs",
+    "test:collision:browser": "node harness/collision-browser.mjs"
   },
   "devDependencies": {
     "playwright": "^1.63.0"

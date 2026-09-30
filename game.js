@@ -2,6 +2,7 @@ import {DEFAULT_CONTROLS, controlSettings, gamepads} from "./controls.js";
 import {audioDirector} from "./audio.js";
 import { FIGHTERS } from "./roster.js";
 import { drawArena, arenaPalette } from "./stages.js";
+import {animationIndex,FRAME_ALIASES,collisionFrame,worldBoxes,overlap,projectileConnects} from "./collision.js";
 const W = 1280,
   H = 720,
   FLOOR = 590,
@@ -525,13 +526,14 @@ export class FightGame {
     } else if (grounded) f.vx = 0;
     this.setState(f, f.y < FLOOR ? f.jumpMove ? "jumpForward" : "jump" : f.crouch ? (f.guard ? "lowBlock" : "crouch") : f.guard ? "block" : f.dashTime > 0 ? "dash" : direction ? (direction === f.facing ? "walk" : "backwalk") : "idle");
   }
-  attackConnects(attacker, target, move) {
-    const attackY = attacker.y - (move.height ?? (attacker.action === "punch" ? 205 : 175));
-    const crouched = target.crouch || ["crouchPunch", "crouchKick", "sweep", "lowBlock"].includes(target.state);
-    const targetTop = target.y - (crouched ? 190 : 310);
-    return Math.abs(target.x - attacker.x) <= move.reach &&
-      (target.x - attacker.x) * attacker.facing >= -25 &&
-      attackY + 45 >= targetTop && attackY - 45 <= target.y - 15;
+  combatBoxes(f) {
+    const move=f.action?moveFor(f,f.action):null,frame=collisionFrame(f,move);
+    const active=move&&f.actionTime>=move.active&&f.actionTime<=move.end&&!f.hit;
+    return {frame:frame.index,hurt:worldBoxes(f,frame.hurt),hit:active?worldBoxes(f,frame.hit):[]};
+  }
+  attackConnects(attacker,target) {
+    const hits=this.combatBoxes(attacker).hit,hurt=this.combatBoxes(target).hurt;
+    return hits.some(hit=>hurt.some(body=>overlap(hit,body)));
   }
   setState(f, state) {
     if (f.state !== state) {
@@ -695,6 +697,10 @@ export class FightGame {
         projectile();
     }
   }
+  powerConnects(f,target,power){
+    const area=[f.x-power.range,f.y-350,power.range*2,400];
+    return this.combatBoxes(target).hurt.some(body=>overlap(area,body));
+  }
   updatePowerState(f, enemy, dt) {
     const power = f.powerState;
     if (!power) return;
@@ -707,14 +713,14 @@ export class FightGame {
         this.powerEffects.push({kind:"trail",facing:f.facing,x:f.x-f.facing*85,y:f.y-150,color:f.color,life:.12,maxLife:.12});
         power.clock = 1/30;
       }
-      if(power.remaining && Math.abs(enemy.x-f.x)<power.range && Math.abs(enemy.y-f.y)<200) {
+      if(power.remaining && this.powerConnects(f,enemy,power)) {
         this.hitFighter(f,enemy,power.damage,100,180);
         power.remaining = 0;
       }
       if(power.duration<=0) f.powerState=null;
     } else if(power.kind === "illusion") {
       if(power.clock<=0) {
-        if(Math.abs(enemy.x-f.x)<power.range && Math.abs(enemy.y-f.y)<200) {
+        if(this.powerConnects(f,enemy,power)) {
           this.hitFighter(f,enemy,power.damage,14,180);
           this.powerEffects.push({kind:"illusion",fighterId:f.id,facing:f.facing,state:f.action || "special",frame:2,x:enemy.x-f.facing*75,y:enemy.y,color:f.color,life:.2,maxLife:.2});
         }
@@ -736,9 +742,7 @@ export class FightGame {
       p.life -= dt;
       const target = this.fighters.find(f => f !== p.owner);
       const radius = p.radius || (p.super ? 95 : 55);
-      const top = target.y - (target.crouch ? 190 : 310);
-      if (damageEnabled && !p.hitTargets?.has(target) && Math.abs(p.x-target.x)<radius+30 &&
-          p.y+radius>=top && p.y-radius<=target.y-15) {
+      if (damageEnabled && !p.hitTargets?.has(target) && projectileConnects(p,this.combatBoxes(target).hurt,radius)) {
         this.hitFighter(p.owner,target,p.damage ?? (p.super?32:16),p.push ?? (p.super?120:65),
           clamp(target.y-p.y,30,290),{level:p.level||"mid",stun:p.stun});
         p.hitTargets?.add(target);
@@ -756,9 +760,7 @@ export class FightGame {
     const radius = p.super ? 135 : 85;
     this.powerEffects.push({kind:"explosion",x:p.x,y:p.y,color:p.owner.color,life:.5,maxLife:.5,radius});
     this.burst(p.x,p.y,p.owner.color,p.super?42:28);
-    const horizontal = Math.max(0,Math.abs(p.x-target.x)-30);
-    const vertical = Math.abs(p.y-clamp(p.y,target.y-(target.crouch?190:310),target.y-15));
-    if(damageEnabled && !p.hitTargets.has(target) && Math.hypot(horizontal,vertical)<=radius) {
+    if(damageEnabled && !p.hitTargets.has(target) && projectileConnects(p,this.combatBoxes(target).hurt,radius)) {
       this.hitFighter(p.owner,target,p.damage,p.push,clamp(target.y-p.y,30,290));
       p.hitTargets.add(target);
     }
@@ -801,7 +803,10 @@ export class FightGame {
     for (const effect of this.powerEffects || []) if(effect.kind === "trail") this.drawPowerEffect(c,effect);
     for (const f of [...(this.fighters || [])].sort((a, b) => a.y - b.y))
       this.drawFighter(c, f);
-    for (const p of this.projectiles || []) this.drawProjectile(c, p);
+    for (const p of this.projectiles || []) {
+      this.drawProjectile(c,p);
+      if(this.options.debugHitboxes){c.save();c.strokeStyle='#ff5b6a';c.lineWidth=2;c.beginPath();c.arc(p.x,p.y,p.radius||(p.super?95:55),0,Math.PI*2);c.stroke();c.restore();}
+    }
     for (const effect of this.powerEffects || []) if(effect.kind !== "trail") this.drawPowerEffect(c,effect);
     for (const p of this.particles || []) {
       c.globalAlpha = clamp(p.life / (p.kind?.startsWith("blood")?p.maxLife*.5:.4), 0, 1);
@@ -873,53 +878,13 @@ export class FightGame {
       c.restore();
     }
     const asset = this.assets[f.id] || {},
-      aliases = {
-        block: "guard",
-        hurt: "hit",
-        ko: "knockout",
-        special: "punch",
-        super: "special",
-        airPunch: "punch", airKick: "kick", crouchPunch: "crouch", crouchKick: "crouch",
-        uppercut: "punch", sweep: "crouch", dash: "walk", backwalk: "walk", lowBlock: "crouch",
-        turn: "idle", land: "crouch", jumpForward: "jump",
-      };
+      aliases = FRAME_ALIASES;
     const available = (value) =>
       Array.isArray(value) ? value.length > 0 : Boolean(value);
     const ownFrames = [asset[f.state], asset[aliases[f.state]]].find(available);
     let frames = ownFrames || asset.idle || [];
     if (!Array.isArray(frames)) frames = [frames];
-    let frameIndex =
-      Math.floor(f.stateTime * (frames.animation?.fps || (["walk", "backwalk", "dash"].includes(f.state) ? 12 : 6))) %
-      Math.max(1, frames.length);
-    if (f.action) {
-      const move = moveFor(f, f.action),
-        time = f.actionTime;
-      const progress =
-        time < move.active
-          ? (time / move.active) * 0.5
-          : time < move.end
-            ? 0.5 + ((time - move.active) / (move.end - move.active)) * 0.25
-            : 0.75 + ((time - move.end) / (move.duration - move.end)) * 0.25;
-      frameIndex = Math.min(
-        frames.length - 1,
-        Math.floor(progress * frames.length),
-      );
-    } else if (["hurt", "ko", "block", "lowBlock", "crouch", "celebrate", "land", "turn"].includes(f.state))
-      frameIndex = Math.min(
-        frames.length - 1,
-        Math.floor(
-          (f.stateTime /
-            ({ hurt: 0.28, ko: 0.65, block: 0.22, crouch: 0.3, celebrate: 0.8, land: 0.11, turn: 0.14 }[
-              f.state
-            ] || 0.28)) *
-            frames.length,
-        ),
-      );
-    else if (["jump", "jumpForward"].includes(f.state))
-      frameIndex = Math.min(
-        frames.length - 1,
-        Math.floor(clamp((f.vy + 850) / 1700, 0, 0.999) * frames.length),
-      );
+    const frameIndex=animationIndex(f,frames.length,frames.animation?.fps || (["walk","backwalk","dash"].includes(f.state)?12:6),f.action?moveFor(f,f.action):null);
     const sprite = frames[frameIndex];
     const crouch = ["crouch", "lowBlock", "crouchPunch", "crouchKick", "sweep"].includes(f.state),
       height = crouch && !ownFrames ? 210 : (FIGHTERS[f.id].visualHeight || 320);
@@ -952,6 +917,14 @@ export class FightGame {
       c.stroke();
     }
     c.restore();
+    if(this.options.debugHitboxes){
+      const boxes=this.combatBoxes(f);c.save();c.lineWidth=2;
+      for(const [kind,color] of [['hurt','#48e59c'],['hit','#ff5b6a']]){
+        c.strokeStyle=color;c.fillStyle=kind==='hurt'?'#48e59c18':'#ff5b6a44';
+        for(const [x,y,w,h] of boxes[kind]){c.fillRect(x,y,w,h);c.strokeRect(x,y,w,h);}
+      }
+      c.fillStyle='#fff';c.font='12px monospace';c.textAlign='center';c.fillText(f.state+' · frame '+boxes.frame,f.x,f.y-350);c.restore();
+    }
     if (f.combo > 1) {
       c.fillStyle = "#ffe390";
       c.textAlign = "center";
