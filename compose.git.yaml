@@ -1,0 +1,51 @@
+name: buteco-fighting
+
+services:
+  buteco-fighting:
+    image: node:24-alpine
+    container_name: buteco-fighting
+    working_dir: /app
+    restart: unless-stopped
+    init: true
+    environment:
+      NODE_ENV: production
+      PORT: "80"
+    entrypoint: ["/bin/sh", "-ec"]
+    command:
+      - npm ci --omit=dev --no-audit --no-fund --cache /tmp/npm-cache && exec su node -s /bin/sh -c 'exec node server.mjs'
+    volumes:
+      # Dockhand copies the Git checkout here before starting the stack.
+      # Mount only this stack's directory, never the whole Dockhand data volume.
+      - type: volume
+        source: dockhand-source
+        target: /app
+        read_only: true
+        volume:
+          nocopy: true
+          subpath: ${DOCKHAND_STACK_SUBPATH:-stacks/Bender/buteco-fighting}
+      - dependencies:/app/node_modules
+    expose:
+      - "80"
+    networks:
+      - bender-network
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://127.0.0.1:80/').then(r => process.exit(r.ok ? 0 : 1)).catch(() => process.exit(1))"]
+      interval: 30s
+      timeout: 5s
+      start_period: 60s
+      retries: 3
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+volumes:
+  dockhand-source:
+    external: true
+    name: ${DOCKHAND_DATA_VOLUME:-dockhand_data}
+  dependencies:
+
+networks:
+  bender-network:
+    external: true

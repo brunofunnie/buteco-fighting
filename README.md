@@ -63,7 +63,13 @@ docker compose ps
 
 The tunnel origin is `http://buteco-fighting:80`. No host port is published; the tunnel reaches the container through the shared Docker network. The image bundles production dependencies and playable assets, runs as the Node user and includes an HTTP health check.
 
-On Bender, the image is built from `/home/bruno/apps/buteco-fighting` and deployed through Dockhand in environment **Bender**, stack **buteco-fighting**. Dockhand stores its managed compose file at `/app/data/stacks/Bender/buteco-fighting/compose.yaml`; that file uses the locally built image without a build context. For updates, rebuild the image in the source directory and redeploy the stack in Dockhand with image pulling disabled.
+### Git deployment in Dockhand
+
+On Bender, use a **Git stack** named **buteco-fighting** in environment **Bender**, tracking `main` from `git@github.com:brunofunnie/buteco-fighting.git`, with compose path **compose.git.yaml**. Keep **Build images on deploy** disabled: this stack runs the checked-out code in the standard `node:24-alpine` image without building a custom image.
+
+Dockhand copies the repository into its managed stack directory before deployment. The container mounts that directory read-only from the existing `dockhand_data` volume, installs locked production dependencies into a separate volume, and starts the HTTP server as the Node user. The tunnel origin remains `http://buteco-fighting:80`; no host port is published. Updates require pushing to `main` and clicking **Deploy** on this Git stack in Dockhand.
+
+The compose file defaults to the volume `dockhand_data` and subdirectory `stacks/Bender/buteco-fighting`. For a different Dockhand installation, set `DOCKHAND_DATA_VOLUME` and `DOCKHAND_STACK_SUBPATH` in the Git stack's environment overrides. The subdirectory must match Dockhand's managed stack directory. Docker must support volume subpaths (Engine 26 or newer). The original `compose.yaml` and Dockerfile remain available for standalone image-based deployments.
 
 ## Controls
 
