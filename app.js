@@ -266,15 +266,16 @@ function renderSelection() {
     $("#"+prefix+"Description").textContent = f.power.description;
   }
   for (const item of document.querySelectorAll("[data-player]")) {
+    item.disabled=network&&online.slot===null;
     item.classList.toggle("selected",item.dataset.player===selection.player);
     item.classList.toggle("opponent-selected",item.dataset.player===selection.opponent);
     item.setAttribute("aria-pressed",String(item.dataset.player===selection[selectionSlot]));
     item.querySelector(".pick-badge").textContent = [item.dataset.player===selection.player?"P1":"",item.dataset.player===selection.opponent?((selection.mode==="versus"||network)?"P2":"CPU"):""].filter(Boolean).join(" · ");
   }
   $("#opponentSlot").textContent = (selection.mode==="versus"||network)?"JOGADOR 2":"RIVAL / TREINO";
-  $("#fighterHeading").textContent = selectionSlot==="player"?"ESCOLHA SEU LUTADOR":"ESCOLHA O RIVAL";
-  for(const button of document.querySelectorAll("[data-slot]")){button.classList.toggle("active",button.dataset.slot===selectionSlot);button.disabled=network&&button.dataset.slot!==(online.slot===0?"player":"opponent");}
-  $(".roster-hint").textContent=network?"CADA JOGADOR ESCOLHE SEU LUTADOR · SELEÇÃO AO VIVO":"Q TROCA P1 / RIVAL · U ESPECIAL · I SUPER";
+  $("#fighterHeading").textContent = network&&online.slot===null?"ASSISTINDO À SELEÇÃO":selectionSlot==="player"?"ESCOLHA SEU LUTADOR":"ESCOLHA O RIVAL";
+  for(const button of document.querySelectorAll("[data-slot]")){button.classList.toggle("active",button.dataset.slot===selectionSlot);button.disabled=network&&(online.slot===null||button.dataset.slot!==(online.slot===0?"player":"opponent"));}
+  $(".roster-hint").textContent=network&&online.slot===null?"ESPECTADOR · SELEÇÃO AO VIVO":network?"CADA JOGADOR ESCOLHE SEU LUTADOR · SELEÇÃO AO VIVO":"Q TROCA P1 / RIVAL · U ESPECIAL · I SUPER";
   if (spriteManifest.maya) animateSelectionPreviews();
 }
 const fighterScreen = $("#fighterScreen");
@@ -283,7 +284,7 @@ fighterScreen.innerHTML = `<header class="screen-heading"><span>02 / PLAYER SELE
 <div class="fighter-picks"><div class="pick-tabs"><button data-slot="player" class="active">JOGADOR 1</button><button data-slot="opponent" id="opponentSlot">RIVAL</button></div><div class="fighter-list roster-grid">${fighterIds.map(id=>`<button class="roster-fighter" data-player="${id}" aria-label="Selecionar ${FIGHTERS[id].name}"><img src="${FIGHTERS[id].source}" alt="${FIGHTERS[id].name}"><span class="pick-badge"></span><strong>${FIGHTERS[id].name}</strong></button>`).join("")}</div><p class="roster-hint">Q TROCA P1 / RIVAL · U ESPECIAL · I SUPER</p></div>
 <div class="fighter-preview rival-preview"><canvas id="opponentPreview" width="420" height="400" role="img"></canvas><small>RIVAL</small><strong id="opponentName"></strong><span id="opponentPower"></span><p id="opponentDescription"></p><figure class="power-demo"><canvas id="opponentPowerDemo" role="img" width="1280" height="720"></canvas><figcaption id="opponentDemoLabel">ESPECIAL / SUPER</figcaption></figure></div></div><button class="confirm-button" id="fighterNext">CONFIRMAR LUTADORES →</button>`;
 function setSelectionSlot(slot) {
-  if(selection.mode==="online"&&online?.room&&slot!==(online.slot===0?"player":"opponent"))return;
+  if(selection.mode==="online"&&online?.room&&(online.slot===null||slot!==(online.slot===0?"player":"opponent")))return;
   selectionSlot=slot;
   renderSelection();
   document.querySelector(`[data-player="${selection[selectionSlot]}"]`)?.scrollIntoView({block:"nearest",inline:"nearest"});
@@ -467,7 +468,8 @@ for (const button of document.querySelectorAll("[data-stage]"))
     updateStageBackdrop();
     for (const item of document.querySelectorAll("[data-stage]")) {
       const chosen = item === button;
-      item.classList.toggle("selected", chosen);
+      item.disabled=network&&online.slot===null;
+    item.classList.toggle("selected", chosen);
       item.setAttribute("aria-pressed", String(chosen));
     }
   });
@@ -475,7 +477,7 @@ $("#titleStart").addEventListener("click", () => showScreen("mode"));
 $("#modeNext").addEventListener("click", () => { if(selection.mode==="online"){showScreen("online");online.open();}else showScreen("fighter"); });
 $("#fighterNext").addEventListener("click", () => {if(selection.mode==="online"&&online.room)online.room.send("ready");else showScreen("stage");});
 $("#startButton").addEventListener("click", () => {if(selection.mode==="online"&&online.room)online.room.send("start");else versus({}, true);});
-$("#backButton").addEventListener("click", async () => { if(selection.mode==="online"&&online.room&&["fighter","stage","versus"].includes(screen)){online.room.send(screen==="stage"&&online.room.sessionId===online.lobby.host?"previous":"cancelSelection");return;}if(screen==="online"){await online.leave();showScreen("mode");return;}showScreen({mode:"title",fighter:"mode",stage:"fighter"}[screen] || "title"); });
+$("#backButton").addEventListener("click", async () => { if(selection.mode==="online"&&online.room&&["fighter","stage","versus"].includes(screen)){if(online.slot===null){await online.leave();showScreen("online");return;}online.room.send(screen==="stage"&&online.room.sessionId===online.lobby.host?"previous":"cancelSelection");return;}if(screen==="online"){await online.leave();showScreen("mode");return;}showScreen({mode:"title",fighter:"mode",stage:"fighter"}[screen] || "title"); });
 $("#nextStageButton").addEventListener("click", () => { campaign.index++; versus({stage:campaign.stages[campaign.index]}); });
 $("#resumeButton").addEventListener("click", resume);
 $("#rematchButton").addEventListener("click", () => { if(game?.options.online){online.returnToLobby();return;} if(campaignComplete) { campaign = null; backToMenu(); } else versus(); });
@@ -681,7 +683,7 @@ online=new OnlineVersus({
     if(lobby.phase==='fighters'){
       if(screen!=='fighter')showScreen('fighter');else if(changed)renderSelection();
       const self=lobby.players.find(p=>p.slot===online.slot);
-      $('#fighterNext').disabled=!!self.ready;$('#fighterNext').textContent=self.ready?'AGUARDANDO O OUTRO JOGADOR…':'CONFIRMAR LUTADOR →';
+      $('#fighterNext').disabled=!self||!!self.ready;$('#fighterNext').textContent=!self?'ASSISTINDO À SELEÇÃO…':self.ready?'AGUARDANDO O OUTRO JOGADOR…':'CONFIRMAR LUTADOR →';
       $('#playerPreview').parentElement.querySelector('small').textContent=`P1 · ${p1.name}${p1.ready?' · PRONTO':''}`;
       $('#opponentPreview').parentElement.querySelector('small').textContent=`P2 · ${p2.name}${p2.ready?' · PRONTO':''}`;
     }else{
@@ -692,17 +694,18 @@ online=new OnlineVersus({
     }
   },
   prepare: async ({players,stage,matchId}) => {
+    const validPhase=()=>online.lobby?.phase==='loading'||(online.slot===null&&online.lobby?.phase==='fighting');
     const room=online.room;
     await Promise.all(players.map(p=>loadFighter(p.fighter)));
-    if(online.room!==room||online.lobby?.phase!=='loading'||online.lobby.matchId!==matchId) return false;
+    if(online.room!==room||!validPhase()||online.lobby.matchId!==matchId) return false;
     campaign=null;Object.assign(selection,{player:players[0].fighter,opponent:players[1].fighter,stage,mode:'online'});
     $('#versusLeft').src=sources[selection.player];$('#versusRight').src=sources[selection.opponent];
     $('#versusLeftName').textContent=players[0].name;$('#versusRightName').textContent=players[1].name;$('#versusOpponent').textContent='PLAYER 2';$('#versusStage').textContent=stageNames[stage];
     showScreen('versus');await new Promise(resolve=>setTimeout(resolve,950));
-    if(online.room!==room||online.lobby?.phase!=='loading'||online.lobby.matchId!==matchId)return false;
+    if(online.room!==room||!validPhase()||online.lobby.matchId!==matchId)return false;
     game?.destroy();document.body.classList.add('in-match');document.body.classList.remove('overlay-open');
     $('#menu').hidden=true;$('#gameScreen').hidden=false;$('#matchOverlay').hidden=true;overlayState=null;screen='fight';
-    $('#matchLabel').textContent=`VERSUS ONLINE · VOCÊ: P${online.slot+1} / ${stageNames[stage]}`;
+    $('#matchLabel').textContent=`VERSUS ONLINE · ${online.slot===null?'ESPECTADOR':'VOCÊ: P'+(online.slot+1)} / ${stageNames[stage]}`;
     game=new FightGame($('#gameCanvas'),assets,{stageArt,crowdArt,muted,online:true,onInput:held=>online.sendInput(held),onPause:()=>setOverlay('pause')});
     game.start({...selection,mode:'versus'});game.phase='intro';$('#gameCanvas').focus();applyMute();return true;
   },

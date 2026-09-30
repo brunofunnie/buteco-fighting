@@ -8,12 +8,18 @@ const validFighter=id=>typeof id==='string'&&Object.hasOwn(FIGHTERS,id);
 const neutral=()=>({held:new Set(),pressed:new Set()});
 export function createFightRoom(rankings) {
   return class OnlineFightRoom extends Room {
-    maxClients=2;
+    maxClients=12;
     maxMessagesPerSecond=180;
     onCreate() {
       this.onMessage('*',()=>{});
-      this.members=new Map();this.banned=new Set();this.phase='waiting';this.stage=0;this.inputs=[neutral(),neutral()];this.damaged=[false,false];
-      this.onMessage('sync',()=>this.publishLobby());
+      this.members=new Map();this.spectators=new Map();this.banned=new Set();this.phase='waiting';this.stage=0;this.inputs=[neutral(),neutral()];this.damaged=[false,false];
+      this.onMessage('sync',client=>{
+        this.publishLobby();
+        if(this.spectators.has(client.sessionId)&&['loading','fighting'].includes(this.phase)){
+          client.send('prepare',{matchId:this.matchId,players:this.players(),stage:this.stage});
+          if(this.phase==='fighting')this.sendSnapshot();
+        }
+      });
       this.onMessage('configure',(client,data)=>{
         const member=this.members.get(client.sessionId);if(!member)return;
         if(this.phase==='fighters'&&validFighter(data?.fighter)) {member.fighter=data.fighter;member.ready=false;this.publishLobby();}
@@ -25,26 +31,26 @@ export function createFightRoom(rankings) {
         if([...this.members.values()].every(p=>p.ready))this.phase='stage';
         this.publishLobby();
       });
-      this.onMessage('cancelSelection',()=>{if(['fighters','stage','loading'].includes(this.phase))this.resetLobby();});
+      this.onMessage('cancelSelection',client=>{if(this.members.has(client.sessionId)&&['fighters','stage','loading'].includes(this.phase))this.resetLobby();});
       this.onMessage('previous',client=>{if(client.sessionId===this.host&&this.phase==='stage'){this.phase='fighters';for(const p of this.members.values())p.ready=false;this.publishLobby();}});
       this.onMessage('pong',(client,data)=>{
-        const member=this.members.get(client.sessionId),probe=member?.probe;
+        const member=this.members.get(client.sessionId)||this.spectators.get(client.sessionId),probe=member?.probe;
         if(!probe||data?.nonce!==probe.nonce)return;
         const rtt=Date.now()-probe.sent;delete member.probe;
         if(rtt<0||rtt>10000)return;
         member.ping=Math.round(member.ping===null?rtt:member.ping*.7+rtt*.3);
-        this.broadcast('latency',[...this.members.values()].map(p=>({sessionId:p.sessionId,ping:p.ping})));
+        this.broadcast('latency',[...this.members.values(),...this.spectators.values()].map(p=>({sessionId:p.sessionId,ping:p.ping})));
       });
       this.clock.setInterval(()=>this.probePlayers(),2000);
       this.onMessage('kick',client=>{
         if(client.sessionId!==this.host||this.phase!=='waiting')return;
-        const guest=this.clients.find(c=>c.sessionId!==this.host);if(!guest)return;
+        const guest=this.clients.find(c=>this.members.has(c.sessionId)&&c.sessionId!==this.host);if(!guest)return;
         this.banned.add(this.members.get(guest.sessionId).id);guest.send('notice','Você foi expulso desta sala.');guest.leave(4001);
       });
       this.onMessage('start',client=>{
         if(client.sessionId!==this.host||this.members.size!==2)return;
         if(this.phase==='waiting'){
-          this.lock();this.matchId=randomUUID();this.phase='fighters';
+          this.matchId=randomUUID();this.phase='fighters';
           for(const member of this.members.values())member.ready=false;
           this.publishLobby();
         }else if(this.phase==='stage')this.startMatch();
@@ -69,29 +75,36 @@ export function createFightRoom(rankings) {
       if(!player)throw new ServerError(401,'Identidade inválida. Reabra o menu online.');
       if(this.banned.has(player.id))throw new ServerError(403,'Você foi expulso desta sala.');
       if([...this.members.values()].some(m=>m.id===player.id))throw new ServerError(409,'Esta identidade já está na sala.');
-      if(this.phase!=='waiting')throw new ServerError(409,'A partida já começou.');
+      if([...this.spectators.values()].some(m=>m.id===player.id))throw new ServerError(409,'Esta identidade já está na sala.');
+      if(options?.spectator===true){if(this.spectators.size>=10)throw new ServerError(409,'A sala já tem 10 espectadores.');}
+      else if(this.phase!=='waiting'||this.members.size>=2)throw new ServerError(409,'Os lugares de lutador estão ocupados ou a partida já começou.');
       return player;
     }
     onJoin(client,options,auth) {
+      if(options.spectator===true){
+        this.spectators.set(client.sessionId,{...auth,sessionId:client.sessionId,slot:null,ping:null});
+        client.send('seat',{slot:null});this.publishLobby();this.probePlayers();return;
+      }
       const slot=this.members.size?1:0;if(!slot)this.host=client.sessionId;
       this.members.set(client.sessionId,{...auth,sessionId:client.sessionId,slot,fighter:validFighter(options.fighter)?options.fighter:slot?'bruno':'maya',ready:false,ping:null});
       client.send('seat',{slot});this.publishLobby();this.probePlayers();
     }
     probePlayers() {
-      for(const client of this.clients){const member=this.members.get(client.sessionId);if(!member)continue;
+      for(const client of this.clients){const member=this.members.get(client.sessionId)||this.spectators.get(client.sessionId);if(!member)continue;
         const now=Date.now();if(member.probe&&now-member.probe.sent<5000)continue;
         member.probe={nonce:randomUUID(),sent:now};client.send('probe',{nonce:member.probe.nonce});
       }
     }
+    players(){return [...this.members.values()].sort((a,b)=>a.slot-b.slot).map(({probe,...player})=>player);}
     publishLobby() {
       this.lastActivity=Date.now();
-      const players=[...this.members.values()].sort((a,b)=>a.slot-b.slot).map(({probe,...player})=>player);
-      const lobby={matchId:this.matchId,id:this.roomId,host:this.host,phase:this.phase,stage:this.stage,players};
-      this.setMetadata({name:players[0]?.name||'Sala',stage:this.stage,phase:this.phase});
+      const players=this.players();
+      const lobby={matchId:this.matchId,id:this.roomId,host:this.host,phase:this.phase,stage:this.stage,players,spectators:[...this.spectators.values()].map(({probe,...p})=>p)};
+      this.setMetadata({name:players[0]?.name||'Sala',stage:this.stage,phase:this.phase,players:players.length,spectators:this.spectators.size});
       this.broadcast('lobby',lobby);
     }
     startMatch() {
-      this.lock();this.phase='loading';this.loadingAt=Date.now();
+      this.phase='loading';this.loadingAt=Date.now();
       this.damaged=[false,false];this.inputs=[neutral(),neutral()];
       for(const p of this.members.values())p.loaded=false;
       this.publishLobby();this.broadcast('prepare',{matchId:this.matchId,players:[...this.members.values()].sort((a,b)=>a.slot-b.slot).map(({probe,...player})=>player),stage:this.stage});
@@ -137,6 +150,7 @@ export function createFightRoom(rankings) {
       this.unlock();this.publishLobby();
     }
     onLeave(client) {
+      if(this.spectators.delete(client.sessionId)){this.publishLobby();return;}
       const member=this.members.get(client.sessionId);if(!member)return;
       if(this.phase==='fighting')this.complete(1-member.slot,'disconnect');
       this.members.delete(client.sessionId);

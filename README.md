@@ -101,6 +101,8 @@ Choose **VERSUS ONLINE** to load the ranking and browse rooms. Creating a room o
 
 Each lobby player displays server-measured round-trip latency in milliseconds and colored signal bars. Probes run every two seconds. Ranking updates on opening multiplayer and after results; there is no ranking refresh button. The client throttles requests and the server caches queries until a result or nickname change invalidates them.
 
+Rooms support two fighters and up to ten spectators. Use **ASSISTIR** beside a room or enter its code to watch, even after a match starts. Spectators follow live character/stage selection and authoritative match snapshots, cannot alter the match, and return to the same lobby after the result.
+
 Colyseus 0.18 runs on the same HTTP/WebSocket endpoint as the game. The server runs the shared combat simulation at 120 Hz and sends snapshots at 30 Hz. Clients send controls only; damage and results are server-authoritative. In an online match each player uses their own Player 1 keyboard/gamepad/touch mapping, including the challenger in the P2 seat. Opening the pause/options menu stops your input while the online match continues.
 
 The leaderboard stores wins, perfect wins and losses in SQLite. A win is a completed best-of-three match; a perfect win means the winner took no damage throughout the match. Disconnecting during a live fight forfeits the match without perfect credit. Lobby departures and expulsions award no points. The guest identity is a browser-local token, not an account with cross-device login; clearing localStorage creates a new identity. Nicknames may be shared; server identities stay separate.
@@ -201,7 +203,7 @@ Focused checks:
 | `npm run test:ui` | Menus, responsive layout, scrolling and character selection. |
 | `npm run test:selection:demo` | Alternation, rapid selection changes and Cartesian previews. |
 | `npm run test:online` | Real Colyseus clients, room permissions, kick/ban, loading, authoritative results, ranking and SQLite persistence. |
-| `npm run test:online:browser` | Two-browser online flow, networking, sharing tags, responsive lobby and cancellation races; defaults to port 3194. |
+| `npm run test:online:browser` | Three-browser player/spectator online flow, networking, sharing tags, responsive lobby and cancellation races; defaults to port 3194. |
 | `npm run test:controls` | Saved keyboard remapping, controller input, menu navigation, air attacks, touch, pause, disconnects and stage backgrounds. |
 | `npm run test:options` | Audio, fullscreen, keyboard navigation and focus restoration. |
 | `npm run test:menu:actions` | Focused Back and Options actions across menus. |

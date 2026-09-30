@@ -26,7 +26,7 @@ const handleRequest = async (req, res) => {
     try {
       const pathname=new URL(req.url,'http://localhost').pathname;
       if(pathname==='/api/ranking'&&req.method==='GET'){if(Date.now()-rankingCacheAt>10000||!rankingCache||rankingVersion!==rankings.revision){rankingCache=JSON.stringify(rankings.list());rankingCacheAt=Date.now();rankingVersion=rankings.revision;}res.writeHead(200,{'Content-Type':'application/json','Cache-Control':'no-cache'});res.end(rankingCache);return;}
-      if(pathname==='/api/rooms'&&req.method==='GET'){const rooms=await matchMaker.query({name:'fight',locked:false,private:false});res.writeHead(200,{'Content-Type':'application/json','Cache-Control':'no-store'});res.end(JSON.stringify(rooms.filter(r=>r.metadata?.phase==='waiting').map(r=>({id:r.roomId,clients:r.clients,name:r.metadata.name,stage:r.metadata.stage}))));return;}
+      if(pathname==='/api/rooms'&&req.method==='GET'){const rooms=await matchMaker.query({name:'fight',private:false});res.writeHead(200,{'Content-Type':'application/json','Cache-Control':'no-store'});res.end(JSON.stringify(rooms.map(r=>({id:r.roomId,clients:r.clients,name:r.metadata.name,stage:r.metadata.stage,phase:r.metadata.phase,players:r.metadata.players||0,spectators:r.metadata.spectators||0}))));return;}
       if(pathname==='/api/profile'&&req.method==='POST'){
         const ip=req.headers['cf-connecting-ip']||req.socket.remoteAddress,now=Date.now(),entries=(rate.get(ip)||[]).filter(t=>now-t<60000);
         if(entries.length>=30){res.writeHead(429);res.end('Aguarde um minuto.');return;}
