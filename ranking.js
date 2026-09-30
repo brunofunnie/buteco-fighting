@@ -6,7 +6,7 @@ const hash=token=>createHash('sha256').update(token).digest('hex');
 export class Rankings {
   constructor(file) {
     if(file!==':memory:')mkdirSync(path.dirname(file),{recursive:true});
-    this.db=new DatabaseSync(file);
+    this.db=new DatabaseSync(file);this.revision=0;
     this.db.exec(`PRAGMA journal_mode=WAL; CREATE TABLE IF NOT EXISTS players(id TEXT PRIMARY KEY,token TEXT UNIQUE NOT NULL,name TEXT NOT NULL,wins INTEGER NOT NULL DEFAULT 0,perfects INTEGER NOT NULL DEFAULT 0,losses INTEGER NOT NULL DEFAULT 0); CREATE TABLE IF NOT EXISTS results(match_id TEXT PRIMARY KEY,winner TEXT,loser TEXT,perfect INTEGER,reason TEXT,created_at TEXT DEFAULT CURRENT_TIMESTAMP);`);
   }
   register(name) {
@@ -14,6 +14,12 @@ export class Rankings {
     const id=randomUUID(),token=randomBytes(32).toString('hex');
     this.db.prepare('INSERT INTO players(id,token,name) VALUES(?,?,?)').run(id,hash(token),name.trim());
     return {id,token,name:name.trim()};
+  }
+  rename(token,name) {
+    const player=this.identify(token);if(!player)throw Error('Identidade inválida.');
+    if(typeof name!=='string'||!name.trim()||name.trim().length>24||/[\x00-\x1f]/.test(name))throw Error('Use um apelido de 1 a 24 caracteres.');
+    this.db.prepare('UPDATE players SET name=? WHERE id=?').run(name.trim(),player.id);
+    this.revision++;return {...player,name:name.trim(),token};
   }
   identify(token) {
     if(typeof token!=='string'||!/^[a-f0-9]{64}$/.test(token))return null;
@@ -24,7 +30,7 @@ export class Rankings {
     this.db.exec('BEGIN IMMEDIATE');
     try {
       const result=this.db.prepare('INSERT OR IGNORE INTO results(match_id,winner,loser,perfect,reason) VALUES(?,?,?,?,?)').run(matchId,winner,loser,Number(perfect),reason);
-      if(result.changes){this.db.prepare('UPDATE players SET wins=wins+1,perfects=perfects+? WHERE id=?').run(Number(perfect),winner);this.db.prepare('UPDATE players SET losses=losses+1 WHERE id=?').run(loser);}
+      if(result.changes){this.revision++;this.db.prepare('UPDATE players SET wins=wins+1,perfects=perfects+? WHERE id=?').run(Number(perfect),winner);this.db.prepare('UPDATE players SET losses=losses+1 WHERE id=?').run(loser);}
       this.db.exec('COMMIT');return !!result.changes;
     }catch(e){this.db.exec('ROLLBACK');throw e;}
   }

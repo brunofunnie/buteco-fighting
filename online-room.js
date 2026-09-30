@@ -13,21 +13,41 @@ export function createFightRoom(rankings) {
     onCreate() {
       this.onMessage('*',()=>{});
       this.members=new Map();this.banned=new Set();this.phase='waiting';this.stage=0;this.inputs=[neutral(),neutral()];this.damaged=[false,false];
+      this.onMessage('sync',()=>this.publishLobby());
       this.onMessage('configure',(client,data)=>{
-        const member=this.members.get(client.sessionId);if(!member||this.phase!=='waiting')return;
-        if(data&&validFighter(data.fighter)){member.fighter=data.fighter;member.ready=false;}
-        if(client.sessionId===this.host&&Number.isInteger(data?.stage)&&data.stage>=0&&data.stage<4){this.stage=data.stage;for(const p of this.members.values())p.ready=false;}
+        const member=this.members.get(client.sessionId);if(!member)return;
+        if(this.phase==='fighters'&&validFighter(data?.fighter)) {member.fighter=data.fighter;member.ready=false;this.publishLobby();}
+        if(this.phase==='stage'&&client.sessionId===this.host&&Number.isInteger(data?.stage)&&data.stage>=0&&data.stage<4){this.stage=data.stage;this.publishLobby();}
+      });
+      this.onMessage('ready',client=>{
+        const member=this.members.get(client.sessionId);if(!member||this.phase!=='fighters')return;
+        member.ready=true;
+        if([...this.members.values()].every(p=>p.ready))this.phase='stage';
         this.publishLobby();
       });
-      this.onMessage('ready',client=>{const member=this.members.get(client.sessionId);if(member&&this.phase==='waiting'){member.ready=!member.ready;this.publishLobby();}});
+      this.onMessage('cancelSelection',()=>{if(['fighters','stage','loading'].includes(this.phase))this.resetLobby();});
+      this.onMessage('previous',client=>{if(client.sessionId===this.host&&this.phase==='stage'){this.phase='fighters';for(const p of this.members.values())p.ready=false;this.publishLobby();}});
+      this.onMessage('pong',(client,data)=>{
+        const member=this.members.get(client.sessionId),probe=member?.probe;
+        if(!probe||data?.nonce!==probe.nonce)return;
+        const rtt=Date.now()-probe.sent;delete member.probe;
+        if(rtt<0||rtt>10000)return;
+        member.ping=Math.round(member.ping===null?rtt:member.ping*.7+rtt*.3);
+        this.broadcast('latency',[...this.members.values()].map(p=>({sessionId:p.sessionId,ping:p.ping})));
+      });
+      this.clock.setInterval(()=>this.probePlayers(),2000);
       this.onMessage('kick',client=>{
         if(client.sessionId!==this.host||this.phase!=='waiting')return;
         const guest=this.clients.find(c=>c.sessionId!==this.host);if(!guest)return;
         this.banned.add(this.members.get(guest.sessionId).id);guest.send('notice','Você foi expulso desta sala.');guest.leave(4001);
       });
       this.onMessage('start',client=>{
-        if(client.sessionId!==this.host||this.phase!=='waiting'||this.members.size!==2||![...this.members.values()].every(p=>p.ready))return;
-        this.startMatch();
+        if(client.sessionId!==this.host||this.members.size!==2)return;
+        if(this.phase==='waiting'){
+          this.lock();this.matchId=randomUUID();this.phase='fighters';
+          for(const member of this.members.values())member.ready=false;
+          this.publishLobby();
+        }else if(this.phase==='stage')this.startMatch();
       });
       this.onMessage('loaded',(client,data)=>{const p=this.members.get(client.sessionId);if(this.phase==='loading'&&p&&data?.matchId===this.matchId){p.loaded=true;if([...this.members.values()].every(m=>m.loaded))this.beginSimulation();}});
       this.onMessage('input',(client,data)=>{
@@ -54,21 +74,27 @@ export function createFightRoom(rankings) {
     }
     onJoin(client,options,auth) {
       const slot=this.members.size?1:0;if(!slot)this.host=client.sessionId;
-      this.members.set(client.sessionId,{...auth,sessionId:client.sessionId,slot,fighter:validFighter(options.fighter)?options.fighter:slot?'bruno':'maya',ready:false});
-      client.send('seat',{slot});this.publishLobby();
+      this.members.set(client.sessionId,{...auth,sessionId:client.sessionId,slot,fighter:validFighter(options.fighter)?options.fighter:slot?'bruno':'maya',ready:false,ping:null});
+      client.send('seat',{slot});this.publishLobby();this.probePlayers();
+    }
+    probePlayers() {
+      for(const client of this.clients){const member=this.members.get(client.sessionId);if(!member)continue;
+        const now=Date.now();if(member.probe&&now-member.probe.sent<5000)continue;
+        member.probe={nonce:randomUUID(),sent:now};client.send('probe',{nonce:member.probe.nonce});
+      }
     }
     publishLobby() {
       this.lastActivity=Date.now();
-      const players=[...this.members.values()].sort((a,b)=>a.slot-b.slot);
+      const players=[...this.members.values()].sort((a,b)=>a.slot-b.slot).map(({probe,...player})=>player);
       const lobby={matchId:this.matchId,id:this.roomId,host:this.host,phase:this.phase,stage:this.stage,players};
       this.setMetadata({name:players[0]?.name||'Sala',stage:this.stage,phase:this.phase});
       this.broadcast('lobby',lobby);
     }
     startMatch() {
       this.lock();this.phase='loading';this.loadingAt=Date.now();
-      this.matchId=randomUUID();this.damaged=[false,false];this.inputs=[neutral(),neutral()];
+      this.damaged=[false,false];this.inputs=[neutral(),neutral()];
       for(const p of this.members.values())p.loaded=false;
-      this.publishLobby();this.broadcast('prepare',{matchId:this.matchId,players:[...this.members.values()].sort((a,b)=>a.slot-b.slot),stage:this.stage});
+      this.publishLobby();this.broadcast('prepare',{matchId:this.matchId,players:[...this.members.values()].sort((a,b)=>a.slot-b.slot).map(({probe,...player})=>player),stage:this.stage});
     }
     beginSimulation() {
       this.phase='fighting';
@@ -102,7 +128,8 @@ export function createFightRoom(rankings) {
       const players=[...this.members.values()].sort((a,b)=>a.slot-b.slot),winner=players[slot],loser=players[1-slot];
       const perfect=reason==='ko'&&!this.damaged[slot];
       rankings.record(this.matchId,winner.id,loser.id,perfect,reason);
-      this.sendSnapshot();this.broadcast('result',{winner:slot,name:winner.name,perfect,reason});this.publishLobby();
+      this.sendSnapshot();this.broadcast('result',{winner:slot,name:winner.name,perfect,reason});
+      this.resetLobby();
     }
     resetLobby() {
       this.simulation?.destroy();this.simulation=null;this.matchId=null;this.phase='waiting';this.inputs=[neutral(),neutral()];

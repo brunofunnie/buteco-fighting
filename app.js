@@ -4,6 +4,7 @@ import {audioDirector} from "./audio.js";
 import { FightGame } from "./phaser-game.js";
 import {FIGHTERS, fighterIds, defaultOpponent} from "./roster.js";
 import {PowerPreview} from "./power-preview.js";
+let online;
 const $ = (selector) => document.querySelector(selector);
 const sources = Object.fromEntries(fighterIds.map(id => [id, FIGHTERS[id].source]));
 const supportingCast = fighterIds.filter(id=>id!=="maya"&&id!=="bruno");
@@ -254,6 +255,8 @@ function animateSelectionPreviews() {
   draw(started);
 }
 function renderSelection() {
+  const network=selection.mode==="online"&&!!online?.room;
+  if(!network){$("#playerPreview").parentElement.querySelector("small").textContent="JOGADOR 1";$("#opponentPreview").parentElement.querySelector("small").textContent="RIVAL";}
   audioDirector.warmFighter(selection.player);audioDirector.warmFighter(selection.opponent);
   const p = FIGHTERS[selection.player], rival = FIGHTERS[selection.opponent];
   for (const [prefix,f] of [["player",p],["opponent",rival]]) {
@@ -266,11 +269,12 @@ function renderSelection() {
     item.classList.toggle("selected",item.dataset.player===selection.player);
     item.classList.toggle("opponent-selected",item.dataset.player===selection.opponent);
     item.setAttribute("aria-pressed",String(item.dataset.player===selection[selectionSlot]));
-    item.querySelector(".pick-badge").textContent = [item.dataset.player===selection.player?"P1":"",item.dataset.player===selection.opponent?(selection.mode==="versus"?"P2":"CPU"):""].filter(Boolean).join(" · ");
+    item.querySelector(".pick-badge").textContent = [item.dataset.player===selection.player?"P1":"",item.dataset.player===selection.opponent?((selection.mode==="versus"||network)?"P2":"CPU"):""].filter(Boolean).join(" · ");
   }
-  $("#opponentSlot").textContent = selection.mode==="versus"?"JOGADOR 2":"RIVAL / TREINO";
+  $("#opponentSlot").textContent = (selection.mode==="versus"||network)?"JOGADOR 2":"RIVAL / TREINO";
   $("#fighterHeading").textContent = selectionSlot==="player"?"ESCOLHA SEU LUTADOR":"ESCOLHA O RIVAL";
-  for(const button of document.querySelectorAll("[data-slot]"))button.classList.toggle("active",button.dataset.slot===selectionSlot);
+  for(const button of document.querySelectorAll("[data-slot]")){button.classList.toggle("active",button.dataset.slot===selectionSlot);button.disabled=network&&button.dataset.slot!==(online.slot===0?"player":"opponent");}
+  $(".roster-hint").textContent=network?"CADA JOGADOR ESCOLHE SEU LUTADOR · SELEÇÃO AO VIVO":"Q TROCA P1 / RIVAL · U ESPECIAL · I SUPER";
   if (spriteManifest.maya) animateSelectionPreviews();
 }
 const fighterScreen = $("#fighterScreen");
@@ -279,6 +283,7 @@ fighterScreen.innerHTML = `<header class="screen-heading"><span>02 / PLAYER SELE
 <div class="fighter-picks"><div class="pick-tabs"><button data-slot="player" class="active">JOGADOR 1</button><button data-slot="opponent" id="opponentSlot">RIVAL</button></div><div class="fighter-list roster-grid">${fighterIds.map(id=>`<button class="roster-fighter" data-player="${id}" aria-label="Selecionar ${FIGHTERS[id].name}"><img src="${FIGHTERS[id].source}" alt="${FIGHTERS[id].name}"><span class="pick-badge"></span><strong>${FIGHTERS[id].name}</strong></button>`).join("")}</div><p class="roster-hint">Q TROCA P1 / RIVAL · U ESPECIAL · I SUPER</p></div>
 <div class="fighter-preview rival-preview"><canvas id="opponentPreview" width="420" height="400" role="img"></canvas><small>RIVAL</small><strong id="opponentName"></strong><span id="opponentPower"></span><p id="opponentDescription"></p><figure class="power-demo"><canvas id="opponentPowerDemo" role="img" width="1280" height="720"></canvas><figcaption id="opponentDemoLabel">ESPECIAL / SUPER</figcaption></figure></div></div><button class="confirm-button" id="fighterNext">CONFIRMAR LUTADORES →</button>`;
 function setSelectionSlot(slot) {
+  if(selection.mode==="online"&&online?.room&&slot!==(online.slot===0?"player":"opponent"))return;
   selectionSlot=slot;
   renderSelection();
   document.querySelector(`[data-player="${selection[selectionSlot]}"]`)?.scrollIntoView({block:"nearest",inline:"nearest"});
@@ -307,7 +312,11 @@ function updateStageBackdrop() {
   $("#stageScreen").style.setProperty("--stage-background", `url("assets/stages/${path}.png")`);
 }
 function showScreen(next) {
-  if (next === "stage") updateStageBackdrop();
+  if (next === "stage") {
+    updateStageBackdrop();
+    if(selection.mode!=='online') {for(const button of document.querySelectorAll('[data-stage]'))button.disabled=false;$('#startButton').disabled=!assets;$('#startButton').textContent='LUTAR →';$('#matchLoadStatus').textContent='';}
+  }
+  if(next==='fighter'&&selection.mode!=='online'){$('#fighterNext').disabled=false;$('#fighterNext').textContent='CONFIRMAR LUTADORES →';}
   stopSelectionPreviews();
   previewGeneration++;
   if (next !== "versus") launchToken++;
@@ -436,6 +445,7 @@ function backToMenu() {
 }
 for (const button of document.querySelectorAll("[data-player]"))
   button.addEventListener("click", () => {
+    if(selection.mode==='online'&&online?.room){if(online.lobby?.phase==='fighters')online.room.send('configure',{fighter:button.dataset.player});return;}
     selection[selectionSlot] = button.dataset.player;
     if (selection.mode !== "versus" && selection.opponent === selection.player) selection.opponent=defaultOpponent(selection.player);
     renderSelection();
@@ -452,6 +462,7 @@ for (const button of document.querySelectorAll("[data-mode]"))
   });
 for (const button of document.querySelectorAll("[data-stage]"))
   button.addEventListener("click", () => {
+    if(selection.mode==='online'&&online?.room){if(online.room.sessionId===online.lobby?.host)online.room.send('configure',{stage:Number(button.dataset.stage)});return;}
     selection.stage = Number(button.dataset.stage);
     updateStageBackdrop();
     for (const item of document.querySelectorAll("[data-stage]")) {
@@ -461,10 +472,10 @@ for (const button of document.querySelectorAll("[data-stage]"))
     }
   });
 $("#titleStart").addEventListener("click", () => showScreen("mode"));
-$("#modeNext").addEventListener("click", () => { if(selection.mode==="online"){showScreen("online");online.refresh();}else showScreen("fighter"); });
-$("#fighterNext").addEventListener("click", () => showScreen("stage"));
-$("#startButton").addEventListener("click", () => versus({}, true));
-$("#backButton").addEventListener("click", async () => { if(screen==="online"){await online.leave();showScreen("mode");return;}showScreen({mode:"title",fighter:"mode",stage:"fighter"}[screen] || "title"); });
+$("#modeNext").addEventListener("click", () => { if(selection.mode==="online"){showScreen("online");online.open();}else showScreen("fighter"); });
+$("#fighterNext").addEventListener("click", () => {if(selection.mode==="online"&&online.room)online.room.send("ready");else showScreen("stage");});
+$("#startButton").addEventListener("click", () => {if(selection.mode==="online"&&online.room)online.room.send("start");else versus({}, true);});
+$("#backButton").addEventListener("click", async () => { if(selection.mode==="online"&&online.room&&["fighter","stage","versus"].includes(screen)){online.room.send(screen==="stage"&&online.room.sessionId===online.lobby.host?"previous":"cancelSelection");return;}if(screen==="online"){await online.leave();showScreen("mode");return;}showScreen({mode:"title",fighter:"mode",stage:"fighter"}[screen] || "title"); });
 $("#nextStageButton").addEventListener("click", () => { campaign.index++; versus({stage:campaign.stages[campaign.index]}); });
 $("#resumeButton").addEventListener("click", resume);
 $("#rematchButton").addEventListener("click", () => { if(game?.options.online){online.returnToLobby();return;} if(campaignComplete) { campaign = null; backToMenu(); } else versus(); });
@@ -526,6 +537,16 @@ $("#fullscreenButton").addEventListener("click", async () => {
   }
 });
 window.addEventListener("keydown", (event) => {
+  if($('#createRoomDialog').open){
+    event.stopImmediatePropagation();
+    if(event.key==='Escape'){event.preventDefault();$('#createRoomDialog').close();return;}
+    if(event.target===window){
+      event.preventDefault();const elements=[...$('#createRoomDialog').querySelectorAll('input,button')];
+      if(event.key==='Enter'){if(document.activeElement.tagName==='INPUT')$('#createRoomForm').requestSubmit();else document.activeElement.click();}
+      else if(event.key.startsWith('Arrow')){const delta=['ArrowLeft','ArrowUp'].includes(event.key)?-1:1;elements[(elements.indexOf(document.activeElement)+delta+elements.length)%elements.length]?.focus();}
+    }
+    return;
+  }
   if (!$("#controlsDialog").hidden) {
     if (bindingTarget) {
       event.preventDefault();event.stopImmediatePropagation();
@@ -644,12 +665,41 @@ for (const button of document.querySelectorAll("[data-key]")) {
   for (const type of ["pointerup", "pointercancel", "lostpointercapture"])
     button.addEventListener(type, () => send("keyup"));
 }
-const online=new OnlineVersus({
+online=new OnlineVersus({
+  selection: lobby => {
+    if(!online.room)return;
+    if(lobby.phase==='waiting'){
+      if(selection.mode==='online'&&['fighter','stage','versus','fight'].includes(screen)){
+        game?.destroy();game=null;$('#gameScreen').hidden=true;$('#matchOverlay').hidden=true;$('#menu').hidden=false;overlayState=null;document.body.classList.remove('in-match','overlay-open');showScreen('online');
+      }
+      return;
+    }
+    if(!['fighters','stage'].includes(lobby.phase))return;
+    const [p1,p2]=lobby.players;const changed=selection.player!==p1.fighter||selection.opponent!==p2.fighter;
+    Object.assign(selection,{mode:'online',player:p1.fighter,opponent:p2.fighter,stage:lobby.stage});
+    selectionSlot=online.slot===0?'player':'opponent';
+    if(lobby.phase==='fighters'){
+      if(screen!=='fighter')showScreen('fighter');else if(changed)renderSelection();
+      const self=lobby.players.find(p=>p.slot===online.slot);
+      $('#fighterNext').disabled=!!self.ready;$('#fighterNext').textContent=self.ready?'AGUARDANDO O OUTRO JOGADOR…':'CONFIRMAR LUTADOR →';
+      $('#playerPreview').parentElement.querySelector('small').textContent=`P1 · ${p1.name}${p1.ready?' · PRONTO':''}`;
+      $('#opponentPreview').parentElement.querySelector('small').textContent=`P2 · ${p2.name}${p2.ready?' · PRONTO':''}`;
+    }else{
+      if(screen!=='stage')showScreen('stage');updateStageBackdrop();
+      const host=online.room.sessionId===lobby.host;
+      for(const button of document.querySelectorAll('[data-stage]')){button.disabled=!host;button.classList.toggle('selected',Number(button.dataset.stage)===lobby.stage);button.setAttribute('aria-pressed',String(Number(button.dataset.stage)===lobby.stage));}
+      $('#startButton').disabled=!host;$('#startButton').textContent=host?'LUTAR →':'AGUARDANDO O ANFITRIÃO…';$('#matchLoadStatus').textContent=host?'Escolha a arena para os dois jogadores.':'O anfitrião está escolhendo a arena.';
+    }
+  },
   prepare: async ({players,stage,matchId}) => {
     const room=online.room;
     await Promise.all(players.map(p=>loadFighter(p.fighter)));
     if(online.room!==room||online.lobby?.phase!=='loading'||online.lobby.matchId!==matchId) return false;
     campaign=null;Object.assign(selection,{player:players[0].fighter,opponent:players[1].fighter,stage,mode:'online'});
+    $('#versusLeft').src=sources[selection.player];$('#versusRight').src=sources[selection.opponent];
+    $('#versusLeftName').textContent=players[0].name;$('#versusRightName').textContent=players[1].name;$('#versusOpponent').textContent='PLAYER 2';$('#versusStage').textContent=stageNames[stage];
+    showScreen('versus');await new Promise(resolve=>setTimeout(resolve,950));
+    if(online.room!==room||online.lobby?.phase!=='loading'||online.lobby.matchId!==matchId)return false;
     game?.destroy();document.body.classList.add('in-match');document.body.classList.remove('overlay-open');
     $('#menu').hidden=true;$('#gameScreen').hidden=false;$('#matchOverlay').hidden=true;overlayState=null;screen='fight';
     $('#matchLabel').textContent=`VERSUS ONLINE · VOCÊ: P${online.slot+1} / ${stageNames[stage]}`;
@@ -685,8 +735,8 @@ function menuGamepads() {
       if (!frame.connected || document.hidden) continue;
       const pressed=frame.pressed;
       if (bindingTarget) { if(pressed.has('kick'))cancelBinding();continue; }
-      if (pressed.has('special') && !$('#controlsButton').hidden && $('#controlsDialog').hidden) { openOptions(); break; }
-      if (pressed.has('super') && screen==='mode' && !$('#difficulty').disabled && $('#controlsDialog').hidden) {
+      if (pressed.has('special') && !$('#createRoomDialog').open && !$('#controlsButton').hidden && $('#controlsDialog').hidden) { openOptions(); break; }
+      if (pressed.has('super') && !$('#createRoomDialog').open && screen==='mode' && !$('#difficulty').disabled && $('#controlsDialog').hidden) {
         const difficulty=$('#difficulty');difficulty.selectedIndex=(difficulty.selectedIndex+1)%difficulty.options.length;
         difficulty.dispatchEvent(new Event('change',{bubbles:true}));break;
       }

@@ -97,7 +97,9 @@ Player 2 can also use the numeric keypad. Hold block to defend; touch devices di
 
 ## Versus online
 
-Choose **VERSUS ONLINE**, enter a nickname, and create a room or join by invitation/code. Open rooms are listed in the lobby. Each player chooses a fighter and confirms readiness; the host selects the arena and starts the best-of-three match. The host can expel a challenger before the match, which also blocks that browser identity from rejoining that room. A full or active room cannot accept another player.
+Choose **VERSUS ONLINE** to load the ranking and browse rooms. Creating a room opens a themed nickname dialog; joining uses the saved identity or creates a provisional challenger nickname without a form. The room only connects the players. The host starts the existing character-selection screen, where each player controls their own pick and sees the other pick live. Both confirm, then enter arena selection; only the host chooses the arena and starts the normal versus/fight sequence. Both return automatically to the same room after a match. The host can expel a challenger in the lobby, which also blocks that browser identity from rejoining that room. A full or active room cannot accept another player.
+
+Each lobby player displays server-measured round-trip latency in milliseconds and colored signal bars. Probes run every two seconds. Ranking updates on opening multiplayer and after results; there is no ranking refresh button. The client throttles requests and the server caches queries until a result or nickname change invalidates them.
 
 Colyseus 0.18 runs on the same HTTP/WebSocket endpoint as the game. The server runs the shared combat simulation at 120 Hz and sends snapshots at 30 Hz. Clients send controls only; damage and results are server-authoritative. In an online match each player uses their own Player 1 keyboard/gamepad/touch mapping, including the challenger in the P2 seat. Opening the pause/options menu stops your input while the online match continues.
 

@@ -8,6 +8,7 @@ import {Rankings} from './ranking.js';
 import {createFightRoom} from './online-room.js';
 const rankings=new Rankings(process.env.RANKING_DB || path.join(path.dirname(fileURLToPath(import.meta.url)), 'data', 'rankings.sqlite'));
 const rate=new Map();
+let rankingCache,rankingCacheAt=0,rankingVersion=-1;
 const root = path.dirname(fileURLToPath(import.meta.url));
 const mime = {
   ".html": "text/html; charset=utf-8",
@@ -24,7 +25,7 @@ const mime = {
 const handleRequest = async (req, res) => {
     try {
       const pathname=new URL(req.url,'http://localhost').pathname;
-      if(pathname==='/api/ranking'&&req.method==='GET'){res.writeHead(200,{'Content-Type':'application/json','Cache-Control':'no-store'});res.end(JSON.stringify(rankings.list()));return;}
+      if(pathname==='/api/ranking'&&req.method==='GET'){if(Date.now()-rankingCacheAt>10000||!rankingCache||rankingVersion!==rankings.revision){rankingCache=JSON.stringify(rankings.list());rankingCacheAt=Date.now();rankingVersion=rankings.revision;}res.writeHead(200,{'Content-Type':'application/json','Cache-Control':'no-cache'});res.end(rankingCache);return;}
       if(pathname==='/api/rooms'&&req.method==='GET'){const rooms=await matchMaker.query({name:'fight',locked:false,private:false});res.writeHead(200,{'Content-Type':'application/json','Cache-Control':'no-store'});res.end(JSON.stringify(rooms.filter(r=>r.metadata?.phase==='waiting').map(r=>({id:r.roomId,clients:r.clients,name:r.metadata.name,stage:r.metadata.stage}))));return;}
       if(pathname==='/api/profile'&&req.method==='POST'){
         const ip=req.headers['cf-connecting-ip']||req.socket.remoteAddress,now=Date.now(),entries=(rate.get(ip)||[]).filter(t=>now-t<60000);
@@ -33,7 +34,7 @@ const handleRequest = async (req, res) => {
         let body=typeof req.body==='object'?JSON.stringify(req.body):req.body;
         if(body===undefined){body='';for await(const part of req){body+=part;if(body.length>2048)break;}}
         if(body.length>2048){res.writeHead(413);res.end();return;}
-        try {const data=JSON.parse(body),profile=rankings.identify(data.token)||rankings.register(data.name);res.writeHead(200,{'Content-Type':'application/json','Cache-Control':'no-store'});res.end(JSON.stringify({...profile,...(data.token&&rankings.identify(data.token)?{token:data.token}:{})}));}catch(e){res.writeHead(400,{'Content-Type':'application/json'});res.end(JSON.stringify({error:e.message}));}return;
+        try {const data=JSON.parse(body),existing=rankings.identify(data.token),profile=existing?(data.name?rankings.rename(data.token,data.name):existing):rankings.register(data.guest?'Desafiante '+Math.random().toString(36).slice(2,6).toUpperCase():data.name);res.writeHead(200,{'Content-Type':'application/json','Cache-Control':'no-store'});res.end(JSON.stringify({...profile,...(data.token&&rankings.identify(data.token)?{token:data.token}:{})}));}catch(e){res.writeHead(400,{'Content-Type':'application/json'});res.end(JSON.stringify({error:e.message}));}return;
       }
       const route = decodeURIComponent(
         new URL(req.url, "http://localhost").pathname,
@@ -64,7 +65,7 @@ const handleRequest = async (req, res) => {
     }
   };
 const httpServer=http.createServer();
-const gameServer=new Server({transport:new WebSocketTransport({server:httpServer,maxPayload:4096}),greet:false,express:app=>app.use(handleRequest)});
+const gameServer=new Server({transport:new WebSocketTransport({server:httpServer,maxPayload:4096}),greet:false,gracefullyShutdown:process.env.NODE_ENV!=='test',express:app=>app.use(handleRequest)});
 gameServer.define('fight',createFightRoom(rankings));
 await gameServer.listen(Number(process.env.PORT)||3187,'0.0.0.0');
 console.log(`Buteco Fighting + Colyseus: port ${Number(process.env.PORT)||3187}`);
