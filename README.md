@@ -63,6 +63,8 @@ docker compose ps
 
 The tunnel origin is `http://buteco-fighting:80`. No host port is published; the tunnel reaches the container through the shared Docker network. The image bundles production dependencies and playable assets, runs as the Node user and includes an HTTP health check.
 
+On Bender, the image is built from `/home/bruno/apps/buteco-fighting` and deployed through Dockhand in environment **Bender**, stack **buteco-fighting**. Dockhand stores its managed compose file at `/app/data/stacks/Bender/buteco-fighting/compose.yaml`; that file uses the locally built image without a build context. For updates, rebuild the image in the source directory and redeploy the stack in Dockhand with image pulling disabled.
+
 ## Controls
 
 | Action | Player 1 | Player 2 |
