@@ -207,8 +207,8 @@ select{background:#0a142b}.confirm-button{background:#ffb522;color:#030712}.figh
 .menu-footer>#controlsButton{grid-column:3;grid-row:1;justify-self:end}
 .menu-footer>#navigationHint{display:none}
 .menu-screen>.menu-footer>button{margin:0;font-weight:800;letter-spacing:2px;font-size:16px;padding:14px 24px;min-height:48px}
-.menu-footer>#controlsButton,.menu-footer>#backButton{color:#ffcf67;border:1px solid #ffb52270;background:linear-gradient(120deg,#2b2539,#0a142b)}
-.menu-footer>#controlsButton:hover,.menu-footer>#backButton:hover{border-color:#ffb522;background:#493320}
+.menu-footer>#controlsButton,.menu-footer>#backButton,.online-panel button,.nickname-dialog button{color:#ffcf67;border:1px solid #ffb52270;background:linear-gradient(120deg,#2b2539,#0a142b)}
+.menu-footer>#controlsButton:hover,.menu-footer>#backButton:hover,.online-panel button:enabled:hover,.nickname-dialog button:enabled:hover{border-color:#ffb522;background:#493320}
 #modeScreen .menu-footer>.confirm-button,#fighterScreen .menu-footer>.confirm-button{padding:16px 36px;font-size:24px;color:#030712;background:#ffb522}
 #titleScreen>.menu-footer{position:absolute;inset:auto 3vw 20px;width:auto}
 #stageScreen>.menu-footer{margin-top:20px}
@@ -277,7 +277,7 @@ select{background:#0a142b}.confirm-button{background:#ffb522;color:#030712}.figh
 .online-panel { min-width:0; padding:20px; background:#0a142be8; border:1px solid var(--line); }
 .online-panel label { display:block; font-weight:700; font-size:14px; letter-spacing:1px; margin-bottom:12px; }
 .online-panel input,.online-panel select { display:block; width:100%; padding:10px; margin-top:6px; color:var(--paper); background:#1e1b4b; border:1px solid var(--line); font:inherit; }
-.online-panel button { padding:10px 14px; border:1px solid var(--gold); font-weight:700; margin:5px 0; }
+.online-panel button,.nickname-dialog button { margin:0; font-weight:800; letter-spacing:2px; font-size:16px; padding:14px 24px; min-height:48px; }
 .online-panel h3 { font-size:20px; color:var(--gold); margin:10px 0; }
 .online-actions { display:flex; gap:10px; flex-wrap:wrap; align-items:center; }
 .online-note { color:var(--muted); font-size:13px; line-height:1.5; }
@@ -294,7 +294,6 @@ select{background:#0a142b}.confirm-button{background:#ffb522;color:#030712}.figh
 .nickname-dialog h2 { font:italic 700 38px 'Barlow Condensed',sans-serif; margin:12px 0 22px; }
 .nickname-dialog label { display:block; font-weight:700; }
 .nickname-dialog input { display:block; width:100%; margin-top:8px; padding:12px; border:1px solid var(--line); background:#0a142b; color:var(--paper); font:inherit; }
-.nickname-dialog button { padding:12px 20px; border:1px solid var(--gold); }
 .room-player { display:flex; align-items:center; justify-content:space-between; gap:16px; padding:16px 0; border-bottom:1px solid var(--line); }
 .player-ping { display:inline-flex; align-items:center; gap:8px; white-space:nowrap; color:var(--muted); }
 .player-ping[data-quality="good"] { color:#4ad89a; }
@@ -314,3 +313,6 @@ select{background:#0a142b}.confirm-button{background:#ffb522;color:#030712}.figh
 #onlineEntry > label { display:grid; gap:10px; margin:6px 0 0; }
 .online-panel > .online-actions { margin-bottom:16px; }
 #roomList + .online-actions { margin-top:28px; padding-top:24px; border-top:1px solid var(--line); }
+#onlineJoinActions { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; }
+@media(max-width:650px) and (orientation:portrait) { .online-panel button,.nickname-dialog button { padding:10px 12px; font-size:15px; min-height:40px; } }
+@media(max-height:600px) and (orientation:landscape) { .online-panel button,.nickname-dialog button { padding:8px 18px; font-size:14px; min-height:36px; } }

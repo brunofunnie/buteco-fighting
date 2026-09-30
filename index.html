@@ -32,7 +32,7 @@
 <header class="screen-heading"><span>VERSUS ONLINE / COLYSEUS</span><h2>ENCONTRE SEU RIVAL</h2></header>
 <p id="onlineStatus" role="status" aria-live="polite">Crie uma sala e convide um desafiante.</p>
 <div class="online-layout"><div class="online-panel">
-<div id="onlineEntry"><button id="createRoom">CRIAR SALA</button><label>CÓDIGO DA SALA <input id="roomCode" maxlength="32" placeholder="Cole o código do anfitrião" autocapitalize="off"></label><button id="joinRoom">ENTRAR NA SALA</button><button id="watchRoom">ASSISTIR</button></div>
+<div id="onlineEntry"><button id="createRoom">CRIAR SALA</button><label>CÓDIGO DA SALA <input id="roomCode" maxlength="32" placeholder="Cole o código do anfitrião" autocapitalize="off"></label><div id="onlineJoinActions"><button id="joinRoom">ENTRAR NA SALA</button><button id="watchRoom">ASSISTIR SALA</button></div></div>
 <div id="onlineRoom" hidden><p>SALA <strong id="roomId"></strong></p><button id="copyRoom">COPIAR CONVITE</button><div id="roomPlayers"></div><div class="online-actions"><button id="onlineStart">INICIAR PARTIDA</button><button id="onlineKick">EXPULSAR DESAFIANTE</button><button id="leaveRoom">SAIR DA SALA</button></div></div>
 </div><div class="online-panel"><div class="online-actions"><h3>SALAS ABERTAS</h3><button id="refreshRooms">ATUALIZAR</button></div><div id="roomList"></div><div class="online-actions"><h3>RANKING</h3></div><p class="online-note">Vitórias em melhor de três. Perfect: vencer a partida sem sofrer dano. Desconexão durante a luta conta como derrota.</p><div class="ranking-scroll"><table><thead><tr><th>#</th><th>JOGADOR</th><th>VITÓRIAS</th><th>PERFECTS</th><th>DERROTAS</th></tr></thead><tbody id="rankingRows"></tbody></table></div></div></div>
 </section>
