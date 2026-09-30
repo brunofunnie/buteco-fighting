@@ -309,3 +309,8 @@ select{background:#0a142b}.confirm-button{background:#ffb522;color:#030712}.figh
 .player-ping { flex-shrink:0; }
 
 .room-list-row{display:flex;flex-wrap:wrap;align-items:center;gap:10px;padding:12px 0;border-bottom:1px solid #ffffff20}.room-list-row>span{flex:1 1 100%;overflow-wrap:anywhere}
+
+#onlineEntry { display:flex; flex-direction:column; gap:18px; }
+#onlineEntry > label { display:grid; gap:10px; margin:6px 0 0; }
+.online-panel > .online-actions { margin-bottom:16px; }
+#roomList + .online-actions { margin-top:28px; padding-top:24px; border-top:1px solid var(--line); }
