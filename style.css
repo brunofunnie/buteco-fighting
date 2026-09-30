@@ -268,3 +268,23 @@ select{background:#0a142b}.confirm-button{background:#ffb522;color:#030712}.figh
 .title-team > canvas[data-title-player="miranda"] { scale: .9; transform-origin: center bottom; }
 #stageScreen { isolation: isolate; overflow: hidden; background: #0a142b; }
 #stageScreen::before { content: ""; position: absolute; inset: -24px; z-index: -1; pointer-events: none; background-image: linear-gradient(#03071250, #03071299), var(--stage-background); background-size: cover; background-position: center; filter: blur(12px); }
+
+#onlineScreen { justify-content: flex-start; overflow-y: auto; padding-top: 65px; padding-bottom: 30px; }
+#onlineScreen .screen-heading { margin-bottom: 12px; }
+#onlineScreen .screen-heading h2 { font-size: clamp(30px,5vw,60px); }
+#onlineStatus { color: var(--paper); text-align: center; margin: 8px 0 20px; }
+.online-layout { display:grid; grid-template-columns: 1fr 1fr; gap:20px; width:min(1200px,100%); }
+.online-panel { min-width:0; padding:20px; background:#0a142be8; border:1px solid var(--line); }
+.online-panel label { display:block; font-weight:700; font-size:14px; letter-spacing:1px; margin-bottom:12px; }
+.online-panel input,.online-panel select { display:block; width:100%; padding:10px; margin-top:6px; color:var(--paper); background:#1e1b4b; border:1px solid var(--line); font:inherit; }
+.online-panel button { padding:10px 14px; border:1px solid var(--gold); font-weight:700; margin:5px 0; }
+.online-panel h3 { font-size:20px; color:var(--gold); margin:10px 0; }
+.online-actions { display:flex; gap:10px; flex-wrap:wrap; align-items:center; }
+.online-note { color:var(--muted); font-size:13px; line-height:1.5; }
+.room-list-item { display:block; width:100%; text-align:left; overflow-wrap:anywhere; }
+.ranking-scroll { overflow-x:auto; max-height:300px; }
+.ranking-scroll table { width:100%; border-collapse:collapse; font-size:13px; }
+.ranking-scroll td,.ranking-scroll th { text-align:left; padding:8px; border-bottom:1px solid var(--line); }
+#onlineScreen > .menu-footer { margin-top:20px; }
+#modeScreen .mode-option { padding-block:clamp(8px,1.5vh,18px); }
+@media(max-width:700px) { .online-layout { grid-template-columns:1fr; } .online-panel { padding:14px; } }

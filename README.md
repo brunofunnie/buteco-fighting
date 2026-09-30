@@ -95,6 +95,18 @@ Player 2 can also use the numeric keypad. Hold block to defend; touch devices di
 
 **Menus:** WASD or arrow keys navigate; Enter / J / 1 confirm; Esc / K / 2 go back. **Q** switches between player and rival during character selection. Sound preferences persist in your browser.
 
+## Versus online
+
+Choose **VERSUS ONLINE**, enter a nickname, and create a room or join by invitation/code. Open rooms are listed in the lobby. Each player chooses a fighter and confirms readiness; the host selects the arena and starts the best-of-three match. The host can expel a challenger before the match, which also blocks that browser identity from rejoining that room. A full or active room cannot accept another player.
+
+Colyseus 0.18 runs on the same HTTP/WebSocket endpoint as the game. The server runs the shared combat simulation at 120 Hz and sends snapshots at 30 Hz. Clients send controls only; damage and results are server-authoritative. In an online match each player uses their own Player 1 keyboard/gamepad/touch mapping, including the challenger in the P2 seat. Opening the pause/options menu stops your input while the online match continues.
+
+The leaderboard stores wins, perfect wins and losses in SQLite. A win is a completed best-of-three match; a perfect win means the winner took no damage throughout the match. Disconnecting during a live fight forfeits the match without perfect credit. Lobby departures and expulsions award no points. The guest identity is a browser-local token, not an account with cross-device login; clearing localStorage creates a new identity. Nicknames may be shared; server identities stay separate.
+
+Set `RANKING_DB` to the SQLite file path. Both Compose configurations mount `online-data:/data`, so identity and ranking data survive deploys and restarts. Back up this volume and do not remove it when redeploying. Local development defaults to the ignored `data/rankings.sqlite`.
+
+Open Graph and Twitter cards use the generated cover at `assets/social/buteco-fighting-og.png` (1200×630) and the canonical address `https://fighting.butecodosdevs.com/`.
+
 ## The regulars
 
 **28 fighters. Every one has something to prove.**
@@ -186,6 +198,8 @@ Focused checks:
 | `npm run test:power:preview` | All 28 demonstrations in both directions, damage, resets and lifecycle. |
 | `npm run test:ui` | Menus, responsive layout, scrolling and character selection. |
 | `npm run test:selection:demo` | Alternation, rapid selection changes and Cartesian previews. |
+| `npm run test:online` | Real Colyseus clients, room permissions, kick/ban, loading, authoritative results, ranking and SQLite persistence. |
+| `npm run test:online:browser` | Two-browser online flow, networking, sharing tags, responsive lobby and cancellation races; defaults to port 3194. |
 | `npm run test:controls` | Saved keyboard remapping, controller input, menu navigation, air attacks, touch, pause, disconnects and stage backgrounds. |
 | `npm run test:options` | Audio, fullscreen, keyboard navigation and focus restoration. |
 | `npm run test:menu:actions` | Focused Back and Options actions across menus. |

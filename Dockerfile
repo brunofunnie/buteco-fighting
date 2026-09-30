@@ -9,6 +9,10 @@ RUN npm ci --omit=dev --no-audit --no-fund && npm cache clean --force
 COPY *.js *.css index.html server.mjs ./
 COPY assets/ ./assets/
 
+RUN mkdir -p /data && chown node:node /data
+ENV RANKING_DB=/data/rankings.sqlite
+VOLUME /data
+
 USER node
 EXPOSE 80
 HEALTHCHECK --interval=30s --timeout=5s --start-period=10s --retries=3 \

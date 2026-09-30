@@ -15,3 +15,6 @@ assets/generated/
 **/__pycache__/
 *.pyc
 .DS_Store
+
+# Persistent online rankings and guest identities.
+data/

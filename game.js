@@ -73,6 +73,7 @@ export class FightGame {
         e.preventDefault();
       if (!this.keys.has(e.code)) this.pressed.add(e.code);
       this.keys.add(e.code);
+      if (this.options.online) this.sendOnlineInput();
       if (e.code === "Escape" && !e.repeat) {
         if (this.paused) this.resume();
         else {
@@ -82,7 +83,7 @@ export class FightGame {
       }
       this.initAudio();
     };
-    this.onKeyUp = (e) => this.keys.delete(e.code);
+    this.onKeyUp = (e) => { this.keys.delete(e.code); if (this.options.online) this.sendOnlineInput(); };
     this.onBlur = () => {
       this.keys.clear();
       this.pressed.clear();
@@ -106,7 +107,7 @@ export class FightGame {
     stage = 0,
     difficulty = "normal",
   } = {}) {
-    cancelAnimationFrame(this.frame);
+    if (!this.options.headless) cancelAnimationFrame(this.frame);
     this.player = FIGHTERS[player] ? player : "maya";
     this.opponent = FIGHTERS[opponent] ? opponent : Object.keys(FIGHTERS).find(id => id !== this.player);
     this.mode = mode;
@@ -119,7 +120,7 @@ export class FightGame {
     this.paused = false;
     this.resetRound();
     this.last = performance.now();
-    this.frame = requestAnimationFrame(this.loop);
+    if (!this.options.headless) this.frame = requestAnimationFrame(this.loop);
   }
   resetRound() {
     this.fighters = [
@@ -212,6 +213,7 @@ export class FightGame {
     return this.snapshot();
   }
   pause() {
+    this.options.onInput?.([]);
     this.paused = true;
     this.keys.clear();
     this.pressed.clear();
@@ -222,14 +224,14 @@ export class FightGame {
   }
   destroy() {
     this.running = false;
-    cancelAnimationFrame(this.frame);
+    if (!this.options.headless) cancelAnimationFrame(this.frame);
     if (this.options.interactive !== false) {
       window.removeEventListener("keydown", this.onKeyDown);
       window.removeEventListener("keyup", this.onKeyUp);
       window.removeEventListener("blur", this.onBlur);
     }
     this.audio?.close().catch(() => {});
-    if (window.__fight === this) delete window.__fight;
+    if (typeof window !== "undefined" && window.__fight === this) delete window.__fight;
   }
   initAudio() {
     audioDirector.unlock().catch(()=>{});
@@ -270,7 +272,17 @@ export class FightGame {
   get controls() { return this.options.interactive === false ? DEFAULT_CONTROLS : controlSettings.keyboard; }
   inputHeld(index, action) { return [this.controls[index][action]].flat().some(k => this.keys.has(k)) || !!this.padFrames?.[index]?.held.has(action); }
   inputPressed(index, action) { return [this.controls[index][action]].flat().some(k => this.pressed.has(k)) || !!this.padFrames?.[index]?.pressed.has(action); }
+  sendOnlineInput() {
+    if (this.paused) { this.options.onInput?.([]); return; }
+    this.options.onInput?.(Object.keys(DEFAULT_CONTROLS[0]).filter(action => this.inputHeld(0, action)));
+  }
   update(dt) {
+    if (this.options.online) {
+      this.padFrames = gamepads.poll();
+      this.sendOnlineInput();
+      if (this.padFrames.some(p => p.pressed.has("pause"))) { this.pause(); this.options.onPause?.(); }
+      return;
+    }
     if (this.options.interactive !== false) {
       this.padFrames = gamepads.poll();
       if (this.padFrames.some(p => p.pressed.has("pause"))) { this.pause(); this.options.onPause?.(); return; }

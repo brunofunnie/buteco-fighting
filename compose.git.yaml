@@ -10,9 +10,10 @@ services:
     environment:
       NODE_ENV: production
       PORT: "80"
+      RANKING_DB: /data/rankings.sqlite
     entrypoint: ["/bin/sh", "-ec"]
     command:
-      - cp /repo/*.js /repo/*.css /repo/index.html /repo/server.mjs /repo/package*.json /app/ && ln -sfn /repo/assets /app/assets && npm ci --omit=dev --no-audit --no-fund --cache /tmp/npm-cache && exec su node -s /bin/sh -c 'exec node server.mjs'
+      - cp /repo/*.js /repo/*.css /repo/index.html /repo/server.mjs /repo/package*.json /app/ && ln -sfn /repo/assets /app/assets && npm ci --omit=dev --no-audit --no-fund --cache /tmp/npm-cache && mkdir -p /data && chown node:node /data && exec su node -s /bin/sh -c 'exec node server.mjs'
     volumes:
       # Dockhand copies the Git checkout here before starting the stack.
       # Mount only this stack's directory, never the whole Dockhand data volume.
@@ -24,6 +25,7 @@ services:
           nocopy: true
           subpath: ${DOCKHAND_STACK_SUBPATH:-stacks/Bender/buteco-fighting}
       - runtime:/app
+      - online-data:/data
     expose:
       - "80"
     networks:
@@ -45,6 +47,7 @@ volumes:
     external: true
     name: ${DOCKHAND_DATA_VOLUME:-dockhand_data}
   runtime:
+  online-data:
 
 networks:
   bender-network:

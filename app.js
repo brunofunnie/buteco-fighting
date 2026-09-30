@@ -1,3 +1,4 @@
+import {OnlineVersus} from "./online.js";
 import {controlSettings, DEFAULT_CONTROLS, ACTION_LABELS, keyLabel, gamepads} from "./controls.js";
 import {audioDirector} from "./audio.js";
 import { FightGame } from "./phaser-game.js";
@@ -285,7 +286,7 @@ function setSelectionSlot(slot) {
 for (const button of document.querySelectorAll("[data-slot]")) button.addEventListener("click",()=>setSelectionSlot(button.dataset.slot));
 renderSelection();
 let screen = "title", transitionTimer, campaign = null, campaignComplete = false;
-const screenIds = {title:"titleScreen",mode:"modeScreen",fighter:"fighterScreen",stage:"stageScreen",versus:"versusScreen"};
+const screenIds = {title:"titleScreen",mode:"modeScreen",fighter:"fighterScreen",stage:"stageScreen",online:"onlineScreen",versus:"versusScreen"};
 const menuActions=document.querySelector(".menu-footer");
 let dockedConfirm;
 function dockMenuActions(next) {
@@ -334,7 +335,7 @@ function setOverlay(state, winner) {
   $("#rematchButton").textContent = champion ? "JOGAR NOVAMENTE" : "REVANCHE";
   $("#overlayEyebrow").textContent = state === "pause" ? "PAUSE MENU" : champion ? "ARCADE COMPLETE" : campaign ? `STAGE ${campaign.index+1} / 3` : "MATCH RESULT";
   $("#overlayTitle").textContent = state === "pause" ? "PAUSADO" : champion ? "CAMPEÃO DAS RUAS" : winner === "draw" ? "EMPATE" : `${String(FIGHTERS[winner]?.name || winner?.name || winner || "").toUpperCase()} VENCEU`;
-  $("#overlayDescription").textContent = state === "pause" ? "Volte para o próximo round." : advancing ? "O próximo desafio espera em outra parte da cidade." : champion ? "Três arenas. Uma vitória definitiva." : campaign && !won ? "A cidade ainda não conhece seu nome. Tente de novo." : "Pronto para uma revanche?";
+  $("#overlayDescription").textContent = state === "pause" ? (game?.options.online ? "A partida online continua. Seu lutador fica parado enquanto este menu está aberto." : "Volte para o próximo round.") : advancing ? "O próximo desafio espera em outra parte da cidade." : champion ? "Três arenas. Uma vitória definitiva." : campaign && !won ? "A cidade ainda não conhece seu nome. Tente de novo." : "Pronto para uma revanche?";
   (state === "pause" ? $("#resumeButton") : advancing ? $("#nextStageButton") : $("#rematchButton")).focus();
 }
 async function versus(config = {}, newCampaign = false) {
@@ -420,6 +421,7 @@ function pause() {
   setOverlay("pause");
 }
 function backToMenu() {
+  if (game?.options.online) { online.leave(); return; }
   document.body.classList.remove("overlay-open");
   document.body.classList.remove("in-match");
   game?.destroy();
@@ -459,13 +461,13 @@ for (const button of document.querySelectorAll("[data-stage]"))
     }
   });
 $("#titleStart").addEventListener("click", () => showScreen("mode"));
-$("#modeNext").addEventListener("click", () => showScreen("fighter"));
+$("#modeNext").addEventListener("click", () => { if(selection.mode==="online"){showScreen("online");online.refresh();}else showScreen("fighter"); });
 $("#fighterNext").addEventListener("click", () => showScreen("stage"));
 $("#startButton").addEventListener("click", () => versus({}, true));
-$("#backButton").addEventListener("click", () => showScreen({mode:"title",fighter:"mode",stage:"fighter"}[screen] || "title"));
+$("#backButton").addEventListener("click", async () => { if(screen==="online"){await online.leave();showScreen("mode");return;}showScreen({mode:"title",fighter:"mode",stage:"fighter"}[screen] || "title"); });
 $("#nextStageButton").addEventListener("click", () => { campaign.index++; versus({stage:campaign.stages[campaign.index]}); });
 $("#resumeButton").addEventListener("click", resume);
-$("#rematchButton").addEventListener("click", () => { if(campaignComplete) { campaign = null; backToMenu(); } else versus(); });
+$("#rematchButton").addEventListener("click", () => { if(game?.options.online){online.returnToLobby();return;} if(campaignComplete) { campaign = null; backToMenu(); } else versus(); });
 $("#menuButton").addEventListener("click", backToMenu);
 $("#pauseButton").addEventListener("click", pause);
 let optionsReturnFocus;
@@ -548,6 +550,21 @@ window.addEventListener("keydown", (event) => {
     } else if (["enter"," ","j","1"].includes(key)) { event.preventDefault(); if(!event.repeat) document.activeElement.click(); }
     return;
   }
+  if(screen==='online' && !game) {
+    const key=event.key.toLowerCase(),active=document.activeElement;
+    if(key==='escape'){event.preventDefault();$('#backButton').click();return;}
+    if(active?.tagName==='INPUT'&&event.target===active&&key!=='tab')return;
+    if(active?.tagName==='SELECT') {
+      const delta=['arrowleft','arrowup','a','w'].includes(key)?-1:['arrowright','arrowdown','d','s'].includes(key)?1:0;
+      if(delta){event.preventDefault();active.selectedIndex=(active.selectedIndex+delta+active.options.length)%active.options.length;active.dispatchEvent(new Event('change',{bubbles:true}));return;}
+    }
+    if(['arrowleft','arrowup','arrowright','arrowdown','tab'].includes(key)) {
+      event.preventDefault();const controls=[...$('#onlineScreen').querySelectorAll('button,select,input')].filter(el=>!el.disabled&&el.getClientRects().length);
+      const delta=event.shiftKey||['arrowleft','arrowup'].includes(key)?-1:1;controls[(controls.indexOf(active)+delta+controls.length)%controls.length]?.focus();return;
+    }
+    if(['enter',' '].includes(key)&&active?.tagName==='BUTTON'){event.preventDefault();if(!event.repeat)active.click();}
+    return;
+  }
   const footerAction=event.target.closest?.(".menu-footer button");
   if (footerAction && ["enter"," ","j","1"].includes(event.key.toLowerCase())) {
     event.preventDefault();
@@ -627,6 +644,37 @@ for (const button of document.querySelectorAll("[data-key]")) {
   for (const type of ["pointerup", "pointercancel", "lostpointercapture"])
     button.addEventListener(type, () => send("keyup"));
 }
+const online=new OnlineVersus({
+  prepare: async ({players,stage,matchId}) => {
+    const room=online.room;
+    await Promise.all(players.map(p=>loadFighter(p.fighter)));
+    if(online.room!==room||online.lobby?.phase!=='loading'||online.lobby.matchId!==matchId) return false;
+    campaign=null;Object.assign(selection,{player:players[0].fighter,opponent:players[1].fighter,stage,mode:'online'});
+    game?.destroy();document.body.classList.add('in-match');document.body.classList.remove('overlay-open');
+    $('#menu').hidden=true;$('#gameScreen').hidden=false;$('#matchOverlay').hidden=true;overlayState=null;screen='fight';
+    $('#matchLabel').textContent=`VERSUS ONLINE · VOCÊ: P${online.slot+1} / ${stageNames[stage]}`;
+    game=new FightGame($('#gameCanvas'),assets,{stageArt,crowdArt,muted,online:true,onInput:held=>online.sendInput(held),onPause:()=>setOverlay('pause')});
+    game.start({...selection,mode:'versus'});game.phase='intro';$('#gameCanvas').focus();applyMute();return true;
+  },
+  frame: snapshot => {
+    if(!game?.options.online)return;
+    const previous=game.fighters;
+    Object.assign(game,snapshot);
+    game.projectiles=snapshot.projectiles.map(p=>({...p,owner:game.fighters[p.owner],hitTargets:new Set()}));
+    game.fighters.forEach((f,i)=>{if(previous[i]?.health>f.health)game.sound(f.guard?'block':'hit',f);else if(f.action&&f.action!==previous[i]?.action)game.sound(f.action==='super'?'super':f.action==='special'?'special':'punch',f);});
+  },
+  result: result => {
+    if(!game?.options.online)return;
+    game.options.onInput?.([]);game.paused=true;
+    setOverlay('end',selection[result.winner===0?'player':'opponent']);
+    $('#overlayTitle').textContent=`${result.name.toUpperCase()} VENCEU${result.perfect?' · PERFECT!':''}`;
+    $('#overlayDescription').textContent=result.reason==='disconnect'?'Vitória por desconexão. Resultado registrado no ranking.':'Resultado registrado no ranking. Volte à sala para uma nova partida.';
+    $('#rematchButton').textContent='VOLTAR À SALA';
+  },
+  exit: () => {
+    if(game?.options.online){game.destroy();game=null;$('#gameScreen').hidden=true;$('#matchOverlay').hidden=true;$('#menu').hidden=false;overlayState=null;document.body.classList.remove('in-match','overlay-open');showScreen('online');}
+  },
+});
 let controllerSummary='';
 function menuGamepads() {
   if (!game?.running || game.paused) {
@@ -690,4 +738,5 @@ window.__ui = {
   selection,
   get screen() { return screen; },
   get campaign() { return campaign; },
+  online,
 };

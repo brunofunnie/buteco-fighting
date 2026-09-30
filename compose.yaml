@@ -11,6 +11,9 @@ services:
     environment:
       NODE_ENV: production
       PORT: "80"
+      RANKING_DB: /data/rankings.sqlite
+    volumes:
+      - online-data:/data
     expose:
       - "80"
     networks:
@@ -24,3 +27,6 @@ services:
 networks:
   bender-network:
     external: true
+
+volumes:
+  online-data:
