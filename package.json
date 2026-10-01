@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node server.mjs",
     "dev": "node server.mjs",
-    "check": "node --check roster.js && node --check app.js && node --check game.js && node --check phaser-game.js && node --check stages.js && node --check crowd-layout.js && node --check audio.js && node --check music.js && node --check server.mjs && node --check controls.js && node --check online.js && node --check online-room.js && node --check ranking.js && node --check collision.js && node --check collision-data.js",
+    "check": "node --check roster.js && node --check app.js && node --check display-effects.js && node --check game.js && node --check phaser-game.js && node --check stages.js && node --check crowd-layout.js && node --check audio.js && node --check music.js && node --check server.mjs && node --check controls.js && node --check online.js && node --check online-room.js && node --check ranking.js && node --check collision.js && node --check collision-data.js",
     "test": "node harness/playtest.mjs",
     "sprites:publish": "node harness/sprites.mjs",
     "sprites:organize": "node harness/organize-assets.mjs",

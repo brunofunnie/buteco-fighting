@@ -1,3 +1,4 @@
+import "./display-effects.js";
 import {OnlineVersus} from "./online.js";
 import {controlSettings, DEFAULT_CONTROLS, ACTION_LABELS, keyLabel, gamepads} from "./controls.js";
 import {audioDirector} from "./audio.js";
@@ -64,6 +65,13 @@ function image(path) {
     img.src = path;
   });
 }
+let startupProgress = 0;
+function updateStartupProgress(value) {
+  startupProgress = Math.max(startupProgress, Math.min(100, Math.floor(value)));
+  $("#titleProgress").setAttribute("aria-valuenow", startupProgress);
+  $("#loadPercent").textContent = `${startupProgress}%`;
+  document.querySelectorAll('.beer-mug').forEach((mug,index)=>mug.style.setProperty('--fill',`${Math.max(0,Math.min(100,(startupProgress-index*10)*10))}%`));
+}
 async function loadAssets() {
   const result = {};
   let manifest = {};
@@ -72,7 +80,13 @@ async function loadAssets() {
     if (response.ok) manifest = await response.json();
   } catch {}
   spriteManifest = manifest;
-  Object.assign(result, Object.fromEntries(await Promise.all(fighterIds.map(async name => [name, {idle:[await image(sources[name])]}]))));
+  updateStartupProgress(2);
+  let portraitsLoaded = 0;
+  Object.assign(result, Object.fromEntries(await Promise.all(fighterIds.map(async name => {
+    const portrait = await image(sources[name]);
+    updateStartupProgress(2 + ++portraitsLoaded / fighterIds.length * 33);
+    return [name, {idle:[portrait]}];
+  }))));
   assets = result;
   for(const id of fighterIds) {
     const portrait=result[id].idle[0],bounds=portraitBounds(portrait);
@@ -83,11 +97,16 @@ async function loadAssets() {
     prepareIdlePreview(id);
   }
   // Keep startup small; only the selected pair's animations are decoded.
-  await Promise.all([loadFighter("maya"), loadFighter("bruno")]);
+  const initialFrames = ["maya","bruno"].reduce((total,id)=>total+Object.values(manifest[id]||{}).reduce((n,state)=>n+(Array.isArray(state)?state:state.frames||[]).length,0),0);
+  let decodedFrames = 0;
+  const frameLoaded = ()=>updateStartupProgress(35 + ++decodedFrames / Math.max(1,initialFrames) * 45);
+  await Promise.all([loadFighter("maya",frameLoaded), loadFighter("bruno",frameLoaded)]);
+  updateStartupProgress(80);
   stageArt = await Promise.all(
     stageArtSources.map(name =>
       image(`assets/stages/${name}.png`).catch(() => null)),
   );
+  updateStartupProgress(85);
   try {
     const response = await fetch("assets/stages/public-v6/crowd-manifest.json");
     if (response.ok) {
@@ -104,6 +123,7 @@ async function loadAssets() {
       })));
     }
   } catch {}
+  updateStartupProgress(92);
   try {
     const response = await fetch("assets/stages/v8/npcs/crowd-manifest.json");
     if(response.ok) {
@@ -114,6 +134,8 @@ async function loadAssets() {
       }
     }
   } catch {}
+  await Promise.all([$(".title-villain img").decode(), $(".title-brand img").decode()]);
+  updateStartupProgress(99);
   stageArt.forEach((art, index) => {
     if (!art) return;
     const preview = document.querySelector(`[data-stage="${index}"] .arena-art`);
@@ -126,7 +148,7 @@ async function loadAssets() {
 }
 let spriteManifest = {}, fighterLoading = new Map();
 const loadedFighters = new Set(), basePortraits = new Map();
-async function loadFighter(name) {
+async function loadFighter(name, onFrameLoaded) {
   if (fighterLoading.has(name)) return fighterLoading.get(name);
   const promise = (async () => {
     if (!spriteManifest[name]?.idle) throw new Error("As animações deste lutador ainda não estão disponíveis.");
@@ -136,6 +158,7 @@ async function loadFighter(name) {
       const files = Array.isArray(paths) ? paths : paths.frames || [];
       const loaded = await Promise.all(files.map(async file => {
         const img = await image(typeof file === "string" ? file : file.path);
+        onFrameLoaded?.();
         if (typeof file === "object") img.spriteMeta = {scale:file.scale,anchorX:file.anchorX,anchorY:file.anchorY};
         return img;
       }));
@@ -810,11 +833,17 @@ window.addEventListener("keydown",unlockSound,{capture:true});
 document.addEventListener("click",event=>{const button=event.target.closest?.("button");if(button)audioDirector.play(/Next|Start|startButton/.test(button.id)?"confirm":"select",{volume:.22});});
 applyMute();
 loadAssets()
-  .then((loaded) => {
+  .then(async (loaded) => {
     assets = loaded;
     const animated = Object.values(assets).some(
       (fighter) => Object.keys(fighter).length > 1,
     );
+    updateStartupProgress(100);
+    await new Promise(resolve=>setTimeout(resolve,300));
+    $("#titleScreen").classList.remove("is-loading");
+    $("#titleScreen").classList.add("is-ready");
+    $("#titleScreen").setAttribute("aria-busy","false");
+    $("#titleLoading").hidden = true;
     $("#loadStatus").textContent = "";
     $("#titleStart").textContent = "APERTE START";
     $("#titleStart").disabled = false;
