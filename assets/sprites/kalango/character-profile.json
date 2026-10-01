@@ -1,0 +1,21 @@
+{
+  "id": "kalango",
+  "name": "Kalango",
+  "source": "assets/sprites/kalango/base-source.png",
+  "identity": "Tan adult man with buzz-cut dark hair, black rectangular glasses, dark navy T-shirt with orange code emblem, fingerless black-orange gloves, black cargo trousers with orange straps, hip badge and utility pouches, black-white-orange sneakers. Preserve actual attached pouches and badges.",
+  "color": "#eea24b",
+  "speed": 330,
+  "tempo": 0.9,
+  "visualHeight": 320,
+  "damage": {
+    "punch": 7,
+    "kick": 12
+  },
+  "tagline": "CÓDIGO EM CHAMAS",
+  "power": {
+    "kind": "codefire",
+    "label": "Faísca laranja",
+    "superLabel": "Compilação explosiva",
+    "description": "Projéteis de fogo digital explodem ao atingir o rival."
+  }
+}

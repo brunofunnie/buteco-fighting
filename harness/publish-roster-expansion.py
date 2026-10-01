@@ -2,6 +2,7 @@
 
 Run with the sprite-gen virtualenv after review.json is written for each run.
 """
+import argparse
 import hashlib
 import json
 import math
@@ -14,17 +15,20 @@ from review_binding import review_fingerprint
 
 def published_frame_name(fid, source):
     # Keep Maya's old frames intact until the new manifest is committed.
-    return f'roster-v15-{source.name}' if fid == 'maya-b' else source.name
+    return f'{Path(profiles[fid]["generationRun"]).name}-{source.name}' if fid in replacements else source.name
 
 def atomic_copy(source, destination):
     temporary = destination.with_name(destination.name + '.tmp')
     shutil.copy2(source, temporary)
     os.replace(temporary, destination)
 
-ROOT=Path('assets/sprites/_generation/roster-v15')
-profiles=json.loads((ROOT/'roster.json').read_text())
+parser=argparse.ArgumentParser()
+parser.add_argument('--registry',type=Path,default=Path('assets/sprites/_generation/roster-v15/roster.json'))
+args=parser.parse_args()
+profiles=json.loads(args.registry.read_text())
+replacements={fid for fid,p in profiles.items() if p.get('replaceExisting',fid=='maya-b')}
 catalog=json.loads(subprocess.check_output(['node','--input-type=module','-e',"import {FIGHTERS} from './roster.js';process.stdout.write(JSON.stringify(FIGHTERS))"],text=True))
-conflicts=[fid for fid in profiles if fid!='maya-b' and fid in catalog]
+conflicts=[fid for fid in profiles if fid not in replacements and fid in catalog]
 if conflicts: raise RuntimeError(f'Already published fighter IDs: {conflicts}; no assets changed')
 manifest_path=Path('assets/manifest.json')
 manifest=json.loads(manifest_path.read_text())
@@ -81,16 +85,17 @@ for fid,profile in profiles.items():
         if len(set(hashes))!=len(hashes): raise RuntimeError(f'{fid}/{state}: static repeated frames')
         runtime[state]={'frames':[dict(path=f'assets/sprites/{fid}/curated/{published_frame_name(fid,Path(e["path"]))}',**{key:e[key] for key in ('scale','anchorX','anchorY')}) for e in entries],'fps':request['states'][state]['fps'],'loop':request['states'][state]['loop']}
     if sum(len(s['frames']) for s in runtime.values())!=100: raise RuntimeError(f'{fid}: wrong total frame count')
-    if fid=='maya-b':
+    if fid in replacements:
         fighter=catalog[fid].copy()
         fighter['identity']=profile['identity']
     else:
         template=next(f for f in catalog.values() if f['power']['kind']==profile['powerKind'])
         power=template['power'].copy()
-        power['label'],power['superLabel'],tagline=LABELS[fid]
+        power['label'],power['superLabel'],tagline=profile.get('powerLabels') or LABELS[fid]
         agile=fid in {'astha','biskit','cody','litte-faster','sonee','tony-etch','zero-6'}
         heavy=fid in {'daddy-ianky','gabiest','mountain','sleep','wes'}
         fighter={'id':fid,'name':profile['name'],'source':f'assets/sprites/{fid}/base-source.png','identity':profile['identity'],'color':profile['color'],'speed':330 if agile else 270 if heavy else 300,'tempo':.9 if agile else 1.07 if heavy else .98,'visualHeight':320,'damage':{'punch':7 if agile else 10 if heavy else 8,'kick':12 if agile else 15 if heavy else 13},'tagline':tagline,'power':power}
+        fighter.update(profile.get('stats',{}))
     staged[fid]=(run,runtime,fighter,metrics)
 
 roster_path=Path('roster.js')
@@ -100,17 +105,17 @@ if roster_text.count(marker)!=1: raise RuntimeError('Cannot locate roster bounda
 additions=''
 for fid,(run,runtime,fighter,metrics) in staged.items():
     if fid in catalog:
-        if fid!='maya-b': raise RuntimeError(f'{fid}: already published')
+        if fid not in replacements: raise RuntimeError(f'{fid}: already published')
         lines=roster_text.splitlines(keepends=True)
-        matching=[i for i,line in enumerate(lines) if line.lstrip().startswith("'maya-b':") or line.lstrip().startswith('"maya-b":')]
-        if len(matching)!=1: raise RuntimeError('Cannot locate existing Maya B')
+        matching=[i for i,line in enumerate(lines) if line.lstrip().startswith(f"'{fid}':") or line.lstrip().startswith(json.dumps(fid)+':')]
+        if len(matching)!=1: raise RuntimeError(f'Cannot locate existing {fid}')
         lines[matching[0]]='  '+json.dumps(fid)+': '+json.dumps(fighter,ensure_ascii=False)+',\n'
         roster_text=''.join(lines)
     else:
         additions+='  '+json.dumps(fid)+': '+json.dumps(fighter,ensure_ascii=False)+',\n'
     asset=Path('assets/sprites')/fid
     (asset/'curated').mkdir(parents=True,exist_ok=True)
-    if fid=='maya-b':
+    if fid in replacements:
         backup=run/'previous-publication'
         backup.mkdir(exist_ok=True)
         for file in ('base-source.png','runtime-manifest.json','runtime-metrics.json','sprite-request.json','anatomy-annotations.json','provenance.json'):
@@ -128,7 +133,7 @@ for fid,(run,runtime,fighter,metrics) in staged.items():
     (asset/'runtime-metrics.json').write_text(json.dumps(metrics,indent=2)+'\n')
     (asset/'runtime-manifest.json').write_text(json.dumps(runtime,indent=2)+'\n')
     (asset/'character-profile.json').write_text(json.dumps(fighter,ensure_ascii=False,indent=2)+'\n')
-    (asset/'provenance.json').write_text(json.dumps({'runtimeId':fid,'assetName':fid,'generationRun':str(run),'suppliedReference':f'novos_player_para_implementar/{profiles[fid]["name"]}.png'},indent=2)+'\n')
+    (asset/'provenance.json').write_text(json.dumps({'runtimeId':fid,'assetName':fid,'generationRun':str(run),'suppliedReference':profile.get('suppliedReference',f'novos_player_para_implementar/{profile["name"]}.png')},indent=2)+'\n')
     (asset/'review.json').write_text((run/'review.json').read_text())
     manifest[fid]=runtime
 roster_text=roster_text.replace(marker,'\n'+additions+'};\nexport const fighterIds')
@@ -138,4 +143,4 @@ manifest_temp.write_text(json.dumps(manifest,indent=2)+'\n')
 roster_temp.write_text(roster_text)
 os.replace(manifest_temp,manifest_path)
 os.replace(roster_temp,roster_path)
-print('Published 22 new fighters and replaced Maya B with 2300 reviewed frames.')
+print(f'Published {len(staged)-len(replacements)} new fighters and {len(replacements)} replacements with {len(staged)*100} reviewed frames.')

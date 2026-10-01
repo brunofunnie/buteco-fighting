@@ -1,0 +1,157 @@
+{
+  "method": "manual-visual-crown-to-chin",
+  "units": "exported 384px cell pixels",
+  "uncertaintyPixels": 8,
+  "referenceIdleHead": 65,
+  "headSpans": {
+    "idle": [
+      65,
+      65,
+      65,
+      65
+    ],
+    "punch": [
+      65,
+      65,
+      60,
+      65
+    ],
+    "kick": [
+      65,
+      65,
+      65,
+      65
+    ],
+    "hurt": [
+      66,
+      65,
+      76,
+      68
+    ],
+    "jump": [
+      91,
+      87,
+      84,
+      95
+    ],
+    "special": [
+      70,
+      70,
+      68,
+      70
+    ],
+    "walk": [
+      65,
+      65,
+      65,
+      65,
+      65,
+      65
+    ],
+    "block": [
+      71,
+      71,
+      71,
+      71
+    ],
+    "crouch": [
+      82,
+      95,
+      107,
+      107
+    ],
+    "ko": [
+      74,
+      77,
+      70,
+      65
+    ],
+    "celebrate": [
+      70,
+      68,
+      58,
+      58
+    ],
+    "airPunch": [
+      90,
+      90,
+      81,
+      90
+    ],
+    "airKick": [
+      94,
+      93,
+      76,
+      94
+    ],
+    "crouchPunch": [
+      104,
+      104,
+      95,
+      104
+    ],
+    "crouchKick": [
+      107,
+      107,
+      76,
+      107
+    ],
+    "uppercut": [
+      79,
+      70,
+      54,
+      72
+    ],
+    "sweep": [
+      99,
+      99,
+      63,
+      99
+    ],
+    "dash": [
+      88,
+      86,
+      86,
+      88
+    ],
+    "backwalk": [
+      65,
+      65,
+      65,
+      65,
+      65,
+      65
+    ],
+    "lowBlock": [
+      70,
+      83,
+      105,
+      111
+    ],
+    "turn": [
+      70,
+      66,
+      70,
+      65
+    ],
+    "land": [
+      112,
+      87,
+      72,
+      72
+    ],
+    "jumpForward": [
+      109,
+      91,
+      115,
+      73
+    ],
+    "super": [
+      73,
+      73,
+      72,
+      73
+    ]
+  },
+  "notes": "Manual estimates from all 100 frame overview panels and all 24 full-size contact sheets. Crown includes top of bucket hat consistently, excludes trailing neck flap; rotated head measured along anatomical axis. No automated detector or GIF playback. Scales equal idle crown-to-chin/state frame span; original paths and anchors preserved. Replacement lowBlock and turn reinspected at full contact size and manually recalibrated; unchanged state scales restored."
+}

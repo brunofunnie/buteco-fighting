@@ -1,11 +1,14 @@
 import fs from 'node:fs/promises';
 import {chromium} from 'playwright';
 import {FIGHTERS,fighterIds} from '../roster.js';
+const testedFighters=process.env.ROSTER_TEST_FIGHTERS?.split(',')||fighterIds;
+if(testedFighters.some(id=>!FIGHTERS[id]))throw new Error('Unknown fighter in ROSTER_TEST_FIGHTERS');
 const browser = await chromium.launch({headless:true,args:['--no-sandbox']});
 const page = await browser.newPage({viewport:{width:1440,height:900}});
 const report={checks:[],errors:[],screenshots:[]};
 page.on('pageerror',e=>report.errors.push(e.message));
 const check=(name,pass,details)=>report.checks.push({name,pass:Boolean(pass),details});
+report.testedFighters=testedFighters;
 const snap=()=>page.evaluate(()=>window.__fight.snapshot());
 async function capture(name){const path=`artifacts/${name}.png`;await page.screenshot({path});report.screenshots.push(path);}
 async function menu(){await page.locator('#pauseButton').click();await page.locator('#menuButton').click();}
@@ -59,8 +62,8 @@ try {
  check('back cancels pending match without late auto-start',await page.evaluate(()=>window.__ui.screen==='fighter'&&!window.__ui.game));
  check('cancelled loading releases unselected animation cache',await page.evaluate(()=>Object.values(window.__ui.assets).filter(a=>Object.keys(a).length>1).length===2));
  await page.unroute(kingFrame);await page.locator('#backButton').click();
- for(let index=0;index<fighterIds.length;index++){
-  const id=fighterIds[index],opponent=fighterIds[(index+1)%fighterIds.length];await select(id,opponent);
+ for(const id of testedFighters){
+  const opponent=fighterIds[(fighterIds.indexOf(id)+1)%fighterIds.length];await select(id,opponent);
   let s=await snap();check(`${id}: selected pair starts`,s.fighters[0].id===id&&s.fighters[1].id===opponent);
   check(`${id}: catalog names reach HUD`,await page.evaluate(names=>window.__fight.fighters.every((f,i)=>f.name===names[i].toUpperCase()),[FIGHTERS[id].name,FIGHTERS[opponent].name]));
   const animation=await page.evaluate(id=>Object.fromEntries(Object.entries(window.__ui.assets[id]).map(([state,frames])=>[state,{count:frames.length,ready:frames.every(f=>f.complete&&f.naturalWidth&&f.spriteMeta&&Number.isFinite(f.spriteMeta.scale))}])),id);

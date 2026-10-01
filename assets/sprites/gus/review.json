@@ -1,0 +1,37 @@
+{
+  "reviewer": "independent manual visual QA",
+  "method": "Sequential inspection of all 100 exported frames on three all-frame panels, plus idle, turn, airKick, crouchKick, sweep, walk and backwalk contacts. Static sequential/contact inspection, no GIF playback claim.",
+  "motionReviewed": [
+    "idle",
+    "punch",
+    "kick",
+    "hurt",
+    "jump",
+    "special",
+    "walk",
+    "block",
+    "crouch",
+    "ko",
+    "celebrate",
+    "airPunch",
+    "airKick",
+    "crouchPunch",
+    "crouchKick",
+    "uppercut",
+    "sweep",
+    "dash",
+    "backwalk",
+    "lowBlock",
+    "turn",
+    "land",
+    "jumpForward",
+    "super"
+  ],
+  "errors": [],
+  "notes": [
+    "Identity, adult limbs, grounded support, airborne articulation, accessory attachment and chronological attack poses inspected.",
+    "Walk/backwalk experimental locomotion inspected as alternating shoe travel/support phases; endpoints flow to starting wide guard. No obvious hard seam.",
+    "Replacement turn independently inspected: front torso retained and final frame faces LEFT. All 24 actions now pass sequential visual review."
+  ],
+  "contentHash": "8ac777213f665d619c8eb30d79dbe2960583d812571507ce01727db2712ad513"
+}

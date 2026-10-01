@@ -1,5 +1,6 @@
 {
   "runtimeId": "cowboy",
   "assetName": "cowboy",
-  "generationRun": "assets/sprites/cowboy/generation/roster-v14"
+  "generationRun": "assets/sprites/cowboy/generation/roster-v16",
+  "suppliedReference": "novos_player_para_implementar/cowboy.png"
 }

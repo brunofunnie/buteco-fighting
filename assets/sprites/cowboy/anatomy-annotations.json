@@ -1,80 +1,157 @@
 {
-  "idle": {
-    "headSpan": 62,
-    "frameHeadSpans": [
-      62,
-      62,
+  "method": "manual-visual-crown-to-chin",
+  "units": "exported 384px cell pixels",
+  "uncertaintyPixels": 8,
+  "referenceIdleHead": 65,
+  "headSpans": {
+    "idle": [
       65,
-      63
+      65,
+      65,
+      65
+    ],
+    "punch": [
+      67,
+      72,
+      65,
+      67
+    ],
+    "kick": [
+      65,
+      65,
+      65,
+      65
+    ],
+    "hurt": [
+      82,
+      79,
+      77,
+      77
+    ],
+    "jump": [
+      105,
+      84,
+      89,
+      80
+    ],
+    "special": [
+      70,
+      70,
+      70,
+      70
+    ],
+    "walk": [
+      73,
+      73,
+      73,
+      73,
+      73,
+      73
+    ],
+    "block": [
+      70,
+      70,
+      70,
+      70
+    ],
+    "crouch": [
+      95,
+      103,
+      117,
+      110
+    ],
+    "ko": [
+      83,
+      92,
+      81,
+      62
+    ],
+    "celebrate": [
+      70,
+      70,
+      64,
+      64
+    ],
+    "airPunch": [
+      93,
+      93,
+      93,
+      93
+    ],
+    "airKick": [
+      95,
+      95,
+      74,
+      95
+    ],
+    "crouchPunch": [
+      108,
+      108,
+      100,
+      108
+    ],
+    "crouchKick": [
+      108,
+      108,
+      83,
+      108
+    ],
+    "uppercut": [
+      83,
+      74,
+      55,
+      74
+    ],
+    "sweep": [
+      113,
+      90,
+      77,
+      106
+    ],
+    "dash": [
+      98,
+      98,
+      95,
+      98
+    ],
+    "backwalk": [
+      77,
+      77,
+      77,
+      77,
+      77,
+      77
+    ],
+    "lowBlock": [
+      104,
+      105,
+      105,
+      97
+    ],
+    "turn": [
+      76,
+      79,
+      77,
+      77
+    ],
+    "land": [
+      108,
+      86,
+      70,
+      70
+    ],
+    "jumpForward": [
+      98,
+      74,
+      100,
+      73
+    ],
+    "super": [
+      70,
+      70,
+      70,
+      70
     ]
   },
-  "punch": {
-    "headSpan": 62
-  },
-  "kick": {
-    "headSpan": 62
-  },
-  "hurt": {
-    "headSpan": 69
-  },
-  "jump": {
-    "headSpan": 87
-  },
-  "special": {
-    "headSpan": 61
-  },
-  "walk": {
-    "headSpan": 60
-  },
-  "block": {
-    "headSpan": 59
-  },
-  "crouch": {
-    "headSpan": 68
-  },
-  "ko": {
-    "headSpan": 66
-  },
-  "celebrate": {
-    "headSpan": 58
-  },
-  "airPunch": {
-    "headSpan": 77
-  },
-  "airKick": {
-    "headSpan": 68
-  },
-  "crouchPunch": {
-    "headSpan": 95
-  },
-  "crouchKick": {
-    "headSpan": 95
-  },
-  "uppercut": {
-    "headSpan": 79
-  },
-  "sweep": {
-    "headSpan": 98
-  },
-  "dash": {
-    "headSpan": 80
-  },
-  "backwalk": {
-    "headSpan": 61
-  },
-  "lowBlock": {
-    "headSpan": 98
-  },
-  "turn": {
-    "headSpan": 63
-  },
-  "land": {
-    "headSpan": 99
-  },
-  "jumpForward": {
-    "headSpan": 88
-  },
-  "super": {
-    "headSpan": 63
-  }
+  "notes": "Manual estimates from all 100 frame overview panels and all 24 full-size contact sheets. Crown excludes trailing long hair; rotated head measured along anatomical axis. No automated detector or GIF playback. Scales equal idle crown-to-chin/state frame span; original paths and anchors preserved. Final replacement turn inspected in full-size contact; frame2 and3 both LEFT, unchanged23state scales restored."
 }

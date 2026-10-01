@@ -52,13 +52,13 @@
 #fighterScreen .pick-tabs > button { flex: 1; padding: 6px; font-size: 12px; }
 #fighterScreen .fighter-list.roster-grid {
   grid-template-columns: repeat(10, minmax(0, 1fr));
-  grid-template-rows: none; grid-auto-rows: minmax(72px, 1fr);
+  grid-template-rows: none; grid-auto-rows: minmax(64px, 1fr);
   gap: 4px; width: 100%; height: auto; min-height: 0; flex: 1;
   overflow: auto; overscroll-behavior: contain;
   scrollbar-width: thin; scrollbar-color: #9aadd6 #0a142b;
   align-content: stretch; padding: 2px;
 }
-#fighterScreen .roster-fighter { min-height: 72px; aspect-ratio: auto; }
+#fighterScreen .roster-fighter { min-height: 64px; aspect-ratio: auto; }
 #fighterScreen .roster-fighter > img { height: 235%; object-position: 50% 0; top: -5%; }
 #fighterScreen .roster-fighter > strong { font-size: clamp(12px, 1.15vw, 17px); padding: 6px 2px 3px; }
 #fighterScreen .roster-fighter:hover { border-color: var(--paper); background: #29314a; }

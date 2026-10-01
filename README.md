@@ -6,7 +6,7 @@
 
 A Brazilian browser fighting game. Pick your regular. Settle it in the arena.
 
-![Fighters](https://img.shields.io/badge/Fighters-28-ffb522?style=for-the-badge&labelColor=0a142b)
+![Fighters](https://img.shields.io/badge/Fighters-54-ffb522?style=for-the-badge&labelColor=0a142b)
 ![Arenas](https://img.shields.io/badge/Brazilian_arenas-4-ffb522?style=for-the-badge&labelColor=0a142b)
 ![Sprites](https://img.shields.io/badge/Sprite_frames-2%2C792-ffb522?style=for-the-badge&labelColor=0a142b)
 ![Engine](https://img.shields.io/badge/Phaser-3.90-fff3d6?style=for-the-badge&labelColor=0a142b)
@@ -113,7 +113,7 @@ Open Graph and Twitter cards use the generated cover at `assets/social/buteco-fi
 
 ## The regulars
 
-**28 fighters. Every one has something to prove.**
+**54 fighters. Every one has something to prove.**
 
 <details>
 <summary><strong>See every fighter, special and super</strong></summary>
@@ -148,6 +148,32 @@ Open Graph and Twitter cards use the generated cover at `assets/social/buteco-fi
 | Professor | Pacote seguro | Firewall total |
 | Thassia Devil | Bruma da videira | Vindima sombria |
 | Vinil | Bloco estrutural | Estrutura total |
+| Astha | Pulso tático | Frequência máxima |
+| Biskit | Estalo veloz | Ritmo acelerado |
+| Cody | Refração | Dispersão total |
+| D.Nelson | Pulso da união | Todos por um |
+| Daddy Ianky | Ferramenta orbital | Oficina pesada |
+| Felurian | Névoa violeta | Noite profunda |
+| Gabiest | Órbita alienígena | Invasão gravitacional |
+| Ghostly | Passo fantasma | Ecos espectrais |
+| Ingio | Batida dourada | Grave do festival |
+| Leo | Leque solar | Horizonte radiante |
+| Litte Faster | Investida veloz | Aceleração total |
+| Mountain | Peso da montanha | Avalanche |
+| Mr. G | Selo do grimório | Runa suprema |
+| Musashi | Investida shinobi | Impacto do pergaminho |
+| P.D.R | Pressão da faixa | Finalização total |
+| Prefeito | Bloco da cidade | Plano diretor |
+| r1sen | Chama ascendente | Ressurgimento |
+| Sleep | Batida noturna | Grave da madrugada |
+| Sonee | Onda de estilo | Frequência livre |
+| Tony Etch | Pulso preciso | Rajada de precisão |
+| Wes | Punho de aço | Impacto máximo |
+| Zero 6 | Pulso zero | Rajada seis |
+| Gus | Pressão densa | Nuvem de impacto |
+| Kalango | Faísca laranja | Compilação explosiva |
+| Miss Laura | Pacote da nuvem | Escala máxima |
+| s3rious | Bruma tropical | Neblina total |
 
 </details>
 
@@ -178,7 +204,7 @@ assets/              Published sprites, source images, stages and audio
 harness/             Combat, asset and browser verification
 ```
 
-Each fighter lives in `assets/sprites/<name>/`, with a `base-source.png`, calibrated frames in `curated/`, and animation metadata. The shared manifest preserves frame timing, scale and foot anchors. Rina Sabre and Waggy have 23 animation states each; the other 26 fighters have 24, including dedicated super poses.
+Each fighter lives in `assets/sprites/<name>/`, with a `base-source.png`, calibrated frames in `curated/`, and animation metadata. The shared manifest preserves frame timing, scale and foot anchors. Rina Sabre and Waggy have 23 animation states each; the other 52 fighters have 24, including dedicated super poses.
 
 Sprites and stage art were produced with GPT-assisted asset workflows; the sound bank includes ElevenLabs-generated effects and music. Playback uses the bundled files. Generating new assets is a separate development workflow.
 
@@ -199,7 +225,7 @@ Focused checks:
 | Command | Covers |
 | --- | --- |
 | `npm run test:roster:combat` | Every fighter's special and super, energy costs and power behavior. |
-| `npm run test:power:preview` | All 28 demonstrations in both directions, damage, resets and lifecycle. |
+| `npm run test:power:preview` | All 54 demonstrations in both directions, damage, resets and lifecycle. |
 | `npm run test:ui` | Menus, responsive layout, scrolling and character selection. |
 | `npm run test:selection:demo` | Alternation, rapid selection changes and Cartesian previews. |
 | `npm run test:online` | Real Colyseus clients, room permissions, kick/ban, loading, authoritative results, ranking and SQLite persistence. |
@@ -209,6 +235,7 @@ Focused checks:
 | `npm run test:menu:actions` | Focused Back and Options actions across menus. |
 | `npm run test:ko:health` | Empty health bars after lethal specials and supers. |
 | `npm run test:roster` | Real browser matches across the full roster. |
+| `node harness/roster-expansion-assets.test.mjs --registry harness/roster-import-v16.json` | Verify the four new imports and Cowboy replacement against their supplied portraits; preserve every previous fighter ID and Cowboy gameplay attributes. |
 | `npm run test:roster:assets` | Sprite transparency, variation and calibrated geometry; requires Python 3 and Pillow. |
 
 Browser checks use `http://localhost:3187` by default. Test screenshots and reports are generated locally in the artifact directories and stay out of version control.
@@ -224,7 +251,7 @@ Browser checks use `http://localhost:3187` by default. Test screenshots and repo
 
 ## Collision geometry
 
-Combat uses precompiled, per-frame hitboxes and hurtboxes for all 28 fighters.
+Combat uses precompiled, per-frame hitboxes and hurtboxes for all 54 fighters.
 The animation frame selector is shared by rendering and the server simulation;
 sprite scale, anchors, facing, crouching and aerial poses are reflected in the
 geometry. Hurtboxes are alpha-derived strips around the body core and legs;

@@ -10,12 +10,12 @@ from pathlib import Path
 from PIL import Image,ImageDraw
 from sprite_gen.frames.extract import remove_chroma_background,extract_component_images,_alpha_centroid_x
 
-ROOT=Path('assets/sprites/_generation/roster-v15')
 CLI='/tmp/fighting-sprite-venv/bin/sprite-gen'
-profiles=json.loads((ROOT/'roster.json').read_text())
 parser=argparse.ArgumentParser()
 parser.add_argument('ids',nargs='+')
+parser.add_argument('--registry',type=Path,default=Path('assets/sprites/_generation/roster-v15/roster.json'))
 args=parser.parse_args()
+profiles=json.loads(args.registry.read_text())
 for fid in args.ids:
     run=Path(profiles[fid]['generationRun'])
     request=json.loads((run/'sprite-request.json').read_text())

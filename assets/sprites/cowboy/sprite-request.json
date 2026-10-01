@@ -25,40 +25,40 @@
       255
     ],
     "selection": "auto",
-    "score": 243.42,
-    "min_subject_distance": 209.01,
+    "score": 228.79,
+    "min_subject_distance": 208.62,
     "background": {
       "mode": "transparent",
-      "opaque_border_fraction": 0,
-      "subject_pixels": 12840
+      "opaque_border_fraction": 0.0,
+      "subject_pixels": 12690
     },
     "candidates": [
       {
         "name": "magenta",
         "hex": "#FF00FF",
-        "score": 211.61,
-        "min_subject_distance": 205.74,
+        "score": 207.79,
+        "min_subject_distance": 205.24,
         "clears_erase_radius": true
       },
       {
         "name": "green",
         "hex": "#00FF00",
-        "score": 216.49,
-        "min_subject_distance": 189.34,
+        "score": 218.44,
+        "min_subject_distance": 213.78,
         "clears_erase_radius": true
       },
       {
         "name": "cyan",
         "hex": "#00FFFF",
-        "score": 243.42,
-        "min_subject_distance": 209.01,
+        "score": 228.79,
+        "min_subject_distance": 208.62,
         "clears_erase_radius": true
       },
       {
         "name": "blue",
         "hex": "#004DFF",
-        "score": 205.94,
-        "min_subject_distance": 187.69,
+        "score": 203.96,
+        "min_subject_distance": 192.34,
         "clears_erase_radius": true
       }
     ],
@@ -81,7 +81,7 @@
       "frames": 4,
       "fps": 10,
       "loop": false,
-      "action": "right facing high side kick: windup, chamber bent knee, fully extended leg to right at chest level, recovery"
+      "action": "FOUR chronological RIGHT-facing poses: grounded ordinary guard with both feet down; chamber knee with supporting knee slightly bent; extend raised kicking foot RIGHT; retract knee into recovery. No full kick before frame 2. Same head/body scale."
     },
     "hurt": {
       "frames": 4,
@@ -99,13 +99,13 @@
       "frames": 4,
       "fps": 10,
       "loop": false,
-      "action": "Guard, finger-point aim right with other hand stabilizing wrist, recoil, return guard. FOUR distinct chronological full-body poses facing RIGHT. Draw body only; engine supplies effects."
+      "action": "FOUR chronological poses: normal RIGHT-facing guard; draw rear fist back; extend an open-palm strike RIGHT; recover guard. Preserve accessories with plausible hand support. Draw only body, engine supplies energy effects."
     },
     "walk": {
       "frames": 6,
       "fps": 12,
       "loop": true,
-      "action": "EXACTLY SIX separate full-body poses of a smooth GROUNDED fighting shuffle moving RIGHT, facing RIGHT in all frames. 1 broad guard, both soles planted; 2 front heel lifts slightly, rear foot planted; 3 front foot advances and lands heel on same baseline, rear support still planted; 4 front sole flat planted, rear foot starts sliding ahead with toes grazing floor; 5 rear foot finishes short slide and plants, fists stay guard; 6 return matching initial broad guard with BOTH feet planted. Never cross legs. Never both feet airborne. Constant head height, tiny natural knee rhythm, original adult body proportions. Six motion phases, no repeated static pose series."
+      "action": "SIX distinct chronological RIGHT-facing forward boxing-shuffle poses: wide guard; lift front shoe and move it RIGHT with rear leg supporting; plant front shoe ahead in wide stance; lift rear shoe and draw it RIGHT with front leg supporting; plant rear shoe in narrower stance; reopen wide guard for loop seam. Actual alternating shoe travel and weight transfers, no crossed legs or static breathing substitute. Same adult head/body scale."
     },
     "block": {
       "frames": 4,
@@ -141,7 +141,7 @@
       "frames": 4,
       "fps": 12,
       "loop": false,
-      "action": "AIRBORNE jumping side kick. Four distinct frames: airborne tucked-knee chamber; leg starts opening; leading leg fully extended RIGHT chest-height with rear leg tucked; airborne retraction. NO feet touching ground in any frame. Maintain full head and torso dimensions. Critical consistency: copy EXACT identity, costume, adult limb lengths and HEAD SIZE from reference. Camera distance and character scale unchanged across all four poses; only articulation changes. Full body visible, four separated characters, same facing RIGHT."
+      "action": "AIRBORNE jumping side kick. Four distinct frames: airborne tucked-knee chamber; leg starts opening; leading leg fully extended RIGHT chest-height with rear leg tucked; airborne retraction. NO feet touching ground in any frame. Maintain full head and torso dimensions. Critical consistency: copy EXACT identity, costume, adult limb lengths and HEAD SIZE from reference. Camera distance and character scale unchanged across all four poses; only articulation changes. Full body visible, four separated characters, same facing RIGHT. Four entirely separate figures with wide solid chroma gaps. "
     },
     "crouchPunch": {
       "frames": 4,
@@ -177,19 +177,19 @@
       "frames": 6,
       "fps": 12,
       "loop": true,
-      "action": "EXACTLY SIX separate full-body poses of smooth defensive backward combat shuffle moving LEFT, face/chest oriented RIGHT throughout. 1 broad combat guard, both soles planted; 2 rear heel lifts while front foot remains planted; 3 rear foot reaches LEFT and lands heel, front supporting sole flat; 4 rear foot planted while front foot starts sliding backward close to floor; 5 front foot finishes short floor-level slide, both grounded; 6 broad grounded guard matching initial frame. Keep hands protecting face, same head height, adult proportions and physical scale. No crossed legs or both feet airborne. Six distinct foot phases. CRITICAL SPACING: exactly SIX fully isolated figures with at least 60 pixels of pure cyan air gap between EVERY neighboring silhouette, including shoes, elbows, keychains. Reduce overall row character size uniformly if needed to keep all six separate. No figure touches another figure or canvas edge. Preserve each original head/body ratio."
+      "action": "SIX distinct chronological RIGHT-facing rearward boxing-shuffle poses: wide guard; lift rear shoe and retreat it LEFT while front shoe supports; plant rear shoe further LEFT in wide stance; lift front shoe and draw it LEFT toward rear shoe with rear leg supporting; land front shoe in narrower stance; reopen wide guard for loop seam. Show visible alternate shoe travel and support transfers, keep natural bent knees, no leg crossing, no static heel-only wiggle. Head/body size consistent."
     },
     "lowBlock": {
       "frames": 4,
       "fps": 8,
       "loop": false,
-      "action": "LOW crouching defensive block RIGHT. Four distinct frames: compact low squat guard; forearms lift over face; braced low crouched block with bent knees and planted feet; hold low block. Entire anatomical adult body folds into crouch without shrinking body/head or shortening limbs. Critical consistency: copy EXACT identity, costume, adult limb lengths and HEAD SIZE from reference. Camera distance and character scale unchanged across all four poses; only articulation changes. Full body visible, four separated characters, same facing RIGHT."
+      "action": "FOUR chronological RIGHT-facing LOW BLOCK poses: enter a deep squat with pelvis near knee height; brace both forearms together across abdomen and knees; hold that closed low shield in deep squat; slightly relax knees while maintaining the low shield. Hands remain below chest, never at forehead. Both feet support the crouch. No forward punch or reaching arm."
     },
     "turn": {
       "frames": 4,
       "fps": 12,
       "loop": false,
-      "action": "EXACTLY FOUR combat turning poses, rotate only180degrees from RIGHT to LEFT through FRONT toward viewer, NOT through back. Frame1 RIGHT facing guard. Frame2 three-quarterRIGHT FRONTview face towardviewer. Frame3 nearFRONTview head turns LEFT. Frame4 LEFT facing guard with chest still visible in three-quarterFRONTview, exactly horizontally mirrored initial stance, NEVER rear/backview. Final nose points LEFT, frontofshirt and abdomen visible, hair does not hide entire torso. Both feet grounded, fists guarding, same identity and adult head/body size. Four separate fullbody figures."
+      "action": "FOUR non-looping chronological full-body poses: 0 RIGHT-facing profile guard. 1 FRONT-facing centered face guard. 2 LEFT-facing profile guard: nose protrudes LEFT of cheek, eyes look LEFT, toes point LEFT. 3 SAME LEFT-FACING PROFILE AS FRAME 2, only knees slightly more bent and fists slightly higher. Final face silhouette exactly LEFT as frame 2; nose at LEFT edge of face, ear at RIGHT side of head. Final torso and feet keep LEFT orientation. Final pose must never be a recovery to initial right guard: this is a completed direction change, NOT an attack with recovery. STOP ON LEFT. Reference image faces RIGHT but last TWO poses must face LEFT. No front-three-quarter ambiguity, no back view. Preserve anatomical accessory sides."
     },
     "land": {
       "frames": 4,
@@ -207,10 +207,10 @@
       "frames": 4,
       "fps": 12,
       "loop": false,
-      "action": "Brace feet wide, cross forearms charging, extend both fists right for heavy pressure pulse, recovery. FOUR distinct chronological full-body poses facing RIGHT. Clearly different from normal special; engine supplies effects."
+      "action": "FOUR chronological poses: planted RIGHT-facing guard; rotate shoulders and chamber arms; discharge with both arms RIGHT; retract into balanced guard. Preserve physical accessories with hand support; engine supplies energy effects."
     }
   },
-  "style": "Copy full-body reference EXACTLY: same facial features, costume, accessories, anatomical head size, torso bulk, limb lengths and original illustration style. Young fair-skinned man with short buzz-cut brown hair, black hoodie, black tactical cargo trousers, black and white high-top sneakers, lanyard and conference badge, watch and keychain. NO cowboy hat and NO added gun. Fixed orthographic camera and physical body scale across ALL poses. Only joints articulate: crouch folds the body, never miniaturizes it. No additional weapons, objects, visual energy effects or shadow blobs. Keep all fingers, feet, hair and accessories complete. Face RIGHT except deliberate turn animation.",
+  "style": "Faithfully copy the supplied pixel-art full-body reference: face, costume, physical accessories, crisp stepped contours and clustered pixel shading. Slim athletic tan adult man with swept short brown hair, clean-shaven face, plain black T-shirt with small white code emblem and multicolor infinity sleeve emblem, black wristband, dark cargo trousers with attached hip badge and black-white sneakers. Preserve youthful adult face and exact costume. Fixed orthographic camera, consistent head/body scale and adult anatomy in every pose. Articulate joints without shrinking crouched bodies. Entire head, hands, accessories and shoe soles visible with clear margins. No backdrop, shadows, halo, additional people or engine energy effects.",
   "layout": "taxonomy/v1",
   "fit": {
     "pixel_unfake": false,

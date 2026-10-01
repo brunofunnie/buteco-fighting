@@ -1,0 +1,850 @@
+{
+  "idle": [
+    {
+      "path": "assets/sprites/gus/curated/idle-frame-0.png",
+      "sourceHeight": 643,
+      "outputHeight": 352,
+      "anchorX": 0.48793387596649795,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0
+    },
+    {
+      "path": "assets/sprites/gus/curated/idle-frame-1.png",
+      "sourceHeight": 656,
+      "outputHeight": 352,
+      "anchorX": 0.4869683004144396,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0
+    },
+    {
+      "path": "assets/sprites/gus/curated/idle-frame-2.png",
+      "sourceHeight": 611,
+      "outputHeight": 352,
+      "anchorX": 0.4853385552370888,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0
+    },
+    {
+      "path": "assets/sprites/gus/curated/idle-frame-3.png",
+      "sourceHeight": 648,
+      "outputHeight": 352,
+      "anchorX": 0.48509591230541105,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0
+    }
+  ],
+  "punch": [
+    {
+      "path": "assets/sprites/gus/curated/punch-frame-0.png",
+      "sourceHeight": 608,
+      "outputHeight": 351,
+      "anchorX": 0.4920417425865414,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.945946
+    },
+    {
+      "path": "assets/sprites/gus/curated/punch-frame-1.png",
+      "sourceHeight": 611,
+      "outputHeight": 352,
+      "anchorX": 0.4853164419963823,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.897436
+    },
+    {
+      "path": "assets/sprites/gus/curated/punch-frame-2.png",
+      "sourceHeight": 600,
+      "outputHeight": 352,
+      "anchorX": 0.4184228409268547,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.972222
+    },
+    {
+      "path": "assets/sprites/gus/curated/punch-frame-3.png",
+      "sourceHeight": 611,
+      "outputHeight": 352,
+      "anchorX": 0.48523206952484754,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.945946
+    }
+  ],
+  "kick": [
+    {
+      "path": "assets/sprites/gus/curated/kick-frame-0.png",
+      "sourceHeight": 640,
+      "outputHeight": 352,
+      "anchorX": 0.49234039106823996,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.060606
+    },
+    {
+      "path": "assets/sprites/gus/curated/kick-frame-1.png",
+      "sourceHeight": 636,
+      "outputHeight": 352,
+      "anchorX": 0.4696519546708536,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.060606
+    },
+    {
+      "path": "assets/sprites/gus/curated/kick-frame-2.png",
+      "sourceHeight": 635,
+      "outputHeight": 352,
+      "anchorX": 0.3282487180563915,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.060606
+    },
+    {
+      "path": "assets/sprites/gus/curated/kick-frame-3.png",
+      "sourceHeight": 635,
+      "outputHeight": 352,
+      "anchorX": 0.46829558209978767,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.060606
+    }
+  ],
+  "hurt": [
+    {
+      "path": "assets/sprites/gus/curated/hurt-frame-0.png",
+      "sourceHeight": 601,
+      "outputHeight": 352,
+      "anchorX": 0.4838789273457953,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.897436
+    },
+    {
+      "path": "assets/sprites/gus/curated/hurt-frame-1.png",
+      "sourceHeight": 620,
+      "outputHeight": 351,
+      "anchorX": 0.4872591343761787,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.972222
+    },
+    {
+      "path": "assets/sprites/gus/curated/hurt-frame-2.png",
+      "sourceHeight": 575,
+      "outputHeight": 351,
+      "anchorX": 0.4812928538573764,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.875
+    },
+    {
+      "path": "assets/sprites/gus/curated/hurt-frame-3.png",
+      "sourceHeight": 607,
+      "outputHeight": 352,
+      "anchorX": 0.4868299328180595,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.921053
+    }
+  ],
+  "jump": [
+    {
+      "path": "assets/sprites/gus/curated/jump-frame-0.png",
+      "sourceHeight": 501,
+      "outputHeight": 352,
+      "anchorX": 0.4492463724347709,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.813953
+    },
+    {
+      "path": "assets/sprites/gus/curated/jump-frame-1.png",
+      "sourceHeight": 579,
+      "outputHeight": 351,
+      "anchorX": 0.41062037969840154,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.875
+    },
+    {
+      "path": "assets/sprites/gus/curated/jump-frame-2.png",
+      "sourceHeight": 549,
+      "outputHeight": 352,
+      "anchorX": 0.4281393228038042,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.875
+    },
+    {
+      "path": "assets/sprites/gus/curated/jump-frame-3.png",
+      "sourceHeight": 545,
+      "outputHeight": 351,
+      "anchorX": 0.4756859982128187,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.875
+    }
+  ],
+  "special": [
+    {
+      "path": "assets/sprites/gus/curated/special-frame-0.png",
+      "sourceHeight": 647,
+      "outputHeight": 352,
+      "anchorX": 0.48954684159241374,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0
+    },
+    {
+      "path": "assets/sprites/gus/curated/special-frame-1.png",
+      "sourceHeight": 639,
+      "outputHeight": 351,
+      "anchorX": 0.4884123925839761,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.921053
+    },
+    {
+      "path": "assets/sprites/gus/curated/special-frame-2.png",
+      "sourceHeight": 636,
+      "outputHeight": 352,
+      "anchorX": 0.4022350907145677,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.972222
+    },
+    {
+      "path": "assets/sprites/gus/curated/special-frame-3.png",
+      "sourceHeight": 647,
+      "outputHeight": 352,
+      "anchorX": 0.48905274319366,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0
+    }
+  ],
+  "walk": [
+    {
+      "path": "assets/sprites/gus/curated/walk-frame-0.png",
+      "sourceHeight": 510,
+      "outputHeight": 352,
+      "anchorX": 0.49375055098655557,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.029412
+    },
+    {
+      "path": "assets/sprites/gus/curated/walk-frame-1.png",
+      "sourceHeight": 511,
+      "outputHeight": 352,
+      "anchorX": 0.4648660954734883,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.029412
+    },
+    {
+      "path": "assets/sprites/gus/curated/walk-frame-2.png",
+      "sourceHeight": 510,
+      "outputHeight": 351,
+      "anchorX": 0.49223908367744457,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.029412
+    },
+    {
+      "path": "assets/sprites/gus/curated/walk-frame-3.png",
+      "sourceHeight": 507,
+      "outputHeight": 352,
+      "anchorX": 0.5284665833178581,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.029412
+    },
+    {
+      "path": "assets/sprites/gus/curated/walk-frame-4.png",
+      "sourceHeight": 509,
+      "outputHeight": 352,
+      "anchorX": 0.4580588368874882,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.029412
+    },
+    {
+      "path": "assets/sprites/gus/curated/walk-frame-5.png",
+      "sourceHeight": 509,
+      "outputHeight": 352,
+      "anchorX": 0.4918164178157896,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.029412
+    }
+  ],
+  "block": [
+    {
+      "path": "assets/sprites/gus/curated/block-frame-0.png",
+      "sourceHeight": 638,
+      "outputHeight": 352,
+      "anchorX": 0.48667419297226894,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.921053
+    },
+    {
+      "path": "assets/sprites/gus/curated/block-frame-1.png",
+      "sourceHeight": 641,
+      "outputHeight": 352,
+      "anchorX": 0.4857465179732605,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.875
+    },
+    {
+      "path": "assets/sprites/gus/curated/block-frame-2.png",
+      "sourceHeight": 629,
+      "outputHeight": 352,
+      "anchorX": 0.4866641932810049,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.875
+    },
+    {
+      "path": "assets/sprites/gus/curated/block-frame-3.png",
+      "sourceHeight": 627,
+      "outputHeight": 352,
+      "anchorX": 0.48780905809354524,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.875
+    }
+  ],
+  "crouch": [
+    {
+      "path": "assets/sprites/gus/curated/crouch-frame-0.png",
+      "sourceHeight": 629,
+      "outputHeight": 352,
+      "anchorX": 0.48283287252763446,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.833333
+    },
+    {
+      "path": "assets/sprites/gus/curated/crouch-frame-1.png",
+      "sourceHeight": 548,
+      "outputHeight": 352,
+      "anchorX": 0.46096541707011635,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.76087
+    },
+    {
+      "path": "assets/sprites/gus/curated/crouch-frame-2.png",
+      "sourceHeight": 469,
+      "outputHeight": 352,
+      "anchorX": 0.4549785020359283,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.625
+    },
+    {
+      "path": "assets/sprites/gus/curated/crouch-frame-3.png",
+      "sourceHeight": 480,
+      "outputHeight": 352,
+      "anchorX": 0.502237469367687,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.636364
+    }
+  ],
+  "ko": [
+    {
+      "path": "assets/sprites/gus/curated/ko-frame-0.png",
+      "sourceHeight": 562,
+      "outputHeight": 352,
+      "anchorX": 0.5021976114981987,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.060606
+    },
+    {
+      "path": "assets/sprites/gus/curated/ko-frame-1.png",
+      "sourceHeight": 488,
+      "outputHeight": 352,
+      "anchorX": 0.3827129089730743,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.875
+    },
+    {
+      "path": "assets/sprites/gus/curated/ko-frame-2.png",
+      "sourceHeight": 336,
+      "outputHeight": 203,
+      "anchorX": 0.40069012216560584,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.129032
+    },
+    {
+      "path": "assets/sprites/gus/curated/ko-frame-3.png",
+      "sourceHeight": 196,
+      "outputHeight": 102,
+      "anchorX": 0.46468963618986187,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.4
+    }
+  ],
+  "celebrate": [
+    {
+      "path": "assets/sprites/gus/curated/celebrate-frame-0.png",
+      "sourceHeight": 613,
+      "outputHeight": 352,
+      "anchorX": 0.48995091870084634,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.921053
+    },
+    {
+      "path": "assets/sprites/gus/curated/celebrate-frame-1.png",
+      "sourceHeight": 644,
+      "outputHeight": 352,
+      "anchorX": 0.48451928262262883,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.945946
+    },
+    {
+      "path": "assets/sprites/gus/curated/celebrate-frame-2.png",
+      "sourceHeight": 697,
+      "outputHeight": 352,
+      "anchorX": 0.4892251358885333,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.09375
+    },
+    {
+      "path": "assets/sprites/gus/curated/celebrate-frame-3.png",
+      "sourceHeight": 697,
+      "outputHeight": 351,
+      "anchorX": 0.4906091508987691,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.09375
+    }
+  ],
+  "airPunch": [
+    {
+      "path": "assets/sprites/gus/curated/airPunch-frame-0.png",
+      "sourceHeight": 598,
+      "outputHeight": 352,
+      "anchorX": 0.4271081735686472,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.897436
+    },
+    {
+      "path": "assets/sprites/gus/curated/airPunch-frame-1.png",
+      "sourceHeight": 586,
+      "outputHeight": 352,
+      "anchorX": 0.33581752559771233,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.875
+    },
+    {
+      "path": "assets/sprites/gus/curated/airPunch-frame-2.png",
+      "sourceHeight": 582,
+      "outputHeight": 352,
+      "anchorX": 0.27534160856786966,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.875
+    },
+    {
+      "path": "assets/sprites/gus/curated/airPunch-frame-3.png",
+      "sourceHeight": 581,
+      "outputHeight": 352,
+      "anchorX": 0.4400339860174373,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.897436
+    }
+  ],
+  "airKick": [
+    {
+      "path": "assets/sprites/gus/curated/airKick-frame-0.png",
+      "sourceHeight": 474,
+      "outputHeight": 351,
+      "anchorX": 0.49520781438120504,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.813953
+    },
+    {
+      "path": "assets/sprites/gus/curated/airKick-frame-1.png",
+      "sourceHeight": 503,
+      "outputHeight": 351,
+      "anchorX": 0.26559222734306537,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.833333
+    },
+    {
+      "path": "assets/sprites/gus/curated/airKick-frame-2.png",
+      "sourceHeight": 457,
+      "outputHeight": 276,
+      "anchorX": 0.24807776865475564,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.029412
+    },
+    {
+      "path": "assets/sprites/gus/curated/airKick-frame-3.png",
+      "sourceHeight": 518,
+      "outputHeight": 351,
+      "anchorX": 0.4768952554784267,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.833333
+    }
+  ],
+  "crouchPunch": [
+    {
+      "path": "assets/sprites/gus/curated/crouchPunch-frame-0.png",
+      "sourceHeight": 497,
+      "outputHeight": 352,
+      "anchorX": 0.48894225610021297,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.660377
+    },
+    {
+      "path": "assets/sprites/gus/curated/crouchPunch-frame-1.png",
+      "sourceHeight": 498,
+      "outputHeight": 352,
+      "anchorX": 0.4881262759405962,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.660377
+    },
+    {
+      "path": "assets/sprites/gus/curated/crouchPunch-frame-2.png",
+      "sourceHeight": 497,
+      "outputHeight": 323,
+      "anchorX": 0.45811919631228476,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.795455
+    },
+    {
+      "path": "assets/sprites/gus/curated/crouchPunch-frame-3.png",
+      "sourceHeight": 490,
+      "outputHeight": 352,
+      "anchorX": 0.48867127468426097,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.660377
+    }
+  ],
+  "crouchKick": [
+    {
+      "path": "assets/sprites/gus/curated/crouchKick-frame-0.png",
+      "sourceHeight": 442,
+      "outputHeight": 352,
+      "anchorX": 0.4587961835527796,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.614035
+    },
+    {
+      "path": "assets/sprites/gus/curated/crouchKick-frame-1.png",
+      "sourceHeight": 503,
+      "outputHeight": 352,
+      "anchorX": 0.5129748516540452,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.648148
+    },
+    {
+      "path": "assets/sprites/gus/curated/crouchKick-frame-2.png",
+      "sourceHeight": 435,
+      "outputHeight": 250,
+      "anchorX": 0.5247391731913079,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.853659
+    },
+    {
+      "path": "assets/sprites/gus/curated/crouchKick-frame-3.png",
+      "sourceHeight": 444,
+      "outputHeight": 352,
+      "anchorX": 0.45749847246283615,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.614035
+    }
+  ],
+  "uppercut": [
+    {
+      "path": "assets/sprites/gus/curated/uppercut-frame-0.png",
+      "sourceHeight": 534,
+      "outputHeight": 352,
+      "anchorX": 0.4953587558582764,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.795455
+    },
+    {
+      "path": "assets/sprites/gus/curated/uppercut-frame-1.png",
+      "sourceHeight": 579,
+      "outputHeight": 352,
+      "anchorX": 0.49639665686728884,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.875
+    },
+    {
+      "path": "assets/sprites/gus/curated/uppercut-frame-2.png",
+      "sourceHeight": 663,
+      "outputHeight": 352,
+      "anchorX": 0.4894235118027806,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.09375
+    },
+    {
+      "path": "assets/sprites/gus/curated/uppercut-frame-3.png",
+      "sourceHeight": 572,
+      "outputHeight": 351,
+      "anchorX": 0.49273876310260184,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.897436
+    }
+  ],
+  "sweep": [
+    {
+      "path": "assets/sprites/gus/curated/sweep-frame-0.png",
+      "sourceHeight": 532,
+      "outputHeight": 352,
+      "anchorX": 0.4791234575659466,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.686275
+    },
+    {
+      "path": "assets/sprites/gus/curated/sweep-frame-1.png",
+      "sourceHeight": 555,
+      "outputHeight": 352,
+      "anchorX": 0.6101876208218425,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.795455
+    },
+    {
+      "path": "assets/sprites/gus/curated/sweep-frame-2.png",
+      "sourceHeight": 430,
+      "outputHeight": 239,
+      "anchorX": 0.4862052330868532,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.972222
+    },
+    {
+      "path": "assets/sprites/gus/curated/sweep-frame-3.png",
+      "sourceHeight": 527,
+      "outputHeight": 351,
+      "anchorX": 0.4811486364103444,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.673077
+    }
+  ],
+  "dash": [
+    {
+      "path": "assets/sprites/gus/curated/dash-frame-0.png",
+      "sourceHeight": 516,
+      "outputHeight": 352,
+      "anchorX": 0.4239932682781807,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.76087
+    },
+    {
+      "path": "assets/sprites/gus/curated/dash-frame-1.png",
+      "sourceHeight": 532,
+      "outputHeight": 352,
+      "anchorX": 0.5282397986706963,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.795455
+    },
+    {
+      "path": "assets/sprites/gus/curated/dash-frame-2.png",
+      "sourceHeight": 499,
+      "outputHeight": 352,
+      "anchorX": 0.5366469435494532,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.833333
+    },
+    {
+      "path": "assets/sprites/gus/curated/dash-frame-3.png",
+      "sourceHeight": 516,
+      "outputHeight": 352,
+      "anchorX": 0.36542283381014934,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.76087
+    }
+  ],
+  "backwalk": [
+    {
+      "path": "assets/sprites/gus/curated/backwalk-frame-0.png",
+      "sourceHeight": 530,
+      "outputHeight": 352,
+      "anchorX": 0.4910331912148081,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.945946
+    },
+    {
+      "path": "assets/sprites/gus/curated/backwalk-frame-1.png",
+      "sourceHeight": 526,
+      "outputHeight": 352,
+      "anchorX": 0.4693549198370688,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.945946
+    },
+    {
+      "path": "assets/sprites/gus/curated/backwalk-frame-2.png",
+      "sourceHeight": 525,
+      "outputHeight": 352,
+      "anchorX": 0.4955658858002873,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.945946
+    },
+    {
+      "path": "assets/sprites/gus/curated/backwalk-frame-3.png",
+      "sourceHeight": 523,
+      "outputHeight": 352,
+      "anchorX": 0.4760777850058726,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.945946
+    },
+    {
+      "path": "assets/sprites/gus/curated/backwalk-frame-4.png",
+      "sourceHeight": 529,
+      "outputHeight": 352,
+      "anchorX": 0.4479471870814422,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.945946
+    },
+    {
+      "path": "assets/sprites/gus/curated/backwalk-frame-5.png",
+      "sourceHeight": 529,
+      "outputHeight": 352,
+      "anchorX": 0.4917692887932608,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.945946
+    }
+  ],
+  "lowBlock": [
+    {
+      "path": "assets/sprites/gus/curated/lowBlock-frame-0.png",
+      "sourceHeight": 611,
+      "outputHeight": 352,
+      "anchorX": 0.48842038502970747,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.777778
+    },
+    {
+      "path": "assets/sprites/gus/curated/lowBlock-frame-1.png",
+      "sourceHeight": 537,
+      "outputHeight": 352,
+      "anchorX": 0.4887484941681326,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.76087
+    },
+    {
+      "path": "assets/sprites/gus/curated/lowBlock-frame-2.png",
+      "sourceHeight": 449,
+      "outputHeight": 351,
+      "anchorX": 0.4628330259544291,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.660377
+    },
+    {
+      "path": "assets/sprites/gus/curated/lowBlock-frame-3.png",
+      "sourceHeight": 548,
+      "outputHeight": 352,
+      "anchorX": 0.4895903313764636,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.76087
+    }
+  ],
+  "turn": [
+    {
+      "path": "assets/sprites/gus/curated/turn-frame-0.png",
+      "sourceHeight": 644,
+      "outputHeight": 352,
+      "anchorX": 0.49439811481393997,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.875
+    },
+    {
+      "path": "assets/sprites/gus/curated/turn-frame-1.png",
+      "sourceHeight": 648,
+      "outputHeight": 352,
+      "anchorX": 0.5018976481570414,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.897436
+    },
+    {
+      "path": "assets/sprites/gus/curated/turn-frame-2.png",
+      "sourceHeight": 646,
+      "outputHeight": 351,
+      "anchorX": 0.5121065553446816,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.897436
+    },
+    {
+      "path": "assets/sprites/gus/curated/turn-frame-3.png",
+      "sourceHeight": 645,
+      "outputHeight": 351,
+      "anchorX": 0.5092118981081375,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.897436
+    }
+  ],
+  "land": [
+    {
+      "path": "assets/sprites/gus/curated/land-frame-0.png",
+      "sourceHeight": 452,
+      "outputHeight": 352,
+      "anchorX": 0.47043180759443626,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.614035
+    },
+    {
+      "path": "assets/sprites/gus/curated/land-frame-1.png",
+      "sourceHeight": 556,
+      "outputHeight": 352,
+      "anchorX": 0.48497138388724775,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.714286
+    },
+    {
+      "path": "assets/sprites/gus/curated/land-frame-2.png",
+      "sourceHeight": 630,
+      "outputHeight": 352,
+      "anchorX": 0.49049241065471555,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.833333
+    },
+    {
+      "path": "assets/sprites/gus/curated/land-frame-3.png",
+      "sourceHeight": 670,
+      "outputHeight": 352,
+      "anchorX": 0.4914826966520535,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.897436
+    }
+  ],
+  "jumpForward": [
+    {
+      "path": "assets/sprites/gus/curated/jumpForward-frame-0.png",
+      "sourceHeight": 467,
+      "outputHeight": 352,
+      "anchorX": 0.43483297985179603,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.673077
+    },
+    {
+      "path": "assets/sprites/gus/curated/jumpForward-frame-1.png",
+      "sourceHeight": 629,
+      "outputHeight": 352,
+      "anchorX": 0.25493340348923416,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.795455
+    },
+    {
+      "path": "assets/sprites/gus/curated/jumpForward-frame-2.png",
+      "sourceHeight": 450,
+      "outputHeight": 351,
+      "anchorX": 0.474755809042237,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.648148
+    },
+    {
+      "path": "assets/sprites/gus/curated/jumpForward-frame-3.png",
+      "sourceHeight": 604,
+      "outputHeight": 352,
+      "anchorX": 0.7076313425693744,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.795455
+    }
+  ],
+  "super": [
+    {
+      "path": "assets/sprites/gus/curated/super-frame-0.png",
+      "sourceHeight": 670,
+      "outputHeight": 351,
+      "anchorX": 0.49132445831794724,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.029412
+    },
+    {
+      "path": "assets/sprites/gus/curated/super-frame-1.png",
+      "sourceHeight": 653,
+      "outputHeight": 352,
+      "anchorX": 0.49066934852037747,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.029412
+    },
+    {
+      "path": "assets/sprites/gus/curated/super-frame-2.png",
+      "sourceHeight": 664,
+      "outputHeight": 352,
+      "anchorX": 0.4566187947399218,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.029412
+    },
+    {
+      "path": "assets/sprites/gus/curated/super-frame-3.png",
+      "sourceHeight": 671,
+      "outputHeight": 352,
+      "anchorX": 0.48967612565200014,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.029412
+    }
+  ]
+}
