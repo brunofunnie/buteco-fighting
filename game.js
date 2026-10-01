@@ -1,6 +1,6 @@
 import {DEFAULT_CONTROLS, controlSettings, gamepads} from "./controls.js";
 import {audioDirector} from "./audio.js";
-import { FIGHTERS } from "./roster.js";
+import { FIGHTERS, NON_PLAYABLE_FIGHTERS } from "./roster.js";
 import { drawArena, arenaPalette } from "./stages.js";
 import {animationIndex,FRAME_ALIASES,collisionFrame,worldBoxes,overlap,projectileConnects} from "./collision.js";
 const W = 1280,
@@ -36,7 +36,7 @@ const MOVES = {
   special: { duration: 0.65, active: 0.23, end: 0.3, cost: 25 },
   super: { duration: 0.95, active: 0.3, end: 0.4, cost: 100 },
 };
-const PROFILES = FIGHTERS;
+const PROFILES = {...FIGHTERS,...NON_PLAYABLE_FIGHTERS};
 const moveFor = (fighter, action) => {
   const move = MOVES[action],
     profile = PROFILES[fighter.id];
@@ -144,8 +144,8 @@ export class FightGame {
   makeFighter(id, x, facing) {
     return {
       id,
-      name: FIGHTERS[id].name.toUpperCase(),
-      color: FIGHTERS[id].color,
+      name: PROFILES[id].name.toUpperCase(),
+      color: PROFILES[id].color,
       armorTime: 0,
       powerState: null,
       x,
@@ -626,7 +626,7 @@ export class FightGame {
     }
   }
   releasePower(f, enemy, superMove) {
-    const kind = FIGHTERS[f.id].power?.kind || "orb";
+    const kind = PROFILES[f.id].power?.kind || "orb";
     const projectile = (extras = {}) => {
       const p = { owner: f, x: f.x + f.facing * 80, y: f.y - 180,
         vx: f.facing * (superMove ? 900 : 650), vy: 0, super: superMove,
@@ -887,7 +887,7 @@ export class FightGame {
     const frameIndex=animationIndex(f,frames.length,frames.animation?.fps || (["walk","backwalk","dash"].includes(f.state)?12:6),f.action?moveFor(f,f.action):null);
     const sprite = frames[frameIndex];
     const crouch = ["crouch", "lowBlock", "crouchPunch", "crouchKick", "sweep"].includes(f.state),
-      height = crouch && !ownFrames ? 210 : (FIGHTERS[f.id].visualHeight || 320);
+      height = crouch && !ownFrames ? 210 : (PROFILES[f.id].visualHeight || 320);
     c.translate(f.x, f.y);
     c.scale(f.state === "turn" ? f.turnFrom : f.facing, 1);
     if (f.state === "ko" && !ownFrames) {

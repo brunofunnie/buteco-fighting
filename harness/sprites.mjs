@@ -1,10 +1,10 @@
 import { readFile, writeFile, readdir, rename } from "node:fs/promises";
 import { join } from "node:path";
-import { fighterIds } from "../roster.js";
+import { fighterIds, NON_PLAYABLE_FIGHTERS } from "../roster.js";
 
 // Publish only sprite-gen's curated exports; extraction cache is not a game asset.
 const manifest = {};
-for (const character of fighterIds) {
+for (const character of [...fighterIds,...Object.keys(NON_PLAYABLE_FIGHTERS)]) {
   const assetName = { maya: "rina-sabre", bruno: "waggy" }[character] || character;
   const root = `assets/sprites/${assetName}`;
   const request = JSON.parse(

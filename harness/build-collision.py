@@ -10,7 +10,7 @@ import numpy as np
 from PIL import Image,ImageDraw
 ROOT=Path(__file__).resolve().parent.parent
 manifest=json.loads((ROOT/'assets/manifest.json').read_text())
-fighters=json.loads(subprocess.check_output(['node','--input-type=module','-e',"import {FIGHTERS} from './roster.js';process.stdout.write(JSON.stringify(FIGHTERS))"],cwd=ROOT))
+fighters=json.loads(subprocess.check_output(['node','--input-type=module','-e',"import {FIGHTERS,NON_PLAYABLE_FIGHTERS} from './roster.js';process.stdout.write(JSON.stringify({...FIGHTERS,...NON_PLAYABLE_FIGHTERS}))"],cwd=ROOT))
 override_path=ROOT/'assets/collision-overrides.json'
 overrides=json.loads(override_path.read_text()) if override_path.exists() else {}
 attacks={'punch','kick','airPunch','airKick','crouchPunch','crouchKick','uppercut','sweep'}

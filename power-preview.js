@@ -1,5 +1,5 @@
 import {FightGame} from './game.js';
-import {FIGHTERS, defaultOpponent} from './roster.js';
+import {FIGHTERS} from './roster.js';
 
 const LOOP_SECONDS = 3.8;
 const IDLE_SECONDS = .45;
@@ -7,14 +7,14 @@ const IDLE_SECONDS = .45;
 // Uses the same input, physics, damage and effect renderer as a playable fight.
 // The owning menu supplies animation frames so previews never own a global loop.
 export class PowerPreview {
-  constructor(canvas, assets, {player, opponent, facing = 1, onMove} = {}) {
+  constructor(canvas, assets, {player, facing = 1, onMove} = {}) {
     this.canvas = canvas;
     this.facing = facing < 0 ? -1 : 1;
     this.onMove = onMove;
     this.game = new FightGame(canvas, assets, {muted:true, interactive:false});
     Object.assign(this.game, {
       player: FIGHTERS[player] ? player : 'maya',
-      opponent: FIGHTERS[opponent] ? opponent : defaultOpponent(player),
+      opponent: 'dummy',
       mode: 'training', stage: 0, elapsed: 0, round: 1, wins: [0,0],
       cpuEnabled: false,
     });
@@ -36,7 +36,7 @@ export class PowerPreview {
     this.game.fighters[1].facing = -this.facing;
     this.game.fighters[0].energy = 100;
     Object.assign(this.canvas.dataset, {
-      demoMove: move, demoFighter: this.game.player, demoReady: 'true',
+      demoMove: move, demoFighter: this.game.player, demoTarget: 'dummy', demoReady: 'true',
     });
     const power = FIGHTERS[this.game.player].power;
     this.onMove?.({move, label:move === 'super' ? power.superLabel : power.label, key:move === 'super' ? 'I' : 'U'});

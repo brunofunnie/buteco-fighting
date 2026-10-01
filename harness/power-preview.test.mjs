@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
-import {FIGHTERS} from '../roster.js';
+import {FIGHTERS, fighterIds} from '../roster.js';
 import {audioDirector} from '../audio.js';
+import {FightGame} from '../game.js';
 const module = await import('../power-preview.js').catch(()=>null);
 assert.ok(module?.PowerPreview, 'PowerPreview module must provide the fighting demonstration');
 const {PowerPreview}=module;
@@ -15,6 +16,8 @@ let audioCalls=0;audioDirector.combat=()=>{audioCalls++;throw new Error('Silent 
 for(const id of Object.keys(FIGHTERS)){
  for(const facing of [1,-1]){
   const moves=[];const view=canvas();const preview=new PowerPreview(view,{}, {player:id,opponent:id==='bruno'?'maya':'bruno',facing,onMove:move=>moves.push(move)});
+  assert.equal(preview.game.fighters[1].id,'dummy','Every power demonstration targets the non-playable dummy');
+  assert.ok(!fighterIds.includes('dummy'),'Dummy must not appear in the playable roster');
   assert.equal(preview.move,'special');assert.equal(preview.game.fighters[0].action,null);
   step(preview,.4);assert.equal(preview.game.fighters[1].health,100);
   step(preview,2.8);assert.ok(preview.game.fighters[1].health<100,`${id} special facing ${facing} must actually damage target`);
@@ -27,4 +30,9 @@ for(const id of Object.keys(FIGHTERS)){
  }
 }
 assert.equal(listenerCalls.length,0,'Previews must neither register nor remove game keyboard listeners');assert.equal(window.__fight,liveFight);assert.equal(audioCalls,0);
-console.log(`PASS ${Object.keys(FIGHTERS).length} fighters, both directions, special/super impacts, resets, lifecycle and silence`);
+const playable = new FightGame(canvas(),{}, {interactive:false,headless:true});
+playable.start({player:'dummy',opponent:'dummy'});
+assert.notEqual(playable.player,'dummy','Dummy cannot be selected as a player');
+assert.notEqual(playable.opponent,'dummy','Dummy cannot be selected as a playable opponent');
+playable.destroy();
+console.log(`PASS ${Object.keys(FIGHTERS).length} fighters, both directions, dummy targets, special/super impacts, resets, lifecycle and silence`);

@@ -1,3 +1,6 @@
+/* Keep the cabinet immersive, including mouse drags and touch callouts. */
+#arcade, #arcade * { user-select: none; -webkit-user-select: none; -webkit-touch-callout: none; }
+#arcade img { -webkit-user-drag: none; }
 /* Full-width selection: two compact previews above a growing roster. */
 .title-team > canvas {
   height: min(23vh, 18vw);
@@ -8,115 +11,158 @@
   .title-team > canvas { height: min(16vh, 20vw); bottom: calc(6vh + var(--cast-row) * 8vh); }
   .title-team > canvas.team-leader { height: min(18vh, 22vw); }
 }
+/* Reference composition: mirrored portrait wings around the selected fighters. */
 #fighterScreen {
-  --selection-gap: 12px;
-  padding: 18px clamp(12px, 2vw, 32px);
-  gap: var(--selection-gap);
+  padding: 16px 1.3vw 20px;
+  gap: 10px;
+  isolation: isolate;
+  background: radial-gradient(ellipse at 50% 65%, #f59e0b20, transparent 43%),
+    linear-gradient(0deg, #03071288, transparent 35%),
+    repeating-linear-gradient(115deg, transparent 0 130px, #9aadd608 131px 134px, transparent 135px 270px),
+    radial-gradient(ellipse at 50% 40%, #253459, #101528 65%, var(--ink));
 }
-#fighterScreen .screen-heading h2 { font-size: clamp(28px, 3.4vw, 48px); }
-#fighterScreen .screen-heading > span { font-size: 11px; letter-spacing: 2px; }
+#fighterScreen::before {
+  content: ''; position: absolute; inset: 68% 0 0; z-index: -1;
+  background: repeating-linear-gradient(90deg, transparent 0 15%, #f59e0b10 15.1% 15.3%, transparent 15.4% 30%),
+    linear-gradient(transparent, #f59e0b12);
+  transform: perspective(350px) rotateX(55deg); transform-origin: bottom;
+}
+#fighterScreen .screen-heading { position: relative; z-index: 2; }
+#fighterScreen .screen-heading h2 { font-size: clamp(28px, 3.8vw, 64px); }
+#fighterScreen .screen-heading > span { font-size: clamp(8px, .85vw, 13px); letter-spacing: 3px; }
+#fighterScreen .screen-heading::after { content: ''; display: block; height: 1px; background: linear-gradient(90deg, transparent, var(--gold), transparent); }
 #fighterScreen .fighter-selection {
-  width: 100%; max-width: none; height: 100%; min-height: 0;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  grid-template-rows: clamp(150px, 27vh, 230px) minmax(0, 1fr);
-  grid-template-areas: 'player rival' 'picks picks';
-  gap: var(--selection-gap);
+  position: relative; width: 100%; max-width: none; height: 100%; min-height: 0;
+  grid-template-columns: 32% 18% 18% 32%; grid-template-rows: minmax(0, 1fr);
+  grid-template-areas: 'left player rival right'; gap: 0;
+}
+#fighterScreen .fighter-selection::before {
+  content: 'VS'; position: absolute; left: 50%; top: 38%; transform: translate(-50%, -50%) skew(-12deg);
+  font: italic 900 clamp(60px, 8vw, 140px)/1 'Barlow Condensed', sans-serif;
+  color: var(--gold); text-shadow: 0 0 40px #f59e0b88; z-index: -1;
 }
 #fighterScreen .fighter-preview {
-  grid-area: player; height: 100%; min-width: 0;
-  display: grid;
-  grid-template-columns: minmax(90px, .35fr) minmax(0, 1fr);
-  grid-template-rows: auto auto auto auto minmax(0, 1fr);
-  align-items: center; justify-items: start; gap: 3px 14px;
-  padding: 10px 14px;
-  text-align: left;
-  background: linear-gradient(120deg, #202337bb, #0a142bbd);
-  border: 1px solid var(--line);
-  border-top: 2px solid var(--gold);
+  grid-area: player; display: grid; min-height: 0; height: 100%; padding: 0 5px;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: minmax(0, 1fr) 24px clamp(30px, 3vw, 48px) clamp(65px, 9vh, 96px) 25px;
+  gap: 3px; align-items: center; justify-items: center; text-align: center;
+  background: none; border: 0;
 }
-#fighterScreen .rival-preview { grid-area: rival; border-top-color: #78b9ad; }
+#fighterScreen .rival-preview { grid-area: rival; }
 #fighterScreen .fighter-preview > canvas {
-  grid-column: 1; grid-row: 1 / -1;
-  width: 100%; height: 100%; min-height: 0; object-fit: contain;
+  position: static; grid-row: 1; width: 150%; height: 100%; min-height: 0;
+  object-fit: contain; object-position: center bottom; z-index: -1; filter: drop-shadow(0 8px 18px #0008);
 }
-#fighterScreen .fighter-preview > small { grid-column: 2; color: var(--gold); font-size: 10px; letter-spacing: 2px; }
-#fighterScreen .rival-preview > small { color: #a4d9ce; }
-#fighterScreen .fighter-preview > strong { grid-column: 2; font-size: clamp(23px, 2.4vw, 34px); line-height: 1; }
-#fighterScreen .fighter-preview > span { grid-column: 2; font-size: 12px; line-height: 1.2; margin: 0; color: var(--paper); }
-#fighterScreen .fighter-preview > p { grid-column: 2; max-width: none; font-size: 12px; line-height: 1.2; margin: 0; color: #bdc9df; }
-#fighterScreen .power-demo { grid-column: 2; width: 100%; height: 100%; min-height: 0; }
-#fighterScreen .power-demo > canvas { height: calc(100% - 19px); }
-#fighterScreen .power-demo > figcaption { height: 19px; font-size: 9px; }
-#fighterScreen .fighter-picks { grid-area: picks; min-width: 0; min-height: 0; }
-#fighterScreen .pick-tabs { display: flex; flex-shrink: 0; gap: 8px; margin: 0 0 6px; }
-#fighterScreen .pick-tabs > button { flex: 1; padding: 6px; font-size: 12px; }
+#fighterScreen .fighter-preview > small { color: var(--gold); font-size: 10px; letter-spacing: 2px; padding-top: 8px; border-top: 1px solid var(--gold); width: 100%; background: #0a142b99; }
+#fighterScreen .rival-preview > small { color: #a4d9ce; border-color: #78b9ad; }
+#fighterScreen .fighter-preview > strong { font-size: clamp(20px, 2.6vw, 42px); line-height: 1; }
+#fighterScreen .fighter-preview > span { font-size: clamp(9px, .85vw, 14px); margin: 0; color: var(--paper); }
+#fighterScreen .fighter-preview > p { display: block; min-height: 0; font-size: clamp(8px, .75vw, 12px); line-height: 1.2; margin: 0; color: var(--muted); }
+#fighterScreen .power-demo { width: 100%; height: 100%; min-height: 0; margin: 0; border: 1px solid var(--line); background: #03071280; }
+#fighterScreen .power-demo > canvas { height: calc(100% - 17px); }
+#fighterScreen .power-demo > figcaption { height: 17px; font-size: clamp(6px, .6vw, 10px); }
+#fighterScreen .fighter-picks { display: contents; }
 #fighterScreen .fighter-list.roster-grid {
-  grid-template-columns: repeat(10, minmax(0, 1fr));
-  grid-template-rows: none; grid-auto-rows: minmax(64px, 1fr);
-  gap: 4px; width: 100%; height: auto; min-height: 0; flex: 1;
-  overflow: auto; overscroll-behavior: contain;
-  scrollbar-width: thin; scrollbar-color: #9aadd6 #0a142b;
-  align-content: stretch; padding: 2px;
+  grid-area: left; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-rows: repeat(6, minmax(0, 1fr)); grid-auto-rows: minmax(0, 1fr);
+  gap: 4px; width: 100%; height: 100%; min-height: 0; padding: 0;
+  align-content: stretch; align-items: stretch; overflow: auto; scrollbar-width: thin;
+  transform: perspective(1200px) rotateY(18deg) rotateZ(7deg) scale(.91);
+  transform-origin: center; margin-top: -3%;
 }
-#fighterScreen .roster-fighter { min-height: 64px; aspect-ratio: auto; }
-#fighterScreen .roster-fighter > img { height: 235%; object-position: 50% 0; top: -5%; }
-#fighterScreen .roster-fighter > strong { font-size: clamp(12px, 1.15vw, 17px); padding: 6px 2px 3px; }
+#fighterScreen .fighter-list.roster-right { grid-area: right; grid-template-rows: repeat(5, minmax(0, 1fr)); height: 86%; transform: perspective(1200px) rotateY(-18deg) rotateZ(-7deg) scale(.91); }
+#fighterScreen .roster-fighter { min-height: 0; aspect-ratio: auto; border: 1px solid #9aadd688; }
+#fighterScreen .roster-fighter > img { height: 220%; top: -4%; object-position: 50% 0; }
+#fighterScreen .roster-right .roster-fighter > img { transform: scaleX(-1); }
+#fighterScreen .roster-fighter.selected { border: 2px solid var(--gold); box-shadow: 0 0 14px #f59e0b66; }
 #fighterScreen .roster-fighter:hover { border-color: var(--paper); background: #29314a; }
-#fighterScreen .roster-fighter:focus-visible { outline: 2px solid var(--paper); outline-offset: -2px; }
-#fighterScreen .roster-hint { flex-shrink: 0; margin: 6px 0 0; font-size: 9px; }
-#fighterScreen > .menu-footer { grid-template-columns: 1fr auto 1fr; gap: 0; }
-#fighterScreen .menu-footer > #backButton,
-#fighterScreen .menu-footer > #controlsButton {
-  position: absolute; top: 18px;
-  grid-column: auto; grid-row: auto;
-  padding: 10px 16px; min-height: 40px; font-size: 13px;
+#fighterScreen .roster-fighter:focus-visible { outline: 2px solid var(--paper); outline-offset: -3px; }
+#fighterScreen .pick-tabs { position: absolute; left: 32%; right: 32%; bottom: -25px; display: flex; justify-content: center; gap: 8px; margin: 0; }
+#fighterScreen .pick-tabs > button { padding: 2px 6px; font-size: 8px; letter-spacing: 1px; }
+#fighterScreen .roster-hint { position: absolute; left: 32%; right: 32%; bottom: -39px; margin: 0; font-size: 8px; }
+#fighterScreen > .menu-footer { grid-template-columns: 1fr auto 1fr; margin-top: 32px; }
+#fighterScreen .menu-footer > #backButton, #fighterScreen .menu-footer > #controlsButton {
+  position: absolute; grid-column: auto; grid-row: auto; width: auto; top: 14px; padding: 10px 20px; min-height: 40px; font-size: 16px;
 }
-#fighterScreen .menu-footer > #backButton { left: clamp(12px, 2vw, 32px); }
-#fighterScreen .menu-footer > #controlsButton { right: clamp(12px, 2vw, 32px); }
-#fighterScreen .menu-footer > .confirm-button { grid-column: 2; width: auto; font-size: 19px; padding: 12px 30px; }
-
-@media (max-width: 1100px) {
-  #fighterScreen .fighter-list.roster-grid { grid-template-columns: repeat(8, minmax(0, 1fr)); }
-  #fighterScreen .fighter-preview { grid-template-columns: minmax(75px, .35fr) minmax(0, 1fr); gap: 2px 8px; }
-}
+#fighterScreen .menu-footer > #backButton { left: 1.3vw; }
+#fighterScreen .menu-footer > #controlsButton { right: 1.3vw; }
+#fighterScreen .menu-footer > .confirm-button { grid-column: 2; font-size: 22px; padding: 12px 30px; min-height: 44px; }
 @media (max-height: 600px) and (orientation: landscape) {
-  #fighterScreen { padding: 10px 16px; --selection-gap: 6px; }
-  #fighterScreen .screen-heading h2 { font-size: 24px; }
-  #fighterScreen .screen-heading > span { font-size: 8px; }
-  #fighterScreen .fighter-selection { grid-template-rows: 108px minmax(0, 1fr); }
-  #fighterScreen .fighter-preview { padding: 4px 8px; grid-template-columns: 70px minmax(0, 1fr); gap: 1px 8px; }
+  #fighterScreen { padding: 8px 1.3vw; gap: 4px; }
+  #fighterScreen .screen-heading h2 { font-size: 28px; }
+  #fighterScreen .fighter-preview { grid-template-rows: minmax(0, 1fr) 14px 24px 46px 18px; gap: 1px; }
+  #fighterScreen .fighter-preview > small { padding-top: 3px; font-size: 7px; }
   #fighterScreen .fighter-preview > strong { font-size: 20px; }
-  #fighterScreen .fighter-preview > small { font-size: 7px; }
-  #fighterScreen .fighter-preview > span, #fighterScreen .fighter-preview > p { font-size: 8px; }
-  #fighterScreen .power-demo > canvas { height: calc(100% - 12px); }
-  #fighterScreen .power-demo > figcaption { height: 12px; font-size: 7px; }
-  #fighterScreen .pick-tabs { margin-bottom: 3px; }
-  #fighterScreen .pick-tabs > button { font-size: 9px; padding: 3px; }
-  #fighterScreen .fighter-list.roster-grid { grid-auto-rows: minmax(58px, 1fr); }
-  #fighterScreen .roster-fighter { min-height: 58px; }
-  #fighterScreen .roster-fighter > strong { font-size: 11px; }
-  #fighterScreen .roster-hint { font-size: 7px; margin-top: 3px; }
-  #fighterScreen .menu-footer > #backButton, #fighterScreen .menu-footer > #controlsButton { top: 10px; padding: 6px 12px; min-height: 32px; font-size: 11px; }
-  #fighterScreen .menu-footer > .confirm-button { font-size: 13px; padding: 7px 20px; min-height: 32px; }
+  #fighterScreen .fighter-preview > span, #fighterScreen .fighter-preview > p { font-size: 7px; }
+  #fighterScreen .menu-footer > #backButton, #fighterScreen .menu-footer > #controlsButton { top: 8px; min-height: 30px; padding: 5px 10px; font-size: 11px; }
+  #fighterScreen .menu-footer > .confirm-button { min-height: 30px; padding: 6px 20px; font-size: 14px; }
+  #fighterScreen .fighter-list.roster-grid { gap: 3px; }
 }
 @media (max-width: 650px) and (orientation: portrait) {
-  #fighterScreen { padding: 10px 12px; --selection-gap: 8px; }
-  #fighterScreen .screen-heading { padding-top: 44px; }
-  #fighterScreen .screen-heading h2 { font-size: 28px; }
-  #fighterScreen .screen-heading > span { font-size: 9px; }
-  #fighterScreen .fighter-selection { grid-template-rows: minmax(210px, .7fr) minmax(0, 1fr); gap: 8px; }
-  #fighterScreen .fighter-preview { padding: 6px; grid-template-columns: 1fr; grid-template-rows: minmax(45px, 1fr) auto auto auto auto 62px; justify-items: center; text-align: center; gap: 2px; }
-  #fighterScreen .fighter-preview > canvas { grid-column: 1; grid-row: 1; }
-  #fighterScreen .fighter-preview > small, #fighterScreen .fighter-preview > strong,
-  #fighterScreen .fighter-preview > span, #fighterScreen .fighter-preview > p,
-  #fighterScreen .power-demo { grid-column: 1; }
-  #fighterScreen .fighter-preview > strong { font-size: 22px; }
-  #fighterScreen .fighter-preview > small { font-size: 8px; }
-  #fighterScreen .fighter-preview > span, #fighterScreen .fighter-preview > p { font-size: 9px; }
-  #fighterScreen .fighter-list.roster-grid { grid-template-columns: repeat(5, minmax(0, 1fr)); grid-auto-rows: minmax(64px, 1fr); }
-  #fighterScreen .roster-fighter { min-height: 64px; }
-  #fighterScreen .roster-fighter > strong { font-size: 11px; }
-  #fighterScreen .pick-tabs > button { font-size: 10px; padding: 5px; }
-  #fighterScreen .menu-footer > #backButton, #fighterScreen .menu-footer > #controlsButton { top: 10px; min-height: 36px; padding: 7px 12px; font-size: 11px; width: auto; }
-  #fighterScreen .menu-footer > .confirm-button { grid-column: 1 / -1; width: 100%; min-height: 40px; font-size: 15px; padding: 10px; }
+  #fighterScreen { padding: 8px; gap: 6px; }
+  #fighterScreen .screen-heading { padding-top: 40px; }
+  #fighterScreen .screen-heading h2 { font-size: 26px; }
+  #fighterScreen .screen-heading > span { font-size: 8px; letter-spacing: 1px; }
+  #fighterScreen .fighter-selection { grid-template-columns: 25% 25% 25% 25%; }
+  #fighterScreen .fighter-list.roster-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); grid-template-rows: none; grid-auto-rows: minmax(0, 1fr); gap: 3px; transform: none; margin-top: 0; height: 100%; }
+  #fighterScreen .fighter-preview { grid-template-rows: minmax(0, 1fr) 18px 40px 65px 22px; padding: 0 3px; }
+  #fighterScreen .fighter-preview > canvas { width: 140%; object-fit: contain; }
+  #fighterScreen .fighter-preview > strong { font-size: 18px; }
+  #fighterScreen .fighter-preview > small { font-size: 7px; letter-spacing: 1px; }
+  #fighterScreen .fighter-preview > span, #fighterScreen .fighter-preview > p { font-size: 8px; overflow-wrap: anywhere; }
+  #fighterScreen .pick-tabs, #fighterScreen .roster-hint { left: 25%; right: 25%; }
+  #fighterScreen .pick-tabs > button { font-size: 7px; padding: 2px; }
+  #fighterScreen .roster-hint { font-size: 6px; }
+  #fighterScreen .menu-footer > #backButton, #fighterScreen .menu-footer > #controlsButton { top: 8px; padding: 7px 12px; min-height: 32px; font-size: 11px; }
+  #fighterScreen .menu-footer > .confirm-button { font-size: 15px; padding: 10px 20px; min-height: 38px; }
+}
+
+#fighterScreen .fighter-preview > strong { width: 100%; align-self: stretch; display: flex; align-items: center; justify-content: center; }
+#fighterScreen .power-marquee { width: 100%; min-width: 0; height: 100%; overflow: hidden; background: #030712bb; border: 1px solid var(--line); mask-image: linear-gradient(90deg, transparent, #000 5% 95%, transparent); }
+#fighterScreen .marquee-track { display: flex; width: max-content; height: 100%; animation: selectionMarquee 24s linear infinite; }
+#fighterScreen .marquee-message { flex: none; display: flex; align-items: center; white-space: nowrap; padding-right: 40px; font-size: clamp(8px, .8vw, 13px); color: var(--gold); text-shadow: 0 0 5px #f59e0b66; animation: selectionFlicker 7.3s linear infinite; }
+#fighterScreen .marquee-message > span { white-space: pre; }
+#fighterScreen .power-marquee:hover .marquee-track { animation-play-state: paused; }
+@keyframes selectionMarquee { to { transform: translateX(-50%); } }
+@keyframes selectionFlicker { 0%, 42%, 44%, 46%, 79%, 81%, 100% { opacity: 1; } 42.5%, 45%, 80% { opacity: .48; } 43%, 45.5%, 80.5% { opacity: .85; } }
+@media (prefers-reduced-motion: reduce) {
+  #fighterScreen .marquee-track, #fighterScreen .marquee-message { animation: none; }
+  #fighterScreen .power-marquee { overflow-x: auto; mask-image: none; }
+  #fighterScreen .marquee-copy { display: none; }
+}
+
+/* Devon's violet rim light carries through the cover's atmosphere and floor. */
+#titleScreen {
+  background: radial-gradient(ellipse at 50% 28%, #56278055, transparent 48%),
+    radial-gradient(ellipse at 50% 85%, #f59e0b18, transparent 55%),
+    linear-gradient(#070713, #111128 50%, var(--ink));
+}
+#titleScreen::before {
+  background: radial-gradient(ellipse at 50% 32%, #ba41fb28, transparent 48%),
+    repeating-conic-gradient(from 15deg at 50% 34%, transparent 0deg 24deg, #b04bff08 25deg 26deg, transparent 27deg 50deg);
+}
+#titleScreen::after { content: ''; position: absolute; inset: 0; z-index: 1; pointer-events: none; background: linear-gradient(transparent 65%, #030712aa), radial-gradient(ellipse at 50% 35%, transparent 38%, #03071266 85%); }
+#titleScreen .title-villain {
+  position: absolute; left: 50%; top: 0; height: 106vh; width: auto; max-width: none;
+  transform: translateX(-50%); object-fit: contain; z-index: -1; pointer-events: none;
+  filter: brightness(.78) saturate(.85) drop-shadow(0 0 32px #9638dc55);
+  mask-image: linear-gradient(#000 0 48%, #0009 65%, transparent 95%);
+}
+#titleScreen .title-center { top: 36vh; padding-top: 0; background: radial-gradient(ellipse, #030712a6, transparent 72%); }
+#titleScreen .title-center h1 { text-shadow: 4px 0 #120e1f, -4px 0 #120e1f, 0 4px #120e1f, 0 -4px #120e1f, 7px 8px 0 #8f541f, 10px 12px 0 #030712, 0 0 35px #030712; }
+#titleScreen .title-center .press-start { top: 50vh; }
+#titleScreen .title-team { width: 40%; z-index: 0; }
+#titleScreen .title-team > canvas { filter: brightness(.72) saturate(.78) drop-shadow(0 0 6px #9a47ba25); }
+#titleScreen .title-team > canvas.team-leader { filter: brightness(.92) drop-shadow(0 0 12px #f59e0b24); }
+#titleScreen .title-floor { background: radial-gradient(ellipse at 50% 100%, #9e37de22, transparent 65%), linear-gradient(transparent, #030712); }
+@media (max-height: 600px) and (orientation: landscape) {
+  #titleScreen .title-center { top: 34vh; }
+  #titleScreen .title-center h1 { font-size: 11vh; }
+  #titleScreen .title-center .press-start { top: 49vh; }
+}
+@media (max-width: 650px) and (orientation: portrait) {
+  #titleScreen .title-villain { height: 83vh; top: 0; }
+  #titleScreen .title-center { top: 31vh; }
+  #titleScreen .title-center .press-start { position: absolute; top: 56vh; }
+  #titleScreen .title-team { width: 41%; }
 }

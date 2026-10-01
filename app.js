@@ -6,6 +6,13 @@ import {FIGHTERS, fighterIds, defaultOpponent} from "./roster.js";
 import {PowerPreview} from "./power-preview.js";
 let online;
 const $ = (selector) => document.querySelector(selector);
+const arcade = $("#arcade");
+arcade.addEventListener('selectstart',event=>event.preventDefault());
+arcade.addEventListener('dragstart',event=>event.preventDefault());
+arcade.addEventListener('contextmenu',event=>event.preventDefault());
+arcade.addEventListener('keydown',event=>{
+  if((event.ctrlKey||event.metaKey)&&event.key.toLowerCase()==='a')event.preventDefault();
+});
 const sources = Object.fromEntries(fighterIds.map(id => [id, FIGHTERS[id].source]));
 const supportingCast = fighterIds.filter(id=>id!=="maya"&&id!=="bruno");
 const titleTeams = [["maya",...supportingCast.filter((_,i)=>i%2===0)],["bruno",...supportingCast.filter((_,i)=>i%2===1)]];
@@ -69,6 +76,7 @@ async function loadAssets() {
   assets = result;
   for(const id of fighterIds) {
     const portrait=result[id].idle[0],bounds=portraitBounds(portrait);
+    basePortraits.set(id,portrait);
     const canvas=document.querySelector(`[data-title-player="${id}"]`);
     if(canvas){canvas.width=bounds.width;canvas.height=bounds.height;
     canvas.getContext("2d").drawImage(portrait,bounds.x,bounds.y,bounds.width,bounds.height,0,0,canvas.width,canvas.height);}
@@ -155,15 +163,18 @@ let selectionSlot = "player", battleLoading = false, launchToken = 0;
 const idlePreviews = new Map();
 const powerPreviewAssets = new Map();
 let powerPreviews = [];
+let powerPreviewRequests = [];
 let previewAnimation, previewGeneration = 0;
 function stopSelectionPreviews() {
   cancelAnimationFrame(previewAnimation);
-  for(const preview of powerPreviews) preview.destroy();
+  for(const preview of powerPreviews) preview?.destroy();
   powerPreviews=[];
+  powerPreviewRequests=[];
 }
 async function preparePowerPreviewAssets(id) {
   if(powerPreviewAssets.has(id))return powerPreviewAssets.get(id);
-  const pending=Promise.all(["idle","special","super","hurt"].map(async state=>{
+  const states=id==='dummy'?['idle','hurt','ko','jump','land']:['idle','special','super','hurt'];
+  const pending=Promise.all(states.map(async state=>{
     const spec=spriteManifest[id]?.[state] || (state==="super" ? spriteManifest[id]?.special : null);
     if(!spec?.frames?.length)throw new Error(`Missing ${id} ${state}`);
     const frames=await Promise.all(spec.frames.map(async frame=>{
@@ -198,33 +209,67 @@ async function prepareIdlePreview(id) {
   }).catch(()=>{idlePreviews.delete(id);return null});
   idlePreviews.set(id,pending);return pending;
 }
+const portraitTransitions = new WeakMap();
+function drawSelectionPortrait(canvas, id, now) {
+  const ctx=canvas.getContext("2d");
+  let state=portraitTransitions.get(canvas);
+  if(!state || state.id!==id){
+    state={id,previous:state?.id,started:now};
+    portraitTransitions.set(canvas,state);
+  }
+  const elapsed=now-state.started;
+  const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const outgoing=state.previous && !reduced && elapsed<220;
+  const progress=reduced || !state.previous ? 1 : Math.min(1,Math.max(0,(elapsed-220)/430));
+  const shown=outgoing?state.previous:id;
+  const portrait=basePortraits.get(shown);
+  ctx.clearRect(0,0,canvas.width,canvas.height);
+  if(portrait?.naturalWidth){
+    const box=portraitBounds(portrait),scale=Math.min(350/box.height,(canvas.width-16)/box.width);
+    const eased=1-Math.pow(1-progress,3);
+    ctx.globalAlpha=outgoing?1-elapsed/220:eased;
+    // The rival canvas is mirrored in CSS, reversing this offset on screen.
+    const slide=outgoing?0:-(1-eased)*45;
+    ctx.drawImage(portrait,box.x,box.y,box.width,box.height,(canvas.width-box.width*scale)/2+slide,canvas.height-12-box.height*scale,box.width*scale,box.height*scale);
+    ctx.globalAlpha=1;
+  }
+  canvas.dataset.previewState="portrait";
+  canvas.dataset.previewFighter=id;
+  canvas.dataset.transitionPhase=outgoing?'out':progress<1?'in':'settled';
+}
 function animateSelectionPreviews() {
-  stopSelectionPreviews();
-  const generation=++previewGeneration,chosen=[selection.player,selection.opponent],previews=[null,null];
-  chosen.forEach((id,index)=>prepareIdlePreview(id).then(preview=>{
-    if(generation===previewGeneration)previews[index]=preview;
-  }));
-  const pair=Promise.all([...new Set(chosen)].map(async id=>[id,await preparePowerPreviewAssets(id)])).then(Object.fromEntries);
+  cancelAnimationFrame(previewAnimation);
+  const generation=++previewGeneration,chosen=[selection.player,selection.opponent];
   for(const id of powerPreviewAssets.keys()) {
     if(powerPreviewAssets.size<=4)break;
-    if(!chosen.includes(id))powerPreviewAssets.delete(id);
+    if(id!=='dummy'&&!chosen.includes(id))powerPreviewAssets.delete(id);
   }
   for(const [index,prefix] of ["player","opponent"].entries()) {
+    const id=chosen[index];
+    if(powerPreviewRequests[index]?.id===id)continue;
+    const request={id};
+    powerPreviewRequests[index]=request;
+    powerPreviews[index]?.destroy();
+    powerPreviews[index]=null;
     const canvas=$("#"+prefix+"PowerDemo"),label=$("#"+prefix+"DemoLabel");
     canvas.dataset.demoReady="false";
     canvas.dataset.demoFighter=chosen[index];
     canvas.getContext("2d").clearRect(0,0,canvas.width,canvas.height);
     label.textContent="ESPECIAL / SUPER";
-    pair.then(decoded=>{
-      if(generation!==previewGeneration||screen!=="fighter")return;
-      const demo=new PowerPreview(canvas,decoded,{player:chosen[index],opponent:chosen[1-index],facing:index?-1:1,onMove:({move,label:moveLabel})=>{
+    const decodedPair=Promise.all([id,'dummy'].map(async assetId=>[assetId,await preparePowerPreviewAssets(assetId)])).then(Object.fromEntries);
+    decodedPair.then(decoded=>{
+      if(powerPreviewRequests[index]!==request||screen!=="fighter")return;
+      const demo=new PowerPreview(canvas,decoded,{player:chosen[index],facing:index?-1:1,onMove:({move,label:moveLabel})=>{
         const key=keyLabel([controlSettings.keyboard[index][move]].flat()[0]);
         label.textContent=`${key} · ${move==="super"?"SUPER":"ESPECIAL"} · ${moveLabel}`;
         canvas.setAttribute("aria-label",`${FIGHTERS[chosen[index]].name}: ${moveLabel}`);
       }});
-      powerPreviews.push(demo);
+      powerPreviews[index]=demo;
     }).catch(()=>{
-      if(generation===previewGeneration)label.textContent="PRÉVIA INDISPONÍVEL";
+      if(powerPreviewRequests[index]===request){
+        label.textContent="PRÉVIA INDISPONÍVEL";
+        powerPreviewRequests[index]=null;
+      }
     });
   }
   const started=performance.now();
@@ -232,23 +277,9 @@ function animateSelectionPreviews() {
   function draw(now) {
     if(generation!==previewGeneration||screen!=="fighter")return;
     const dt=Math.min(Math.max((now-last)/1000,0),.05);last=now;
-    for(const demo of powerPreviews){demo.tick(dt);demo.draw();}
+    for(const demo of powerPreviews){if(demo){demo.tick(dt);demo.draw();}}
     for(const [index,prefix] of ["player","opponent"].entries()) {
-      const canvas=$("#"+prefix+"Preview"),ctx=canvas.getContext("2d"),preview=previews[index];
-      ctx.clearRect(0,0,canvas.width,canvas.height);
-      if(preview){
-        const sprite=preview.frames[Math.floor(Math.max(0,now-started)/1000*preview.fps)%preview.frames.length];
-        const height=350/preview.referenceHeight*sprite.height*sprite.spriteMeta.scale,width=height*sprite.width/sprite.height;
-        ctx.drawImage(sprite,canvas.width/2-width*sprite.spriteMeta.anchorX,canvas.height-12-height*sprite.spriteMeta.anchorY,width,height);
-        canvas.dataset.previewState=preview.frames.length>1?"animated":"idle";
-      }else{
-        const portrait=basePortraits.get(chosen[index])||assets?.[chosen[index]]?.idle[0];
-        if(portrait?.naturalWidth){const box=portraitBounds(portrait),scale=Math.min(350/box.height,(canvas.width-16)/box.width);
-          ctx.drawImage(portrait,box.x,box.y,box.width,box.height,(canvas.width-box.width*scale)/2,canvas.height-12-box.height*scale,box.width*scale,box.height*scale);
-        }
-        canvas.dataset.previewState="portrait";
-      }
-      canvas.dataset.previewFighter=chosen[index];
+      drawSelectionPortrait($("#"+prefix+"Preview"),chosen[index],now);
     }
     previewAnimation=requestAnimationFrame(draw);
   }
@@ -264,6 +295,8 @@ function renderSelection() {
     $("#"+prefix+"Name").textContent = f.name;
     $("#"+prefix+"Power").textContent = f.power.label + " / " + f.power.superLabel;
     $("#"+prefix+"Description").textContent = f.power.description;
+    const marquee=$("#"+prefix+"Description").closest('.power-marquee');
+    marquee.querySelector('.marquee-copy').textContent=f.power.label+" / "+f.power.superLabel+" · "+f.power.description;
   }
   for (const item of document.querySelectorAll("[data-player]")) {
     item.disabled=network&&online.slot===null;
@@ -278,11 +311,19 @@ function renderSelection() {
   $(".roster-hint").textContent=network&&online.slot===null?"ESPECTADOR · SELEÇÃO AO VIVO":network?"CADA JOGADOR ESCOLHE SEU LUTADOR · SELEÇÃO AO VIVO":"Q TROCA P1 / RIVAL · U ESPECIAL · I SUPER";
   if (spriteManifest.maya) animateSelectionPreviews();
 }
+// Portrait positions follow novo-menu-idea.png, independently of combat roster order.
+const selectionLeftIds = ['maya','bruno','viihuugo','joke-l','king-luiz',
+  'mr-funnie','baiano-m','cowboy','henry-k','jamal',
+  'bento','deve-ras','ana','miranda','naldo',
+  'cody','d-nelson','daddy-ianky','felurian','gabiest',
+  'mr-g','musashi','p-d-r','prefeito','r1sen',
+  'gus','kalango','miss-laura','s3rious'];
+const selectionRightIds = fighterIds.filter(id=>!selectionLeftIds.includes(id));
 const fighterScreen = $("#fighterScreen");
 fighterScreen.innerHTML = `<header class="screen-heading"><span>02 / PLAYER SELECT · ${fighterIds.length} LUTADORES</span><h2 id="fighterHeading">ESCOLHA SEU LUTADOR</h2></header>
-<div class="fighter-selection"><div class="fighter-preview"><canvas id="playerPreview" width="420" height="400" role="img"></canvas><small>JOGADOR 1</small><strong id="playerName"></strong><span id="playerPower"></span><p id="playerDescription"></p><figure class="power-demo"><canvas id="playerPowerDemo" role="img" width="1280" height="720"></canvas><figcaption id="playerDemoLabel">ESPECIAL / SUPER</figcaption></figure></div>
-<div class="fighter-picks"><div class="pick-tabs"><button data-slot="player" class="active">JOGADOR 1</button><button data-slot="opponent" id="opponentSlot">RIVAL</button></div><div class="fighter-list roster-grid">${fighterIds.map(id=>`<button class="roster-fighter" data-player="${id}" aria-label="Selecionar ${FIGHTERS[id].name}"><img src="${FIGHTERS[id].source}" alt="${FIGHTERS[id].name}"><span class="pick-badge"></span><strong>${FIGHTERS[id].name}</strong></button>`).join("")}</div><p class="roster-hint">Q TROCA P1 / RIVAL · U ESPECIAL · I SUPER</p></div>
-<div class="fighter-preview rival-preview"><canvas id="opponentPreview" width="420" height="400" role="img"></canvas><small>RIVAL</small><strong id="opponentName"></strong><span id="opponentPower"></span><p id="opponentDescription"></p><figure class="power-demo"><canvas id="opponentPowerDemo" role="img" width="1280" height="720"></canvas><figcaption id="opponentDemoLabel">ESPECIAL / SUPER</figcaption></figure></div></div><button class="confirm-button" id="fighterNext">CONFIRMAR LUTADORES →</button>`;
+<div class="fighter-selection"><div class="fighter-preview"><canvas id="playerPreview" width="420" height="400" role="img"></canvas><small>JOGADOR 1</small><strong id="playerName"></strong><figure class="power-demo"><canvas id="playerPowerDemo" role="img" width="1280" height="720"></canvas><figcaption id="playerDemoLabel">ESPECIAL / SUPER</figcaption></figure><div class="power-marquee"><div class="marquee-track"><div class="marquee-message"><span id="playerPower"></span><span aria-hidden="true"> · </span><span id="playerDescription"></span></div><div class="marquee-message marquee-copy" aria-hidden="true"></div></div></div></div>
+<div class="fighter-picks"><div class="pick-tabs"><button data-slot="player" class="active">JOGADOR 1</button><button data-slot="opponent" id="opponentSlot">RIVAL</button></div>${[selectionLeftIds,selectionRightIds].map((ids,side)=>`<div class="fighter-list roster-grid roster-${side===0?'left':'right'}">${ids.map(id=>`<button class="roster-fighter" data-player="${id}" aria-label="Selecionar ${FIGHTERS[id].name}"><img src="${FIGHTERS[id].source}" alt="${FIGHTERS[id].name}"><span class="pick-badge"></span></button>`).join("")}</div>`).join("")}<p class="roster-hint">Q TROCA P1 / RIVAL · U ESPECIAL · I SUPER</p></div>
+<div class="fighter-preview rival-preview"><canvas id="opponentPreview" width="420" height="400" role="img"></canvas><small>RIVAL</small><strong id="opponentName"></strong><figure class="power-demo"><canvas id="opponentPowerDemo" role="img" width="1280" height="720"></canvas><figcaption id="opponentDemoLabel">ESPECIAL / SUPER</figcaption></figure><div class="power-marquee"><div class="marquee-track"><div class="marquee-message"><span id="opponentPower"></span><span aria-hidden="true"> · </span><span id="opponentDescription"></span></div><div class="marquee-message marquee-copy" aria-hidden="true"></div></div></div></div></div><button class="confirm-button" id="fighterNext">CONFIRMAR LUTADORES →</button>`;
 function setSelectionSlot(slot) {
   if(selection.mode==="online"&&online?.room&&(online.slot===null||slot!==(online.slot===0?"player":"opponent")))return;
   selectionSlot=slot;
