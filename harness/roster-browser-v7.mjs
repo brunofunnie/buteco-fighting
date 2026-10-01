@@ -30,7 +30,7 @@ try {
  }
  await page.setViewportSize({width:1440,height:900});
  await page.locator('[data-slot="player"]').click();await page.locator('[data-player="maya"]').click();await page.keyboard.press('ArrowDown');
- check('arrow down advances one grid row',await page.evaluate(()=>window.__ui.selection.player==='king-luiz'));
+ check('arrow down advances one grid row',await page.evaluate(ids=>window.__ui.selection.player===ids[getComputedStyle(document.querySelector('.roster-grid')).gridTemplateColumns.split(' ').length],fighterIds));
  await page.keyboard.press('q');await page.keyboard.press('ArrowRight');check('Q lets keyboard choose rival',await page.evaluate(()=>window.__ui.selection.opponent==='viihuugo'));
  await page.locator('#backButton').click();
  const manifest=JSON.parse(await fs.readFile('assets/manifest.json','utf8'));

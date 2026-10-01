@@ -1,0 +1,21 @@
+{
+  "id": "d-nelson",
+  "name": "D.Nelson",
+  "source": "assets/sprites/d-nelson/base-source.png",
+  "identity": "Broad smiling tan man, swept-back black hair and dark beard, rainbow neck ribbons, black tech graphic T-shirt, olive cargo shorts with hanging badges, red-black sneakers.",
+  "color": "#d8ad62",
+  "speed": 300,
+  "tempo": 0.98,
+  "visualHeight": 320,
+  "damage": {
+    "punch": 8,
+    "kick": 13
+  },
+  "tagline": "FORÇA DA UNIÃO",
+  "power": {
+    "kind": "solidarity",
+    "label": "Pulso da união",
+    "superLabel": "Todos por um",
+    "description": "Estrelas de energia em sequência; o super abre um leque."
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "id": "felurian",
+  "name": "Felurian",
+  "source": "assets/sprites/felurian/base-source.png",
+  "identity": "Tall tan man, short dark hair, sunglasses, deep purple open-collar shirt and matching trousers, hip keys, purple-white sneakers.",
+  "color": "#b785e1",
+  "speed": 300,
+  "tempo": 0.98,
+  "visualHeight": 320,
+  "damage": {
+    "punch": 8,
+    "kick": 13
+  },
+  "tagline": "BRUMA VIOLETA",
+  "power": {
+    "kind": "lunar",
+    "label": "Névoa violeta",
+    "superLabel": "Noite profunda",
+    "description": "Esferas lentas de névoa que prolongam o impacto."
+  }
+}

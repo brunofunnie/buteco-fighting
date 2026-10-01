@@ -1,0 +1,32 @@
+{
+  "errors": [],
+  "motionReviewed": [
+    "idle",
+    "punch",
+    "kick",
+    "hurt",
+    "jump",
+    "special",
+    "walk",
+    "block",
+    "crouch",
+    "ko",
+    "celebrate",
+    "airPunch",
+    "airKick",
+    "crouchPunch",
+    "crouchKick",
+    "uppercut",
+    "sweep",
+    "dash",
+    "backwalk",
+    "lowBlock",
+    "turn",
+    "land",
+    "jumpForward",
+    "super"
+  ],
+  "anatomyMethod": "manual-visual-crown-to-chin",
+  "contentHash": "42ce2eb8f23c48337162fb354d85dba439ac8a78750a8105e6112367fc8f05ec",
+  "notes": "Independent review of all 100 poses. Identity and accessories, limbs/joints, airborne/grounded poses, low attacks, horizontal KO and left-ending turn pass. Walk/backwalk are compact fighting shuffles with distinct front/rear foot lifts and coherent return seam. Sequence assessed through contact sheets; no realtime GIF playback claim."
+}

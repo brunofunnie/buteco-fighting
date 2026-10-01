@@ -1,0 +1,21 @@
+{
+  "id": "r1sen",
+  "name": "r1sen",
+  "source": "assets/sprites/r1sen/base-source.png",
+  "identity": "Mature tan man with short gray hair and dark beard, black rectangular glasses, black rolled-sleeve shirt, dark trousers, red-gold hip scarf, bracelets, black boots.",
+  "color": "#dca369",
+  "speed": 300,
+  "tempo": 0.98,
+  "visualHeight": 320,
+  "damage": {
+    "punch": 8,
+    "kick": 13
+  },
+  "tagline": "CHAMA QUE RETORNA",
+  "power": {
+    "kind": "codefire",
+    "label": "Chama ascendente",
+    "superLabel": "Ressurgimento",
+    "description": "Projéteis de fogo digital explodem ao atingir o rival."
+  }
+}

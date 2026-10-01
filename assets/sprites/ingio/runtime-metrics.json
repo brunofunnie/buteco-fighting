@@ -1,0 +1,850 @@
+{
+  "idle": [
+    {
+      "path": "assets/sprites/ingio/curated/idle-frame-0.png",
+      "sourceHeight": 642,
+      "outputHeight": 352,
+      "anchorX": 0.516263022531321,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0
+    },
+    {
+      "path": "assets/sprites/ingio/curated/idle-frame-1.png",
+      "sourceHeight": 658,
+      "outputHeight": 352,
+      "anchorX": 0.5127132473039164,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0
+    },
+    {
+      "path": "assets/sprites/ingio/curated/idle-frame-2.png",
+      "sourceHeight": 671,
+      "outputHeight": 352,
+      "anchorX": 0.5109000565150024,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0
+    },
+    {
+      "path": "assets/sprites/ingio/curated/idle-frame-3.png",
+      "sourceHeight": 644,
+      "outputHeight": 351,
+      "anchorX": 0.5184758804033366,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0
+    }
+  ],
+  "punch": [
+    {
+      "path": "assets/sprites/ingio/curated/punch-frame-0.png",
+      "sourceHeight": 632,
+      "outputHeight": 352,
+      "anchorX": 0.5065348382983207,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0
+    },
+    {
+      "path": "assets/sprites/ingio/curated/punch-frame-1.png",
+      "sourceHeight": 635,
+      "outputHeight": 352,
+      "anchorX": 0.5056608697685542,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0
+    },
+    {
+      "path": "assets/sprites/ingio/curated/punch-frame-2.png",
+      "sourceHeight": 630,
+      "outputHeight": 352,
+      "anchorX": 0.4332735582231213,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0
+    },
+    {
+      "path": "assets/sprites/ingio/curated/punch-frame-3.png",
+      "sourceHeight": 631,
+      "outputHeight": 352,
+      "anchorX": 0.5029444309810279,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0
+    }
+  ],
+  "kick": [
+    {
+      "path": "assets/sprites/ingio/curated/kick-frame-0.png",
+      "sourceHeight": 646,
+      "outputHeight": 351,
+      "anchorX": 0.5097407220549447,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0
+    },
+    {
+      "path": "assets/sprites/ingio/curated/kick-frame-1.png",
+      "sourceHeight": 659,
+      "outputHeight": 352,
+      "anchorX": 0.4745490612987324,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0
+    },
+    {
+      "path": "assets/sprites/ingio/curated/kick-frame-2.png",
+      "sourceHeight": 646,
+      "outputHeight": 328,
+      "anchorX": 0.2731240668548907,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.09589
+    },
+    {
+      "path": "assets/sprites/ingio/curated/kick-frame-3.png",
+      "sourceHeight": 647,
+      "outputHeight": 351,
+      "anchorX": 0.47379731016002924,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0
+    }
+  ],
+  "hurt": [
+    {
+      "path": "assets/sprites/ingio/curated/hurt-frame-0.png",
+      "sourceHeight": 570,
+      "outputHeight": 352,
+      "anchorX": 0.5236721983934108,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.91954
+    },
+    {
+      "path": "assets/sprites/ingio/curated/hurt-frame-1.png",
+      "sourceHeight": 572,
+      "outputHeight": 345,
+      "anchorX": 0.5895596879060944,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.91954
+    },
+    {
+      "path": "assets/sprites/ingio/curated/hurt-frame-2.png",
+      "sourceHeight": 546,
+      "outputHeight": 352,
+      "anchorX": 0.4961466848493421,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.97561
+    },
+    {
+      "path": "assets/sprites/ingio/curated/hurt-frame-3.png",
+      "sourceHeight": 585,
+      "outputHeight": 352,
+      "anchorX": 0.5083516200952299,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0
+    }
+  ],
+  "jump": [
+    {
+      "path": "assets/sprites/ingio/curated/jump-frame-0.png",
+      "sourceHeight": 441,
+      "outputHeight": 352,
+      "anchorX": 0.4419391768525502,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.707965
+    },
+    {
+      "path": "assets/sprites/ingio/curated/jump-frame-1.png",
+      "sourceHeight": 562,
+      "outputHeight": 352,
+      "anchorX": 0.38781966774525817,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.776699
+    },
+    {
+      "path": "assets/sprites/ingio/curated/jump-frame-2.png",
+      "sourceHeight": 554,
+      "outputHeight": 352,
+      "anchorX": 0.35478204288652754,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.776699
+    },
+    {
+      "path": "assets/sprites/ingio/curated/jump-frame-3.png",
+      "sourceHeight": 426,
+      "outputHeight": 339,
+      "anchorX": 0.49320710505481635,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.64
+    }
+  ],
+  "special": [
+    {
+      "path": "assets/sprites/ingio/curated/special-frame-0.png",
+      "sourceHeight": 598,
+      "outputHeight": 352,
+      "anchorX": 0.5084210942129103,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0
+    },
+    {
+      "path": "assets/sprites/ingio/curated/special-frame-1.png",
+      "sourceHeight": 591,
+      "outputHeight": 352,
+      "anchorX": 0.5127297854750617,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.952381
+    },
+    {
+      "path": "assets/sprites/ingio/curated/special-frame-2.png",
+      "sourceHeight": 581,
+      "outputHeight": 351,
+      "anchorX": 0.45544743125294573,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.987654
+    },
+    {
+      "path": "assets/sprites/ingio/curated/special-frame-3.png",
+      "sourceHeight": 598,
+      "outputHeight": 352,
+      "anchorX": 0.5094293209450481,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0
+    }
+  ],
+  "walk": [
+    {
+      "path": "assets/sprites/ingio/curated/walk-frame-0.png",
+      "sourceHeight": 582,
+      "outputHeight": 352,
+      "anchorX": 0.4989943659306817,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0
+    },
+    {
+      "path": "assets/sprites/ingio/curated/walk-frame-1.png",
+      "sourceHeight": 587,
+      "outputHeight": 352,
+      "anchorX": 0.4853139488873821,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0
+    },
+    {
+      "path": "assets/sprites/ingio/curated/walk-frame-2.png",
+      "sourceHeight": 583,
+      "outputHeight": 352,
+      "anchorX": 0.48247373474850325,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0
+    },
+    {
+      "path": "assets/sprites/ingio/curated/walk-frame-3.png",
+      "sourceHeight": 577,
+      "outputHeight": 352,
+      "anchorX": 0.5015580345065249,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0
+    },
+    {
+      "path": "assets/sprites/ingio/curated/walk-frame-4.png",
+      "sourceHeight": 583,
+      "outputHeight": 352,
+      "anchorX": 0.45361681713151775,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0
+    },
+    {
+      "path": "assets/sprites/ingio/curated/walk-frame-5.png",
+      "sourceHeight": 587,
+      "outputHeight": 352,
+      "anchorX": 0.497777492270772,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0
+    }
+  ],
+  "block": [
+    {
+      "path": "assets/sprites/ingio/curated/block-frame-0.png",
+      "sourceHeight": 651,
+      "outputHeight": 352,
+      "anchorX": 0.511662135911959,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0
+    },
+    {
+      "path": "assets/sprites/ingio/curated/block-frame-1.png",
+      "sourceHeight": 648,
+      "outputHeight": 352,
+      "anchorX": 0.5101096610122899,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0
+    },
+    {
+      "path": "assets/sprites/ingio/curated/block-frame-2.png",
+      "sourceHeight": 642,
+      "outputHeight": 351,
+      "anchorX": 0.5110018392369048,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0
+    },
+    {
+      "path": "assets/sprites/ingio/curated/block-frame-3.png",
+      "sourceHeight": 641,
+      "outputHeight": 352,
+      "anchorX": 0.5095121480065542,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0
+    }
+  ],
+  "crouch": [
+    {
+      "path": "assets/sprites/ingio/curated/crouch-frame-0.png",
+      "sourceHeight": 638,
+      "outputHeight": 352,
+      "anchorX": 0.47644632044733903,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.860215
+    },
+    {
+      "path": "assets/sprites/ingio/curated/crouch-frame-1.png",
+      "sourceHeight": 571,
+      "outputHeight": 352,
+      "anchorX": 0.49314089970563374,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.784314
+    },
+    {
+      "path": "assets/sprites/ingio/curated/crouch-frame-2.png",
+      "sourceHeight": 515,
+      "outputHeight": 351,
+      "anchorX": 0.5271274029336585,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.683761
+    },
+    {
+      "path": "assets/sprites/ingio/curated/crouch-frame-3.png",
+      "sourceHeight": 519,
+      "outputHeight": 352,
+      "anchorX": 0.459616842111867,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.683761
+    }
+  ],
+  "ko": [
+    {
+      "path": "assets/sprites/ingio/curated/ko-frame-0.png",
+      "sourceHeight": 551,
+      "outputHeight": 351,
+      "anchorX": 0.4991610521974433,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.930233
+    },
+    {
+      "path": "assets/sprites/ingio/curated/ko-frame-1.png",
+      "sourceHeight": 491,
+      "outputHeight": 352,
+      "anchorX": 0.4098792055679519,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.8
+    },
+    {
+      "path": "assets/sprites/ingio/curated/ko-frame-2.png",
+      "sourceHeight": 324,
+      "outputHeight": 189,
+      "anchorX": 0.43126109424999387,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.052632
+    },
+    {
+      "path": "assets/sprites/ingio/curated/ko-frame-3.png",
+      "sourceHeight": 180,
+      "outputHeight": 94,
+      "anchorX": 0.5292534506344325,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.269841
+    }
+  ],
+  "celebrate": [
+    {
+      "path": "assets/sprites/ingio/curated/celebrate-frame-0.png",
+      "sourceHeight": 613,
+      "outputHeight": 352,
+      "anchorX": 0.5137014257634832,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0
+    },
+    {
+      "path": "assets/sprites/ingio/curated/celebrate-frame-1.png",
+      "sourceHeight": 620,
+      "outputHeight": 351,
+      "anchorX": 0.5030107208626845,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0
+    },
+    {
+      "path": "assets/sprites/ingio/curated/celebrate-frame-2.png",
+      "sourceHeight": 670,
+      "outputHeight": 352,
+      "anchorX": 0.504512916735309,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.09589
+    },
+    {
+      "path": "assets/sprites/ingio/curated/celebrate-frame-3.png",
+      "sourceHeight": 659,
+      "outputHeight": 352,
+      "anchorX": 0.5050586839914329,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.09589
+    }
+  ],
+  "airPunch": [
+    {
+      "path": "assets/sprites/ingio/curated/airPunch-frame-0.png",
+      "sourceHeight": 597,
+      "outputHeight": 352,
+      "anchorX": 0.3389069111778364,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.784314
+    },
+    {
+      "path": "assets/sprites/ingio/curated/airPunch-frame-1.png",
+      "sourceHeight": 576,
+      "outputHeight": 352,
+      "anchorX": 0.34861848015539953,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.784314
+    },
+    {
+      "path": "assets/sprites/ingio/curated/airPunch-frame-2.png",
+      "sourceHeight": 576,
+      "outputHeight": 352,
+      "anchorX": 0.2843649649513043,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.784314
+    },
+    {
+      "path": "assets/sprites/ingio/curated/airPunch-frame-3.png",
+      "sourceHeight": 574,
+      "outputHeight": 352,
+      "anchorX": 0.4258524072505958,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.784314
+    }
+  ],
+  "airKick": [
+    {
+      "path": "assets/sprites/ingio/curated/airKick-frame-0.png",
+      "sourceHeight": 520,
+      "outputHeight": 352,
+      "anchorX": 0.500265269674499,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.792079
+    },
+    {
+      "path": "assets/sprites/ingio/curated/airKick-frame-1.png",
+      "sourceHeight": 479,
+      "outputHeight": 323,
+      "anchorX": 0.39619860233918386,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.860215
+    },
+    {
+      "path": "assets/sprites/ingio/curated/airKick-frame-2.png",
+      "sourceHeight": 482,
+      "outputHeight": 280,
+      "anchorX": 0.3291916782285348,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.081081
+    },
+    {
+      "path": "assets/sprites/ingio/curated/airKick-frame-3.png",
+      "sourceHeight": 528,
+      "outputHeight": 352,
+      "anchorX": 0.49520709582040645,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.792079
+    }
+  ],
+  "crouchPunch": [
+    {
+      "path": "assets/sprites/ingio/curated/crouchPunch-frame-0.png",
+      "sourceHeight": 501,
+      "outputHeight": 352,
+      "anchorX": 0.4908304844789158,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.720721
+    },
+    {
+      "path": "assets/sprites/ingio/curated/crouchPunch-frame-1.png",
+      "sourceHeight": 501,
+      "outputHeight": 352,
+      "anchorX": 0.5002062268143327,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.720721
+    },
+    {
+      "path": "assets/sprites/ingio/curated/crouchPunch-frame-2.png",
+      "sourceHeight": 489,
+      "outputHeight": 268,
+      "anchorX": 0.3752663871748498,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.09589
+    },
+    {
+      "path": "assets/sprites/ingio/curated/crouchPunch-frame-3.png",
+      "sourceHeight": 501,
+      "outputHeight": 352,
+      "anchorX": 0.48812106217748585,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.720721
+    }
+  ],
+  "crouchKick": [
+    {
+      "path": "assets/sprites/ingio/curated/crouchKick-frame-0.png",
+      "sourceHeight": 482,
+      "outputHeight": 352,
+      "anchorX": 0.4624392372785353,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.683761
+    },
+    {
+      "path": "assets/sprites/ingio/curated/crouchKick-frame-1.png",
+      "sourceHeight": 517,
+      "outputHeight": 351,
+      "anchorX": 0.502439632636043,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.683761
+    },
+    {
+      "path": "assets/sprites/ingio/curated/crouchKick-frame-2.png",
+      "sourceHeight": 469,
+      "outputHeight": 253,
+      "anchorX": 0.5925925276022378,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0
+    },
+    {
+      "path": "assets/sprites/ingio/curated/crouchKick-frame-3.png",
+      "sourceHeight": 482,
+      "outputHeight": 352,
+      "anchorX": 0.46482629856073254,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.683761
+    }
+  ],
+  "uppercut": [
+    {
+      "path": "assets/sprites/ingio/curated/uppercut-frame-0.png",
+      "sourceHeight": 555,
+      "outputHeight": 352,
+      "anchorX": 0.5086939030764089,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.879121
+    },
+    {
+      "path": "assets/sprites/ingio/curated/uppercut-frame-1.png",
+      "sourceHeight": 580,
+      "outputHeight": 351,
+      "anchorX": 0.5045552051602346,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0
+    },
+    {
+      "path": "assets/sprites/ingio/curated/uppercut-frame-2.png",
+      "sourceHeight": 703,
+      "outputHeight": 351,
+      "anchorX": 0.46627137117702516,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.230769
+    },
+    {
+      "path": "assets/sprites/ingio/curated/uppercut-frame-3.png",
+      "sourceHeight": 571,
+      "outputHeight": 351,
+      "anchorX": 0.5064903257086982,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0
+    }
+  ],
+  "sweep": [
+    {
+      "path": "assets/sprites/ingio/curated/sweep-frame-0.png",
+      "sourceHeight": 457,
+      "outputHeight": 352,
+      "anchorX": 0.4986862785596673,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.683761
+    },
+    {
+      "path": "assets/sprites/ingio/curated/sweep-frame-1.png",
+      "sourceHeight": 473,
+      "outputHeight": 352,
+      "anchorX": 0.6003502157011987,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.727273
+    },
+    {
+      "path": "assets/sprites/ingio/curated/sweep-frame-2.png",
+      "sourceHeight": 421,
+      "outputHeight": 209,
+      "anchorX": 0.5197540559317296,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.111111
+    },
+    {
+      "path": "assets/sprites/ingio/curated/sweep-frame-3.png",
+      "sourceHeight": 480,
+      "outputHeight": 352,
+      "anchorX": 0.4571342044646652,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.683761
+    }
+  ],
+  "dash": [
+    {
+      "path": "assets/sprites/ingio/curated/dash-frame-0.png",
+      "sourceHeight": 529,
+      "outputHeight": 352,
+      "anchorX": 0.45700024238377673,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.792079
+    },
+    {
+      "path": "assets/sprites/ingio/curated/dash-frame-1.png",
+      "sourceHeight": 526,
+      "outputHeight": 351,
+      "anchorX": 0.5155642861227059,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.851064
+    },
+    {
+      "path": "assets/sprites/ingio/curated/dash-frame-2.png",
+      "sourceHeight": 538,
+      "outputHeight": 352,
+      "anchorX": 0.5180832938920609,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.792079
+    },
+    {
+      "path": "assets/sprites/ingio/curated/dash-frame-3.png",
+      "sourceHeight": 529,
+      "outputHeight": 352,
+      "anchorX": 0.4591341991630354,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.792079
+    }
+  ],
+  "backwalk": [
+    {
+      "path": "assets/sprites/ingio/curated/backwalk-frame-0.png",
+      "sourceHeight": 472,
+      "outputHeight": 351,
+      "anchorX": 0.5021341980624262,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0
+    },
+    {
+      "path": "assets/sprites/ingio/curated/backwalk-frame-1.png",
+      "sourceHeight": 471,
+      "outputHeight": 352,
+      "anchorX": 0.5186510033300301,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0
+    },
+    {
+      "path": "assets/sprites/ingio/curated/backwalk-frame-2.png",
+      "sourceHeight": 472,
+      "outputHeight": 352,
+      "anchorX": 0.5010460691600419,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0
+    },
+    {
+      "path": "assets/sprites/ingio/curated/backwalk-frame-3.png",
+      "sourceHeight": 472,
+      "outputHeight": 352,
+      "anchorX": 0.4768607475553223,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0
+    },
+    {
+      "path": "assets/sprites/ingio/curated/backwalk-frame-4.png",
+      "sourceHeight": 472,
+      "outputHeight": 352,
+      "anchorX": 0.48793445510518,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0
+    },
+    {
+      "path": "assets/sprites/ingio/curated/backwalk-frame-5.png",
+      "sourceHeight": 472,
+      "outputHeight": 352,
+      "anchorX": 0.5015302687760075,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0
+    }
+  ],
+  "lowBlock": [
+    {
+      "path": "assets/sprites/ingio/curated/lowBlock-frame-0.png",
+      "sourceHeight": 571,
+      "outputHeight": 352,
+      "anchorX": 0.5129896962076521,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.727273
+    },
+    {
+      "path": "assets/sprites/ingio/curated/lowBlock-frame-1.png",
+      "sourceHeight": 563,
+      "outputHeight": 351,
+      "anchorX": 0.511874628068235,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.727273
+    },
+    {
+      "path": "assets/sprites/ingio/curated/lowBlock-frame-2.png",
+      "sourceHeight": 562,
+      "outputHeight": 352,
+      "anchorX": 0.4959025314183337,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.727273
+    },
+    {
+      "path": "assets/sprites/ingio/curated/lowBlock-frame-3.png",
+      "sourceHeight": 563,
+      "outputHeight": 351,
+      "anchorX": 0.4969622001393035,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.727273
+    }
+  ],
+  "turn": [
+    {
+      "path": "assets/sprites/ingio/curated/turn-frame-0.png",
+      "sourceHeight": 674,
+      "outputHeight": 351,
+      "anchorX": 0.49674369831792137,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0
+    },
+    {
+      "path": "assets/sprites/ingio/curated/turn-frame-1.png",
+      "sourceHeight": 675,
+      "outputHeight": 352,
+      "anchorX": 0.5135580674737675,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0
+    },
+    {
+      "path": "assets/sprites/ingio/curated/turn-frame-2.png",
+      "sourceHeight": 676,
+      "outputHeight": 351,
+      "anchorX": 0.5087627557982736,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0
+    },
+    {
+      "path": "assets/sprites/ingio/curated/turn-frame-3.png",
+      "sourceHeight": 674,
+      "outputHeight": 351,
+      "anchorX": 0.5014148490975735,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0
+    }
+  ],
+  "land": [
+    {
+      "path": "assets/sprites/ingio/curated/land-frame-0.png",
+      "sourceHeight": 506,
+      "outputHeight": 352,
+      "anchorX": 0.5110448014316223,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.683761
+    },
+    {
+      "path": "assets/sprites/ingio/curated/land-frame-1.png",
+      "sourceHeight": 578,
+      "outputHeight": 352,
+      "anchorX": 0.5024717886521831,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.824742
+    },
+    {
+      "path": "assets/sprites/ingio/curated/land-frame-2.png",
+      "sourceHeight": 657,
+      "outputHeight": 352,
+      "anchorX": 0.5005936690300254,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0
+    },
+    {
+      "path": "assets/sprites/ingio/curated/land-frame-3.png",
+      "sourceHeight": 666,
+      "outputHeight": 352,
+      "anchorX": 0.5029137129728475,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0
+    }
+  ],
+  "jumpForward": [
+    {
+      "path": "assets/sprites/ingio/curated/jumpForward-frame-0.png",
+      "sourceHeight": 477,
+      "outputHeight": 352,
+      "anchorX": 0.4639527330260435,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.769231
+    },
+    {
+      "path": "assets/sprites/ingio/curated/jumpForward-frame-1.png",
+      "sourceHeight": 589,
+      "outputHeight": 352,
+      "anchorX": 0.23961445477614815,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.851064
+    },
+    {
+      "path": "assets/sprites/ingio/curated/jumpForward-frame-2.png",
+      "sourceHeight": 479,
+      "outputHeight": 352,
+      "anchorX": 0.45776390955443097,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.740741
+    },
+    {
+      "path": "assets/sprites/ingio/curated/jumpForward-frame-3.png",
+      "sourceHeight": 581,
+      "outputHeight": 352,
+      "anchorX": 0.7016715567945496,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.851064
+    }
+  ],
+  "super": [
+    {
+      "path": "assets/sprites/ingio/curated/super-frame-0.png",
+      "sourceHeight": 514,
+      "outputHeight": 349,
+      "anchorX": 0.5153314965962067,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.833333
+    },
+    {
+      "path": "assets/sprites/ingio/curated/super-frame-1.png",
+      "sourceHeight": 600,
+      "outputHeight": 352,
+      "anchorX": 0.5154053510623354,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0
+    },
+    {
+      "path": "assets/sprites/ingio/curated/super-frame-2.png",
+      "sourceHeight": 592,
+      "outputHeight": 352,
+      "anchorX": 0.49348050606921584,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0
+    },
+    {
+      "path": "assets/sprites/ingio/curated/super-frame-3.png",
+      "sourceHeight": 600,
+      "outputHeight": 352,
+      "anchorX": 0.5081832255709969,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0
+    }
+  ]
+}

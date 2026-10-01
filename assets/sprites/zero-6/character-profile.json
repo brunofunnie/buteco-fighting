@@ -1,0 +1,21 @@
+{
+  "id": "zero-6",
+  "name": "Zero 6",
+  "source": "assets/sprites/zero-6/base-source.png",
+  "identity": "Slim light-skinned young man with tousled dark brown hair, navy T-shirt, short black athletic shorts and black sneakers.",
+  "color": "#85b8cf",
+  "speed": 330,
+  "tempo": 0.9,
+  "visualHeight": 320,
+  "damage": {
+    "punch": 7,
+    "kick": 12
+  },
+  "tagline": "ZERO HESITAÇÃO",
+  "power": {
+    "kind": "pulse",
+    "label": "Pulso zero",
+    "superLabel": "Rajada seis",
+    "description": "Pulso estreito muito rápido; o super dispara duas ondas."
+  }
+}

@@ -1,0 +1,746 @@
+{
+  "idle": {
+    "frames": [
+      {
+        "path": "assets/sprites/daddy-ianky/curated/idle-frame-0.png",
+        "scale": 1.0,
+        "anchorX": 0.4889263092566067,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/daddy-ianky/curated/idle-frame-1.png",
+        "scale": 1.0,
+        "anchorX": 0.49304428471490275,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/daddy-ianky/curated/idle-frame-2.png",
+        "scale": 1.0,
+        "anchorX": 0.4822212966215338,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/daddy-ianky/curated/idle-frame-3.png",
+        "scale": 1.0,
+        "anchorX": 0.49276092684093137,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 6,
+    "loop": true
+  },
+  "punch": {
+    "frames": [
+      {
+        "path": "assets/sprites/daddy-ianky/curated/punch-frame-0.png",
+        "scale": 1.0,
+        "anchorX": 0.49361184579618494,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/daddy-ianky/curated/punch-frame-1.png",
+        "scale": 1.0,
+        "anchorX": 0.49231674154854316,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/daddy-ianky/curated/punch-frame-2.png",
+        "scale": 1.013699,
+        "anchorX": 0.4158579832693426,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/daddy-ianky/curated/punch-frame-3.png",
+        "scale": 1.0,
+        "anchorX": 0.4916322383083777,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  },
+  "kick": {
+    "frames": [
+      {
+        "path": "assets/sprites/daddy-ianky/curated/kick-frame-0.png",
+        "scale": 1.0,
+        "anchorX": 0.49173401591367355,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/daddy-ianky/curated/kick-frame-1.png",
+        "scale": 1.0,
+        "anchorX": 0.44593111570654714,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/daddy-ianky/curated/kick-frame-2.png",
+        "scale": 1.0,
+        "anchorX": 0.3525987321720847,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/daddy-ianky/curated/kick-frame-3.png",
+        "scale": 1.0,
+        "anchorX": 0.38490103432259165,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 10,
+    "loop": false
+  },
+  "hurt": {
+    "frames": [
+      {
+        "path": "assets/sprites/daddy-ianky/curated/hurt-frame-0.png",
+        "scale": 0.925,
+        "anchorX": 0.49105250364964453,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/daddy-ianky/curated/hurt-frame-1.png",
+        "scale": 0.925,
+        "anchorX": 0.5081663505195376,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/daddy-ianky/curated/hurt-frame-2.png",
+        "scale": 0.948718,
+        "anchorX": 0.4897506894381098,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/daddy-ianky/curated/hurt-frame-3.png",
+        "scale": 1.0,
+        "anchorX": 0.4906741785611018,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 10,
+    "loop": false
+  },
+  "jump": {
+    "frames": [
+      {
+        "path": "assets/sprites/daddy-ianky/curated/jump-frame-0.png",
+        "scale": 0.762887,
+        "anchorX": 0.5497631121963135,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/daddy-ianky/curated/jump-frame-1.png",
+        "scale": 0.880952,
+        "anchorX": 0.49905076184681235,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/daddy-ianky/curated/jump-frame-2.png",
+        "scale": 0.880952,
+        "anchorX": 0.5345219950433705,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/daddy-ianky/curated/jump-frame-3.png",
+        "scale": 0.880952,
+        "anchorX": 0.5532896458035005,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 8,
+    "loop": false
+  },
+  "special": {
+    "frames": [
+      {
+        "path": "assets/sprites/daddy-ianky/curated/special-frame-0.png",
+        "scale": 1.0,
+        "anchorX": 0.4930807327512862,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/daddy-ianky/curated/special-frame-1.png",
+        "scale": 0.936709,
+        "anchorX": 0.498486958433854,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/daddy-ianky/curated/special-frame-2.png",
+        "scale": 1.057143,
+        "anchorX": 0.43257846463247046,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/daddy-ianky/curated/special-frame-3.png",
+        "scale": 1.0,
+        "anchorX": 0.4891410486124628,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 10,
+    "loop": false
+  },
+  "walk": {
+    "frames": [
+      {
+        "path": "assets/sprites/daddy-ianky/curated/walk-frame-0.png",
+        "scale": 1.0,
+        "anchorX": 0.48661592847487006,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/daddy-ianky/curated/walk-frame-1.png",
+        "scale": 1.0,
+        "anchorX": 0.439520834203958,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/daddy-ianky/curated/walk-frame-2.png",
+        "scale": 1.0,
+        "anchorX": 0.48795844930864996,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/daddy-ianky/curated/walk-frame-3.png",
+        "scale": 1.0,
+        "anchorX": 0.4755547463439463,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/daddy-ianky/curated/walk-frame-4.png",
+        "scale": 1.0,
+        "anchorX": 0.4570666151535489,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/daddy-ianky/curated/walk-frame-5.png",
+        "scale": 1.0,
+        "anchorX": 0.49251998332254265,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": true
+  },
+  "block": {
+    "frames": [
+      {
+        "path": "assets/sprites/daddy-ianky/curated/block-frame-0.png",
+        "scale": 1.0,
+        "anchorX": 0.49094394674974323,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/daddy-ianky/curated/block-frame-1.png",
+        "scale": 1.0,
+        "anchorX": 0.49042546161071643,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/daddy-ianky/curated/block-frame-2.png",
+        "scale": 1.0,
+        "anchorX": 0.49062106295048363,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/daddy-ianky/curated/block-frame-3.png",
+        "scale": 1.0,
+        "anchorX": 0.4906521886807969,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 8,
+    "loop": false
+  },
+  "crouch": {
+    "frames": [
+      {
+        "path": "assets/sprites/daddy-ianky/curated/crouch-frame-0.png",
+        "scale": 0.925,
+        "anchorX": 0.4611585013308272,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/daddy-ianky/curated/crouch-frame-1.png",
+        "scale": 0.822222,
+        "anchorX": 0.4679022828326081,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/daddy-ianky/curated/crouch-frame-2.png",
+        "scale": 0.685185,
+        "anchorX": 0.4703503051865396,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/daddy-ianky/curated/crouch-frame-3.png",
+        "scale": 0.74,
+        "anchorX": 0.46268845652180723,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 8,
+    "loop": false
+  },
+  "ko": {
+    "frames": [
+      {
+        "path": "assets/sprites/daddy-ianky/curated/ko-frame-0.png",
+        "scale": 0.880952,
+        "anchorX": 0.5072249402583573,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/daddy-ianky/curated/ko-frame-1.png",
+        "scale": 0.880952,
+        "anchorX": 0.6414015141690174,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/daddy-ianky/curated/ko-frame-2.png",
+        "scale": 1.057143,
+        "anchorX": 0.5075050456121406,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/daddy-ianky/curated/ko-frame-3.png",
+        "scale": 1.510204,
+        "anchorX": 0.5390274112954404,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 8,
+    "loop": false
+  },
+  "celebrate": {
+    "frames": [
+      {
+        "path": "assets/sprites/daddy-ianky/curated/celebrate-frame-0.png",
+        "scale": 1.0,
+        "anchorX": 0.4896750906452323,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/daddy-ianky/curated/celebrate-frame-1.png",
+        "scale": 1.104478,
+        "anchorX": 0.5132196950121725,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/daddy-ianky/curated/celebrate-frame-2.png",
+        "scale": 1.138462,
+        "anchorX": 0.49072608201590456,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/daddy-ianky/curated/celebrate-frame-3.png",
+        "scale": 1.138462,
+        "anchorX": 0.4906090806191183,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 6,
+    "loop": false
+  },
+  "airPunch": {
+    "frames": [
+      {
+        "path": "assets/sprites/daddy-ianky/curated/airPunch-frame-0.png",
+        "scale": 0.880952,
+        "anchorX": 0.3697671809827437,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/daddy-ianky/curated/airPunch-frame-1.png",
+        "scale": 0.880952,
+        "anchorX": 0.2745708966279966,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/daddy-ianky/curated/airPunch-frame-2.png",
+        "scale": 0.880952,
+        "anchorX": 0.242727244139657,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/daddy-ianky/curated/airPunch-frame-3.png",
+        "scale": 0.880952,
+        "anchorX": 0.36205640472861234,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  },
+  "airKick": {
+    "frames": [
+      {
+        "path": "assets/sprites/daddy-ianky/curated/airKick-frame-0.png",
+        "scale": 0.880952,
+        "anchorX": 0.43264263480184867,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/daddy-ianky/curated/airKick-frame-1.png",
+        "scale": 0.936709,
+        "anchorX": 0.4060482744667027,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/daddy-ianky/curated/airKick-frame-2.png",
+        "scale": 1.0,
+        "anchorX": 0.32942969044936293,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/daddy-ianky/curated/airKick-frame-3.png",
+        "scale": 0.880952,
+        "anchorX": 0.43375519198430496,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  },
+  "crouchPunch": {
+    "frames": [
+      {
+        "path": "assets/sprites/daddy-ianky/curated/crouchPunch-frame-0.png",
+        "scale": 0.698113,
+        "anchorX": 0.48024853104627874,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/daddy-ianky/curated/crouchPunch-frame-1.png",
+        "scale": 0.698113,
+        "anchorX": 0.4846006578925304,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/daddy-ianky/curated/crouchPunch-frame-2.png",
+        "scale": 0.880952,
+        "anchorX": 0.41432641266216735,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/daddy-ianky/curated/crouchPunch-frame-3.png",
+        "scale": 0.698113,
+        "anchorX": 0.48171771441020983,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  },
+  "crouchKick": {
+    "frames": [
+      {
+        "path": "assets/sprites/daddy-ianky/curated/crouchKick-frame-0.png",
+        "scale": 0.649123,
+        "anchorX": 0.4213792566578869,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/daddy-ianky/curated/crouchKick-frame-1.png",
+        "scale": 0.685185,
+        "anchorX": 0.3287528280957099,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/daddy-ianky/curated/crouchKick-frame-2.png",
+        "scale": 0.813187,
+        "anchorX": 0.40850243980695417,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/daddy-ianky/curated/crouchKick-frame-3.png",
+        "scale": 0.649123,
+        "anchorX": 0.42685628716058793,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 10,
+    "loop": false
+  },
+  "uppercut": {
+    "frames": [
+      {
+        "path": "assets/sprites/daddy-ianky/curated/uppercut-frame-0.png",
+        "scale": 0.831461,
+        "anchorX": 0.49544926136869405,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/daddy-ianky/curated/uppercut-frame-1.png",
+        "scale": 1.0,
+        "anchorX": 0.4960526079776864,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/daddy-ianky/curated/uppercut-frame-2.png",
+        "scale": 1.138462,
+        "anchorX": 0.4912497556482946,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/daddy-ianky/curated/uppercut-frame-3.png",
+        "scale": 1.0,
+        "anchorX": 0.49453904926021014,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  },
+  "sweep": {
+    "frames": [
+      {
+        "path": "assets/sprites/daddy-ianky/curated/sweep-frame-0.png",
+        "scale": 0.711538,
+        "anchorX": 0.395332554600676,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/daddy-ianky/curated/sweep-frame-1.png",
+        "scale": 0.813187,
+        "anchorX": 0.5984939125913282,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/daddy-ianky/curated/sweep-frame-2.png",
+        "scale": 1.193548,
+        "anchorX": 0.4569423682111416,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/daddy-ianky/curated/sweep-frame-3.png",
+        "scale": 0.711538,
+        "anchorX": 0.44106458326314124,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 10,
+    "loop": false
+  },
+  "dash": {
+    "frames": [
+      {
+        "path": "assets/sprites/daddy-ianky/curated/dash-frame-0.png",
+        "scale": 0.762887,
+        "anchorX": 0.44148721375814115,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/daddy-ianky/curated/dash-frame-1.png",
+        "scale": 0.804348,
+        "anchorX": 0.5088158032208763,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/daddy-ianky/curated/dash-frame-2.png",
+        "scale": 0.762887,
+        "anchorX": 0.48951261806233687,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/daddy-ianky/curated/dash-frame-3.png",
+        "scale": 0.762887,
+        "anchorX": 0.47177547850723006,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  },
+  "backwalk": {
+    "frames": [
+      {
+        "path": "assets/sprites/daddy-ianky/curated/backwalk-frame-0.png",
+        "scale": 1.0,
+        "anchorX": 0.4878597984699744,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/daddy-ianky/curated/backwalk-frame-1.png",
+        "scale": 1.0,
+        "anchorX": 0.4706177745087654,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/daddy-ianky/curated/backwalk-frame-2.png",
+        "scale": 1.0,
+        "anchorX": 0.4885254153417375,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/daddy-ianky/curated/backwalk-frame-3.png",
+        "scale": 1.0,
+        "anchorX": 0.4453010885082851,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/daddy-ianky/curated/backwalk-frame-4.png",
+        "scale": 1.0,
+        "anchorX": 0.4415555680767526,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/daddy-ianky/curated/backwalk-frame-5.png",
+        "scale": 1.0,
+        "anchorX": 0.4893826195503286,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": true
+  },
+  "lowBlock": {
+    "frames": [
+      {
+        "path": "assets/sprites/daddy-ianky/curated/lowBlock-frame-0.png",
+        "scale": 0.685185,
+        "anchorX": 0.4856740004340588,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/daddy-ianky/curated/lowBlock-frame-1.png",
+        "scale": 0.72549,
+        "anchorX": 0.4852082896731584,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/daddy-ianky/curated/lowBlock-frame-2.png",
+        "scale": 0.685185,
+        "anchorX": 0.48548292398355897,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/daddy-ianky/curated/lowBlock-frame-3.png",
+        "scale": 0.685185,
+        "anchorX": 0.4794114954724138,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 8,
+    "loop": false
+  },
+  "turn": {
+    "frames": [
+      {
+        "path": "assets/sprites/daddy-ianky/curated/turn-frame-0.png",
+        "scale": 1.0,
+        "anchorX": 0.47652618358786086,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/daddy-ianky/curated/turn-frame-1.png",
+        "scale": 1.0,
+        "anchorX": 0.4996495062796549,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/daddy-ianky/curated/turn-frame-2.png",
+        "scale": 1.0,
+        "anchorX": 0.499787866720154,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/daddy-ianky/curated/turn-frame-3.png",
+        "scale": 1.0,
+        "anchorX": 0.5245722791074151,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  },
+  "land": {
+    "frames": [
+      {
+        "path": "assets/sprites/daddy-ianky/curated/land-frame-0.png",
+        "scale": 0.649123,
+        "anchorX": 0.46841457789195573,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/daddy-ianky/curated/land-frame-1.png",
+        "scale": 0.880952,
+        "anchorX": 0.4889336570653997,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/daddy-ianky/curated/land-frame-2.png",
+        "scale": 1.0,
+        "anchorX": 0.49145892596854973,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/daddy-ianky/curated/land-frame-3.png",
+        "scale": 1.0,
+        "anchorX": 0.49064953972372766,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  },
+  "jumpForward": {
+    "frames": [
+      {
+        "path": "assets/sprites/daddy-ianky/curated/jumpForward-frame-0.png",
+        "scale": 0.770833,
+        "anchorX": 0.40519946825109265,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/daddy-ianky/curated/jumpForward-frame-1.png",
+        "scale": 0.831461,
+        "anchorX": 0.29275942328136184,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/daddy-ianky/curated/jumpForward-frame-2.png",
+        "scale": 0.72549,
+        "anchorX": 0.4738854881183445,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/daddy-ianky/curated/jumpForward-frame-3.png",
+        "scale": 0.870588,
+        "anchorX": 0.6354485277817107,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 10,
+    "loop": false
+  },
+  "super": {
+    "frames": [
+      {
+        "path": "assets/sprites/daddy-ianky/curated/super-frame-0.png",
+        "scale": 0.850575,
+        "anchorX": 0.49218426945048627,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/daddy-ianky/curated/super-frame-1.png",
+        "scale": 1.0,
+        "anchorX": 0.5018113697260056,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/daddy-ianky/curated/super-frame-2.png",
+        "scale": 1.0,
+        "anchorX": 0.45364056894274946,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/daddy-ianky/curated/super-frame-3.png",
+        "scale": 1.0,
+        "anchorX": 0.49153143096600843,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "id": "p-d-r",
+  "name": "P.D.R",
+  "source": "assets/sprites/p-d-r/base-source.png",
+  "identity": "Stocky light-skinned martial artist with short dark hair, charcoal Brazilian jiu-jitsu gi, dark belt and gi patch, black training shoes.",
+  "color": "#a8b4c9",
+  "speed": 300,
+  "tempo": 0.98,
+  "visualHeight": 320,
+  "damage": {
+    "punch": 8,
+    "kick": 13
+  },
+  "tagline": "DISCIPLINA DO TATAME",
+  "power": {
+    "kind": "kinetic",
+    "label": "Pressão da faixa",
+    "superLabel": "Finalização total",
+    "description": "Avanço corporal poderoso e choque concentrado de curta distância."
+  }
+}

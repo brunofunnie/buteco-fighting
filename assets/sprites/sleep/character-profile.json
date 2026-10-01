@@ -1,0 +1,21 @@
+{
+  "id": "sleep",
+  "name": "Sleep",
+  "source": "assets/sprites/sleep/base-source.png",
+  "identity": "Stocky tan man with backwards black cap and short dark beard, red short-sleeve polo, black joggers, dark wristbands, red-white high-top sneakers.",
+  "color": "#df8980",
+  "speed": 270,
+  "tempo": 1.07,
+  "visualHeight": 320,
+  "damage": {
+    "punch": 10,
+    "kick": 15
+  },
+  "tagline": "PESO DA MADRUGADA",
+  "power": {
+    "kind": "bass",
+    "label": "Batida noturna",
+    "superLabel": "Grave da madrugada",
+    "description": "Onda sonora baixa que empurra; o super amplia o alcance."
+  }
+}

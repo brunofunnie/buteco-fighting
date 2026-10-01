@@ -1,0 +1,746 @@
+{
+  "idle": {
+    "frames": [
+      {
+        "path": "assets/sprites/prefeito/curated/idle-frame-0.png",
+        "scale": 1.0,
+        "anchorX": 0.5019721454685827,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/prefeito/curated/idle-frame-1.png",
+        "scale": 0.936364,
+        "anchorX": 0.49701433947440243,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/prefeito/curated/idle-frame-2.png",
+        "scale": 1.001515,
+        "anchorX": 0.5001339821615155,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/prefeito/curated/idle-frame-3.png",
+        "scale": 0.984848,
+        "anchorX": 0.4971717363874128,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 6,
+    "loop": true
+  },
+  "punch": {
+    "frames": [
+      {
+        "path": "assets/sprites/prefeito/curated/punch-frame-0.png",
+        "scale": 0.976744,
+        "anchorX": 0.503062224016091,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/prefeito/curated/punch-frame-1.png",
+        "scale": 0.978222,
+        "anchorX": 0.49489785669939845,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/prefeito/curated/punch-frame-2.png",
+        "scale": 0.976564,
+        "anchorX": 0.4183176331943834,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/prefeito/curated/punch-frame-3.png",
+        "scale": 0.979527,
+        "anchorX": 0.4990479180014325,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  },
+  "kick": {
+    "frames": [
+      {
+        "path": "assets/sprites/prefeito/curated/kick-frame-0.png",
+        "scale": 1.076923,
+        "anchorX": 0.506372795416293,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/prefeito/curated/kick-frame-1.png",
+        "scale": 1.078537,
+        "anchorX": 0.428916812477961,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/prefeito/curated/kick-frame-2.png",
+        "scale": 1.092441,
+        "anchorX": 0.2703054940920274,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/prefeito/curated/kick-frame-3.png",
+        "scale": 1.076923,
+        "anchorX": 0.39374853785253067,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 10,
+    "loop": false
+  },
+  "hurt": {
+    "frames": [
+      {
+        "path": "assets/sprites/prefeito/curated/hurt-frame-0.png",
+        "scale": 0.933333,
+        "anchorX": 0.45509364818907966,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/prefeito/curated/hurt-frame-1.png",
+        "scale": 0.971609,
+        "anchorX": 0.5050742145610202,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/prefeito/curated/hurt-frame-2.png",
+        "scale": 0.933333,
+        "anchorX": 0.4691555634676064,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/prefeito/curated/hurt-frame-3.png",
+        "scale": 0.961304,
+        "anchorX": 0.503240400620376,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 10,
+    "loop": false
+  },
+  "jump": {
+    "frames": [
+      {
+        "path": "assets/sprites/prefeito/curated/jump-frame-0.png",
+        "scale": 0.770642,
+        "anchorX": 0.4436710317824244,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/prefeito/curated/jump-frame-1.png",
+        "scale": 0.988235,
+        "anchorX": 0.4308012801206062,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/prefeito/curated/jump-frame-2.png",
+        "scale": 0.785047,
+        "anchorX": 0.42795014223056344,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/prefeito/curated/jump-frame-3.png",
+        "scale": 0.8,
+        "anchorX": 0.4804367228956404,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 8,
+    "loop": false
+  },
+  "special": {
+    "frames": [
+      {
+        "path": "assets/sprites/prefeito/curated/special-frame-0.png",
+        "scale": 1.02439,
+        "anchorX": 0.5017127180000247,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/prefeito/curated/special-frame-1.png",
+        "scale": 1.019336,
+        "anchorX": 0.5006762492052693,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/prefeito/curated/special-frame-2.png",
+        "scale": 1.021021,
+        "anchorX": 0.4511482530713034,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/prefeito/curated/special-frame-3.png",
+        "scale": 1.02439,
+        "anchorX": 0.502760431834135,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 10,
+    "loop": false
+  },
+  "walk": {
+    "frames": [
+      {
+        "path": "assets/sprites/prefeito/curated/walk-frame-0.png",
+        "scale": 1.0,
+        "anchorX": 0.49317649675156416,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/prefeito/curated/walk-frame-1.png",
+        "scale": 1.0,
+        "anchorX": 0.4507538765487515,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/prefeito/curated/walk-frame-2.png",
+        "scale": 1.0,
+        "anchorX": 0.49333183138984893,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/prefeito/curated/walk-frame-3.png",
+        "scale": 1.0,
+        "anchorX": 0.4940679795261363,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/prefeito/curated/walk-frame-4.png",
+        "scale": 1.0,
+        "anchorX": 0.4857946896977127,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/prefeito/curated/walk-frame-5.png",
+        "scale": 1.0,
+        "anchorX": 0.49156789120717975,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": true
+  },
+  "block": {
+    "frames": [
+      {
+        "path": "assets/sprites/prefeito/curated/block-frame-0.png",
+        "scale": 1.0,
+        "anchorX": 0.5015730012194214,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/prefeito/curated/block-frame-1.png",
+        "scale": 0.992614,
+        "anchorX": 0.5032275490449113,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/prefeito/curated/block-frame-2.png",
+        "scale": 0.902511,
+        "anchorX": 0.5019446135000337,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/prefeito/curated/block-frame-3.png",
+        "scale": 0.937961,
+        "anchorX": 0.5038472320761466,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 8,
+    "loop": false
+  },
+  "crouch": {
+    "frames": [
+      {
+        "path": "assets/sprites/prefeito/curated/crouch-frame-0.png",
+        "scale": 0.848485,
+        "anchorX": 0.4572398336774047,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/prefeito/curated/crouch-frame-1.png",
+        "scale": 0.756757,
+        "anchorX": 0.45421563251608754,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/prefeito/curated/crouch-frame-2.png",
+        "scale": 0.641221,
+        "anchorX": 0.4663871242178082,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/prefeito/curated/crouch-frame-3.png",
+        "scale": 0.65625,
+        "anchorX": 0.4646792034060574,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 8,
+    "loop": false
+  },
+  "ko": {
+    "frames": [
+      {
+        "path": "assets/sprites/prefeito/curated/ko-frame-0.png",
+        "scale": 0.954545,
+        "anchorX": 0.5218074640957994,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/prefeito/curated/ko-frame-1.png",
+        "scale": 0.84,
+        "anchorX": 0.5689871560269499,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/prefeito/curated/ko-frame-2.png",
+        "scale": 0.875,
+        "anchorX": 0.508675759930313,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/prefeito/curated/ko-frame-3.png",
+        "scale": 0.976744,
+        "anchorX": 0.4973304924220581,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 8,
+    "loop": false
+  },
+  "celebrate": {
+    "frames": [
+      {
+        "path": "assets/sprites/prefeito/curated/celebrate-frame-0.png",
+        "scale": 1.012048,
+        "anchorX": 0.5080833284184267,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/prefeito/curated/celebrate-frame-1.png",
+        "scale": 1.012048,
+        "anchorX": 0.5131588180591046,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/prefeito/curated/celebrate-frame-2.png",
+        "scale": 1.150685,
+        "anchorX": 0.500092178683914,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/prefeito/curated/celebrate-frame-3.png",
+        "scale": 1.150685,
+        "anchorX": 0.49941902679059674,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 6,
+    "loop": false
+  },
+  "airPunch": {
+    "frames": [
+      {
+        "path": "assets/sprites/prefeito/curated/airPunch-frame-0.png",
+        "scale": 0.823529,
+        "anchorX": 0.43326886135269777,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/prefeito/curated/airPunch-frame-1.png",
+        "scale": 0.779268,
+        "anchorX": 0.29445356667925177,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/prefeito/curated/airPunch-frame-2.png",
+        "scale": 0.80207,
+        "anchorX": 0.28274005616147607,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/prefeito/curated/airPunch-frame-3.png",
+        "scale": 0.816823,
+        "anchorX": 0.4384632006074444,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  },
+  "airKick": {
+    "frames": [
+      {
+        "path": "assets/sprites/prefeito/curated/airKick-frame-0.png",
+        "scale": 0.763636,
+        "anchorX": 0.5070128788411092,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/prefeito/curated/airKick-frame-1.png",
+        "scale": 0.763636,
+        "anchorX": 0.37235040103159794,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/prefeito/curated/airKick-frame-2.png",
+        "scale": 0.923077,
+        "anchorX": 0.3065713571883296,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/prefeito/curated/airKick-frame-3.png",
+        "scale": 0.763636,
+        "anchorX": 0.5325735837477873,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  },
+  "crouchPunch": {
+    "frames": [
+      {
+        "path": "assets/sprites/prefeito/curated/crouchPunch-frame-0.png",
+        "scale": 0.682927,
+        "anchorX": 0.48559851485282013,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/prefeito/curated/crouchPunch-frame-1.png",
+        "scale": 0.682927,
+        "anchorX": 0.495873292133743,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/prefeito/curated/crouchPunch-frame-2.png",
+        "scale": 0.75,
+        "anchorX": 0.3717210259873485,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/prefeito/curated/crouchPunch-frame-3.png",
+        "scale": 0.682927,
+        "anchorX": 0.48727990141407607,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  },
+  "crouchKick": {
+    "frames": [
+      {
+        "path": "assets/sprites/prefeito/curated/crouchKick-frame-0.png",
+        "scale": 0.705882,
+        "anchorX": 0.4924714429907946,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/prefeito/curated/crouchKick-frame-1.png",
+        "scale": 0.705882,
+        "anchorX": 0.4545264303903586,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/prefeito/curated/crouchKick-frame-2.png",
+        "scale": 0.893617,
+        "anchorX": 0.503851498768051,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/prefeito/curated/crouchKick-frame-3.png",
+        "scale": 0.705882,
+        "anchorX": 0.47752818086731885,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 10,
+    "loop": false
+  },
+  "uppercut": {
+    "frames": [
+      {
+        "path": "assets/sprites/prefeito/curated/uppercut-frame-0.png",
+        "scale": 0.884211,
+        "anchorX": 0.47723156123335264,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/prefeito/curated/uppercut-frame-1.png",
+        "scale": 0.884211,
+        "anchorX": 0.4772260628222775,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/prefeito/curated/uppercut-frame-2.png",
+        "scale": 1.183099,
+        "anchorX": 0.47600024252768564,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/prefeito/curated/uppercut-frame-3.png",
+        "scale": 0.884211,
+        "anchorX": 0.48924596086601807,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  },
+  "sweep": {
+    "frames": [
+      {
+        "path": "assets/sprites/prefeito/curated/sweep-frame-0.png",
+        "scale": 0.756757,
+        "anchorX": 0.46756389877858545,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/prefeito/curated/sweep-frame-1.png",
+        "scale": 0.756757,
+        "anchorX": 0.5421773531110833,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/prefeito/curated/sweep-frame-2.png",
+        "scale": 0.94382,
+        "anchorX": 0.5030299951364627,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/prefeito/curated/sweep-frame-3.png",
+        "scale": 0.756757,
+        "anchorX": 0.47861940468820957,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 10,
+    "loop": false
+  },
+  "dash": {
+    "frames": [
+      {
+        "path": "assets/sprites/prefeito/curated/dash-frame-0.png",
+        "scale": 0.75,
+        "anchorX": 0.43184464603735434,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/prefeito/curated/dash-frame-1.png",
+        "scale": 0.767262,
+        "anchorX": 0.4949525098078897,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/prefeito/curated/dash-frame-2.png",
+        "scale": 0.755484,
+        "anchorX": 0.4662350693110268,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/prefeito/curated/dash-frame-3.png",
+        "scale": 0.752137,
+        "anchorX": 0.43242888231804705,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  },
+  "backwalk": {
+    "frames": [
+      {
+        "path": "assets/sprites/prefeito/curated/backwalk-frame-0.png",
+        "scale": 1.0,
+        "anchorX": 0.49245116839394304,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/prefeito/curated/backwalk-frame-1.png",
+        "scale": 1.001039,
+        "anchorX": 0.47712919894464517,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/prefeito/curated/backwalk-frame-2.png",
+        "scale": 1.001039,
+        "anchorX": 0.4903446926494064,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/prefeito/curated/backwalk-frame-3.png",
+        "scale": 0.992779,
+        "anchorX": 0.48706321553738324,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/prefeito/curated/backwalk-frame-4.png",
+        "scale": 1.0,
+        "anchorX": 0.4803117906018577,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/prefeito/curated/backwalk-frame-5.png",
+        "scale": 1.0,
+        "anchorX": 0.49213171494995295,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": true
+  },
+  "lowBlock": {
+    "frames": [
+      {
+        "path": "assets/sprites/prefeito/curated/lowBlock-frame-0.png",
+        "scale": 0.7,
+        "anchorX": 0.43973033577983794,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/prefeito/curated/lowBlock-frame-1.png",
+        "scale": 0.697287,
+        "anchorX": 0.4939134966040875,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/prefeito/curated/lowBlock-frame-2.png",
+        "scale": 0.700634,
+        "anchorX": 0.48954200322066904,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/prefeito/curated/lowBlock-frame-3.png",
+        "scale": 0.700634,
+        "anchorX": 0.4861459109570004,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 8,
+    "loop": false
+  },
+  "turn": {
+    "frames": [
+      {
+        "path": "assets/sprites/prefeito/curated/turn-frame-0.png",
+        "scale": 1.02439,
+        "anchorX": 0.4930425027466441,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/prefeito/curated/turn-frame-1.png",
+        "scale": 1.037947,
+        "anchorX": 0.5081478944000517,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/prefeito/curated/turn-frame-2.png",
+        "scale": 1.030452,
+        "anchorX": 0.5015504535891478,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/prefeito/curated/turn-frame-3.png",
+        "scale": 1.030348,
+        "anchorX": 0.5049488316295848,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  },
+  "land": {
+    "frames": [
+      {
+        "path": "assets/sprites/prefeito/curated/land-frame-0.png",
+        "scale": 0.756757,
+        "anchorX": 0.4652318012654913,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/prefeito/curated/land-frame-1.png",
+        "scale": 0.84,
+        "anchorX": 0.481917463573102,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/prefeito/curated/land-frame-2.png",
+        "scale": 1.012048,
+        "anchorX": 0.49699117834421175,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/prefeito/curated/land-frame-3.png",
+        "scale": 1.076923,
+        "anchorX": 0.4936240949065552,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  },
+  "jumpForward": {
+    "frames": [
+      {
+        "path": "assets/sprites/prefeito/curated/jumpForward-frame-0.png",
+        "scale": 0.743363,
+        "anchorX": 0.4480810427007518,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/prefeito/curated/jumpForward-frame-1.png",
+        "scale": 0.84,
+        "anchorX": 0.23576737743876805,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/prefeito/curated/jumpForward-frame-2.png",
+        "scale": 0.736842,
+        "anchorX": 0.4735387757530341,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/prefeito/curated/jumpForward-frame-3.png",
+        "scale": 0.84,
+        "anchorX": 0.6733281317580788,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 10,
+    "loop": false
+  },
+  "super": {
+    "frames": [
+      {
+        "path": "assets/sprites/prefeito/curated/super-frame-0.png",
+        "scale": 0.777778,
+        "anchorX": 0.49531453489899,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/prefeito/curated/super-frame-1.png",
+        "scale": 0.902373,
+        "anchorX": 0.48951217994252083,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/prefeito/curated/super-frame-2.png",
+        "scale": 0.871409,
+        "anchorX": 0.4445383757897341,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/prefeito/curated/super-frame-3.png",
+        "scale": 0.906422,
+        "anchorX": 0.5007754436156255,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  }
+}

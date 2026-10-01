@@ -1,0 +1,746 @@
+{
+  "idle": {
+    "frames": [
+      {
+        "path": "assets/sprites/sonee/curated/idle-frame-0.png",
+        "scale": 1.0,
+        "anchorX": 0.49997052678113185,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/sonee/curated/idle-frame-1.png",
+        "scale": 1.007485,
+        "anchorX": 0.5005752597271266,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/sonee/curated/idle-frame-2.png",
+        "scale": 0.980539,
+        "anchorX": 0.50223689708942,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/sonee/curated/idle-frame-3.png",
+        "scale": 1.004491,
+        "anchorX": 0.49865844686255517,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 6,
+    "loop": true
+  },
+  "punch": {
+    "frames": [
+      {
+        "path": "assets/sprites/sonee/curated/punch-frame-0.png",
+        "scale": 0.924051,
+        "anchorX": 0.5049656383197864,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/sonee/curated/punch-frame-1.png",
+        "scale": 0.920027,
+        "anchorX": 0.5044220072552389,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/sonee/curated/punch-frame-2.png",
+        "scale": 0.920027,
+        "anchorX": 0.44001695404604685,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/sonee/curated/punch-frame-3.png",
+        "scale": 0.920027,
+        "anchorX": 0.5049076508792992,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  },
+  "kick": {
+    "frames": [
+      {
+        "path": "assets/sprites/sonee/curated/kick-frame-0.png",
+        "scale": 0.973333,
+        "anchorX": 0.4984414182007704,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/sonee/curated/kick-frame-1.png",
+        "scale": 0.978057,
+        "anchorX": 0.4546365759994922,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/sonee/curated/kick-frame-2.png",
+        "scale": 0.96907,
+        "anchorX": 0.28357540783038815,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/sonee/curated/kick-frame-3.png",
+        "scale": 0.972066,
+        "anchorX": 0.4120146032212726,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 10,
+    "loop": false
+  },
+  "hurt": {
+    "frames": [
+      {
+        "path": "assets/sprites/sonee/curated/hurt-frame-0.png",
+        "scale": 0.879518,
+        "anchorX": 0.4975054839159832,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/sonee/curated/hurt-frame-1.png",
+        "scale": 0.843824,
+        "anchorX": 0.5129015839242245,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/sonee/curated/hurt-frame-2.png",
+        "scale": 0.849091,
+        "anchorX": 0.49919770848613193,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/sonee/curated/hurt-frame-3.png",
+        "scale": 0.869524,
+        "anchorX": 0.5034708720031381,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 10,
+    "loop": false
+  },
+  "jump": {
+    "frames": [
+      {
+        "path": "assets/sprites/sonee/curated/jump-frame-0.png",
+        "scale": 0.613445,
+        "anchorX": 0.5062395453125104,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/sonee/curated/jump-frame-1.png",
+        "scale": 0.722772,
+        "anchorX": 0.40668293044104153,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/sonee/curated/jump-frame-2.png",
+        "scale": 0.646018,
+        "anchorX": 0.5260624734243365,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/sonee/curated/jump-frame-3.png",
+        "scale": 0.722772,
+        "anchorX": 0.45757450457780524,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 8,
+    "loop": false
+  },
+  "special": {
+    "frames": [
+      {
+        "path": "assets/sprites/sonee/curated/special-frame-0.png",
+        "scale": 0.879518,
+        "anchorX": 0.49982306754896294,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/sonee/curated/special-frame-1.png",
+        "scale": 0.863474,
+        "anchorX": 0.4970157772384245,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/sonee/curated/special-frame-2.png",
+        "scale": 0.865092,
+        "anchorX": 0.42974647445480113,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/sonee/curated/special-frame-3.png",
+        "scale": 0.883894,
+        "anchorX": 0.4933555202070332,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 10,
+    "loop": false
+  },
+  "walk": {
+    "frames": [
+      {
+        "path": "assets/sprites/sonee/curated/walk-frame-0.png",
+        "scale": 0.924051,
+        "anchorX": 0.48467368206238387,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/sonee/curated/walk-frame-1.png",
+        "scale": 0.926684,
+        "anchorX": 0.4714365841629688,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/sonee/curated/walk-frame-2.png",
+        "scale": 0.926684,
+        "anchorX": 0.48328292641431325,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/sonee/curated/walk-frame-3.png",
+        "scale": 0.922427,
+        "anchorX": 0.48958351765793934,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/sonee/curated/walk-frame-4.png",
+        "scale": 0.922427,
+        "anchorX": 0.4482910960429165,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/sonee/curated/walk-frame-5.png",
+        "scale": 0.926684,
+        "anchorX": 0.48771203679102754,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": true
+  },
+  "block": {
+    "frames": [
+      {
+        "path": "assets/sprites/sonee/curated/block-frame-0.png",
+        "scale": 0.848837,
+        "anchorX": 0.5001321797878848,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/sonee/curated/block-frame-1.png",
+        "scale": 0.846277,
+        "anchorX": 0.49569986980272224,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/sonee/curated/block-frame-2.png",
+        "scale": 0.764338,
+        "anchorX": 0.49657828938729165,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/sonee/curated/block-frame-3.png",
+        "scale": 0.814269,
+        "anchorX": 0.49407619860544805,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 8,
+    "loop": false
+  },
+  "crouch": {
+    "frames": [
+      {
+        "path": "assets/sprites/sonee/curated/crouch-frame-0.png",
+        "scale": 0.715686,
+        "anchorX": 0.4705606731308949,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/sonee/curated/crouch-frame-1.png",
+        "scale": 0.634783,
+        "anchorX": 0.4630765020164482,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/sonee/curated/crouch-frame-2.png",
+        "scale": 0.584,
+        "anchorX": 0.4257426059486719,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/sonee/curated/crouch-frame-3.png",
+        "scale": 0.584,
+        "anchorX": 0.4217926935804057,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 8,
+    "loop": false
+  },
+  "ko": {
+    "frames": [
+      {
+        "path": "assets/sprites/sonee/curated/ko-frame-0.png",
+        "scale": 0.820225,
+        "anchorX": 0.5115238633119307,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/sonee/curated/ko-frame-1.png",
+        "scale": 0.657658,
+        "anchorX": 0.3147053686693784,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/sonee/curated/ko-frame-2.png",
+        "scale": 0.901235,
+        "anchorX": 0.44768088735295525,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/sonee/curated/ko-frame-3.png",
+        "scale": 1.057971,
+        "anchorX": 0.4931332966602169,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 8,
+    "loop": false
+  },
+  "celebrate": {
+    "frames": [
+      {
+        "path": "assets/sprites/sonee/curated/celebrate-frame-0.png",
+        "scale": 0.948052,
+        "anchorX": 0.4984799223173395,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/sonee/curated/celebrate-frame-1.png",
+        "scale": 0.948052,
+        "anchorX": 0.500693453442675,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/sonee/curated/celebrate-frame-2.png",
+        "scale": 1.057971,
+        "anchorX": 0.490500559952107,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/sonee/curated/celebrate-frame-3.png",
+        "scale": 1.057971,
+        "anchorX": 0.489586783543142,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 6,
+    "loop": false
+  },
+  "airPunch": {
+    "frames": [
+      {
+        "path": "assets/sprites/sonee/curated/airPunch-frame-0.png",
+        "scale": 0.715686,
+        "anchorX": 0.39248245370582313,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/sonee/curated/airPunch-frame-1.png",
+        "scale": 0.741123,
+        "anchorX": 0.20980817825850537,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/sonee/curated/airPunch-frame-2.png",
+        "scale": 0.661344,
+        "anchorX": 0.21643918680376253,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/sonee/curated/airPunch-frame-3.png",
+        "scale": 0.715686,
+        "anchorX": 0.3888073731554635,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  },
+  "airKick": {
+    "frames": [
+      {
+        "path": "assets/sprites/sonee/curated/airKick-frame-0.png",
+        "scale": 0.715686,
+        "anchorX": 0.4487782032239351,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/sonee/curated/airKick-frame-1.png",
+        "scale": 0.744898,
+        "anchorX": 0.35162373253556317,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/sonee/curated/airKick-frame-2.png",
+        "scale": 0.829545,
+        "anchorX": 0.3729155754185525,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/sonee/curated/airKick-frame-3.png",
+        "scale": 0.715686,
+        "anchorX": 0.5055199581127533,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  },
+  "crouchPunch": {
+    "frames": [
+      {
+        "path": "assets/sprites/sonee/curated/crouchPunch-frame-0.png",
+        "scale": 0.613445,
+        "anchorX": 0.48021206210069595,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/sonee/curated/crouchPunch-frame-1.png",
+        "scale": 0.613445,
+        "anchorX": 0.4933100207832343,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/sonee/curated/crouchPunch-frame-2.png",
+        "scale": 0.663636,
+        "anchorX": 0.34833923196301625,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/sonee/curated/crouchPunch-frame-3.png",
+        "scale": 0.613445,
+        "anchorX": 0.4808173405277452,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  },
+  "crouchKick": {
+    "frames": [
+      {
+        "path": "assets/sprites/sonee/curated/crouchKick-frame-0.png",
+        "scale": 0.634783,
+        "anchorX": 0.5000591465286737,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/sonee/curated/crouchKick-frame-1.png",
+        "scale": 0.634783,
+        "anchorX": 0.40566986061073956,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/sonee/curated/crouchKick-frame-2.png",
+        "scale": 0.820225,
+        "anchorX": 0.510257646446819,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/sonee/curated/crouchKick-frame-3.png",
+        "scale": 0.634783,
+        "anchorX": 0.5012592644679844,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 10,
+    "loop": false
+  },
+  "uppercut": {
+    "frames": [
+      {
+        "path": "assets/sprites/sonee/curated/uppercut-frame-0.png",
+        "scale": 0.811111,
+        "anchorX": 0.49002223206925244,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/sonee/curated/uppercut-frame-1.png",
+        "scale": 0.879518,
+        "anchorX": 0.49315722532799605,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/sonee/curated/uppercut-frame-2.png",
+        "scale": 1.123077,
+        "anchorX": 0.48805546635945807,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/sonee/curated/uppercut-frame-3.png",
+        "scale": 0.879518,
+        "anchorX": 0.49634236491420686,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  },
+  "sweep": {
+    "frames": [
+      {
+        "path": "assets/sprites/sonee/curated/sweep-frame-0.png",
+        "scale": 0.58871,
+        "anchorX": 0.45947457475533987,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/sonee/curated/sweep-frame-1.png",
+        "scale": 0.744898,
+        "anchorX": 0.6614534726735881,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/sonee/curated/sweep-frame-2.png",
+        "scale": 0.890244,
+        "anchorX": 0.5248803146665051,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/sonee/curated/sweep-frame-3.png",
+        "scale": 0.58871,
+        "anchorX": 0.4543090041453721,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 10,
+    "loop": false
+  },
+  "dash": {
+    "frames": [
+      {
+        "path": "assets/sprites/sonee/curated/dash-frame-0.png",
+        "scale": 0.744898,
+        "anchorX": 0.45932384464998516,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/sonee/curated/dash-frame-1.png",
+        "scale": 0.734218,
+        "anchorX": 0.49130666911854476,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/sonee/curated/dash-frame-2.png",
+        "scale": 0.698175,
+        "anchorX": 0.46876119489182694,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/sonee/curated/dash-frame-3.png",
+        "scale": 0.74702,
+        "anchorX": 0.4572056611665718,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  },
+  "backwalk": {
+    "frames": [
+      {
+        "path": "assets/sprites/sonee/curated/backwalk-frame-0.png",
+        "scale": 0.901235,
+        "anchorX": 0.4954297547669051,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/sonee/curated/backwalk-frame-1.png",
+        "scale": 0.902009,
+        "anchorX": 0.4820214726481895,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/sonee/curated/backwalk-frame-2.png",
+        "scale": 0.893672,
+        "anchorX": 0.49558039493094314,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/sonee/curated/backwalk-frame-3.png",
+        "scale": 0.896218,
+        "anchorX": 0.4366755737149801,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/sonee/curated/backwalk-frame-4.png",
+        "scale": 0.892875,
+        "anchorX": 0.4144820399750782,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/sonee/curated/backwalk-frame-5.png",
+        "scale": 0.897007,
+        "anchorX": 0.49715302360830166,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": true
+  },
+  "lowBlock": {
+    "frames": [
+      {
+        "path": "assets/sprites/sonee/curated/lowBlock-frame-0.png",
+        "scale": 0.613445,
+        "anchorX": 0.494810951738679,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/sonee/curated/lowBlock-frame-1.png",
+        "scale": 0.595885,
+        "anchorX": 0.4962059415117616,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/sonee/curated/lowBlock-frame-2.png",
+        "scale": 0.602279,
+        "anchorX": 0.5041864907221029,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/sonee/curated/lowBlock-frame-3.png",
+        "scale": 0.599397,
+        "anchorX": 0.48417339913750684,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 8,
+    "loop": false
+  },
+  "turn": {
+    "frames": [
+      {
+        "path": "assets/sprites/sonee/curated/turn-frame-0.png",
+        "scale": 0.948052,
+        "anchorX": 0.4974554269361118,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/sonee/curated/turn-frame-1.png",
+        "scale": 0.955138,
+        "anchorX": 0.4963899550994142,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/sonee/curated/turn-frame-2.png",
+        "scale": 0.953595,
+        "anchorX": 0.503688073908019,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/sonee/curated/turn-frame-3.png",
+        "scale": 0.953595,
+        "anchorX": 0.49449170136944326,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  },
+  "land": {
+    "frames": [
+      {
+        "path": "assets/sprites/sonee/curated/land-frame-0.png",
+        "scale": 0.593496,
+        "anchorX": 0.48951515882811397,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/sonee/curated/land-frame-1.png",
+        "scale": 0.669725,
+        "anchorX": 0.49017263782795356,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/sonee/curated/land-frame-2.png",
+        "scale": 0.879518,
+        "anchorX": 0.4817377086700887,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/sonee/curated/land-frame-3.png",
+        "scale": 0.879518,
+        "anchorX": 0.49833296800667254,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  },
+  "jumpForward": {
+    "frames": [
+      {
+        "path": "assets/sprites/sonee/curated/jumpForward-frame-0.png",
+        "scale": 0.73,
+        "anchorX": 0.4757094031274276,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/sonee/curated/jumpForward-frame-1.png",
+        "scale": 0.83908,
+        "anchorX": 0.2582192038833384,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/sonee/curated/jumpForward-frame-2.png",
+        "scale": 0.701923,
+        "anchorX": 0.4785914967487998,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/sonee/curated/jumpForward-frame-3.png",
+        "scale": 0.83908,
+        "anchorX": 0.648997550636376,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 10,
+    "loop": false
+  },
+  "super": {
+    "frames": [
+      {
+        "path": "assets/sprites/sonee/curated/super-frame-0.png",
+        "scale": 0.760417,
+        "anchorX": 0.5155287239889211,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/sonee/curated/super-frame-1.png",
+        "scale": 0.85835,
+        "anchorX": 0.5020318329905848,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/sonee/curated/super-frame-2.png",
+        "scale": 0.854732,
+        "anchorX": 0.44063662625387506,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/sonee/curated/super-frame-3.png",
+        "scale": 0.849709,
+        "anchorX": 0.5054937582710879,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  }
+}

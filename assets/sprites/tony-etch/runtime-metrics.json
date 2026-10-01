@@ -1,0 +1,850 @@
+{
+  "idle": [
+    {
+      "path": "assets/sprites/tony-etch/curated/idle-frame-0.png",
+      "sourceHeight": 654,
+      "outputHeight": 352,
+      "anchorX": 0.5215379286309558,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0
+    },
+    {
+      "path": "assets/sprites/tony-etch/curated/idle-frame-1.png",
+      "sourceHeight": 673,
+      "outputHeight": 352,
+      "anchorX": 0.5200756194325231,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.029052
+    },
+    {
+      "path": "assets/sprites/tony-etch/curated/idle-frame-2.png",
+      "sourceHeight": 676,
+      "outputHeight": 352,
+      "anchorX": 0.5173031143895659,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.033639
+    },
+    {
+      "path": "assets/sprites/tony-etch/curated/idle-frame-3.png",
+      "sourceHeight": 655,
+      "outputHeight": 351,
+      "anchorX": 0.520195823394716,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.004382
+    }
+  ],
+  "punch": [
+    {
+      "path": "assets/sprites/tony-etch/curated/punch-frame-0.png",
+      "sourceHeight": 642,
+      "outputHeight": 352,
+      "anchorX": 0.5123458470794376,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.914286
+    },
+    {
+      "path": "assets/sprites/tony-etch/curated/punch-frame-1.png",
+      "sourceHeight": 637,
+      "outputHeight": 352,
+      "anchorX": 0.5159196551639595,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.907165
+    },
+    {
+      "path": "assets/sprites/tony-etch/curated/punch-frame-2.png",
+      "sourceHeight": 636,
+      "outputHeight": 347,
+      "anchorX": 0.42904449978332404,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.918793
+    },
+    {
+      "path": "assets/sprites/tony-etch/curated/punch-frame-3.png",
+      "sourceHeight": 638,
+      "outputHeight": 352,
+      "anchorX": 0.5115513612963363,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.908589
+    }
+  ],
+  "kick": [
+    {
+      "path": "assets/sprites/tony-etch/curated/kick-frame-0.png",
+      "sourceHeight": 660,
+      "outputHeight": 352,
+      "anchorX": 0.509662634997801,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.955224
+    },
+    {
+      "path": "assets/sprites/tony-etch/curated/kick-frame-1.png",
+      "sourceHeight": 660,
+      "outputHeight": 352,
+      "anchorX": 0.4447466141731306,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.955224
+    },
+    {
+      "path": "assets/sprites/tony-etch/curated/kick-frame-2.png",
+      "sourceHeight": 651,
+      "outputHeight": 352,
+      "anchorX": 0.3151710092583528,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.942199
+    },
+    {
+      "path": "assets/sprites/tony-etch/curated/kick-frame-3.png",
+      "sourceHeight": 658,
+      "outputHeight": 352,
+      "anchorX": 0.4490584355302983,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.952329
+    }
+  ],
+  "hurt": [
+    {
+      "path": "assets/sprites/tony-etch/curated/hurt-frame-0.png",
+      "sourceHeight": 624,
+      "outputHeight": 352,
+      "anchorX": 0.4938369692805027,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.790123
+    },
+    {
+      "path": "assets/sprites/tony-etch/curated/hurt-frame-1.png",
+      "sourceHeight": 630,
+      "outputHeight": 352,
+      "anchorX": 0.5077236271294228,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.797721
+    },
+    {
+      "path": "assets/sprites/tony-etch/curated/hurt-frame-2.png",
+      "sourceHeight": 610,
+      "outputHeight": 352,
+      "anchorX": 0.49325052821540044,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.772397
+    },
+    {
+      "path": "assets/sprites/tony-etch/curated/hurt-frame-3.png",
+      "sourceHeight": 630,
+      "outputHeight": 352,
+      "anchorX": 0.5157960624380369,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.797721
+    }
+  ],
+  "jump": [
+    {
+      "path": "assets/sprites/tony-etch/curated/jump-frame-0.png",
+      "sourceHeight": 442,
+      "outputHeight": 351,
+      "anchorX": 0.47584233180625635,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.64
+    },
+    {
+      "path": "assets/sprites/tony-etch/curated/jump-frame-1.png",
+      "sourceHeight": 569,
+      "outputHeight": 352,
+      "anchorX": 0.40894718801347246,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.831169
+    },
+    {
+      "path": "assets/sprites/tony-etch/curated/jump-frame-2.png",
+      "sourceHeight": 518,
+      "outputHeight": 352,
+      "anchorX": 0.4268137383907578,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.831169
+    },
+    {
+      "path": "assets/sprites/tony-etch/curated/jump-frame-3.png",
+      "sourceHeight": 419,
+      "outputHeight": 336,
+      "anchorX": 0.5338881354911729,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.627451
+    }
+  ],
+  "special": [
+    {
+      "path": "assets/sprites/tony-etch/curated/special-frame-0.png",
+      "sourceHeight": 603,
+      "outputHeight": 352,
+      "anchorX": 0.5138928670269532,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.901408
+    },
+    {
+      "path": "assets/sprites/tony-etch/curated/special-frame-1.png",
+      "sourceHeight": 594,
+      "outputHeight": 352,
+      "anchorX": 0.50322399136716,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.887955
+    },
+    {
+      "path": "assets/sprites/tony-etch/curated/special-frame-2.png",
+      "sourceHeight": 594,
+      "outputHeight": 348,
+      "anchorX": 0.4582088884225108,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.898162
+    },
+    {
+      "path": "assets/sprites/tony-etch/curated/special-frame-3.png",
+      "sourceHeight": 603,
+      "outputHeight": 352,
+      "anchorX": 0.5129631591320284,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.901408
+    }
+  ],
+  "walk": [
+    {
+      "path": "assets/sprites/tony-etch/curated/walk-frame-0.png",
+      "sourceHeight": 564,
+      "outputHeight": 352,
+      "anchorX": 0.5124633538402857,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.955224
+    },
+    {
+      "path": "assets/sprites/tony-etch/curated/walk-frame-1.png",
+      "sourceHeight": 566,
+      "outputHeight": 352,
+      "anchorX": 0.46865027031803025,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.958611
+    },
+    {
+      "path": "assets/sprites/tony-etch/curated/walk-frame-2.png",
+      "sourceHeight": 564,
+      "outputHeight": 351,
+      "anchorX": 0.49506021180272414,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.957945
+    },
+    {
+      "path": "assets/sprites/tony-etch/curated/walk-frame-3.png",
+      "sourceHeight": 563,
+      "outputHeight": 352,
+      "anchorX": 0.4987343405580324,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.95353
+    },
+    {
+      "path": "assets/sprites/tony-etch/curated/walk-frame-4.png",
+      "sourceHeight": 564,
+      "outputHeight": 352,
+      "anchorX": 0.45653125522060317,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.955224
+    },
+    {
+      "path": "assets/sprites/tony-etch/curated/walk-frame-5.png",
+      "sourceHeight": 564,
+      "outputHeight": 352,
+      "anchorX": 0.5122109685729269,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.955224
+    }
+  ],
+  "block": [
+    {
+      "path": "assets/sprites/tony-etch/curated/block-frame-0.png",
+      "sourceHeight": 662,
+      "outputHeight": 352,
+      "anchorX": 0.5144215504912136,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.901408
+    },
+    {
+      "path": "assets/sprites/tony-etch/curated/block-frame-1.png",
+      "sourceHeight": 663,
+      "outputHeight": 352,
+      "anchorX": 0.5101977414823551,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.90277
+    },
+    {
+      "path": "assets/sprites/tony-etch/curated/block-frame-2.png",
+      "sourceHeight": 644,
+      "outputHeight": 352,
+      "anchorX": 0.5110235177517779,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.876899
+    },
+    {
+      "path": "assets/sprites/tony-etch/curated/block-frame-3.png",
+      "sourceHeight": 638,
+      "outputHeight": 352,
+      "anchorX": 0.5129765095477237,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.868729
+    }
+  ],
+  "crouch": [
+    {
+      "path": "assets/sprites/tony-etch/curated/crouch-frame-0.png",
+      "sourceHeight": 627,
+      "outputHeight": 352,
+      "anchorX": 0.49159022465442614,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.703297
+    },
+    {
+      "path": "assets/sprites/tony-etch/curated/crouch-frame-1.png",
+      "sourceHeight": 561,
+      "outputHeight": 352,
+      "anchorX": 0.4822927192327285,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.646465
+    },
+    {
+      "path": "assets/sprites/tony-etch/curated/crouch-frame-2.png",
+      "sourceHeight": 486,
+      "outputHeight": 352,
+      "anchorX": 0.47256093651184455,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.587156
+    },
+    {
+      "path": "assets/sprites/tony-etch/curated/crouch-frame-3.png",
+      "sourceHeight": 503,
+      "outputHeight": 351,
+      "anchorX": 0.44039692597729424,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.587156
+    }
+  ],
+  "ko": [
+    {
+      "path": "assets/sprites/tony-etch/curated/ko-frame-0.png",
+      "sourceHeight": 546,
+      "outputHeight": 352,
+      "anchorX": 0.5206601048157803,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.842105
+    },
+    {
+      "path": "assets/sprites/tony-etch/curated/ko-frame-1.png",
+      "sourceHeight": 463,
+      "outputHeight": 352,
+      "anchorX": 0.4016155200997919,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.735632
+    },
+    {
+      "path": "assets/sprites/tony-etch/curated/ko-frame-2.png",
+      "sourceHeight": 307,
+      "outputHeight": 221,
+      "anchorX": 0.3817484163462364,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.780488
+    },
+    {
+      "path": "assets/sprites/tony-etch/curated/ko-frame-3.png",
+      "sourceHeight": 146,
+      "outputHeight": 69,
+      "anchorX": 0.5070456825543719,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.084746
+    }
+  ],
+  "celebrate": [
+    {
+      "path": "assets/sprites/tony-etch/curated/celebrate-frame-0.png",
+      "sourceHeight": 645,
+      "outputHeight": 352,
+      "anchorX": 0.5206981621540513,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.927536
+    },
+    {
+      "path": "assets/sprites/tony-etch/curated/celebrate-frame-1.png",
+      "sourceHeight": 663,
+      "outputHeight": 352,
+      "anchorX": 0.5050819149734191,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.927536
+    },
+    {
+      "path": "assets/sprites/tony-etch/curated/celebrate-frame-2.png",
+      "sourceHeight": 693,
+      "outputHeight": 352,
+      "anchorX": 0.5063382128730923,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.015873
+    },
+    {
+      "path": "assets/sprites/tony-etch/curated/celebrate-frame-3.png",
+      "sourceHeight": 693,
+      "outputHeight": 352,
+      "anchorX": 0.5042691469254598,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.015873
+    }
+  ],
+  "airPunch": [
+    {
+      "path": "assets/sprites/tony-etch/curated/airPunch-frame-0.png",
+      "sourceHeight": 573,
+      "outputHeight": 351,
+      "anchorX": 0.33144103056375185,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.752941
+    },
+    {
+      "path": "assets/sprites/tony-etch/curated/airPunch-frame-1.png",
+      "sourceHeight": 580,
+      "outputHeight": 351,
+      "anchorX": 0.26874214254283363,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.76214
+    },
+    {
+      "path": "assets/sprites/tony-etch/curated/airPunch-frame-2.png",
+      "sourceHeight": 568,
+      "outputHeight": 352,
+      "anchorX": 0.25487702947072627,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.744251
+    },
+    {
+      "path": "assets/sprites/tony-etch/curated/airPunch-frame-3.png",
+      "sourceHeight": 565,
+      "outputHeight": 352,
+      "anchorX": 0.38728354600114107,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.740319
+    }
+  ],
+  "airKick": [
+    {
+      "path": "assets/sprites/tony-etch/curated/airKick-frame-0.png",
+      "sourceHeight": 450,
+      "outputHeight": 352,
+      "anchorX": 0.42163552500606133,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.727273
+    },
+    {
+      "path": "assets/sprites/tony-etch/curated/airKick-frame-1.png",
+      "sourceHeight": 475,
+      "outputHeight": 316,
+      "anchorX": 0.3558612407467277,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.820513
+    },
+    {
+      "path": "assets/sprites/tony-etch/curated/airKick-frame-2.png",
+      "sourceHeight": 441,
+      "outputHeight": 258,
+      "anchorX": 0.31666430460875894,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.955224
+    },
+    {
+      "path": "assets/sprites/tony-etch/curated/airKick-frame-3.png",
+      "sourceHeight": 533,
+      "outputHeight": 351,
+      "anchorX": 0.4222567184637203,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.810127
+    }
+  ],
+  "crouchPunch": [
+    {
+      "path": "assets/sprites/tony-etch/curated/crouchPunch-frame-0.png",
+      "sourceHeight": 513,
+      "outputHeight": 352,
+      "anchorX": 0.48130814182367104,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.64
+    },
+    {
+      "path": "assets/sprites/tony-etch/curated/crouchPunch-frame-1.png",
+      "sourceHeight": 513,
+      "outputHeight": 351,
+      "anchorX": 0.48574108300641755,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.64
+    },
+    {
+      "path": "assets/sprites/tony-etch/curated/crouchPunch-frame-2.png",
+      "sourceHeight": 513,
+      "outputHeight": 309,
+      "anchorX": 0.3545743214999266,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.744186
+    },
+    {
+      "path": "assets/sprites/tony-etch/curated/crouchPunch-frame-3.png",
+      "sourceHeight": 513,
+      "outputHeight": 352,
+      "anchorX": 0.4813482341009247,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.64
+    }
+  ],
+  "crouchKick": [
+    {
+      "path": "assets/sprites/tony-etch/curated/crouchKick-frame-0.png",
+      "sourceHeight": 467,
+      "outputHeight": 352,
+      "anchorX": 0.5107617051695285,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.64
+    },
+    {
+      "path": "assets/sprites/tony-etch/curated/crouchKick-frame-1.png",
+      "sourceHeight": 513,
+      "outputHeight": 352,
+      "anchorX": 0.34281662164317855,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.64
+    },
+    {
+      "path": "assets/sprites/tony-etch/curated/crouchKick-frame-2.png",
+      "sourceHeight": 460,
+      "outputHeight": 242,
+      "anchorX": 0.407863847925199,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.864865
+    },
+    {
+      "path": "assets/sprites/tony-etch/curated/crouchKick-frame-3.png",
+      "sourceHeight": 466,
+      "outputHeight": 352,
+      "anchorX": 0.5081070429442495,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.64
+    }
+  ],
+  "uppercut": [
+    {
+      "path": "assets/sprites/tony-etch/curated/uppercut-frame-0.png",
+      "sourceHeight": 543,
+      "outputHeight": 352,
+      "anchorX": 0.5174527956516156,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.810127
+    },
+    {
+      "path": "assets/sprites/tony-etch/curated/uppercut-frame-1.png",
+      "sourceHeight": 582,
+      "outputHeight": 352,
+      "anchorX": 0.5122784077566684,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.888889
+    },
+    {
+      "path": "assets/sprites/tony-etch/curated/uppercut-frame-2.png",
+      "sourceHeight": 701,
+      "outputHeight": 352,
+      "anchorX": 0.4989209955562745,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.103448
+    },
+    {
+      "path": "assets/sprites/tony-etch/curated/uppercut-frame-3.png",
+      "sourceHeight": 584,
+      "outputHeight": 352,
+      "anchorX": 0.5143702579518131,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.888889
+    }
+  ],
+  "sweep": [
+    {
+      "path": "assets/sprites/tony-etch/curated/sweep-frame-0.png",
+      "sourceHeight": 452,
+      "outputHeight": 352,
+      "anchorX": 0.5104317755847326,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.680851
+    },
+    {
+      "path": "assets/sprites/tony-etch/curated/sweep-frame-1.png",
+      "sourceHeight": 451,
+      "outputHeight": 321,
+      "anchorX": 0.6163315422562272,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.752941
+    },
+    {
+      "path": "assets/sprites/tony-etch/curated/sweep-frame-2.png",
+      "sourceHeight": 405,
+      "outputHeight": 207,
+      "anchorX": 0.408228211907967,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.066667
+    },
+    {
+      "path": "assets/sprites/tony-etch/curated/sweep-frame-3.png",
+      "sourceHeight": 452,
+      "outputHeight": 352,
+      "anchorX": 0.47755242766418,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.680851
+    }
+  ],
+  "dash": [
+    {
+      "path": "assets/sprites/tony-etch/curated/dash-frame-0.png",
+      "sourceHeight": 477,
+      "outputHeight": 352,
+      "anchorX": 0.4625351207635389,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.752941
+    },
+    {
+      "path": "assets/sprites/tony-etch/curated/dash-frame-1.png",
+      "sourceHeight": 473,
+      "outputHeight": 330,
+      "anchorX": 0.5175621240079197,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.796402
+    },
+    {
+      "path": "assets/sprites/tony-etch/curated/dash-frame-2.png",
+      "sourceHeight": 477,
+      "outputHeight": 352,
+      "anchorX": 0.47520407998475545,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.752941
+    },
+    {
+      "path": "assets/sprites/tony-etch/curated/dash-frame-3.png",
+      "sourceHeight": 477,
+      "outputHeight": 352,
+      "anchorX": 0.5078610163213971,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.752941
+    }
+  ],
+  "backwalk": [
+    {
+      "path": "assets/sprites/tony-etch/curated/backwalk-frame-0.png",
+      "sourceHeight": 548,
+      "outputHeight": 351,
+      "anchorX": 0.5059570539904811,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.955224
+    },
+    {
+      "path": "assets/sprites/tony-etch/curated/backwalk-frame-1.png",
+      "sourceHeight": 548,
+      "outputHeight": 352,
+      "anchorX": 0.5017921089019916,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.952509
+    },
+    {
+      "path": "assets/sprites/tony-etch/curated/backwalk-frame-2.png",
+      "sourceHeight": 543,
+      "outputHeight": 352,
+      "anchorX": 0.5082535980515483,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.943819
+    },
+    {
+      "path": "assets/sprites/tony-etch/curated/backwalk-frame-3.png",
+      "sourceHeight": 544,
+      "outputHeight": 352,
+      "anchorX": 0.4953908801501394,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.945557
+    },
+    {
+      "path": "assets/sprites/tony-etch/curated/backwalk-frame-4.png",
+      "sourceHeight": 549,
+      "outputHeight": 352,
+      "anchorX": 0.45920886122773424,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.954249
+    },
+    {
+      "path": "assets/sprites/tony-etch/curated/backwalk-frame-5.png",
+      "sourceHeight": 548,
+      "outputHeight": 352,
+      "anchorX": 0.5036829394320025,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.952509
+    }
+  ],
+  "lowBlock": [
+    {
+      "path": "assets/sprites/tony-etch/curated/lowBlock-frame-0.png",
+      "sourceHeight": 543,
+      "outputHeight": 352,
+      "anchorX": 0.5122888837642205,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.621359
+    },
+    {
+      "path": "assets/sprites/tony-etch/curated/lowBlock-frame-1.png",
+      "sourceHeight": 549,
+      "outputHeight": 352,
+      "anchorX": 0.5131341534786554,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.628226
+    },
+    {
+      "path": "assets/sprites/tony-etch/curated/lowBlock-frame-2.png",
+      "sourceHeight": 548,
+      "outputHeight": 352,
+      "anchorX": 0.5213166088639419,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.627081
+    },
+    {
+      "path": "assets/sprites/tony-etch/curated/lowBlock-frame-3.png",
+      "sourceHeight": 548,
+      "outputHeight": 352,
+      "anchorX": 0.5172003485426753,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.627081
+    }
+  ],
+  "turn": [
+    {
+      "path": "assets/sprites/tony-etch/curated/turn-frame-0.png",
+      "sourceHeight": 658,
+      "outputHeight": 352,
+      "anchorX": 0.5126540676345293,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.888889
+    },
+    {
+      "path": "assets/sprites/tony-etch/curated/turn-frame-1.png",
+      "sourceHeight": 662,
+      "outputHeight": 352,
+      "anchorX": 0.5077632989475095,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.894292
+    },
+    {
+      "path": "assets/sprites/tony-etch/curated/turn-frame-2.png",
+      "sourceHeight": 660,
+      "outputHeight": 352,
+      "anchorX": 0.5056720569594949,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.891591
+    },
+    {
+      "path": "assets/sprites/tony-etch/curated/turn-frame-3.png",
+      "sourceHeight": 659,
+      "outputHeight": 352,
+      "anchorX": 0.4876381464676191,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.89024
+    }
+  ],
+  "land": [
+    {
+      "path": "assets/sprites/tony-etch/curated/land-frame-0.png",
+      "sourceHeight": 486,
+      "outputHeight": 352,
+      "anchorX": 0.49712159193424793,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.653061
+    },
+    {
+      "path": "assets/sprites/tony-etch/curated/land-frame-1.png",
+      "sourceHeight": 573,
+      "outputHeight": 352,
+      "anchorX": 0.5016981502967568,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.761905
+    },
+    {
+      "path": "assets/sprites/tony-etch/curated/land-frame-2.png",
+      "sourceHeight": 658,
+      "outputHeight": 352,
+      "anchorX": 0.5028378633733526,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.888889
+    },
+    {
+      "path": "assets/sprites/tony-etch/curated/land-frame-3.png",
+      "sourceHeight": 669,
+      "outputHeight": 352,
+      "anchorX": 0.5049297168590287,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.888889
+    }
+  ],
+  "jumpForward": [
+    {
+      "path": "assets/sprites/tony-etch/curated/jumpForward-frame-0.png",
+      "sourceHeight": 475,
+      "outputHeight": 352,
+      "anchorX": 0.4521680103742938,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.695652
+    },
+    {
+      "path": "assets/sprites/tony-etch/curated/jumpForward-frame-1.png",
+      "sourceHeight": 636,
+      "outputHeight": 352,
+      "anchorX": 0.23072136088578543,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.888889
+    },
+    {
+      "path": "assets/sprites/tony-etch/curated/jumpForward-frame-2.png",
+      "sourceHeight": 478,
+      "outputHeight": 352,
+      "anchorX": 0.4300101011006621,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.673684
+    },
+    {
+      "path": "assets/sprites/tony-etch/curated/jumpForward-frame-3.png",
+      "sourceHeight": 630,
+      "outputHeight": 352,
+      "anchorX": 0.6556997473581181,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.888889
+    }
+  ],
+  "super": [
+    {
+      "path": "assets/sprites/tony-etch/curated/super-frame-0.png",
+      "sourceHeight": 555,
+      "outputHeight": 351,
+      "anchorX": 0.5134203936555316,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.810127
+    },
+    {
+      "path": "assets/sprites/tony-etch/curated/super-frame-1.png",
+      "sourceHeight": 604,
+      "outputHeight": 352,
+      "anchorX": 0.5056198837342266,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.879146
+    },
+    {
+      "path": "assets/sprites/tony-etch/curated/super-frame-2.png",
+      "sourceHeight": 590,
+      "outputHeight": 348,
+      "anchorX": 0.46070348230542707,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.868639
+    },
+    {
+      "path": "assets/sprites/tony-etch/curated/super-frame-3.png",
+      "sourceHeight": 626,
+      "outputHeight": 352,
+      "anchorX": 0.5113264918166578,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.911168
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "musashi",
+  "name": "Musashi",
+  "source": "assets/sprites/musashi/base-source.png",
+  "identity": "Young brown-skinned man with short dense curly black hair, green leaf graphic shirt, black cargo trousers with red cloud patches, green-black backpack carrying rolled scroll and small anime charms, red-white sneakers. Preserve accessories.",
+  "color": "#81be86",
+  "speed": 300,
+  "tempo": 0.98,
+  "visualHeight": 320,
+  "damage": {
+    "punch": 8,
+    "kick": 13
+  },
+  "tagline": "CAMINHO DO PERGAMINHO",
+  "power": {
+    "kind": "kinetic",
+    "label": "Investida shinobi",
+    "superLabel": "Impacto do pergaminho",
+    "description": "Avanço corporal poderoso e choque concentrado de curta distância."
+  }
+}

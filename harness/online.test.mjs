@@ -5,6 +5,7 @@ import path from 'node:path';
 import {setTimeout as delay} from 'node:timers/promises';
 import {Client} from '@colyseus/sdk';
 import {matchMaker} from '@colyseus/core';
+import {fighterIds} from '../roster.js';
 process.env.NODE_ENV='test';process.env.PORT='3195';process.env.RANKING_DB=path.join(await mkdtemp(path.join(tmpdir(),'buteco-online-')),'ranking.sqlite');
 const {gameServer,rankings}=await import('../server.mjs');
 const endpoint='http://127.0.0.1:3195';
@@ -25,6 +26,7 @@ try {
     host.send('start');await until(()=>room.phase==='fighters');
     const previousFighter=[...room.members.values()][1].fighter;
     challenger.send('configure',{fighter:'constructor',stage:3});host.send('configure',{fighter:'__proto__'});await delay(30);assert.equal(room.stage,0);assert.equal([...room.members.values()][1].fighter,previousFighter);
+    for(const fighter of fighterIds){host.send('configure',{fighter});await until(()=>[...room.members.values()][0].fighter===fighter);}
     challenger.send('configure',{fighter:'miranda'});await until(()=>[...room.members.values()][1].fighter==='miranda');
     host.send('ready');await delay(30);assert.equal(room.phase,'fighters');challenger.send('ready');await until(()=>room.phase==='stage');
     challenger.send('configure',{stage:3});challenger.send('start');await delay(30);assert.equal(room.phase,'stage');assert.equal(room.stage,0);

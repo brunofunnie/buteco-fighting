@@ -1,0 +1,21 @@
+{
+  "id": "ghostly",
+  "name": "Ghostly",
+  "source": "assets/sprites/ghostly/base-source.png",
+  "identity": "Young woman, long curly auburn hair, red long sleeveless dress with slit, light cream open jacket, necklaces, small black hip purse, white-red sneakers.",
+  "color": "#d77e91",
+  "speed": 300,
+  "tempo": 0.98,
+  "visualHeight": 320,
+  "damage": {
+    "punch": 8,
+    "kick": 13
+  },
+  "tagline": "PRESENÇA FANTASMA",
+  "power": {
+    "kind": "illusion",
+    "label": "Passo fantasma",
+    "superLabel": "Ecos espectrais",
+    "description": "Avança com um golpe holográfico; o super multiplica o ataque."
+  }
+}

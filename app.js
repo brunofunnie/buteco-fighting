@@ -279,7 +279,7 @@ function renderSelection() {
   if (spriteManifest.maya) animateSelectionPreviews();
 }
 const fighterScreen = $("#fighterScreen");
-fighterScreen.innerHTML = `<header class="screen-heading"><span>02 / PLAYER SELECT</span><h2 id="fighterHeading">ESCOLHA SEU LUTADOR</h2></header>
+fighterScreen.innerHTML = `<header class="screen-heading"><span>02 / PLAYER SELECT · ${fighterIds.length} LUTADORES</span><h2 id="fighterHeading">ESCOLHA SEU LUTADOR</h2></header>
 <div class="fighter-selection"><div class="fighter-preview"><canvas id="playerPreview" width="420" height="400" role="img"></canvas><small>JOGADOR 1</small><strong id="playerName"></strong><span id="playerPower"></span><p id="playerDescription"></p><figure class="power-demo"><canvas id="playerPowerDemo" role="img" width="1280" height="720"></canvas><figcaption id="playerDemoLabel">ESPECIAL / SUPER</figcaption></figure></div>
 <div class="fighter-picks"><div class="pick-tabs"><button data-slot="player" class="active">JOGADOR 1</button><button data-slot="opponent" id="opponentSlot">RIVAL</button></div><div class="fighter-list roster-grid">${fighterIds.map(id=>`<button class="roster-fighter" data-player="${id}" aria-label="Selecionar ${FIGHTERS[id].name}"><img src="${FIGHTERS[id].source}" alt="${FIGHTERS[id].name}"><span class="pick-badge"></span><strong>${FIGHTERS[id].name}</strong></button>`).join("")}</div><p class="roster-hint">Q TROCA P1 / RIVAL · U ESPECIAL · I SUPER</p></div>
 <div class="fighter-preview rival-preview"><canvas id="opponentPreview" width="420" height="400" role="img"></canvas><small>RIVAL</small><strong id="opponentName"></strong><span id="opponentPower"></span><p id="opponentDescription"></p><figure class="power-demo"><canvas id="opponentPowerDemo" role="img" width="1280" height="720"></canvas><figcaption id="opponentDemoLabel">ESPECIAL / SUPER</figcaption></figure></div></div><button class="confirm-button" id="fighterNext">CONFIRMAR LUTADORES →</button>`;
@@ -627,10 +627,16 @@ window.addEventListener("keydown", (event) => {
       event.preventDefault();
       const buttons = [...document.querySelectorAll(selector)];
       const current = buttons.findIndex(b => screen === "fighter" ? b.dataset.player === selection[selectionSlot] : b.classList.contains("selected") || b.classList.contains("active"));
-      const delta = screen === "fighter" && ["ArrowUp","ArrowDown"].includes(navigationKey)
-        ? (navigationKey === "ArrowUp" ? -4 : 4)
-        : (["ArrowLeft","ArrowUp"].includes(navigationKey) ? -1 : 1);
-      const next=buttons[(current + delta + buttons.length) % buttons.length];next.click();next.focus({preventScroll:true});
+      const columns = screen === "fighter" ? getComputedStyle($(".roster-grid")).gridTemplateColumns.split(" ").length : 1;
+      const direction = ["ArrowLeft","ArrowUp"].includes(navigationKey) ? -1 : 1;
+      let nextIndex = (current + direction + buttons.length) % buttons.length;
+      if (screen === "fighter" && ["ArrowUp","ArrowDown"].includes(navigationKey)) {
+        const column = current % columns;
+        const rowsInColumn = Math.ceil((buttons.length - column) / columns);
+        const row = Math.floor(current / columns);
+        nextIndex = ((row + direction + rowsInColumn) % rowsInColumn) * columns + column;
+      }
+      const next=buttons[nextIndex];next.click();next.focus({preventScroll:true});
       if (screen === "fighter") next.scrollIntoView({block:"nearest",inline:"nearest"});
     }
     return;

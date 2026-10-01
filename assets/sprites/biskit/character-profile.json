@@ -1,0 +1,21 @@
+{
+  "id": "biskit",
+  "name": "Biskit",
+  "source": "assets/sprites/biskit/base-source.png",
+  "identity": "Slim light-skinned man with short dark hair, navy T-shirt, white athletic shorts, small hip pouch and black-white sneakers.",
+  "color": "#87b2df",
+  "speed": 330,
+  "tempo": 0.9,
+  "visualHeight": 320,
+  "damage": {
+    "punch": 7,
+    "kick": 12
+  },
+  "tagline": "RITMO SEM PAUSA",
+  "power": {
+    "kind": "sonic",
+    "label": "Estalo veloz",
+    "superLabel": "Ritmo acelerado",
+    "description": "Ondas largas empurram o rival; o super amplifica a batida."
+  }
+}

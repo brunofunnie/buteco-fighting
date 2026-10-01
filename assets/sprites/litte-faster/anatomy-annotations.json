@@ -1,0 +1,157 @@
+{
+  "method": "manual-visual-crown-to-chin",
+  "units": "exported 384px cell pixels",
+  "uncertaintyPixels": 8,
+  "referenceIdleHead": 72,
+  "headSpans": {
+    "idle": [
+      72,
+      72,
+      72,
+      72
+    ],
+    "punch": [
+      72,
+      76,
+      72,
+      72
+    ],
+    "kick": [
+      72,
+      70,
+      64,
+      72
+    ],
+    "hurt": [
+      83,
+      83,
+      83,
+      72
+    ],
+    "jump": [
+      102,
+      82,
+      88,
+      92
+    ],
+    "special": [
+      72,
+      82,
+      73,
+      72
+    ],
+    "walk": [
+      72,
+      72,
+      72,
+      72,
+      72,
+      72
+    ],
+    "block": [
+      74,
+      74,
+      74,
+      74
+    ],
+    "crouch": [
+      87,
+      94,
+      107,
+      102
+    ],
+    "ko": [
+      82,
+      99,
+      84,
+      67
+    ],
+    "celebrate": [
+      72,
+      72,
+      66,
+      66
+    ],
+    "airPunch": [
+      88,
+      88,
+      82,
+      88
+    ],
+    "airKick": [
+      82,
+      90,
+      74,
+      82
+    ],
+    "crouchPunch": [
+      100,
+      100,
+      88,
+      100
+    ],
+    "crouchKick": [
+      108,
+      95,
+      81,
+      108
+    ],
+    "uppercut": [
+      77,
+      77,
+      57,
+      77
+    ],
+    "sweep": [
+      110,
+      93,
+      61,
+      102
+    ],
+    "dash": [
+      88,
+      88,
+      88,
+      88
+    ],
+    "backwalk": [
+      72.0,
+      72.0,
+      72.0,
+      72.0,
+      72.0,
+      72.0
+    ],
+    "lowBlock": [
+      107,
+      107,
+      107,
+      107
+    ],
+    "turn": [
+      72.0,
+      72.0,
+      72.0,
+      72.0
+    ],
+    "land": [
+      108,
+      92,
+      72,
+      72
+    ],
+    "jumpForward": [
+      84,
+      84,
+      88,
+      84
+    ],
+    "super": [
+      84,
+      73,
+      65,
+      72
+    ]
+  },
+  "notes": "Manual estimates from all frame panels and per-state contact sheets; hair crown included consistently; rotated heads follow anatomical axis. Scale=idle head/state head. Not an automated anatomical detector."
+}

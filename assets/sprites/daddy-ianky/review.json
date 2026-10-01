@@ -1,0 +1,38 @@
+{
+  "reviewer": "independent manual visual QA",
+  "method": "Sequential inspection of all 100 exported frames on three full-frame panels, with contact-sheet follow-up for uncertain anatomy and locomotion.",
+  "motionReviewed": [
+    "idle",
+    "punch",
+    "kick",
+    "hurt",
+    "jump",
+    "special",
+    "walk",
+    "block",
+    "crouch",
+    "ko",
+    "celebrate",
+    "airPunch",
+    "airKick",
+    "crouchPunch",
+    "crouchKick",
+    "uppercut",
+    "sweep",
+    "dash",
+    "backwalk",
+    "lowBlock",
+    "turn",
+    "land",
+    "jumpForward",
+    "super"
+  ],
+  "errors": [],
+  "contentHash": "c9c5345b0fdc00dffdb7381f262da87ddd71a3107764cb54b107ce4d89ad2e4c",
+  "notes": [
+    "Identity, outfit, limb completeness, action phases and facing inspected against supplied source.",
+    "Walk/backwalk are experimental locomotion; physical foot phases and loop endpoint continuity inspected; silhouette overlap alone is not an anatomy failure.",
+    "KO ends horizontal, turn ends facing left, other actions face right.",
+    "Head spans are approximate manual estimates."
+  ]
+}

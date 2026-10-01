@@ -1,0 +1,746 @@
+{
+  "idle": {
+    "frames": [
+      {
+        "path": "assets/sprites/biskit/curated/idle-frame-0.png",
+        "scale": 1.0,
+        "anchorX": 0.4983955939975761,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/biskit/curated/idle-frame-1.png",
+        "scale": 1.0,
+        "anchorX": 0.49674315639717426,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/biskit/curated/idle-frame-2.png",
+        "scale": 1.0,
+        "anchorX": 0.4989484446969419,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/biskit/curated/idle-frame-3.png",
+        "scale": 1.0,
+        "anchorX": 0.4981931682275986,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 6,
+    "loop": true
+  },
+  "punch": {
+    "frames": [
+      {
+        "path": "assets/sprites/biskit/curated/punch-frame-0.png",
+        "scale": 0.96875,
+        "anchorX": 0.5019081843762974,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/biskit/curated/punch-frame-1.png",
+        "scale": 0.953846,
+        "anchorX": 0.501114764343071,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/biskit/curated/punch-frame-2.png",
+        "scale": 0.96875,
+        "anchorX": 0.41669216564272743,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/biskit/curated/punch-frame-3.png",
+        "scale": 0.96875,
+        "anchorX": 0.5037030222213321,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  },
+  "kick": {
+    "frames": [
+      {
+        "path": "assets/sprites/biskit/curated/kick-frame-0.png",
+        "scale": 1.0,
+        "anchorX": 0.4926485640644341,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/biskit/curated/kick-frame-1.png",
+        "scale": 1.0,
+        "anchorX": 0.43794356233651915,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/biskit/curated/kick-frame-2.png",
+        "scale": 1.0,
+        "anchorX": 0.2577613379313527,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/biskit/curated/kick-frame-3.png",
+        "scale": 1.0,
+        "anchorX": 0.43172401509256275,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 10,
+    "loop": false
+  },
+  "hurt": {
+    "frames": [
+      {
+        "path": "assets/sprites/biskit/curated/hurt-frame-0.png",
+        "scale": 0.939394,
+        "anchorX": 0.49530623175769045,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/biskit/curated/hurt-frame-1.png",
+        "scale": 0.96875,
+        "anchorX": 0.4871830963211093,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/biskit/curated/hurt-frame-2.png",
+        "scale": 0.96875,
+        "anchorX": 0.499574101786663,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/biskit/curated/hurt-frame-3.png",
+        "scale": 0.96875,
+        "anchorX": 0.5025990338543753,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 10,
+    "loop": false
+  },
+  "jump": {
+    "frames": [
+      {
+        "path": "assets/sprites/biskit/curated/jump-frame-0.png",
+        "scale": 0.78481,
+        "anchorX": 0.5166426911072121,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/biskit/curated/jump-frame-1.png",
+        "scale": 0.861111,
+        "anchorX": 0.38490795762132946,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/biskit/curated/jump-frame-2.png",
+        "scale": 0.815789,
+        "anchorX": 0.4769018898055714,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/biskit/curated/jump-frame-3.png",
+        "scale": 0.849315,
+        "anchorX": 0.4635547679078959,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 8,
+    "loop": false
+  },
+  "special": {
+    "frames": [
+      {
+        "path": "assets/sprites/biskit/curated/special-frame-0.png",
+        "scale": 0.96875,
+        "anchorX": 0.5034960718361629,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/biskit/curated/special-frame-1.png",
+        "scale": 0.96875,
+        "anchorX": 0.501689158753121,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/biskit/curated/special-frame-2.png",
+        "scale": 0.96875,
+        "anchorX": 0.4220600048018666,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/biskit/curated/special-frame-3.png",
+        "scale": 0.96875,
+        "anchorX": 0.5031576182318013,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 10,
+    "loop": false
+  },
+  "walk": {
+    "frames": [
+      {
+        "path": "assets/sprites/biskit/curated/walk-frame-0.png",
+        "scale": 0.984127,
+        "anchorX": 0.4990307320130512,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/biskit/curated/walk-frame-1.png",
+        "scale": 0.984127,
+        "anchorX": 0.47807219121475836,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/biskit/curated/walk-frame-2.png",
+        "scale": 0.984127,
+        "anchorX": 0.4931495075937526,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/biskit/curated/walk-frame-3.png",
+        "scale": 0.984127,
+        "anchorX": 0.503443465903722,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/biskit/curated/walk-frame-4.png",
+        "scale": 0.984127,
+        "anchorX": 0.48849882014753415,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/biskit/curated/walk-frame-5.png",
+        "scale": 0.984127,
+        "anchorX": 0.5018260103913944,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": true
+  },
+  "block": {
+    "frames": [
+      {
+        "path": "assets/sprites/biskit/curated/block-frame-0.png",
+        "scale": 0.96875,
+        "anchorX": 0.5017804463036741,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/biskit/curated/block-frame-1.png",
+        "scale": 0.96875,
+        "anchorX": 0.5006451585526811,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/biskit/curated/block-frame-2.png",
+        "scale": 0.96875,
+        "anchorX": 0.5039801771023641,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/biskit/curated/block-frame-3.png",
+        "scale": 0.96875,
+        "anchorX": 0.5067334053225584,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 8,
+    "loop": false
+  },
+  "crouch": {
+    "frames": [
+      {
+        "path": "assets/sprites/biskit/curated/crouch-frame-0.png",
+        "scale": 0.775,
+        "anchorX": 0.48413174438613443,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/biskit/curated/crouch-frame-1.png",
+        "scale": 0.72093,
+        "anchorX": 0.4733316386977835,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/biskit/curated/crouch-frame-2.png",
+        "scale": 0.681319,
+        "anchorX": 0.45213728599777214,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/biskit/curated/crouch-frame-3.png",
+        "scale": 0.72093,
+        "anchorX": 0.47179171526000424,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 8,
+    "loop": false
+  },
+  "ko": {
+    "frames": [
+      {
+        "path": "assets/sprites/biskit/curated/ko-frame-0.png",
+        "scale": 0.861111,
+        "anchorX": 0.5090760435374798,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/biskit/curated/ko-frame-1.png",
+        "scale": 0.78481,
+        "anchorX": 0.5214284338276772,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/biskit/curated/ko-frame-2.png",
+        "scale": 0.953846,
+        "anchorX": 0.4107591562099277,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/biskit/curated/ko-frame-3.png",
+        "scale": 1.44186,
+        "anchorX": 0.400842592549341,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 8,
+    "loop": false
+  },
+  "celebrate": {
+    "frames": [
+      {
+        "path": "assets/sprites/biskit/curated/celebrate-frame-0.png",
+        "scale": 0.96875,
+        "anchorX": 0.49711895503466436,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/biskit/curated/celebrate-frame-1.png",
+        "scale": 1.033333,
+        "anchorX": 0.49243886321415925,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/biskit/curated/celebrate-frame-2.png",
+        "scale": 1.050847,
+        "anchorX": 0.49455674948460154,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/biskit/curated/celebrate-frame-3.png",
+        "scale": 1.050847,
+        "anchorX": 0.4939892742389997,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 6,
+    "loop": false
+  },
+  "airPunch": {
+    "frames": [
+      {
+        "path": "assets/sprites/biskit/curated/airPunch-frame-0.png",
+        "scale": 0.805195,
+        "anchorX": 0.42339817768062177,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/biskit/curated/airPunch-frame-1.png",
+        "scale": 0.805195,
+        "anchorX": 0.32177535054974665,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/biskit/curated/airPunch-frame-2.png",
+        "scale": 0.805195,
+        "anchorX": 0.26375712106021604,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/biskit/curated/airPunch-frame-3.png",
+        "scale": 0.805195,
+        "anchorX": 0.4248440933388202,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  },
+  "airKick": {
+    "frames": [
+      {
+        "path": "assets/sprites/biskit/curated/airKick-frame-0.png",
+        "scale": 0.815789,
+        "anchorX": 0.4217596574157558,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/biskit/curated/airKick-frame-1.png",
+        "scale": 0.861111,
+        "anchorX": 0.3512576238465949,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/biskit/curated/airKick-frame-2.png",
+        "scale": 1.0,
+        "anchorX": 0.35561115662599496,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/biskit/curated/airKick-frame-3.png",
+        "scale": 0.815789,
+        "anchorX": 0.43304169120351244,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  },
+  "crouchPunch": {
+    "frames": [
+      {
+        "path": "assets/sprites/biskit/curated/crouchPunch-frame-0.png",
+        "scale": 0.681319,
+        "anchorX": 0.4999196591206772,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/biskit/curated/crouchPunch-frame-1.png",
+        "scale": 0.681319,
+        "anchorX": 0.5029794672209226,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/biskit/curated/crouchPunch-frame-2.png",
+        "scale": 0.729412,
+        "anchorX": 0.40005816565430563,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/biskit/curated/crouchPunch-frame-3.png",
+        "scale": 0.681319,
+        "anchorX": 0.5014200431026737,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  },
+  "crouchKick": {
+    "frames": [
+      {
+        "path": "assets/sprites/biskit/curated/crouchKick-frame-0.png",
+        "scale": 0.613861,
+        "anchorX": 0.48384598102625226,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/biskit/curated/crouchKick-frame-1.png",
+        "scale": 0.613861,
+        "anchorX": 0.3109350282447903,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/biskit/curated/crouchKick-frame-2.png",
+        "scale": 0.815789,
+        "anchorX": 0.3306851093307743,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/biskit/curated/crouchKick-frame-3.png",
+        "scale": 0.613861,
+        "anchorX": 0.4863324511428992,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 10,
+    "loop": false
+  },
+  "uppercut": {
+    "frames": [
+      {
+        "path": "assets/sprites/biskit/curated/uppercut-frame-0.png",
+        "scale": 0.925373,
+        "anchorX": 0.5014081213063987,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/biskit/curated/uppercut-frame-1.png",
+        "scale": 0.984127,
+        "anchorX": 0.5020980753033002,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/biskit/curated/uppercut-frame-2.png",
+        "scale": 1.24,
+        "anchorX": 0.4928778020378723,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/biskit/curated/uppercut-frame-3.png",
+        "scale": 0.984127,
+        "anchorX": 0.5037069086555798,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  },
+  "sweep": {
+    "frames": [
+      {
+        "path": "assets/sprites/biskit/curated/sweep-frame-0.png",
+        "scale": 0.613861,
+        "anchorX": 0.431158945715131,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/biskit/curated/sweep-frame-1.png",
+        "scale": 0.72093,
+        "anchorX": 0.5372594499777487,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/biskit/curated/sweep-frame-2.png",
+        "scale": 1.0,
+        "anchorX": 0.48106111400819773,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/biskit/curated/sweep-frame-3.png",
+        "scale": 0.613861,
+        "anchorX": 0.49571319439771006,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 10,
+    "loop": false
+  },
+  "dash": {
+    "frames": [
+      {
+        "path": "assets/sprites/biskit/curated/dash-frame-0.png",
+        "scale": 0.815789,
+        "anchorX": 0.45702069054324507,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/biskit/curated/dash-frame-1.png",
+        "scale": 0.815789,
+        "anchorX": 0.5222076187856521,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/biskit/curated/dash-frame-2.png",
+        "scale": 0.815789,
+        "anchorX": 0.49887414464095986,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/biskit/curated/dash-frame-3.png",
+        "scale": 0.815789,
+        "anchorX": 0.44163388177005497,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  },
+  "backwalk": {
+    "frames": [
+      {
+        "path": "assets/sprites/biskit/curated/backwalk-frame-0.png",
+        "scale": 0.984127,
+        "anchorX": 0.49720714872820154,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/biskit/curated/backwalk-frame-1.png",
+        "scale": 0.984127,
+        "anchorX": 0.49497814525898115,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/biskit/curated/backwalk-frame-2.png",
+        "scale": 0.984127,
+        "anchorX": 0.4955203987486832,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/biskit/curated/backwalk-frame-3.png",
+        "scale": 0.984127,
+        "anchorX": 0.4869111187760964,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/biskit/curated/backwalk-frame-4.png",
+        "scale": 0.984127,
+        "anchorX": 0.4684977023432854,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/biskit/curated/backwalk-frame-5.png",
+        "scale": 0.984127,
+        "anchorX": 0.498565717968044,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": true
+  },
+  "lowBlock": {
+    "frames": [
+      {
+        "path": "assets/sprites/biskit/curated/lowBlock-frame-0.png",
+        "scale": 0.659574,
+        "anchorX": 0.4297215590451174,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/biskit/curated/lowBlock-frame-1.png",
+        "scale": 0.659574,
+        "anchorX": 0.45595873792238395,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/biskit/curated/lowBlock-frame-2.png",
+        "scale": 0.659574,
+        "anchorX": 0.4601636496239794,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/biskit/curated/lowBlock-frame-3.png",
+        "scale": 0.659574,
+        "anchorX": 0.46421686872287254,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 8,
+    "loop": false
+  },
+  "turn": {
+    "frames": [
+      {
+        "path": "assets/sprites/biskit/curated/turn-frame-0.png",
+        "scale": 0.984127,
+        "anchorX": 0.49324094559203263,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/biskit/curated/turn-frame-1.png",
+        "scale": 0.984127,
+        "anchorX": 0.4956259459058685,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/biskit/curated/turn-frame-2.png",
+        "scale": 0.984127,
+        "anchorX": 0.5024696754919545,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/biskit/curated/turn-frame-3.png",
+        "scale": 0.984127,
+        "anchorX": 0.506991949710545,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  },
+  "land": {
+    "frames": [
+      {
+        "path": "assets/sprites/biskit/curated/land-frame-0.png",
+        "scale": 0.659574,
+        "anchorX": 0.4964352607749137,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/biskit/curated/land-frame-1.png",
+        "scale": 0.78481,
+        "anchorX": 0.48636766348969696,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/biskit/curated/land-frame-2.png",
+        "scale": 0.96875,
+        "anchorX": 0.4991465909646638,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/biskit/curated/land-frame-3.png",
+        "scale": 0.96875,
+        "anchorX": 0.5013347153777549,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  },
+  "jumpForward": {
+    "frames": [
+      {
+        "path": "assets/sprites/biskit/curated/jumpForward-frame-0.png",
+        "scale": 0.775,
+        "anchorX": 0.49279464276293,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/biskit/curated/jumpForward-frame-1.png",
+        "scale": 0.849315,
+        "anchorX": 0.301902668863183,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/biskit/curated/jumpForward-frame-2.png",
+        "scale": 0.729412,
+        "anchorX": 0.4842138444494717,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/biskit/curated/jumpForward-frame-3.png",
+        "scale": 0.873239,
+        "anchorX": 0.6679825762153815,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 10,
+    "loop": false
+  },
+  "super": {
+    "frames": [
+      {
+        "path": "assets/sprites/biskit/curated/super-frame-0.png",
+        "scale": 0.939394,
+        "anchorX": 0.5082489122986796,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/biskit/curated/super-frame-1.png",
+        "scale": 0.96875,
+        "anchorX": 0.5030468568521322,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/biskit/curated/super-frame-2.png",
+        "scale": 0.96875,
+        "anchorX": 0.44819651509416886,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/biskit/curated/super-frame-3.png",
+        "scale": 0.96875,
+        "anchorX": 0.5050851030212673,
+        "anchorY": 0.9583333333333334
+      }
+    ],
+    "fps": 12,
+    "loop": false
+  }
+}

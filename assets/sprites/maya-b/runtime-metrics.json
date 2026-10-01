@@ -1,1450 +1,850 @@
 {
   "idle": [
     {
-      "path": "assets/sprites/maya-b/curated/idle-frame-0.png",
-      "sourceHeight": 683,
+      "path": "assets/sprites/maya-b/curated/roster-v15-idle-frame-0.png",
+      "sourceHeight": 677,
       "outputHeight": 352,
-      "anchorX": 0.5236760188399993,
+      "anchorX": 0.5027587534848488,
       "anchorY": 0.9583333333333334,
-      "scale": 1,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 64,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 1.0
     },
     {
-      "path": "assets/sprites/maya-b/curated/idle-frame-1.png",
-      "sourceHeight": 686,
+      "path": "assets/sprites/maya-b/curated/roster-v15-idle-frame-1.png",
+      "sourceHeight": 679,
       "outputHeight": 352,
-      "anchorX": 0.522340743137583,
+      "anchorX": 0.4991634889164363,
       "anchorY": 0.9583333333333334,
-      "scale": 1.004392,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 64,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 1.0
     },
     {
-      "path": "assets/sprites/maya-b/curated/idle-frame-2.png",
-      "sourceHeight": 651,
+      "path": "assets/sprites/maya-b/curated/roster-v15-idle-frame-2.png",
+      "sourceHeight": 667,
       "outputHeight": 352,
-      "anchorX": 0.5257960700043113,
+      "anchorX": 0.5021960695197786,
       "anchorY": 0.9583333333333334,
-      "scale": 0.953148,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 64,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 0.984615
     },
     {
-      "path": "assets/sprites/maya-b/curated/idle-frame-3.png",
-      "sourceHeight": 683,
-      "outputHeight": 352,
-      "anchorX": 0.5257508424947688,
+      "path": "assets/sprites/maya-b/curated/roster-v15-idle-frame-3.png",
+      "sourceHeight": 679,
+      "outputHeight": 351,
+      "anchorX": 0.4999082246621895,
       "anchorY": 0.9583333333333334,
-      "scale": 1,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 64,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 1.0
     }
   ],
   "punch": [
     {
-      "path": "assets/sprites/maya-b/curated/punch-frame-0.png",
-      "sourceHeight": 656,
-      "outputHeight": 352,
-      "anchorX": 0.5196583114686294,
+      "path": "assets/sprites/maya-b/curated/roster-v15-punch-frame-0.png",
+      "sourceHeight": 684,
+      "outputHeight": 351,
+      "anchorX": 0.504355883351399,
       "anchorY": 0.9583333333333334,
-      "scale": 1,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 64,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 1.0
     },
     {
-      "path": "assets/sprites/maya-b/curated/punch-frame-1.png",
-      "sourceHeight": 651,
-      "outputHeight": 352,
-      "anchorX": 0.5194835232011495,
+      "path": "assets/sprites/maya-b/curated/roster-v15-punch-frame-1.png",
+      "sourceHeight": 684,
+      "outputHeight": 351,
+      "anchorX": 0.5007129013944512,
       "anchorY": 0.9583333333333334,
-      "scale": 0.992378,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 64,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 1.0
     },
     {
-      "path": "assets/sprites/maya-b/curated/punch-frame-2.png",
-      "sourceHeight": 649,
+      "path": "assets/sprites/maya-b/curated/roster-v15-punch-frame-2.png",
+      "sourceHeight": 672,
       "outputHeight": 352,
-      "anchorX": 0.443473665206858,
+      "anchorX": 0.434053759762786,
       "anchorY": 0.9583333333333334,
-      "scale": 0.989329,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 64,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 0.969697
     },
     {
-      "path": "assets/sprites/maya-b/curated/punch-frame-3.png",
-      "sourceHeight": 656,
-      "outputHeight": 352,
-      "anchorX": 0.5186925567172338,
+      "path": "assets/sprites/maya-b/curated/roster-v15-punch-frame-3.png",
+      "sourceHeight": 684,
+      "outputHeight": 351,
+      "anchorX": 0.503037385786122,
       "anchorY": 0.9583333333333334,
-      "scale": 1,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 64,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 1.0
     }
   ],
   "kick": [
     {
-      "path": "assets/sprites/maya-b/curated/kick-frame-0.png",
-      "sourceHeight": 646,
+      "path": "assets/sprites/maya-b/curated/roster-v15-kick-frame-0.png",
+      "sourceHeight": 645,
       "outputHeight": 352,
-      "anchorX": 0.5139601018826607,
+      "anchorX": 0.5015033562102114,
       "anchorY": 0.9583333333333334,
-      "scale": 0.969697,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 66,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 1.0
     },
     {
-      "path": "assets/sprites/maya-b/curated/kick-frame-1.png",
+      "path": "assets/sprites/maya-b/curated/roster-v15-kick-frame-1.png",
       "sourceHeight": 653,
       "outputHeight": 352,
-      "anchorX": 0.4641443879048242,
+      "anchorX": 0.4727928480460317,
       "anchorY": 0.9583333333333334,
-      "scale": 0.980205,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 66,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 1.0
     },
     {
-      "path": "assets/sprites/maya-b/curated/kick-frame-2.png",
+      "path": "assets/sprites/maya-b/curated/roster-v15-kick-frame-2.png",
       "sourceHeight": 647,
-      "outputHeight": 338,
-      "anchorX": 0.26751638170140984,
+      "outputHeight": 352,
+      "anchorX": 0.31660984181826807,
       "anchorY": 0.9583333333333334,
-      "scale": 1.011425,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 66,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 1.0
     },
     {
-      "path": "assets/sprites/maya-b/curated/kick-frame-3.png",
-      "sourceHeight": 656,
+      "path": "assets/sprites/maya-b/curated/roster-v15-kick-frame-3.png",
+      "sourceHeight": 653,
       "outputHeight": 352,
-      "anchorX": 0.37836391796233954,
+      "anchorX": 0.47351646068593983,
       "anchorY": 0.9583333333333334,
-      "scale": 0.984708,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 66,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 1.0
     }
   ],
   "hurt": [
     {
-      "path": "assets/sprites/maya-b/curated/hurt-frame-0.png",
-      "sourceHeight": 660,
-      "outputHeight": 352,
-      "anchorX": 0.536719069268492,
+      "path": "assets/sprites/maya-b/curated/roster-v15-hurt-frame-0.png",
+      "sourceHeight": 657,
+      "outputHeight": 351,
+      "anchorX": 0.5081226768456916,
       "anchorY": 0.9583333333333334,
-      "scale": 0.984615,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 65,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 0.955224
     },
     {
-      "path": "assets/sprites/maya-b/curated/hurt-frame-1.png",
-      "sourceHeight": 653,
-      "outputHeight": 341,
-      "anchorX": 0.5912048725611432,
+      "path": "assets/sprites/maya-b/curated/roster-v15-hurt-frame-1.png",
+      "sourceHeight": 638,
+      "outputHeight": 352,
+      "anchorX": 0.5454376173753425,
       "anchorY": 0.9583333333333334,
-      "scale": 1.005597,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 65,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 0.984615
     },
     {
-      "path": "assets/sprites/maya-b/curated/hurt-frame-2.png",
-      "sourceHeight": 666,
+      "path": "assets/sprites/maya-b/curated/roster-v15-hurt-frame-2.png",
+      "sourceHeight": 636,
       "outputHeight": 352,
-      "anchorX": 0.5108176819997069,
+      "anchorX": 0.4883061033853477,
       "anchorY": 0.9583333333333334,
-      "scale": 0.993566,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 65,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 0.941176
     },
     {
-      "path": "assets/sprites/maya-b/curated/hurt-frame-3.png",
-      "sourceHeight": 683,
+      "path": "assets/sprites/maya-b/curated/roster-v15-hurt-frame-3.png",
+      "sourceHeight": 663,
       "outputHeight": 352,
-      "anchorX": 0.508183422886119,
+      "anchorX": 0.5042092836087192,
       "anchorY": 0.9583333333333334,
-      "scale": 1.018928,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 65,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 1.0
     }
   ],
   "jump": [
     {
-      "path": "assets/sprites/maya-b/curated/jump-frame-0.png",
-      "sourceHeight": 546,
+      "path": "assets/sprites/maya-b/curated/roster-v15-jump-frame-0.png",
+      "sourceHeight": 520,
       "outputHeight": 352,
-      "anchorX": 0.47707556643464205,
+      "anchorX": 0.45699507784925925,
       "anchorY": 0.9583333333333334,
-      "scale": 0.727273,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 88,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 0.744186
     },
     {
-      "path": "assets/sprites/maya-b/curated/jump-frame-1.png",
-      "sourceHeight": 630,
-      "outputHeight": 352,
-      "anchorX": 0.4246631973098558,
+      "path": "assets/sprites/maya-b/curated/roster-v15-jump-frame-1.png",
+      "sourceHeight": 654,
+      "outputHeight": 351,
+      "anchorX": 0.31206388204249486,
       "anchorY": 0.9583333333333334,
-      "scale": 0.839161,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 88,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 0.864865
     },
     {
-      "path": "assets/sprites/maya-b/curated/jump-frame-2.png",
-      "sourceHeight": 535,
+      "path": "assets/sprites/maya-b/curated/roster-v15-jump-frame-2.png",
+      "sourceHeight": 566,
       "outputHeight": 352,
-      "anchorX": 0.4286341592036457,
+      "anchorX": 0.523000875038692,
       "anchorY": 0.9583333333333334,
-      "scale": 0.712621,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 88,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 0.752941
     },
     {
-      "path": "assets/sprites/maya-b/curated/jump-frame-3.png",
-      "sourceHeight": 606,
-      "outputHeight": 352,
-      "anchorX": 0.4792509599755548,
+      "path": "assets/sprites/maya-b/curated/roster-v15-jump-frame-3.png",
+      "sourceHeight": 493,
+      "outputHeight": 351,
+      "anchorX": 0.5127355060726823,
       "anchorY": 0.9583333333333334,
-      "scale": 0.807193,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 88,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 0.719101
     }
   ],
   "special": [
     {
-      "path": "assets/sprites/maya-b/curated/special-frame-0.png",
-      "sourceHeight": 665,
+      "path": "assets/sprites/maya-b/curated/roster-v15-special-frame-0.png",
+      "sourceHeight": 658,
       "outputHeight": 352,
-      "anchorX": 0.5173974970247956,
+      "anchorX": 0.5021991740048248,
       "anchorY": 0.9583333333333334,
-      "scale": 0.984615,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 65,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 0.984615
     },
     {
-      "path": "assets/sprites/maya-b/curated/special-frame-1.png",
-      "sourceHeight": 665,
+      "path": "assets/sprites/maya-b/curated/roster-v15-special-frame-1.png",
+      "sourceHeight": 642,
       "outputHeight": 352,
-      "anchorX": 0.5124712579487918,
+      "anchorX": 0.5007103984261622,
       "anchorY": 0.9583333333333334,
-      "scale": 0.984615,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 65,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 0.955224
     },
     {
-      "path": "assets/sprites/maya-b/curated/special-frame-2.png",
-      "sourceHeight": 664,
+      "path": "assets/sprites/maya-b/curated/roster-v15-special-frame-2.png",
+      "sourceHeight": 648,
       "outputHeight": 352,
-      "anchorX": 0.45148163526877805,
+      "anchorX": 0.46377623295407555,
       "anchorY": 0.9583333333333334,
-      "scale": 0.983135,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 65,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 0.969697
     },
     {
-      "path": "assets/sprites/maya-b/curated/special-frame-3.png",
-      "sourceHeight": 665,
+      "path": "assets/sprites/maya-b/curated/roster-v15-special-frame-3.png",
+      "sourceHeight": 658,
       "outputHeight": 352,
-      "anchorX": 0.5169544869211297,
+      "anchorX": 0.4990543801671247,
       "anchorY": 0.9583333333333334,
-      "scale": 0.984615,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 65,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 0.984615
     }
   ],
   "walk": [
     {
-      "path": "assets/sprites/maya-b/curated/walk-frame-0.png",
-      "sourceHeight": 592,
+      "path": "assets/sprites/maya-b/curated/roster-v15-walk-frame-0.png",
+      "sourceHeight": 528,
       "outputHeight": 352,
-      "anchorX": 0.5046808962697538,
+      "anchorX": 0.49907976314915253,
       "anchorY": 0.9583333333333334,
-      "scale": 0.955224,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 67,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 0.941176
     },
     {
-      "path": "assets/sprites/maya-b/curated/walk-frame-1.png",
-      "sourceHeight": 593,
+      "path": "assets/sprites/maya-b/curated/roster-v15-walk-frame-1.png",
+      "sourceHeight": 528,
       "outputHeight": 352,
-      "anchorX": 0.4812256959587149,
+      "anchorX": 0.48685374170211393,
       "anchorY": 0.9583333333333334,
-      "scale": 0.956837,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 67,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 0.941176
     },
     {
-      "path": "assets/sprites/maya-b/curated/walk-frame-2.png",
-      "sourceHeight": 593,
+      "path": "assets/sprites/maya-b/curated/roster-v15-walk-frame-2.png",
+      "sourceHeight": 528,
       "outputHeight": 352,
-      "anchorX": 0.4920488702321724,
+      "anchorX": 0.5007597073730206,
       "anchorY": 0.9583333333333334,
-      "scale": 0.956837,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 67,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 0.941176
     },
     {
-      "path": "assets/sprites/maya-b/curated/walk-frame-3.png",
-      "sourceHeight": 592,
+      "path": "assets/sprites/maya-b/curated/roster-v15-walk-frame-3.png",
+      "sourceHeight": 527,
       "outputHeight": 352,
-      "anchorX": 0.5030994326111228,
+      "anchorX": 0.5052751008958292,
       "anchorY": 0.9583333333333334,
-      "scale": 0.955224,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 67,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 0.941176
     },
     {
-      "path": "assets/sprites/maya-b/curated/walk-frame-4.png",
-      "sourceHeight": 592,
+      "path": "assets/sprites/maya-b/curated/roster-v15-walk-frame-4.png",
+      "sourceHeight": 528,
       "outputHeight": 352,
-      "anchorX": 0.48920481177225184,
+      "anchorX": 0.4812209067105602,
       "anchorY": 0.9583333333333334,
-      "scale": 0.955224,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 67,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 0.941176
     },
     {
-      "path": "assets/sprites/maya-b/curated/walk-frame-5.png",
-      "sourceHeight": 592,
+      "path": "assets/sprites/maya-b/curated/roster-v15-walk-frame-5.png",
+      "sourceHeight": 529,
       "outputHeight": 352,
-      "anchorX": 0.5097805320977858,
+      "anchorX": 0.5023796309057702,
       "anchorY": 0.9583333333333334,
-      "scale": 0.955224,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 67,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 0.941176
     }
   ],
   "block": [
     {
-      "path": "assets/sprites/maya-b/curated/block-frame-0.png",
-      "sourceHeight": 671,
-      "outputHeight": 352,
-      "anchorX": 0.5152690424470445,
+      "path": "assets/sprites/maya-b/curated/roster-v15-block-frame-0.png",
+      "sourceHeight": 679,
+      "outputHeight": 351,
+      "anchorX": 0.5015389733255629,
       "anchorY": 0.9583333333333334,
-      "scale": 0.927536,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 69,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 1.0
     },
     {
-      "path": "assets/sprites/maya-b/curated/block-frame-1.png",
-      "sourceHeight": 658,
+      "path": "assets/sprites/maya-b/curated/roster-v15-block-frame-1.png",
+      "sourceHeight": 670,
       "outputHeight": 352,
-      "anchorX": 0.518672444787004,
+      "anchorX": 0.49914221998665037,
       "anchorY": 0.9583333333333334,
-      "scale": 0.909566,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 69,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 1.0
     },
     {
-      "path": "assets/sprites/maya-b/curated/block-frame-2.png",
-      "sourceHeight": 657,
+      "path": "assets/sprites/maya-b/curated/roster-v15-block-frame-2.png",
+      "sourceHeight": 670,
       "outputHeight": 352,
-      "anchorX": 0.5175252550310417,
+      "anchorX": 0.4990793088996755,
       "anchorY": 0.9583333333333334,
-      "scale": 0.908184,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 69,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 1.0
     },
     {
-      "path": "assets/sprites/maya-b/curated/block-frame-3.png",
-      "sourceHeight": 638,
+      "path": "assets/sprites/maya-b/curated/roster-v15-block-frame-3.png",
+      "sourceHeight": 670,
       "outputHeight": 352,
-      "anchorX": 0.5176140906667959,
+      "anchorX": 0.5002251274649623,
       "anchorY": 0.9583333333333334,
-      "scale": 0.88192,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 69,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 1.0
     }
   ],
   "crouch": [
     {
-      "path": "assets/sprites/maya-b/curated/crouch-frame-0.png",
-      "sourceHeight": 674,
+      "path": "assets/sprites/maya-b/curated/roster-v15-crouch-frame-0.png",
+      "sourceHeight": 586,
       "outputHeight": 352,
-      "anchorX": 0.5015907196152365,
+      "anchorX": 0.5016609291624231,
       "anchorY": 0.9583333333333334,
-      "scale": 0.864865,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 74,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 0.761905
     },
     {
-      "path": "assets/sprites/maya-b/curated/crouch-frame-1.png",
-      "sourceHeight": 621,
+      "path": "assets/sprites/maya-b/curated/roster-v15-crouch-frame-1.png",
+      "sourceHeight": 558,
       "outputHeight": 352,
-      "anchorX": 0.5040512692373829,
+      "anchorX": 0.49526709786464235,
       "anchorY": 0.9583333333333334,
-      "scale": 0.796856,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 74,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 0.711111
     },
     {
-      "path": "assets/sprites/maya-b/curated/crouch-frame-2.png",
-      "sourceHeight": 540,
-      "outputHeight": 352,
-      "anchorX": 0.5030594429387515,
+      "path": "assets/sprites/maya-b/curated/roster-v15-crouch-frame-2.png",
+      "sourceHeight": 493,
+      "outputHeight": 351,
+      "anchorX": 0.4901566498197431,
       "anchorY": 0.9583333333333334,
-      "scale": 0.692918,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 74,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 0.64
     },
     {
-      "path": "assets/sprites/maya-b/curated/crouch-frame-3.png",
-      "sourceHeight": 565,
+      "path": "assets/sprites/maya-b/curated/roster-v15-crouch-frame-3.png",
+      "sourceHeight": 497,
       "outputHeight": 352,
-      "anchorX": 0.5051656007270104,
+      "anchorX": 0.4877631650317264,
       "anchorY": 0.9583333333333334,
-      "scale": 0.724998,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 74,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 0.64
     }
   ],
   "ko": [
     {
-      "path": "assets/sprites/maya-b/curated/ko-frame-0.png",
-      "sourceHeight": 548,
+      "path": "assets/sprites/maya-b/curated/roster-v15-ko-frame-0.png",
+      "sourceHeight": 512,
       "outputHeight": 352,
-      "anchorX": 0.5617867740195158,
+      "anchorX": 0.5341511694251962,
       "anchorY": 0.9583333333333334,
-      "scale": 0.901408,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 71,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 0.927536
     },
     {
-      "path": "assets/sprites/maya-b/curated/ko-frame-1.png",
-      "sourceHeight": 449,
-      "outputHeight": 348,
-      "anchorX": 0.36350295362786106,
+      "path": "assets/sprites/maya-b/curated/roster-v15-ko-frame-1.png",
+      "sourceHeight": 470,
+      "outputHeight": 352,
+      "anchorX": 0.6170594774180655,
       "anchorY": 0.9583333333333334,
-      "scale": 0.747052,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 71,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 0.820513
     },
     {
-      "path": "assets/sprites/maya-b/curated/ko-frame-2.png",
-      "sourceHeight": 330,
-      "outputHeight": 192,
-      "anchorX": 0.5041176400158438,
+      "path": "assets/sprites/maya-b/curated/roster-v15-ko-frame-2.png",
+      "sourceHeight": 343,
+      "outputHeight": 203,
+      "anchorX": 0.4621874766478025,
       "anchorY": 0.9583333333333334,
-      "scale": 0.995168,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 71,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 0.969697
     },
     {
-      "path": "assets/sprites/maya-b/curated/ko-frame-3.png",
-      "sourceHeight": 167,
-      "outputHeight": 107,
-      "anchorX": 0.5418099278083394,
+      "path": "assets/sprites/maya-b/curated/roster-v15-ko-frame-3.png",
+      "sourceHeight": 173,
+      "outputHeight": 98,
+      "anchorX": 0.49181264169921723,
       "anchorY": 0.9583333333333334,
-      "scale": 0.903684,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 71,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 1.52381
     }
   ],
   "celebrate": [
     {
-      "path": "assets/sprites/maya-b/curated/celebrate-frame-0.png",
-      "sourceHeight": 628,
+      "path": "assets/sprites/maya-b/curated/roster-v15-celebrate-frame-0.png",
+      "sourceHeight": 647,
       "outputHeight": 352,
-      "anchorX": 0.5224058018333485,
+      "anchorX": 0.5028051358076909,
       "anchorY": 0.9583333333333334,
-      "scale": 1,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 64,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 1.0
     },
     {
-      "path": "assets/sprites/maya-b/curated/celebrate-frame-1.png",
-      "sourceHeight": 652,
+      "path": "assets/sprites/maya-b/curated/roster-v15-celebrate-frame-1.png",
+      "sourceHeight": 660,
       "outputHeight": 352,
-      "anchorX": 0.5210879486386139,
+      "anchorX": 0.5012282201611287,
       "anchorY": 0.9583333333333334,
-      "scale": 1.038217,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 64,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 1.0
     },
     {
-      "path": "assets/sprites/maya-b/curated/celebrate-frame-2.png",
+      "path": "assets/sprites/maya-b/curated/roster-v15-celebrate-frame-2.png",
       "sourceHeight": 695,
       "outputHeight": 352,
-      "anchorX": 0.5149134884669665,
+      "anchorX": 0.4992906465738693,
       "anchorY": 0.9583333333333334,
-      "scale": 1.106688,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 64,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 1.04918
     },
     {
-      "path": "assets/sprites/maya-b/curated/celebrate-frame-3.png",
-      "sourceHeight": 697,
+      "path": "assets/sprites/maya-b/curated/roster-v15-celebrate-frame-3.png",
+      "sourceHeight": 695,
       "outputHeight": 352,
-      "anchorX": 0.5120914576768207,
+      "anchorX": 0.5002404450539943,
       "anchorY": 0.9583333333333334,
-      "scale": 1.109873,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 64,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 1.04918
     }
   ],
   "airPunch": [
     {
-      "path": "assets/sprites/maya-b/curated/airPunch-frame-0.png",
-      "sourceHeight": 543,
+      "path": "assets/sprites/maya-b/curated/roster-v15-airPunch-frame-0.png",
+      "sourceHeight": 627,
       "outputHeight": 352,
-      "anchorX": 0.3865451820411887,
+      "anchorX": 0.4753742333938183,
       "anchorY": 0.9583333333333334,
-      "scale": 0.8,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 80,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 0.820513
     },
     {
-      "path": "assets/sprites/maya-b/curated/airPunch-frame-1.png",
-      "sourceHeight": 578,
-      "outputHeight": 352,
-      "anchorX": 0.204987329060884,
+      "path": "assets/sprites/maya-b/curated/roster-v15-airPunch-frame-1.png",
+      "sourceHeight": 627,
+      "outputHeight": 351,
+      "anchorX": 0.3414385271787929,
       "anchorY": 0.9583333333333334,
-      "scale": 0.851565,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 80,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 0.820513
     },
     {
-      "path": "assets/sprites/maya-b/curated/airPunch-frame-2.png",
-      "sourceHeight": 538,
-      "outputHeight": 296,
-      "anchorX": 0.2873413432398126,
+      "path": "assets/sprites/maya-b/curated/roster-v15-airPunch-frame-2.png",
+      "sourceHeight": 605,
+      "outputHeight": 352,
+      "anchorX": 0.31976708472436655,
       "anchorY": 0.9583333333333334,
-      "scale": 0.942591,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 80,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 0.8
     },
     {
-      "path": "assets/sprites/maya-b/curated/airPunch-frame-3.png",
-      "sourceHeight": 590,
+      "path": "assets/sprites/maya-b/curated/roster-v15-airPunch-frame-3.png",
+      "sourceHeight": 627,
       "outputHeight": 352,
-      "anchorX": 0.46766460387720504,
+      "anchorX": 0.4425043949525091,
       "anchorY": 0.9583333333333334,
-      "scale": 0.869245,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 80,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 0.820513
     }
   ],
   "airKick": [
     {
-      "path": "assets/sprites/maya-b/curated/airKick-frame-0.png",
-      "sourceHeight": 577,
+      "path": "assets/sprites/maya-b/curated/roster-v15-airKick-frame-0.png",
+      "sourceHeight": 563,
       "outputHeight": 352,
-      "anchorX": 0.43261240533538325,
+      "anchorX": 0.4927771809228283,
       "anchorY": 0.9583333333333334,
-      "scale": 0.744186,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 86,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 0.752941
     },
     {
-      "path": "assets/sprites/maya-b/curated/airKick-frame-1.png",
-      "sourceHeight": 529,
-      "outputHeight": 344,
-      "anchorX": 0.4200300514331619,
+      "path": "assets/sprites/maya-b/curated/roster-v15-airKick-frame-1.png",
+      "sourceHeight": 512,
+      "outputHeight": 316,
+      "anchorX": 0.3860771486947782,
       "anchorY": 0.9583333333333334,
-      "scale": 0.698145,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 86,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 0.864865
     },
     {
-      "path": "assets/sprites/maya-b/curated/airKick-frame-2.png",
-      "sourceHeight": 497,
-      "outputHeight": 243,
-      "anchorX": 0.3303906383183635,
+      "path": "assets/sprites/maya-b/curated/roster-v15-airKick-frame-2.png",
+      "sourceHeight": 503,
+      "outputHeight": 274,
+      "anchorX": 0.36916707925493314,
       "anchorY": 0.9583333333333334,
-      "scale": 0.928535,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 86,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 1.0
     },
     {
-      "path": "assets/sprites/maya-b/curated/airKick-frame-3.png",
-      "sourceHeight": 523,
+      "path": "assets/sprites/maya-b/curated/roster-v15-airKick-frame-3.png",
+      "sourceHeight": 560,
       "outputHeight": 352,
-      "anchorX": 0.5068356639070992,
+      "anchorX": 0.5395052644332788,
       "anchorY": 0.9583333333333334,
-      "scale": 0.67454,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 86,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 0.752941
     }
   ],
   "crouchPunch": [
     {
-      "path": "assets/sprites/maya-b/curated/crouchPunch-frame-0.png",
-      "sourceHeight": 594,
+      "path": "assets/sprites/maya-b/curated/roster-v15-crouchPunch-frame-0.png",
+      "sourceHeight": 527,
       "outputHeight": 352,
-      "anchorX": 0.5034204289638969,
+      "anchorX": 0.5011110846765766,
       "anchorY": 0.9583333333333334,
-      "scale": 0.752941,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 85,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 0.627451
     },
     {
-      "path": "assets/sprites/maya-b/curated/crouchPunch-frame-1.png",
-      "sourceHeight": 593,
+      "path": "assets/sprites/maya-b/curated/roster-v15-crouchPunch-frame-1.png",
+      "sourceHeight": 527,
       "outputHeight": 352,
-      "anchorX": 0.49009860869392513,
+      "anchorX": 0.5020335115064635,
       "anchorY": 0.9583333333333334,
-      "scale": 0.751674,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 85,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 0.627451
     },
     {
-      "path": "assets/sprites/maya-b/curated/crouchPunch-frame-2.png",
-      "sourceHeight": 575,
-      "outputHeight": 352,
-      "anchorX": 0.4964571771263698,
+      "path": "assets/sprites/maya-b/curated/roster-v15-crouchPunch-frame-2.png",
+      "sourceHeight": 526,
+      "outputHeight": 311,
+      "anchorX": 0.44691826510143295,
       "anchorY": 0.9583333333333334,
-      "scale": 0.728857,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 85,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 0.735632
     },
     {
-      "path": "assets/sprites/maya-b/curated/crouchPunch-frame-3.png",
-      "sourceHeight": 594,
+      "path": "assets/sprites/maya-b/curated/roster-v15-crouchPunch-frame-3.png",
+      "sourceHeight": 527,
       "outputHeight": 352,
-      "anchorX": 0.49913995698644426,
+      "anchorX": 0.5007460089165087,
       "anchorY": 0.9583333333333334,
-      "scale": 0.752941,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 85,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 0.627451
     }
   ],
   "crouchKick": [
     {
-      "path": "assets/sprites/maya-b/curated/crouchKick-frame-0.png",
-      "sourceHeight": 506,
+      "path": "assets/sprites/maya-b/curated/roster-v15-crouchKick-frame-0.png",
+      "sourceHeight": 507,
       "outputHeight": 352,
-      "anchorX": 0.5097920581647496,
+      "anchorX": 0.4190794897108403,
       "anchorY": 0.9583333333333334,
-      "scale": 0.673684,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 95,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 0.609524
     },
     {
-      "path": "assets/sprites/maya-b/curated/crouchKick-frame-1.png",
-      "sourceHeight": 576,
+      "path": "assets/sprites/maya-b/curated/roster-v15-crouchKick-frame-1.png",
+      "sourceHeight": 523,
       "outputHeight": 352,
-      "anchorX": 0.4630252715722401,
+      "anchorX": 0.4235044785206951,
       "anchorY": 0.9583333333333334,
-      "scale": 0.766882,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 95,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 0.615385
     },
     {
-      "path": "assets/sprites/maya-b/curated/crouchKick-frame-2.png",
-      "sourceHeight": 506,
-      "outputHeight": 255,
-      "anchorX": 0.29772148569023565,
+      "path": "assets/sprites/maya-b/curated/roster-v15-crouchKick-frame-2.png",
+      "sourceHeight": 496,
+      "outputHeight": 262,
+      "anchorX": 0.5010453108151927,
       "anchorY": 0.9583333333333334,
-      "scale": 0.929948,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 95,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 0.914286
     },
     {
-      "path": "assets/sprites/maya-b/curated/crouchKick-frame-3.png",
-      "sourceHeight": 506,
-      "outputHeight": 352,
-      "anchorX": 0.5137779138341556,
+      "path": "assets/sprites/maya-b/curated/roster-v15-crouchKick-frame-3.png",
+      "sourceHeight": 508,
+      "outputHeight": 351,
+      "anchorX": 0.4282895039068885,
       "anchorY": 0.9583333333333334,
-      "scale": 0.673684,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 95,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 0.609524
     }
   ],
   "uppercut": [
     {
-      "path": "assets/sprites/maya-b/curated/uppercut-frame-0.png",
-      "sourceHeight": 569,
+      "path": "assets/sprites/maya-b/curated/roster-v15-uppercut-frame-0.png",
+      "sourceHeight": 568,
       "outputHeight": 352,
-      "anchorX": 0.5253044544288769,
+      "anchorX": 0.51161157443824,
       "anchorY": 0.9583333333333334,
-      "scale": 0.914286,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 70,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 0.761905
     },
     {
-      "path": "assets/sprites/maya-b/curated/uppercut-frame-1.png",
-      "sourceHeight": 586,
+      "path": "assets/sprites/maya-b/curated/roster-v15-uppercut-frame-1.png",
+      "sourceHeight": 611,
       "outputHeight": 352,
-      "anchorX": 0.4995781619077752,
+      "anchorX": 0.4981432053741402,
       "anchorY": 0.9583333333333334,
-      "scale": 0.941602,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 70,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 0.853333
     },
     {
-      "path": "assets/sprites/maya-b/curated/uppercut-frame-2.png",
-      "sourceHeight": 696,
+      "path": "assets/sprites/maya-b/curated/roster-v15-uppercut-frame-2.png",
+      "sourceHeight": 691,
       "outputHeight": 352,
-      "anchorX": 0.5011287315091387,
+      "anchorX": 0.49405156189947763,
       "anchorY": 0.9583333333333334,
-      "scale": 1.118353,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 70,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 1.04918
     },
     {
-      "path": "assets/sprites/maya-b/curated/uppercut-frame-3.png",
-      "sourceHeight": 581,
+      "path": "assets/sprites/maya-b/curated/roster-v15-uppercut-frame-3.png",
+      "sourceHeight": 611,
       "outputHeight": 352,
-      "anchorX": 0.5263842423846229,
+      "anchorX": 0.501951266996648,
       "anchorY": 0.9583333333333334,
-      "scale": 0.933568,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 70,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 0.853333
     }
   ],
   "sweep": [
     {
-      "path": "assets/sprites/maya-b/curated/sweep-frame-0.png",
-      "sourceHeight": 501,
+      "path": "assets/sprites/maya-b/curated/roster-v15-sweep-frame-0.png",
+      "sourceHeight": 510,
       "outputHeight": 352,
-      "anchorX": 0.4446154574392966,
+      "anchorX": 0.5198326001094101,
       "anchorY": 0.9583333333333334,
-      "scale": 0.627451,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 102,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 0.621359
     },
     {
-      "path": "assets/sprites/maya-b/curated/sweep-frame-1.png",
-      "sourceHeight": 493,
-      "outputHeight": 327,
-      "anchorX": 0.5990198399435532,
+      "path": "assets/sprites/maya-b/curated/roster-v15-sweep-frame-1.png",
+      "sourceHeight": 523,
+      "outputHeight": 351,
+      "anchorX": 0.6903093019239455,
       "anchorY": 0.9583333333333334,
-      "scale": 0.664636,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 102,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 0.646465
     },
     {
-      "path": "assets/sprites/maya-b/curated/sweep-frame-2.png",
-      "sourceHeight": 428,
-      "outputHeight": 205,
-      "anchorX": 0.5623249256827388,
+      "path": "assets/sprites/maya-b/curated/roster-v15-sweep-frame-2.png",
+      "sourceHeight": 479,
+      "outputHeight": 224,
+      "anchorX": 0.6235337097799235,
       "anchorY": 0.9583333333333334,
-      "scale": 0.920396,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 102,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 1.032258
     },
     {
-      "path": "assets/sprites/maya-b/curated/sweep-frame-3.png",
-      "sourceHeight": 501,
+      "path": "assets/sprites/maya-b/curated/roster-v15-sweep-frame-3.png",
+      "sourceHeight": 516,
       "outputHeight": 352,
-      "anchorX": 0.501625035668205,
+      "anchorX": 0.41046978385251326,
       "anchorY": 0.9583333333333334,
-      "scale": 0.627451,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 102,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 0.627451
     }
   ],
   "dash": [
     {
-      "path": "assets/sprites/maya-b/curated/dash-frame-0.png",
-      "sourceHeight": 609,
-      "outputHeight": 352,
-      "anchorX": 0.44455837529311343,
+      "path": "assets/sprites/maya-b/curated/roster-v15-dash-frame-0.png",
+      "sourceHeight": 518,
+      "outputHeight": 351,
+      "anchorX": 0.4811272597041667,
       "anchorY": 0.9583333333333334,
-      "scale": 0.780488,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 82,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 0.727273
     },
     {
-      "path": "assets/sprites/maya-b/curated/dash-frame-1.png",
-      "sourceHeight": 616,
+      "path": "assets/sprites/maya-b/curated/roster-v15-dash-frame-1.png",
+      "sourceHeight": 537,
       "outputHeight": 352,
-      "anchorX": 0.5534081451613104,
+      "anchorX": 0.5022651638526486,
       "anchorY": 0.9583333333333334,
-      "scale": 0.789459,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 82,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 0.761905
     },
     {
-      "path": "assets/sprites/maya-b/curated/dash-frame-2.png",
-      "sourceHeight": 616,
-      "outputHeight": 352,
-      "anchorX": 0.5490801172909573,
+      "path": "assets/sprites/maya-b/curated/roster-v15-dash-frame-2.png",
+      "sourceHeight": 520,
+      "outputHeight": 351,
+      "anchorX": 0.48199648303045883,
       "anchorY": 0.9583333333333334,
-      "scale": 0.789459,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 82,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 0.727273
     },
     {
-      "path": "assets/sprites/maya-b/curated/dash-frame-3.png",
-      "sourceHeight": 609,
-      "outputHeight": 352,
-      "anchorX": 0.421659951195907,
+      "path": "assets/sprites/maya-b/curated/roster-v15-dash-frame-3.png",
+      "sourceHeight": 518,
+      "outputHeight": 351,
+      "anchorX": 0.48094621965866174,
       "anchorY": 0.9583333333333334,
-      "scale": 0.780488,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 82,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 0.727273
     }
   ],
   "backwalk": [
     {
-      "path": "assets/sprites/maya-b/curated/backwalk-frame-0.png",
-      "sourceHeight": 578,
+      "path": "assets/sprites/maya-b/curated/roster-v15-backwalk-frame-0.png",
+      "sourceHeight": 535,
       "outputHeight": 352,
-      "anchorX": 0.5101565717011933,
+      "anchorX": 0.5028231156347165,
       "anchorY": 0.9583333333333334,
-      "scale": 1,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 64,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 0.941176
     },
     {
-      "path": "assets/sprites/maya-b/curated/backwalk-frame-1.png",
-      "sourceHeight": 579,
+      "path": "assets/sprites/maya-b/curated/roster-v15-backwalk-frame-1.png",
+      "sourceHeight": 541,
       "outputHeight": 352,
-      "anchorX": 0.5136056771293841,
+      "anchorX": 0.5049139128187892,
       "anchorY": 0.9583333333333334,
-      "scale": 1.00173,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 64,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 0.941176
     },
     {
-      "path": "assets/sprites/maya-b/curated/backwalk-frame-2.png",
-      "sourceHeight": 574,
+      "path": "assets/sprites/maya-b/curated/roster-v15-backwalk-frame-2.png",
+      "sourceHeight": 536,
       "outputHeight": 352,
-      "anchorX": 0.5053378261409217,
+      "anchorX": 0.502910902287592,
       "anchorY": 0.9583333333333334,
-      "scale": 0.99308,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 64,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 0.941176
     },
     {
-      "path": "assets/sprites/maya-b/curated/backwalk-frame-3.png",
-      "sourceHeight": 577,
+      "path": "assets/sprites/maya-b/curated/roster-v15-backwalk-frame-3.png",
+      "sourceHeight": 535,
       "outputHeight": 352,
-      "anchorX": 0.47659776199503634,
+      "anchorX": 0.4864581550596374,
       "anchorY": 0.9583333333333334,
-      "scale": 0.99827,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 64,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 0.941176
     },
     {
-      "path": "assets/sprites/maya-b/curated/backwalk-frame-4.png",
-      "sourceHeight": 576,
+      "path": "assets/sprites/maya-b/curated/roster-v15-backwalk-frame-4.png",
+      "sourceHeight": 535,
       "outputHeight": 352,
-      "anchorX": 0.5002082275891941,
+      "anchorX": 0.49870634369421946,
       "anchorY": 0.9583333333333334,
-      "scale": 0.99654,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 64,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 0.941176
     },
     {
-      "path": "assets/sprites/maya-b/curated/backwalk-frame-5.png",
-      "sourceHeight": 578,
+      "path": "assets/sprites/maya-b/curated/roster-v15-backwalk-frame-5.png",
+      "sourceHeight": 536,
       "outputHeight": 352,
-      "anchorX": 0.5111029304828388,
+      "anchorX": 0.5051623658861005,
       "anchorY": 0.9583333333333334,
-      "scale": 1,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 64,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 0.941176
     }
   ],
   "lowBlock": [
     {
-      "path": "assets/sprites/maya-b/curated/lowBlock-frame-0.png",
-      "sourceHeight": 572,
+      "path": "assets/sprites/maya-b/curated/roster-v15-lowBlock-frame-0.png",
+      "sourceHeight": 540,
       "outputHeight": 352,
-      "anchorX": 0.5068170207102624,
+      "anchorX": 0.4890198057824387,
       "anchorY": 0.9583333333333334,
-      "scale": 0.727273,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 88,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 0.633663
     },
     {
-      "path": "assets/sprites/maya-b/curated/lowBlock-frame-1.png",
-      "sourceHeight": 566,
+      "path": "assets/sprites/maya-b/curated/roster-v15-lowBlock-frame-1.png",
+      "sourceHeight": 560,
       "outputHeight": 352,
-      "anchorX": 0.5149129428124194,
+      "anchorX": 0.4898366210411898,
       "anchorY": 0.9583333333333334,
-      "scale": 0.719644,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 88,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 0.673684
     },
     {
-      "path": "assets/sprites/maya-b/curated/lowBlock-frame-2.png",
-      "sourceHeight": 547,
+      "path": "assets/sprites/maya-b/curated/roster-v15-lowBlock-frame-2.png",
+      "sourceHeight": 505,
       "outputHeight": 352,
-      "anchorX": 0.5027460645261845,
+      "anchorX": 0.4922702315446165,
       "anchorY": 0.9583333333333334,
-      "scale": 0.695486,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 88,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 0.621359
     },
     {
-      "path": "assets/sprites/maya-b/curated/lowBlock-frame-3.png",
-      "sourceHeight": 548,
+      "path": "assets/sprites/maya-b/curated/roster-v15-lowBlock-frame-3.png",
+      "sourceHeight": 523,
       "outputHeight": 352,
-      "anchorX": 0.4954742677580691,
+      "anchorX": 0.49583354953812053,
       "anchorY": 0.9583333333333334,
-      "scale": 0.696758,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 88,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 0.646465
     }
   ],
   "turn": [
     {
-      "path": "assets/sprites/maya-b/curated/turn-frame-0.png",
-      "sourceHeight": 678,
+      "path": "assets/sprites/maya-b/curated/roster-v15-turn-frame-0.png",
+      "sourceHeight": 686,
       "outputHeight": 352,
-      "anchorX": 0.5168436048040385,
+      "anchorX": 0.5011548294058118,
       "anchorY": 0.9583333333333334,
-      "scale": 0.969697,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 66,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 1.0
     },
     {
-      "path": "assets/sprites/maya-b/curated/turn-frame-1.png",
-      "sourceHeight": 677,
+      "path": "assets/sprites/maya-b/curated/roster-v15-turn-frame-1.png",
+      "sourceHeight": 686,
       "outputHeight": 352,
-      "anchorX": 0.5168597193050336,
+      "anchorX": 0.5038853411680383,
       "anchorY": 0.9583333333333334,
-      "scale": 0.968267,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 66,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 1.0
     },
     {
-      "path": "assets/sprites/maya-b/curated/turn-frame-2.png",
-      "sourceHeight": 677,
+      "path": "assets/sprites/maya-b/curated/roster-v15-turn-frame-2.png",
+      "sourceHeight": 688,
       "outputHeight": 352,
-      "anchorX": 0.50528806690109,
+      "anchorX": 0.4905595965653042,
       "anchorY": 0.9583333333333334,
-      "scale": 0.968267,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 66,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 1.0
     },
     {
-      "path": "assets/sprites/maya-b/curated/turn-frame-3.png",
-      "sourceHeight": 677,
+      "path": "assets/sprites/maya-b/curated/roster-v15-turn-frame-3.png",
+      "sourceHeight": 686,
       "outputHeight": 352,
-      "anchorX": 0.48312248905096905,
+      "anchorX": 0.4963422519218959,
       "anchorY": 0.9583333333333334,
-      "scale": 0.968267,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 66,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 1.0
     }
   ],
   "land": [
     {
-      "path": "assets/sprites/maya-b/curated/land-frame-0.png",
-      "sourceHeight": 496,
+      "path": "assets/sprites/maya-b/curated/roster-v15-land-frame-0.png",
+      "sourceHeight": 466,
       "outputHeight": 352,
-      "anchorX": 0.47161444091240545,
+      "anchorX": 0.46821410539074243,
       "anchorY": 0.9583333333333334,
-      "scale": 0.646465,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 99,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 0.587156
     },
     {
-      "path": "assets/sprites/maya-b/curated/land-frame-1.png",
-      "sourceHeight": 582,
-      "outputHeight": 352,
-      "anchorX": 0.4732268753457756,
+      "path": "assets/sprites/maya-b/curated/roster-v15-land-frame-1.png",
+      "sourceHeight": 556,
+      "outputHeight": 351,
+      "anchorX": 0.49220267101531806,
       "anchorY": 0.9583333333333334,
-      "scale": 0.758553,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 99,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 0.727273
     },
     {
-      "path": "assets/sprites/maya-b/curated/land-frame-2.png",
-      "sourceHeight": 664,
-      "outputHeight": 352,
-      "anchorX": 0.5146060822815661,
+      "path": "assets/sprites/maya-b/curated/roster-v15-land-frame-2.png",
+      "sourceHeight": 642,
+      "outputHeight": 351,
+      "anchorX": 0.497857044220599,
       "anchorY": 0.9583333333333334,
-      "scale": 0.865428,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 99,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 0.941176
     },
     {
-      "path": "assets/sprites/maya-b/curated/land-frame-3.png",
-      "sourceHeight": 686,
+      "path": "assets/sprites/maya-b/curated/roster-v15-land-frame-3.png",
+      "sourceHeight": 678,
       "outputHeight": 352,
-      "anchorX": 0.5190933221009842,
+      "anchorX": 0.5023075495684101,
       "anchorY": 0.9583333333333334,
-      "scale": 0.894102,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 99,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 1.0
     }
   ],
   "jumpForward": [
     {
-      "path": "assets/sprites/maya-b/curated/jumpForward-frame-0.png",
-      "sourceHeight": 539,
+      "path": "assets/sprites/maya-b/curated/roster-v15-jumpForward-frame-0.png",
+      "sourceHeight": 506,
       "outputHeight": 352,
-      "anchorX": 0.532224458577584,
+      "anchorX": 0.4935136555856485,
       "anchorY": 0.9583333333333334,
-      "scale": 0.790123,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 81,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 0.695652
     },
     {
-      "path": "assets/sprites/maya-b/curated/jumpForward-frame-1.png",
-      "sourceHeight": 636,
+      "path": "assets/sprites/maya-b/curated/roster-v15-jumpForward-frame-1.png",
+      "sourceHeight": 601,
       "outputHeight": 352,
-      "anchorX": 0.2596842190179168,
+      "anchorX": 0.3100762785457314,
       "anchorY": 0.9583333333333334,
-      "scale": 0.932316,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 81,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 0.820513
     },
     {
-      "path": "assets/sprites/maya-b/curated/jumpForward-frame-2.png",
-      "sourceHeight": 476,
+      "path": "assets/sprites/maya-b/curated/roster-v15-jumpForward-frame-2.png",
+      "sourceHeight": 497,
       "outputHeight": 352,
-      "anchorX": 0.4085673998615511,
+      "anchorX": 0.5029578321973579,
       "anchorY": 0.9583333333333334,
-      "scale": 0.697771,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 81,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 0.695652
     },
     {
-      "path": "assets/sprites/maya-b/curated/jumpForward-frame-3.png",
-      "sourceHeight": 646,
+      "path": "assets/sprites/maya-b/curated/roster-v15-jumpForward-frame-3.png",
+      "sourceHeight": 629,
       "outputHeight": 352,
-      "anchorX": 0.7094490261759385,
+      "anchorX": 0.6753645301551847,
       "anchorY": 0.9583333333333334,
-      "scale": 0.946975,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 81,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 0.876712
     }
   ],
   "super": [
     {
-      "path": "assets/sprites/maya-b/curated/super-frame-0.png",
-      "sourceHeight": 537,
-      "outputHeight": 352,
-      "anchorX": 0.48312954579323564,
+      "path": "assets/sprites/maya-b/curated/roster-v15-super-frame-0.png",
+      "sourceHeight": 592,
+      "outputHeight": 351,
+      "anchorX": 0.5013320125896308,
       "anchorY": 0.9583333333333334,
-      "scale": 0.780488,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 82,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 0.790123
     },
     {
-      "path": "assets/sprites/maya-b/curated/super-frame-1.png",
-      "sourceHeight": 633,
+      "path": "assets/sprites/maya-b/curated/roster-v15-super-frame-1.png",
+      "sourceHeight": 655,
       "outputHeight": 352,
-      "anchorX": 0.5061981666504515,
+      "anchorX": 0.4919428092818192,
       "anchorY": 0.9583333333333334,
-      "scale": 0.920016,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 82,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 0.955224
     },
     {
-      "path": "assets/sprites/maya-b/curated/super-frame-2.png",
-      "sourceHeight": 574,
-      "outputHeight": 305,
-      "anchorX": 0.4838031414162957,
+      "path": "assets/sprites/maya-b/curated/roster-v15-super-frame-2.png",
+      "sourceHeight": 620,
+      "outputHeight": 342,
+      "anchorX": 0.4549583271359637,
       "anchorY": 0.9583333333333334,
-      "scale": 0.962823,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 82,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 0.955224
     },
     {
-      "path": "assets/sprites/maya-b/curated/super-frame-3.png",
-      "sourceHeight": 633,
+      "path": "assets/sprites/maya-b/curated/roster-v15-super-frame-3.png",
+      "sourceHeight": 651,
       "outputHeight": 352,
-      "anchorX": 0.5025480041594307,
+      "anchorX": 0.49971895376767966,
       "anchorY": 0.9583333333333334,
-      "scale": 0.920016,
-      "anatomyCalibration": {
-        "referenceFrame": 0,
-        "headSpan": 82,
-        "idleHeadSpan": 64,
-        "method": "manual-crown-to-chin-reviewed-exported-pixels"
-      }
+      "scale": 0.984615
     }
   ]
 }

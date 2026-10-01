@@ -1,0 +1,21 @@
+{
+  "id": "mr-g",
+  "name": "Mr. G",
+  "source": "assets/sprites/mr-g/base-source.png",
+  "identity": "Bald bearded tan man with rectangular black glasses, white rolled-sleeve shirt and small crest, black trousers, large belt book and sun charm, black-white sneakers.",
+  "color": "#dfc382",
+  "speed": 300,
+  "tempo": 0.98,
+  "visualHeight": 320,
+  "damage": {
+    "punch": 8,
+    "kick": 13
+  },
+  "tagline": "MESTRE DO GRIMÓRIO",
+  "power": {
+    "kind": "runes",
+    "label": "Selo do grimório",
+    "superLabel": "Runa suprema",
+    "description": "Magia rúnica; cartas e dados de energia cobrem o avanço."
+  }
+}

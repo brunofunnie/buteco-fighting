@@ -1,0 +1,21 @@
+{
+  "id": "tony-etch",
+  "name": "Tony Etch",
+  "source": "assets/sprites/tony-etch/base-source.png",
+  "identity": "Athletic tan man, short dark hair and stubble, white rolled-sleeve shirt with small chest emblem, navy trousers, small hip keys, white sneakers.",
+  "color": "#92c2d8",
+  "speed": 330,
+  "tempo": 0.9,
+  "visualHeight": 320,
+  "damage": {
+    "punch": 7,
+    "kick": 12
+  },
+  "tagline": "PRECISÃO DO BALCÃO",
+  "power": {
+    "kind": "pulse",
+    "label": "Pulso preciso",
+    "superLabel": "Rajada de precisão",
+    "description": "Pulso estreito muito rápido; o super dispara duas ondas."
+  }
+}

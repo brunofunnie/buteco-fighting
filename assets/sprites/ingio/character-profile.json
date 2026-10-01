@@ -1,0 +1,21 @@
+{
+  "id": "ingio",
+  "name": "Ingio",
+  "source": "assets/sprites/ingio/base-source.png",
+  "identity": "Tan man with short black hair, glasses and over-ear headphones, black sleeveless top, patterned red-gold open scarf vest, ID badge, black trousers, white-black high-top sneakers.",
+  "color": "#e7b961",
+  "speed": 300,
+  "tempo": 0.98,
+  "visualHeight": 320,
+  "damage": {
+    "punch": 8,
+    "kick": 13
+  },
+  "tagline": "FREQUÊNCIA DOURADA",
+  "power": {
+    "kind": "bass",
+    "label": "Batida dourada",
+    "superLabel": "Grave do festival",
+    "description": "Onda sonora baixa que empurra; o super amplia o alcance."
+  }
+}

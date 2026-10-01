@@ -1,0 +1,157 @@
+{
+  "method": "manual-visual-crown-to-chin",
+  "units": "exported 384px cell pixels",
+  "uncertaintyPixels": 8,
+  "referenceIdleHead": 75,
+  "headSpans": {
+    "idle": [
+      75,
+      75,
+      75,
+      75
+    ],
+    "punch": [
+      75,
+      75,
+      75,
+      75
+    ],
+    "kick": [
+      75,
+      75,
+      75,
+      75
+    ],
+    "hurt": [
+      83,
+      83,
+      83,
+      75
+    ],
+    "jump": [
+      103,
+      83,
+      95,
+      95
+    ],
+    "special": [
+      76,
+      76,
+      76,
+      76
+    ],
+    "walk": [
+      75,
+      75,
+      75,
+      75,
+      75,
+      75
+    ],
+    "block": [
+      82,
+      82,
+      82,
+      82
+    ],
+    "crouch": [
+      91,
+      101,
+      109,
+      109
+    ],
+    "ko": [
+      82,
+      112,
+      82,
+      64
+    ],
+    "celebrate": [
+      75,
+      75,
+      66,
+      66
+    ],
+    "airPunch": [
+      85,
+      85,
+      85,
+      85
+    ],
+    "airKick": [
+      96,
+      96,
+      76,
+      96
+    ],
+    "crouchPunch": [
+      112,
+      112,
+      97,
+      112
+    ],
+    "crouchKick": [
+      111,
+      103,
+      85,
+      111
+    ],
+    "uppercut": [
+      85,
+      85,
+      64,
+      85
+    ],
+    "sweep": [
+      105,
+      98,
+      63,
+      105
+    ],
+    "dash": [
+      94,
+      94,
+      94,
+      94
+    ],
+    "backwalk": [
+      75,
+      75,
+      75,
+      75,
+      75,
+      75
+    ],
+    "lowBlock": [
+      111,
+      111,
+      111,
+      111
+    ],
+    "turn": [
+      78,
+      78,
+      78,
+      78
+    ],
+    "land": [
+      111,
+      90,
+      75,
+      75
+    ],
+    "jumpForward": [
+      109,
+      86,
+      111,
+      86
+    ],
+    "super": [
+      91,
+      80,
+      63,
+      80
+    ]
+  },
+  "notes": "Manual estimates from all frame panels and per-state contact sheets; hair crown included consistently; rotated heads follow anatomical axis. Scale=idle head/state head. Not an automated anatomical detector."
+}

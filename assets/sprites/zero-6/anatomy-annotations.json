@@ -1,0 +1,179 @@
+{
+  "method": "manual-visual-crown-to-chin",
+  "units": "pixels in exported 384x384 frames",
+  "referenceIdleHead": 75,
+  "uncertaintyPx": 8,
+  "notes": "Manual visual estimates from all 100 overview poses plus full-resolution idle, walk, backwalk, KO and airKick contact sheets. Hair included. Tilted KO heads measured along head axis. Unmeasured subtle within-row differences retain source/output geometric adjustment. No automated landmarks.",
+  "states": {
+    "idle": {
+      "frame0HeadSpanPx": 75,
+      "headSpanPx": null,
+      "withinRowMethod": "source/output height adjustment"
+    },
+    "punch": {
+      "frame0HeadSpanPx": 83,
+      "headSpanPx": null,
+      "withinRowMethod": "source/output height adjustment"
+    },
+    "kick": {
+      "frame0HeadSpanPx": 83,
+      "headSpanPx": null,
+      "withinRowMethod": "source/output height adjustment"
+    },
+    "hurt": {
+      "frame0HeadSpanPx": 83,
+      "headSpanPx": null,
+      "withinRowMethod": "source/output height adjustment"
+    },
+    "jump": {
+      "frame0HeadSpanPx": 123,
+      "headSpanPx": [
+        123,
+        103,
+        113,
+        122
+      ],
+      "withinRowMethod": "per-frame manual estimate"
+    },
+    "special": {
+      "frame0HeadSpanPx": 88,
+      "headSpanPx": null,
+      "withinRowMethod": "source/output height adjustment"
+    },
+    "walk": {
+      "frame0HeadSpanPx": 79,
+      "headSpanPx": null,
+      "withinRowMethod": "source/output height adjustment"
+    },
+    "block": {
+      "frame0HeadSpanPx": 88,
+      "headSpanPx": null,
+      "withinRowMethod": "source/output height adjustment"
+    },
+    "crouch": {
+      "frame0HeadSpanPx": 95,
+      "headSpanPx": [
+        95,
+        112,
+        130,
+        110
+      ],
+      "withinRowMethod": "per-frame manual estimate"
+    },
+    "ko": {
+      "frame0HeadSpanPx": 85,
+      "headSpanPx": [
+        85,
+        100,
+        92,
+        79
+      ],
+      "withinRowMethod": "per-frame manual estimate"
+    },
+    "celebrate": {
+      "frame0HeadSpanPx": 86,
+      "headSpanPx": [
+        86,
+        86,
+        69,
+        69
+      ],
+      "withinRowMethod": "per-frame manual estimate"
+    },
+    "airPunch": {
+      "frame0HeadSpanPx": 111,
+      "headSpanPx": null,
+      "withinRowMethod": "source/output height adjustment"
+    },
+    "airKick": {
+      "frame0HeadSpanPx": 110,
+      "headSpanPx": [
+        110,
+        110,
+        97,
+        110
+      ],
+      "withinRowMethod": "per-frame manual estimate"
+    },
+    "crouchPunch": {
+      "frame0HeadSpanPx": 111,
+      "headSpanPx": null,
+      "withinRowMethod": "source/output height adjustment"
+    },
+    "crouchKick": {
+      "frame0HeadSpanPx": 113,
+      "headSpanPx": [
+        113,
+        113,
+        86,
+        113
+      ],
+      "withinRowMethod": "per-frame manual estimate"
+    },
+    "uppercut": {
+      "frame0HeadSpanPx": 96,
+      "headSpanPx": [
+        96,
+        86,
+        76,
+        86
+      ],
+      "withinRowMethod": "per-frame manual estimate"
+    },
+    "sweep": {
+      "frame0HeadSpanPx": 121,
+      "headSpanPx": [
+        121,
+        103,
+        84,
+        121
+      ],
+      "withinRowMethod": "per-frame manual estimate"
+    },
+    "dash": {
+      "frame0HeadSpanPx": 102,
+      "headSpanPx": null,
+      "withinRowMethod": "source/output height adjustment"
+    },
+    "backwalk": {
+      "frame0HeadSpanPx": 79,
+      "headSpanPx": null,
+      "withinRowMethod": "source/output height adjustment"
+    },
+    "lowBlock": {
+      "frame0HeadSpanPx": 113,
+      "headSpanPx": null,
+      "withinRowMethod": "source/output height adjustment"
+    },
+    "turn": {
+      "frame0HeadSpanPx": 86,
+      "headSpanPx": null,
+      "withinRowMethod": "source/output height adjustment"
+    },
+    "land": {
+      "frame0HeadSpanPx": 119,
+      "headSpanPx": [
+        119,
+        101,
+        82,
+        82
+      ],
+      "withinRowMethod": "per-frame manual estimate"
+    },
+    "jumpForward": {
+      "frame0HeadSpanPx": 109,
+      "headSpanPx": [
+        109,
+        87,
+        113,
+        87
+      ],
+      "withinRowMethod": "per-frame manual estimate"
+    },
+    "super": {
+      "frame0HeadSpanPx": 94,
+      "headSpanPx": null,
+      "withinRowMethod": "source/output height adjustment"
+    }
+  }
+}

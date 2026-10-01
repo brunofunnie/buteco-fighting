@@ -2,27 +2,27 @@
   "idle": {
     "frames": [
       {
-        "path": "assets/sprites/maya-b/curated/idle-frame-0.png",
-        "scale": 1,
-        "anchorX": 0.5236760188399993,
+        "path": "assets/sprites/maya-b/curated/roster-v15-idle-frame-0.png",
+        "scale": 1.0,
+        "anchorX": 0.5027587534848488,
         "anchorY": 0.9583333333333334
       },
       {
-        "path": "assets/sprites/maya-b/curated/idle-frame-1.png",
-        "scale": 1.004392,
-        "anchorX": 0.522340743137583,
+        "path": "assets/sprites/maya-b/curated/roster-v15-idle-frame-1.png",
+        "scale": 1.0,
+        "anchorX": 0.4991634889164363,
         "anchorY": 0.9583333333333334
       },
       {
-        "path": "assets/sprites/maya-b/curated/idle-frame-2.png",
-        "scale": 0.953148,
-        "anchorX": 0.5257960700043113,
+        "path": "assets/sprites/maya-b/curated/roster-v15-idle-frame-2.png",
+        "scale": 0.984615,
+        "anchorX": 0.5021960695197786,
         "anchorY": 0.9583333333333334
       },
       {
-        "path": "assets/sprites/maya-b/curated/idle-frame-3.png",
-        "scale": 1,
-        "anchorX": 0.5257508424947688,
+        "path": "assets/sprites/maya-b/curated/roster-v15-idle-frame-3.png",
+        "scale": 1.0,
+        "anchorX": 0.4999082246621895,
         "anchorY": 0.9583333333333334
       }
     ],
@@ -32,27 +32,27 @@
   "punch": {
     "frames": [
       {
-        "path": "assets/sprites/maya-b/curated/punch-frame-0.png",
-        "scale": 1,
-        "anchorX": 0.5196583114686294,
+        "path": "assets/sprites/maya-b/curated/roster-v15-punch-frame-0.png",
+        "scale": 1.0,
+        "anchorX": 0.504355883351399,
         "anchorY": 0.9583333333333334
       },
       {
-        "path": "assets/sprites/maya-b/curated/punch-frame-1.png",
-        "scale": 0.992378,
-        "anchorX": 0.5194835232011495,
+        "path": "assets/sprites/maya-b/curated/roster-v15-punch-frame-1.png",
+        "scale": 1.0,
+        "anchorX": 0.5007129013944512,
         "anchorY": 0.9583333333333334
       },
       {
-        "path": "assets/sprites/maya-b/curated/punch-frame-2.png",
-        "scale": 0.989329,
-        "anchorX": 0.443473665206858,
+        "path": "assets/sprites/maya-b/curated/roster-v15-punch-frame-2.png",
+        "scale": 0.969697,
+        "anchorX": 0.434053759762786,
         "anchorY": 0.9583333333333334
       },
       {
-        "path": "assets/sprites/maya-b/curated/punch-frame-3.png",
-        "scale": 1,
-        "anchorX": 0.5186925567172338,
+        "path": "assets/sprites/maya-b/curated/roster-v15-punch-frame-3.png",
+        "scale": 1.0,
+        "anchorX": 0.503037385786122,
         "anchorY": 0.9583333333333334
       }
     ],
@@ -62,27 +62,27 @@
   "kick": {
     "frames": [
       {
-        "path": "assets/sprites/maya-b/curated/kick-frame-0.png",
-        "scale": 0.969697,
-        "anchorX": 0.5139601018826607,
+        "path": "assets/sprites/maya-b/curated/roster-v15-kick-frame-0.png",
+        "scale": 1.0,
+        "anchorX": 0.5015033562102114,
         "anchorY": 0.9583333333333334
       },
       {
-        "path": "assets/sprites/maya-b/curated/kick-frame-1.png",
-        "scale": 0.980205,
-        "anchorX": 0.4641443879048242,
+        "path": "assets/sprites/maya-b/curated/roster-v15-kick-frame-1.png",
+        "scale": 1.0,
+        "anchorX": 0.4727928480460317,
         "anchorY": 0.9583333333333334
       },
       {
-        "path": "assets/sprites/maya-b/curated/kick-frame-2.png",
-        "scale": 1.011425,
-        "anchorX": 0.26751638170140984,
+        "path": "assets/sprites/maya-b/curated/roster-v15-kick-frame-2.png",
+        "scale": 1.0,
+        "anchorX": 0.31660984181826807,
         "anchorY": 0.9583333333333334
       },
       {
-        "path": "assets/sprites/maya-b/curated/kick-frame-3.png",
-        "scale": 0.984708,
-        "anchorX": 0.37836391796233954,
+        "path": "assets/sprites/maya-b/curated/roster-v15-kick-frame-3.png",
+        "scale": 1.0,
+        "anchorX": 0.47351646068593983,
         "anchorY": 0.9583333333333334
       }
     ],
@@ -92,27 +92,27 @@
   "hurt": {
     "frames": [
       {
-        "path": "assets/sprites/maya-b/curated/hurt-frame-0.png",
+        "path": "assets/sprites/maya-b/curated/roster-v15-hurt-frame-0.png",
+        "scale": 0.955224,
+        "anchorX": 0.5081226768456916,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/maya-b/curated/roster-v15-hurt-frame-1.png",
         "scale": 0.984615,
-        "anchorX": 0.536719069268492,
+        "anchorX": 0.5454376173753425,
         "anchorY": 0.9583333333333334
       },
       {
-        "path": "assets/sprites/maya-b/curated/hurt-frame-1.png",
-        "scale": 1.005597,
-        "anchorX": 0.5912048725611432,
+        "path": "assets/sprites/maya-b/curated/roster-v15-hurt-frame-2.png",
+        "scale": 0.941176,
+        "anchorX": 0.4883061033853477,
         "anchorY": 0.9583333333333334
       },
       {
-        "path": "assets/sprites/maya-b/curated/hurt-frame-2.png",
-        "scale": 0.993566,
-        "anchorX": 0.5108176819997069,
-        "anchorY": 0.9583333333333334
-      },
-      {
-        "path": "assets/sprites/maya-b/curated/hurt-frame-3.png",
-        "scale": 1.018928,
-        "anchorX": 0.508183422886119,
+        "path": "assets/sprites/maya-b/curated/roster-v15-hurt-frame-3.png",
+        "scale": 1.0,
+        "anchorX": 0.5042092836087192,
         "anchorY": 0.9583333333333334
       }
     ],
@@ -122,27 +122,27 @@
   "jump": {
     "frames": [
       {
-        "path": "assets/sprites/maya-b/curated/jump-frame-0.png",
-        "scale": 0.727273,
-        "anchorX": 0.47707556643464205,
+        "path": "assets/sprites/maya-b/curated/roster-v15-jump-frame-0.png",
+        "scale": 0.744186,
+        "anchorX": 0.45699507784925925,
         "anchorY": 0.9583333333333334
       },
       {
-        "path": "assets/sprites/maya-b/curated/jump-frame-1.png",
-        "scale": 0.839161,
-        "anchorX": 0.4246631973098558,
+        "path": "assets/sprites/maya-b/curated/roster-v15-jump-frame-1.png",
+        "scale": 0.864865,
+        "anchorX": 0.31206388204249486,
         "anchorY": 0.9583333333333334
       },
       {
-        "path": "assets/sprites/maya-b/curated/jump-frame-2.png",
-        "scale": 0.712621,
-        "anchorX": 0.4286341592036457,
+        "path": "assets/sprites/maya-b/curated/roster-v15-jump-frame-2.png",
+        "scale": 0.752941,
+        "anchorX": 0.523000875038692,
         "anchorY": 0.9583333333333334
       },
       {
-        "path": "assets/sprites/maya-b/curated/jump-frame-3.png",
-        "scale": 0.807193,
-        "anchorX": 0.4792509599755548,
+        "path": "assets/sprites/maya-b/curated/roster-v15-jump-frame-3.png",
+        "scale": 0.719101,
+        "anchorX": 0.5127355060726823,
         "anchorY": 0.9583333333333334
       }
     ],
@@ -152,27 +152,27 @@
   "special": {
     "frames": [
       {
-        "path": "assets/sprites/maya-b/curated/special-frame-0.png",
+        "path": "assets/sprites/maya-b/curated/roster-v15-special-frame-0.png",
         "scale": 0.984615,
-        "anchorX": 0.5173974970247956,
+        "anchorX": 0.5021991740048248,
         "anchorY": 0.9583333333333334
       },
       {
-        "path": "assets/sprites/maya-b/curated/special-frame-1.png",
-        "scale": 0.984615,
-        "anchorX": 0.5124712579487918,
+        "path": "assets/sprites/maya-b/curated/roster-v15-special-frame-1.png",
+        "scale": 0.955224,
+        "anchorX": 0.5007103984261622,
         "anchorY": 0.9583333333333334
       },
       {
-        "path": "assets/sprites/maya-b/curated/special-frame-2.png",
-        "scale": 0.983135,
-        "anchorX": 0.45148163526877805,
+        "path": "assets/sprites/maya-b/curated/roster-v15-special-frame-2.png",
+        "scale": 0.969697,
+        "anchorX": 0.46377623295407555,
         "anchorY": 0.9583333333333334
       },
       {
-        "path": "assets/sprites/maya-b/curated/special-frame-3.png",
+        "path": "assets/sprites/maya-b/curated/roster-v15-special-frame-3.png",
         "scale": 0.984615,
-        "anchorX": 0.5169544869211297,
+        "anchorX": 0.4990543801671247,
         "anchorY": 0.9583333333333334
       }
     ],
@@ -182,39 +182,39 @@
   "walk": {
     "frames": [
       {
-        "path": "assets/sprites/maya-b/curated/walk-frame-0.png",
-        "scale": 0.955224,
-        "anchorX": 0.5046808962697538,
+        "path": "assets/sprites/maya-b/curated/roster-v15-walk-frame-0.png",
+        "scale": 0.941176,
+        "anchorX": 0.49907976314915253,
         "anchorY": 0.9583333333333334
       },
       {
-        "path": "assets/sprites/maya-b/curated/walk-frame-1.png",
-        "scale": 0.956837,
-        "anchorX": 0.4812256959587149,
+        "path": "assets/sprites/maya-b/curated/roster-v15-walk-frame-1.png",
+        "scale": 0.941176,
+        "anchorX": 0.48685374170211393,
         "anchorY": 0.9583333333333334
       },
       {
-        "path": "assets/sprites/maya-b/curated/walk-frame-2.png",
-        "scale": 0.956837,
-        "anchorX": 0.4920488702321724,
+        "path": "assets/sprites/maya-b/curated/roster-v15-walk-frame-2.png",
+        "scale": 0.941176,
+        "anchorX": 0.5007597073730206,
         "anchorY": 0.9583333333333334
       },
       {
-        "path": "assets/sprites/maya-b/curated/walk-frame-3.png",
-        "scale": 0.955224,
-        "anchorX": 0.5030994326111228,
+        "path": "assets/sprites/maya-b/curated/roster-v15-walk-frame-3.png",
+        "scale": 0.941176,
+        "anchorX": 0.5052751008958292,
         "anchorY": 0.9583333333333334
       },
       {
-        "path": "assets/sprites/maya-b/curated/walk-frame-4.png",
-        "scale": 0.955224,
-        "anchorX": 0.48920481177225184,
+        "path": "assets/sprites/maya-b/curated/roster-v15-walk-frame-4.png",
+        "scale": 0.941176,
+        "anchorX": 0.4812209067105602,
         "anchorY": 0.9583333333333334
       },
       {
-        "path": "assets/sprites/maya-b/curated/walk-frame-5.png",
-        "scale": 0.955224,
-        "anchorX": 0.5097805320977858,
+        "path": "assets/sprites/maya-b/curated/roster-v15-walk-frame-5.png",
+        "scale": 0.941176,
+        "anchorX": 0.5023796309057702,
         "anchorY": 0.9583333333333334
       }
     ],
@@ -224,27 +224,27 @@
   "block": {
     "frames": [
       {
-        "path": "assets/sprites/maya-b/curated/block-frame-0.png",
-        "scale": 0.927536,
-        "anchorX": 0.5152690424470445,
+        "path": "assets/sprites/maya-b/curated/roster-v15-block-frame-0.png",
+        "scale": 1.0,
+        "anchorX": 0.5015389733255629,
         "anchorY": 0.9583333333333334
       },
       {
-        "path": "assets/sprites/maya-b/curated/block-frame-1.png",
-        "scale": 0.909566,
-        "anchorX": 0.518672444787004,
+        "path": "assets/sprites/maya-b/curated/roster-v15-block-frame-1.png",
+        "scale": 1.0,
+        "anchorX": 0.49914221998665037,
         "anchorY": 0.9583333333333334
       },
       {
-        "path": "assets/sprites/maya-b/curated/block-frame-2.png",
-        "scale": 0.908184,
-        "anchorX": 0.5175252550310417,
+        "path": "assets/sprites/maya-b/curated/roster-v15-block-frame-2.png",
+        "scale": 1.0,
+        "anchorX": 0.4990793088996755,
         "anchorY": 0.9583333333333334
       },
       {
-        "path": "assets/sprites/maya-b/curated/block-frame-3.png",
-        "scale": 0.88192,
-        "anchorX": 0.5176140906667959,
+        "path": "assets/sprites/maya-b/curated/roster-v15-block-frame-3.png",
+        "scale": 1.0,
+        "anchorX": 0.5002251274649623,
         "anchorY": 0.9583333333333334
       }
     ],
@@ -254,27 +254,27 @@
   "crouch": {
     "frames": [
       {
-        "path": "assets/sprites/maya-b/curated/crouch-frame-0.png",
-        "scale": 0.864865,
-        "anchorX": 0.5015907196152365,
+        "path": "assets/sprites/maya-b/curated/roster-v15-crouch-frame-0.png",
+        "scale": 0.761905,
+        "anchorX": 0.5016609291624231,
         "anchorY": 0.9583333333333334
       },
       {
-        "path": "assets/sprites/maya-b/curated/crouch-frame-1.png",
-        "scale": 0.796856,
-        "anchorX": 0.5040512692373829,
+        "path": "assets/sprites/maya-b/curated/roster-v15-crouch-frame-1.png",
+        "scale": 0.711111,
+        "anchorX": 0.49526709786464235,
         "anchorY": 0.9583333333333334
       },
       {
-        "path": "assets/sprites/maya-b/curated/crouch-frame-2.png",
-        "scale": 0.692918,
-        "anchorX": 0.5030594429387515,
+        "path": "assets/sprites/maya-b/curated/roster-v15-crouch-frame-2.png",
+        "scale": 0.64,
+        "anchorX": 0.4901566498197431,
         "anchorY": 0.9583333333333334
       },
       {
-        "path": "assets/sprites/maya-b/curated/crouch-frame-3.png",
-        "scale": 0.724998,
-        "anchorX": 0.5051656007270104,
+        "path": "assets/sprites/maya-b/curated/roster-v15-crouch-frame-3.png",
+        "scale": 0.64,
+        "anchorX": 0.4877631650317264,
         "anchorY": 0.9583333333333334
       }
     ],
@@ -284,27 +284,27 @@
   "ko": {
     "frames": [
       {
-        "path": "assets/sprites/maya-b/curated/ko-frame-0.png",
-        "scale": 0.901408,
-        "anchorX": 0.5617867740195158,
+        "path": "assets/sprites/maya-b/curated/roster-v15-ko-frame-0.png",
+        "scale": 0.927536,
+        "anchorX": 0.5341511694251962,
         "anchorY": 0.9583333333333334
       },
       {
-        "path": "assets/sprites/maya-b/curated/ko-frame-1.png",
-        "scale": 0.747052,
-        "anchorX": 0.36350295362786106,
+        "path": "assets/sprites/maya-b/curated/roster-v15-ko-frame-1.png",
+        "scale": 0.820513,
+        "anchorX": 0.6170594774180655,
         "anchorY": 0.9583333333333334
       },
       {
-        "path": "assets/sprites/maya-b/curated/ko-frame-2.png",
-        "scale": 0.995168,
-        "anchorX": 0.5041176400158438,
+        "path": "assets/sprites/maya-b/curated/roster-v15-ko-frame-2.png",
+        "scale": 0.969697,
+        "anchorX": 0.4621874766478025,
         "anchorY": 0.9583333333333334
       },
       {
-        "path": "assets/sprites/maya-b/curated/ko-frame-3.png",
-        "scale": 0.903684,
-        "anchorX": 0.5418099278083394,
+        "path": "assets/sprites/maya-b/curated/roster-v15-ko-frame-3.png",
+        "scale": 1.52381,
+        "anchorX": 0.49181264169921723,
         "anchorY": 0.9583333333333334
       }
     ],
@@ -314,27 +314,27 @@
   "celebrate": {
     "frames": [
       {
-        "path": "assets/sprites/maya-b/curated/celebrate-frame-0.png",
-        "scale": 1,
-        "anchorX": 0.5224058018333485,
+        "path": "assets/sprites/maya-b/curated/roster-v15-celebrate-frame-0.png",
+        "scale": 1.0,
+        "anchorX": 0.5028051358076909,
         "anchorY": 0.9583333333333334
       },
       {
-        "path": "assets/sprites/maya-b/curated/celebrate-frame-1.png",
-        "scale": 1.038217,
-        "anchorX": 0.5210879486386139,
+        "path": "assets/sprites/maya-b/curated/roster-v15-celebrate-frame-1.png",
+        "scale": 1.0,
+        "anchorX": 0.5012282201611287,
         "anchorY": 0.9583333333333334
       },
       {
-        "path": "assets/sprites/maya-b/curated/celebrate-frame-2.png",
-        "scale": 1.106688,
-        "anchorX": 0.5149134884669665,
+        "path": "assets/sprites/maya-b/curated/roster-v15-celebrate-frame-2.png",
+        "scale": 1.04918,
+        "anchorX": 0.4992906465738693,
         "anchorY": 0.9583333333333334
       },
       {
-        "path": "assets/sprites/maya-b/curated/celebrate-frame-3.png",
-        "scale": 1.109873,
-        "anchorX": 0.5120914576768207,
+        "path": "assets/sprites/maya-b/curated/roster-v15-celebrate-frame-3.png",
+        "scale": 1.04918,
+        "anchorX": 0.5002404450539943,
         "anchorY": 0.9583333333333334
       }
     ],
@@ -344,27 +344,27 @@
   "airPunch": {
     "frames": [
       {
-        "path": "assets/sprites/maya-b/curated/airPunch-frame-0.png",
+        "path": "assets/sprites/maya-b/curated/roster-v15-airPunch-frame-0.png",
+        "scale": 0.820513,
+        "anchorX": 0.4753742333938183,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/maya-b/curated/roster-v15-airPunch-frame-1.png",
+        "scale": 0.820513,
+        "anchorX": 0.3414385271787929,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/maya-b/curated/roster-v15-airPunch-frame-2.png",
         "scale": 0.8,
-        "anchorX": 0.3865451820411887,
+        "anchorX": 0.31976708472436655,
         "anchorY": 0.9583333333333334
       },
       {
-        "path": "assets/sprites/maya-b/curated/airPunch-frame-1.png",
-        "scale": 0.851565,
-        "anchorX": 0.204987329060884,
-        "anchorY": 0.9583333333333334
-      },
-      {
-        "path": "assets/sprites/maya-b/curated/airPunch-frame-2.png",
-        "scale": 0.942591,
-        "anchorX": 0.2873413432398126,
-        "anchorY": 0.9583333333333334
-      },
-      {
-        "path": "assets/sprites/maya-b/curated/airPunch-frame-3.png",
-        "scale": 0.869245,
-        "anchorX": 0.46766460387720504,
+        "path": "assets/sprites/maya-b/curated/roster-v15-airPunch-frame-3.png",
+        "scale": 0.820513,
+        "anchorX": 0.4425043949525091,
         "anchorY": 0.9583333333333334
       }
     ],
@@ -374,27 +374,27 @@
   "airKick": {
     "frames": [
       {
-        "path": "assets/sprites/maya-b/curated/airKick-frame-0.png",
-        "scale": 0.744186,
-        "anchorX": 0.43261240533538325,
+        "path": "assets/sprites/maya-b/curated/roster-v15-airKick-frame-0.png",
+        "scale": 0.752941,
+        "anchorX": 0.4927771809228283,
         "anchorY": 0.9583333333333334
       },
       {
-        "path": "assets/sprites/maya-b/curated/airKick-frame-1.png",
-        "scale": 0.698145,
-        "anchorX": 0.4200300514331619,
+        "path": "assets/sprites/maya-b/curated/roster-v15-airKick-frame-1.png",
+        "scale": 0.864865,
+        "anchorX": 0.3860771486947782,
         "anchorY": 0.9583333333333334
       },
       {
-        "path": "assets/sprites/maya-b/curated/airKick-frame-2.png",
-        "scale": 0.928535,
-        "anchorX": 0.3303906383183635,
+        "path": "assets/sprites/maya-b/curated/roster-v15-airKick-frame-2.png",
+        "scale": 1.0,
+        "anchorX": 0.36916707925493314,
         "anchorY": 0.9583333333333334
       },
       {
-        "path": "assets/sprites/maya-b/curated/airKick-frame-3.png",
-        "scale": 0.67454,
-        "anchorX": 0.5068356639070992,
+        "path": "assets/sprites/maya-b/curated/roster-v15-airKick-frame-3.png",
+        "scale": 0.752941,
+        "anchorX": 0.5395052644332788,
         "anchorY": 0.9583333333333334
       }
     ],
@@ -404,27 +404,27 @@
   "crouchPunch": {
     "frames": [
       {
-        "path": "assets/sprites/maya-b/curated/crouchPunch-frame-0.png",
-        "scale": 0.752941,
-        "anchorX": 0.5034204289638969,
+        "path": "assets/sprites/maya-b/curated/roster-v15-crouchPunch-frame-0.png",
+        "scale": 0.627451,
+        "anchorX": 0.5011110846765766,
         "anchorY": 0.9583333333333334
       },
       {
-        "path": "assets/sprites/maya-b/curated/crouchPunch-frame-1.png",
-        "scale": 0.751674,
-        "anchorX": 0.49009860869392513,
+        "path": "assets/sprites/maya-b/curated/roster-v15-crouchPunch-frame-1.png",
+        "scale": 0.627451,
+        "anchorX": 0.5020335115064635,
         "anchorY": 0.9583333333333334
       },
       {
-        "path": "assets/sprites/maya-b/curated/crouchPunch-frame-2.png",
-        "scale": 0.728857,
-        "anchorX": 0.4964571771263698,
+        "path": "assets/sprites/maya-b/curated/roster-v15-crouchPunch-frame-2.png",
+        "scale": 0.735632,
+        "anchorX": 0.44691826510143295,
         "anchorY": 0.9583333333333334
       },
       {
-        "path": "assets/sprites/maya-b/curated/crouchPunch-frame-3.png",
-        "scale": 0.752941,
-        "anchorX": 0.49913995698644426,
+        "path": "assets/sprites/maya-b/curated/roster-v15-crouchPunch-frame-3.png",
+        "scale": 0.627451,
+        "anchorX": 0.5007460089165087,
         "anchorY": 0.9583333333333334
       }
     ],
@@ -434,27 +434,27 @@
   "crouchKick": {
     "frames": [
       {
-        "path": "assets/sprites/maya-b/curated/crouchKick-frame-0.png",
-        "scale": 0.673684,
-        "anchorX": 0.5097920581647496,
+        "path": "assets/sprites/maya-b/curated/roster-v15-crouchKick-frame-0.png",
+        "scale": 0.609524,
+        "anchorX": 0.4190794897108403,
         "anchorY": 0.9583333333333334
       },
       {
-        "path": "assets/sprites/maya-b/curated/crouchKick-frame-1.png",
-        "scale": 0.766882,
-        "anchorX": 0.4630252715722401,
+        "path": "assets/sprites/maya-b/curated/roster-v15-crouchKick-frame-1.png",
+        "scale": 0.615385,
+        "anchorX": 0.4235044785206951,
         "anchorY": 0.9583333333333334
       },
       {
-        "path": "assets/sprites/maya-b/curated/crouchKick-frame-2.png",
-        "scale": 0.929948,
-        "anchorX": 0.29772148569023565,
+        "path": "assets/sprites/maya-b/curated/roster-v15-crouchKick-frame-2.png",
+        "scale": 0.914286,
+        "anchorX": 0.5010453108151927,
         "anchorY": 0.9583333333333334
       },
       {
-        "path": "assets/sprites/maya-b/curated/crouchKick-frame-3.png",
-        "scale": 0.673684,
-        "anchorX": 0.5137779138341556,
+        "path": "assets/sprites/maya-b/curated/roster-v15-crouchKick-frame-3.png",
+        "scale": 0.609524,
+        "anchorX": 0.4282895039068885,
         "anchorY": 0.9583333333333334
       }
     ],
@@ -464,27 +464,27 @@
   "uppercut": {
     "frames": [
       {
-        "path": "assets/sprites/maya-b/curated/uppercut-frame-0.png",
-        "scale": 0.914286,
-        "anchorX": 0.5253044544288769,
+        "path": "assets/sprites/maya-b/curated/roster-v15-uppercut-frame-0.png",
+        "scale": 0.761905,
+        "anchorX": 0.51161157443824,
         "anchorY": 0.9583333333333334
       },
       {
-        "path": "assets/sprites/maya-b/curated/uppercut-frame-1.png",
-        "scale": 0.941602,
-        "anchorX": 0.4995781619077752,
+        "path": "assets/sprites/maya-b/curated/roster-v15-uppercut-frame-1.png",
+        "scale": 0.853333,
+        "anchorX": 0.4981432053741402,
         "anchorY": 0.9583333333333334
       },
       {
-        "path": "assets/sprites/maya-b/curated/uppercut-frame-2.png",
-        "scale": 1.118353,
-        "anchorX": 0.5011287315091387,
+        "path": "assets/sprites/maya-b/curated/roster-v15-uppercut-frame-2.png",
+        "scale": 1.04918,
+        "anchorX": 0.49405156189947763,
         "anchorY": 0.9583333333333334
       },
       {
-        "path": "assets/sprites/maya-b/curated/uppercut-frame-3.png",
-        "scale": 0.933568,
-        "anchorX": 0.5263842423846229,
+        "path": "assets/sprites/maya-b/curated/roster-v15-uppercut-frame-3.png",
+        "scale": 0.853333,
+        "anchorX": 0.501951266996648,
         "anchorY": 0.9583333333333334
       }
     ],
@@ -494,27 +494,27 @@
   "sweep": {
     "frames": [
       {
-        "path": "assets/sprites/maya-b/curated/sweep-frame-0.png",
+        "path": "assets/sprites/maya-b/curated/roster-v15-sweep-frame-0.png",
+        "scale": 0.621359,
+        "anchorX": 0.5198326001094101,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/maya-b/curated/roster-v15-sweep-frame-1.png",
+        "scale": 0.646465,
+        "anchorX": 0.6903093019239455,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/maya-b/curated/roster-v15-sweep-frame-2.png",
+        "scale": 1.032258,
+        "anchorX": 0.6235337097799235,
+        "anchorY": 0.9583333333333334
+      },
+      {
+        "path": "assets/sprites/maya-b/curated/roster-v15-sweep-frame-3.png",
         "scale": 0.627451,
-        "anchorX": 0.4446154574392966,
-        "anchorY": 0.9583333333333334
-      },
-      {
-        "path": "assets/sprites/maya-b/curated/sweep-frame-1.png",
-        "scale": 0.664636,
-        "anchorX": 0.5990198399435532,
-        "anchorY": 0.9583333333333334
-      },
-      {
-        "path": "assets/sprites/maya-b/curated/sweep-frame-2.png",
-        "scale": 0.920396,
-        "anchorX": 0.5623249256827388,
-        "anchorY": 0.9583333333333334
-      },
-      {
-        "path": "assets/sprites/maya-b/curated/sweep-frame-3.png",
-        "scale": 0.627451,
-        "anchorX": 0.501625035668205,
+        "anchorX": 0.41046978385251326,
         "anchorY": 0.9583333333333334
       }
     ],
@@ -524,27 +524,27 @@
   "dash": {
     "frames": [
       {
-        "path": "assets/sprites/maya-b/curated/dash-frame-0.png",
-        "scale": 0.780488,
-        "anchorX": 0.44455837529311343,
+        "path": "assets/sprites/maya-b/curated/roster-v15-dash-frame-0.png",
+        "scale": 0.727273,
+        "anchorX": 0.4811272597041667,
         "anchorY": 0.9583333333333334
       },
       {
-        "path": "assets/sprites/maya-b/curated/dash-frame-1.png",
-        "scale": 0.789459,
-        "anchorX": 0.5534081451613104,
+        "path": "assets/sprites/maya-b/curated/roster-v15-dash-frame-1.png",
+        "scale": 0.761905,
+        "anchorX": 0.5022651638526486,
         "anchorY": 0.9583333333333334
       },
       {
-        "path": "assets/sprites/maya-b/curated/dash-frame-2.png",
-        "scale": 0.789459,
-        "anchorX": 0.5490801172909573,
+        "path": "assets/sprites/maya-b/curated/roster-v15-dash-frame-2.png",
+        "scale": 0.727273,
+        "anchorX": 0.48199648303045883,
         "anchorY": 0.9583333333333334
       },
       {
-        "path": "assets/sprites/maya-b/curated/dash-frame-3.png",
-        "scale": 0.780488,
-        "anchorX": 0.421659951195907,
+        "path": "assets/sprites/maya-b/curated/roster-v15-dash-frame-3.png",
+        "scale": 0.727273,
+        "anchorX": 0.48094621965866174,
         "anchorY": 0.9583333333333334
       }
     ],
@@ -554,39 +554,39 @@
   "backwalk": {
     "frames": [
       {
-        "path": "assets/sprites/maya-b/curated/backwalk-frame-0.png",
-        "scale": 1,
-        "anchorX": 0.5101565717011933,
+        "path": "assets/sprites/maya-b/curated/roster-v15-backwalk-frame-0.png",
+        "scale": 0.941176,
+        "anchorX": 0.5028231156347165,
         "anchorY": 0.9583333333333334
       },
       {
-        "path": "assets/sprites/maya-b/curated/backwalk-frame-1.png",
-        "scale": 1.00173,
-        "anchorX": 0.5136056771293841,
+        "path": "assets/sprites/maya-b/curated/roster-v15-backwalk-frame-1.png",
+        "scale": 0.941176,
+        "anchorX": 0.5049139128187892,
         "anchorY": 0.9583333333333334
       },
       {
-        "path": "assets/sprites/maya-b/curated/backwalk-frame-2.png",
-        "scale": 0.99308,
-        "anchorX": 0.5053378261409217,
+        "path": "assets/sprites/maya-b/curated/roster-v15-backwalk-frame-2.png",
+        "scale": 0.941176,
+        "anchorX": 0.502910902287592,
         "anchorY": 0.9583333333333334
       },
       {
-        "path": "assets/sprites/maya-b/curated/backwalk-frame-3.png",
-        "scale": 0.99827,
-        "anchorX": 0.47659776199503634,
+        "path": "assets/sprites/maya-b/curated/roster-v15-backwalk-frame-3.png",
+        "scale": 0.941176,
+        "anchorX": 0.4864581550596374,
         "anchorY": 0.9583333333333334
       },
       {
-        "path": "assets/sprites/maya-b/curated/backwalk-frame-4.png",
-        "scale": 0.99654,
-        "anchorX": 0.5002082275891941,
+        "path": "assets/sprites/maya-b/curated/roster-v15-backwalk-frame-4.png",
+        "scale": 0.941176,
+        "anchorX": 0.49870634369421946,
         "anchorY": 0.9583333333333334
       },
       {
-        "path": "assets/sprites/maya-b/curated/backwalk-frame-5.png",
-        "scale": 1,
-        "anchorX": 0.5111029304828388,
+        "path": "assets/sprites/maya-b/curated/roster-v15-backwalk-frame-5.png",
+        "scale": 0.941176,
+        "anchorX": 0.5051623658861005,
         "anchorY": 0.9583333333333334
       }
     ],
@@ -596,27 +596,27 @@
   "lowBlock": {
     "frames": [
       {
-        "path": "assets/sprites/maya-b/curated/lowBlock-frame-0.png",
-        "scale": 0.727273,
-        "anchorX": 0.5068170207102624,
+        "path": "assets/sprites/maya-b/curated/roster-v15-lowBlock-frame-0.png",
+        "scale": 0.633663,
+        "anchorX": 0.4890198057824387,
         "anchorY": 0.9583333333333334
       },
       {
-        "path": "assets/sprites/maya-b/curated/lowBlock-frame-1.png",
-        "scale": 0.719644,
-        "anchorX": 0.5149129428124194,
+        "path": "assets/sprites/maya-b/curated/roster-v15-lowBlock-frame-1.png",
+        "scale": 0.673684,
+        "anchorX": 0.4898366210411898,
         "anchorY": 0.9583333333333334
       },
       {
-        "path": "assets/sprites/maya-b/curated/lowBlock-frame-2.png",
-        "scale": 0.695486,
-        "anchorX": 0.5027460645261845,
+        "path": "assets/sprites/maya-b/curated/roster-v15-lowBlock-frame-2.png",
+        "scale": 0.621359,
+        "anchorX": 0.4922702315446165,
         "anchorY": 0.9583333333333334
       },
       {
-        "path": "assets/sprites/maya-b/curated/lowBlock-frame-3.png",
-        "scale": 0.696758,
-        "anchorX": 0.4954742677580691,
+        "path": "assets/sprites/maya-b/curated/roster-v15-lowBlock-frame-3.png",
+        "scale": 0.646465,
+        "anchorX": 0.49583354953812053,
         "anchorY": 0.9583333333333334
       }
     ],
@@ -626,27 +626,27 @@
   "turn": {
     "frames": [
       {
-        "path": "assets/sprites/maya-b/curated/turn-frame-0.png",
-        "scale": 0.969697,
-        "anchorX": 0.5168436048040385,
+        "path": "assets/sprites/maya-b/curated/roster-v15-turn-frame-0.png",
+        "scale": 1.0,
+        "anchorX": 0.5011548294058118,
         "anchorY": 0.9583333333333334
       },
       {
-        "path": "assets/sprites/maya-b/curated/turn-frame-1.png",
-        "scale": 0.968267,
-        "anchorX": 0.5168597193050336,
+        "path": "assets/sprites/maya-b/curated/roster-v15-turn-frame-1.png",
+        "scale": 1.0,
+        "anchorX": 0.5038853411680383,
         "anchorY": 0.9583333333333334
       },
       {
-        "path": "assets/sprites/maya-b/curated/turn-frame-2.png",
-        "scale": 0.968267,
-        "anchorX": 0.50528806690109,
+        "path": "assets/sprites/maya-b/curated/roster-v15-turn-frame-2.png",
+        "scale": 1.0,
+        "anchorX": 0.4905595965653042,
         "anchorY": 0.9583333333333334
       },
       {
-        "path": "assets/sprites/maya-b/curated/turn-frame-3.png",
-        "scale": 0.968267,
-        "anchorX": 0.48312248905096905,
+        "path": "assets/sprites/maya-b/curated/roster-v15-turn-frame-3.png",
+        "scale": 1.0,
+        "anchorX": 0.4963422519218959,
         "anchorY": 0.9583333333333334
       }
     ],
@@ -656,27 +656,27 @@
   "land": {
     "frames": [
       {
-        "path": "assets/sprites/maya-b/curated/land-frame-0.png",
-        "scale": 0.646465,
-        "anchorX": 0.47161444091240545,
+        "path": "assets/sprites/maya-b/curated/roster-v15-land-frame-0.png",
+        "scale": 0.587156,
+        "anchorX": 0.46821410539074243,
         "anchorY": 0.9583333333333334
       },
       {
-        "path": "assets/sprites/maya-b/curated/land-frame-1.png",
-        "scale": 0.758553,
-        "anchorX": 0.4732268753457756,
+        "path": "assets/sprites/maya-b/curated/roster-v15-land-frame-1.png",
+        "scale": 0.727273,
+        "anchorX": 0.49220267101531806,
         "anchorY": 0.9583333333333334
       },
       {
-        "path": "assets/sprites/maya-b/curated/land-frame-2.png",
-        "scale": 0.865428,
-        "anchorX": 0.5146060822815661,
+        "path": "assets/sprites/maya-b/curated/roster-v15-land-frame-2.png",
+        "scale": 0.941176,
+        "anchorX": 0.497857044220599,
         "anchorY": 0.9583333333333334
       },
       {
-        "path": "assets/sprites/maya-b/curated/land-frame-3.png",
-        "scale": 0.894102,
-        "anchorX": 0.5190933221009842,
+        "path": "assets/sprites/maya-b/curated/roster-v15-land-frame-3.png",
+        "scale": 1.0,
+        "anchorX": 0.5023075495684101,
         "anchorY": 0.9583333333333334
       }
     ],
@@ -686,27 +686,27 @@
   "jumpForward": {
     "frames": [
       {
-        "path": "assets/sprites/maya-b/curated/jumpForward-frame-0.png",
-        "scale": 0.790123,
-        "anchorX": 0.532224458577584,
+        "path": "assets/sprites/maya-b/curated/roster-v15-jumpForward-frame-0.png",
+        "scale": 0.695652,
+        "anchorX": 0.4935136555856485,
         "anchorY": 0.9583333333333334
       },
       {
-        "path": "assets/sprites/maya-b/curated/jumpForward-frame-1.png",
-        "scale": 0.932316,
-        "anchorX": 0.2596842190179168,
+        "path": "assets/sprites/maya-b/curated/roster-v15-jumpForward-frame-1.png",
+        "scale": 0.820513,
+        "anchorX": 0.3100762785457314,
         "anchorY": 0.9583333333333334
       },
       {
-        "path": "assets/sprites/maya-b/curated/jumpForward-frame-2.png",
-        "scale": 0.697771,
-        "anchorX": 0.4085673998615511,
+        "path": "assets/sprites/maya-b/curated/roster-v15-jumpForward-frame-2.png",
+        "scale": 0.695652,
+        "anchorX": 0.5029578321973579,
         "anchorY": 0.9583333333333334
       },
       {
-        "path": "assets/sprites/maya-b/curated/jumpForward-frame-3.png",
-        "scale": 0.946975,
-        "anchorX": 0.7094490261759385,
+        "path": "assets/sprites/maya-b/curated/roster-v15-jumpForward-frame-3.png",
+        "scale": 0.876712,
+        "anchorX": 0.6753645301551847,
         "anchorY": 0.9583333333333334
       }
     ],
@@ -716,27 +716,27 @@
   "super": {
     "frames": [
       {
-        "path": "assets/sprites/maya-b/curated/super-frame-0.png",
-        "scale": 0.780488,
-        "anchorX": 0.48312954579323564,
+        "path": "assets/sprites/maya-b/curated/roster-v15-super-frame-0.png",
+        "scale": 0.790123,
+        "anchorX": 0.5013320125896308,
         "anchorY": 0.9583333333333334
       },
       {
-        "path": "assets/sprites/maya-b/curated/super-frame-1.png",
-        "scale": 0.920016,
-        "anchorX": 0.5061981666504515,
+        "path": "assets/sprites/maya-b/curated/roster-v15-super-frame-1.png",
+        "scale": 0.955224,
+        "anchorX": 0.4919428092818192,
         "anchorY": 0.9583333333333334
       },
       {
-        "path": "assets/sprites/maya-b/curated/super-frame-2.png",
-        "scale": 0.962823,
-        "anchorX": 0.4838031414162957,
+        "path": "assets/sprites/maya-b/curated/roster-v15-super-frame-2.png",
+        "scale": 0.955224,
+        "anchorX": 0.4549583271359637,
         "anchorY": 0.9583333333333334
       },
       {
-        "path": "assets/sprites/maya-b/curated/super-frame-3.png",
-        "scale": 0.920016,
-        "anchorX": 0.5025480041594307,
+        "path": "assets/sprites/maya-b/curated/roster-v15-super-frame-3.png",
+        "scale": 0.984615,
+        "anchorX": 0.49971895376767966,
         "anchorY": 0.9583333333333334
       }
     ],

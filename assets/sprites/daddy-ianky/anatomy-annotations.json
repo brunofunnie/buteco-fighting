@@ -1,0 +1,659 @@
+{
+  "method": "manual-visual-crown-to-chin",
+  "units": "exported 384px frame pixels",
+  "referenceState": "idle",
+  "referenceFrame": 0,
+  "referenceHeadPx": 74,
+  "precision": "Approximate manual visual estimates, typically +/-5 px; up to +/-8 px for occluded or tilted heads.",
+  "notes": [
+    "Contact sheets and all-frame panels reviewed sequentially; no claim of animated GIF playback.",
+    "Crown is central scalp crown, excluding projecting curls; tilted/horizontal heads use anatomical head axis, not vertical bounding height.",
+    "Scales equal idle frame 0 head span divided by each frame head span; anchors/paths unchanged."
+  ],
+  "states": {
+    "idle": {
+      "headPx": [
+        74,
+        74,
+        74,
+        74
+      ],
+      "perFrame": [
+        {
+          "frame": 0,
+          "headPx": 74
+        },
+        {
+          "frame": 1,
+          "headPx": 74
+        },
+        {
+          "frame": 2,
+          "headPx": 74
+        },
+        {
+          "frame": 3,
+          "headPx": 74
+        }
+      ]
+    },
+    "punch": {
+      "headPx": [
+        74,
+        74,
+        73,
+        74
+      ],
+      "perFrame": [
+        {
+          "frame": 0,
+          "headPx": 74
+        },
+        {
+          "frame": 1,
+          "headPx": 74
+        },
+        {
+          "frame": 2,
+          "headPx": 73
+        },
+        {
+          "frame": 3,
+          "headPx": 74
+        }
+      ]
+    },
+    "kick": {
+      "headPx": [
+        74,
+        74,
+        74,
+        74
+      ],
+      "perFrame": [
+        {
+          "frame": 0,
+          "headPx": 74
+        },
+        {
+          "frame": 1,
+          "headPx": 74
+        },
+        {
+          "frame": 2,
+          "headPx": 74
+        },
+        {
+          "frame": 3,
+          "headPx": 74
+        }
+      ]
+    },
+    "hurt": {
+      "headPx": [
+        80,
+        80,
+        78,
+        74
+      ],
+      "perFrame": [
+        {
+          "frame": 0,
+          "headPx": 80
+        },
+        {
+          "frame": 1,
+          "headPx": 80
+        },
+        {
+          "frame": 2,
+          "headPx": 78
+        },
+        {
+          "frame": 3,
+          "headPx": 74
+        }
+      ]
+    },
+    "jump": {
+      "headPx": [
+        97,
+        84,
+        84,
+        84
+      ],
+      "perFrame": [
+        {
+          "frame": 0,
+          "headPx": 97
+        },
+        {
+          "frame": 1,
+          "headPx": 84
+        },
+        {
+          "frame": 2,
+          "headPx": 84
+        },
+        {
+          "frame": 3,
+          "headPx": 84
+        }
+      ]
+    },
+    "special": {
+      "headPx": [
+        74,
+        79,
+        70,
+        74
+      ],
+      "perFrame": [
+        {
+          "frame": 0,
+          "headPx": 74
+        },
+        {
+          "frame": 1,
+          "headPx": 79
+        },
+        {
+          "frame": 2,
+          "headPx": 70
+        },
+        {
+          "frame": 3,
+          "headPx": 74
+        }
+      ]
+    },
+    "walk": {
+      "headPx": [
+        74,
+        74,
+        74,
+        74,
+        74,
+        74
+      ],
+      "perFrame": [
+        {
+          "frame": 0,
+          "headPx": 74
+        },
+        {
+          "frame": 1,
+          "headPx": 74
+        },
+        {
+          "frame": 2,
+          "headPx": 74
+        },
+        {
+          "frame": 3,
+          "headPx": 74
+        },
+        {
+          "frame": 4,
+          "headPx": 74
+        },
+        {
+          "frame": 5,
+          "headPx": 74
+        }
+      ]
+    },
+    "block": {
+      "headPx": [
+        74,
+        74,
+        74,
+        74
+      ],
+      "perFrame": [
+        {
+          "frame": 0,
+          "headPx": 74
+        },
+        {
+          "frame": 1,
+          "headPx": 74
+        },
+        {
+          "frame": 2,
+          "headPx": 74
+        },
+        {
+          "frame": 3,
+          "headPx": 74
+        }
+      ]
+    },
+    "crouch": {
+      "headPx": [
+        80,
+        90,
+        108,
+        100
+      ],
+      "perFrame": [
+        {
+          "frame": 0,
+          "headPx": 80
+        },
+        {
+          "frame": 1,
+          "headPx": 90
+        },
+        {
+          "frame": 2,
+          "headPx": 108
+        },
+        {
+          "frame": 3,
+          "headPx": 100
+        }
+      ]
+    },
+    "ko": {
+      "headPx": [
+        84,
+        84,
+        70,
+        49
+      ],
+      "perFrame": [
+        {
+          "frame": 0,
+          "headPx": 84
+        },
+        {
+          "frame": 1,
+          "headPx": 84
+        },
+        {
+          "frame": 2,
+          "headPx": 70
+        },
+        {
+          "frame": 3,
+          "headPx": 49
+        }
+      ]
+    },
+    "celebrate": {
+      "headPx": [
+        74,
+        67,
+        65,
+        65
+      ],
+      "perFrame": [
+        {
+          "frame": 0,
+          "headPx": 74
+        },
+        {
+          "frame": 1,
+          "headPx": 67
+        },
+        {
+          "frame": 2,
+          "headPx": 65
+        },
+        {
+          "frame": 3,
+          "headPx": 65
+        }
+      ]
+    },
+    "airPunch": {
+      "headPx": [
+        84,
+        84,
+        84,
+        84
+      ],
+      "perFrame": [
+        {
+          "frame": 0,
+          "headPx": 84
+        },
+        {
+          "frame": 1,
+          "headPx": 84
+        },
+        {
+          "frame": 2,
+          "headPx": 84
+        },
+        {
+          "frame": 3,
+          "headPx": 84
+        }
+      ]
+    },
+    "airKick": {
+      "headPx": [
+        84,
+        79,
+        74,
+        84
+      ],
+      "perFrame": [
+        {
+          "frame": 0,
+          "headPx": 84
+        },
+        {
+          "frame": 1,
+          "headPx": 79
+        },
+        {
+          "frame": 2,
+          "headPx": 74
+        },
+        {
+          "frame": 3,
+          "headPx": 84
+        }
+      ]
+    },
+    "crouchPunch": {
+      "headPx": [
+        106,
+        106,
+        84,
+        106
+      ],
+      "perFrame": [
+        {
+          "frame": 0,
+          "headPx": 106
+        },
+        {
+          "frame": 1,
+          "headPx": 106
+        },
+        {
+          "frame": 2,
+          "headPx": 84
+        },
+        {
+          "frame": 3,
+          "headPx": 106
+        }
+      ]
+    },
+    "crouchKick": {
+      "headPx": [
+        114,
+        108,
+        91,
+        114
+      ],
+      "perFrame": [
+        {
+          "frame": 0,
+          "headPx": 114
+        },
+        {
+          "frame": 1,
+          "headPx": 108
+        },
+        {
+          "frame": 2,
+          "headPx": 91
+        },
+        {
+          "frame": 3,
+          "headPx": 114
+        }
+      ]
+    },
+    "uppercut": {
+      "headPx": [
+        89,
+        74,
+        65,
+        74
+      ],
+      "perFrame": [
+        {
+          "frame": 0,
+          "headPx": 89
+        },
+        {
+          "frame": 1,
+          "headPx": 74
+        },
+        {
+          "frame": 2,
+          "headPx": 65
+        },
+        {
+          "frame": 3,
+          "headPx": 74
+        }
+      ]
+    },
+    "sweep": {
+      "headPx": [
+        104,
+        91,
+        62,
+        104
+      ],
+      "perFrame": [
+        {
+          "frame": 0,
+          "headPx": 104
+        },
+        {
+          "frame": 1,
+          "headPx": 91
+        },
+        {
+          "frame": 2,
+          "headPx": 62
+        },
+        {
+          "frame": 3,
+          "headPx": 104
+        }
+      ]
+    },
+    "dash": {
+      "headPx": [
+        97,
+        92,
+        97,
+        97
+      ],
+      "perFrame": [
+        {
+          "frame": 0,
+          "headPx": 97
+        },
+        {
+          "frame": 1,
+          "headPx": 92
+        },
+        {
+          "frame": 2,
+          "headPx": 97
+        },
+        {
+          "frame": 3,
+          "headPx": 97
+        }
+      ]
+    },
+    "backwalk": {
+      "headPx": [
+        74,
+        74,
+        74,
+        74,
+        74,
+        74
+      ],
+      "perFrame": [
+        {
+          "frame": 0,
+          "headPx": 74
+        },
+        {
+          "frame": 1,
+          "headPx": 74
+        },
+        {
+          "frame": 2,
+          "headPx": 74
+        },
+        {
+          "frame": 3,
+          "headPx": 74
+        },
+        {
+          "frame": 4,
+          "headPx": 74
+        },
+        {
+          "frame": 5,
+          "headPx": 74
+        }
+      ]
+    },
+    "lowBlock": {
+      "headPx": [
+        108,
+        102,
+        108,
+        108
+      ],
+      "perFrame": [
+        {
+          "frame": 0,
+          "headPx": 108
+        },
+        {
+          "frame": 1,
+          "headPx": 102
+        },
+        {
+          "frame": 2,
+          "headPx": 108
+        },
+        {
+          "frame": 3,
+          "headPx": 108
+        }
+      ]
+    },
+    "turn": {
+      "headPx": [
+        74,
+        74,
+        74,
+        74
+      ],
+      "perFrame": [
+        {
+          "frame": 0,
+          "headPx": 74
+        },
+        {
+          "frame": 1,
+          "headPx": 74
+        },
+        {
+          "frame": 2,
+          "headPx": 74
+        },
+        {
+          "frame": 3,
+          "headPx": 74
+        }
+      ]
+    },
+    "land": {
+      "headPx": [
+        114,
+        84,
+        74,
+        74
+      ],
+      "perFrame": [
+        {
+          "frame": 0,
+          "headPx": 114
+        },
+        {
+          "frame": 1,
+          "headPx": 84
+        },
+        {
+          "frame": 2,
+          "headPx": 74
+        },
+        {
+          "frame": 3,
+          "headPx": 74
+        }
+      ]
+    },
+    "jumpForward": {
+      "headPx": [
+        96,
+        89,
+        102,
+        85
+      ],
+      "perFrame": [
+        {
+          "frame": 0,
+          "headPx": 96
+        },
+        {
+          "frame": 1,
+          "headPx": 89
+        },
+        {
+          "frame": 2,
+          "headPx": 102
+        },
+        {
+          "frame": 3,
+          "headPx": 85
+        }
+      ]
+    },
+    "super": {
+      "headPx": [
+        87,
+        74,
+        74,
+        74
+      ],
+      "perFrame": [
+        {
+          "frame": 0,
+          "headPx": 87
+        },
+        {
+          "frame": 1,
+          "headPx": 74
+        },
+        {
+          "frame": 2,
+          "headPx": 74
+        },
+        {
+          "frame": 3,
+          "headPx": 74
+        }
+      ]
+    }
+  }
+}

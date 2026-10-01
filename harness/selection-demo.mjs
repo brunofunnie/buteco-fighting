@@ -13,7 +13,7 @@ try {
   await page.waitForFunction(()=>!document.querySelector('#titleStart').disabled);
   const cast=await page.locator('[data-title-player]').evaluateAll(items=>items.map(e=>e.dataset.titlePlayer));
   check('title contains every fighter exactly once',cast.length===fighterIds.length&&new Set(cast).size===fighterIds.length&&fighterIds.every(id=>cast.includes(id)));
-  check('title splits roster equally',await page.locator('.title-team.left canvas').count()===14&&await page.locator('.title-team.right canvas').count()===14);
+  check('title splits roster equally',Math.abs(await page.locator('.title-team.left canvas').count()-await page.locator('.title-team.right canvas').count())<=1);
   await page.locator('#titleStart').click();await page.locator('#modeNext').click();
   await page.waitForFunction(()=>document.querySelector('#playerPowerDemo').dataset.demoReady==='true'&&document.querySelector('#opponentPowerDemo').dataset.demoReady==='true',null,{timeout:5000});
   check('both original fighters have live demos',true);

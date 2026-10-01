@@ -1,0 +1,21 @@
+{
+  "id": "prefeito",
+  "name": "Prefeito",
+  "source": "assets/sprites/prefeito/base-source.png",
+  "identity": "Smiling tan man, black wavy hair and short beard, black suit, white shirt, blue tie, belt keys and black dress shoes.",
+  "color": "#8caee7",
+  "speed": 300,
+  "tempo": 0.98,
+  "visualHeight": 320,
+  "damage": {
+    "punch": 8,
+    "kick": 13
+  },
+  "tagline": "COMANDO DA CIDADE",
+  "power": {
+    "kind": "cubes",
+    "label": "Bloco da cidade",
+    "superLabel": "Plano diretor",
+    "description": "Cubos de força atravessam o impacto; o super amplia o bloco digital."
+  }
+}

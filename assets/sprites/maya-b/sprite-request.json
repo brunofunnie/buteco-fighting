@@ -25,49 +25,40 @@
       255
     ],
     "selection": "auto",
-    "score": 283.37,
-    "min_subject_distance": 256.14,
+    "score": 228.98,
+    "min_subject_distance": 224.95,
     "background": {
-      "mode": "flat",
-      "hex": "#000000",
-      "rgb": [
-        0,
-        0,
-        0
-      ],
-      "opaque_border_fraction": 1,
-      "border_coverage": 1,
-      "enclosed_background_pixels": 6,
-      "enclosed_material_pixels": 192,
-      "subject_pixels": 5472
+      "mode": "transparent",
+      "opaque_border_fraction": 0.0,
+      "subject_pixels": 17333
     },
     "candidates": [
       {
         "name": "magenta",
         "hex": "#FF00FF",
-        "score": 218.16,
-        "min_subject_distance": 203.01,
+        "score": 197.68,
+        "min_subject_distance": 183.81,
         "clears_erase_radius": true
       },
       {
         "name": "green",
         "hex": "#00FF00",
-        "score": 228.47,
-        "min_subject_distance": 212.32,
+        "score": 221.84,
+        "min_subject_distance": 214.63,
         "clears_erase_radius": true
       },
       {
         "name": "cyan",
         "hex": "#00FFFF",
-        "score": 283.37,
-        "min_subject_distance": 256.14,
+        "score": 228.98,
+        "min_subject_distance": 224.95,
         "clears_erase_radius": true
       },
       {
         "name": "blue",
         "hex": "#004DFF",
-        "score": 233.08,
-        "min_subject_distance": 209.81,
+        "score": 225.27,
+        "min_subject_distance": 194.88,
         "clears_erase_radius": true
       }
     ],
@@ -108,13 +99,13 @@
       "frames": 4,
       "fps": 10,
       "loop": false,
-      "action": "Guard, oneopenhandtoucheswristwatch, stepforwardwithonepalmextendedRIGHTlikehologramblink, recoveryguard. No detached energy effects: engine renders holographicblinkillusion. Fullbodyseparatedposes facingRIGHTconstantphysicalsizes."
+      "action": "FOUR distinct full-body poses facing RIGHT: fighting guard; draw rear fist back charging; forceful open-palm strike fully extended RIGHT; recover guard. Same body scale in all frames. Engine supplies energy effect, draw only body."
     },
     "walk": {
       "frames": 6,
       "fps": 12,
       "loop": true,
-      "action": "EXACTLY SIX separate full-body poses of a smooth GROUNDED fighting shuffle moving RIGHT, facing RIGHT in all frames. 1 broad guard, both soles planted; 2 front heel lifts slightly, rear foot planted; 3 front foot advances and lands heel on same baseline, rear support still planted; 4 front sole flat planted, rear foot starts sliding ahead with toes grazing floor; 5 rear foot finishes short slide and plants, fists stay guard; 6 return matching initial broad guard with BOTH feet planted. Never cross legs. Never both feet airborne. Constant head height, tiny natural knee rhythm, original adult body proportions. Six motion phases, no repeated static pose series."
+      "action": "EXACTLY SIX separate full-body poses of a smooth GROUNDED fighting shuffle moving RIGHT, facing RIGHT in all frames. 1 broad guard, both soles planted; 2 front heel lifts slightly, rear foot planted; 3 front foot advances and lands heel on same baseline, rear support still planted; 4 front sole flat planted, rear foot starts sliding ahead with toes grazing floor; 5 rear foot finishes short slide and plants, fists stay guard; 6 return matching initial broad guard with BOTH feet planted. Never cross legs. Never both feet airborne. Constant head height, tiny natural knee rhythm, original adult body proportions. Six motion phases, no repeated static pose series. Keep a wide boxers stance in all six frames: rear foot strictly stays LEFT of the front foot, with clearly separated left and right shoe silhouettes; neither thigh or calf may cross the other. Only a short slide, never a normal walking stride. Both knees bent, torso upright, one sole visibly planted at all times. Preserve real movement and six chronological distinct phases."
     },
     "block": {
       "frames": 4,
@@ -150,7 +141,7 @@
       "frames": 4,
       "fps": 12,
       "loop": false,
-      "action": "AIRBORNE jumping side kick. Four distinct frames: airborne tucked-knee chamber; leg starts opening; leading leg fully extended RIGHT chest-height with rear leg tucked; airborne retraction. NO feet touching ground in any frame. Maintain full head and torso dimensions. Critical consistency: copy EXACT identity, costume, adult limb lengths and HEAD SIZE from reference. Camera distance and character scale unchanged across all four poses; only articulation changes. Full body visible, four separated characters, same facing RIGHT."
+      "action": "AIRBORNE jumping side kick. Four distinct frames: airborne tucked-knee chamber; leg starts opening; leading leg fully extended RIGHT chest-height with rear leg tucked; airborne retraction. NO feet touching ground in any frame. Maintain full head and torso dimensions. Critical consistency: copy EXACT identity, costume, adult limb lengths and HEAD SIZE from reference. Camera distance and character scale unchanged across all four poses; only articulation changes. Full body visible, four separated characters, same facing RIGHT. Four entirely separate figures with wide solid chroma gaps. "
     },
     "crouchPunch": {
       "frames": 4,
@@ -186,7 +177,7 @@
       "frames": 6,
       "fps": 12,
       "loop": true,
-      "action": "EXACTLY SIX separate full-body poses of smooth defensive backward combat shuffle moving LEFT, face/chest oriented RIGHT throughout. 1 broad combat guard, both soles planted; 2 rear heel lifts while front foot remains planted; 3 rear foot reaches LEFT and lands heel, front supporting sole flat; 4 rear foot planted while front foot starts sliding backward close to floor; 5 front foot finishes short floor-level slide, both grounded; 6 broad grounded guard matching initial frame. Keep hands protecting face, same head height, adult proportions and physical scale. No crossed legs or both feet airborne. Six distinct foot phases."
+      "action": "EXACTLY SIX separate full-body poses of smooth defensive backward combat shuffle moving LEFT, face/chest oriented RIGHT throughout. 1 broad combat guard, both soles planted; 2 rear heel lifts while front foot remains planted; 3 rear foot reaches LEFT and lands heel, front supporting sole flat; 4 rear foot planted while front foot starts sliding backward close to floor; 5 front foot finishes short floor-level slide, both grounded; 6 broad grounded guard matching initial frame. Keep hands protecting face, same head height, adult proportions and physical scale. No crossed legs or both feet airborne. Six distinct foot phases. Keep a wide boxers stance in all six frames: rear foot strictly stays LEFT of the front foot, with clearly separated left and right shoe silhouettes; neither thigh or calf may cross the other. Only a short slide, never a normal walking stride. Both knees bent, torso upright, one sole visibly planted at all times. Preserve real movement and six chronological distinct phases."
     },
     "lowBlock": {
       "frames": 4,
@@ -216,10 +207,10 @@
       "frames": 4,
       "fps": 12,
       "loop": false,
-      "action": "Crouchwinduparmscrossed, riseBOTHhandsbesidehead, longlungeRIGHTpalmsfannedcastingillusion, recoverguard. Noactualduplicatebodyorpixeledafterimagesbaked. FOURdistinctchronologicalposes, intentionallydifferentfromnormal specialattack. Engineadds holographicblinkillusion visualeffect, so drawONLYcharacterbody noeffects/extraobjects. FacingRIGHT."
+      "action": "FOUR distinct full-body poses facing RIGHT: deep planted guard charging with both hands; rise rotating shoulders; thrust both arms RIGHT for a powerful discharge; recover balanced guard. Clearly different from the special move. Engine supplies energy effect, draw only body."
     }
   },
-  "style": "Copy accepted full-body reference EXACTLY: same pixel density, original outlines, same facial features, head size, torso bulk and limb lengths, same costume colors/accessories. WomanwarmEastAsianface longwavybrownhair, BLACK floralLACE long-sleeveblouse, REDsparkleshorts, smallBLACKcrossbodybagwithdigitalfacecharm, blacksmartwatch, silvernecklacesrings, chunkyBLACKlaceupboots. Barelegs. Preservelacepattern/bag/redshorts exact. DO NOT restyle into a different person or slimmer body. Preserve physical adult proportions in ALLframes. Only jointsarticulate. Noaddedweapons/noextraaccessories. No giant visualeffects or detached particles, no ghostduplicates. Pixel-artgamefighter originalreferencefidelity.",
+  "style": "Copy the supplied full-body reference exactly: face, costume, accessories, adult head size and limb proportions. Woman with long voluminous curly auburn hair, dark sunglasses, white fitted short-sleeve blouse, brown wide-leg trousers, gold jewelry, white sneakers. Fixed orthographic camera and identical body scale in every pose. Only joints articulate; crouching folds the body without shrinking it. Entire head and shoe soles visible. No extra limbs, shadows, text or engine energy effects. Face RIGHT except the deliberate turn animation.",
   "layout": "taxonomy/v1",
   "fit": {
     "pixel_unfake": false,
@@ -229,7 +220,7 @@
     "ground_frames": true
   },
   "chroma": {
-    "mode": "ycbcr",
+    "mode": "rgb",
     "unmix_reach": 4,
     "spill_max_fraction": 0.005
   }

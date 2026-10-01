@@ -1,0 +1,850 @@
+{
+  "idle": [
+    {
+      "path": "assets/sprites/felurian/curated/idle-frame-0.png",
+      "sourceHeight": 699,
+      "outputHeight": 352,
+      "anchorX": 0.5102748313378201,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0
+    },
+    {
+      "path": "assets/sprites/felurian/curated/idle-frame-1.png",
+      "sourceHeight": 703,
+      "outputHeight": 352,
+      "anchorX": 0.509747673130846,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0
+    },
+    {
+      "path": "assets/sprites/felurian/curated/idle-frame-2.png",
+      "sourceHeight": 694,
+      "outputHeight": 351,
+      "anchorX": 0.5107198580176271,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0
+    },
+    {
+      "path": "assets/sprites/felurian/curated/idle-frame-3.png",
+      "sourceHeight": 700,
+      "outputHeight": 352,
+      "anchorX": 0.51020072127194,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0
+    }
+  ],
+  "punch": [
+    {
+      "path": "assets/sprites/felurian/curated/punch-frame-0.png",
+      "sourceHeight": 698,
+      "outputHeight": 352,
+      "anchorX": 0.5148154060040917,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0
+    },
+    {
+      "path": "assets/sprites/felurian/curated/punch-frame-1.png",
+      "sourceHeight": 687,
+      "outputHeight": 352,
+      "anchorX": 0.5046170811343326,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0
+    },
+    {
+      "path": "assets/sprites/felurian/curated/punch-frame-2.png",
+      "sourceHeight": 687,
+      "outputHeight": 352,
+      "anchorX": 0.42712960355108603,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0
+    },
+    {
+      "path": "assets/sprites/felurian/curated/punch-frame-3.png",
+      "sourceHeight": 699,
+      "outputHeight": 352,
+      "anchorX": 0.5150263929343449,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0
+    }
+  ],
+  "kick": [
+    {
+      "path": "assets/sprites/felurian/curated/kick-frame-0.png",
+      "sourceHeight": 639,
+      "outputHeight": 352,
+      "anchorX": 0.5129551658193255,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0
+    },
+    {
+      "path": "assets/sprites/felurian/curated/kick-frame-1.png",
+      "sourceHeight": 638,
+      "outputHeight": 352,
+      "anchorX": 0.4299734414407388,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0
+    },
+    {
+      "path": "assets/sprites/felurian/curated/kick-frame-2.png",
+      "sourceHeight": 631,
+      "outputHeight": 342,
+      "anchorX": 0.3016591473658762,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.030303
+    },
+    {
+      "path": "assets/sprites/felurian/curated/kick-frame-3.png",
+      "sourceHeight": 639,
+      "outputHeight": 352,
+      "anchorX": 0.4703238685518129,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0
+    }
+  ],
+  "hurt": [
+    {
+      "path": "assets/sprites/felurian/curated/hurt-frame-0.png",
+      "sourceHeight": 651,
+      "outputHeight": 352,
+      "anchorX": 0.5165424510361103,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.944444
+    },
+    {
+      "path": "assets/sprites/felurian/curated/hurt-frame-1.png",
+      "sourceHeight": 633,
+      "outputHeight": 351,
+      "anchorX": 0.525816174787924,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.931507
+    },
+    {
+      "path": "assets/sprites/felurian/curated/hurt-frame-2.png",
+      "sourceHeight": 624,
+      "outputHeight": 352,
+      "anchorX": 0.5026093507950443,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.944444
+    },
+    {
+      "path": "assets/sprites/felurian/curated/hurt-frame-3.png",
+      "sourceHeight": 664,
+      "outputHeight": 352,
+      "anchorX": 0.5099931876251199,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0
+    }
+  ],
+  "jump": [
+    {
+      "path": "assets/sprites/felurian/curated/jump-frame-0.png",
+      "sourceHeight": 468,
+      "outputHeight": 352,
+      "anchorX": 0.4819572054327465,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.755556
+    },
+    {
+      "path": "assets/sprites/felurian/curated/jump-frame-1.png",
+      "sourceHeight": 608,
+      "outputHeight": 352,
+      "anchorX": 0.47671992351312603,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.894737
+    },
+    {
+      "path": "assets/sprites/felurian/curated/jump-frame-2.png",
+      "sourceHeight": 521,
+      "outputHeight": 351,
+      "anchorX": 0.4575768465605994,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.85
+    },
+    {
+      "path": "assets/sprites/felurian/curated/jump-frame-3.png",
+      "sourceHeight": 549,
+      "outputHeight": 352,
+      "anchorX": 0.5329430752025228,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.755556
+    }
+  ],
+  "special": [
+    {
+      "path": "assets/sprites/felurian/curated/special-frame-0.png",
+      "sourceHeight": 639,
+      "outputHeight": 352,
+      "anchorX": 0.5119588941151931,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0
+    },
+    {
+      "path": "assets/sprites/felurian/curated/special-frame-1.png",
+      "sourceHeight": 629,
+      "outputHeight": 352,
+      "anchorX": 0.5125561071065582,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0
+    },
+    {
+      "path": "assets/sprites/felurian/curated/special-frame-2.png",
+      "sourceHeight": 623,
+      "outputHeight": 352,
+      "anchorX": 0.46814767645999295,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0
+    },
+    {
+      "path": "assets/sprites/felurian/curated/special-frame-3.png",
+      "sourceHeight": 640,
+      "outputHeight": 352,
+      "anchorX": 0.5077027098362102,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0
+    }
+  ],
+  "walk": [
+    {
+      "path": "assets/sprites/felurian/curated/walk-frame-0.png",
+      "sourceHeight": 590,
+      "outputHeight": 352,
+      "anchorX": 0.5023339569215075,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0
+    },
+    {
+      "path": "assets/sprites/felurian/curated/walk-frame-1.png",
+      "sourceHeight": 590,
+      "outputHeight": 352,
+      "anchorX": 0.4896107475124027,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0
+    },
+    {
+      "path": "assets/sprites/felurian/curated/walk-frame-2.png",
+      "sourceHeight": 590,
+      "outputHeight": 352,
+      "anchorX": 0.499462517470457,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0
+    },
+    {
+      "path": "assets/sprites/felurian/curated/walk-frame-3.png",
+      "sourceHeight": 590,
+      "outputHeight": 352,
+      "anchorX": 0.4991368180199813,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0
+    },
+    {
+      "path": "assets/sprites/felurian/curated/walk-frame-4.png",
+      "sourceHeight": 593,
+      "outputHeight": 351,
+      "anchorX": 0.415874847434869,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0
+    },
+    {
+      "path": "assets/sprites/felurian/curated/walk-frame-5.png",
+      "sourceHeight": 590,
+      "outputHeight": 352,
+      "anchorX": 0.502658543223078,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0
+    }
+  ],
+  "block": [
+    {
+      "path": "assets/sprites/felurian/curated/block-frame-0.png",
+      "sourceHeight": 697,
+      "outputHeight": 352,
+      "anchorX": 0.51536782086551,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0
+    },
+    {
+      "path": "assets/sprites/felurian/curated/block-frame-1.png",
+      "sourceHeight": 696,
+      "outputHeight": 352,
+      "anchorX": 0.516723441919849,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0
+    },
+    {
+      "path": "assets/sprites/felurian/curated/block-frame-2.png",
+      "sourceHeight": 653,
+      "outputHeight": 352,
+      "anchorX": 0.5209709911883399,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0
+    },
+    {
+      "path": "assets/sprites/felurian/curated/block-frame-3.png",
+      "sourceHeight": 649,
+      "outputHeight": 352,
+      "anchorX": 0.5223854414730011,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0
+    }
+  ],
+  "crouch": [
+    {
+      "path": "assets/sprites/felurian/curated/crouch-frame-0.png",
+      "sourceHeight": 661,
+      "outputHeight": 351,
+      "anchorX": 0.4840650878344183,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.894737
+    },
+    {
+      "path": "assets/sprites/felurian/curated/crouch-frame-1.png",
+      "sourceHeight": 578,
+      "outputHeight": 352,
+      "anchorX": 0.49416118487341326,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.809524
+    },
+    {
+      "path": "assets/sprites/felurian/curated/crouch-frame-2.png",
+      "sourceHeight": 492,
+      "outputHeight": 352,
+      "anchorX": 0.4800810078736862,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.723404
+    },
+    {
+      "path": "assets/sprites/felurian/curated/crouch-frame-3.png",
+      "sourceHeight": 492,
+      "outputHeight": 352,
+      "anchorX": 0.4787887250252299,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.723404
+    }
+  ],
+  "ko": [
+    {
+      "path": "assets/sprites/felurian/curated/ko-frame-0.png",
+      "sourceHeight": 546,
+      "outputHeight": 352,
+      "anchorX": 0.515955087884443,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.944444
+    },
+    {
+      "path": "assets/sprites/felurian/curated/ko-frame-1.png",
+      "sourceHeight": 455,
+      "outputHeight": 352,
+      "anchorX": 0.6993856968448385,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.829268
+    },
+    {
+      "path": "assets/sprites/felurian/curated/ko-frame-2.png",
+      "sourceHeight": 263,
+      "outputHeight": 178,
+      "anchorX": 0.515573385635144,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.192982
+    },
+    {
+      "path": "assets/sprites/felurian/curated/ko-frame-3.png",
+      "sourceHeight": 148,
+      "outputHeight": 95,
+      "anchorX": 0.4939964844457607,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.619048
+    }
+  ],
+  "celebrate": [
+    {
+      "path": "assets/sprites/felurian/curated/celebrate-frame-0.png",
+      "sourceHeight": 659,
+      "outputHeight": 352,
+      "anchorX": 0.5118107122882578,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0
+    },
+    {
+      "path": "assets/sprites/felurian/curated/celebrate-frame-1.png",
+      "sourceHeight": 685,
+      "outputHeight": 352,
+      "anchorX": 0.5000472589921242,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.046154
+    },
+    {
+      "path": "assets/sprites/felurian/curated/celebrate-frame-2.png",
+      "sourceHeight": 694,
+      "outputHeight": 351,
+      "anchorX": 0.507309973698972,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.046154
+    },
+    {
+      "path": "assets/sprites/felurian/curated/celebrate-frame-3.png",
+      "sourceHeight": 692,
+      "outputHeight": 352,
+      "anchorX": 0.5083274411372493,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.046154
+    }
+  ],
+  "airPunch": [
+    {
+      "path": "assets/sprites/felurian/curated/airPunch-frame-0.png",
+      "sourceHeight": 599,
+      "outputHeight": 352,
+      "anchorX": 0.430160641247567,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.829268
+    },
+    {
+      "path": "assets/sprites/felurian/curated/airPunch-frame-1.png",
+      "sourceHeight": 622,
+      "outputHeight": 351,
+      "anchorX": 0.20921241231032953,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.829268
+    },
+    {
+      "path": "assets/sprites/felurian/curated/airPunch-frame-2.png",
+      "sourceHeight": 580,
+      "outputHeight": 305,
+      "anchorX": 0.20113406280615728,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.079365
+    },
+    {
+      "path": "assets/sprites/felurian/curated/airPunch-frame-3.png",
+      "sourceHeight": 608,
+      "outputHeight": 352,
+      "anchorX": 0.44931729807467313,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.829268
+    }
+  ],
+  "airKick": [
+    {
+      "path": "assets/sprites/felurian/curated/airKick-frame-0.png",
+      "sourceHeight": 511,
+      "outputHeight": 352,
+      "anchorX": 0.46346214600506525,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.85
+    },
+    {
+      "path": "assets/sprites/felurian/curated/airKick-frame-1.png",
+      "sourceHeight": 547,
+      "outputHeight": 352,
+      "anchorX": 0.3298270561261735,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.85
+    },
+    {
+      "path": "assets/sprites/felurian/curated/airKick-frame-2.png",
+      "sourceHeight": 527,
+      "outputHeight": 278,
+      "anchorX": 0.3365345337276038,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.096774
+    },
+    {
+      "path": "assets/sprites/felurian/curated/airKick-frame-3.png",
+      "sourceHeight": 609,
+      "outputHeight": 352,
+      "anchorX": 0.46248541026835605,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.85
+    }
+  ],
+  "crouchPunch": [
+    {
+      "path": "assets/sprites/felurian/curated/crouchPunch-frame-0.png",
+      "sourceHeight": 559,
+      "outputHeight": 351,
+      "anchorX": 0.4931898353827597,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.73913
+    },
+    {
+      "path": "assets/sprites/felurian/curated/crouchPunch-frame-1.png",
+      "sourceHeight": 559,
+      "outputHeight": 352,
+      "anchorX": 0.49420085059292745,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.73913
+    },
+    {
+      "path": "assets/sprites/felurian/curated/crouchPunch-frame-2.png",
+      "sourceHeight": 538,
+      "outputHeight": 315,
+      "anchorX": 0.41123199076103,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.839506
+    },
+    {
+      "path": "assets/sprites/felurian/curated/crouchPunch-frame-3.png",
+      "sourceHeight": 557,
+      "outputHeight": 351,
+      "anchorX": 0.49204322838431436,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.73913
+    }
+  ],
+  "crouchKick": [
+    {
+      "path": "assets/sprites/felurian/curated/crouchKick-frame-0.png",
+      "sourceHeight": 481,
+      "outputHeight": 352,
+      "anchorX": 0.46287645106332836,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.693878
+    },
+    {
+      "path": "assets/sprites/felurian/curated/crouchKick-frame-1.png",
+      "sourceHeight": 552,
+      "outputHeight": 352,
+      "anchorX": 0.41944467700579785,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.708333
+    },
+    {
+      "path": "assets/sprites/felurian/curated/crouchKick-frame-2.png",
+      "sourceHeight": 482,
+      "outputHeight": 249,
+      "anchorX": 0.3414131407834915,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.030303
+    },
+    {
+      "path": "assets/sprites/felurian/curated/crouchKick-frame-3.png",
+      "sourceHeight": 492,
+      "outputHeight": 352,
+      "anchorX": 0.4340362506010475,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.693878
+    }
+  ],
+  "uppercut": [
+    {
+      "path": "assets/sprites/felurian/curated/uppercut-frame-0.png",
+      "sourceHeight": 533,
+      "outputHeight": 352,
+      "anchorX": 0.5085457749890586,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.871795
+    },
+    {
+      "path": "assets/sprites/felurian/curated/uppercut-frame-1.png",
+      "sourceHeight": 574,
+      "outputHeight": 352,
+      "anchorX": 0.48423865003260363,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0
+    },
+    {
+      "path": "assets/sprites/felurian/curated/uppercut-frame-2.png",
+      "sourceHeight": 694,
+      "outputHeight": 352,
+      "anchorX": 0.50537714911989,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.172414
+    },
+    {
+      "path": "assets/sprites/felurian/curated/uppercut-frame-3.png",
+      "sourceHeight": 580,
+      "outputHeight": 352,
+      "anchorX": 0.5073690700644493,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0
+    }
+  ],
+  "sweep": [
+    {
+      "path": "assets/sprites/felurian/curated/sweep-frame-0.png",
+      "sourceHeight": 470,
+      "outputHeight": 352,
+      "anchorX": 0.4900463805101578,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.708333
+    },
+    {
+      "path": "assets/sprites/felurian/curated/sweep-frame-1.png",
+      "sourceHeight": 463,
+      "outputHeight": 279,
+      "anchorX": 0.6898587961907295,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.860759
+    },
+    {
+      "path": "assets/sprites/felurian/curated/sweep-frame-2.png",
+      "sourceHeight": 406,
+      "outputHeight": 211,
+      "anchorX": 0.3916598651834607,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.096774
+    },
+    {
+      "path": "assets/sprites/felurian/curated/sweep-frame-3.png",
+      "sourceHeight": 477,
+      "outputHeight": 351,
+      "anchorX": 0.46971126695349213,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.708333
+    }
+  ],
+  "dash": [
+    {
+      "path": "assets/sprites/felurian/curated/dash-frame-0.png",
+      "sourceHeight": 539,
+      "outputHeight": 352,
+      "anchorX": 0.4478457334617092,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.809524
+    },
+    {
+      "path": "assets/sprites/felurian/curated/dash-frame-1.png",
+      "sourceHeight": 574,
+      "outputHeight": 351,
+      "anchorX": 0.5826170273552023,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.839506
+    },
+    {
+      "path": "assets/sprites/felurian/curated/dash-frame-2.png",
+      "sourceHeight": 534,
+      "outputHeight": 351,
+      "anchorX": 0.49205910854801593,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.809524
+    },
+    {
+      "path": "assets/sprites/felurian/curated/dash-frame-3.png",
+      "sourceHeight": 540,
+      "outputHeight": 352,
+      "anchorX": 0.45634684114793717,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.809524
+    }
+  ],
+  "backwalk": [
+    {
+      "path": "assets/sprites/felurian/curated/backwalk-frame-0.png",
+      "sourceHeight": 513,
+      "outputHeight": 352,
+      "anchorX": 0.5003583784901903,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0
+    },
+    {
+      "path": "assets/sprites/felurian/curated/backwalk-frame-1.png",
+      "sourceHeight": 513,
+      "outputHeight": 352,
+      "anchorX": 0.4993948305132902,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0
+    },
+    {
+      "path": "assets/sprites/felurian/curated/backwalk-frame-2.png",
+      "sourceHeight": 513,
+      "outputHeight": 352,
+      "anchorX": 0.49864746123341747,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0
+    },
+    {
+      "path": "assets/sprites/felurian/curated/backwalk-frame-3.png",
+      "sourceHeight": 513,
+      "outputHeight": 352,
+      "anchorX": 0.47688436391110706,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0
+    },
+    {
+      "path": "assets/sprites/felurian/curated/backwalk-frame-4.png",
+      "sourceHeight": 514,
+      "outputHeight": 352,
+      "anchorX": 0.4677031865550367,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0
+    },
+    {
+      "path": "assets/sprites/felurian/curated/backwalk-frame-5.png",
+      "sourceHeight": 514,
+      "outputHeight": 351,
+      "anchorX": 0.5044036470967898,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0
+    }
+  ],
+  "lowBlock": [
+    {
+      "path": "assets/sprites/felurian/curated/lowBlock-frame-0.png",
+      "sourceHeight": 527,
+      "outputHeight": 352,
+      "anchorX": 0.48532017301137964,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.723404
+    },
+    {
+      "path": "assets/sprites/felurian/curated/lowBlock-frame-1.png",
+      "sourceHeight": 527,
+      "outputHeight": 352,
+      "anchorX": 0.49142795753632246,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.723404
+    },
+    {
+      "path": "assets/sprites/felurian/curated/lowBlock-frame-2.png",
+      "sourceHeight": 504,
+      "outputHeight": 352,
+      "anchorX": 0.46336999482624047,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.723404
+    },
+    {
+      "path": "assets/sprites/felurian/curated/lowBlock-frame-3.png",
+      "sourceHeight": 506,
+      "outputHeight": 352,
+      "anchorX": 0.4643090380015292,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.723404
+    }
+  ],
+  "turn": [
+    {
+      "path": "assets/sprites/felurian/curated/turn-frame-0.png",
+      "sourceHeight": 686,
+      "outputHeight": 352,
+      "anchorX": 0.5048602176380697,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0
+    },
+    {
+      "path": "assets/sprites/felurian/curated/turn-frame-1.png",
+      "sourceHeight": 687,
+      "outputHeight": 352,
+      "anchorX": 0.5071553476522808,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0
+    },
+    {
+      "path": "assets/sprites/felurian/curated/turn-frame-2.png",
+      "sourceHeight": 687,
+      "outputHeight": 352,
+      "anchorX": 0.49986846745369223,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0
+    },
+    {
+      "path": "assets/sprites/felurian/curated/turn-frame-3.png",
+      "sourceHeight": 685,
+      "outputHeight": 352,
+      "anchorX": 0.4915550138558557,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0
+    }
+  ],
+  "land": [
+    {
+      "path": "assets/sprites/felurian/curated/land-frame-0.png",
+      "sourceHeight": 476,
+      "outputHeight": 352,
+      "anchorX": 0.5012354366094917,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.693878
+    },
+    {
+      "path": "assets/sprites/felurian/curated/land-frame-1.png",
+      "sourceHeight": 561,
+      "outputHeight": 352,
+      "anchorX": 0.5092695972343145,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.894737
+    },
+    {
+      "path": "assets/sprites/felurian/curated/land-frame-2.png",
+      "sourceHeight": 635,
+      "outputHeight": 352,
+      "anchorX": 0.5115742128121648,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0
+    },
+    {
+      "path": "assets/sprites/felurian/curated/land-frame-3.png",
+      "sourceHeight": 672,
+      "outputHeight": 352,
+      "anchorX": 0.5081031346154466,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0
+    }
+  ],
+  "jumpForward": [
+    {
+      "path": "assets/sprites/felurian/curated/jumpForward-frame-0.png",
+      "sourceHeight": 496,
+      "outputHeight": 342,
+      "anchorX": 0.43839010225178643,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.85
+    },
+    {
+      "path": "assets/sprites/felurian/curated/jumpForward-frame-1.png",
+      "sourceHeight": 636,
+      "outputHeight": 352,
+      "anchorX": 0.23686266673503328,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.85
+    },
+    {
+      "path": "assets/sprites/felurian/curated/jumpForward-frame-2.png",
+      "sourceHeight": 470,
+      "outputHeight": 352,
+      "anchorX": 0.4341185062743813,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.73913
+    },
+    {
+      "path": "assets/sprites/felurian/curated/jumpForward-frame-3.png",
+      "sourceHeight": 600,
+      "outputHeight": 352,
+      "anchorX": 0.7160829097958411,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.85
+    }
+  ],
+  "super": [
+    {
+      "path": "assets/sprites/felurian/curated/super-frame-0.png",
+      "sourceHeight": 550,
+      "outputHeight": 352,
+      "anchorX": 0.5063594567155877,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.894737
+    },
+    {
+      "path": "assets/sprites/felurian/curated/super-frame-1.png",
+      "sourceHeight": 621,
+      "outputHeight": 352,
+      "anchorX": 0.5087871150419704,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0
+    },
+    {
+      "path": "assets/sprites/felurian/curated/super-frame-2.png",
+      "sourceHeight": 598,
+      "outputHeight": 352,
+      "anchorX": 0.504859916756579,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0
+    },
+    {
+      "path": "assets/sprites/felurian/curated/super-frame-3.png",
+      "sourceHeight": 614,
+      "outputHeight": 352,
+      "anchorX": 0.5066256520966237,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0
+    }
+  ]
+}
