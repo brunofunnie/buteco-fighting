@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import {writeFile} from 'node:fs/promises';
-import {FightGame} from '../game.js';
+import {FightGame} from '../src/game.js';
 globalThis.window={addEventListener(){},removeEventListener(){}};globalThis.requestAnimationFrame=()=>0;globalThis.cancelAnimationFrame=()=>{};
 const checks=[];const check=(name,pass)=>{checks.push({name,pass:!!pass});assert.ok(pass,name);};
 for(const id of ['maya','joke-l','alex-sebas','mr-funnie','pedro-pi']){

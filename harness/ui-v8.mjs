@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import {writeFile} from 'node:fs/promises';
 import {chromium} from 'playwright';
-import {fighterIds} from '../roster.js';
+import {fighterIds} from '../src/roster.js';
 const browser=await chromium.launch({headless:true,args:['--no-sandbox']});
 const page=await browser.newPage({viewport:{width:1280,height:720}});
 const report={checks:[],errors:[]};
@@ -29,21 +29,21 @@ try{
  check('Enter starts title',await page.evaluate(()=>window.__ui.screen==='mode'));
  for(const [name,width,height] of [['desktop',1440,900],['desktop-small',1280,720],['landscape',844,390],['portrait',390,844]]){
   await page.setViewportSize({width,height});await page.waitForTimeout(260);
-  const clipped=await page.evaluate(()=>[...document.querySelectorAll('.mode-option,#modeNext,#difficulty')].filter(e=>{const r=e.getBoundingClientRect();return r.left<0||r.right>innerWidth+1||r.top<0||r.bottom>innerHeight+1}).map(e=>e.dataset.mode||e.id));
+  const clipped=await page.evaluate(()=>[...document.querySelectorAll('.mode-option,#modeScreen .menu-footer button')].filter(e=>{const r=e.getBoundingClientRect();return r.left<0||r.right>innerWidth+1||r.top<0||r.bottom>innerHeight+1}).map(e=>e.dataset.mode||e.id));
   check(`enlarged mode selection fits ${name}`,clipped.length===0);await page.screenshot({path:`artifacts/modes-${name}-v13.png`});
   check(`mode selection expands across ${name}`,await page.locator('.mode-list').evaluate(e=>e.getBoundingClientRect().width>innerWidth*.9));
   check(`mode actions share its layout in ${name}`,await page.evaluate(()=>{
     const bar=document.querySelector('#modeScreen>.menu-footer');
-    if(!bar||!bar.contains(document.querySelector('#modeNext')))return false;
+    if(!bar||!bar.contains(document.querySelector('#backButton'))||!bar.contains(document.querySelector('#controlsButton'))||document.querySelector('#modeNext'))return false;
     const rects=[...bar.querySelectorAll('button')].map(e=>e.getBoundingClientRect());
     return rects.every(r=>r.top>=0&&r.bottom<=innerHeight&&r.left>=0&&r.right<=innerWidth)&&rects.every((a,i)=>rects.slice(i+1).every(b=>a.right<=b.left+1||b.right<=a.left+1||a.bottom<=b.top+1||b.bottom<=a.top+1));
   }));
  }
  await page.setViewportSize({width:1280,height:720});
 
- await page.locator('#difficulty').focus();await page.keyboard.press('w');
- check('W changes focused CPU difficulty',await page.locator('#difficulty').inputValue()==='easy');
- await page.keyboard.press('s');await page.locator('[data-mode="arcade"]').focus();
+ await page.locator('#controlsButton').click();await page.locator('#difficulty').focus();await page.keyboard.press('ArrowLeft');
+ check('Left changes focused CPU difficulty',await page.locator('#difficulty').inputValue()==='easy');
+ await page.keyboard.press('ArrowRight');await page.locator('#closeControls').click();await page.locator('[data-mode="arcade"]').focus();
  await page.keyboard.press('s');check('S selects versus',await page.locator('[data-mode="versus"]').evaluate(e=>e.classList.contains('active')));
  await page.keyboard.press('w');await page.keyboard.press('ArrowDown');await page.keyboard.press('j');
  check('J confirms mode',await page.evaluate(()=>window.__ui.screen==='fighter'));

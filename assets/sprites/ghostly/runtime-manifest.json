@@ -303,7 +303,7 @@
       },
       {
         "path": "assets/sprites/ghostly/curated/ko-frame-3.png",
-        "scale": 1.609756,
+        "scale": 1.0,
         "anchorX": 0.47284070318065563,
         "anchorY": 0.9583333333333334
       }

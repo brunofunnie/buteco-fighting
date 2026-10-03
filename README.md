@@ -23,9 +23,10 @@ Buteco Fighting brings an arcade cabinet to the browser: a full cast of original
 
 | Mode | Your night at the Buteco |
 | --- | --- |
-| **Arcade** | Take on the CPU through a three-fight campaign. Choose your difficulty and win the best of three rounds. |
+| **Arcade** | Defeat five rivals in randomly chosen arenas, then face Devon in his lair. |
+| **Modo Livre** | Choose a CPU rival and arena for a standalone match. |
 | **Versus** | Two players share a keyboard. Pick both fighters and settle the score locally. |
-| **Training** | Practice movement, combos and powers with replenishing energy. |
+| **Training** | Practice movement, combos and powers; enable CPU fighting and choose its difficulty from the pause menu. |
 
 **The fight:** directional jumps, air and crouching attacks, uppercuts, sweeps, dashes, blocking, hitstop and knockdowns. Each fighter has a special and a super, with powers ranging from sonic waves and returning tools to digital cubes, holograms and lunar mist.
 
@@ -54,22 +55,27 @@ PORT=3188 npm start
 
 ## Docker deployment
 
-The supplied Compose stack serves the game on **container port 80** and joins the external `bender-network` used by the Cloudflare tunnel. Both the Compose project and container are named `buteco-fighting`.
+Build and publish locally to Docker Hub; Bender only pulls the finished image. The build selects playable assets and encodes game images as lossless WebP, checking visible decoded pixels before replacing them. Dimensions, colors and alpha stay intact. Social sharing covers keep their PNG format. The server maps the existing asset URLs to the optimized files, serves precompressed Brotli/gzip code and uses ETags for conditional browser caching. Startup defers combat animations, arena art, crowds and unselected portraits until the relevant screen. Original project files remain untouched; reference images, generation history and build tools stay outside the runtime image.
 
 ```sh
-docker compose up -d --build
-docker compose ps
+# Local validation on localhost:3188 with its own data volume
+docker compose -f compose.local.yaml up -d --build
+
+# Publish an immutable release and update latest (requires docker login)
+npm run image:publish -- brunofunnie/buteco-fighting 20261001-2
 ```
 
-The tunnel origin is `http://buteco-fighting:80`. No host port is published; the tunnel reaches the container through the shared Docker network. The image bundles production dependencies and playable assets, runs as the Node user and includes an HTTP health check.
+In Dockhand, use a regular Compose stack named **buteco-fighting** in environment **Bender**, with the contents of **compose.yaml**. Set `BUTECO_TAG=20261001-2` in its environment and deploy with image pulling enabled and building disabled. Future updates only require publishing a new release locally, changing this tag and deploying. Roll back by choosing the previous tag. No Git checkout or npm install is needed on Bender.
 
-### Git deployment in Dockhand
+The stack joins the existing external `bender-network`, publishes no host port and keeps the tunnel origin `http://buteco-fighting:80`. It uses the existing external volume `buteco-fighting_online-data` for SQLite identities and rankings. Do not remove this volume when updating. `BUTECO_IMAGE` and `BUTECO_DATA_VOLUME` can override the registry repository and data volume for another installation.
 
-On Bender, use a **Git stack** named **buteco-fighting** in environment **Bender**, tracking `main` from `git@github.com:brunofunnie/buteco-fighting.git`, with compose path **compose.git.yaml**. Keep **Build images on deploy** disabled: this stack runs the checked-out code in the standard `node:24-alpine` image without building a custom image.
+Measure startup transfer and check deferred assets, compressed code and conditional caching against a running deployment:
 
-Dockhand copies the repository into its managed stack directory before deployment. The container mounts that directory read-only from the existing `dockhand_data` volume, copies the small application files into a writable runtime volume, links the playable assets from the checkout, installs locked production dependencies, and starts the HTTP server as the Node user. The tunnel origin remains `http://buteco-fighting:80`; no host port is published. Updates require pushing to `main` and clicking **Deploy** on this Git stack in Dockhand.
+```sh
+GAME_URL=http://localhost:3188 node harness/startup-performance.mjs
+```
 
-The compose file defaults to the volume `dockhand_data` and subdirectory `stacks/Bender/buteco-fighting`. For a different Dockhand installation, set `DOCKHAND_DATA_VOLUME` and `DOCKHAND_STACK_SUBPATH` in the Git stack's environment overrides. The subdirectory must match Dockhand's managed stack directory. Docker must support volume subpaths (Engine 26 or newer). The original `compose.yaml` and Dockerfile remain available for standalone image-based deployments.
+The image runs as the Node user, serves HTTP on port 80 and includes a health check. `compose.git.yaml` is retained only as the former deployment configuration; the live stack now uses the published image.
 
 ## Controls
 
@@ -193,13 +199,13 @@ Panoramic stages span 1,920 world pixels, with a scrolling camera, parallax and 
 **Phaser 3.90 + Canvas 2D + JavaScript ES modules.** Phaser owns the scene clock and visible canvas; a separate combat simulation runs in fixed steps of 1/120 second. Rendering follows the browser's frame rate.
 
 ```text
-app.js               Menu flow, selection, loading and match lifecycle
-game.js              Combat simulation, powers and Canvas rendering
-phaser-game.js       Phaser scene and simulation integration
-power-preview.js     Silent special/super demonstrations in selection
-roster.js            Fighter identities, stats and power definitions
-stages.js            Arena rendering and environmental animation
-audio.js / music.js  Sound effects, music and playback controls
+src/app.js           Menu flow, selection, loading and match lifecycle
+src/game.js          Combat simulation, powers and Canvas rendering
+src/phaser-game.js   Phaser scene and simulation integration
+src/power-preview.js Silent special/super demonstrations in selection
+src/roster.js        Fighter identities, stats and power definitions
+src/stages.js        Arena rendering and environmental animation
+src/audio.js / src/music.js  Sound effects, music and playback controls
 assets/              Published sprites, source images, stages and audio
 harness/             Combat, asset and browser verification
 ```
@@ -275,3 +281,27 @@ The source fingerprint test rejects stale sprites, manifest/catalog calibration,
 Validation: `npm run test:collision`, `npm run test:collision:browser`,
 `npm run test:combat`, `npm run test:roster:combat`, `npm run test:online`,
 `npm run test:online:browser` and `npm test`. Browser tests accept `GAME_URL`.
+
+## Project organization
+
+- `src/`: game, menus, input, audio and shared online modules.
+- `styles/`: CSS for the game and menus.
+- `assets/`: published sprites, interface artwork, arena art and audio. Current Brazilian arenas are in `assets/stages/brazil/`.
+- `assets/references/`: production references and pending character artwork; not loaded by gameplay.
+- `tools/`: standalone development tools.
+- `harness/`: checks, browser tests and production scripts.
+- `docs/`: documentation, design notes and historic plans.
+- `artifacts/`: regenerated screenshots and reports; ignored by Git.
+- `data/`: persistent online data; never cleaned automatically.
+
+`npm run check` verifies all runtime modules, relative imports, HTML resources and CSS asset paths. Production histories under `assets/sprites/*/generation/` remain available to regenerate sprites and are excluded from Docker images.
+
+### Limites de criação de salas online
+
+O servidor valida a identidade antes de criar a sala e limita tentativas por uma janela móvel de 60 segundos: 3 por identidade e 10 por IP. Cada identidade pode manter uma sala criada aberta; uma rede pode manter quatro. O servidor aceita até 50 salas simultâneas, incluindo reservas HTTP que ainda não conectaram por WebSocket, e até 120 tentativas de criação por minuto no total. Fechar uma sala libera a capacidade, mas não apaga o histórico de tentativas. Entrar em salas e jogar não consomem esse orçamento de criação.
+
+Erros informam o motivo em português. Respostas 429 e de capacidade global incluem `Retry-After`. Reservas de admissão não utilizadas expiram em 30 segundos; reservas de assento continuam com a expiração do Colyseus. Os contadores ficam na memória do processo e reiniciam com o servidor.
+
+Atrás do Cloudflared, configure `BUTECO_TRUSTED_PROXY_IPS` no ambiente do Compose com os IPs exatos dos proxies conectados ao container (separados por vírgula). Somente esses pares podem fornecer `CF-Connecting-IP`; outros cabeçalhos de encaminhamento não alteram os limites. Sem essa configuração, o IP de conexão é usado. Atualize a lista se o endereço do proxy mudar.
+
+Validação: `npm run test:online:limits` cobre concorrência, identidade inválida, capacidade por rede e global, expiração e tentativas de contornar a admissão.

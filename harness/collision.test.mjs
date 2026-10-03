@@ -1,13 +1,13 @@
 import assert from 'node:assert/strict';
 import {readFileSync,existsSync} from 'node:fs';
 import {createHash} from 'node:crypto';
-import {COLLISION_DATA,COLLISION_SOURCE_HASH} from '../collision-data.js';
-import {collisionFrame,worldBoxes,overlap,projectileConnects} from '../collision.js';
-import {FightGame} from '../game.js';
-import {FIGHTERS} from '../roster.js';
+import {COLLISION_DATA,COLLISION_SOURCE_HASH} from '../src/collision-data.js';
+import {collisionFrame,worldBoxes,overlap,projectileConnects} from '../src/collision.js';
+import {FightGame} from '../src/game.js';
+import {FIGHTERS} from '../src/roster.js';
 const manifest=JSON.parse(readFileSync(new URL('../assets/manifest.json',import.meta.url)));
 const hash=createHash('sha256');
-for(const file of ['assets/manifest.json','roster.js','harness/build-collision.py'])hash.update(readFileSync(new URL('../'+file,import.meta.url)));
+for(const file of ['assets/manifest.json','src/roster.js','harness/build-collision.py'])hash.update(readFileSync(new URL('../'+file,import.meta.url)));
 const overrides=new URL('../assets/collision-overrides.json',import.meta.url);
 if(existsSync(overrides))hash.update(readFileSync(overrides));
 for(const states of Object.values(manifest))for(const spec of Object.values(states))for(const entry of spec.frames)hash.update(readFileSync(new URL('../'+entry.path,import.meta.url)));

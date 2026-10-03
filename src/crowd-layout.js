@@ -1,0 +1,29 @@
+// Feet are pinned to each panorama's rear plane; fighters remain at y=590.
+export const crowdLayouts = [
+  [
+    {id:'goth_woman',fallback:'woman_clap',x:510,y:521,height:159},
+    {id:'goth_man',fallback:'man_drink',x:1320,y:521,height:165,smoke:true},
+    {id:'pedestrian',fallback:'man_toast',x:180,y:535,height:148,motion:'walk'},
+    {id:'seated_adult',fallback:'man_drink',x:1635,y:523,height:101},
+  ],
+  [
+    {id:'woman_shout',x:300,y:535,height:155},
+    {id:'man_cheer',x:470,y:535,height:155,mirrored:true},
+    {id:'woman_toast',x:1110,y:535,height:155},
+    {id:'man_drink',x:1550,y:535,height:155,mirrored:true},
+  ],
+  [
+    {id:'man_toast',x:425,y:535,height:175},
+    {id:'woman_clap',x:805,y:535,height:175},
+    {id:'woman_shout',x:1000,y:535,height:175},
+    {id:'man_drink',x:1090,y:535,height:175},
+    {id:'woman_toast',x:1430,y:535,height:175},
+    {id:'man_cheer',x:1530,y:535,height:175},
+  ],
+  [
+    {id:'man_drink',x:360,y:545,height:230},
+    {id:'woman_toast',x:475,y:545,height:230,mirrored:true},
+    {id:'man_toast',x:1420,y:545,height:230},
+    {id:'woman_clap',x:1545,y:545,height:230,mirrored:true},
+  ],
+];

@@ -11,3 +11,12 @@ assets/sprites/_generation
 **/*.log
 .env
 .env.*
+build/node_modules
+dist
+data
+assets/references
+assets/sprites/*/migration-originals
+**/*.raw.png
+assets/audio/stages/*/elevenlabs-original.mp3
+assets/audio/devon/elevenlabs-original.mp3
+assets/audio/v9/masters

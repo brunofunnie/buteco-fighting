@@ -1,0 +1,165 @@
+import {Room,ServerError} from '@colyseus/core';
+import {randomUUID} from 'node:crypto';
+import {FightGame} from './game.js';
+import {FIGHTERS} from './roster.js';
+import {ACTION_LABELS} from './controls.js';
+const allowed=new Set(Object.keys(ACTION_LABELS));
+const validFighter=id=>typeof id==='string'&&Object.hasOwn(FIGHTERS,id);
+const neutral=()=>({held:new Set(),pressed:new Set()});
+export function createFightRoom(rankings,admission) {
+  return class OnlineFightRoom extends Room {
+    maxClients=12;
+    maxMessagesPerSecond=180;
+    onCreate(options) {
+      const player=rankings.identify(options?.token);
+      if(!player)throw new ServerError(401,'Identidade inválida. Reabra o menu online.');
+      try{admission.consume(options._roomAdmission,player.id,this.roomId);}catch(error){throw new ServerError(error.code,error.message);}
+      this.onMessage('*',()=>{});
+      this.members=new Map();this.spectators=new Map();this.banned=new Set();this.phase='waiting';this.stage=0;this.inputs=[neutral(),neutral()];this.damaged=[false,false];
+      this.onMessage('sync',client=>{
+        this.publishLobby();
+        if(this.spectators.has(client.sessionId)&&['loading','fighting'].includes(this.phase)){
+          client.send('prepare',{matchId:this.matchId,players:this.players(),stage:this.stage});
+          if(this.phase==='fighting')this.sendSnapshot();
+        }
+      });
+      this.onMessage('configure',(client,data)=>{
+        const member=this.members.get(client.sessionId);if(!member)return;
+        if(this.phase==='fighters'&&validFighter(data?.fighter)) {member.fighter=data.fighter;member.ready=false;this.publishLobby();}
+        if(this.phase==='stage'&&client.sessionId===this.host&&Number.isInteger(data?.stage)&&data.stage>=0&&data.stage<4){this.stage=data.stage;this.publishLobby();}
+      });
+      this.onMessage('ready',client=>{
+        const member=this.members.get(client.sessionId);if(!member||this.phase!=='fighters')return;
+        member.ready=true;
+        if([...this.members.values()].every(p=>p.ready))this.phase='stage';
+        this.publishLobby();
+      });
+      this.onMessage('cancelSelection',client=>{if(this.members.has(client.sessionId)&&['fighters','stage','loading'].includes(this.phase))this.resetLobby();});
+      this.onMessage('previous',client=>{if(client.sessionId===this.host&&this.phase==='stage'){this.phase='fighters';for(const p of this.members.values())p.ready=false;this.publishLobby();}});
+      this.onMessage('pong',(client,data)=>{
+        const member=this.members.get(client.sessionId)||this.spectators.get(client.sessionId),probe=member?.probe;
+        if(!probe||data?.nonce!==probe.nonce)return;
+        const rtt=Date.now()-probe.sent;delete member.probe;
+        if(rtt<0||rtt>10000)return;
+        member.ping=Math.round(member.ping===null?rtt:member.ping*.7+rtt*.3);
+        this.broadcast('latency',[...this.members.values(),...this.spectators.values()].map(p=>({sessionId:p.sessionId,ping:p.ping})));
+      });
+      this.clock.setInterval(()=>this.probePlayers(),2000);
+      this.onMessage('kick',client=>{
+        if(client.sessionId!==this.host||this.phase!=='waiting')return;
+        const guest=this.clients.find(c=>this.members.has(c.sessionId)&&c.sessionId!==this.host);if(!guest)return;
+        this.banned.add(this.members.get(guest.sessionId).id);guest.send('notice','Você foi expulso desta sala.');guest.leave(4001);
+      });
+      this.onMessage('start',client=>{
+        if(client.sessionId!==this.host||this.members.size!==2)return;
+        if(this.phase==='waiting'){
+          this.matchId=randomUUID();this.phase='fighters';
+          for(const member of this.members.values())member.ready=false;
+          this.publishLobby();
+        }else if(this.phase==='stage')this.startMatch();
+      });
+      this.onMessage('loaded',(client,data)=>{const p=this.members.get(client.sessionId);if(this.phase==='loading'&&p&&data?.matchId===this.matchId){p.loaded=true;if([...this.members.values()].every(m=>m.loaded))this.beginSimulation();}});
+      this.onMessage('input',(client,data)=>{
+        if(this.phase!=='fighting'||!Array.isArray(data)||data.length>9||!data.every(a=>allowed.has(a)))return;
+        const member=this.members.get(client.sessionId);if(!member)return;
+        const input=this.inputs[member.slot],next=new Set(data);
+        for(const action of next)if(!input.held.has(action))input.pressed.add(action);
+        input.held=next;input.at=Date.now();
+      });
+      this.onMessage('return',()=>{if(this.phase==='finished')this.resetLobby();});
+      this.clock.setInterval(()=>{
+        if(this.phase==='waiting'&&Date.now()-this.lastActivity>15*60*1000)this.disconnect();
+        if(this.phase==='loading'&&Date.now()-this.loadingAt>30000){this.broadcast('notice','O carregamento demorou demais. Tente iniciar novamente.');this.resetLobby();}
+      },5000);
+      this.lastActivity=Date.now();
+    }
+    onAuth(client,options) {
+      const player=rankings.identify(options?.token);
+      if(!player)throw new ServerError(401,'Identidade inválida. Reabra o menu online.');
+      if(this.banned.has(player.id))throw new ServerError(403,'Você foi expulso desta sala.');
+      if([...this.members.values()].some(m=>m.id===player.id))throw new ServerError(409,'Esta identidade já está na sala.');
+      if([...this.spectators.values()].some(m=>m.id===player.id))throw new ServerError(409,'Esta identidade já está na sala.');
+      if(options?.spectator===true){if(this.spectators.size>=10)throw new ServerError(409,'A sala já tem 10 espectadores.');}
+      else if(this.phase!=='waiting'||this.members.size>=2)throw new ServerError(409,'Os lugares de lutador estão ocupados ou a partida já começou.');
+      return player;
+    }
+    onJoin(client,options,auth) {
+      if(options.spectator===true){
+        this.spectators.set(client.sessionId,{...auth,sessionId:client.sessionId,slot:null,ping:null});
+        client.send('seat',{slot:null});this.publishLobby();this.probePlayers();return;
+      }
+      const slot=this.members.size?1:0;if(!slot)this.host=client.sessionId;
+      this.members.set(client.sessionId,{...auth,sessionId:client.sessionId,slot,fighter:validFighter(options.fighter)?options.fighter:slot?'bruno':'maya',ready:false,ping:null});
+      client.send('seat',{slot});this.publishLobby();this.probePlayers();
+    }
+    probePlayers() {
+      for(const client of this.clients){const member=this.members.get(client.sessionId)||this.spectators.get(client.sessionId);if(!member)continue;
+        const now=Date.now();if(member.probe&&now-member.probe.sent<5000)continue;
+        member.probe={nonce:randomUUID(),sent:now};client.send('probe',{nonce:member.probe.nonce});
+      }
+    }
+    players(){return [...this.members.values()].sort((a,b)=>a.slot-b.slot).map(({probe,...player})=>player);}
+    publishLobby() {
+      this.lastActivity=Date.now();
+      const players=this.players();
+      const lobby={matchId:this.matchId,id:this.roomId,host:this.host,phase:this.phase,stage:this.stage,players,spectators:[...this.spectators.values()].map(({probe,...p})=>p)};
+      this.setMetadata({name:players[0]?.name||'Sala',stage:this.stage,phase:this.phase,players:players.length,spectators:this.spectators.size});
+      this.broadcast('lobby',lobby);
+    }
+    startMatch() {
+      this.phase='loading';this.loadingAt=Date.now();
+      this.damaged=[false,false];this.inputs=[neutral(),neutral()];
+      for(const p of this.members.values())p.loaded=false;
+      this.publishLobby();this.broadcast('prepare',{matchId:this.matchId,players:[...this.members.values()].sort((a,b)=>a.slot-b.slot).map(({probe,...player})=>player),stage:this.stage});
+    }
+    beginSimulation() {
+      this.phase='fighting';
+      const players=[...this.members.values()].sort((a,b)=>a.slot-b.slot);
+      this.simulation=new FightGame({getContext:()=>({})},{},{interactive:false,headless:true,muted:true,onEnd:()=>this.complete(this.simulation.wins[0]>=2?0:1)});
+      this.simulation.start({player:players[0].fighter,opponent:players[1].fighter,mode:'versus',stage:this.stage});
+      let ticks=0, accumulator=0;
+      this.setSimulationInterval(delta=>{
+        if(this.phase!=='fighting')return;
+        accumulator=Math.min(accumulator+delta/1000,.1);
+        const g=this.simulation;
+        while(accumulator>=1/120 && this.phase==='fighting'){
+        accumulator-=1/120;
+        for(let i=0;i<2;i++)if(Date.now()-(this.inputs[i].at||0)>350)this.inputs[i]=neutral();
+        g.padFrames=this.inputs;g.update(1/120);for(const input of this.inputs)input.pressed.clear();
+        g.fighters.forEach((f,i)=>{if(f.health<100)this.damaged[i]=true;});
+        if(++ticks%4===0)this.sendSnapshot();
+        }
+      },1000/60);
+      this.publishLobby();this.sendSnapshot();
+    }
+    sendSnapshot() {
+      const g=this.simulation;if(!g)return;
+      const snapshot=Object.fromEntries(['fighters','wins','round','timer','phase','phaseTime','elapsed','cameraX','hitstop','shake','roundWinner','powerEffects','particles','stage'].map(k=>[k,g[k]]));
+      snapshot.projectiles=g.projectiles.map(p=>({...p,owner:g.fighters.indexOf(p.owner),hitTargets:[]}));
+      this.broadcast('frame',snapshot);
+    }
+    complete(slot,reason='ko') {
+      if(this.phase!=='fighting')return;
+      this.phase='finished';this.simulation.running=false;
+      const players=[...this.members.values()].sort((a,b)=>a.slot-b.slot),winner=players[slot],loser=players[1-slot];
+      const perfect=reason==='ko'&&!this.damaged[slot];
+      rankings.record(this.matchId,winner.id,loser.id,perfect,reason);
+      this.sendSnapshot();this.broadcast('result',{winner:slot,name:winner.name,perfect,reason});
+      this.resetLobby();
+    }
+    resetLobby() {
+      this.simulation?.destroy();this.simulation=null;this.matchId=null;this.phase='waiting';this.inputs=[neutral(),neutral()];
+      for(const p of this.members.values()){p.ready=false;p.loaded=false;}
+      this.unlock();this.publishLobby();
+    }
+    onLeave(client) {
+      if(this.spectators.delete(client.sessionId)){this.publishLobby();return;}
+      const member=this.members.get(client.sessionId);if(!member)return;
+      if(this.phase==='fighting')this.complete(1-member.slot,'disconnect');
+      this.members.delete(client.sessionId);
+      if(client.sessionId===this.host){this.broadcast('notice','O anfitrião encerrou a sala.');this.disconnect();}
+      else {this.resetLobby();}
+    }
+    onDispose(){admission.releaseRoom(this.roomId);this.simulation?.destroy();}
+  };
+}

@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import {ControlSettings, GamepadInput} from '../controls.js';
+import {ControlSettings, GamepadInput} from '../src/controls.js';
 const values=new Map(), storage={getItem:k=>values.get(k),setItem:(k,v)=>values.set(k,v)};
 const settings=new ControlSettings(storage);
 assert.equal(settings.bind(0,'punch','KeyF').ok,true);

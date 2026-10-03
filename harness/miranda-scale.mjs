@@ -16,8 +16,8 @@ try {
   await page.waitForFunction(()=>window.__ui?.assets);
   const result=await page.evaluate(async ()=>{
     await window.__ui.loadFighter('miranda');
-    const {FightGame}=await import('/game.js');
-    const {FIGHTERS}=await import('/roster.js');
+    const {FightGame}=await import('/src/game.js');
+    const {FIGHTERS}=await import('/src/roster.js');
     const renderer=Object.create(FightGame.prototype);
     renderer.spriteBounds=new WeakMap();
     renderer.assets=window.__ui.assets;

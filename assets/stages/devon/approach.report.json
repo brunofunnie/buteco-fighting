@@ -1,0 +1,23 @@
+{
+  "kind": "sprite-gen-image-report",
+  "provider": "codex",
+  "prompt": "Create a second view of the EXACT SAME abandoned warehouse hacker headquarters in the reference image. Keep its corrugated rusted walls, old network racks, wooden computer desks, screens, hanging ethernet cabling, rectangular dim ceiling lights, navy shadows and subtle violet plus amber color accents. This new image is for a fighting game progression menu background: use an oblique wide-angle view from a shadowy corner near the entry door looking diagonally across the warehouse, NOT the same side view. In foreground edges show silhouetted cable spools and old equipment; deep architectural perspective and an open central concrete floor. Computers in the distance glow subtly. Darker, ominous, abandoned hideout atmosphere, match illustrated game-art rendering and same props from reference. Preserve lots of quiet space in the central middle region so six fighter cards will be rendered over it by HTML, and upper middle room for a title. NO people, NO characters, NO UI, NO typography, NO logos, NO cards, NO text of any kind. Rectangular low-brightness ceiling spot lamps. Landscape 16:9 wide background, opaque image, no borders. This is the same Devon headquarters from another camera angle, not a new location.",
+  "out": "/home/bruno/projects/funnietech/ai-tests/games/fighting-game-codex-gauntlet-loop/assets/stages/devon/approach.png",
+  "raw": "/home/bruno/projects/funnietech/ai-tests/games/fighting-game-codex-gauntlet-loop/assets/stages/devon/approach.png.raw.png",
+  "raw_bytes": 2326007,
+  "elapsed_seconds": 53.913,
+  "model": null,
+  "session_id": "01a0f8ef-7e51-71d0-87dd-df56541822c3",
+  "refs": [
+    "/home/bruno/projects/funnietech/ai-tests/games/fighting-game-codex-gauntlet-loop/assets/stages/devon/arena.png"
+  ],
+  "transparent": false,
+  "alpha": null,
+  "chroma": null,
+  "extra": {
+    "inline_results": 1,
+    "rollout_cleaned": true,
+    "transparent_background_reported": false
+  },
+  "provider_resolved_from": "explicit"
+}

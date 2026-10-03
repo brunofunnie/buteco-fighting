@@ -1,8 +1,8 @@
 import assert from 'node:assert/strict';
-import {FIGHTERS, fighterIds} from '../roster.js';
-import {audioDirector} from '../audio.js';
-import {FightGame} from '../game.js';
-const module = await import('../power-preview.js').catch(()=>null);
+import {FIGHTERS, fighterIds} from '../src/roster.js';
+import {audioDirector} from '../src/audio.js';
+import {FightGame} from '../src/game.js';
+const module = await import('../src/power-preview.js').catch(()=>null);
 assert.ok(module?.PowerPreview, 'PowerPreview module must provide the fighting demonstration');
 const {PowerPreview}=module;
 const listenerCalls=[];

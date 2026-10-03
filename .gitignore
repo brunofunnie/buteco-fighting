@@ -18,3 +18,7 @@ assets/generated/
 
 # Persistent online rankings and guest identities.
 data/
+
+# Production copies; originals stay in assets/.
+dist/
+build/node_modules/

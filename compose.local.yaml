@@ -1,0 +1,18 @@
+name: buteco-fighting-local
+services:
+  buteco-fighting:
+    image: buteco-fighting:local
+    build:
+      context: .
+    init: true
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:3188:80"
+    environment:
+      NODE_ENV: production
+      PORT: "80"
+      RANKING_DB: /data/rankings.sqlite
+    volumes:
+      - online-data:/data
+volumes:
+  online-data:

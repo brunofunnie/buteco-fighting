@@ -2,7 +2,7 @@
 import {chromium} from 'playwright';
 import {writeFile} from 'node:fs/promises';
 import assert from 'node:assert/strict';
-import {fighterIds} from '../roster.js';
+import {fighterIds} from '../src/roster.js';
 const samples=22050,wav=Buffer.alloc(44+samples*2);wav.write('RIFF');wav.writeUInt32LE(wav.length-8,4);wav.write('WAVEfmt ',8);wav.writeUInt32LE(16,16);wav.writeUInt16LE(1,20);wav.writeUInt16LE(1,22);wav.writeUInt32LE(22050,24);wav.writeUInt32LE(44100,28);wav.writeUInt16LE(2,32);wav.writeUInt16LE(16,34);wav.write('data',36);wav.writeUInt32LE(samples*2,40);
 for(let i=0;i<samples;i++)wav.writeInt16LE(Math.round(Math.sin(i/22050*440*Math.PI*2)*1500),44+i*2);
 const keys=['theme-menu','theme-fight','impact','block','jump','select','confirm','ko',...fighterIds.flatMap(id=>['attack','special','super'].map(action=>`${id}-${action}`))];
@@ -12,7 +12,7 @@ await page.route('**/fixture-audio.wav',r=>r.fulfill({contentType:'audio/wav',bo
 try{
  await page.goto('http://localhost:3187');await page.waitForFunction(()=>!document.querySelector('#titleStart').disabled);await page.locator('#titleStart').click();
  const checks=await page.evaluate(async({keys,ids})=>{
-  const {audioDirector:a}=await import('/audio.js');await a.unlock();await Promise.all(keys.map(key=>a.load(key)));
+  const {audioDirector:a}=await import('/src/audio.js');await a.unlock();await Promise.all(keys.map(key=>a.load(key)));
   const checks=[];const check=(name,pass)=>checks.push({name,pass:!!pass});
   a.setScene('menu');check('menu theme starts',a.musicKey==='theme-menu');const menu=a.music;a.setScene('menu');check('same scene does not restart music',a.music===menu);
   a.setScene('fight',3);check('fight theme replaces menu',a.musicKey==='theme-fight'&&a.music!==menu);

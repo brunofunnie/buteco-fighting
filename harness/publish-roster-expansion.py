@@ -27,7 +27,7 @@ parser.add_argument('--registry',type=Path,default=Path('assets/sprites/_generat
 args=parser.parse_args()
 profiles=json.loads(args.registry.read_text())
 replacements={fid for fid,p in profiles.items() if p.get('replaceExisting',fid=='maya-b')}
-catalog=json.loads(subprocess.check_output(['node','--input-type=module','-e',"import {FIGHTERS} from './roster.js';process.stdout.write(JSON.stringify(FIGHTERS))"],text=True))
+catalog=json.loads(subprocess.check_output(['node','--input-type=module','-e',"import {FIGHTERS} from './src/roster.js';process.stdout.write(JSON.stringify(FIGHTERS))"],text=True))
 conflicts=[fid for fid in profiles if fid not in replacements and fid in catalog]
 if conflicts: raise RuntimeError(f'Already published fighter IDs: {conflicts}; no assets changed')
 manifest_path=Path('assets/manifest.json')
@@ -98,7 +98,7 @@ for fid,profile in profiles.items():
         fighter.update(profile.get('stats',{}))
     staged[fid]=(run,runtime,fighter,metrics)
 
-roster_path=Path('roster.js')
+roster_path=Path('src/roster.js')
 roster_text=roster_path.read_text()
 marker='\n};\nexport const fighterIds'
 if roster_text.count(marker)!=1: raise RuntimeError('Cannot locate roster boundary')

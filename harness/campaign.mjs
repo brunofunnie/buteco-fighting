@@ -1,88 +1,50 @@
-import { chromium } from 'playwright';
+import assert from 'node:assert/strict';
+import {chromium} from 'playwright';
 import fs from 'node:fs/promises';
-
-const browser = await chromium.launch({ headless: true, args: ['--no-sandbox'] });
-const page = await browser.newPage({ viewport: { width: 1280, height: 720 } });
-const checks = [], errors = [];
-page.on('pageerror', error => errors.push(error.message));
-function check(name, pass, detail) {
-  checks.push({ name, pass: Boolean(pass), ...(detail === undefined ? {} : { detail }) });
+const browser=await chromium.launch({args:['--no-sandbox']});
+const page=await browser.newPage({viewport:{width:1440,height:900}}),errors=[];
+page.setDefaultTimeout(30000);
+page.on('pageerror',e=>errors.push(e.message));
+const screen=async name=>{await page.waitForFunction(name=>window.__ui?.screen===name,name);console.log('screen:',name);};
+async function fight(){await screen('fight');await page.waitForFunction(()=>window.__fight?.running);}
+async function decide(winner){
+ await page.evaluate(winner=>{const g=window.__fight;g.inspectionPaused=false;g.paused=false;g.phase='fight';g.hitstop=0;g.wins=winner===0?[1,0]:[0,1];g.cpuEnabled=false;g.fighters.forEach((f,i)=>{f.health=i===winner?100:0;f.action=null;f.slide=null;f.stun=0;});},winner);
+ await page.waitForFunction(()=>!document.querySelector('#matchOverlay').hidden);
 }
-async function screen(name) {
-  await page.waitForFunction(name => window.__ui?.screen === name, name);
-}
-async function fight() {
-  await screen('fight');
-  await page.waitForFunction(() => window.__fight?.fighters.length === 2 && window.__fight.running);
-}
-async function decide(winner) {
-  await page.evaluate(winner => {
-    const game = window.__fight;
-    game.inspectionPaused = false;
-    game.paused = false;
-    game.phase = 'fight';
-    game.hitstop = 0;
-    game.wins = winner === 0 ? [1, 0] : [0, 1];
-    game.cpu = false;
-    game.fighters.forEach((fighter, index) => {
-      fighter.health = index === winner ? 100 : 0;
-      fighter.action = null; fighter.stun = 0;
-    });
-  }, winner);
-  await page.waitForFunction(() => !document.querySelector('#matchOverlay').hidden, { timeout: 10000 });
-  await page.waitForTimeout(100);
-}
-try {
-  await page.goto(process.env.GAME_URL || 'http://localhost:3187');
-  await page.waitForFunction(() => window.__ui?.assets && !document.querySelector("#titleStart").disabled);
-  check('title is initial game screen', await page.locator('#titleScreen').isVisible());
-  await page.keyboard.press('Enter'); await screen('mode');
-  check('Enter opens mode select', await page.locator('#modeScreen').isVisible());
-  await page.keyboard.press('ArrowRight');
-  check('arrow selects local versus', await page.evaluate(() => __ui.selection.mode === 'versus'));
-  await page.keyboard.press('ArrowRight');
-  check('arrow selects training', await page.evaluate(() => __ui.selection.mode === 'training'));
-  await page.keyboard.press('ArrowRight');
-  check('mode selection wraps to arcade', await page.evaluate(() => __ui.selection.mode === 'arcade'));
-  await page.keyboard.press('Enter'); await screen('fighter');
-  await page.keyboard.press('ArrowRight');
-  check('arrow changes fighter', await page.evaluate(() => __ui.selection.player === 'bruno'));
-  await page.keyboard.press('ArrowLeft');
-  await page.keyboard.press('Enter'); await screen('stage');
-  await page.keyboard.press('ArrowRight');
-  check('arrow changes arena', await page.evaluate(() => __ui.selection.stage === 1));
-  await page.keyboard.press('ArrowLeft');
-  await page.keyboard.press('Enter'); await screen('versus');
-  check('versus splash before fight', await page.locator('#versusScreen').isVisible());
-  await fight();
-  check('campaign starts first arena', await page.evaluate(() => __ui.campaign.index === 0 && __ui.selection.stage === 0));
-  for (let index = 0; index < 2; index++) {
-    await decide(0);
-    check(`arena ${index + 1} win offers next arena`, await page.locator('#nextStageButton').isVisible());
-    await page.click('#nextStageButton'); await fight();
-    check(`campaign advances to arena ${index + 2}`, await page.evaluate(index => __ui.campaign.index === index + 1 && __ui.selection.stage === index + 1, index));
-  }
-  await decide(1);
-  check('last arena defeat does not advance', !(await page.locator('#nextStageButton').isVisible()));
-  check('last arena defeat offers retry', await page.locator('#rematchButton').isVisible());
-  check('defeat is not champion', !(await page.locator('#overlayTitle').textContent()).includes('CAMPEÃO'));
-  await page.click('#rematchButton'); await fight();
-  check('last arena retry preserves campaign index and arena', await page.evaluate(() => __ui.campaign.index === 2 && __ui.selection.stage === 2));
-  await decide(0);
-  check('third victory crowns champion', (await page.locator('#overlayTitle').textContent()).includes('CAMPEÃO'));
-  check('champion has no next arena', !(await page.locator('#nextStageButton').isVisible()));
-  await page.screenshot({ path: 'artifacts/campaign-champion.png' });
-  await page.click('#rematchButton'); await screen('mode');
-  check('champion replay returns mode select', await page.locator('#modeScreen').isVisible());
-  check('champion replay resets campaign', await page.evaluate(() => __ui.campaign === null));
-  check('no browser runtime errors', errors.length === 0, errors);
-} catch (error) {
-  check('campaign scenario completed', false, error.stack);
-} finally {
-  await fs.mkdir('artifacts', { recursive: true });
-  await fs.writeFile('artifacts/campaign.json', JSON.stringify({ checks, errors }, null, 2));
-  await browser.close();
-}
-const failed = checks.filter(check => !check.pass);
-console.log(JSON.stringify({ passed: checks.length - failed.length, failed: failed.length, errors, failures: failed }, null, 2));
-if (failed.length) process.exitCode = 1;
+try{
+ await fs.mkdir('artifacts',{recursive:true});
+ await page.goto(process.env.GAME_URL||'http://127.0.0.1:3197');
+ await page.waitForFunction(()=>window.__ui?.assets&&!document.querySelector('#titleStart').disabled);
+ await page.click('#titleStart');await page.click('[data-mode="arcade"]');await page.click('[data-slot=opponent]');await page.click('[data-player=king-luiz]');const selectedRival=await page.evaluate(()=>__ui.selection.opponent);assert.equal(await page.locator('.fighter-preview > small:visible').count(),0);await page.click('#fighterNext');await screen('progress');
+ const route=await page.evaluate(()=>structuredClone(__ui.campaign));
+ assert.equal(route.opponents[0],selectedRival);assert.equal(route.opponents.length,6);assert.equal(new Set(route.opponents).size,6);assert.equal(route.opponents[5],'devon');assert.equal(route.opponents.includes(await page.evaluate(()=>__ui.selection.player)),false);
+ assert.equal(await page.locator('.arcade-rival').count(),6);assert.equal(await page.locator('.arcade-rival[data-status="current"]').count(),1);
+ await page.screenshot({path:'artifacts/arcade-progress.png'});
+ await page.setViewportSize({width:390,height:844});await page.screenshot({path:'artifacts/arcade-progress-mobile.png'});
+ assert.ok(await page.locator('#arcadeOpponents').evaluate(e=>e.getBoundingClientRect().right<=innerWidth));
+ await page.setViewportSize({width:1440,height:900});await page.keyboard.press('Enter');await fight();
+ await decide(1);assert.equal(await page.evaluate(()=>__ui.campaign.index),0);assert.equal(await page.locator('#nextStageButton').isVisible(),false);
+ await page.click('#rematchButton');await fight();assert.equal(await page.evaluate(()=>__ui.selection.opponent),route.opponents[0]);
+ for(let i=0;i<5;i++){
+  assert.equal(await page.evaluate(()=>__ui.selection.stage),route.stages[i]);await decide(0);
+  assert.equal(await page.locator('#rematchButton').textContent(),'VOLTAR À SELEÇÃO DE PERSONAGENS');assert.equal(await page.locator('#overlayTitle').isVisible(),false);
+  assert.equal(await page.evaluate(()=>__ui.campaign.defeated.length),i+1);
+  await page.click('#nextStageButton');await screen('progress');
+  assert.equal(await page.locator('.arcade-rival[data-status="defeated"]').count(),i+1);
+  assert.match(await page.locator('.arcade-rival[data-status="defeated"] img').first().evaluate(e=>getComputedStyle(e).filter),/grayscale\(1\)/);
+  await page.keyboard.press('Enter');await fight();
+ }
+ assert.equal(await page.evaluate(()=>__fight.opponent),'devon');assert.equal(await page.evaluate(()=>__fight.stage),4);assert.equal(await page.evaluate(()=>__ui.campaign.index),5);
+ await page.evaluate(()=>{const g=__fight;g.inspectionPaused=true;g.phase='fight';g.fighters[1].energy=50;});
+ await page.screenshot({path:'artifacts/devon-boss.png'});
+ await decide(1);await page.click('#rematchButton');await fight();assert.equal(await page.evaluate(()=>__ui.campaign.index),5);
+ await decide(0);assert.equal(await page.evaluate(()=>__ui.campaign.complete),true);assert.equal(await page.locator('#overlayTitle').isVisible(),false);
+ await page.click('#nextStageButton');await screen('progress');assert.equal(await page.locator('.arcade-rival[data-status="defeated"]').count(),6);
+ await page.screenshot({path:'artifacts/arcade-complete.png'});await page.click('#arcadeContinue');await screen('mode');assert.equal(await page.evaluate(()=>__ui.campaign),null);
+ await page.click('[data-mode=arcade]');
+ for(const key of ['ArrowUp','ArrowUp','ArrowDown','ArrowDown','ArrowLeft','ArrowRight','ArrowLeft','ArrowRight','b','a'])await page.keyboard.press(key);
+ assert.equal(await page.locator('[data-secret-action="devon"]').isDisabled(),false);
+ await page.click('[data-secret-action="devon"]');await fight();assert.equal(await page.evaluate(()=>__fight.opponent),'devon');assert.equal(await page.evaluate(()=>__fight.stage),4);assert.equal(await page.evaluate(()=>__ui.campaign),null);
+ assert.equal(await page.locator('[data-player="devon"]').count(),0);assert.deepEqual(errors,[]);
+ console.log('PASS six-match Arcade, unique rivals, responsive progression, grayscale victories, loss/retry, Devon finale and real Konami shortcut');
+}finally{await fs.writeFile('artifacts/campaign-errors.json',JSON.stringify(errors));await browser.close();}

@@ -1,0 +1,30 @@
+{
+  "provider": "elevenlabs",
+  "model": "music_v2_5",
+  "state": "Pernambuco",
+  "bpm": 132,
+  "key": "D Mixolydian and D major pentatonic, northeastern Brazilian modal melody",
+  "sections": [
+    {
+      "name": "Sertao accordion riff",
+      "seconds": 24
+    },
+    {
+      "name": "Viola and accordion dance",
+      "seconds": 24
+    },
+    {
+      "name": "Modal sertao bridge",
+      "seconds": 24
+    },
+    {
+      "name": "Electric baiao finale",
+      "seconds": 24
+    }
+  ],
+  "originalDurationSeconds": 96.02401360544218,
+  "runtimeDurationSeconds": 94.20585034013605,
+  "crossfadeSeconds": 1.8181818181818181,
+  "path": "assets/audio/stages/recife/theme.mp3",
+  "peak": 0.89
+}

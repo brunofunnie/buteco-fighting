@@ -6,7 +6,7 @@ const page=await browser.newPage();
 try{
   await page.goto('http://127.0.0.1:3187');
   await page.waitForFunction(()=>!document.querySelector('#titleStart').disabled);
-  await page.locator('#titleStart').click();await page.locator('#modeNext').click();await page.locator('#fighterNext').click();await page.locator('#startButton').click();
+  await page.locator('#titleStart').click();await page.locator('#modeScreen .mode-option.active').click();await page.locator('#fighterNext').click();await page.locator('#startButton').click();
   await page.waitForFunction(()=>window.__fight?.fighters?.length===2);
   const checks=await page.evaluate(()=>{
     const g=window.__fight;g.paused=true;

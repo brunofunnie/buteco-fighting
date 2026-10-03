@@ -20,7 +20,6 @@ await page.waitForFunction(
 );
 await page.locator('#titleStart').click();
 await page.locator('[data-mode="versus"]').click();
-await page.locator('#modeNext').click();
 await page.locator('#fighterNext').click();
 await page.locator("#startButton").click();
 await page.waitForFunction(() => window.__fight?.fighters.length === 2);

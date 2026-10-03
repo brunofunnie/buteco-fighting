@@ -1,10 +1,8 @@
 name: buteco-fighting
-
 services:
   buteco-fighting:
-    image: buteco-fighting:latest
-    build:
-      context: .
+    image: ${BUTECO_IMAGE:-brunofunnie/buteco-fighting}:${BUTECO_TAG:-latest}
+    pull_policy: always
     container_name: buteco-fighting
     restart: unless-stopped
     init: true
@@ -12,6 +10,7 @@ services:
       NODE_ENV: production
       PORT: "80"
       RANKING_DB: /data/rankings.sqlite
+      TRUSTED_PROXY_IPS: ${BUTECO_TRUSTED_PROXY_IPS:-}
     volumes:
       - online-data:/data
     expose:
@@ -23,10 +22,10 @@ services:
       options:
         max-size: "10m"
         max-file: "3"
-
 networks:
   bender-network:
     external: true
-
 volumes:
   online-data:
+    external: true
+    name: ${BUTECO_DATA_VOLUME:-buteco-fighting_online-data}

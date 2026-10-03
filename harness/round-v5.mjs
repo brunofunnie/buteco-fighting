@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import {writeFile} from 'node:fs/promises';
-import {FightGame} from '../game.js';
+import {FightGame} from '../src/game.js';
 globalThis.window={addEventListener(){},removeEventListener(){}};globalThis.requestAnimationFrame=()=>0;globalThis.cancelAnimationFrame=()=>{};
 const g=new FightGame({getContext:()=>({})});g.start({mode:'versus'});
 const checks=[];

@@ -19,7 +19,7 @@ try{
   check(`supporting cast keeps modest perspective scale ${name}`,Math.max(...heights)/Math.min(...heights)<1.35);
   await page.screenshot({path:`artifacts/title-${name}-v9.png`});
  }
- await page.setViewportSize({width:1280,height:720});await page.locator('#titleStart').click();await page.locator('#modeNext').click();
+ await page.setViewportSize({width:1280,height:720});await page.locator('#titleStart').click();await page.locator('#modeScreen .mode-option.active').click();
  await page.locator('[data-player="joke-l"]').click();
  const initial=await page.locator('#playerPreview').evaluate(c=>{const data=c.getContext('2d').getImageData(0,0,c.width,c.height).data;return {state:c.dataset.previewState,id:c.dataset.previewFighter,visible:data.some((a,i)=>i%4===3&&a>100)};});
  check('blocked idle immediately shows selected portrait',initial.state==='portrait'&&initial.id==='joke-l'&&initial.visible);

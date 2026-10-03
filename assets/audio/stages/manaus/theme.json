@@ -1,0 +1,30 @@
+{
+  "provider": "elevenlabs",
+  "model": "music_v2_5",
+  "state": "Amazonas",
+  "bpm": 128,
+  "key": "A minor with harmonic minor brega lead phrases and contrasting C major boi-bumba chorus",
+  "sections": [
+    {
+      "name": "Boi drum procession",
+      "seconds": 24
+    },
+    {
+      "name": "Brega guitar dance",
+      "seconds": 24
+    },
+    {
+      "name": "Boi arena call",
+      "seconds": 24
+    },
+    {
+      "name": "Brega and boi finale",
+      "seconds": 24
+    }
+  ],
+  "originalDurationSeconds": 96.02401360544218,
+  "runtimeDurationSeconds": 94.14902494331066,
+  "crossfadeSeconds": 1.875,
+  "path": "assets/audio/stages/manaus/theme.mp3",
+  "peak": 0.89
+}

@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { mkdir, writeFile } from "node:fs/promises";
-import { FightGame } from "../game.js";
+import { FightGame } from "../src/game.js";
 
 globalThis.window = { addEventListener() {}, removeEventListener() {} };
 globalThis.requestAnimationFrame = () => 0;

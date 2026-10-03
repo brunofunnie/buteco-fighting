@@ -1,0 +1,58 @@
+.arcade-screen{display:flex;flex-direction:column;gap:24px;padding:64px 4vw 100px;isolation:isolate;background:linear-gradient(#03071275,#030712a8),url('../assets/stages/devon/approach.png') center/cover}
+.arcade-screen[hidden]{display:none}
+.arcade-screen::before{content:'';position:absolute;inset:0;z-index:-1;background:radial-gradient(ellipse at 50% 55%,transparent 10%,#03071280 95%);pointer-events:none}
+.arcade-screen .screen-heading{margin:0 0 16px;position:relative}
+.arcade-screen .screen-heading h2{color:#fff3d6;text-shadow:3px 4px #030712,0 0 35px #bd45ee35}
+.arcade-opponents{position:relative;list-style:none;margin:0 0 58px;padding:0;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:18px;width:min(1440px,100%);align-items:end}
+.arcade-opponents::before{content:'';position:absolute;left:8%;right:calc(8.333% + 34px);bottom:-45px;height:3px;background:linear-gradient(90deg,#ffcc70,#697fae 60%,#ac62d4);box-shadow:0 0 12px #ac62d4}
+.arcade-rival{position:relative;display:flex;flex-direction:column;align-items:center;min-width:0;padding:12px 8px 16px;border:1px solid #546071;background:linear-gradient(145deg,#182235cf,#080d18eb);border-radius:3px 3px 18px 3px;transform:skew(-4deg);box-shadow:0 12px 20px #0007}
+.arcade-rival img{width:100%;height:clamp(180px,33vh,330px);object-fit:contain;filter:saturate(.8);transform:skew(4deg) scaleX(-1);transition:filter .2s}
+.arcade-rival strong{color:#f1f3f7;font-family:'Barlow Condensed',sans-serif;font-size:clamp(17px,1.8vw,28px);font-weight:800;text-align:center;margin-top:8px;transform:skew(4deg);line-height:1.1}
+.arcade-rival > span:not(.route-marker){width:95%;padding:6px 3px;font-size:clamp(9px,.9vw,13px);font-weight:800;letter-spacing:1px;color:#b8c2d2;text-align:center;margin-top:10px;border:1px solid #546071;background:#182235}
+.arcade-rival[data-status=current]{border:2px solid #ffcc70;box-shadow:0 0 24px #ffc96b50;background:linear-gradient(145deg,#332918e0,#11131de8)}
+.arcade-rival[data-status=current] img{filter:none}
+.arcade-rival[data-status=current] > span:not(.route-marker){color:#11131d;background:#ffcc70;border-color:#ffcc70}
+.arcade-rival[data-status=defeated] img{filter:grayscale(1) brightness(.65)}
+.arcade-rival[data-status=defeated] > span:not(.route-marker){color:#c6cbd4}
+.arcade-boss img{transform:skew(4deg) scaleX(-1);filter:drop-shadow(0 0 12px #bd45ee55)}
+.arcade-boss{border-color:#ac62d4;background:linear-gradient(145deg,#321846d9,#110d1bf0);box-shadow:0 0 24px #ac62d428}
+.arcade-boss[data-status=waiting] > span:not(.route-marker){color:#d699ff;border-color:#ac62d4;background:#321846}
+#arcadeLoadStatus{color:#ffcc70;min-height:0;text-align:center;margin:0}
+#arcadeLoadStatus:empty{display:none}
+.arcade-screen>.menu-footer{position:absolute;inset:auto 4vw 24px;width:auto;max-width:none;display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:20px}
+.arcade-screen .menu-footer #backButton{grid-column:1;grid-row:1;justify-self:start;width:auto}
+.arcade-screen .menu-footer #controlsButton{grid-column:3;grid-row:1;justify-self:end;width:auto}
+.arcade-screen .menu-footer .confirm-button{grid-column:2;grid-row:1;width:auto;margin:0}
+.arcade-screen .menu-footer>button:not(.confirm-button){border:1px solid #ffcc7080;background:#030712bc;padding:12px 20px;color:#ffcc70}
+.arcade-screen .menu-footer #navigationHint{grid-column:1/-1;text-align:center}
+@media(max-width:800px){
+ .arcade-screen{padding:55px 5vw 110px;gap:14px;overflow:auto}
+ .arcade-screen .screen-heading{margin:0}
+ .arcade-opponents{grid-template-columns:repeat(3,minmax(0,1fr));gap:54px 14px;width:100%;margin-bottom:36px}
+ .arcade-opponents::before{display:none}
+ .arcade-rival img{height:clamp(95px,17vh,145px)}
+ .arcade-rival strong{font-size:17px}
+ .arcade-rival > span:not(.route-marker){font-size:8px;letter-spacing:.3px}
+ .arcade-screen>.menu-footer{gap:10px;inset:auto 3vw 18px}
+ .arcade-screen .menu-footer>button:not(.confirm-button){padding:10px 8px;font-size:11px}
+}
+@media(max-height:600px) and (orientation:landscape){
+ .arcade-screen{padding:20px 4vw 65px;gap:8px}
+ .arcade-screen .screen-heading{margin:0}
+ .arcade-screen .screen-heading h2{font-size:32px}
+ .arcade-rival img{height:130px}
+ .arcade-rival{padding:6px}
+ .arcade-rival strong{font-size:16px}
+ .arcade-rival > span:not(.route-marker){padding:4px 1px;margin-top:5px;font-size:8px}
+ .arcade-screen>.menu-footer{bottom:12px}
+}
+
+.arcade-rival .route-marker{position:absolute;top:calc(100% + 44px);left:50%;width:24px;height:24px;margin:0;padding:0;border:2px solid #8494b7;background:#101624;transform:translate(-50%,-50%) skew(4deg) rotate(45deg);box-shadow:0 0 12px #8494b755;}
+.arcade-rival[data-status=current] .route-marker{border-color:#ffcc70;box-shadow:0 0 15px #ffcc7088;}
+.arcade-boss .route-marker{border-color:#d699ff;box-shadow:0 0 15px #bd45ee88;}
+@media(max-width:800px){.arcade-rival .route-marker{width:20px;height:20px;top:calc(100% + 32px);}}
+
+.arcade-boss .route-marker{width:36px;height:36px;border:0;background:transparent;display:grid;place-items:center;transform:translate(-50%,-50%) skew(4deg);font-size:32px;line-height:1;color:#d699ff;text-shadow:0 0 12px #bd45ee;box-shadow:none;}
+
+/* Fit the cropped visible figure and align every fighter at the feet. */
+.arcade-rival img{width:120%;max-width:none;object-position:center bottom;}

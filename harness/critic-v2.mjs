@@ -6,7 +6,7 @@ const errors=[];page.on('pageerror',e=>errors.push(e.message));
 await page.goto('http://127.0.0.1:3187',{waitUntil:'networkidle'});
 await page.screenshot({path:'artifacts/critic-title.png'});
 await page.locator('#titleStart').click();
-await page.locator('[data-mode="versus"]').click();await page.locator('#modeNext').click();
+await page.locator('[data-mode="versus"]').click();
 await page.screenshot({path:'artifacts/critic-select.png'});
 await page.locator('#fighterNext').click();await page.locator('#startButton').click();
 await page.waitForFunction(()=>window.__fight?.fighters.length===2);

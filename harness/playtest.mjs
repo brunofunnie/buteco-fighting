@@ -38,10 +38,9 @@ const openSelection = async () => {
 const setup = async (mode = "versus", stage = 0) => {
   await openSelection();
   await page.locator(`[data-mode="${mode}"]`).click();
-  await page.locator('#modeNext').click();
   await page.locator('#fighterNext').click();
-  await page.locator(`[data-stage="${stage}"]`).click();
-  await page.locator("#startButton").click();
+  if(mode!=='arcade')await page.locator(`[data-stage="${stage}"]`).click();
+  if(mode==='arcade')await page.locator('#arcadeContinue').click();
   await readyFight();
 };
 const menu = async () => {
@@ -54,11 +53,11 @@ try {
   });
   await page.locator("#titleStart").waitFor({ state: "visible" });
   await page.waitForFunction(
-    () => !document.querySelector("#startButton").disabled,
+    () => !document.querySelector("#titleStart").disabled,
   );
   await capture("title-v2");
   await openSelection();
-  await page.locator('#modeNext').click();
+  await page.locator('#modeScreen .mode-option.active').click();
   await capture("fighter-menu-v2");
   await page.locator('[data-player="bruno"]').click();
   check(
@@ -190,6 +189,7 @@ try {
   );
   await page.locator("#pauseButton").click();
   await page.locator("#pauseOptionsButton").click();
+  await page.locator('[data-options-tab="audio"]').click();
   await page.locator("#muteButton").click();
   check(
     "mute reaches engine",

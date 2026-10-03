@@ -1,0 +1,1224 @@
+{
+  "idle": [
+    {
+      "path": "assets/sprites/devon/curated/idle-frame-0.png",
+      "sourceHeight": 653,
+      "outputHeight": 352,
+      "anchorX": 0.5066638718271407,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0,
+      "rowScaleCorrection": 1.0,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 365
+    },
+    {
+      "path": "assets/sprites/devon/curated/idle-frame-1.png",
+      "sourceHeight": 659,
+      "outputHeight": 352,
+      "anchorX": 0.511581748441463,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.00919,
+      "rowScaleCorrection": 1.0,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 365
+    },
+    {
+      "path": "assets/sprites/devon/curated/idle-frame-2.png",
+      "sourceHeight": 663,
+      "outputHeight": 352,
+      "anchorX": 0.5130536628901987,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.01531,
+      "rowScaleCorrection": 1.0,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 365
+    },
+    {
+      "path": "assets/sprites/devon/curated/idle-frame-3.png",
+      "sourceHeight": 651,
+      "outputHeight": 352,
+      "anchorX": 0.5122774380156435,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.99694,
+      "rowScaleCorrection": 1.0,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 365
+    }
+  ],
+  "punch": [
+    {
+      "path": "assets/sprites/devon/curated/punch-frame-0.png",
+      "sourceHeight": 655,
+      "outputHeight": 352,
+      "anchorX": 0.5034700474664393,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0,
+      "rowScaleCorrection": 0.99695,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 365
+    },
+    {
+      "path": "assets/sprites/devon/curated/punch-frame-1.png",
+      "sourceHeight": 652,
+      "outputHeight": 352,
+      "anchorX": 0.5052548898086704,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.99542,
+      "rowScaleCorrection": 0.99695,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 365
+    },
+    {
+      "path": "assets/sprites/devon/curated/punch-frame-2.png",
+      "sourceHeight": 643,
+      "outputHeight": 337,
+      "anchorX": 0.41955984880464836,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.02537,
+      "rowScaleCorrection": 0.99695,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 365
+    },
+    {
+      "path": "assets/sprites/devon/curated/punch-frame-3.png",
+      "sourceHeight": 655,
+      "outputHeight": 352,
+      "anchorX": 0.5048797290412885,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0,
+      "rowScaleCorrection": 0.99695,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 365
+    }
+  ],
+  "kick": [
+    {
+      "path": "assets/sprites/devon/curated/kick-frame-0.png",
+      "sourceHeight": 661,
+      "outputHeight": 352,
+      "anchorX": 0.4840891633570235,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0,
+      "rowScaleCorrection": 0.9879,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 365
+    },
+    {
+      "path": "assets/sprites/devon/curated/kick-frame-1.png",
+      "sourceHeight": 678,
+      "outputHeight": 352,
+      "anchorX": 0.4705812208796137,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.02572,
+      "rowScaleCorrection": 0.9879,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 365
+    },
+    {
+      "path": "assets/sprites/devon/curated/kick-frame-2.png",
+      "sourceHeight": 647,
+      "outputHeight": 328,
+      "anchorX": 0.3258048041961478,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.05044,
+      "rowScaleCorrection": 0.9879,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 365
+    },
+    {
+      "path": "assets/sprites/devon/curated/kick-frame-3.png",
+      "sourceHeight": 668,
+      "outputHeight": 352,
+      "anchorX": 0.4793177697639792,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.01059,
+      "rowScaleCorrection": 0.9879,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 365
+    }
+  ],
+  "hurt": [
+    {
+      "path": "assets/sprites/devon/curated/hurt-frame-0.png",
+      "sourceHeight": 672,
+      "outputHeight": 352,
+      "anchorX": 0.5010938317370464,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0,
+      "rowScaleCorrection": 0.97173,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 365
+    },
+    {
+      "path": "assets/sprites/devon/curated/hurt-frame-1.png",
+      "sourceHeight": 627,
+      "outputHeight": 352,
+      "anchorX": 0.5266252324167581,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.93304,
+      "rowScaleCorrection": 0.97173,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 365
+    },
+    {
+      "path": "assets/sprites/devon/curated/hurt-frame-2.png",
+      "sourceHeight": 630,
+      "outputHeight": 352,
+      "anchorX": 0.5330828797361292,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.9375,
+      "rowScaleCorrection": 0.97173,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 365
+    },
+    {
+      "path": "assets/sprites/devon/curated/hurt-frame-3.png",
+      "sourceHeight": 670,
+      "outputHeight": 352,
+      "anchorX": 0.5156844237874769,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.99702,
+      "rowScaleCorrection": 0.97173,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 365
+    }
+  ],
+  "jump": [
+    {
+      "path": "assets/sprites/devon/curated/jump-frame-0.png",
+      "sourceHeight": 448,
+      "outputHeight": 294,
+      "anchorX": 0.46506054408418335,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.91846,
+      "rowScaleCorrection": 1.11815,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 280
+    },
+    {
+      "path": "assets/sprites/devon/curated/jump-frame-1.png",
+      "sourceHeight": 630,
+      "outputHeight": 352,
+      "anchorX": 0.32919964076809216,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.07877,
+      "rowScaleCorrection": 1.11815,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 280
+    },
+    {
+      "path": "assets/sprites/devon/curated/jump-frame-2.png",
+      "sourceHeight": 544,
+      "outputHeight": 343,
+      "anchorX": 0.4901666245186828,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.95595,
+      "rowScaleCorrection": 1.11815,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 280
+    },
+    {
+      "path": "assets/sprites/devon/curated/jump-frame-3.png",
+      "sourceHeight": 473,
+      "outputHeight": 317,
+      "anchorX": 0.500795528313856,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.89936,
+      "rowScaleCorrection": 1.11815,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 280
+    }
+  ],
+  "special": [
+    {
+      "path": "assets/sprites/devon/curated/special-frame-0.png",
+      "sourceHeight": 584,
+      "outputHeight": 352,
+      "anchorX": 0.5062682720311288,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0,
+      "rowScaleCorrection": 1.11815,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 365
+    },
+    {
+      "path": "assets/sprites/devon/curated/special-frame-1.png",
+      "sourceHeight": 578,
+      "outputHeight": 352,
+      "anchorX": 0.5248178131358704,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.98973,
+      "rowScaleCorrection": 1.11815,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 365
+    },
+    {
+      "path": "assets/sprites/devon/curated/special-frame-2.png",
+      "sourceHeight": 561,
+      "outputHeight": 290,
+      "anchorX": 0.4404888414534745,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.16599,
+      "rowScaleCorrection": 1.11815,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 365
+    },
+    {
+      "path": "assets/sprites/devon/curated/special-frame-3.png",
+      "sourceHeight": 584,
+      "outputHeight": 352,
+      "anchorX": 0.5130002501662408,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0,
+      "rowScaleCorrection": 1.11815,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 365
+    }
+  ],
+  "walk": [
+    {
+      "path": "assets/sprites/devon/curated/walk-frame-0.png",
+      "sourceHeight": 546,
+      "outputHeight": 352,
+      "anchorX": 0.4950943210297236,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0,
+      "rowScaleCorrection": 1.19597,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 365
+    },
+    {
+      "path": "assets/sprites/devon/curated/walk-frame-1.png",
+      "sourceHeight": 549,
+      "outputHeight": 352,
+      "anchorX": 0.510755576178932,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.00549,
+      "rowScaleCorrection": 1.19597,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 365
+    },
+    {
+      "path": "assets/sprites/devon/curated/walk-frame-2.png",
+      "sourceHeight": 546,
+      "outputHeight": 352,
+      "anchorX": 0.5323718694613068,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0,
+      "rowScaleCorrection": 1.19597,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 365
+    },
+    {
+      "path": "assets/sprites/devon/curated/walk-frame-3.png",
+      "sourceHeight": 546,
+      "outputHeight": 352,
+      "anchorX": 0.5274646680212272,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0,
+      "rowScaleCorrection": 1.19597,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 365
+    },
+    {
+      "path": "assets/sprites/devon/curated/walk-frame-4.png",
+      "sourceHeight": 547,
+      "outputHeight": 352,
+      "anchorX": 0.49991199922678226,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.00183,
+      "rowScaleCorrection": 1.19597,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 365
+    },
+    {
+      "path": "assets/sprites/devon/curated/walk-frame-5.png",
+      "sourceHeight": 546,
+      "outputHeight": 352,
+      "anchorX": 0.501157608275089,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0,
+      "rowScaleCorrection": 1.19597,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 365
+    }
+  ],
+  "block": [
+    {
+      "path": "assets/sprites/devon/curated/block-frame-0.png",
+      "sourceHeight": 679,
+      "outputHeight": 352,
+      "anchorX": 0.49508639558619466,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0,
+      "rowScaleCorrection": 0.96171,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 365
+    },
+    {
+      "path": "assets/sprites/devon/curated/block-frame-1.png",
+      "sourceHeight": 680,
+      "outputHeight": 352,
+      "anchorX": 0.5142159567467592,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.00147,
+      "rowScaleCorrection": 0.96171,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 365
+    },
+    {
+      "path": "assets/sprites/devon/curated/block-frame-2.png",
+      "sourceHeight": 662,
+      "outputHeight": 352,
+      "anchorX": 0.5165196240958542,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.97496,
+      "rowScaleCorrection": 0.96171,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 365
+    },
+    {
+      "path": "assets/sprites/devon/curated/block-frame-3.png",
+      "sourceHeight": 658,
+      "outputHeight": 352,
+      "anchorX": 0.5116853913651146,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.96907,
+      "rowScaleCorrection": 0.96171,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 365
+    }
+  ],
+  "crouch": [
+    {
+      "path": "assets/sprites/devon/curated/crouch-frame-0.png",
+      "sourceHeight": 672,
+      "outputHeight": 352,
+      "anchorX": 0.472204412389988,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0,
+      "rowScaleCorrection": 0.97173,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 365
+    },
+    {
+      "path": "assets/sprites/devon/curated/crouch-frame-1.png",
+      "sourceHeight": 596,
+      "outputHeight": 352,
+      "anchorX": 0.5031135621278848,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.8869,
+      "rowScaleCorrection": 0.97173,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 365
+    },
+    {
+      "path": "assets/sprites/devon/curated/crouch-frame-2.png",
+      "sourceHeight": 487,
+      "outputHeight": 352,
+      "anchorX": 0.4858388086789099,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.7247,
+      "rowScaleCorrection": 0.97173,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 365
+    },
+    {
+      "path": "assets/sprites/devon/curated/crouch-frame-3.png",
+      "sourceHeight": 554,
+      "outputHeight": 352,
+      "anchorX": 0.49578531645490753,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.8244,
+      "rowScaleCorrection": 0.97173,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 365
+    }
+  ],
+  "ko": [
+    {
+      "path": "assets/sprites/devon/curated/ko-frame-0.png",
+      "sourceHeight": 501,
+      "outputHeight": 325,
+      "anchorX": 0.5367463822265963,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.02373,
+      "rowScaleCorrection": 1.23197,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 345
+    },
+    {
+      "path": "assets/sprites/devon/curated/ko-frame-1.png",
+      "sourceHeight": 474,
+      "outputHeight": 327,
+      "anchorX": 0.5638773026626285,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.96264,
+      "rowScaleCorrection": 1.23197,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 345
+    },
+    {
+      "path": "assets/sprites/devon/curated/ko-frame-2.png",
+      "sourceHeight": 333,
+      "outputHeight": 232,
+      "anchorX": 0.48006095535058596,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.95321,
+      "rowScaleCorrection": 1.23197,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 345
+    },
+    {
+      "path": "assets/sprites/devon/curated/ko-frame-3.png",
+      "sourceHeight": 199,
+      "outputHeight": 127,
+      "anchorX": 0.4925606014343653,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.04059,
+      "rowScaleCorrection": 1.23197,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 345
+    }
+  ],
+  "celebrate": [
+    {
+      "path": "assets/sprites/devon/curated/celebrate-frame-0.png",
+      "sourceHeight": 623,
+      "outputHeight": 352,
+      "anchorX": 0.5071371937439443,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0,
+      "rowScaleCorrection": 1.04815,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 365
+    },
+    {
+      "path": "assets/sprites/devon/curated/celebrate-frame-1.png",
+      "sourceHeight": 652,
+      "outputHeight": 352,
+      "anchorX": 0.5186567751457548,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.04655,
+      "rowScaleCorrection": 1.04815,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 365
+    },
+    {
+      "path": "assets/sprites/devon/curated/celebrate-frame-2.png",
+      "sourceHeight": 700,
+      "outputHeight": 352,
+      "anchorX": 0.5262226155155499,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.1236,
+      "rowScaleCorrection": 1.04815,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 365
+    },
+    {
+      "path": "assets/sprites/devon/curated/celebrate-frame-3.png",
+      "sourceHeight": 698,
+      "outputHeight": 352,
+      "anchorX": 0.5264714399055876,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.12039,
+      "rowScaleCorrection": 1.04815,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 365
+    }
+  ],
+  "airPunch": [
+    {
+      "path": "assets/sprites/devon/curated/airPunch-frame-0.png",
+      "sourceHeight": 627,
+      "outputHeight": 352,
+      "anchorX": 0.27699131548251166,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.86301,
+      "rowScaleCorrection": 0.8988,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 315
+    },
+    {
+      "path": "assets/sprites/devon/curated/airPunch-frame-1.png",
+      "sourceHeight": 619,
+      "outputHeight": 352,
+      "anchorX": 0.3170012799741982,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.852,
+      "rowScaleCorrection": 0.8988,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 315
+    },
+    {
+      "path": "assets/sprites/devon/curated/airPunch-frame-2.png",
+      "sourceHeight": 614,
+      "outputHeight": 314,
+      "anchorX": 0.2365868620845223,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.9474,
+      "rowScaleCorrection": 0.8988,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 315
+    },
+    {
+      "path": "assets/sprites/devon/curated/airPunch-frame-3.png",
+      "sourceHeight": 611,
+      "outputHeight": 352,
+      "anchorX": 0.5018532460690052,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.84099,
+      "rowScaleCorrection": 0.8988,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 315
+    }
+  ],
+  "airKick": [
+    {
+      "path": "assets/sprites/devon/curated/airKick-frame-0.png",
+      "sourceHeight": 518,
+      "outputHeight": 352,
+      "anchorX": 0.5567381026760262,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.88219,
+      "rowScaleCorrection": 1.11211,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 322
+    },
+    {
+      "path": "assets/sprites/devon/curated/airKick-frame-1.png",
+      "sourceHeight": 503,
+      "outputHeight": 292,
+      "anchorX": 0.39362345584985087,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.03267,
+      "rowScaleCorrection": 1.11211,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 322
+    },
+    {
+      "path": "assets/sprites/devon/curated/airKick-frame-2.png",
+      "sourceHeight": 516,
+      "outputHeight": 272,
+      "anchorX": 0.3006430848074205,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.13725,
+      "rowScaleCorrection": 1.11211,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 322
+    },
+    {
+      "path": "assets/sprites/devon/curated/airKick-frame-3.png",
+      "sourceHeight": 550,
+      "outputHeight": 352,
+      "anchorX": 0.4866037579571125,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.93669,
+      "rowScaleCorrection": 1.11211,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 322
+    }
+  ],
+  "crouchPunch": [
+    {
+      "path": "assets/sprites/devon/curated/crouchPunch-frame-0.png",
+      "sourceHeight": 525,
+      "outputHeight": 352,
+      "anchorX": 0.5032138778775065,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.78082,
+      "rowScaleCorrection": 0.97119,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 285
+    },
+    {
+      "path": "assets/sprites/devon/curated/crouchPunch-frame-1.png",
+      "sourceHeight": 527,
+      "outputHeight": 329,
+      "anchorX": 0.5234632821538598,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.83859,
+      "rowScaleCorrection": 0.97119,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 285
+    },
+    {
+      "path": "assets/sprites/devon/curated/crouchPunch-frame-2.png",
+      "sourceHeight": 516,
+      "outputHeight": 284,
+      "anchorX": 0.5221184494437109,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.95119,
+      "rowScaleCorrection": 0.97119,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 285
+    },
+    {
+      "path": "assets/sprites/devon/curated/crouchPunch-frame-3.png",
+      "sourceHeight": 526,
+      "outputHeight": 352,
+      "anchorX": 0.5022869729864117,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.78231,
+      "rowScaleCorrection": 0.97119,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 285
+    }
+  ],
+  "crouchKick": [
+    {
+      "path": "assets/sprites/devon/curated/crouchKick-frame-0.png",
+      "sourceHeight": 503,
+      "outputHeight": 352,
+      "anchorX": 0.503141602166647,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.78082,
+      "rowScaleCorrection": 1.01367,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 285
+    },
+    {
+      "path": "assets/sprites/devon/curated/crouchKick-frame-1.png",
+      "sourceHeight": 522,
+      "outputHeight": 352,
+      "anchorX": 0.4653840061478571,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.81032,
+      "rowScaleCorrection": 1.01367,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 285
+    },
+    {
+      "path": "assets/sprites/devon/curated/crouchKick-frame-2.png",
+      "sourceHeight": 474,
+      "outputHeight": 248,
+      "anchorX": 0.5077662456889671,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.04437,
+      "rowScaleCorrection": 1.01367,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 285
+    },
+    {
+      "path": "assets/sprites/devon/curated/crouchKick-frame-3.png",
+      "sourceHeight": 503,
+      "outputHeight": 352,
+      "anchorX": 0.510284845655496,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.78082,
+      "rowScaleCorrection": 1.01367,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 285
+    }
+  ],
+  "uppercut": [
+    {
+      "path": "assets/sprites/devon/curated/uppercut-frame-0.png",
+      "sourceHeight": 533,
+      "outputHeight": 352,
+      "anchorX": 0.5258979053952738,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.80597,
+      "rowScaleCorrection": 0.98743,
+      "calibration": "reviewed head width matched to idle; uniform whole-frame scale",
+      "referencePoseHeight": 294.18,
+      "headBox": [
+        195,
+        34,
+        67,
+        79
+      ],
+      "referenceHeadWidth": 54.0
+    },
+    {
+      "path": "assets/sprites/devon/curated/uppercut-frame-1.png",
+      "sourceHeight": 552,
+      "outputHeight": 352,
+      "anchorX": 0.521834539098981,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.81818,
+      "rowScaleCorrection": 0.96788,
+      "calibration": "reviewed head width matched to idle; uniform whole-frame scale",
+      "referencePoseHeight": 298.64,
+      "headBox": [
+        167,
+        34,
+        66,
+        72
+      ],
+      "referenceHeadWidth": 54.0
+    },
+    {
+      "path": "assets/sprites/devon/curated/uppercut-frame-2.png",
+      "sourceHeight": 695,
+      "outputHeight": 352,
+      "anchorX": 0.4543651686171053,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0,
+      "rowScaleCorrection": 0.93957,
+      "calibration": "reviewed head width matched to idle; uniform whole-frame scale",
+      "referencePoseHeight": 365.0,
+      "headBox": [
+        167,
+        63,
+        54,
+        67
+      ],
+      "referenceHeadWidth": 54.0
+    },
+    {
+      "path": "assets/sprites/devon/curated/uppercut-frame-3.png",
+      "sourceHeight": 551,
+      "outputHeight": 352,
+      "anchorX": 0.5208951090631867,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.87097,
+      "rowScaleCorrection": 1.0322,
+      "calibration": "reviewed head width matched to idle; uniform whole-frame scale",
+      "referencePoseHeight": 317.9,
+      "headBox": [
+        193,
+        34,
+        62,
+        74
+      ],
+      "referenceHeadWidth": 54.0
+    }
+  ],
+  "sweep": [
+    {
+      "path": "assets/sprites/devon/curated/sweep-frame-0.png",
+      "sourceHeight": 446,
+      "outputHeight": 318,
+      "anchorX": 0.5138805369559943,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.84914,
+      "rowScaleCorrection": 1.12316,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 280
+    },
+    {
+      "path": "assets/sprites/devon/curated/sweep-frame-1.png",
+      "sourceHeight": 502,
+      "outputHeight": 352,
+      "anchorX": 0.510302525630298,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.86344,
+      "rowScaleCorrection": 1.12316,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 280
+    },
+    {
+      "path": "assets/sprites/devon/curated/sweep-frame-2.png",
+      "sourceHeight": 428,
+      "outputHeight": 216,
+      "anchorX": 0.5239739609055598,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.19967,
+      "rowScaleCorrection": 1.12316,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 280
+    },
+    {
+      "path": "assets/sprites/devon/curated/sweep-frame-3.png",
+      "sourceHeight": 494,
+      "outputHeight": 352,
+      "anchorX": 0.49020707569901795,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.84968,
+      "rowScaleCorrection": 1.12316,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 280
+    }
+  ],
+  "dash": [
+    {
+      "path": "assets/sprites/devon/curated/dash-frame-0.png",
+      "sourceHeight": 547,
+      "outputHeight": 352,
+      "anchorX": 0.5071167250171686,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.91781,
+      "rowScaleCorrection": 1.09567,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 335
+    },
+    {
+      "path": "assets/sprites/devon/curated/dash-frame-1.png",
+      "sourceHeight": 561,
+      "outputHeight": 352,
+      "anchorX": 0.4861522020187874,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.9413,
+      "rowScaleCorrection": 1.09567,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 335
+    },
+    {
+      "path": "assets/sprites/devon/curated/dash-frame-2.png",
+      "sourceHeight": 528,
+      "outputHeight": 328,
+      "anchorX": 0.5923019911531882,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.95075,
+      "rowScaleCorrection": 1.09567,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 335
+    },
+    {
+      "path": "assets/sprites/devon/curated/dash-frame-3.png",
+      "sourceHeight": 547,
+      "outputHeight": 352,
+      "anchorX": 0.5048828623789611,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.91781,
+      "rowScaleCorrection": 1.09567,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 335
+    }
+  ],
+  "backwalk": [
+    {
+      "path": "assets/sprites/devon/curated/backwalk-frame-0.png",
+      "sourceHeight": 563,
+      "outputHeight": 352,
+      "anchorX": 0.5042013708357006,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0,
+      "rowScaleCorrection": 1.15986,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 365
+    },
+    {
+      "path": "assets/sprites/devon/curated/backwalk-frame-1.png",
+      "sourceHeight": 564,
+      "outputHeight": 352,
+      "anchorX": 0.5299662005606244,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.00178,
+      "rowScaleCorrection": 1.15986,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 365
+    },
+    {
+      "path": "assets/sprites/devon/curated/backwalk-frame-2.png",
+      "sourceHeight": 560,
+      "outputHeight": 352,
+      "anchorX": 0.5133722222210673,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.99467,
+      "rowScaleCorrection": 1.15986,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 365
+    },
+    {
+      "path": "assets/sprites/devon/curated/backwalk-frame-3.png",
+      "sourceHeight": 561,
+      "outputHeight": 352,
+      "anchorX": 0.4996443172909286,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.99645,
+      "rowScaleCorrection": 1.15986,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 365
+    },
+    {
+      "path": "assets/sprites/devon/curated/backwalk-frame-4.png",
+      "sourceHeight": 562,
+      "outputHeight": 352,
+      "anchorX": 0.5162996582876325,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.99822,
+      "rowScaleCorrection": 1.15986,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 365
+    },
+    {
+      "path": "assets/sprites/devon/curated/backwalk-frame-5.png",
+      "sourceHeight": 562,
+      "outputHeight": 352,
+      "anchorX": 0.5003298932476499,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.99822,
+      "rowScaleCorrection": 1.15986,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 365
+    }
+  ],
+  "lowBlock": [
+    {
+      "path": "assets/sprites/devon/curated/lowBlock-frame-0.png",
+      "sourceHeight": 569,
+      "outputHeight": 352,
+      "anchorX": 0.5127158045245489,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.78082,
+      "rowScaleCorrection": 0.89609,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 285
+    },
+    {
+      "path": "assets/sprites/devon/curated/lowBlock-frame-1.png",
+      "sourceHeight": 577,
+      "outputHeight": 352,
+      "anchorX": 0.5105028269056499,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.7918,
+      "rowScaleCorrection": 0.89609,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 285
+    },
+    {
+      "path": "assets/sprites/devon/curated/lowBlock-frame-2.png",
+      "sourceHeight": 569,
+      "outputHeight": 352,
+      "anchorX": 0.49445349801375377,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.78082,
+      "rowScaleCorrection": 0.89609,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 285
+    },
+    {
+      "path": "assets/sprites/devon/curated/lowBlock-frame-3.png",
+      "sourceHeight": 561,
+      "outputHeight": 352,
+      "anchorX": 0.5110429579209047,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.76984,
+      "rowScaleCorrection": 0.89609,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 285
+    }
+  ],
+  "turn": [
+    {
+      "path": "assets/sprites/devon/curated/turn-frame-0.png",
+      "sourceHeight": 670,
+      "outputHeight": 352,
+      "anchorX": 0.5042358149412965,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0,
+      "rowScaleCorrection": 0.97463,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 365
+    },
+    {
+      "path": "assets/sprites/devon/curated/turn-frame-1.png",
+      "sourceHeight": 678,
+      "outputHeight": 352,
+      "anchorX": 0.5211769196595994,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.01194,
+      "rowScaleCorrection": 0.97463,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 365
+    },
+    {
+      "path": "assets/sprites/devon/curated/turn-frame-2.png",
+      "sourceHeight": 675,
+      "outputHeight": 352,
+      "anchorX": 0.5037764362492124,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.00746,
+      "rowScaleCorrection": 0.97463,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 365
+    },
+    {
+      "path": "assets/sprites/devon/curated/turn-frame-3.png",
+      "sourceHeight": 670,
+      "outputHeight": 352,
+      "anchorX": 0.49158837340101397,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0,
+      "rowScaleCorrection": 0.97463,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 365
+    }
+  ],
+  "land": [
+    {
+      "path": "assets/sprites/devon/curated/land-frame-0.png",
+      "sourceHeight": 442,
+      "outputHeight": 344,
+      "anchorX": 0.5169884409196303,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.78496,
+      "rowScaleCorrection": 1.13333,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 280
+    },
+    {
+      "path": "assets/sprites/devon/curated/land-frame-1.png",
+      "sourceHeight": 562,
+      "outputHeight": 352,
+      "anchorX": 0.4896616438761278,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.97539,
+      "rowScaleCorrection": 1.13333,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 280
+    },
+    {
+      "path": "assets/sprites/devon/curated/land-frame-2.png",
+      "sourceHeight": 636,
+      "outputHeight": 352,
+      "anchorX": 0.4913797525512282,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.10382,
+      "rowScaleCorrection": 1.13333,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 280
+    },
+    {
+      "path": "assets/sprites/devon/curated/land-frame-3.png",
+      "sourceHeight": 683,
+      "outputHeight": 352,
+      "anchorX": 0.5212516185669551,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.1854,
+      "rowScaleCorrection": 1.13333,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 280
+    }
+  ],
+  "jumpForward": [
+    {
+      "path": "assets/sprites/devon/curated/jumpForward-frame-0.png",
+      "sourceHeight": 539,
+      "outputHeight": 349,
+      "anchorX": 0.4398603314958475,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.90635,
+      "rowScaleCorrection": 1.08869,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 328
+    },
+    {
+      "path": "assets/sprites/devon/curated/jumpForward-frame-1.png",
+      "sourceHeight": 682,
+      "outputHeight": 352,
+      "anchorX": 0.26410904431253834,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.13704,
+      "rowScaleCorrection": 1.08869,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 328
+    },
+    {
+      "path": "assets/sprites/devon/curated/jumpForward-frame-2.png",
+      "sourceHeight": 550,
+      "outputHeight": 352,
+      "anchorX": 0.5280249986495926,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.91697,
+      "rowScaleCorrection": 1.08869,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 328
+    },
+    {
+      "path": "assets/sprites/devon/curated/jumpForward-frame-3.png",
+      "sourceHeight": 663,
+      "outputHeight": 352,
+      "anchorX": 0.7164575751996685,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.10537,
+      "rowScaleCorrection": 1.08869,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 328
+    }
+  ],
+  "super": [
+    {
+      "path": "assets/sprites/devon/curated/super-frame-0.png",
+      "sourceHeight": 643,
+      "outputHeight": 352,
+      "anchorX": 0.4974225709014402,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0,
+      "rowScaleCorrection": 1.01555,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 365
+    },
+    {
+      "path": "assets/sprites/devon/curated/super-frame-1.png",
+      "sourceHeight": 644,
+      "outputHeight": 352,
+      "anchorX": 0.5048468215218921,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.00156,
+      "rowScaleCorrection": 1.01555,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 365
+    },
+    {
+      "path": "assets/sprites/devon/curated/super-frame-2.png",
+      "sourceHeight": 639,
+      "outputHeight": 352,
+      "anchorX": 0.4792429901523147,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.99378,
+      "rowScaleCorrection": 1.01555,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 365
+    },
+    {
+      "path": "assets/sprites/devon/curated/super-frame-3.png",
+      "sourceHeight": 642,
+      "outputHeight": 352,
+      "anchorX": 0.4955530556760046,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.99844,
+      "rowScaleCorrection": 1.01555,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 365
+    }
+  ],
+  "slide": [
+    {
+      "path": "assets/sprites/devon/curated/slide-frame-0.png",
+      "sourceHeight": 616,
+      "outputHeight": 352,
+      "anchorX": 0.5114826969211302,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0,
+      "rowScaleCorrection": 1.06006,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 365
+    },
+    {
+      "path": "assets/sprites/devon/curated/slide-frame-1.png",
+      "sourceHeight": 593,
+      "outputHeight": 352,
+      "anchorX": 0.5107534312484096,
+      "anchorY": 0.9583333333333334,
+      "scale": 0.96266,
+      "rowScaleCorrection": 1.06006,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 365
+    },
+    {
+      "path": "assets/sprites/devon/curated/slide-frame-2.png",
+      "sourceHeight": 647,
+      "outputHeight": 352,
+      "anchorX": 0.5318975408563001,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.05032,
+      "rowScaleCorrection": 1.06006,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 365
+    },
+    {
+      "path": "assets/sprites/devon/curated/slide-frame-3.png",
+      "sourceHeight": 616,
+      "outputHeight": 352,
+      "anchorX": 0.5196425674715296,
+      "anchorY": 0.9583333333333334,
+      "scale": 1.0,
+      "rowScaleCorrection": 1.06006,
+      "calibration": "reviewed first-pose height; uniform row camera correction",
+      "referencePoseHeight": 365
+    }
+  ]
+}

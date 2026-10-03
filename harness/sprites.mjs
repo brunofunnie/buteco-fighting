@@ -1,6 +1,6 @@
 import { readFile, writeFile, readdir, rename } from "node:fs/promises";
 import { join } from "node:path";
-import { fighterIds, NON_PLAYABLE_FIGHTERS } from "../roster.js";
+import { fighterIds, NON_PLAYABLE_FIGHTERS } from "../src/roster.js";
 
 // Publish only sprite-gen's curated exports; extraction cache is not a game asset.
 const manifest = {};

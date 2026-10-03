@@ -277,7 +277,9 @@
         },
         {
           "frame": 3,
-          "headPx": 41
+          "headPx": 41,
+          "runtimeScaleOverride": 1.0,
+          "reason": "Lying pose: preserve full body length relative to the standing idle height; head-only normalization enlarged the whole body by 61%."
         }
       ]
     },

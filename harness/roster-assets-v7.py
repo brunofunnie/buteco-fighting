@@ -3,7 +3,7 @@ import hashlib,json,math,subprocess
 from pathlib import Path
 from PIL import Image
 manifest=json.loads(Path('assets/manifest.json').read_text())
-catalog=json.loads(subprocess.check_output(['node','--input-type=module','-e',"import {fighterIds} from './roster.js'; console.log(JSON.stringify(fighterIds))"],text=True))
+catalog=json.loads(subprocess.check_output(['node','--input-type=module','-e',"import {fighterIds} from './src/roster.js'; console.log(JSON.stringify(fighterIds))"],text=True))
 roster=[fid for fid in catalog if fid not in ('maya','bruno')]
 checks=[]
 def check(name,value,details=None):checks.append({'name':name,'pass':bool(value),'details':details})

@@ -5,7 +5,7 @@ import path from 'node:path';
 import {setTimeout as delay} from 'node:timers/promises';
 import {Client} from '@colyseus/sdk';
 import {matchMaker} from '@colyseus/core';
-import {fighterIds} from '../roster.js';
+import {fighterIds} from '../src/roster.js';
 process.env.NODE_ENV='test';process.env.PORT='3195';process.env.RANKING_DB=path.join(await mkdtemp(path.join(tmpdir(),'buteco-online-')),'ranking.sqlite');
 const {gameServer,rankings}=await import('../server.mjs');
 const endpoint='http://127.0.0.1:3195';

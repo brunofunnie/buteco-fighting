@@ -1,0 +1,85 @@
+/* Fight presentation: existing portraits and labels, framed as a versus poster. */
+#versusScreen{--vs-left:#ffb522;--vs-right:#8a63f6;padding:4vh 3vw 5vh;display:grid;grid-template-columns:1fr 1fr;gap:12vw;isolation:isolate;overflow:hidden;background:radial-gradient(ellipse at 14% 85%,#bc731c4d,transparent 45%),radial-gradient(ellipse at 89% 70%,#6548bc4d,transparent 50%),linear-gradient(116deg,#221c17 0 49.7%,#030712 49.7% 50.3%,#12132d 50.3%);}
+#versusScreen::before{content:'';position:absolute;inset:0;z-index:-1;pointer-events:none;background:repeating-linear-gradient(115deg,transparent 0 120px,#ffffff04 121px 123px,transparent 124px 190px),linear-gradient(116deg,transparent 49.7%,#ffb522b3 49.9%,#ffedc5 50%,#8a63f6b3 50.1%,transparent 50.3%);}
+#versusScreen::after{content:'';position:absolute;inset:73% 0 0;z-index:-1;pointer-events:none;background:linear-gradient(transparent,#030712b3),repeating-linear-gradient(0deg,#ffffff06 0 1px,transparent 1px 22px);border-top:1px solid #ffffff1a;box-shadow:0 -12px 40px #ffb5220d;transform:perspective(380px) rotateX(18deg);transform-origin:top;}
+#versusScreen .versus-fighter{--fighter-glow:var(--vs-left);width:100%;height:100%;position:relative;display:grid;grid-template-rows:minmax(0,1fr) auto auto;align-items:end;justify-items:center;gap:8px;overflow:visible;min-height:0;}
+#versusScreen .versus-fighter:has(#versusRight){--fighter-glow:var(--vs-right);}
+#versusScreen .versus-fighter::before{content:'';position:absolute;inset:-15% -22% 28%;z-index:-1;background-image:var(--portrait);background-repeat:no-repeat;background-position:center 8%;background-size:auto 150%;opacity:.12;filter:grayscale(1) contrast(1.3);mask-image:linear-gradient(#000 25%,transparent 95%);pointer-events:none;}
+#versusScreen .versus-fighter:has(#versusRight)::before{transform:scaleX(-1);}
+#versusScreen .versus-fighter img{position:static;width:100%;height:100%;max-height:76vh;min-height:0;object-fit:contain;object-position:center bottom;filter:drop-shadow(0 0 2px var(--fighter-glow)) drop-shadow(0 8px 24px #0009);z-index:1;}
+#versusScreen .versus-fighter strong{font-family:'Barlow Condensed',Impact,sans-serif;font-size:clamp(30px,5.4vw,88px);font-weight:900;font-style:italic;letter-spacing:1px;line-height:.96;text-align:center;max-width:100%;overflow-wrap:anywhere;color:var(--paper);text-shadow:2px 3px #030712,0 0 24px #000;z-index:3;}
+#versusScreen .versus-fighter small{display:flex;align-items:center;gap:14px;letter-spacing:5px;font-size:clamp(10px,1vw,15px);color:var(--paper);z-index:3;}
+#versusScreen .versus-fighter small::before,#versusScreen .versus-fighter small::after{content:'';width:38px;height:1px;background:var(--fighter-glow);}
+#versusScreen .versus-center{position:absolute;inset:14% auto auto 50%;transform:translateX(-50%);width:clamp(200px,27vw,400px);text-align:center;z-index:4;filter:drop-shadow(0 8px 15px #000b);}
+#versusScreen .versus-center b{display:block;font-family:'Barlow Condensed',Impact,sans-serif;font-size:clamp(90px,14vw,210px);font-weight:900;font-style:italic;line-height:1.05;letter-spacing:-8px;color:var(--gold);transform:skew(-8deg) rotate(-8deg);text-shadow:3px 4px #030712,0 0 28px #ffb52240;margin-bottom:6vh;}
+#versusScreen #versusStageThumbnail{display:block;width:100%;max-width:none;aspect-ratio:16/8;object-fit:cover;margin:0;border:2px solid var(--gold);border-radius:2px;box-shadow:0 0 20px #ffb52220;clip-path:polygon(4% 0,96% 0,100% 8%,100% 92%,96% 100%,4% 100%,0 92%,0 8%);}
+#versusScreen .versus-center p{font-size:clamp(11px,1.35vw,20px);font-weight:700;letter-spacing:3px;line-height:1.2;background:#030712ed;margin:0;padding:10px 8px;border-bottom:1px solid var(--gold);}
+#versusScreen .versus-center span{display:block;margin-top:14px;font-size:clamp(10px,1vw,15px);font-weight:700;letter-spacing:4px;color:var(--gold);}
+@media(max-width:650px) and (orientation:portrait){
+ #versusScreen{padding:9vh 3vw 7vh;gap:4vw;align-items:end;}
+ #versusScreen .versus-fighter{height:66%;gap:10px;}
+ #versusScreen .versus-fighter img{max-height:48vh;}
+ #versusScreen .versus-fighter strong{font-size:clamp(25px,7vw,42px);}
+ #versusScreen .versus-fighter small{letter-spacing:2px;font-size:10px;gap:5px;}
+ #versusScreen .versus-fighter small::before,#versusScreen .versus-fighter small::after{width:15px;}
+ #versusScreen .versus-center{top:6%;width:46vw;}
+ #versusScreen .versus-center b{font-size:90px;letter-spacing:-4px;margin-bottom:14px;}
+ #versusScreen #versusStageThumbnail{aspect-ratio:16/7;}
+ #versusScreen .versus-center p{font-size:10px;letter-spacing:1px;padding:6px 3px;}
+ #versusScreen .versus-center span{font-size:9px;margin-top:8px;letter-spacing:2px;}
+}
+@media(max-height:550px) and (orientation:landscape){
+ #versusScreen{padding:5vh 3vw 4vh;gap:16vw;}
+ #versusScreen .versus-fighter img{max-height:72vh;}
+ #versusScreen .versus-fighter strong{font-size:7vh;}
+ #versusScreen .versus-fighter small{font-size:9px;letter-spacing:3px;}
+ #versusScreen .versus-center{top:8%;width:24vw;}
+ #versusScreen .versus-center b{font-size:25vh;margin-bottom:4vh;}
+ #versusScreen .versus-center p{font-size:10px;letter-spacing:1px;padding:6px;}
+ #versusScreen .versus-center span{margin-top:8px;font-size:9px;}
+}
+
+/* Symmetric standing areas, generated environment, and dynamic LED portraits. */
+#versusScreen{display:block;background:#080c18 url('/assets/interface/versus-hangar.png') center/100% 100% no-repeat;}
+#versusScreen::before{background:linear-gradient(0deg,#03071275,transparent 32%,#03071210);z-index:-1;}
+#versusScreen::after{display:none;}
+#versusScreen .versus-fighter{position:absolute;left:2%;top:8%;width:42%;height:87%;z-index:2;}
+#versusScreen .versus-fighter:has(#versusRight){left:auto;right:2%;}
+#versusScreen .versus-fighter::before{display:none;}
+#versusScreen .versus-led{position:absolute;left:7%;top:10%;width:32%;height:42%;overflow:hidden;background:#050814;z-index:0;border:2px solid #bd852d80;box-shadow:inset 0 0 30px #000,0 0 20px #ffb52220;transform:none;}
+#versusScreen .versus-led-right{left:61%;border-color:#8a63f680;box-shadow:inset 0 0 30px #000,0 0 20px #8a63f630;}
+#versusScreen .versus-led img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 16%;filter:sepia(.6) saturate(.6);opacity:.65;mask-image:radial-gradient(circle,#000 1.35px,transparent 1.7px);mask-size:5px 5px;}
+#versusScreen .versus-led-right img{transform:scaleX(-1);filter:sepia(.3) hue-rotate(190deg) saturate(.6);}
+#versusScreen .versus-led::after{content:'';position:absolute;inset:0;pointer-events:none;background:repeating-linear-gradient(transparent 0 4px,#0003 4px 5px),linear-gradient(0deg,#05081480,transparent 50%);box-shadow:inset 0 0 25px #000a;}
+@media(max-width:650px) and (orientation:portrait){
+ #versusScreen .versus-fighter{left:1%;top:38%;width:47%;height:55%;}
+ #versusScreen .versus-fighter:has(#versusRight){left:auto;right:1%;}
+ #versusScreen .versus-led{top:35%;height:23%;left:5%;width:40%;}
+ #versusScreen .versus-led-right{left:55%;}
+ #versusScreen .versus-led img{mask-size:4px 4px;}
+ #versusScreen{background-size:auto 100%;}
+}
+/* Display openings measured on the generated 1672 × 941 background plate. */
+@media(min-width:651px), (orientation:landscape){
+ #versusScreen .versus-led{left:11.7%;top:13.8%;width:26.6%;height:22.6%;border:0;box-shadow:none;}
+ #versusScreen .versus-led-right{left:61.9%;}
+ #versusScreen .versus-fighter{top:17%;height:78%;}
+ #versusScreen .versus-fighter img{max-height:67vh;}
+}
+#versusScreen .versus-fighter{grid-template-columns:minmax(0,1fr);justify-content:stretch;}
+
+#versusScreen .versus-stage-card{overflow:hidden;border:1px solid var(--gold);border-radius:7px;background:#030712ed;box-shadow:0 5px 20px #0008;}
+#versusScreen #versusStageThumbnail{clip-path:none;border:0;border-radius:0;box-shadow:none;}
+#versusScreen #versusStageState{font-size:clamp(9px,1vw,14px);color:var(--gold);letter-spacing:2px;padding:9px 8px 0;border:0;background:none;}
+#versusScreen #versusStage{border:0;background:none;padding:6px 8px 10px;}
+
+/* Transmission band travels downward; mild luminance drift keeps the LED image alive. */
+#versusScreen .versus-led img{animation:versus-led-signal 2.8s linear infinite;}
+#versusScreen .versus-led-right img{animation-delay:-1.1s;}
+#versusScreen .versus-led::before{content:'';position:absolute;left:0;right:0;top:-28%;height:26%;z-index:1;pointer-events:none;background:linear-gradient(transparent,#ffdc8b20 42%,#fff3d642 50%,#ffdc8b18 58%,transparent);animation:versus-led-scan 2.3s linear infinite;}
+#versusScreen .versus-led-right::before{background:linear-gradient(transparent,#b19aff20 42%,#e9e0ff42 50%,#b19aff18 58%,transparent);animation-delay:-.85s;}
+@keyframes versus-led-scan{from{transform:translateY(0);}to{transform:translateY(500%);}}
+@keyframes versus-led-signal{0%,100%{opacity:.65;}18%{opacity:.72;}20%{opacity:.59;}23%{opacity:.68;}60%{opacity:.65;}63%{opacity:.58;}67%{opacity:.7;}}
+@media(prefers-reduced-motion:reduce){#versusScreen .versus-led img,#versusScreen .versus-led::before{animation:none;}#versusScreen .versus-led::before{display:none;}}
+
+#versusEntrance{position:absolute;inset:0;width:100%;height:100%;z-index:1;pointer-events:none;filter:drop-shadow(0 8px 18px #0008);}

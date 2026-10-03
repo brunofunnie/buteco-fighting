@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import {mkdtempSync,rmSync} from 'node:fs';
 import {tmpdir} from 'node:os';
 import path from 'node:path';
-import {Rankings} from '../ranking.js';
+import {Rankings} from '../src/ranking.js';
 const db=new Rankings(':memory:');const a=db.register('Host'),b=db.register('Guest');
 assert.equal(db.identify(a.token).id,a.id);assert.equal(db.identify('invalid'),null);
 assert.throws(()=>db.register(' '.repeat(4)));

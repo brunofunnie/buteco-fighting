@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import {writeFile,mkdir} from 'node:fs/promises';
-import {FightGame} from '../game.js';
-import {FIGHTERS} from '../roster.js';
+import {FightGame} from '../src/game.js';
+import {FIGHTERS} from '../src/roster.js';
 globalThis.window={addEventListener(){},removeEventListener(){}};
 globalThis.requestAnimationFrame=()=>0;globalThis.cancelAnimationFrame=()=>{};
 const ids=Object.keys(FIGHTERS);

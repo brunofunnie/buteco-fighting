@@ -1,0 +1,14 @@
+import assert from 'node:assert/strict';
+import {ControlSettings,GamepadInput} from '../src/controls.js';
+const values=new Map(),storage={getItem:k=>values.get(k),setItem:(k,v)=>values.set(k,v)};
+const settings=new ControlSettings(storage);
+assert.ok(settings.bindGamepad(0,'punch',1).ok);
+assert.deepEqual(settings.gamepad[0].punch,[1]);assert.deepEqual(settings.gamepad[0].kick,[0]);assert.deepEqual(settings.gamepad[1].punch,[0]);
+assert.deepEqual(new ControlSettings(storage).gamepad,settings.gamepad);
+assert.equal(settings.bindGamepad(0,'punch',99).ok,false);
+let pad={index:0,id:'test pad',mapping:'standard',connected:true,axes:[0,0],buttons:Array.from({length:17},()=>({pressed:false,value:0}))};
+const input=new GamepadInput(()=>[pad],settings);input.poll();pad.buttons[1].pressed=true;
+let frame=input.poll()[0];assert.ok(frame.pressed.has('punch'));assert.ok(frame.menuPressed.has('kick'));assert.ok(frame.pressedButtons.has(1));assert.equal(input.poll()[0].pressedButtons.size,0);
+settings.resetGamepad();assert.deepEqual(settings.gamepad[0].punch,[0]);
+const bad=new ControlSettings({getItem:()=>'{bad'});assert.deepEqual(bad.gamepad[0].punch,[0]);
+console.log('PASS independent P1/P2 remapping, conflict swap, persistence, raw button edges, fixed menu controls and reset');

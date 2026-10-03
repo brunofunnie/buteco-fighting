@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import {chromium} from 'playwright';
-import {fighterIds} from '../roster.js';
+import {fighterIds} from '../src/roster.js';
 
 const browser = await chromium.launch({headless:true,args:['--no-sandbox']});
 const page = await browser.newPage({viewport:{width:1440,height:900}});
@@ -11,7 +11,6 @@ try {
   await page.waitForFunction(() => !document.querySelector('#titleStart').disabled);
   await page.locator('#titleStart').click();
   await page.locator('[data-mode="versus"]').click();
-  await page.locator('#modeNext').click();
   for (const slot of ['player','opponent']) {
     await page.locator(`[data-slot="${slot}"]`).click();
     for (const id of fighterIds) {

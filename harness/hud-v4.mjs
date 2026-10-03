@@ -7,7 +7,7 @@ const checks=[];
 try {
   await page.goto('http://127.0.0.1:3187');
   const result=await page.evaluate(async()=>{
-    const {FightGame}=await import('./game.js');
+    const {FightGame}=await import('./src/game.js');
     const canvas=document.createElement('canvas');canvas.width=1280;canvas.height=720;
     const ctx=canvas.getContext('2d');
     const g=new FightGame(canvas);g.start({mode:'versus'});g.paused=true;

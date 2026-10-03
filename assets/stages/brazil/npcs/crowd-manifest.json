@@ -1,0 +1,162 @@
+{
+  "goth_woman": {
+    "frames": [
+      {
+        "path": "assets/stages/brazil/npcs/goth_woman/curated/frame-0.png",
+        "scale": 0.002840909090909091,
+        "anchorX": 0.48589340279194,
+        "anchorY": 0.9583333333333334,
+        "bodyHeadTopY": 16,
+        "soleY": 368
+      },
+      {
+        "path": "assets/stages/brazil/npcs/goth_woman/curated/frame-1.png",
+        "scale": 0.002840909090909091,
+        "anchorX": 0.46565652764313054,
+        "anchorY": 0.9583333333333334,
+        "bodyHeadTopY": 16,
+        "soleY": 368
+      },
+      {
+        "path": "assets/stages/brazil/npcs/goth_woman/curated/frame-2.png",
+        "scale": 0.0029940119760479044,
+        "anchorX": 0.45941231970360824,
+        "anchorY": 0.9583333333333334,
+        "bodyHeadTopY": 34,
+        "soleY": 368
+      },
+      {
+        "path": "assets/stages/brazil/npcs/goth_woman/curated/frame-3.png",
+        "scale": 0.002840909090909091,
+        "anchorX": 0.4865473022657077,
+        "anchorY": 0.9583333333333334,
+        "bodyHeadTopY": 16,
+        "soleY": 368
+      }
+    ],
+    "fps": 3,
+    "loop": true,
+    "posture": "standing"
+  },
+  "goth_man": {
+    "frames": [
+      {
+        "path": "assets/stages/brazil/npcs/goth_man/curated/frame-0.png",
+        "scale": 0.002840909090909091,
+        "anchorX": 0.4934561132382045,
+        "anchorY": 0.9583333333333334,
+        "bodyHeadTopY": 16,
+        "soleY": 368
+      },
+      {
+        "path": "assets/stages/brazil/npcs/goth_man/curated/frame-1.png",
+        "scale": 0.002840909090909091,
+        "anchorX": 0.5052026709917671,
+        "anchorY": 0.9583333333333334,
+        "bodyHeadTopY": 16,
+        "soleY": 368
+      },
+      {
+        "path": "assets/stages/brazil/npcs/goth_man/curated/frame-2.png",
+        "scale": 0.002840909090909091,
+        "anchorX": 0.5041708043011605,
+        "anchorY": 0.9583333333333334,
+        "bodyHeadTopY": 16,
+        "soleY": 368
+      },
+      {
+        "path": "assets/stages/brazil/npcs/goth_man/curated/frame-3.png",
+        "scale": 0.002840909090909091,
+        "anchorX": 0.4990265342967177,
+        "anchorY": 0.9583333333333334,
+        "bodyHeadTopY": 16,
+        "soleY": 368
+      }
+    ],
+    "fps": 3,
+    "loop": true,
+    "posture": "standing"
+  },
+  "pedestrian": {
+    "frames": [
+      {
+        "path": "assets/stages/brazil/npcs/pedestrian/curated/frame-0.png",
+        "scale": 0.002840909090909091,
+        "anchorX": 0.4943670588128655,
+        "anchorY": 0.9583333333333334,
+        "bodyHeadTopY": 16,
+        "soleY": 368,
+        "contactX": 0.6536458333333334
+      },
+      {
+        "path": "assets/stages/brazil/npcs/pedestrian/curated/frame-1.png",
+        "scale": 0.002840909090909091,
+        "anchorX": 0.47459523025645584,
+        "anchorY": 0.9583333333333334,
+        "bodyHeadTopY": 16,
+        "soleY": 368,
+        "contactX": 0.3567708333333333
+      },
+      {
+        "path": "assets/stages/brazil/npcs/pedestrian/curated/frame-2.png",
+        "scale": 0.002840909090909091,
+        "anchorX": 0.4890529585471451,
+        "anchorY": 0.9583333333333334,
+        "bodyHeadTopY": 16,
+        "soleY": 368,
+        "contactX": 0.48828125
+      },
+      {
+        "path": "assets/stages/brazil/npcs/pedestrian/curated/frame-3.png",
+        "scale": 0.002840909090909091,
+        "anchorX": 0.4826635881309665,
+        "anchorY": 0.9583333333333334,
+        "bodyHeadTopY": 16,
+        "soleY": 368,
+        "contactX": 0.5143229166666666
+      }
+    ],
+    "fps": 3,
+    "loop": true,
+    "posture": "standing"
+  },
+  "seated_adult": {
+    "frames": [
+      {
+        "path": "assets/stages/brazil/npcs/seated_adult/curated/frame-0.png",
+        "scale": 0.003125,
+        "anchorX": 0.4968450482587307,
+        "anchorY": 0.9583333333333334,
+        "bodyHeadTopY": 48,
+        "soleY": 368
+      },
+      {
+        "path": "assets/stages/brazil/npcs/seated_adult/curated/frame-1.png",
+        "scale": 0.003105590062111801,
+        "anchorX": 0.4967392705577551,
+        "anchorY": 0.9583333333333334,
+        "bodyHeadTopY": 46,
+        "soleY": 368
+      },
+      {
+        "path": "assets/stages/brazil/npcs/seated_adult/curated/frame-2.png",
+        "scale": 0.0031446540880503146,
+        "anchorX": 0.49719582217514363,
+        "anchorY": 0.9583333333333334,
+        "bodyHeadTopY": 50,
+        "soleY": 368
+      },
+      {
+        "path": "assets/stages/brazil/npcs/seated_adult/curated/frame-3.png",
+        "scale": 0.003125,
+        "anchorX": 0.49665048951265894,
+        "anchorY": 0.9583333333333334,
+        "bodyHeadTopY": 48,
+        "soleY": 368
+      }
+    ],
+    "fps": 3,
+    "loop": true,
+    "posture": "seated"
+  }
+}

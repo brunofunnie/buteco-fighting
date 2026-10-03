@@ -1,0 +1,30 @@
+{
+  "provider": "elevenlabs",
+  "model": "music_v2_5",
+  "state": "São Paulo",
+  "bpm": 160,
+  "key": "E minor with E Dorian color",
+  "sections": [
+    {
+      "name": "City riff",
+      "seconds": 24
+    },
+    {
+      "name": "Avenue chorus",
+      "seconds": 24
+    },
+    {
+      "name": "Night bridge",
+      "seconds": 24
+    },
+    {
+      "name": "Final guitar lead",
+      "seconds": 24
+    }
+  ],
+  "originalDurationSeconds": 96.02401360544218,
+  "runtimeDurationSeconds": 94.52401360544218,
+  "crossfadeSeconds": 1.5,
+  "path": "assets/audio/stages/sao-paulo/theme.mp3",
+  "peak": 0.89
+}

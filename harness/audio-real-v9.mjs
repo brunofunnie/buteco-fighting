@@ -3,7 +3,7 @@ import {chromium} from 'playwright';
 import {writeFile,readFile} from 'node:fs/promises';
 import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
-import {fighterIds} from '../roster.js';
+import {fighterIds} from '../src/roster.js';
 const keys=['theme-menu','theme-fight','impact','block','jump','select','confirm','ko',...fighterIds.flatMap(id=>['attack','special','super'].map(action=>`${id}-${action}`))];
 const manifest=JSON.parse(await readFile('assets/audio/v9/manifest.json','utf8'));
 assert.equal(Object.keys(manifest).length,keys.length);
@@ -12,7 +12,7 @@ const browser=await chromium.launch({headless:true,args:['--no-sandbox']});const
 try{
  await page.goto('http://localhost:3187');await page.waitForFunction(()=>!document.querySelector('#titleStart').disabled);await page.locator('#titleStart').click();
  const checks=await page.evaluate(async({keys,ids})=>{
-  const {audioDirector:a}=await import('/audio.js');await a.unlock();await Promise.all(keys.map(key=>a.load(key)));
+  const {audioDirector:a}=await import('/src/audio.js');await a.unlock();await Promise.all(keys.map(key=>a.load(key)));
   const checks=[];const check=(name,pass)=>checks.push({name,pass:!!pass});
   check('all real ElevenLabs files decoded',keys.every(key=>a.buffers.get(key)?.duration>.15));
   check('both full music themes decoded',a.buffers.get('theme-menu').duration>30&&a.buffers.get('theme-fight').duration>30);
@@ -28,7 +28,7 @@ try{
   a.setScene('pause');for(const voice of a.voices)voice.stop();return checks;
  },{keys,ids:fighterIds});
  await page.evaluate(async()=>{
-  const {audioDirector:a}=await import('/audio.js');window.__audioPlayed=[];const play=a.play.bind(a);a.play=(key,options)=>{const result=play(key,options);if(result)window.__audioPlayed.push(key);return result;};
+  const {audioDirector:a}=await import('/src/audio.js');window.__audioPlayed=[];const play=a.play.bind(a);a.play=(key,options)=>{const result=play(key,options);if(result)window.__audioPlayed.push(key);return result;};
   window.__ui.start({player:'maya',opponent:'bruno',mode:'versus',stage:0});window.__fight.debugForce({phase:'fight',energy:100,cpu:false});
  });
  await page.keyboard.press('j');await page.waitForTimeout(650);await page.keyboard.press('u');await page.waitForTimeout(1100);await page.evaluate(()=>window.__fight.debugForce({energy:100}));await page.keyboard.press('i');await page.waitForTimeout(1100);

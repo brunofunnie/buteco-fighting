@@ -15,19 +15,18 @@ try {
   assert.equal(await page.locator('[data-title-player="miranda"]').evaluate(el=>getComputedStyle(el).scale),'0.9');
   await page.evaluate(()=>window.__pads=[0,1].map(index=>({index,id:`Test controller ${index}`,connected:true,mapping:'standard',axes:[0,0],buttons:Array.from({length:17},()=>({pressed:false,value:0}))})));
   await tick();await tap(0,0);assert.equal(await page.evaluate(()=>window.__ui.screen),'mode');
-  const difficulty=await page.locator('#difficulty').inputValue();await tap(0,3);assert.notEqual(await page.locator('#difficulty').inputValue(),difficulty);
-  await tap(0,2);assert.ok(await page.locator('#controlsDialog').isVisible());
+  await tap(0,3);
+  await tap(0,2);assert.ok(await page.locator('#controlsDialog').isVisible());await page.locator('[data-options-tab=controls]').click();
   await bind(0,'punch','f');assert.match(await page.locator('#bindingStatus').textContent(),/salva/);
   await bind(0,'kick','f');assert.match(await page.locator('#bindingStatus').textContent(),/já usada/);
   await page.keyboard.press('Escape');assert.ok(await page.locator('#controlsDialog').isVisible());
   await bind(0,'right','h');await bind(0,'jump','t');
   await page.locator('#closeControls').click();await page.reload();
   await page.waitForFunction(()=>!document.querySelector('#titleStart').disabled);
-  await page.locator('#titleStart').click();await page.locator('#controlsButton').click();
+  await page.locator('#titleStart').click();await page.locator('#controlsButton').click();await page.locator('[data-options-tab=controls]').click();
   assert.equal(await page.locator('[data-bind-player="0"][data-bind-action="punch"] kbd').textContent(),'F');
-  await page.locator('#closeControls').click();await page.locator('[data-mode="versus"]').click();
-  await page.locator('#modeNext').click();await page.locator('#fighterNext').click();
-  for(const [index,path] of ['v8/sao-paulo','v8/rio','recife','v8/manaus'].entries()){
+  await page.locator('#closeControls').click();await page.locator('[data-mode="versus"]').click();await page.locator('#fighterNext').click();
+  for(const [index,path] of ['brazil/sao-paulo','brazil/rio','brazil/recife','brazil/manaus'].entries()){
     await page.locator(`[data-stage="${index}"]`).click();
     const style=await page.locator('#stageScreen').evaluate(el=>({image:getComputedStyle(el,'::before').backgroundImage,blur:getComputedStyle(el,'::before').filter}));
     assert.ok(style.image.includes(path));assert.match(style.blur,/blur\(12px\)/);
@@ -59,12 +58,12 @@ try {
   await reset();await button(0,13,true);await button(0,4,true);assert.equal((await step()).fighters[0].state,'lowBlock');assert.equal((await step()).fighters[0].guard,true);await button(0,13,false);await button(0,4,false);
   await button(0,9,true);await step();assert.equal(await page.evaluate(()=>window.__fight.paused),true);await button(0,9,false);await tap(0,9);assert.equal(await page.evaluate(()=>window.__fight.paused),false);
   await reset();await button(0,15,true);await step();await page.evaluate(()=>window.__pads[0]=null);await step();assert.equal(await page.evaluate(()=>{const g=window.__fight;return g.getInput(g.fighters[0],g.fighters[1],0,1/120).move;}),0);
-  await page.evaluate(()=>window.__ui.backToMenu());await page.locator('#controlsButton').click();await page.locator('#resetBindings').click();assert.equal(await page.locator('[data-bind-player="0"][data-bind-action="punch"] kbd').textContent(),'J');
+  await page.evaluate(()=>window.__ui.backToMenu());await page.locator('#controlsButton').click();await page.locator('[data-options-tab=controls]').click();await page.locator('#resetBindings').click();assert.equal(await page.locator('[data-bind-player="0"][data-bind-action="punch"] kbd').textContent(),'J');
   await page.screenshot({path:'/tmp/buteco-controls/options.png'});
-  await page.locator('#closeControls').click();await page.locator('#modeNext').click();await page.locator('#fighterNext').click();
+  await page.locator('#closeControls').click();await page.locator('#modeScreen .mode-option.active').click();await page.locator('#fighterNext').click();
   for (const [width,height] of [[390,844],[844,390]]) {
     await page.setViewportSize({width,height});
-    await page.locator('[data-stage="1"]').click();await page.locator('#controlsButton').click();
+    await page.locator('[data-stage="1"]').click();await page.locator('#controlsButton').click();await page.locator('[data-options-tab=controls]').click();
     assert.ok(await page.locator('#controlsDialog').isVisible());await page.keyboard.press('Escape');
     assert.ok(await page.locator('#startButton').isVisible());
     await page.screenshot({path:`/tmp/buteco-controls/stage-${width}.png`});

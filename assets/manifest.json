@@ -26354,7 +26354,7 @@
         },
         {
           "path": "assets/sprites/ghostly/curated/ko-frame-3.png",
-          "scale": 1.609756,
+          "scale": 1.0,
           "anchorX": 0.47284070318065563,
           "anchorY": 0.9583333333333334
         }
@@ -40966,6 +40966,782 @@
         }
       ],
       "fps": 12,
+      "loop": false
+    }
+  },
+  "devon": {
+    "idle": {
+      "frames": [
+        {
+          "path": "assets/sprites/devon/curated/idle-frame-0.png",
+          "scale": 1.0,
+          "anchorX": 0.5066638718271407,
+          "anchorY": 0.9583333333333334
+        },
+        {
+          "path": "assets/sprites/devon/curated/idle-frame-1.png",
+          "scale": 1.00919,
+          "anchorX": 0.511581748441463,
+          "anchorY": 0.9583333333333334
+        },
+        {
+          "path": "assets/sprites/devon/curated/idle-frame-2.png",
+          "scale": 1.01531,
+          "anchorX": 0.5130536628901987,
+          "anchorY": 0.9583333333333334
+        },
+        {
+          "path": "assets/sprites/devon/curated/idle-frame-3.png",
+          "scale": 0.99694,
+          "anchorX": 0.5122774380156435,
+          "anchorY": 0.9583333333333334
+        }
+      ],
+      "fps": 6,
+      "loop": true
+    },
+    "punch": {
+      "frames": [
+        {
+          "path": "assets/sprites/devon/curated/punch-frame-0.png",
+          "scale": 1.0,
+          "anchorX": 0.5034700474664393,
+          "anchorY": 0.9583333333333334
+        },
+        {
+          "path": "assets/sprites/devon/curated/punch-frame-1.png",
+          "scale": 0.99542,
+          "anchorX": 0.5052548898086704,
+          "anchorY": 0.9583333333333334
+        },
+        {
+          "path": "assets/sprites/devon/curated/punch-frame-2.png",
+          "scale": 1.02537,
+          "anchorX": 0.41955984880464836,
+          "anchorY": 0.9583333333333334
+        },
+        {
+          "path": "assets/sprites/devon/curated/punch-frame-3.png",
+          "scale": 1.0,
+          "anchorX": 0.5048797290412885,
+          "anchorY": 0.9583333333333334
+        }
+      ],
+      "fps": 12,
+      "loop": false
+    },
+    "kick": {
+      "frames": [
+        {
+          "path": "assets/sprites/devon/curated/kick-frame-0.png",
+          "scale": 1.0,
+          "anchorX": 0.4840891633570235,
+          "anchorY": 0.9583333333333334
+        },
+        {
+          "path": "assets/sprites/devon/curated/kick-frame-1.png",
+          "scale": 1.02572,
+          "anchorX": 0.4705812208796137,
+          "anchorY": 0.9583333333333334
+        },
+        {
+          "path": "assets/sprites/devon/curated/kick-frame-2.png",
+          "scale": 1.05044,
+          "anchorX": 0.3258048041961478,
+          "anchorY": 0.9583333333333334
+        },
+        {
+          "path": "assets/sprites/devon/curated/kick-frame-3.png",
+          "scale": 1.01059,
+          "anchorX": 0.4793177697639792,
+          "anchorY": 0.9583333333333334
+        }
+      ],
+      "fps": 10,
+      "loop": false
+    },
+    "hurt": {
+      "frames": [
+        {
+          "path": "assets/sprites/devon/curated/hurt-frame-0.png",
+          "scale": 1.0,
+          "anchorX": 0.5010938317370464,
+          "anchorY": 0.9583333333333334
+        },
+        {
+          "path": "assets/sprites/devon/curated/hurt-frame-1.png",
+          "scale": 0.93304,
+          "anchorX": 0.5266252324167581,
+          "anchorY": 0.9583333333333334
+        },
+        {
+          "path": "assets/sprites/devon/curated/hurt-frame-2.png",
+          "scale": 0.9375,
+          "anchorX": 0.5330828797361292,
+          "anchorY": 0.9583333333333334
+        },
+        {
+          "path": "assets/sprites/devon/curated/hurt-frame-3.png",
+          "scale": 0.99702,
+          "anchorX": 0.5156844237874769,
+          "anchorY": 0.9583333333333334
+        }
+      ],
+      "fps": 10,
+      "loop": false
+    },
+    "jump": {
+      "frames": [
+        {
+          "path": "assets/sprites/devon/curated/jump-frame-0.png",
+          "scale": 0.91846,
+          "anchorX": 0.46506054408418335,
+          "anchorY": 0.9583333333333334
+        },
+        {
+          "path": "assets/sprites/devon/curated/jump-frame-1.png",
+          "scale": 1.07877,
+          "anchorX": 0.32919964076809216,
+          "anchorY": 0.9583333333333334
+        },
+        {
+          "path": "assets/sprites/devon/curated/jump-frame-2.png",
+          "scale": 0.95595,
+          "anchorX": 0.4901666245186828,
+          "anchorY": 0.9583333333333334
+        },
+        {
+          "path": "assets/sprites/devon/curated/jump-frame-3.png",
+          "scale": 0.89936,
+          "anchorX": 0.500795528313856,
+          "anchorY": 0.9583333333333334
+        }
+      ],
+      "fps": 8,
+      "loop": false
+    },
+    "special": {
+      "frames": [
+        {
+          "path": "assets/sprites/devon/curated/special-frame-0.png",
+          "scale": 1.0,
+          "anchorX": 0.5062682720311288,
+          "anchorY": 0.9583333333333334
+        },
+        {
+          "path": "assets/sprites/devon/curated/special-frame-1.png",
+          "scale": 0.98973,
+          "anchorX": 0.5248178131358704,
+          "anchorY": 0.9583333333333334
+        },
+        {
+          "path": "assets/sprites/devon/curated/special-frame-2.png",
+          "scale": 1.16599,
+          "anchorX": 0.4404888414534745,
+          "anchorY": 0.9583333333333334
+        },
+        {
+          "path": "assets/sprites/devon/curated/special-frame-3.png",
+          "scale": 1.0,
+          "anchorX": 0.5130002501662408,
+          "anchorY": 0.9583333333333334
+        }
+      ],
+      "fps": 10,
+      "loop": false
+    },
+    "walk": {
+      "frames": [
+        {
+          "path": "assets/sprites/devon/curated/walk-frame-0.png",
+          "scale": 1.0,
+          "anchorX": 0.4950943210297236,
+          "anchorY": 0.9583333333333334
+        },
+        {
+          "path": "assets/sprites/devon/curated/walk-frame-1.png",
+          "scale": 1.00549,
+          "anchorX": 0.510755576178932,
+          "anchorY": 0.9583333333333334
+        },
+        {
+          "path": "assets/sprites/devon/curated/walk-frame-2.png",
+          "scale": 1.0,
+          "anchorX": 0.5323718694613068,
+          "anchorY": 0.9583333333333334
+        },
+        {
+          "path": "assets/sprites/devon/curated/walk-frame-3.png",
+          "scale": 1.0,
+          "anchorX": 0.5274646680212272,
+          "anchorY": 0.9583333333333334
+        },
+        {
+          "path": "assets/sprites/devon/curated/walk-frame-4.png",
+          "scale": 1.00183,
+          "anchorX": 0.49991199922678226,
+          "anchorY": 0.9583333333333334
+        },
+        {
+          "path": "assets/sprites/devon/curated/walk-frame-5.png",
+          "scale": 1.0,
+          "anchorX": 0.501157608275089,
+          "anchorY": 0.9583333333333334
+        }
+      ],
+      "fps": 12,
+      "loop": true
+    },
+    "block": {
+      "frames": [
+        {
+          "path": "assets/sprites/devon/curated/block-frame-0.png",
+          "scale": 1.0,
+          "anchorX": 0.49508639558619466,
+          "anchorY": 0.9583333333333334
+        },
+        {
+          "path": "assets/sprites/devon/curated/block-frame-1.png",
+          "scale": 1.00147,
+          "anchorX": 0.5142159567467592,
+          "anchorY": 0.9583333333333334
+        },
+        {
+          "path": "assets/sprites/devon/curated/block-frame-2.png",
+          "scale": 0.97496,
+          "anchorX": 0.5165196240958542,
+          "anchorY": 0.9583333333333334
+        },
+        {
+          "path": "assets/sprites/devon/curated/block-frame-3.png",
+          "scale": 0.96907,
+          "anchorX": 0.5116853913651146,
+          "anchorY": 0.9583333333333334
+        }
+      ],
+      "fps": 8,
+      "loop": false
+    },
+    "crouch": {
+      "frames": [
+        {
+          "path": "assets/sprites/devon/curated/crouch-frame-0.png",
+          "scale": 1.0,
+          "anchorX": 0.472204412389988,
+          "anchorY": 0.9583333333333334
+        },
+        {
+          "path": "assets/sprites/devon/curated/crouch-frame-1.png",
+          "scale": 0.8869,
+          "anchorX": 0.5031135621278848,
+          "anchorY": 0.9583333333333334
+        },
+        {
+          "path": "assets/sprites/devon/curated/crouch-frame-2.png",
+          "scale": 0.7247,
+          "anchorX": 0.4858388086789099,
+          "anchorY": 0.9583333333333334
+        },
+        {
+          "path": "assets/sprites/devon/curated/crouch-frame-3.png",
+          "scale": 0.8244,
+          "anchorX": 0.49578531645490753,
+          "anchorY": 0.9583333333333334
+        }
+      ],
+      "fps": 8,
+      "loop": false
+    },
+    "ko": {
+      "frames": [
+        {
+          "path": "assets/sprites/devon/curated/ko-frame-0.png",
+          "scale": 1.02373,
+          "anchorX": 0.5367463822265963,
+          "anchorY": 0.9583333333333334
+        },
+        {
+          "path": "assets/sprites/devon/curated/ko-frame-1.png",
+          "scale": 0.96264,
+          "anchorX": 0.5638773026626285,
+          "anchorY": 0.9583333333333334
+        },
+        {
+          "path": "assets/sprites/devon/curated/ko-frame-2.png",
+          "scale": 0.95321,
+          "anchorX": 0.48006095535058596,
+          "anchorY": 0.9583333333333334
+        },
+        {
+          "path": "assets/sprites/devon/curated/ko-frame-3.png",
+          "scale": 1.04059,
+          "anchorX": 0.4925606014343653,
+          "anchorY": 0.9583333333333334
+        }
+      ],
+      "fps": 8,
+      "loop": false
+    },
+    "celebrate": {
+      "frames": [
+        {
+          "path": "assets/sprites/devon/curated/celebrate-frame-0.png",
+          "scale": 1.0,
+          "anchorX": 0.5071371937439443,
+          "anchorY": 0.9583333333333334
+        },
+        {
+          "path": "assets/sprites/devon/curated/celebrate-frame-1.png",
+          "scale": 1.04655,
+          "anchorX": 0.5186567751457548,
+          "anchorY": 0.9583333333333334
+        },
+        {
+          "path": "assets/sprites/devon/curated/celebrate-frame-2.png",
+          "scale": 1.1236,
+          "anchorX": 0.5262226155155499,
+          "anchorY": 0.9583333333333334
+        },
+        {
+          "path": "assets/sprites/devon/curated/celebrate-frame-3.png",
+          "scale": 1.12039,
+          "anchorX": 0.5264714399055876,
+          "anchorY": 0.9583333333333334
+        }
+      ],
+      "fps": 6,
+      "loop": false
+    },
+    "airPunch": {
+      "frames": [
+        {
+          "path": "assets/sprites/devon/curated/airPunch-frame-0.png",
+          "scale": 0.86301,
+          "anchorX": 0.27699131548251166,
+          "anchorY": 0.9583333333333334
+        },
+        {
+          "path": "assets/sprites/devon/curated/airPunch-frame-1.png",
+          "scale": 0.852,
+          "anchorX": 0.3170012799741982,
+          "anchorY": 0.9583333333333334
+        },
+        {
+          "path": "assets/sprites/devon/curated/airPunch-frame-2.png",
+          "scale": 0.9474,
+          "anchorX": 0.2365868620845223,
+          "anchorY": 0.9583333333333334
+        },
+        {
+          "path": "assets/sprites/devon/curated/airPunch-frame-3.png",
+          "scale": 0.84099,
+          "anchorX": 0.5018532460690052,
+          "anchorY": 0.9583333333333334
+        }
+      ],
+      "fps": 12,
+      "loop": false
+    },
+    "airKick": {
+      "frames": [
+        {
+          "path": "assets/sprites/devon/curated/airKick-frame-0.png",
+          "scale": 0.88219,
+          "anchorX": 0.5567381026760262,
+          "anchorY": 0.9583333333333334
+        },
+        {
+          "path": "assets/sprites/devon/curated/airKick-frame-1.png",
+          "scale": 1.03267,
+          "anchorX": 0.39362345584985087,
+          "anchorY": 0.9583333333333334
+        },
+        {
+          "path": "assets/sprites/devon/curated/airKick-frame-2.png",
+          "scale": 1.13725,
+          "anchorX": 0.3006430848074205,
+          "anchorY": 0.9583333333333334
+        },
+        {
+          "path": "assets/sprites/devon/curated/airKick-frame-3.png",
+          "scale": 0.93669,
+          "anchorX": 0.4866037579571125,
+          "anchorY": 0.9583333333333334
+        }
+      ],
+      "fps": 12,
+      "loop": false
+    },
+    "crouchPunch": {
+      "frames": [
+        {
+          "path": "assets/sprites/devon/curated/crouchPunch-frame-0.png",
+          "scale": 0.78082,
+          "anchorX": 0.5032138778775065,
+          "anchorY": 0.9583333333333334
+        },
+        {
+          "path": "assets/sprites/devon/curated/crouchPunch-frame-1.png",
+          "scale": 0.83859,
+          "anchorX": 0.5234632821538598,
+          "anchorY": 0.9583333333333334
+        },
+        {
+          "path": "assets/sprites/devon/curated/crouchPunch-frame-2.png",
+          "scale": 0.95119,
+          "anchorX": 0.5221184494437109,
+          "anchorY": 0.9583333333333334
+        },
+        {
+          "path": "assets/sprites/devon/curated/crouchPunch-frame-3.png",
+          "scale": 0.78231,
+          "anchorX": 0.5022869729864117,
+          "anchorY": 0.9583333333333334
+        }
+      ],
+      "fps": 12,
+      "loop": false
+    },
+    "crouchKick": {
+      "frames": [
+        {
+          "path": "assets/sprites/devon/curated/crouchKick-frame-0.png",
+          "scale": 0.78082,
+          "anchorX": 0.503141602166647,
+          "anchorY": 0.9583333333333334
+        },
+        {
+          "path": "assets/sprites/devon/curated/crouchKick-frame-1.png",
+          "scale": 0.81032,
+          "anchorX": 0.4653840061478571,
+          "anchorY": 0.9583333333333334
+        },
+        {
+          "path": "assets/sprites/devon/curated/crouchKick-frame-2.png",
+          "scale": 1.04437,
+          "anchorX": 0.5077662456889671,
+          "anchorY": 0.9583333333333334
+        },
+        {
+          "path": "assets/sprites/devon/curated/crouchKick-frame-3.png",
+          "scale": 0.78082,
+          "anchorX": 0.510284845655496,
+          "anchorY": 0.9583333333333334
+        }
+      ],
+      "fps": 10,
+      "loop": false
+    },
+    "uppercut": {
+      "frames": [
+        {
+          "path": "assets/sprites/devon/curated/uppercut-frame-0.png",
+          "scale": 0.80597,
+          "anchorX": 0.5258979053952738,
+          "anchorY": 0.9583333333333334
+        },
+        {
+          "path": "assets/sprites/devon/curated/uppercut-frame-1.png",
+          "scale": 0.81818,
+          "anchorX": 0.521834539098981,
+          "anchorY": 0.9583333333333334
+        },
+        {
+          "path": "assets/sprites/devon/curated/uppercut-frame-2.png",
+          "scale": 1.0,
+          "anchorX": 0.4543651686171053,
+          "anchorY": 0.9583333333333334
+        },
+        {
+          "path": "assets/sprites/devon/curated/uppercut-frame-3.png",
+          "scale": 0.87097,
+          "anchorX": 0.5208951090631867,
+          "anchorY": 0.9583333333333334
+        }
+      ],
+      "fps": 12,
+      "loop": false
+    },
+    "sweep": {
+      "frames": [
+        {
+          "path": "assets/sprites/devon/curated/sweep-frame-0.png",
+          "scale": 0.84914,
+          "anchorX": 0.5138805369559943,
+          "anchorY": 0.9583333333333334
+        },
+        {
+          "path": "assets/sprites/devon/curated/sweep-frame-1.png",
+          "scale": 0.86344,
+          "anchorX": 0.510302525630298,
+          "anchorY": 0.9583333333333334
+        },
+        {
+          "path": "assets/sprites/devon/curated/sweep-frame-2.png",
+          "scale": 1.19967,
+          "anchorX": 0.5239739609055598,
+          "anchorY": 0.9583333333333334
+        },
+        {
+          "path": "assets/sprites/devon/curated/sweep-frame-3.png",
+          "scale": 0.84968,
+          "anchorX": 0.49020707569901795,
+          "anchorY": 0.9583333333333334
+        }
+      ],
+      "fps": 10,
+      "loop": false
+    },
+    "dash": {
+      "frames": [
+        {
+          "path": "assets/sprites/devon/curated/dash-frame-0.png",
+          "scale": 0.91781,
+          "anchorX": 0.5071167250171686,
+          "anchorY": 0.9583333333333334
+        },
+        {
+          "path": "assets/sprites/devon/curated/dash-frame-1.png",
+          "scale": 0.9413,
+          "anchorX": 0.4861522020187874,
+          "anchorY": 0.9583333333333334
+        },
+        {
+          "path": "assets/sprites/devon/curated/dash-frame-2.png",
+          "scale": 0.95075,
+          "anchorX": 0.5923019911531882,
+          "anchorY": 0.9583333333333334
+        },
+        {
+          "path": "assets/sprites/devon/curated/dash-frame-3.png",
+          "scale": 0.91781,
+          "anchorX": 0.5048828623789611,
+          "anchorY": 0.9583333333333334
+        }
+      ],
+      "fps": 12,
+      "loop": false
+    },
+    "backwalk": {
+      "frames": [
+        {
+          "path": "assets/sprites/devon/curated/backwalk-frame-0.png",
+          "scale": 1.0,
+          "anchorX": 0.5042013708357006,
+          "anchorY": 0.9583333333333334
+        },
+        {
+          "path": "assets/sprites/devon/curated/backwalk-frame-1.png",
+          "scale": 1.00178,
+          "anchorX": 0.5299662005606244,
+          "anchorY": 0.9583333333333334
+        },
+        {
+          "path": "assets/sprites/devon/curated/backwalk-frame-2.png",
+          "scale": 0.99467,
+          "anchorX": 0.5133722222210673,
+          "anchorY": 0.9583333333333334
+        },
+        {
+          "path": "assets/sprites/devon/curated/backwalk-frame-3.png",
+          "scale": 0.99645,
+          "anchorX": 0.4996443172909286,
+          "anchorY": 0.9583333333333334
+        },
+        {
+          "path": "assets/sprites/devon/curated/backwalk-frame-4.png",
+          "scale": 0.99822,
+          "anchorX": 0.5162996582876325,
+          "anchorY": 0.9583333333333334
+        },
+        {
+          "path": "assets/sprites/devon/curated/backwalk-frame-5.png",
+          "scale": 0.99822,
+          "anchorX": 0.5003298932476499,
+          "anchorY": 0.9583333333333334
+        }
+      ],
+      "fps": 12,
+      "loop": true
+    },
+    "lowBlock": {
+      "frames": [
+        {
+          "path": "assets/sprites/devon/curated/lowBlock-frame-0.png",
+          "scale": 0.78082,
+          "anchorX": 0.5127158045245489,
+          "anchorY": 0.9583333333333334
+        },
+        {
+          "path": "assets/sprites/devon/curated/lowBlock-frame-1.png",
+          "scale": 0.7918,
+          "anchorX": 0.5105028269056499,
+          "anchorY": 0.9583333333333334
+        },
+        {
+          "path": "assets/sprites/devon/curated/lowBlock-frame-2.png",
+          "scale": 0.78082,
+          "anchorX": 0.49445349801375377,
+          "anchorY": 0.9583333333333334
+        },
+        {
+          "path": "assets/sprites/devon/curated/lowBlock-frame-3.png",
+          "scale": 0.76984,
+          "anchorX": 0.5110429579209047,
+          "anchorY": 0.9583333333333334
+        }
+      ],
+      "fps": 8,
+      "loop": false
+    },
+    "turn": {
+      "frames": [
+        {
+          "path": "assets/sprites/devon/curated/turn-frame-0.png",
+          "scale": 1.0,
+          "anchorX": 0.5042358149412965,
+          "anchorY": 0.9583333333333334
+        },
+        {
+          "path": "assets/sprites/devon/curated/turn-frame-1.png",
+          "scale": 1.01194,
+          "anchorX": 0.5211769196595994,
+          "anchorY": 0.9583333333333334
+        },
+        {
+          "path": "assets/sprites/devon/curated/turn-frame-2.png",
+          "scale": 1.00746,
+          "anchorX": 0.5037764362492124,
+          "anchorY": 0.9583333333333334
+        },
+        {
+          "path": "assets/sprites/devon/curated/turn-frame-3.png",
+          "scale": 1.0,
+          "anchorX": 0.49158837340101397,
+          "anchorY": 0.9583333333333334
+        }
+      ],
+      "fps": 12,
+      "loop": false
+    },
+    "land": {
+      "frames": [
+        {
+          "path": "assets/sprites/devon/curated/land-frame-0.png",
+          "scale": 0.78496,
+          "anchorX": 0.5169884409196303,
+          "anchorY": 0.9583333333333334
+        },
+        {
+          "path": "assets/sprites/devon/curated/land-frame-1.png",
+          "scale": 0.97539,
+          "anchorX": 0.4896616438761278,
+          "anchorY": 0.9583333333333334
+        },
+        {
+          "path": "assets/sprites/devon/curated/land-frame-2.png",
+          "scale": 1.10382,
+          "anchorX": 0.4913797525512282,
+          "anchorY": 0.9583333333333334
+        },
+        {
+          "path": "assets/sprites/devon/curated/land-frame-3.png",
+          "scale": 1.1854,
+          "anchorX": 0.5212516185669551,
+          "anchorY": 0.9583333333333334
+        }
+      ],
+      "fps": 12,
+      "loop": false
+    },
+    "jumpForward": {
+      "frames": [
+        {
+          "path": "assets/sprites/devon/curated/jumpForward-frame-0.png",
+          "scale": 0.90635,
+          "anchorX": 0.4398603314958475,
+          "anchorY": 0.9583333333333334
+        },
+        {
+          "path": "assets/sprites/devon/curated/jumpForward-frame-1.png",
+          "scale": 1.13704,
+          "anchorX": 0.26410904431253834,
+          "anchorY": 0.9583333333333334
+        },
+        {
+          "path": "assets/sprites/devon/curated/jumpForward-frame-2.png",
+          "scale": 0.91697,
+          "anchorX": 0.5280249986495926,
+          "anchorY": 0.9583333333333334
+        },
+        {
+          "path": "assets/sprites/devon/curated/jumpForward-frame-3.png",
+          "scale": 1.10537,
+          "anchorX": 0.7164575751996685,
+          "anchorY": 0.9583333333333334
+        }
+      ],
+      "fps": 10,
+      "loop": false
+    },
+    "super": {
+      "frames": [
+        {
+          "path": "assets/sprites/devon/curated/super-frame-0.png",
+          "scale": 1.0,
+          "anchorX": 0.4974225709014402,
+          "anchorY": 0.9583333333333334
+        },
+        {
+          "path": "assets/sprites/devon/curated/super-frame-1.png",
+          "scale": 1.00156,
+          "anchorX": 0.5048468215218921,
+          "anchorY": 0.9583333333333334
+        },
+        {
+          "path": "assets/sprites/devon/curated/super-frame-2.png",
+          "scale": 0.99378,
+          "anchorX": 0.4792429901523147,
+          "anchorY": 0.9583333333333334
+        },
+        {
+          "path": "assets/sprites/devon/curated/super-frame-3.png",
+          "scale": 0.99844,
+          "anchorX": 0.4955530556760046,
+          "anchorY": 0.9583333333333334
+        }
+      ],
+      "fps": 12,
+      "loop": false
+    },
+    "slide": {
+      "frames": [
+        {
+          "path": "assets/sprites/devon/curated/slide-frame-0.png",
+          "scale": 1.0,
+          "anchorX": 0.5114826969211302,
+          "anchorY": 0.9583333333333334
+        },
+        {
+          "path": "assets/sprites/devon/curated/slide-frame-1.png",
+          "scale": 0.96266,
+          "anchorX": 0.5107534312484096,
+          "anchorY": 0.9583333333333334
+        },
+        {
+          "path": "assets/sprites/devon/curated/slide-frame-2.png",
+          "scale": 1.05032,
+          "anchorX": 0.5318975408563001,
+          "anchorY": 0.9583333333333334
+        },
+        {
+          "path": "assets/sprites/devon/curated/slide-frame-3.png",
+          "scale": 1.0,
+          "anchorX": 0.5196425674715296,
+          "anchorY": 0.9583333333333334
+        }
+      ],
+      "fps": 6,
       "loop": false
     }
   }

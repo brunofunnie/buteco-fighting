@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
 import {readFile,readdir} from 'node:fs/promises';
-import {FIGHTERS} from '../roster.js';
+import {FIGHTERS} from '../src/roster.js';
 
 // Missing import or a stale Maya image must fail at the game's asset boundary.
 const hash=async path=>createHash('sha256').update(await readFile(path)).digest('hex');

@@ -1,0 +1,131 @@
+{
+  "ok": true,
+  "engine": "component-row",
+  "engine_revision": "4c9db55ba735",
+  "extract_args": {},
+  "run_dir": "/home/bruno/projects/funnietech/ai-tests/games/fighting-game-codex-gauntlet-loop/assets/stages/brazil/npcs/pedestrian",
+  "cell": {
+    "shape": "square",
+    "width": 384,
+    "height": 384,
+    "safe_margin_x": 16,
+    "safe_margin_y": 16,
+    "size": 384,
+    "safe_margin": 16
+  },
+  "chroma_key": {
+    "name": "cyan",
+    "hex": "#00FFFF",
+    "rgb": [
+      0,
+      255,
+      255
+    ],
+    "selection": "auto",
+    "score": 250.33,
+    "min_subject_distance": 241.66,
+    "background": {
+      "mode": "transparent",
+      "opaque_border_fraction": 0.0,
+      "subject_pixels": 9758
+    },
+    "candidates": [
+      {
+        "name": "magenta",
+        "hex": "#FF00FF",
+        "score": 217.74,
+        "min_subject_distance": 214.39,
+        "clears_erase_radius": true
+      },
+      {
+        "name": "green",
+        "hex": "#00FF00",
+        "score": 207.83,
+        "min_subject_distance": 205.4,
+        "clears_erase_radius": true
+      },
+      {
+        "name": "cyan",
+        "hex": "#00FFFF",
+        "score": 250.33,
+        "min_subject_distance": 241.66,
+        "clears_erase_radius": true
+      },
+      {
+        "name": "blue",
+        "hex": "#004DFF",
+        "score": 222.55,
+        "min_subject_distance": 212.4,
+        "clears_erase_radius": true
+      }
+    ],
+    "selection_reason": "highest 1st-percentile subject distance among the 4 candidate(s) clearing the 96 erase radius"
+  },
+  "rows": [
+    {
+      "state": "motion",
+      "frames": 4,
+      "method": "components",
+      "files": [
+        "frames/motion/frame-0.png",
+        "frames/motion/frame-1.png",
+        "frames/motion/frame-2.png",
+        "frames/motion/frame-3.png"
+      ],
+      "frame_records": [
+        {
+          "index": 0,
+          "nontransparent_pixels": 30447,
+          "bbox": [
+            85,
+            16,
+            298,
+            368
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 1,
+          "nontransparent_pixels": 27149,
+          "bbox": [
+            97,
+            16,
+            286,
+            368
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 2,
+          "nontransparent_pixels": 30321,
+          "bbox": [
+            86,
+            16,
+            298,
+            368
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 3,
+          "nontransparent_pixels": 26893,
+          "bbox": [
+            98,
+            16,
+            285,
+            368
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        }
+      ],
+      "ok": true,
+      "engine_revision": "4c9db55ba735"
+    }
+  ],
+  "errors": [],
+  "warnings": []
+}

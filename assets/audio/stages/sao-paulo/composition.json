@@ -1,0 +1,147 @@
+{
+  "model_id": "music_v2_5",
+  "composition_plan": {
+    "chunks": [
+      {
+        "text": "[City riff]\n{Instrumental. Driving urban guitar riff with tight drums and electric piano stabs. Distinctive bass groove and energetic opening, no intro silence.}",
+        "duration_ms": 24000,
+        "positive_styles": [
+          "instrumental energetic rock pop fighting game soundtrack",
+          "original composition",
+          "real sounding distorted electric guitars",
+          "energetic live sounding rock drum kit",
+          "electric bass",
+          "clear catchy melodic hooks",
+          "balanced mix with room for game effects",
+          "urban Brazilian pop rock",
+          "tight electric bass",
+          "crunchy rhythm guitars",
+          "electric piano",
+          "subtle saxophone hooks",
+          "Dorian raised sixth melodic color",
+          "160 BPM",
+          "E minor with E Dorian color"
+        ],
+        "negative_styles": [
+          "vocals",
+          "singing",
+          "speech",
+          "lyrics",
+          "MIDI sound",
+          "chiptune",
+          "ambient drone",
+          "long intro",
+          "fade out",
+          "ending silence",
+          "same riff repeated for the entire track"
+        ],
+        "context_adherence": "high"
+      },
+      {
+        "text": "[Avenue chorus]\n{Instrumental. Change to a wide catchy pop-rock chorus with open guitar chords and a saxophone answering melody. New chord voicings and stronger snare groove.}",
+        "duration_ms": 24000,
+        "positive_styles": [
+          "instrumental energetic rock pop fighting game soundtrack",
+          "original composition",
+          "real sounding distorted electric guitars",
+          "energetic live sounding rock drum kit",
+          "electric bass",
+          "clear catchy melodic hooks",
+          "balanced mix with room for game effects",
+          "urban Brazilian pop rock",
+          "tight electric bass",
+          "crunchy rhythm guitars",
+          "electric piano",
+          "subtle saxophone hooks",
+          "Dorian raised sixth melodic color",
+          "160 BPM",
+          "E minor with E Dorian color"
+        ],
+        "negative_styles": [
+          "vocals",
+          "singing",
+          "speech",
+          "lyrics",
+          "MIDI sound",
+          "chiptune",
+          "ambient drone",
+          "long intro",
+          "fade out",
+          "ending silence",
+          "same riff repeated for the entire track"
+        ],
+        "context_adherence": "high"
+      },
+      {
+        "text": "[Night bridge]\n{Instrumental. Clearly contrasting syncopated bass and electric piano groove, with short distorted guitar lead phrases. Use Dorian melodic color and a different}\n{rhythmic pattern.}",
+        "duration_ms": 24000,
+        "positive_styles": [
+          "instrumental energetic rock pop fighting game soundtrack",
+          "original composition",
+          "real sounding distorted electric guitars",
+          "energetic live sounding rock drum kit",
+          "electric bass",
+          "clear catchy melodic hooks",
+          "balanced mix with room for game effects",
+          "urban Brazilian pop rock",
+          "tight electric bass",
+          "crunchy rhythm guitars",
+          "electric piano",
+          "subtle saxophone hooks",
+          "Dorian raised sixth melodic color",
+          "160 BPM",
+          "E minor with E Dorian color"
+        ],
+        "negative_styles": [
+          "vocals",
+          "singing",
+          "speech",
+          "lyrics",
+          "MIDI sound",
+          "chiptune",
+          "ambient drone",
+          "long intro",
+          "fade out",
+          "ending silence",
+          "same riff repeated for the entire track"
+        ],
+        "context_adherence": "high"
+      },
+      {
+        "text": "[Final guitar lead]\n{Instrumental. Return with an evolved main riff, expressive guitar solo answered by saxophone, drum fills and harmonic turnaround. End in tempo, leading directly}\n{to the opening riff.}",
+        "duration_ms": 24000,
+        "positive_styles": [
+          "instrumental energetic rock pop fighting game soundtrack",
+          "original composition",
+          "real sounding distorted electric guitars",
+          "energetic live sounding rock drum kit",
+          "electric bass",
+          "clear catchy melodic hooks",
+          "balanced mix with room for game effects",
+          "urban Brazilian pop rock",
+          "tight electric bass",
+          "crunchy rhythm guitars",
+          "electric piano",
+          "subtle saxophone hooks",
+          "Dorian raised sixth melodic color",
+          "160 BPM",
+          "E minor with E Dorian color"
+        ],
+        "negative_styles": [
+          "vocals",
+          "singing",
+          "speech",
+          "lyrics",
+          "MIDI sound",
+          "chiptune",
+          "ambient drone",
+          "long intro",
+          "fade out",
+          "ending silence",
+          "same riff repeated for the entire track"
+        ],
+        "context_adherence": "high"
+      }
+    ]
+  }
+}

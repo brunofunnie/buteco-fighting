@@ -12,7 +12,7 @@ try {
 await page.goto(process.env.GAME_URL||'http://127.0.0.1:3188');
   await page.waitForFunction(()=>!document.querySelector('#titleStart').disabled);
   await page.locator('#titleStart').click();
-  await page.locator('#modeNext').click();
+  await page.locator('#modeScreen .mode-option.active').click();
   for(const [name,width,height] of [['desktop',1440,900],['landscape',844,390],['portrait',390,844],['small-portrait',320,568],['compact-landscape',568,320],['mid-size',1024,650],['large-desktop',1920,1080]]) {
     await page.setViewportSize({width,height});
     await page.waitForTimeout(300);

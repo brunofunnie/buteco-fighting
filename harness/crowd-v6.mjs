@@ -5,9 +5,9 @@ const browser=await chromium.launch({headless:true,args:['--no-sandbox']});
 const page=await browser.newPage();
 try {
  await page.goto('http://127.0.0.1:3187');await page.waitForFunction(()=>!document.querySelector('#titleStart').disabled);
- await page.locator('#titleStart').click();await page.locator('#modeNext').click();await page.locator('#fighterNext').click();await page.locator('#startButton').click();await page.waitForFunction(()=>window.__fight?.fighters?.length===2);
+ await page.locator('#titleStart').click();await page.locator('#modeScreen .mode-option.active').click();await page.locator('#fighterNext').click();await page.locator('#startButton').click();await page.waitForFunction(()=>window.__fight?.fighters?.length===2);
  const checks=await page.evaluate(async()=>{
-  const {crowdLayouts}=await import('./crowd-layout.js');const art=window.__fight.options.crowdArt;const checks=[];const hashes=new Map();const canvas=document.createElement('canvas');const ctx=canvas.getContext('2d',{willReadFrequently:true});
+  const {crowdLayouts}=await import('./src/crowd-layout.js');const art=window.__fight.options.crowdArt;const checks=[];const hashes=new Map();const canvas=document.createElement('canvas');const ctx=canvas.getContext('2d',{willReadFrequently:true});
   for(const [stage,people] of crowdLayouts.entries()){
    checks.push({name:`stage ${stage} regional distinct identities`,pass:people.length===[4,4,6,4][stage]&&new Set(people.map(p=>p.id)).size===people.length});
    for(const p of people){

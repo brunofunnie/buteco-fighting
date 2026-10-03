@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import {writeFile} from 'node:fs/promises';
 import {chromium} from 'playwright';
-import {fighterIds} from '../roster.js';
+import {fighterIds} from '../src/roster.js';
 
 const browser=await chromium.launch({headless:true,args:['--no-sandbox']});
 const page=await browser.newPage({viewport:{width:1440,height:900}});
@@ -14,7 +14,7 @@ try {
   const cast=await page.locator('[data-title-player]').evaluateAll(items=>items.map(e=>e.dataset.titlePlayer));
   check('title contains every fighter exactly once',cast.length===fighterIds.length&&new Set(cast).size===fighterIds.length&&fighterIds.every(id=>cast.includes(id)));
   check('title splits roster equally',Math.abs(await page.locator('.title-team.left canvas').count()-await page.locator('.title-team.right canvas').count())<=1);
-  await page.locator('#titleStart').click();await page.locator('#modeNext').click();
+  await page.locator('#titleStart').click();await page.locator('#modeScreen .mode-option.active').click();
   await page.waitForFunction(()=>document.querySelector('#playerPowerDemo').dataset.demoReady==='true'&&document.querySelector('#opponentPowerDemo').dataset.demoReady==='true',null,{timeout:5000});
   check('both original fighters have live demos',true);
   check('menu demos do not own the playable fight',await page.evaluate(()=>!window.__fight));

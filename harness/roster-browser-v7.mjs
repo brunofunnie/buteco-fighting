@@ -1,6 +1,6 @@
 import fs from 'node:fs/promises';
 import {chromium} from 'playwright';
-import {FIGHTERS,fighterIds} from '../roster.js';
+import {FIGHTERS,fighterIds} from '../src/roster.js';
 const testedFighters=process.env.ROSTER_TEST_FIGHTERS?.split(',')||fighterIds;
 if(testedFighters.some(id=>!FIGHTERS[id]))throw new Error('Unknown fighter in ROSTER_TEST_FIGHTERS');
 const browser = await chromium.launch({headless:true,args:['--no-sandbox']});
@@ -14,7 +14,7 @@ async function capture(name){const path=`artifacts/${name}.png`;await page.scree
 async function menu(){await page.locator('#pauseButton').click();await page.locator('#menuButton').click();}
 async function select(player,opponent,mode='versus'){
  if(await page.locator('#titleStart').isVisible())await page.locator('#titleStart').click();
- await page.locator(`[data-mode="${mode}"]`).click();await page.locator('#modeNext').click();
+ await page.locator(`[data-mode="${mode}"]`).click();
  await page.locator('[data-slot="player"]').click();await page.locator(`[data-player="${player}"]`).click();
  await page.locator('[data-slot="opponent"]').click();await page.locator(`[data-player="${opponent}"]`).click();
  await page.locator('#fighterNext').click();await page.locator('#startButton').click();
@@ -22,7 +22,7 @@ async function select(player,opponent,mode='versus'){
 }
 try {
  await page.goto(process.env.GAME_URL||'http://localhost:3187');await page.waitForFunction(()=>!document.querySelector('#titleStart').disabled);
- await page.locator('#titleStart').click();await page.locator('#modeNext').click();
+ await page.locator('#titleStart').click();await page.locator('#modeScreen .mode-option.active').click();
  check('all roster choices',await page.locator('[data-player]').count()===fighterIds.length);
  check('both renamed fighters visible',(await page.locator('[data-player="maya"]').innerText()).toUpperCase().includes('RINA SABRE')&&(await page.locator('[data-player="bruno"]').innerText()).toUpperCase().includes('WAGGY'));
  check('startup only decodes original pair',await page.evaluate(()=>Object.entries(window.__ui.assets).filter(([,a])=>Object.keys(a).length>1).length===2));
@@ -39,7 +39,7 @@ try {
  const manifest=JSON.parse(await fs.readFile('assets/manifest.json','utf8'));
  const firstFrame='**/'+manifest.viihuugo.idle.frames[0].path;
  await page.route(firstFrame,route=>route.abort('failed'));
- await page.locator('[data-mode="versus"]').click();await page.locator('#modeNext').click();
+ await page.locator('[data-mode="versus"]').click();
  await page.locator('[data-slot="player"]').click();await page.locator('[data-player="viihuugo"]').click();
  await page.locator('[data-slot="opponent"]').click();await page.locator('[data-player="joke-l"]').click();
  await page.locator('#fighterNext').click();await page.locator('#startButton').click();
@@ -53,7 +53,7 @@ try {
  const requestedFrame=new Promise(resolve=>{frameRequested=resolve});
  const kingFrame='**/'+manifest['king-luiz'].idle.frames[0].path;
  await page.route(kingFrame,async route=>{frameRequested();await blockedFrame;await route.continue()});
- await page.locator('[data-mode="versus"]').click();await page.locator('#modeNext').click();
+ await page.locator('[data-mode="versus"]').click();
  await page.locator('[data-slot="player"]').click();await page.locator('[data-player="king-luiz"]').click();
  await page.locator('[data-slot="opponent"]').click();await page.locator('[data-player="maya-b"]').click();
  await page.locator('#fighterNext').click();await page.locator('#startButton').click();await requestedFrame;

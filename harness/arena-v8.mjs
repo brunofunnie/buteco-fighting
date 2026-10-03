@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
-import * as arenas from '../stages.js';
+import * as arenas from '../src/stages.js';
 const {drawArena}=arenas;
-import {crowdLayouts} from '../crowd-layout.js';
+import {crowdLayouts} from '../src/crowd-layout.js';
 const captures=[];function context(){const calls=[];const gradient={addColorStop(){}};const c=new Proxy({},{get(_,key){if(key==='createLinearGradient'||key==='createRadialGradient')return()=>gradient;return(...args)=>calls.push([key,...args]);},set(_,key,value){calls.push([key,value]);return true}});captures.push(calls);return c}
 globalThis.document={createElement(){return {width:0,height:0,getContext:context}}};
 assert.equal(crowdLayouts.length,4,'four region-specific crowds');
@@ -17,13 +17,13 @@ const page=await browser.newPage({viewport:{width:1280,height:720}}),errors=[];
 page.on('pageerror',error=>errors.push(error.message));
 await page.goto('http://localhost:3187');
 const checks=await page.evaluate(async()=>{
-  const {drawArena}=await import('/stages.js');
-  const {FightGame}=await import('/game.js');
+  const {drawArena}=await import('/src/stages.js');
+  const {FightGame}=await import('/src/game.js');
   const canvas=document.createElement('canvas');canvas.width=1280;canvas.height=720;
   Object.assign(canvas.style,{position:'fixed',inset:'0',width:'1280px',height:'720px',zIndex:'99999'});document.body.append(canvas);
   const context=canvas.getContext('2d');
   const checks=[];
-  const paths=['v8/sao-paulo','v8/rio','recife','v8/manaus'];
+  const paths=['brazil/sao-paulo','brazil/rio','brazil/recife','brazil/manaus'];
   const sample=(x,y,w,h)=>Array.from(context.getImageData(x,y,w,h).data).join(',');
   for(let stage=0;stage<4;stage++){
     const art=new Image();art.src=`/assets/stages/${paths[stage]}.png`;await art.decode();

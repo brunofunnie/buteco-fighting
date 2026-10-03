@@ -13,7 +13,7 @@ from PIL import Image
 root = Path('assets/sprites')
 target = Path('assets/manifest.json')
 manifest = json.loads(target.read_text())
-catalog_path = Path('roster.js')
+catalog_path = Path('src/roster.js')
 catalog = catalog_path.read_text()
 marker = '\n};\nexport const fighterIds'
 if catalog.count(marker) != 1:

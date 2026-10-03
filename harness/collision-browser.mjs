@@ -6,7 +6,7 @@ const errors=[];page.on('pageerror',e=>errors.push(e.message));
 try{
   await page.goto((process.env.GAME_URL||'http://127.0.0.1:3197')+'/?hitboxes=1');
   await page.waitForFunction(()=>!document.querySelector('#titleStart').disabled);
-  await page.locator('#titleStart').click();await page.locator('[data-mode="training"]').click();await page.locator('#modeNext').click();
+  await page.locator('#titleStart').click();await page.locator('[data-mode="training"]').click();
   await page.locator('[data-player="miranda"]').click();await page.locator('#fighterNext').click();await page.locator('#startButton').click();
   await page.waitForFunction(()=>window.__fight?.fighters?.length===2);
   const report=await page.evaluate(()=>{

@@ -8,7 +8,7 @@ try {
  assert.equal(await page.locator('#arcade > .cabinet-noise').getAttribute('data-scanlines'),'default');
  assert.ok((await page.locator('#loadPercent').evaluate(el=>getComputedStyle(el).fontFamily)).includes('Press Start 2P'));
  await page.locator('#titleStart').click();
- await page.locator('#controlsButton').click();
+ await page.locator('#controlsButton').click();await page.locator('[data-options-tab=video]').click();
  const modes=['default','none','2x','3x','vignette','crt'];
  for(const mode of modes) {
   await page.locator(`[data-scanline-mode="${mode}"]`).click();
@@ -26,7 +26,7 @@ try {
  await page.reload();
  assert.equal(await page.locator('#arcade > .cabinet-noise').getAttribute('data-scanlines'),'crt');
  await page.locator('#titleStart').click();
- await page.locator('#controlsButton').click();
+ await page.locator('#controlsButton').click();await page.locator('[data-options-tab=video]').click();
  await page.setViewportSize({width:390,height:844});
  await page.locator('.display-settings').scrollIntoViewIfNeeded();
  assert.ok(await page.locator('#controlsDialog').evaluate(el=>el.scrollWidth<=el.clientWidth+1));

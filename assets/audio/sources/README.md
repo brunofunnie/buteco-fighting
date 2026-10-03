@@ -1,0 +1,1 @@
+The optional voice picker expects `round-announcer.mp3` here. The original recording was already missing before project cleanup. Selected clips remain in `../selected-voices/` and are disabled in gameplay. No replacement voice is generated.

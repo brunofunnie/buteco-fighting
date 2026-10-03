@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 import {createHash} from 'node:crypto';
 import {chromium} from 'playwright';
-import {fighterIds,NON_PLAYABLE_FIGHTERS} from '../roster.js';
+import {fighterIds,NON_PLAYABLE_FIGHTERS} from '../src/roster.js';
 
 const manifest=JSON.parse(await readFile('assets/manifest.json','utf8'));
 assert.ok(NON_PLAYABLE_FIGHTERS.dummy);
@@ -28,7 +28,7 @@ try {
   await page.goto(process.env.GAME_URL||'http://localhost:3187');
   await page.waitForFunction(()=>!document.querySelector('#titleStart').disabled);
   await page.locator('#titleStart').click();
-  await page.locator('#modeNext').click();
+  await page.locator('#modeScreen .mode-option.active').click();
   for(const [slot,id] of [['player','felurian'],['opponent','maya-b']]) {
     await page.locator(`[data-slot="${slot}"]`).click();
     await page.locator(`[data-player="${id}"]`).click();

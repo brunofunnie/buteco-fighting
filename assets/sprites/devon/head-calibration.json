@@ -1,0 +1,10 @@
+{
+  "reference": {"state":"idle","frame":0,"box":[195,36,54,70]},
+  "uppercut": [
+    {"box":[195,34,67,79]},
+    {"box":[167,34,66,72]},
+    {"box":[167,63,54,67]},
+    {"box":[193,34,62,74]}
+  ],
+  "method": "Reviewed head bounds in curated frame pixels, hat crown through face; exclude pompom, braids, raised fist and lightning. Match horizontal head size to the idle reference using uniform whole-frame scaling."
+}

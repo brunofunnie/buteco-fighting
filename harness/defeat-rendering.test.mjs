@@ -1,0 +1,13 @@
+import assert from 'node:assert/strict';
+import {FightGame} from '../src/game.js';
+globalThis.window={addEventListener(){},removeEventListener(){}};
+globalThis.requestAnimationFrame=()=>0;globalThis.cancelAnimationFrame=()=>{};
+const g=new FightGame({getContext:()=>({})});g.start({mode:'versus',player:'ghostly',opponent:'bruno'});
+const f=g.fighters[0];
+f.stun=.825;f.health=0;f.state='ko';f.stateTime=1;f.action=null;
+const sprite={complete:true,naturalWidth:384,naturalHeight:384};g.assets={ghostly:{idle:[sprite],ko:[sprite]}};
+g.spritePlacement=()=>({x:0,y:0,width:384,height:384});
+let alpha;
+const c={globalAlpha:1,save(){},restore(){},translate(){},scale(){},drawImage(){alpha=this.globalAlpha;}};
+g.drawFighter(c,f);assert.equal(alpha,1,'defeated fighter must remain fully opaque during hit stun');
+g.destroy();console.log('PASS defeated fighter stays opaque during damage flash');

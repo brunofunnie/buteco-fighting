@@ -7,12 +7,12 @@ const viewer=await browser.newPage({viewport:{width:1280,height:720}});
 const errors=[];for(const page of [host,guest,viewer])page.on('pageerror',e=>errors.push(e.message));
 const base=process.env.GAME_URL||'http://127.0.0.1:3194';
 let rankingRequests=0;host.on('request',req=>{if(req.url().endsWith('/api/ranking'))rankingRequests++;});
-const enter=async page=>{await page.goto(base);await page.waitForFunction(()=>!document.querySelector('#titleStart').disabled);await page.locator('#titleStart').click();await page.locator('[data-mode="online"]').click();await page.locator('#modeNext').click();};
+const enter=async page=>{await page.goto(base);await page.waitForFunction(()=>!document.querySelector('#titleStart').disabled);await page.locator('#titleStart').click();await page.locator('[data-mode="online"]').click();};
 const create=async name=>{await host.locator('#createRoom').click();await host.locator('#createRoomDialog').waitFor({state:'visible'});await host.locator('#onlineName').fill(name);await host.locator('#confirmCreateRoom').click();await host.waitForFunction(()=>window.__ui.online.lobby?.players.length===1);return host.locator('#roomId').textContent();};
 try {
   await Promise.all([enter(host),enter(guest)]);assert.ok(await host.locator('#onlineName').isHidden());assert.equal(await host.locator('#refreshRanking').count(),0);
   await host.waitForFunction(()=>!window.__ui.online.rankingPending); // Rapid reopen uses cached state.
-  assert.equal(rankingRequests,1);await host.locator('#backButton').click();await host.locator('#modeNext').click();assert.equal(rankingRequests,1);
+  assert.equal(rankingRequests,1);await host.locator('#backButton').click();await host.locator('#modeScreen .mode-option.active').click();assert.equal(rankingRequests,1);
   await host.locator('#createRoom').click();await host.keyboard.press('Escape');assert.ok(await host.locator('#createRoomDialog').isHidden());
   await host.setViewportSize({width:390,height:844});
   await host.locator('#createRoom').click();await host.locator('#createRoomDialog').waitFor({state:'visible'});
@@ -35,9 +35,9 @@ try {
   await guest.locator('[data-player="miranda"]').click();await host.waitForFunction(()=>window.__ui.selection.opponent==='miranda');assert.equal(await host.evaluate(()=>window.__ui.selection.player),'bruno');
   await host.locator('#fighterNext').click();await host.waitForFunction(()=>document.querySelector('#fighterNext').disabled);assert.equal(await guest.evaluate(()=>window.__ui.screen),'fighter');
   await guest.locator('#fighterNext').click();await Promise.all([host.waitForFunction(()=>window.__ui.screen==='stage'),guest.waitForFunction(()=>window.__ui.screen==='stage')]);
-  assert.ok(await guest.locator('#startButton').isDisabled());assert.ok(await guest.locator('[data-stage="1"]').isDisabled());
-  await host.locator('[data-stage="1"]').click();await guest.waitForFunction(()=>window.__ui.selection.stage===1);assert.match(await guest.locator('#stageScreen').evaluate(el=>el.style.getPropertyValue('--stage-background')),/rio/);
-  await viewer.waitForFunction(()=>window.__ui.screen==='stage'&&window.__ui.selection.stage===1);assert.ok(await viewer.locator('#startButton').isDisabled());
+  assert.equal(await guest.locator('#startButton').count(),0);assert.ok(await guest.locator('[data-stage="1"]').isDisabled());
+  await host.locator('[data-stage="1"]').hover();await guest.waitForFunction(()=>window.__ui.selection.stage===1);assert.match(await guest.locator('#stageScreen').evaluate(el=>el.style.getPropertyValue('--stage-background')),/rio/);
+  await viewer.waitForFunction(()=>window.__ui.screen==='stage'&&window.__ui.selection.stage===1);assert.equal(await viewer.locator('#startButton').count(),0);
   await viewer.locator('#backButton').click();await viewer.waitForFunction(()=>!window.__ui.online.room);assert.equal(await host.evaluate(()=>window.__ui.online.lobby.phase),'stage');
   await mkdir('/tmp/buteco-online',{recursive:true});await host.screenshot({path:'/tmp/buteco-online/shared-stage.png'});
   if(process.env.ONLINE_SMOKE==='1'){
@@ -45,7 +45,7 @@ try {
     assert.equal(await host.locator('#roomId').textContent(),id);await host.locator('#onlineKick').click();await guest.waitForFunction(()=>!window.__ui.online.room);await host.locator('#leaveRoom').click();
     console.log('PASS public nickname modal, cached ranking, server ping, shared character/stage selection, host permissions and same-room cancellation');
   }else{
-    await host.locator('#startButton').click();await host.waitForFunction(()=>window.__ui.screen==='versus');await guest.waitForFunction(()=>window.__ui.screen==='versus');
+    await host.locator('[data-stage="1"]').click();await host.waitForFunction(()=>window.__ui.screen==='versus');await guest.waitForFunction(()=>window.__ui.screen==='versus');
     await host.waitForFunction(()=>window.__ui.online.lobby.phase==='fighting');await host.waitForFunction(()=>window.__fight.phase==='fight');
     await enter(viewer);await viewer.locator('#roomCode').fill(id);await viewer.locator('#watchRoom').click();
     await viewer.waitForFunction(()=>window.__ui.screen==='fight'&&window.__fight.phase==='fight');
