@@ -613,7 +613,9 @@ export class FightGame {
     if (!blocked && !armored && move.launch) {
       target.vy = -430;
       target.y = Math.min(target.y,FLOOR-1);
-      target.airVX = attacker.facing * push * 2;
+      target.airVX = attacker.facing * push * 4;
+      target.facing = attacker.facing;
+      target.turnTime = 0;
       target.knockdown = target.stun = .45;
       target.guard = target.crouch = false;
     }
