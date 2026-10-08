@@ -51,7 +51,8 @@
     "test:joe": "node harness/joe.test.mjs && node harness/joe-browser.mjs",
     "test:sprite:states": "node harness/crouch-browser.mjs",
     "collision:build": "python3 harness/build-collision.py",
-    "test:stage:music": "node harness/stage-music.mjs"
+    "test:stage:music": "node harness/stage-music.mjs",
+    "test:stage:uppercut": "node harness/stage-clean-uppercut.test.mjs"
   },
   "devDependencies": {
     "playwright": "^1.63.0"

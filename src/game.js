@@ -436,11 +436,18 @@ export class FightGame {
       }
       if(slide.finished){this.setState(f,'idle');return;}
     }
-    if (f.stun > 0) {
+    if (f.stun > 0 || f.knockdown > 0) {
       f.stun -= dt;
       f.bufferedAction = null;
       this.setState(f, f.health <= 0 ? "ko" : f.knockdown > 0 ? "ko" : f.guard ? (f.crouch ? "lowBlock" : "block") : "hurt");
-      f.knockdown = Math.max(0, f.knockdown - dt);
+      if(f.knockdown > 0){
+        f.x=clamp(f.x+(f.airVX||0)*dt,60,WORLD-60);
+        f.airVX *= Math.exp(-dt*(grounded?10:1.5));
+        if(grounded){
+          f.knockdown=Math.max(0,f.knockdown-dt);
+          if(f.knockdown===0){f.airVX=0;f.landTime=.11;}
+        }else f.stun=Math.max(f.stun,dt);
+      }
       return;
     }
     const input = this.getInput(f, enemy, index, dt);
@@ -596,15 +603,21 @@ export class FightGame {
       target.health - (blocked ? damage * 0.08 : damage),
     );
     target.x = clamp(
-      target.x + attacker.facing * (blocked ? push * 0.3 : push),
+      target.x + attacker.facing * (blocked ? push * 0.3 : move.launch && !armored ? 0 : push),
       60,
       WORLD - 60,
     );
     target.stun = blocked ? 0.16 : move.knockdown ? 0.85 : move.launch ? 0.65 : 0.28;
     if (armored) target.stun = 0;
     if (!blocked && move.stun) target.stun = move.stun;
-    if (!blocked && !armored && move.launch) target.vy = -650;
-    if (!blocked && move.knockdown) target.knockdown = target.stun;
+    if (!blocked && !armored && move.launch) {
+      target.vy = -430;
+      target.y = Math.min(target.y,FLOOR-1);
+      target.airVX = attacker.facing * push * 2;
+      target.knockdown = target.stun = .45;
+      target.guard = target.crouch = false;
+    }
+    if (!blocked && !armored && move.knockdown) {target.knockdown = target.stun;target.airVX=0;}
     target.energy = clamp(target.energy + (blocked ? 5 : 10), 0, 100);
     if (!blocked) {
       if (!armored) target.action = null;

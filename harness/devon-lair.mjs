@@ -26,14 +26,14 @@ try{
  assert.match(await page.locator('#versusStageThumbnail').getAttribute('src'),/stages\/devon\.png/);
  await page.waitForFunction(()=>window.__fight?.running);assert.equal(await page.evaluate(()=>__fight.stage),4);
  const animation=await page.evaluate(async()=>{
-  const {drawDevonLair,LAIR_MONITORS}=await import('./src/devon-lair.js');const g=__fight;g.inspectionPaused=true;g.phase='fight';g.elapsed=1;g.draw();
+  const {drawDevonLair}=await import('./src/devon-lair.js');const g=__fight;g.inspectionPaused=true;g.phase='fight';g.elapsed=1;g.draw();
   const canvas=document.createElement('canvas');canvas.width=1920;canvas.height=720;const c=canvas.getContext('2d');
   const art=g.options.stageArt[4];drawDevonLair(c,{worldWidth:1920,width:1920,time:0,art});
   const before=c.getImageData(0,0,1920,720).data.slice();drawDevonLair(c,{worldWidth:1920,width:1920,time:1,art});const after=c.getImageData(0,0,1920,720).data;
-  return {monitors:LAIR_MONITORS.length,animated:before.some((v,i)=>v!==after[i]),loaded:art.complete&&art.naturalWidth>0};
+  return {animated:before.some((v,i)=>v!==after[i]),loaded:art.complete&&art.naturalWidth>0};
  });
- assert.deepEqual(animation,{monitors:4,animated:true,loaded:true});
+ assert.deepEqual(animation,{animated:false,loaded:true});
  await page.locator('#gameCanvas').screenshot({path:'artifacts/devon-lair-arena.png'});
  assert.deepEqual(errors,[]);await fs.access('assets/stages/devon-approach.png');
- console.log('PASS responsive Devon path, removed labels, exclusive boss stage, loaded warehouse art and animated monitors');
+ console.log('PASS responsive Devon path, removed labels, exclusive boss stage, loaded warehouse art and no procedural overlays');
 }finally{await browser.close();}
