@@ -10,7 +10,7 @@ for(const [id,states] of Object.entries(manifest))for(const [state,spec]of Objec
  assert.ok(file,`${id}/${state} path`);await access(path.join(root,file));count++;
 }
 for(const fighter of Object.values({...FIGHTERS,...NON_PLAYABLE_FIGHTERS}))await access(path.join(root,fighter.source));
-for(const file of ['assets/stages/public-v6/crowd-manifest.json','assets/stages/brazil/npcs/crowd-manifest.json']){
+for(const file of ['assets/crowd/public/manifest.json','assets/crowd/regional/manifest.json']){
  const crowd=JSON.parse(await readFile(path.join(root,file),'utf8'));
  for(const spec of Object.values(crowd))for(const frame of spec.frames)await access(path.join(root,frame.path));
 }

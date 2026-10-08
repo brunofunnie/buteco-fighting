@@ -1,0 +1,876 @@
+{
+  "movements": [
+    {
+      "name": "idle",
+      "durationMs": 100,
+      "loop": true,
+      "frames": [
+        {
+          "key": "guarda_parado/0",
+          "sourceBBox": [
+            63,
+            90,
+            127,
+            184
+          ]
+        },
+        {
+          "key": "guarda_parado/1",
+          "sourceBBox": [
+            63,
+            89,
+            128,
+            184
+          ]
+        },
+        {
+          "key": "guarda_parado/2",
+          "sourceBBox": [
+            63,
+            90,
+            128,
+            184
+          ]
+        },
+        {
+          "key": "guarda_parado/3",
+          "sourceBBox": [
+            63,
+            90,
+            128,
+            184
+          ]
+        }
+      ]
+    },
+    {
+      "name": "walk",
+      "durationMs": 100,
+      "loop": true,
+      "frames": [
+        {
+          "key": "andar_frente/0",
+          "sourceBBox": [
+            61,
+            90,
+            131,
+            183
+          ]
+        },
+        {
+          "key": "andar_frente/1",
+          "sourceBBox": [
+            62,
+            88,
+            129,
+            183
+          ]
+        },
+        {
+          "key": "andar_frente/2",
+          "sourceBBox": [
+            67,
+            88,
+            124,
+            183
+          ]
+        },
+        {
+          "key": "andar_frente/3",
+          "sourceBBox": [
+            69,
+            88,
+            122,
+            182
+          ]
+        },
+        {
+          "key": "andar_frente/4",
+          "sourceBBox": [
+            68,
+            89,
+            124,
+            182
+          ]
+        },
+        {
+          "key": "andar_frente/5",
+          "sourceBBox": [
+            64,
+            93,
+            127,
+            182
+          ]
+        }
+      ]
+    },
+    {
+      "name": "backwalk",
+      "durationMs": 100,
+      "loop": true,
+      "frames": [
+        {
+          "key": "andar_tras/0",
+          "sourceBBox": [
+            65,
+            90,
+            126,
+            183
+          ]
+        },
+        {
+          "key": "andar_tras/1",
+          "sourceBBox": [
+            69,
+            89,
+            123,
+            183
+          ]
+        },
+        {
+          "key": "andar_tras/2",
+          "sourceBBox": [
+            69,
+            88,
+            123,
+            183
+          ]
+        },
+        {
+          "key": "andar_tras/3",
+          "sourceBBox": [
+            65,
+            89,
+            126,
+            184
+          ]
+        },
+        {
+          "key": "andar_tras/4",
+          "sourceBBox": [
+            64,
+            91,
+            128,
+            184
+          ]
+        },
+        {
+          "key": "andar_tras/5",
+          "sourceBBox": [
+            64,
+            94,
+            127,
+            183
+          ]
+        }
+      ]
+    },
+    {
+      "name": "jump",
+      "durationMs": 100,
+      "loop": false,
+      "frames": [
+        {
+          "key": "pulo_vertical/0",
+          "sourceBBox": [
+            65,
+            65,
+            127,
+            153
+          ]
+        },
+        {
+          "key": "pulo_vertical/1",
+          "sourceBBox": [
+            65,
+            67,
+            126,
+            137
+          ]
+        },
+        {
+          "key": "pulo_vertical/2",
+          "sourceBBox": [
+            65,
+            72,
+            126,
+            137
+          ]
+        },
+        {
+          "key": "pulo_vertical/3",
+          "sourceBBox": [
+            65,
+            68,
+            127,
+            155
+          ]
+        }
+      ]
+    },
+    {
+      "name": "jumpForward",
+      "durationMs": 100,
+      "loop": false,
+      "frames": [
+        {
+          "key": "pulo_com_giro/0",
+          "sourceBBox": [
+            66,
+            65,
+            125,
+            173
+          ]
+        },
+        {
+          "key": "pulo_com_giro/1",
+          "sourceBBox": [
+            65,
+            75,
+            125,
+            159
+          ]
+        },
+        {
+          "key": "pulo_com_giro/2",
+          "sourceBBox": [
+            49,
+            88,
+            142,
+            134
+          ]
+        },
+        {
+          "key": "pulo_com_giro/3",
+          "sourceBBox": [
+            68,
+            75,
+            123,
+            151
+          ]
+        },
+        {
+          "key": "pulo_com_giro/4",
+          "sourceBBox": [
+            38,
+            101,
+            153,
+            148
+          ]
+        },
+        {
+          "key": "pulo_pose_alternativa/0",
+          "sourceBBox": [
+            61,
+            90,
+            131,
+            184
+          ]
+        }
+      ]
+    },
+    {
+      "name": "land",
+      "durationMs": 100,
+      "loop": false,
+      "frames": [
+        {
+          "key": "agachar/0",
+          "sourceBBox": [
+            65,
+            115,
+            127,
+            184
+          ]
+        },
+        {
+          "key": "guarda_parado/0",
+          "sourceBBox": [
+            63,
+            90,
+            127,
+            184
+          ]
+        }
+      ]
+    },
+    {
+      "name": "turn",
+      "durationMs": 100,
+      "loop": false,
+      "frames": [
+        {
+          "key": "entrada_preparacao/2",
+          "sourceBBox": [
+            68,
+            89,
+            123,
+            184
+          ]
+        },
+        {
+          "key": "entrada_preparacao/3",
+          "sourceBBox": [
+            61,
+            90,
+            130,
+            184
+          ]
+        },
+        {
+          "key": "entrada_preparacao/4",
+          "sourceBBox": [
+            71,
+            88,
+            119,
+            184
+          ]
+        }
+      ]
+    },
+    {
+      "name": "lowBlock",
+      "durationMs": 100,
+      "loop": false,
+      "frames": [
+        {
+          "key": "agachar/0",
+          "sourceBBox": [
+            65,
+            115,
+            127,
+            184
+          ]
+        }
+      ]
+    },
+    {
+      "name": "block",
+      "durationMs": 100,
+      "loop": false,
+      "frames": [
+        {
+          "key": "defesa_em_pe/0",
+          "sourceBBox": [
+            64,
+            95,
+            128,
+            184
+          ]
+        },
+        {
+          "key": "defesa_em_pe/1",
+          "sourceBBox": [
+            60,
+            88,
+            132,
+            184
+          ]
+        }
+      ]
+    },
+    {
+      "name": "crouch",
+      "durationMs": 100,
+      "loop": false,
+      "frames": [
+        {
+          "key": "defesa_agachado/0",
+          "sourceBBox": [
+            65,
+            112,
+            127,
+            184
+          ]
+        },
+        {
+          "key": "defesa_agachado/1",
+          "sourceBBox": [
+            65,
+            119,
+            127,
+            184
+          ]
+        }
+      ]
+    },
+    {
+      "name": "punch",
+      "durationMs": 100,
+      "loop": false,
+      "frames": [
+        {
+          "key": "soco_reto/0",
+          "sourceBBox": [
+            57,
+            91,
+            134,
+            184
+          ]
+        },
+        {
+          "key": "soco_reto/1",
+          "sourceBBox": [
+            45,
+            90,
+            147,
+            184
+          ]
+        }
+      ]
+    },
+    {
+      "name": "kick",
+      "durationMs": 100,
+      "loop": false,
+      "frames": [
+        {
+          "key": "chute_alto/0",
+          "sourceBBox": [
+            61,
+            90,
+            129,
+            184
+          ]
+        },
+        {
+          "key": "chute_alto/1",
+          "sourceBBox": [
+            64,
+            90,
+            127,
+            184
+          ]
+        },
+        {
+          "key": "chute_alto/2",
+          "sourceBBox": [
+            38,
+            94,
+            153,
+            184
+          ]
+        }
+      ]
+    },
+    {
+      "name": "airPunch",
+      "durationMs": 100,
+      "loop": false,
+      "frames": [
+        {
+          "key": "soco_aereo_estendido/0",
+          "sourceBBox": [
+            58,
+            80,
+            132,
+            159
+          ]
+        },
+        {
+          "key": "soco_aereo_estendido/1",
+          "sourceBBox": [
+            46,
+            81,
+            145,
+            146
+          ]
+        }
+      ]
+    },
+    {
+      "name": "airKick",
+      "durationMs": 100,
+      "loop": false,
+      "frames": [
+        {
+          "key": "chute_aereo_lateral/0",
+          "sourceBBox": [
+            64,
+            77,
+            126,
+            175
+          ]
+        },
+        {
+          "key": "chute_aereo_lateral/1",
+          "sourceBBox": [
+            46,
+            80,
+            145,
+            176
+          ]
+        },
+        {
+          "key": "chute_aereo_lateral/2",
+          "sourceBBox": [
+            47,
+            79,
+            143,
+            173
+          ]
+        }
+      ]
+    },
+    {
+      "name": "crouchPunch",
+      "durationMs": 100,
+      "loop": false,
+      "frames": [
+        {
+          "key": "soco_agachado_reto/0",
+          "sourceBBox": [
+            59,
+            118,
+            131,
+            184
+          ]
+        },
+        {
+          "key": "soco_agachado_reto/1",
+          "sourceBBox": [
+            46,
+            118,
+            145,
+            184
+          ]
+        }
+      ]
+    },
+    {
+      "name": "crouchKick",
+      "durationMs": 100,
+      "loop": false,
+      "frames": [
+        {
+          "key": "chute_agachado/0",
+          "sourceBBox": [
+            57,
+            119,
+            133,
+            184
+          ]
+        },
+        {
+          "key": "chute_agachado/1",
+          "sourceBBox": [
+            41,
+            118,
+            150,
+            184
+          ]
+        }
+      ]
+    },
+    {
+      "name": "uppercut",
+      "durationMs": 100,
+      "loop": false,
+      "frames": [
+        {
+          "key": "shoryuken/0",
+          "sourceBBox": [
+            63,
+            97,
+            129,
+            178
+          ]
+        },
+        {
+          "key": "shoryuken/1",
+          "sourceBBox": [
+            57,
+            88,
+            135,
+            178
+          ]
+        },
+        {
+          "key": "shoryuken/2",
+          "sourceBBox": [
+            65,
+            50,
+            127,
+            180
+          ]
+        },
+        {
+          "key": "shoryuken/3",
+          "sourceBBox": [
+            67,
+            53,
+            125,
+            182
+          ]
+        },
+        {
+          "key": "shoryuken/4",
+          "sourceBBox": [
+            65,
+            86,
+            127,
+            184
+          ]
+        }
+      ]
+    },
+    {
+      "name": "sweep",
+      "durationMs": 100,
+      "loop": false,
+      "frames": [
+        {
+          "key": "rasteira/0",
+          "sourceBBox": [
+            49,
+            125,
+            142,
+            184
+          ]
+        },
+        {
+          "key": "rasteira/1",
+          "sourceBBox": [
+            28,
+            131,
+            163,
+            184
+          ]
+        }
+      ]
+    },
+    {
+      "name": "special",
+      "durationMs": 100,
+      "loop": false,
+      "frames": [
+        {
+          "key": "hadouken/0",
+          "sourceBBox": [
+            63,
+            96,
+            127,
+            184
+          ]
+        },
+        {
+          "key": "hadouken/1",
+          "sourceBBox": [
+            56,
+            91,
+            134,
+            183
+          ]
+        },
+        {
+          "key": "hadouken/2",
+          "sourceBBox": [
+            57,
+            89,
+            133,
+            181
+          ]
+        },
+        {
+          "key": "hadouken/3",
+          "sourceBBox": [
+            48,
+            91,
+            143,
+            181
+          ]
+        },
+        {
+          "key": "hadouken/4",
+          "sourceBBox": [
+            48,
+            92,
+            143,
+            182
+          ]
+        },
+        {
+          "key": "hadouken/5",
+          "sourceBBox": [
+            48,
+            92,
+            143,
+            182
+          ]
+        }
+      ]
+    },
+    {
+      "name": "super",
+      "durationMs": 100,
+      "loop": false,
+      "frames": [
+        {
+          "key": "hadouken/0",
+          "sourceBBox": [
+            63,
+            96,
+            127,
+            184
+          ]
+        },
+        {
+          "key": "hadouken/1",
+          "sourceBBox": [
+            56,
+            91,
+            134,
+            183
+          ]
+        },
+        {
+          "key": "hadouken/2",
+          "sourceBBox": [
+            57,
+            89,
+            133,
+            181
+          ]
+        },
+        {
+          "key": "hadouken/3",
+          "sourceBBox": [
+            48,
+            91,
+            143,
+            181
+          ]
+        },
+        {
+          "key": "hadouken/4",
+          "sourceBBox": [
+            48,
+            92,
+            143,
+            182
+          ]
+        },
+        {
+          "key": "hadouken/5",
+          "sourceBBox": [
+            48,
+            92,
+            143,
+            182
+          ]
+        }
+      ]
+    },
+    {
+      "name": "hurt",
+      "durationMs": 100,
+      "loop": false,
+      "frames": [
+        {
+          "key": "dano_em_pe/0",
+          "sourceBBox": [
+            59,
+            93,
+            132,
+            184
+          ]
+        },
+        {
+          "key": "dano_em_pe/1",
+          "sourceBBox": [
+            60,
+            92,
+            131,
+            184
+          ]
+        },
+        {
+          "key": "dano_em_pe/2",
+          "sourceBBox": [
+            61,
+            92,
+            130,
+            184
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ko",
+      "durationMs": 100,
+      "loop": false,
+      "frames": [
+        {
+          "key": "queda_nocaute/0",
+          "sourceBBox": [
+            59,
+            119,
+            132,
+            183
+          ]
+        },
+        {
+          "key": "queda_nocaute/1",
+          "sourceBBox": [
+            36,
+            137,
+            156,
+            183
+          ]
+        },
+        {
+          "key": "queda_nocaute/2",
+          "sourceBBox": [
+            34,
+            130,
+            158,
+            183
+          ]
+        },
+        {
+          "key": "queda_nocaute/3",
+          "sourceBBox": [
+            35,
+            143,
+            156,
+            183
+          ]
+        },
+        {
+          "key": "queda_nocaute/4",
+          "sourceBBox": [
+            36,
+            154,
+            156,
+            183
+          ]
+        }
+      ]
+    },
+    {
+      "name": "celebrate",
+      "durationMs": 100,
+      "loop": false,
+      "frames": [
+        {
+          "key": "vitoria_punho_erguido/0",
+          "sourceBBox": [
+            64,
+            84,
+            127,
+            184
+          ]
+        },
+        {
+          "key": "vitoria_punho_erguido/1",
+          "sourceBBox": [
+            64,
+            53,
+            128,
+            184
+          ]
+        }
+      ]
+    }
+  ]
+}

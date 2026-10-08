@@ -3,7 +3,7 @@ FROM node:24-alpine AS asset-build
 WORKDIR /build
 COPY build/package.json build/package-lock.json ./build/
 RUN --mount=type=cache,target=/root/.npm npm ci --prefix build --no-audit --no-fund
-COPY build/production-assets.mjs ./build/
+COPY build/production-assets.mjs build/runtime-assets.mjs ./build/
 COPY package.json package-lock.json index.html server.mjs ./
 COPY src/ ./src/
 COPY styles/ ./styles/

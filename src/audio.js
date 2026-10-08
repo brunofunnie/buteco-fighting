@@ -1,8 +1,6 @@
-import {fightIntro} from './fight-intro.js';
 export const STAGE_MUSIC = Object.freeze(['theme-sao-paulo','theme-rio','theme-recife','theme-manaus','theme-devon']);
-const stageMusicAssets = Object.fromEntries(['sao-paulo','rio','recife','manaus'].map((id,index)=>[STAGE_MUSIC[index],{path:`/assets/audio/stages/${id}/theme.mp3`}]));
-stageMusicAssets['theme-devon']={path:'/assets/audio/devon/theme-rock.wav'};
-const introVoiceAssets=Object.fromEntries(['round-1','round-2','fight'].map(id=>[`voice-${id}`,{path:`/assets/audio/selected-voices/${id}.wav`}]));
+const stageMusicAssets = Object.fromEntries(['sao-paulo','rio','recife','manaus'].map((id,index)=>[STAGE_MUSIC[index],{path:`/assets/audio/music/${id}.mp3`}]));
+stageMusicAssets['theme-devon']={path:'/assets/audio/music/devon.wav'};
 export function musicForStage(stage=0){return STAGE_MUSIC[stage]||'theme-fight';}
 // Generated audio is optional until the complete ElevenLabs bank is published.
 // The existing synth remains available when an asset fails to load.
@@ -13,7 +11,7 @@ export class AudioDirector {
   async unlock(){
     if(!this.context){const Context=globalThis.AudioContext||globalThis.webkitAudioContext;if(!Context)return;this.context=new Context();this.master=this.context.createGain();this.master.gain.value=this.muted?0:1;this.compressor=this.context.createDynamicsCompressor();this.compressor.threshold.value=-14;this.compressor.ratio.value=4;this.compressor.attack.value=.003;this.compressor.release.value=.12;this.output=this.context.createGain();this.output.gain.value=.85;this.effectsBus=this.context.createGain();this.musicBus=this.context.createGain();this.effectsBus.gain.value=this.effectsVolume;this.musicBus.gain.value=this.musicVolume;this.effectsBus.connect(this.master);this.musicBus.connect(this.master);this.master.connect(this.compressor).connect(this.output).connect(this.context.destination);}
     await this.context.resume();
-    if(!this.manifestRequest)this.manifestRequest=fetch('/assets/audio/v9/manifest.json').then(r=>r.ok?r.json():null).then(manifest=>{
+    if(!this.manifestRequest)this.manifestRequest=fetch('/assets/audio/manifest.json').then(r=>r.ok?r.json():null).then(manifest=>{
       this.manifest=manifest;
       if(manifest)for(const key of ['theme-menu','theme-fight','theme-devon','impact','block','jump','select','confirm','ko'])this.load(key);
     }).catch(()=>{});
@@ -22,7 +20,7 @@ export class AudioDirector {
   load(key){
     if(this.buffers.has(key))return Promise.resolve(this.buffers.get(key));
     if(this.pending.has(key))return this.pending.get(key);
-    const asset=this.manifest?.[key]||stageMusicAssets[key]||introVoiceAssets[key];if(!asset||!this.context)return Promise.resolve(null);
+    const asset=this.manifest?.[key]||stageMusicAssets[key];if(!asset||!this.context)return Promise.resolve(null);
     const promise=fetch(asset.path).then(r=>{if(!r.ok)throw new Error('Missing audio');return r.arrayBuffer();}).then(bytes=>this.context.decodeAudioData(bytes)).then(buffer=>{this.buffers.set(key,buffer);this.refreshMusic();return buffer;}).catch(()=>null);
     this.pending.set(key,promise);return promise;
   }
@@ -41,18 +39,6 @@ export class AudioDirector {
     return outputs[kind];
   }
   warmStage(stage){return this.load(musicForStage(stage));}
-  warmIntroVoices(){return Promise.all(Object.keys(introVoiceAssets).map(key=>this.load(key)));}
-  announceIntro(fight){
-    if(fight.paused||fight.phase!=='intro'||fight.mode==='training')return;
-    if(fight.introVoiceRound!==fight.round){fight.introVoiceRound=fight.round;fight.introVoicePlayed=new Set();}
-    const {call}=fightIntro(fight.phaseTime);
-    if(!call)return;
-    const key=call==='round'?`voice-round-${fight.round}`:'voice-fight';
-    if(!introVoiceAssets[key]||fight.introVoicePlayed.has(key))return;
-    this.setMuted(!!fight.options.muted);
-    if(this.muted){fight.introVoicePlayed.add(key);return;}
-    if(this.play(key,{volume:.85}))fight.introVoicePlayed.add(key);
-  }
   setScene(scene,stage=0){this.scene=scene;this.stage=stage;if(scene==='fight')this.warmStage(stage);this.refreshMusic();}
   refreshMusic(){
     const key=this.scene==='fight'?musicForStage(this.stage):this.scene==='menu'?'theme-menu':null;

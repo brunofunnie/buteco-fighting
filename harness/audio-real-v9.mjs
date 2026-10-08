@@ -5,7 +5,7 @@ import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
 import {fighterIds} from '../src/roster.js';
 const keys=['theme-menu','theme-fight','impact','block','jump','select','confirm','ko',...fighterIds.flatMap(id=>['attack','special','super'].map(action=>`${id}-${action}`))];
-const manifest=JSON.parse(await readFile('assets/audio/v9/manifest.json','utf8'));
+const manifest=JSON.parse(await readFile('assets/audio/manifest.json','utf8'));
 assert.equal(Object.keys(manifest).length,keys.length);
 const hashes=[];for(const asset of Object.values(manifest)){const bytes=await readFile(asset.path);assert.ok(bytes.length>1000);hashes.push(createHash('sha256').update(bytes).digest('hex'));}assert.equal(new Set(hashes).size,keys.length);
 const browser=await chromium.launch({headless:true,args:['--no-sandbox']});const page=await browser.newPage();const errors=[];page.on('pageerror',e=>errors.push(e.message));

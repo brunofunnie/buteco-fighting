@@ -7,7 +7,7 @@ const samples=22050,wav=Buffer.alloc(44+samples*2);wav.write('RIFF');wav.writeUI
 for(let i=0;i<samples;i++)wav.writeInt16LE(Math.round(Math.sin(i/22050*440*Math.PI*2)*1500),44+i*2);
 const keys=['theme-menu','theme-fight','impact','block','jump','select','confirm','ko',...fighterIds.flatMap(id=>['attack','special','super'].map(action=>`${id}-${action}`))];
 const browser=await chromium.launch({headless:true,args:['--no-sandbox']});const page=await browser.newPage();const errors=[];page.on('pageerror',e=>errors.push(e.message));
-await page.route('**/assets/audio/v9/manifest.json',r=>r.fulfill({json:Object.fromEntries(keys.map(key=>[key,{path:'/fixture-audio.wav'}]))}));
+await page.route('**/assets/audio/manifest.json',r=>r.fulfill({json:Object.fromEntries(keys.map(key=>[key,{path:'/fixture-audio.wav'}]))}));
 await page.route('**/fixture-audio.wav',r=>r.fulfill({contentType:'audio/wav',body:wav}));
 try{
  await page.goto('http://localhost:3187');await page.waitForFunction(()=>!document.querySelector('#titleStart').disabled);await page.locator('#titleStart').click();

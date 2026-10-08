@@ -23,7 +23,7 @@ const checks=await page.evaluate(async()=>{
   Object.assign(canvas.style,{position:'fixed',inset:'0',width:'1280px',height:'720px',zIndex:'99999'});document.body.append(canvas);
   const context=canvas.getContext('2d');
   const checks=[];
-  const paths=['brazil/sao-paulo','brazil/rio','brazil/recife','brazil/manaus'];
+  const paths=['sao-paulo','rio','recife','manaus'];
   const sample=(x,y,w,h)=>Array.from(context.getImageData(x,y,w,h).data).join(',');
   for(let stage=0;stage<4;stage++){
     const art=new Image();art.src=`/assets/stages/${paths[stage]}.png`;await art.decode();

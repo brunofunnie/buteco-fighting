@@ -18,7 +18,9 @@ for(const [id,states] of Object.entries(manifest))for(const [state,spec] of Obje
 }
 const f={id:'miranda',state:'punch',stateTime:0,action:'punch',actionTime:.16,x:500,y:590,facing:1,vy:0};
 const move={active:.11,end:.2,duration:.34};
-const frame=collisionFrame(f,move);assert.equal(frame.index,2);assert.ok(frame.hit.length);
+const frame=collisionFrame(f,move);
+const punchPose=manifest.miranda.punch.frames.findIndex(frame=>frame.sourceKey==='soco_reto/1');
+assert.equal(frame.index,punchPose>=0?punchPose:2);assert.ok(frame.hit.length);
 const right=worldBoxes(f,frame.hit);const left=worldBoxes({...f,facing:-1},frame.hit);
 for(let i=0;i<right.length;i++)assert.ok(Math.abs(right[i][0]+right[i][2]+left[i][0]-1000)<.001,'mirroring around fighter anchor');
 assert.equal(overlap([0,0,10,10],[10,0,10,10]),false);

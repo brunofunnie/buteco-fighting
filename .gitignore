@@ -1,24 +1,19 @@
 node_modules/
 .venv/
 *.log
+**/__pycache__/
+*.pyc
+.DS_Store
 
-# Regenerable test output; retain the directories for test harnesses.
+# Test captures and videos are disposable.
 artifacts/*
 !artifacts/.gitkeep
 harness/artifacts/*
 !harness/artifacts/.gitkeep
 
-# Local production history. Published sprites, sources and metadata are tracked.
-assets/sprites/*/generation/
-assets/sprites/_generation/
-assets/generated/
-**/__pycache__/
-*.pyc
-.DS_Store
-
-# Persistent online rankings and guest identities.
+# Persistent rankings and guest identities.
 data/
 
-# Production copies; originals stay in assets/.
+# Generated production builds.
 dist/
 build/node_modules/

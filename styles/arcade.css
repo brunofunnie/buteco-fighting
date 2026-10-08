@@ -1,4 +1,4 @@
-.arcade-screen{display:flex;flex-direction:column;gap:24px;padding:64px 4vw 100px;isolation:isolate;background:linear-gradient(#03071275,#030712a8),url('../assets/stages/devon/approach.png') center/cover}
+.arcade-screen{display:flex;flex-direction:column;gap:24px;padding:64px 4vw 100px;isolation:isolate;background:linear-gradient(#03071275,#030712a8),url('../assets/stages/devon-approach.png') center/cover}
 .arcade-screen[hidden]{display:none}
 .arcade-screen::before{content:'';position:absolute;inset:0;z-index:-1;background:radial-gradient(ellipse at 50% 55%,transparent 10%,#03071280 95%);pointer-events:none}
 .arcade-screen .screen-heading{margin:0 0 16px;position:relative}

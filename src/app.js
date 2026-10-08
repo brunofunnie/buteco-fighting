@@ -23,7 +23,7 @@ arcade.addEventListener('keydown',event=>{
   if((event.ctrlKey||event.metaKey)&&event.key.toLowerCase()==='a')event.preventDefault();
 });
 const sources = Object.fromEntries(fighterIds.map(id => [id, FIGHTERS[id].source]));
-const stageArtSources = ["brazil/sao-paulo", "brazil/rio", "brazil/recife", "brazil/manaus", "devon/arena"];
+const stageArtSources = ["sao-paulo", "rio", "recife", "manaus", "devon"];
 // Shared duration for the pre-match presentation in every mode.
 const VS_PRESENTATION_SECONDS = 3.5;
 const stageNames = ["SÃO PAULO — MASP", "RIO — COPACABANA", "RECIFE ANTIGO", "MANAUS — ENCONTRO DAS ÁGUAS", "COVIL DO DEVON — GALPÃO ABANDONADO"];
@@ -82,6 +82,7 @@ async function loadAssets() {
   let portraitsLoaded = 0;
   Object.assign(result, Object.fromEntries(await Promise.all([selection.player,selection.opponent].map(async name => {
     const portrait = await image(sources[name]);
+    portrait.spriteMeta={pixelArt:manifest[name]?.idle?.frames?.[0]?.pixelArt};
     updateStartupProgress(2 + ++portraitsLoaded / 2 * 80);
     return [name, {idle:[portrait]}];
   }))));
@@ -105,7 +106,7 @@ function loadBattleArt() {
   );
 
   try {
-    const response = await fetch("assets/stages/public-v6/crowd-manifest.json");
+    const response = await fetch("assets/crowd/public/manifest.json");
     if (response.ok) {
       const crowdManifest = await response.json();
       crowdArt = Object.fromEntries(await Promise.all(Object.entries(crowdManifest).map(async ([action, data]) => {
@@ -122,7 +123,7 @@ function loadBattleArt() {
   } catch {}
 
   try {
-    const response = await fetch("assets/stages/brazil/npcs/crowd-manifest.json");
+    const response = await fetch("assets/crowd/regional/manifest.json");
     if(response.ok) {
       const manifest = await response.json();
       for(const [id,spec] of Object.entries(manifest)) {
@@ -143,6 +144,7 @@ function loadPortrait(id){
   if(basePortraits.has(id))return Promise.resolve(basePortraits.get(id));
   if(portraitLoading.has(id))return portraitLoading.get(id);
   const promise=image((FIGHTERS[id]||NON_PLAYABLE_FIGHTERS[id]).source).then(img=>{
+    img.spriteMeta={pixelArt:spriteManifest[id]?.idle?.frames?.[0]?.pixelArt};
     basePortraits.set(id,img);if(!assets[id])assets[id]={idle:[img]};return img;
   }).catch(error=>{portraitLoading.delete(id);throw error;});
   portraitLoading.set(id,promise);return promise;
@@ -163,11 +165,11 @@ async function loadFighter(name, onFrameLoaded) {
       const loaded = await Promise.all(files.map(async file => {
         const img = await image(typeof file === "string" ? file : file.path);
         onFrameLoaded?.();
-        if (typeof file === "object") img.spriteMeta = {scale:file.scale,anchorX:file.anchorX,anchorY:file.anchorY};
+        if (typeof file === "object") img.spriteMeta = {scale:file.scale,anchorX:file.anchorX,anchorY:file.anchorY,pixelArt:file.pixelArt};
         return img;
       }));
       if (loaded.length) {
-        loaded.animation = {fps:paths.fps,loop:paths.loop};
+        loaded.animation = {fps:paths.fps,loop:paths.loop,joeSequence:paths.joeSequence};
         result[state] = loaded;
       }
     }
@@ -494,6 +496,7 @@ function startVersusEntrance(){
       const x=finalX-side*(1-approach)*panelBox.width*.6;
       const y=finalY-Math.sin(Math.PI*Math.min(1,progress/.88))*Math.min(130,panelBox.height*.18);
       ctx.save();ctx.translate(x,y);ctx.scale(side,1);
+      if(frame.spriteMeta?.pixelArt ?? (fighter==='joe-munist'))ctx.imageSmoothingEnabled=false;
       const image=side<0&&selection.player===selection.opponent?alternateSprite(frame):frame;
       ctx.drawImage(image,-drawWidth*anchorX,-drawHeight*anchorY,drawWidth,drawHeight);ctx.restore();
     }
@@ -573,7 +576,7 @@ function renderArcadeProgress(){
     if(portrait?.naturalWidth)image.src=fittedArcadePortrait(portrait);
     else{
       image.addEventListener('load',()=>{image.src=fittedArcadePortrait(image);},{once:true});
-      image.src=profile?.source||'assets/sprites/devon/base-source.png';
+      image.src=profile?.source||'assets/sprites/devon/portrait.png';
     }
     const name=document.createElement('strong');name.textContent=profile?.name||'Devon';
     const status=document.createElement('span');status.textContent=entry.status==='defeated'?'DERROTADO':entry.status==='current'?'PRÓXIMO DESAFIO':entry.boss?'CHEFÃO':'AGUARDANDO';

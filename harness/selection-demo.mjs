@@ -28,7 +28,7 @@ try {
   await page.locator('[data-player="ana"]').click();
   await page.waitForFunction(()=>document.querySelector('#playerPowerDemo').dataset.demoReady==='true'&&document.querySelector('#playerPowerDemo').dataset.demoFighter==='ana');
   check('rapid selection uses the latest fighter',/Pulso gamer/.test(await page.locator('#playerDemoLabel').textContent()));
-  check('canonical base sources populate all roster cards',await page.locator('[data-player]>img').evaluateAll(images=>images.every(img=>img.complete&&img.naturalWidth>0&&/assets\/sprites\/[^/]+\/base-source\.png$/.test(img.getAttribute('src')))));
+  check('published portraits populate all roster cards',await page.locator('[data-player]>img').evaluateAll(images=>images.every(img=>img.complete&&img.naturalWidth>0&&/assets\/sprites\/[^/]+\/portrait\.png$/.test(img.getAttribute('src')))));
   for(const [name,width,height] of [['desktop',1440,900],['landscape',844,390],['portrait',390,844]]){
     await page.setViewportSize({width,height});await page.waitForTimeout(150);
     check(`demos and descriptions fit ${name}`,await page.evaluate(()=>[...document.querySelectorAll('.power-demo,.fighter-preview>p')].every(e=>{const r=e.getBoundingClientRect();return r.width>0&&r.height>0&&r.left>=0&&r.right<=innerWidth+1&&r.top>=0&&r.bottom<=innerHeight+1})));

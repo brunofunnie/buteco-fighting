@@ -149,16 +149,16 @@ check("combo count expires after inactivity", ({ game, attacker }) => {
   advance(game, 0.3);
   assert.equal(attacker.combo, 0);
 });
-check("double direction tap starts a faster dash", ({ game, attacker, target }) => {
+check("double direction tap keeps normal walking speed", ({ game, attacker, target }) => {
   target.x = 1050;
   press(game, "KeyD");
   game.keys.delete("KeyD");
   advance(game, 0.08);
   press(game, "KeyD");
-  assert.equal(attacker.state, "dash");
+  assert.equal(attacker.state, "walk");
   const x = attacker.x;
   advance(game, 0.08);
-  assert.ok(attacker.x - x > 40);
+  assert.ok(attacker.x - x < 40);
 });
 check("walking away selects retreat animation", ({ game, attacker }) => {
   press(game, "KeyA");

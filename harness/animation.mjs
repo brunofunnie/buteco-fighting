@@ -70,7 +70,7 @@ for (const state of [
   "block",
   "crouch",
   "ko",
-  "airPunch", "airKick", "crouchPunch", "crouchKick", "uppercut", "sweep", "dash", "backwalk", "lowBlock", "turn", "land", "jumpForward",
+  "airPunch", "airKick", "crouchPunch", "crouchKick", "uppercut", "sweep", "backwalk", "lowBlock", "turn", "land", "jumpForward",
 ])
   for (let frame = 0; frame < (["walk","backwalk"].includes(state) ? 6 : 4); frame++) {
     await page.evaluate(
@@ -82,7 +82,7 @@ for (const state of [
           f.stun = 0;
           f.action = ["punch", "kick", "airPunch", "airKick", "crouchPunch", "crouchKick", "uppercut", "sweep"].includes(state) ? state : null;
           f.stateTime =
-            ["walk","backwalk","dash"].includes(state)
+            ["walk","backwalk"].includes(state)
               ? frame / (g.assets[f.id][state]?.animation?.fps || 12)
               : state === "idle"
                 ? frame / 6

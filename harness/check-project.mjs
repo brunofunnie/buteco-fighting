@@ -2,7 +2,7 @@ import {readdir,readFile,access} from 'node:fs/promises';
 import {spawnSync} from 'node:child_process';
 import path from 'node:path';
 const root=path.resolve(import.meta.dirname,'..');
-const files=['server.mjs',...(await readdir(path.join(root,'build'))).filter(f=>f.endsWith('.mjs')).map(f=>'build/'+f),...(await readdir(path.join(root,'src'))).filter(f=>f.endsWith('.js')).map(f=>'src/'+f),...(await readdir(path.join(root,'tools'))).filter(f=>f.endsWith('.js')).map(f=>'tools/'+f)];
+const files=['server.mjs',...(await readdir(path.join(root,'build'))).filter(f=>f.endsWith('.mjs')).map(f=>'build/'+f),...(await readdir(path.join(root,'src'))).filter(f=>f.endsWith('.js')).map(f=>'src/'+f)];
 for(const file of files){
  const result=spawnSync(process.execPath,['--check',file],{cwd:root,encoding:'utf8'});
  if(result.status!==0)throw Error(result.stderr);

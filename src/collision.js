@@ -1,7 +1,17 @@
 import {COLLISION_DATA} from './collision-data.js';
-export const FRAME_ALIASES={block:'guard',hurt:'hit',ko:'knockout',special:'punch',super:'special',airPunch:'punch',airKick:'kick',crouchPunch:'crouch',crouchKick:'crouch',uppercut:'punch',sweep:'crouch',dash:'walk',backwalk:'walk',lowBlock:'crouch',turn:'idle',land:'crouch',jumpForward:'jump'};
+export const FRAME_ALIASES={block:'guard',hurt:'hit',ko:'knockout',special:'punch',super:'special',airPunch:'punch',airKick:'kick',crouchPunch:'crouch',crouchKick:'crouch',uppercut:'punch',sweep:'crouch',backwalk:'walk',lowBlock:'crouch',turn:'idle',land:'crouch',jumpForward:'jump'};
 export function animationIndex(f,count,fps=6,move) {
   if(count<=1)return 0;
+  if(f.id==='joe-munist'||f.pixelMotion||COLLISION_DATA[f.id]?.idle?.joeSequence) {
+    if(f.action && move && ['special','super'].includes(f.action)) {
+      const release=f.action==='super'?5:3,t=f.actionTime;
+      return Math.min(count-1,Math.floor(t<move.active?t/move.active*release:release+(t-move.active)/(move.duration-move.active)*(count-release)));
+    }
+    if(['jump','jumpForward'].includes(f.state)) {
+      const index=Math.min(count-1,Math.floor((f.jumpElapsed||0)/.84*count));
+      return f.state==='jumpForward'&&f.jumpBackward?count-1-index:index;
+    }
+  }
   let index=Math.floor(f.stateTime*(fps||6))%count;
   if(f.action&&move){
     const t=f.actionTime;

@@ -1,0 +1,238 @@
+{
+  "maya-attack": {
+    "path": "assets/audio/fighters/rina-sabre/attack.mp3",
+    "provider": "elevenlabs"
+  },
+  "maya-special": {
+    "path": "assets/audio/fighters/rina-sabre/special.mp3",
+    "provider": "elevenlabs"
+  },
+  "maya-super": {
+    "path": "assets/audio/fighters/rina-sabre/super.mp3",
+    "provider": "elevenlabs"
+  },
+  "bruno-attack": {
+    "path": "assets/audio/fighters/waggy/attack.mp3",
+    "provider": "elevenlabs"
+  },
+  "bruno-special": {
+    "path": "assets/audio/fighters/waggy/special.mp3",
+    "provider": "elevenlabs"
+  },
+  "bruno-super": {
+    "path": "assets/audio/fighters/waggy/super.mp3",
+    "provider": "elevenlabs"
+  },
+  "viihuugo-attack": {
+    "path": "assets/audio/fighters/viihuugo/attack.mp3",
+    "provider": "elevenlabs"
+  },
+  "viihuugo-special": {
+    "path": "assets/audio/fighters/viihuugo/special.mp3",
+    "provider": "elevenlabs"
+  },
+  "viihuugo-super": {
+    "path": "assets/audio/fighters/viihuugo/super.mp3",
+    "provider": "elevenlabs"
+  },
+  "joke-l-attack": {
+    "path": "assets/audio/fighters/joke-l/attack.mp3",
+    "provider": "elevenlabs"
+  },
+  "joke-l-special": {
+    "path": "assets/audio/fighters/joke-l/special.mp3",
+    "provider": "elevenlabs"
+  },
+  "joke-l-super": {
+    "path": "assets/audio/fighters/joke-l/super.mp3",
+    "provider": "elevenlabs"
+  },
+  "king-luiz-attack": {
+    "path": "assets/audio/fighters/king-luiz/attack.mp3",
+    "provider": "elevenlabs"
+  },
+  "king-luiz-special": {
+    "path": "assets/audio/fighters/king-luiz/special.mp3",
+    "provider": "elevenlabs"
+  },
+  "king-luiz-super": {
+    "path": "assets/audio/fighters/king-luiz/super.mp3",
+    "provider": "elevenlabs"
+  },
+  "maya-b-attack": {
+    "path": "assets/audio/fighters/maya-b/attack.mp3",
+    "provider": "elevenlabs"
+  },
+  "maya-b-special": {
+    "path": "assets/audio/fighters/maya-b/special.mp3",
+    "provider": "elevenlabs"
+  },
+  "maya-b-super": {
+    "path": "assets/audio/fighters/maya-b/super.mp3",
+    "provider": "elevenlabs"
+  },
+  "pedro-pi-attack": {
+    "path": "assets/audio/fighters/pedro-pi/attack.mp3",
+    "provider": "elevenlabs"
+  },
+  "pedro-pi-special": {
+    "path": "assets/audio/fighters/pedro-pi/special.mp3",
+    "provider": "elevenlabs"
+  },
+  "pedro-pi-super": {
+    "path": "assets/audio/fighters/pedro-pi/super.mp3",
+    "provider": "elevenlabs"
+  },
+  "alex-sebas-attack": {
+    "path": "assets/audio/fighters/alex-sebas/attack.mp3",
+    "provider": "elevenlabs"
+  },
+  "alex-sebas-special": {
+    "path": "assets/audio/fighters/alex-sebas/special.mp3",
+    "provider": "elevenlabs"
+  },
+  "alex-sebas-super": {
+    "path": "assets/audio/fighters/alex-sebas/super.mp3",
+    "provider": "elevenlabs"
+  },
+  "math-carpenter-attack": {
+    "path": "assets/audio/fighters/math-carpenter/attack.mp3",
+    "provider": "elevenlabs"
+  },
+  "math-carpenter-special": {
+    "path": "assets/audio/fighters/math-carpenter/special.mp3",
+    "provider": "elevenlabs"
+  },
+  "math-carpenter-super": {
+    "path": "assets/audio/fighters/math-carpenter/super.mp3",
+    "provider": "elevenlabs"
+  },
+  "dark-wong-attack": {
+    "path": "assets/audio/fighters/dark-wong/attack.mp3",
+    "provider": "elevenlabs"
+  },
+  "dark-wong-special": {
+    "path": "assets/audio/fighters/dark-wong/special.mp3",
+    "provider": "elevenlabs"
+  },
+  "dark-wong-super": {
+    "path": "assets/audio/fighters/dark-wong/super.mp3",
+    "provider": "elevenlabs"
+  },
+  "mr-funnie-attack": {
+    "path": "assets/audio/fighters/mr-funnie/attack.mp3",
+    "provider": "elevenlabs"
+  },
+  "mr-funnie-special": {
+    "path": "assets/audio/fighters/mr-funnie/special.mp3",
+    "provider": "elevenlabs"
+  },
+  "mr-funnie-super": {
+    "path": "assets/audio/fighters/mr-funnie/super.mp3",
+    "provider": "elevenlabs"
+  },
+  "baiano-m-attack": {
+    "path": "assets/audio/fighters/baiano-m/attack.mp3",
+    "provider": "elevenlabs"
+  },
+  "baiano-m-special": {
+    "path": "assets/audio/fighters/baiano-m/special.mp3",
+    "provider": "elevenlabs"
+  },
+  "baiano-m-super": {
+    "path": "assets/audio/fighters/baiano-m/super.mp3",
+    "provider": "elevenlabs"
+  },
+  "cowboy-attack": {
+    "path": "assets/audio/fighters/cowboy/attack.mp3",
+    "provider": "elevenlabs"
+  },
+  "cowboy-special": {
+    "path": "assets/audio/fighters/cowboy/special.mp3",
+    "provider": "elevenlabs"
+  },
+  "cowboy-super": {
+    "path": "assets/audio/fighters/cowboy/super.mp3",
+    "provider": "elevenlabs"
+  },
+  "henry-k-attack": {
+    "path": "assets/audio/fighters/henry-k/attack.mp3",
+    "provider": "elevenlabs"
+  },
+  "henry-k-special": {
+    "path": "assets/audio/fighters/henry-k/special.mp3",
+    "provider": "elevenlabs"
+  },
+  "henry-k-super": {
+    "path": "assets/audio/fighters/henry-k/super.mp3",
+    "provider": "elevenlabs"
+  },
+  "jamal-attack": {
+    "path": "assets/audio/fighters/jamal/attack.mp3",
+    "provider": "elevenlabs"
+  },
+  "jamal-special": {
+    "path": "assets/audio/fighters/jamal/special.mp3",
+    "provider": "elevenlabs"
+  },
+  "jamal-super": {
+    "path": "assets/audio/fighters/jamal/super.mp3",
+    "provider": "elevenlabs"
+  },
+  "joe-munist-attack": {
+    "path": "assets/audio/fighters/joe-munist/attack.mp3",
+    "provider": "elevenlabs"
+  },
+  "joe-munist-special": {
+    "path": "assets/audio/fighters/joe-munist/special.mp3",
+    "provider": "elevenlabs"
+  },
+  "joe-munist-super": {
+    "path": "assets/audio/fighters/joe-munist/super.mp3",
+    "provider": "elevenlabs"
+  },
+  "molly-jay-attack": {
+    "path": "assets/audio/fighters/molly-jay/attack.mp3",
+    "provider": "elevenlabs"
+  },
+  "molly-jay-special": {
+    "path": "assets/audio/fighters/molly-jay/special.mp3",
+    "provider": "elevenlabs"
+  },
+  "molly-jay-super": {
+    "path": "assets/audio/fighters/molly-jay/super.mp3",
+    "provider": "elevenlabs"
+  },
+  "impact": {
+    "path": "assets/audio/effects/impact.mp3",
+    "provider": "elevenlabs"
+  },
+  "block": {
+    "path": "assets/audio/effects/block.mp3",
+    "provider": "elevenlabs"
+  },
+  "jump": {
+    "path": "assets/audio/effects/jump.mp3",
+    "provider": "elevenlabs"
+  },
+  "select": {
+    "path": "assets/audio/effects/select.mp3",
+    "provider": "elevenlabs"
+  },
+  "confirm": {
+    "path": "assets/audio/effects/confirm.mp3",
+    "provider": "elevenlabs"
+  },
+  "ko": {
+    "path": "assets/audio/effects/ko.mp3",
+    "provider": "elevenlabs"
+  },
+  "theme-menu": {
+    "path": "assets/audio/music/menu.mp3",
+    "provider": "elevenlabs"
+  },
+  "theme-fight": {
+    "path": "assets/audio/music/fight.mp3",
+    "provider": "elevenlabs"
+  }
+}

@@ -63,7 +63,6 @@ export class FightGame {
     this.spriteBounds = new WeakMap();
     this.hologramSprites = new WeakMap();
     this.cameraX = (WORLD - W) / 2;
-    this.directionTaps = [{}, {}];
     canvas.width = W;
     canvas.height = H;
     this.keys = new Set();
@@ -134,7 +133,6 @@ export class FightGame {
       this.makeFighter(this.opponent, WORLD / 2 + 290, -1),
     ];
     this.cameraX = (WORLD - W) / 2;
-    this.directionTaps = [{}, {}];
     this.projectiles = [];
     this.powerEffects = [];
     this.particles = [];
@@ -151,6 +149,7 @@ export class FightGame {
     return {
       id,
       name: PROFILES[id].name.toUpperCase(),
+      pixelMotion: !!this.assets[id]?.idle?.animation?.joeSequence,
       color: PROFILES[id].color,
       armorTime: 0,
       powerState: null,
@@ -173,8 +172,6 @@ export class FightGame {
       comboTime: 0,
       aiWait: 0,
       slide:null,slideCooldown:0,slideTrail:[],
-      dashTime: 0,
-      dashDirection: 0,
       jumpMove: 0,
       knockdown: 0,
       vx: 0, airVX: 0, landTime: 0, turnTime: 0, turnFrom: facing, turnTo: facing,
@@ -324,7 +321,8 @@ export class FightGame {
       for (const f of this.fighters) {
         f.stateTime += dt;
         if (this.phase === "roundEnd" && f.y < FLOOR) {
-          f.vy += GRAVITY * dt;
+          if (!wasGrounded) f.jumpElapsed = (f.jumpElapsed || 0) + dt;
+    f.vy += GRAVITY * dt;
           f.y = Math.min(FLOOR, f.y + f.vy * dt);
           if (f.y === FLOOR) {
             f.vy = 0;
@@ -360,16 +358,7 @@ export class FightGame {
   }
   getInput(f, enemy, index, dt) {
     if (index === 0 || this.mode === "versus") {
-      let dash = 0;
-      for (const [direction, key] of [[-1, "left"], [1, "right"]]) {
-        if (this.inputPressed(index, key)) {
-          const previous = this.directionTaps[index][key] ?? -10;
-          if (this.elapsed - previous < 0.24) dash = direction;
-          this.directionTaps[index][key] = this.elapsed;
-        }
-      }
       return {
-        dash,
         move: Number(this.inputHeld(index, "right")) - Number(this.inputHeld(index, "left")),
         jump: this.inputPressed(index, "jump"),
         crouch: this.inputHeld(index, "crouch"),
@@ -422,6 +411,7 @@ export class FightGame {
     this.updatePowerState(f, enemy, dt);
     f.comboTime -= dt;
     if (f.comboTime <= 0) f.combo = 0;
+    if (!wasGrounded) f.jumpElapsed = (f.jumpElapsed || 0) + dt;
     f.vy += GRAVITY * dt;
     f.y = Math.min(FLOOR, f.y + f.vy * dt);
     const grounded = f.y === FLOOR;
@@ -435,7 +425,7 @@ export class FightGame {
     if(f.slide){
       const slide=tickDevonSlide(f,enemy,dt,{minX:70,maxX:WORLD-70,floor:FLOOR});
       if(slide.active){
-        f.guard=false;f.crouch=false;f.bufferedAction=null;f.vx=0;f.dashTime=0;f.turnTime=0;
+        f.guard=false;f.crouch=false;f.bufferedAction=null;f.vx=0;f.turnTime=0;
         this.setState(f,'slide');
         // Space echoes by distance so slower slides do not stack silhouettes.
         const lastCopy=f.slideTrail.at(-1);
@@ -455,7 +445,7 @@ export class FightGame {
     }
     const input = this.getInput(f, enemy, index, dt);
     if(input.slide&&startDevonSlide(f,enemy,{minX:70,maxX:WORLD-70,floor:FLOOR})){
-      f.guard=false;f.crouch=false;f.bufferedAction=null;f.vx=0;f.dashTime=0;f.turnTime=0;
+      f.guard=false;f.crouch=false;f.bufferedAction=null;f.vx=0;f.turnTime=0;
       this.setState(f,'slide');this.sound('special',f);return;
     }
     if (input.action) f.bufferedAction = {action:input.action, crouch:!!input.crouch, expires:this.elapsed + 0.13};
@@ -521,6 +511,8 @@ export class FightGame {
       f.y -= 1;
       f.crouch = false;
       f.jumpMove = input.move || 0;
+      f.jumpElapsed = 0;
+      f.jumpBackward = f.jumpMove * f.facing < 0;
       f.airVX = f.jumpMove * PROFILES[f.id].speed * 1.15;
       f.vx = 0;
       this.sound("jump",f);
@@ -540,19 +532,13 @@ export class FightGame {
         return;
       }
     }
-    if (input.dash && grounded && !f.guard && !f.crouch) {
-      f.dashTime = 0.2;
-      f.dashDirection = input.dash;
-      this.burst(f.x, FLOOR, "#c4d5e3", 8);
-    }
-    f.dashTime = Math.max(0, f.dashTime - dt);
-    const speed = PROFILES[f.id].speed * (f.dashTime > 0 ? 2.25 : 1.08);
-    const direction = f.dashTime > 0 ? f.dashDirection : input.move || 0;
+    const speed = PROFILES[f.id].speed * 1.08;
+    const direction = input.move || 0;
     if (grounded && !f.guard && !f.crouch) {
       f.vx += (direction * speed - f.vx) * (1 - Math.exp(-dt * (direction ? 35 : 45)));
       f.x = clamp(f.x + f.vx * dt, 70, WORLD - 70);
     } else if (grounded) f.vx = 0;
-    this.setState(f, f.y < FLOOR ? f.jumpMove ? "jumpForward" : "jump" : f.crouch ? (f.guard ? "lowBlock" : "crouch") : f.guard ? "block" : f.dashTime > 0 ? "dash" : direction ? (direction === f.facing ? "walk" : "backwalk") : "idle");
+    this.setState(f, f.y < FLOOR ? f.jumpMove ? "jumpForward" : "jump" : f.crouch ? (f.guard ? "lowBlock" : "crouch") : f.guard ? "block" : direction ? (direction === f.facing ? "walk" : "backwalk") : "idle");
   }
   combatBoxes(f) {
     const move=f.action?moveFor(f,f.action):null,frame=collisionFrame(f,move);
@@ -665,6 +651,14 @@ export class FightGame {
       this.projectiles.push(p);
       return p;
     };
+    if (f.id === 'joe-munist') {
+      // Arena 2 coordinates at body scale 2.8; retain the real game's 18 / 39 total damage.
+      const scale = (PROFILES[f.id].visualHeight / 94) / 2.8;
+      for (const [forward, vertical] of superMove ? [[210,0],[120,-65],[120,65]] : [[120,0]])
+        projectile({x:f.x+f.facing*forward*scale,y:f.y-140*scale+vertical*scale,
+          vx:f.facing*780,vy:0,damage:superMove?13:18,radius:30});
+      return;
+    }
     switch (kind) {
       case "solar":
         for(const lane of superMove ? [-1,0,1] : [0]) projectile({vx:f.facing*600,vy:lane*95,explosive:true,damage:superMove?14:18,radius:superMove?42:38});
@@ -927,7 +921,7 @@ export class FightGame {
     const ownFrames = [asset[f.state], asset[aliases[f.state]]].find(available);
     let frames = ownFrames || asset.idle || [];
     if (!Array.isArray(frames)) frames = [frames];
-    const frameIndex=animationIndex(f,frames.length,frames.animation?.fps || (["walk","backwalk","dash"].includes(f.state)?12:6),f.action?moveFor(f,f.action):null);
+    const frameIndex=animationIndex(f,frames.length,frames.animation?.fps || (["walk","backwalk"].includes(f.state)?12:6),f.action?moveFor(f,f.action):null);
     const sprite = frames[frameIndex];
     const crouch = ["crouch", "lowBlock", "crouchPunch", "crouchKick", "sweep"].includes(f.state),
       height = crouch && !ownFrames ? 210 : (PROFILES[f.id].visualHeight || 320);
@@ -940,6 +934,7 @@ export class FightGame {
     if (f.health > 0 && f.stun > 0 && Math.floor(f.stun * 40) % 2) c.globalAlpha = 0.65;
     if (sprite?.complete && sprite.naturalWidth) {
       const placement = this.spritePlacement(asset,sprite,height);
+      if(sprite.spriteMeta?.pixelArt ?? (f.id==='joe-munist'))c.imageSmoothingEnabled=false;
       if(f.id==='devon' && f.slide){
         c.shadowColor='#bd45ee';
         c.shadowBlur=f.slide.phase==='travel'?26:14;

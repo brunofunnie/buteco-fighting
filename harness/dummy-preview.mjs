@@ -8,11 +8,11 @@ const manifest=JSON.parse(await readFile('assets/manifest.json','utf8'));
 assert.ok(NON_PLAYABLE_FIGHTERS.dummy);
 assert.ok(!fighterIds.includes('dummy'));
 assert.deepEqual(Object.keys(manifest.dummy).sort(),Object.keys(manifest.naldo).sort());
-assert.equal(Object.values(manifest.dummy).reduce((n,state)=>n+state.frames.length,0),100);
+assert.equal(Object.values(manifest.dummy).reduce((n,state)=>n+state.frames.length,0),79);
 for(const [state,spec] of Object.entries(manifest.dummy)) {
   assert.equal(spec.frames.length,manifest.naldo[state].frames.length);
   const hashes=await Promise.all(spec.frames.map(async frame=>{
-    assert.ok(frame.path.startsWith('assets/sprites/dummy/curated/'));
+    assert.ok(frame.path.startsWith('assets/sprites/dummy/animations/'));
     assert.ok(Number.isFinite(frame.scale)&&frame.scale>0);
     const bytes=await readFile(frame.path);
     assert.ok(bytes.length>1000);

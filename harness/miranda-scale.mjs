@@ -2,13 +2,7 @@ import assert from 'node:assert/strict';
 import {readFile,writeFile} from 'node:fs/promises';
 import {chromium} from 'playwright';
 
-const runtime=JSON.parse(await readFile('assets/sprites/miranda/runtime-manifest.json','utf8'));
-const published=JSON.parse(await readFile('assets/manifest.json','utf8')).miranda;
-const metrics=JSON.parse(await readFile('assets/sprites/miranda/runtime-metrics.json','utf8'));
-assert.deepEqual(published,runtime,'published and source manifests must agree');
-for(const [state,spec] of Object.entries(runtime)) {
-  for(const [index,frame] of spec.frames.entries()) assert.equal(frame.scale,metrics[state][index].scale,`${state}/${index}: publication would undo calibration`);
-}
+const runtime=JSON.parse(await readFile('assets/manifest.json','utf8')).miranda;
 const browser=await chromium.launch({headless:true,args:['--no-sandbox']});
 try {
   const page=await browser.newPage({viewport:{width:2100,height:2400}});

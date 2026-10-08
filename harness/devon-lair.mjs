@@ -5,7 +5,7 @@ const browser=await chromium.launch({args:['--no-sandbox']}),page=await browser.
 page.on('pageerror',e=>errors.push(e.message));
 try{
  await page.goto(process.env.GAME_URL||'http://localhost:3197');await page.waitForFunction(()=>window.__ui?.assets&&!document.querySelector('#titleStart').disabled);
- for(const selector of ['#titleStart','[data-mode="arcade"]','#fighterNext','.arena.selected'])await page.click(selector);
+ for(const selector of ['#titleStart','[data-mode="arcade"]','#fighterNext'])await page.click(selector);
  await page.waitForFunction(()=>__ui.screen==='progress');
  assert.equal(await page.locator('#arcadeCount').count(),0);
  assert.equal(await page.locator('#arcadeScreen .screen-heading>span').count(),0);
@@ -20,10 +20,10 @@ try{
   await page.screenshot({path:`artifacts/devon-path-${viewport.width}.png`});
  }
  await page.setViewportSize({width:1440,height:900});
- await page.click('#backButton');await page.waitForFunction(()=>__ui.screen==='stage');await page.click('#backButton');await page.waitForFunction(()=>__ui.screen==='fighter');
+ await page.click('#backButton');await page.waitForFunction(()=>__ui.screen==='fighter');
  for(const key of ['ArrowUp','ArrowUp','ArrowDown','ArrowDown','ArrowLeft','ArrowRight','ArrowLeft','ArrowRight','b','a'])await page.keyboard.press(key);
  await page.click('[data-secret-action="devon"]');await page.waitForFunction(()=>__ui.screen==='versus');
- assert.match(await page.locator('#versusStageThumbnail').getAttribute('src'),/devon\/arena/);
+ assert.match(await page.locator('#versusStageThumbnail').getAttribute('src'),/stages\/devon\.png/);
  await page.waitForFunction(()=>window.__fight?.running);assert.equal(await page.evaluate(()=>__fight.stage),4);
  const animation=await page.evaluate(async()=>{
   const {drawDevonLair,LAIR_MONITORS}=await import('./src/devon-lair.js');const g=__fight;g.inspectionPaused=true;g.phase='fight';g.elapsed=1;g.draw();
@@ -34,6 +34,6 @@ try{
  });
  assert.deepEqual(animation,{monitors:4,animated:true,loaded:true});
  await page.locator('#gameCanvas').screenshot({path:'artifacts/devon-lair-arena.png'});
- assert.deepEqual(errors,[]);await fs.access('assets/stages/devon/approach.png');
+ assert.deepEqual(errors,[]);await fs.access('assets/stages/devon-approach.png');
  console.log('PASS responsive Devon path, removed labels, exclusive boss stage, loaded warehouse art and animated monitors');
 }finally{await browser.close();}

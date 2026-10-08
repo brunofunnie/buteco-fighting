@@ -3,46 +3,12 @@ import {readFile,writeFile,copyFile,mkdir,readdir,stat} from 'node:fs/promises';
 import path from 'node:path';
 import {createHash} from 'node:crypto';
 import {brotliCompressSync,gzipSync,constants} from 'node:zlib';
-import {FIGHTERS,NON_PLAYABLE_FIGHTERS} from '../src/roster.js';
+import {runtimeAssets} from './runtime-assets.mjs';
 const root=path.resolve(import.meta.dirname,'..');
 const output=path.resolve(process.argv[2]||path.join(root,'dist'));
 if(output===root||['assets','src','styles','build','data'].some(dir=>output===path.join(root,dir)||output.startsWith(path.join(root,dir)+path.sep)))throw Error('Output must not overwrite source files');
 sharp.concurrency(1);sharp.cache(false);
-const assets=new Set();
-function add(file){
- const clean=file.replace(/^\//,'').split('?')[0];
- if(!clean.startsWith('assets/')||clean.includes('..'))throw Error(`Invalid asset path: ${file}`);
- assets.add(clean);
-}
-function references(value){
- if(Array.isArray(value)){for(const entry of value)references(entry);return;}
- if(value&&typeof value==='object')for(const[key,entry]of Object.entries(value)){
-  if(key==='path'&&typeof entry==='string')add(entry);else references(entry);
- }
-}
-for(const file of ['assets/manifest.json','assets/stages/public-v6/crowd-manifest.json','assets/stages/brazil/npcs/crowd-manifest.json','assets/audio/v9/manifest.json']){
- add(file);references(JSON.parse(await readFile(path.join(root,file),'utf8')));
-}
-for(const fighter of Object.values({...FIGHTERS,...NON_PLAYABLE_FIGHTERS}))add(fighter.source);
-const app=await readFile(path.join(root,'src/app.js'),'utf8');
-const stagePaths=app.match(/const stageArtSources\s*=\s*(\[[^;]+\])/)[1];
-for(const match of stagePaths.matchAll(/["']([^"']+)["']/g))add(`assets/stages/${match[1]}.png`);
-for(const name of ['sao-paulo','rio','recife','manaus'])add(`assets/audio/stages/${name}/theme.mp3`);
-add('assets/audio/devon/theme-rock.wav');
-// Retain the deliberately disabled voice clips for future reuse, without their production recordings.
-for(const name of ['round-1','round-2','fight'])add(`assets/audio/selected-voices/${name}.wav`);
-for(const dir of ['assets/interface','assets/social','assets/fonts'])for(const file of await readdir(path.join(root,dir)))if(/\.(png|webp|ttf|txt)$/.test(file))add(`${dir}/${file}`);
-for(const name of ['seven-crowd-background.png','devon-main-illustrated.png','buteco-fighting-logo.png','logo_buteco_games.png'])add(`assets/title/${name}`);
-add('assets/stages/devon/approach.png');
-const html=await readFile(path.join(root,'index.html'),'utf8');
-for(const match of html.matchAll(/(?:src|href|content)="((?:assets\/|https:\/\/fighting\.butecodosdevs\.com\/assets\/)[^"]+)"/g))add(match[1].startsWith('https:')?new URL(match[1]).pathname:match[1]);
-for(const name of await readdir(path.join(root,'styles'))){
- const css=await readFile(path.join(root,'styles',name),'utf8');
- for(const match of css.matchAll(/url\(['"]?([^'"\s)]+)['"]?\)/g)){
-  if(/^(https?:|data:)/.test(match[1]))continue;
-  add(match[1].startsWith('/')?match[1]:path.relative(root,path.resolve(root,'styles',match[1])));
- }
-}
+const assets=await runtimeAssets(root);
 let beforeBytes=0,afterBytes=0,optimized=0,completed=0;
 const assetMap={};
 const queue=[...assets].sort(),workers=Math.max(1,Math.min(8,Number(process.env.ASSET_WORKERS)||4));

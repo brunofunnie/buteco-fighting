@@ -12,7 +12,7 @@ const bind=async(player,action,key)=>{await page.locator(`[data-bind-player="${p
 try {
   await page.goto(process.env.GAME_URL||'http://127.0.0.1:3187');
   await page.waitForFunction(()=>!document.querySelector('#titleStart').disabled);
-  assert.equal(await page.locator('[data-title-player="miranda"]').evaluate(el=>getComputedStyle(el).scale),'0.9');
+  assert.ok(await page.locator('.title-game-logo').evaluate(el=>el.complete&&el.naturalWidth>0));
   await page.evaluate(()=>window.__pads=[0,1].map(index=>({index,id:`Test controller ${index}`,connected:true,mapping:'standard',axes:[0,0],buttons:Array.from({length:17},()=>({pressed:false,value:0}))})));
   await tick();await tap(0,0);assert.equal(await page.evaluate(()=>window.__ui.screen),'mode');
   await tap(0,3);
@@ -26,14 +26,14 @@ try {
   await page.locator('#titleStart').click();await page.locator('#controlsButton').click();await page.locator('[data-options-tab=controls]').click();
   assert.equal(await page.locator('[data-bind-player="0"][data-bind-action="punch"] kbd').textContent(),'F');
   await page.locator('#closeControls').click();await page.locator('[data-mode="versus"]').click();await page.locator('#fighterNext').click();
-  for(const [index,path] of ['brazil/sao-paulo','brazil/rio','brazil/recife','brazil/manaus'].entries()){
-    await page.locator(`[data-stage="${index}"]`).click();
+  for(const [index,path] of ['sao-paulo','rio','recife','manaus'].entries()){
+    await page.locator(`[data-stage="${index}"]`).hover();
     const style=await page.locator('#stageScreen').evaluate(el=>({image:getComputedStyle(el,'::before').backgroundImage,blur:getComputedStyle(el,'::before').filter}));
     assert.ok(style.image.includes(path));assert.match(style.blur,/blur\(12px\)/);
   }
   await page.waitForTimeout(500);
   await mkdir('/tmp/buteco-controls',{recursive:true});await page.screenshot({path:'/tmp/buteco-controls/stage.png'});
-  await page.locator('#startButton').click();await page.waitForFunction(()=>window.__fight?.running&&window.__ui.screen==='fight');
+  await page.locator('.arena.selected').click();await page.waitForFunction(()=>window.__fight?.running&&window.__ui.screen==='fight');
   await page.evaluate(()=>{window.__fight.debugForce({phase:'fight',cpu:false});window.__fight.inspectionPaused=true;});
   // Deterministic actual combat steps retain the production input path.
   const step=()=>page.evaluate(()=>{const g=window.__fight;g.update(1/120);g.pressed.clear();return g.snapshot();});
@@ -63,11 +63,11 @@ try {
   await page.locator('#closeControls').click();await page.locator('#modeScreen .mode-option.active').click();await page.locator('#fighterNext').click();
   for (const [width,height] of [[390,844],[844,390]]) {
     await page.setViewportSize({width,height});
-    await page.locator('[data-stage="1"]').click();await page.locator('#controlsButton').click();await page.locator('[data-options-tab=controls]').click();
+    await page.locator('[data-stage="1"]').dispatchEvent('pointerenter');await page.locator('#controlsButton').click();await page.locator('[data-options-tab=controls]').click();
     assert.ok(await page.locator('#controlsDialog').isVisible());await page.keyboard.press('Escape');
-    assert.ok(await page.locator('#startButton').isVisible());
+    assert.ok(await page.locator('.arena.selected').isVisible());
     await page.screenshot({path:`/tmp/buteco-controls/stage-${width}.png`});
   }
   assert.deepEqual(errors,[]);
-  console.log('PASS title size, four stage backdrops, controller menus, saved remapping, conflicts, keyboard and controller air attacks, touch, P2, guard, pause, disconnect and reset');
+  console.log('PASS title assets, four stage backdrops, controller menus, saved remapping, conflicts, keyboard and controller air attacks, touch, P2, guard, pause, disconnect and reset');
 }finally{await browser.close();}

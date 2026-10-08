@@ -13,7 +13,7 @@ await page.waitForFunction(()=>window.__fight?.fighters.length===2);
 await page.waitForTimeout(3000);
 await page.evaluate(()=>{const g=window.__fight;g.freezeForInspection?.();g.debugForce({phase:'fight',cpu:false});g.paused=false;});
 const results=[];
-for(const state of ['idle','punch','kick','airPunch','airKick','crouchPunch','crouchKick','uppercut','sweep','dash','backwalk','lowBlock']){
+for(const state of ['idle','punch','kick','airPunch','airKick','crouchPunch','crouchKick','uppercut','sweep','backwalk','lowBlock']){
 const info=await page.evaluate(state=>{const g=window.__fight;for(const f of g.fighters){Object.assign(f,{state,action:['punch','kick','airPunch','airKick','crouchPunch','crouchKick','uppercut','sweep'].includes(state)?state:null,stateTime:.2,actionTime:.19,x:f.id==='maya'?400:880,y:590,health:100,stun:0});}g.draw();return Object.entries(g.assets).map(([id,a])=>{const frames=a[state];return {id,state,frames:frames?.length,heights:frames?.map(img=>{const idle=a.idle[0],b=g.measureSprite(idle),s=g.measureSprite(img);return 320/(b.height/idle.naturalHeight)*(img.spriteMeta?.scale||1)*s.height/img.naturalHeight;})};});},state);
 results.push(info);await page.locator('#gameCanvas').screenshot({path:`artifacts/critic-${state}.png`});
 }

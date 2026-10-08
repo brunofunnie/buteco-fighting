@@ -12,11 +12,11 @@ try{
  await page.goto(base);await page.waitForFunction(()=>window.__ui?.assets&&!document.querySelector('#titleStart').disabled);
  await page.waitForTimeout(500);
  assert.ok(bytes<20*1024*1024,`Startup transferred ${bytes} bytes`);
- assert.ok(!requests.some(path=>/\/(frames|curated)\//.test(path)),'Combat animations must wait for selection or battle');
+ assert.ok(!requests.some(path=>/\/animations\//.test(path)),'Combat animations must wait for selection or battle');
  assert.ok(!requests.some(path=>/\/assets\/stages\/.*\.(png|webp)$/.test(path)),'Arena art must wait for arena selection or battle');
  assert.ok(!requests.some(path=>/\/sprites\/joke-l\//.test(path)),'Unselected fighter must not load at startup');
- const first=await fetch(base+'/assets/title/seven-crowd-background.png');assert.equal(first.status,200);assert.ok(first.headers.get('etag'));await first.arrayBuffer();
- const cached=await fetch(base+'/assets/title/seven-crowd-background.png',{headers:{'If-None-Match':first.headers.get('etag')}});assert.equal(cached.status,304);assert.equal((await cached.arrayBuffer()).byteLength,0);
+ const first=await fetch(base+'/assets/title/crowd.png');assert.equal(first.status,200);assert.ok(first.headers.get('etag'));await first.arrayBuffer();
+ const cached=await fetch(base+'/assets/title/crowd.png',{headers:{'If-None-Match':first.headers.get('etag')}});assert.equal(cached.status,304);assert.equal((await cached.arrayBuffer()).byteLength,0);
  const compressed=await fetch(base+'/src/collision-data.js',{headers:{'Accept-Encoding':'gzip'}});assert.equal(compressed.status,200);assert.equal(compressed.headers.get('content-encoding'),'gzip');assert.match(await compressed.text(),/COLLISION_DATA/);
  console.log(JSON.stringify({requests:finished,bytes,readyMs:Date.now()-started}));
  await page.click('#titleStart');await page.click('[data-mode="free"]');await page.click('[data-player="joke-l"]');
