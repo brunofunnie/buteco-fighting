@@ -15,6 +15,11 @@ for(const facing of [1,-1])for(const y of [590,400]){
  for(let i=0;i<240;i++){g.update(1/120);if(t.y===590){landed=true;if(t.knockdown>0){layDown=true;assert.equal(t.state,'ko');assert.equal(t.facing,facing,'Fallen head points in launch direction');}}if(landed&&t.knockdown===0&&['idle','turn','land'].includes(t.state))recovered=true;}
  assert.ok((t.x-x)*facing>220,'Opponent moves backward');assert.ok(landed&&layDown&&recovered,'Ground and airborne victims fall, lie down and recover');assert.equal(t.facing,-facing,'Recovery faces the opponent again');
 }
+for(const facing of [1,-1]){
+ const g=new FightGame({getContext:()=>({})});g.start();g.debugForce({phase:'fight',cpu:false});const[a,t]=g.fighters;Object.assign(a,{x:facing===1?600:1200,facing});Object.assign(t,{health:1,x:a.x+facing*180,y:400});const x=t.x;
+ g.hitFighter(a,t,18,150,220,{launch:true});g.finishRound();for(let i=0;i<180;i++)g.update(1/120);
+ assert.equal(t.health,0);assert.equal(t.state,'ko');assert.equal(t.y,590);assert.equal(t.facing,facing);assert.ok((t.x-x)*facing>220,'Fatal uppercut keeps launch momentum');
+}
 for(const defense of ['block','armor']){
  const g=new FightGame({getContext:()=>({})});g.start();g.debugForce({phase:'fight',cpu:false});const [a,t]=g.fighters;
  Object.assign(t,{guard:defense==='block',armorTime:defense==='armor'?1:0,y:590,vy:0});g.hitFighter(a,t,18,150,220,{launch:true});assert.equal(t.vy,0);assert.equal(t.knockdown,0);

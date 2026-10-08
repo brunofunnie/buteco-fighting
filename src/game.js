@@ -320,9 +320,13 @@ export class FightGame {
       if(this.phase==="roundEnd")this.updateProjectiles(dt,false);
       for (const f of this.fighters) {
         f.stateTime += dt;
+        if(this.phase === "roundEnd" && f.knockdown > 0){
+          f.x=clamp(f.x+(f.airVX||0)*dt,60,WORLD-60);
+          f.airVX *= Math.exp(-dt*(f.y===FLOOR?10:1.5));
+        }
         if (this.phase === "roundEnd" && f.y < FLOOR) {
-          if (!wasGrounded) f.jumpElapsed = (f.jumpElapsed || 0) + dt;
-    f.vy += GRAVITY * dt;
+          f.jumpElapsed = (f.jumpElapsed || 0) + dt;
+          f.vy += GRAVITY * dt;
           f.y = Math.min(FLOOR, f.y + f.vy * dt);
           if (f.y === FLOOR) {
             f.vy = 0;
